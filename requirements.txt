@@ -1,3 +1,7 @@
 requests==2.32.3
 Pillow==10.4.0
 schedule==1.2.2
+pandas
+mplfinance
+groq
+python-dotenv
