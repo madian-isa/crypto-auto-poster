@@ -1,27 +1,60 @@
 """
 main.py
 
-Full cycle: pick POSTS_PER_CYCLE symbols from the screener shortlist,
-build a chart + AI trade setup for each, and publish text+image posts
-MINUTES_BETWEEN_POSTS apart.
+Single-run mode: each invocation of `python main.py` builds and publishes
+ONE trade-setup post, then exits. A scheduler (GitHub Actions cron) re-runs
+this every ~20 minutes. A small state file (state.py) enforces a daily cap
+and avoids immediately repeating the same coin.
 
-In production, trigger run_cycle() from a scheduler (cron / Render cron job)
-rather than the sleep-based loop below, so it doesn't depend on one process
-staying alive for the full ~40+ minute cycle.
+For local testing without a scheduler, RUN_MODE=cycle still runs the old
+3-posts-with-sleep behavior.
 """
 
+import os
+import random
 import time
 import traceback
 
-import bot_config as cfg
-from screener import get_screener_shortlist
-from indicators import fetch_klines, compute_indicators
-from setup_generator import generate_setup, format_post_text
-from chart import render_chart_image
-from square_post_ext import post_with_images
+from src import bot_config as cfg
+from src.screener import get_screener_shortlist
+from src.indicators import fetch_klines, compute_indicators
+from src.setup_generator import generate_setup, format_post_text
+from src.chart import render_chart_image
+from src.square_post_ext import post_with_images
+from src.state import load_state, save_state, can_post_more_today, record_post
+
+
+def run_once():
+    """Post exactly one setup, respecting the daily cap. Meant to be called
+    on a schedule (e.g. every 20 minutes) by an external scheduler."""
+    state = load_state()
+
+    if not can_post_more_today(state):
+        print(f"[run_once] daily cap reached ({cfg.MAX_POSTS_PER_DAY}) — skipping this run.")
+        return
+
+    shortlist = get_screener_shortlist()
+    if not shortlist:
+        print("[run_once] screener returned nothing — skipping.")
+        return
+
+    candidates = shortlist[: cfg.PICK_FROM_TOP_N]
+    fresh = [c for c in candidates if c["symbol"] not in state.get("recent_symbols", [])]
+    pick = random.choice(fresh or candidates)
+    symbol = pick["symbol"]
+
+    try:
+        _build_and_publish(symbol)
+        state = record_post(state, symbol)
+        save_state(state)
+    except Exception as err:
+        print(f"[run_once] failed for {symbol}: {err}")
+        traceback.print_exc()
 
 
 def run_cycle():
+    """Old behavior, kept for local testing: 3 posts, 20 min apart, in one
+    long-lived process. Not what the GitHub Actions workflow uses."""
     mode = "DRY RUN (nothing will be posted)" if cfg.DRY_RUN else "LIVE (posting for real)"
     print(f"[cycle] starting — mode: {mode}")
 
@@ -49,7 +82,7 @@ def _build_and_publish(symbol: str):
     indicators = compute_indicators(klines_df)
 
     setup = generate_setup(symbol, indicators)
-    setup["symbol"] = symbol  # make sure it's exactly right, don't trust the model to echo it back
+    setup["symbol"] = symbol
     text = format_post_text(setup)
 
     chart_path = render_chart_image(symbol, klines_df, setup["direction"])
@@ -64,7 +97,7 @@ def _build_and_publish(symbol: str):
         return
 
     result = post_with_images(text, [chart_path])
-    print(f"[cycle] published {symbol} ({setup['direction']}) -> {result.get('link')}")
+    print(f"[run] published {symbol} ({setup['direction']}) -> {result.get('link')}")
 
 
 def _pick_diverse(shortlist, count):
@@ -81,4 +114,7 @@ def _pick_diverse(shortlist, count):
 
 
 if __name__ == "__main__":
-    run_cycle()
+    if os.environ.get("RUN_MODE", "once") == "cycle":
+        run_cycle()
+    else:
+        run_once()
