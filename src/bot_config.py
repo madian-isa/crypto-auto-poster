@@ -32,7 +32,7 @@ EXCLUDE_SYMBOLS = {"USDCUSDT", "FDUSDUSDT", "TUSDUSDT", "BUSDUSDT"}
 KLINE_INTERVAL = os.environ.get("KLINE_INTERVAL", "1h")
 KLINE_LIMIT = int(os.environ.get("KLINE_LIMIT", "100"))
 
-# Posting cadence
+# Posting cadence (used only by the old run_cycle() local-testing mode)
 POSTS_PER_CYCLE = int(os.environ.get("TRADE_POSTS_PER_CYCLE", "3"))
 MINUTES_BETWEEN_POSTS = int(os.environ.get("TRADE_MINUTES_BETWEEN_POSTS", "20"))
 
@@ -43,3 +43,16 @@ CHART_OUTPUT_DIR = os.environ.get("CHART_OUTPUT_DIR", "/tmp/trade_setup_charts")
 # Binance Square — the bot builds everything (indicators, AI setup, chart)
 # and just PRINTS what it would have posted. Set DRY_RUN=false to go live.
 DRY_RUN = os.environ.get("DRY_RUN", "true").lower() not in ("false", "0", "no")
+
+# --- single-run mode (for GitHub Actions / any external scheduler) ---
+# Each invocation of `python main.py` posts ONE setup, then exits — no
+# internal sleep loop. A scheduler (GitHub Actions cron, etc.) re-runs it
+# every N minutes. This file tracks how many posts have gone out today so
+# we don't blow past a daily cap even if the scheduler runs often.
+STATE_FILE = os.environ.get("TRADE_BOT_STATE_FILE", "trade_bot_state.json")
+MAX_POSTS_PER_DAY = int(os.environ.get("TRADE_MAX_POSTS_PER_DAY", "20"))
+
+# When picking a symbol each run, choose randomly among the top N of the
+# screener shortlist (instead of always the #1) so consecutive runs aren't
+# always the same coin.
+PICK_FROM_TOP_N = int(os.environ.get("TRADE_PICK_FROM_TOP_N", "5"))
