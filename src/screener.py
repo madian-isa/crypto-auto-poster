@@ -18,7 +18,7 @@ def get_screener_shortlist(limit=None):
 
     usdt_pairs = [
         t for t in tickers
-        if t["symbol"].endswith("USDT") and t["symbol"] not in cfg.EXCLUDE_SYMBOLS
+        if t["symbol"] in cfg.FUTURES_PERPETUAL_WHITELIST
     ]
 
     scored = []
