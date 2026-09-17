@@ -15,7 +15,7 @@ def fetch_klines(symbol, interval=None, limit=None):
     interval = interval or cfg.KLINE_INTERVAL
     limit = limit or cfg.KLINE_LIMIT
 
-    url = f"{cfg.BINANCE_FAPI_BASE}/fapi/v1/klines"
+    url = f"{cfg.BINANCE_FAPI_BASE}/api/v3/klines"
     params = {"symbol": symbol, "interval": interval, "limit": limit}
     res = requests.get(url, params=params, timeout=15)
     res.raise_for_status()
