@@ -19,7 +19,7 @@ from src import bot_config as cfg
 from src.screener import get_screener_shortlist
 from src.indicators import fetch_klines, compute_indicators
 from src.setup_generator import generate_setup, format_post_text
-from src.square_post import post_text
+from src.square_post_ext import post_text_v2
 from src.state import load_state, save_state, can_post_more_today, record_post
 
 
@@ -97,7 +97,7 @@ def _build_and_publish(symbol: str):
         print("[DRY RUN] nothing posted to Binance Square.\n")
         return
 
-    result = post_text(text)
+    result = post_text_v2(text)
     print(f"[run] published {symbol} ({setup['direction']}) -> {result.get('link')}")
 
 
