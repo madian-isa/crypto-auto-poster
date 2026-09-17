@@ -25,8 +25,47 @@ GROQ_MODEL = os.environ.get("GROQ_MODEL", "openai/gpt-oss-120b")
 BINANCE_FAPI_BASE = "https://data-api.binance.vision"
 
 # Screener
-SCREENER_SHORTLIST_SIZE = int(os.environ.get("SCREENER_SHORTLIST_SIZE", "15"))
+SCREENER_SHORTLIST_SIZE = int(os.environ.get("SCREENER_SHORTLIST_SIZE", "25"))
 EXCLUDE_SYMBOLS = {"USDCUSDT", "FDUSDUSDT", "TUSDUSDT", "BUSDUSDT"}
+
+# Market data comes from Binance's SPOT mirror (data-api.binance.vision) to
+# avoid the US geo-block on fapi.binance.com — but posts are framed as
+# perpetual futures setups (entry/SL/TP, leverage-style), so the screener
+# must only pick symbols that actually exist as a USDT-M perpetual on
+# Binance Futures. This is a curated list of major, liquid perpetuals —
+# update it if Binance adds/removes contracts you want covered.
+FUTURES_PERPETUAL_WHITELIST = {
+    # Blue-chip / long-established majors
+    "BTCUSDT", "ETHUSDT", "BNBUSDT", "SOLUSDT", "XRPUSDT", "ADAUSDT",
+    "DOGEUSDT", "TRXUSDT", "TONUSDT", "LINKUSDT", "AVAXUSDT", "DOTUSDT",
+    "LTCUSDT", "BCHUSDT", "ATOMUSDT", "XLMUSDT", "ETCUSDT", "NEARUSDT",
+    "FILUSDT", "EOSUSDT", "ALGOUSDT", "EGLDUSDT", "THETAUSDT", "XTZUSDT",
+    "KAVAUSDT", "VETUSDT", "ICPUSDT", "HBARUSDT", "RUNEUSDT", "IOTAUSDT",
+    "NEOUSDT", "WAVESUSDT", "DASHUSDT", "ZECUSDT", "QTUMUSDT", "ONTUSDT",
+    "ICXUSDT", "ZRXUSDT", "BATUSDT", "OMGUSDT", "KSMUSDT", "RVNUSDT",
+    "HOTUSDT", "IOSTUSDT", "ZILUSDT", "ONEUSDT",
+    # DeFi
+    "AAVEUSDT", "UNIUSDT", "MKRUSDT", "LDOUSDT", "SNXUSDT", "CRVUSDT",
+    "COMPUSDT", "SUSHIUSDT", "YFIUSDT", "1INCHUSDT", "DYDXUSDT", "GMXUSDT",
+    "PENDLEUSDT", "WOOUSDT", "CVXUSDT",
+    # Layer-1 / Layer-2 growth names
+    "APTUSDT", "ARBUSDT", "OPUSDT", "SUIUSDT", "INJUSDT", "STXUSDT",
+    "IMXUSDT", "MANTAUSDT", "STRKUSDT", "SEIUSDT", "TIAUSDT", "ARUSDT",
+    "KASUSDT", "ROSEUSDT", "CFXUSDT", "CELOUSDT", "FLOWUSDT",
+    # Gaming / metaverse / NFT-adjacent
+    "SANDUSDT", "MANAUSDT", "GALAUSDT", "AXSUSDT", "ENJUSDT", "CHZUSDT",
+    "APEUSDT", "GMTUSDT", "MAGICUSDT", "PEOPLEUSDT",
+    # AI / data
+    "FETUSDT", "AGIXUSDT", "OCEANUSDT", "RNDRUSDT", "GRTUSDT", "ARKMUSDT",
+    "WLDUSDT",
+    # Meme / high-volume trending
+    "PEPEUSDT", "WIFUSDT", "BONKUSDT", "FLOKIUSDT", "1000SHIBUSDT",
+    "ORDIUSDT", "JUPUSDT", "NOTUSDT",
+    # Other established liquid pairs
+    "BANDUSDT", "STORJUSDT", "SKLUSDT", "ANKRUSDT", "CTSIUSDT",
+    "MASKUSDT", "BLURUSDT", "LPTUSDT", "HIGHUSDT", "PYTHUSDT", "JTOUSDT",
+    "TAOUSDT", "ENAUSDT", "ONDOUSDT",
+}
 
 # Indicators
 KLINE_INTERVAL = os.environ.get("KLINE_INTERVAL", "1h")
@@ -55,4 +94,4 @@ MAX_POSTS_PER_DAY = int(os.environ.get("TRADE_MAX_POSTS_PER_DAY", "20"))
 # When picking a symbol each run, choose randomly among the top N of the
 # screener shortlist (instead of always the #1) so consecutive runs aren't
 # always the same coin.
-PICK_FROM_TOP_N = int(os.environ.get("TRADE_PICK_FROM_TOP_N", "5"))
+PICK_FROM_TOP_N = int(os.environ.get("TRADE_PICK_FROM_TOP_N", "10"))
