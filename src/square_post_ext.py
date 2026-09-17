@@ -85,6 +85,29 @@ def _poll_image_status(api_key: str, file_ticket: str) -> dict:
     raise RuntimeError(f"Poll timed out after {MAX_POLL_RETRIES} retries")
 
 
+def post_text_v2(text: str) -> dict:
+    """
+    Alternate text-only publish, using the "bodyTextOnly" field instead of
+    "content"/"contentType" — some Binance Square docs/mirrors show this
+    field name instead. Try this if square_post.post_text() fails with
+    error 220011 ("Content cannot be empty") even though the text is
+    clearly non-empty — that error can mean the API is reading a different
+    field than the one actually sent.
+    """
+    api_key = config.BINANCE_SQUARE_OPENAPI_KEY
+    if not api_key:
+        raise RuntimeError("BINANCE_SQUARE_OPENAPI_KEY is not set in environment.")
+    if not text or not text.strip():
+        raise ValueError("Refusing to publish an empty post.")
+
+    payload = {"bodyTextOnly": text}
+    data = _api("/content/add", api_key, payload, BASE_URL_V1)
+
+    post_id = data.get("id")
+    link = f"https://www.binance.com/en/square/post/{post_id}" if post_id else None
+    return {"id": post_id, "link": link, "soft_success": data.get("publishStatus") == "success_without_post_id"}
+
+
 def upload_image(api_key: str, image_path: str) -> str:
     """Uploads one local image file and returns the ready-to-use imageUrl."""
     content_type = _get_content_type(image_path)
