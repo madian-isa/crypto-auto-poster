@@ -2,11 +2,13 @@ name: Trade Setup Bot
 
 on:
   schedule:
+    # Runs every 20 minutes. GitHub's scheduler can lag a few minutes under
+    # load — that's fine here, exact timing isn't critical.
     - cron: "*/20 * * * *"
-  workflow_dispatch: {}
+  workflow_dispatch: {} # lets you trigger a run manually from the Actions tab
 
 permissions:
-  contents: write
+  contents: write # needed so the workflow can commit the updated state file back
 
 jobs:
   run-bot:
@@ -30,15 +32,6 @@ jobs:
           DRY_RUN: ${{ vars.DRY_RUN || 'true' }}
           TRADE_MAX_POSTS_PER_DAY: ${{ vars.TRADE_MAX_POSTS_PER_DAY || '20' }}
         run: python -m src.main
-
-      - name: Upload chart image (dry-run preview)
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: trade-setup-chart
-          path: /tmp/trade_setup_charts/
-          if-no-files-found: ignore
-          retention-days: 7
 
       - name: Commit updated state file
         run: |
