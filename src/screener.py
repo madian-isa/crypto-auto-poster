@@ -47,7 +47,7 @@ def get_screener_shortlist(limit=None):
 
 
 def _fetch_all_24hr_tickers():
-    url = f"{cfg.BINANCE_FAPI_BASE}/fapi/v1/ticker/24hr"
+    url = f"{cfg.BINANCE_FAPI_BASE}/api/v3/ticker/24hr"
     res = requests.get(url, timeout=15)
     res.raise_for_status()
     return res.json()
