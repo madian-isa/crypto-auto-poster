@@ -20,7 +20,7 @@ from src.screener import get_screener_shortlist
 from src.indicators import fetch_klines, compute_indicators
 from src.setup_generator import generate_setup, format_post_text
 from src.chart import render_chart_image
-from src.square_post_ext import post_with_images
+from src.square_post import post_text
 from src.state import load_state, save_state, can_post_more_today, record_post
 
 
@@ -101,8 +101,8 @@ def _build_and_publish(symbol: str):
         print("[DRY RUN] nothing uploaded or posted to Binance Square.\n")
         return
 
-    result = post_with_images(text, [chart_path])
-    print(f"[run] published {symbol} ({setup['direction']}) -> {result.get('link')}")
+    result = post_text(text)
+    print(f"[run] published {symbol} ({setup['direction']}) -> {result.get('link')} (chart saved at {chart_path}, not yet attached — image payload format still unverified)")
 
 
 def _pick_diverse(shortlist, count):
