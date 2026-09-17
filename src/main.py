@@ -19,7 +19,6 @@ from src import bot_config as cfg
 from src.screener import get_screener_shortlist
 from src.indicators import fetch_klines, compute_indicators
 from src.setup_generator import generate_setup, format_post_text
-from src.chart import render_chart_image
 from src.square_post import post_text
 from src.state import load_state, save_state, can_post_more_today, record_post
 
@@ -90,19 +89,16 @@ def _build_and_publish(symbol: str):
     setup["symbol"] = symbol  # don't trust the model to echo it back correctly
     text = format_post_text(setup)
 
-    chart_path = render_chart_image(symbol, klines_df, setup["direction"], setup)
-
     if cfg.DRY_RUN:
         print(f"\n[DRY RUN] would post for {symbol} ({setup['direction']}):")
         print("-" * 40)
         print(text)
         print("-" * 40)
-        print(f"[DRY RUN] chart image saved at: {chart_path}")
-        print("[DRY RUN] nothing uploaded or posted to Binance Square.\n")
+        print("[DRY RUN] nothing posted to Binance Square.\n")
         return
 
     result = post_text(text)
-    print(f"[run] published {symbol} ({setup['direction']}) -> {result.get('link')} (chart saved at {chart_path}, not yet attached — image payload format still unverified)")
+    print(f"[run] published {symbol} ({setup['direction']}) -> {result.get('link')}")
 
 
 def _pick_diverse(shortlist, count):
