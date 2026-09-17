@@ -31,6 +31,15 @@ jobs:
           TRADE_MAX_POSTS_PER_DAY: ${{ vars.TRADE_MAX_POSTS_PER_DAY || '20' }}
         run: python -m src.main
 
+      - name: Upload chart image (dry-run preview)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: trade-setup-chart
+          path: /tmp/trade_setup_charts/
+          if-no-files-found: ignore
+          retention-days: 7
+
       - name: Commit updated state file
         run: |
           git config user.name "trade-setup-bot"
