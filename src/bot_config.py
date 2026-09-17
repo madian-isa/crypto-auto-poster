@@ -22,7 +22,7 @@ except ImportError:
 GROQ_API_KEY = os.environ.get("GROQ_API_KEY", "")
 GROQ_MODEL = os.environ.get("GROQ_MODEL", "llama-3.3-70b-versatile")
 
-BINANCE_FAPI_BASE = "https://fapi.binance.com"
+BINANCE_FAPI_BASE = "https://data-api.binance.vision"
 
 # Screener
 SCREENER_SHORTLIST_SIZE = int(os.environ.get("SCREENER_SHORTLIST_SIZE", "15"))
@@ -32,7 +32,7 @@ EXCLUDE_SYMBOLS = {"USDCUSDT", "FDUSDUSDT", "TUSDUSDT", "BUSDUSDT"}
 KLINE_INTERVAL = os.environ.get("KLINE_INTERVAL", "1h")
 KLINE_LIMIT = int(os.environ.get("KLINE_LIMIT", "100"))
 
-# Posting cadence (used only by the old run_cycle() local-testing mode)
+# Posting cadence
 POSTS_PER_CYCLE = int(os.environ.get("TRADE_POSTS_PER_CYCLE", "3"))
 MINUTES_BETWEEN_POSTS = int(os.environ.get("TRADE_MINUTES_BETWEEN_POSTS", "20"))
 
