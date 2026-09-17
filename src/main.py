@@ -90,7 +90,7 @@ def _build_and_publish(symbol: str):
     setup["symbol"] = symbol  # don't trust the model to echo it back correctly
     text = format_post_text(setup)
 
-    chart_path = render_chart_image(symbol, klines_df, setup["direction"])
+    chart_path = render_chart_image(symbol, klines_df, setup["direction"], setup)
 
     if cfg.DRY_RUN:
         print(f"\n[DRY RUN] would post for {symbol} ({setup['direction']}):")
