@@ -40,16 +40,21 @@ def run_once():
 
     candidates = shortlist[: cfg.PICK_FROM_TOP_N]
     fresh = [c for c in candidates if c["symbol"] not in state.get("recent_symbols", [])]
-    pick = random.choice(fresh or candidates)
-    symbol = pick["symbol"]
+    pool = fresh or candidates
+    random.shuffle(pool)
 
-    try:
-        _build_and_publish(symbol)
-        state = record_post(state, symbol)
-        save_state(state)
-    except Exception as err:
-        print(f"[run_once] failed for {symbol}: {err}")
-        traceback.print_exc()
+    for pick in pool:
+        symbol = pick["symbol"]
+        try:
+            _build_and_publish(symbol)
+            state = record_post(state, symbol)
+            save_state(state)
+            return
+        except Exception as err:
+            print(f"[run_once] {symbol} failed, trying next candidate: {err}")
+            continue
+
+    print("[run_once] every candidate failed this run — nothing posted.")
 
 
 def run_cycle():
@@ -82,7 +87,7 @@ def _build_and_publish(symbol: str):
     indicators = compute_indicators(klines_df)
 
     setup = generate_setup(symbol, indicators)
-    setup["symbol"] = symbol
+    setup["symbol"] = symbol  # don't trust the model to echo it back correctly
     text = format_post_text(setup)
 
     chart_path = render_chart_image(symbol, klines_df, setup["direction"])
