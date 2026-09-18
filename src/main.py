@@ -39,53 +39,25 @@ from src.state import (
 )
 
 
-# =========================================================
-# RUN ONCE
-# =========================================================
-
 def run_once():
-    """
-    Build and publish exactly one setup.
-
-    Rules:
-    1. Respect daily post limit.
-    2. Do not post the same symbol twice in one day.
-    """
-
     state = load_state()
 
-    # -----------------------------------------------------
-    # Daily limit
-    # -----------------------------------------------------
-
     if not can_post_more_today(state):
-
         print(
             f"[run_once] daily cap reached "
             f"({cfg.MAX_POSTS_PER_DAY}) "
-            f"— skipping this run."
+            "— skipping this run."
         )
-
         return
-
-    # -----------------------------------------------------
-    # Screener
-    # -----------------------------------------------------
 
     shortlist = get_screener_shortlist()
 
     if not shortlist:
-
         print(
             "[run_once] screener returned nothing "
             "— skipping."
         )
-
         return
-
-    # -----------------------------------------------------
-    # Remove coins already posted today
-    # -----------------------------------------------------
 
     posted_today = set(
         state.get(
@@ -101,72 +73,60 @@ def run_once():
     ]
 
     if not fresh:
-
         print(
             "[run_once] all current candidates were "
             "already posted today — skipping this run."
         )
-
         return
 
-    # Randomize candidates so the same coin is not
-    # always selected when several are available.
     pool = fresh.copy()
-
     random.shuffle(pool)
 
-    # -----------------------------------------------------
-    # Try candidates
-    # -----------------------------------------------------
-
     for pick in pool:
-
         symbol = pick["symbol"]
 
         if symbol in posted_today:
-
             print(
                 f"[run_once] {symbol} already posted today "
                 "— skipping."
             )
-
             continue
 
         try:
-
-            _build_and_publish(
+            posted = _build_and_publish(
                 symbol,
                 pick,
             )
 
-            # Record only after the build/publish function
-            # completes successfully.
-            state = record_post(
-                state,
-                symbol,
-            )
+            if posted:
+                state = record_post(
+                    state,
+                    symbol,
+                )
 
-            save_state(state)
+                save_state(state)
 
-            print(
-                f"[run_once] {symbol} recorded "
-                "as posted today."
-            )
+                print(
+                    f"[run_once] {symbol} recorded "
+                    "as posted today."
+                )
+            else:
+                print(
+                    f"[run_once] {symbol} was DRY RUN "
+                    "— not recorded as posted."
+                )
 
             return
 
         except Exception as err:
-
             print(
                 f"[run_once] {symbol} failed: {err}"
             )
-
             traceback.print_exc()
 
             print(
                 "[run_once] trying next candidate..."
             )
-
             continue
 
     print(
@@ -175,17 +135,7 @@ def run_once():
     )
 
 
-# =========================================================
-# OLD CYCLE MODE
-# =========================================================
-
 def run_cycle():
-    """
-    Old multi-post mode for local testing.
-
-    GitHub Actions should normally use RUN_MODE=once.
-    """
-
     mode = (
         "DRY RUN (nothing will be posted)"
         if cfg.DRY_RUN
@@ -199,11 +149,9 @@ def run_cycle():
     shortlist = get_screener_shortlist()
 
     if not shortlist:
-
         print(
             "[cycle] screener returned nothing."
         )
-
         return
 
     picks = _pick_diverse(
@@ -212,22 +160,18 @@ def run_cycle():
     )
 
     for i, pick in enumerate(picks):
-
         symbol = pick["symbol"]
 
         try:
-
             _build_and_publish(
                 symbol,
                 pick,
             )
 
         except Exception as err:
-
             print(
                 f"[cycle] skipping {symbol}: {err}"
             )
-
             traceback.print_exc()
 
         is_last = (
@@ -235,11 +179,10 @@ def run_cycle():
         )
 
         if not is_last:
-
             print(
                 f"[cycle] waiting "
                 f"{cfg.MINUTES_BETWEEN_POSTS} "
-                f"min before next post..."
+                "min before next post..."
             )
 
             time.sleep(
@@ -251,34 +194,13 @@ def run_cycle():
     )
 
 
-# =========================================================
-# BUILD + PUBLISH
-# =========================================================
-
 def _build_and_publish(
     symbol: str,
     pick=None,
 ):
-    """
-    Complete analysis pipeline:
-
-    1. Binance klines
-    2. Technical indicators
-    3. Relevant news
-    4. Basic market context
-    5. Advanced market data
-    6. AI setup generation
-    7. Binance Square formatting
-    8. Publish or DRY RUN
-    """
-
     print(
         f"\n[run] starting analysis for {symbol}"
     )
-
-    # -----------------------------------------------------
-    # Technical data
-    # -----------------------------------------------------
 
     print(
         f"[run] fetching technical data for {symbol}..."
@@ -296,10 +218,6 @@ def _build_and_publish(
         f"[run] technical indicators ready for {symbol}"
     )
 
-    # -----------------------------------------------------
-    # News
-    # -----------------------------------------------------
-
     print(
         f"[run] checking relevant news for {symbol}..."
     )
@@ -312,10 +230,6 @@ def _build_and_publish(
         f"[run] news data ready for {symbol}"
     )
 
-    # -----------------------------------------------------
-    # Basic market context
-    # -----------------------------------------------------
-
     market_context = (
         pick.get(
             "market_context"
@@ -323,10 +237,6 @@ def _build_and_publish(
         if pick
         else None
     )
-
-    # -----------------------------------------------------
-    # Advanced market data
-    # -----------------------------------------------------
 
     print(
         f"[run] collecting advanced market data "
@@ -343,10 +253,6 @@ def _build_and_publish(
         f"[run] advanced market data ready for {symbol}"
     )
 
-    # -----------------------------------------------------
-    # AI setup
-    # -----------------------------------------------------
-
     print(
         f"[run] generating AI setup for {symbol}..."
     )
@@ -359,16 +265,11 @@ def _build_and_publish(
         advanced_market_data,
     )
 
-    # Add symbol/timeframe for formatter.
     setup["symbol"] = symbol
 
     setup["timeframe"] = (
         cfg.KLINE_INTERVAL.upper()
     )
-
-    # -----------------------------------------------------
-    # Final post
-    # -----------------------------------------------------
 
     text = format_post_text(
         setup
@@ -378,12 +279,11 @@ def _build_and_publish(
         f"[run] final post generated for {symbol}"
     )
 
-    # -----------------------------------------------------
+    # -------------------------------------------------
     # DRY RUN
-    # -----------------------------------------------------
+    # -------------------------------------------------
 
     if cfg.DRY_RUN:
-
         print(
             "\n"
             + "=" * 60
@@ -412,11 +312,15 @@ def _build_and_publish(
 
         print()
 
-        return
+        # IMPORTANT:
+        # False means no real post happened.
+        # Therefore run_once() will NOT save this
+        # symbol into the daily posted list.
+        return False
 
-    # -----------------------------------------------------
+    # -------------------------------------------------
     # LIVE POST
-    # -----------------------------------------------------
+    # -------------------------------------------------
 
     print(
         f"[run] publishing {symbol} "
@@ -433,37 +337,26 @@ def _build_and_publish(
         f"-> {result.get('link')}"
     )
 
+    # True means the post was actually published.
+    return True
 
-# =========================================================
-# PICK DIVERSE COINS
-# =========================================================
 
 def _pick_diverse(
     shortlist,
     count,
 ):
-    """
-    Select unique symbols from the screener shortlist.
-    """
-
     seen = set()
-
     picks = []
 
     for item in shortlist:
-
         symbol = item["symbol"]
 
         if symbol in seen:
             continue
 
-        seen.add(
-            symbol
-        )
+        seen.add(symbol)
 
-        picks.append(
-            item
-        )
+        picks.append(item)
 
         if len(picks) >= count:
             break
@@ -471,12 +364,7 @@ def _pick_diverse(
     return picks
 
 
-# =========================================================
-# ENTRY POINT
-# =========================================================
-
 if __name__ == "__main__":
-
     run_mode = os.environ.get(
         "RUN_MODE",
         "once",
@@ -487,9 +375,6 @@ if __name__ == "__main__":
     )
 
     if run_mode == "cycle":
-
         run_cycle()
-
     else:
-
         run_once()
