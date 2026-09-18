@@ -7,16 +7,27 @@ Uses:
 - Technical indicators
 - Multi-timeframe support/resistance
 - BTC market context
-- Open Interest
-- OI change
-- Funding rate
-- Long/Short ratio
-- Recent liquidations
-- Orderbook imbalance
+- Advanced market data when available
 - Relevant news
 
-The AI is instructed to keep the final post concise,
-data-focused, and human-sounding.
+Final post format:
+COIN: SHORT TITLE?
+
+LONG SETUP — COIN
+
+Entry: $X–$Y
+Stop Loss: $X
+Take Profit: $X (2R)
+
+Key Levels: Support $X | Resistance $X
+
+Technical analysis.
+
+NEWS: Short relevant news headline/summary.
+
+Long $COIN 👆
+OR
+Short $COIN 👇
 """
 
 import json
@@ -27,74 +38,81 @@ from groq import Groq
 from src import bot_config as cfg
 
 
-# ---------------------------------------------------------
+# =========================================================
 # SYSTEM PROMPT
-# ---------------------------------------------------------
+# =========================================================
 
 SYSTEM_PROMPT = """
 You are a professional crypto market analyst writing short
 Binance Square educational market-analysis posts.
 
-Your writing must feel natural and human, not robotic or AI-generated.
+The writing must feel natural, human and concise.
 
-IMPORTANT:
+IMPORTANT RULES:
 - Do not tell readers to invest.
 - Do not promise profit.
 - Do not use exaggerated claims.
 - Do not fabricate news or market data.
-- Use only the data provided in the prompt.
-- If a data point is missing, simply do not mention it.
-- Keep the post concise.
+- Use ONLY the data provided.
+- If information is missing, do not invent it.
 - Focus mainly on the selected coin.
-- BTC should only be used as broader market context.
-- Avoid long explanations.
+- BTC is only broader market context.
+- Keep the post around 100–140 words when possible.
+- Do NOT generate hashtags.
+- Do NOT use emojis except the final directional emoji.
+- Do NOT use "NFA" or "DYOR".
+- Do NOT use "guaranteed".
+- Do NOT use "will definitely".
+- Do not make the post sound like AI-generated text.
+
+TITLE:
+Create a SHORT attention-grabbing title.
+
+Good examples:
+"NOTCOIN: MOMENTUM OR PULLBACK?"
+"ZEC: BREAKOUT OR FAKEOUT?"
+"AVAX: BULLS BACK IN CONTROL?"
+"ETH: MOMENTUM UNDER PRESSURE?"
+
+Avoid long titles.
 
 POST STRUCTURE:
 
-$COIN + short interesting title
+COIN: SHORT TITLE?
 
-LONG SETUP — $COIN
+LONG SETUP — COIN
 OR
-SHORT SETUP — $COIN
+SHORT SETUP — COIN
 
 Entry: $X–$Y
 Stop Loss: $X
-Take Profit: $X (L:2R / S:2R)
+Take Profit: $X (2R)
 
-Major Level: Support $X | Resistance $X
-
-📰 One short relevant news line, only if useful.
+Key Levels: Support $X | Resistance $X
 
 Technical analysis:
-2–3 natural sentences using the strongest indicators available.
+2–3 natural sentences using the strongest indicators.
+
+NEWS:
+One short relevant news headline/summary.
+Only include this when relevant news is actually supplied.
+Do not invent a headline.
 
 Market context:
-1–2 short sentences about BTC / market breadth / futures conditions.
+Only mention BTC or broader market conditions when useful.
 
+Final line:
 Long $COIN 👆
 OR
 Short $COIN 👇
 
-Exactly 4 hashtags.
-
-STYLE:
-- Short paragraphs.
-- No bullet-point analysis except the setup fields.
-- No unnecessary emojis.
-- No disclaimer section.
-- No "NFA".
-- No "DYOR".
-- No "guaranteed".
-- No "will definitely".
-- Avoid repeating the same sentence structure every time.
-- Use normal trader language.
-- Keep the final post roughly 100–140 words when possible.
+Do not add anything after the final directional line.
 """
 
 
-# ---------------------------------------------------------
+# =========================================================
 # GROQ CLIENT
-# ---------------------------------------------------------
+# =========================================================
 
 def _get_client():
     if not cfg.GROQ_API_KEY:
@@ -107,9 +125,9 @@ def _get_client():
     )
 
 
-# ---------------------------------------------------------
+# =========================================================
 # NUMBER HELPERS
-# ---------------------------------------------------------
+# =========================================================
 
 def _safe_float(value):
     try:
@@ -158,9 +176,9 @@ def _clean_text(value, max_length=500):
     return text[:max_length]
 
 
-# ---------------------------------------------------------
+# =========================================================
 # NEWS
-# ---------------------------------------------------------
+# =========================================================
 
 def _summarize_news(news):
     """
@@ -206,6 +224,7 @@ def _summarize_news(news):
         for item in news[:3]:
 
             if isinstance(item, str):
+
                 items.append(
                     _clean_text(
                         item,
@@ -245,11 +264,12 @@ def _summarize_news(news):
     return ""
 
 
-# ---------------------------------------------------------
-# BASIC INDICATOR SUMMARY
-# ---------------------------------------------------------
+# =========================================================
+# INDICATOR SUMMARY
+# =========================================================
 
 def _build_indicator_summary(indicators):
+
     if not indicators:
         return {}
 
@@ -259,7 +279,10 @@ def _build_indicator_summary(indicators):
         "rsi",
         "ema9",
         "ema21",
+        "ema50",
+        "ema200",
         "sma50",
+        "sma200",
         "macd",
         "macd_signal",
         "bollinger_upper",
@@ -286,50 +309,39 @@ def _build_indicator_summary(indicators):
     return result
 
 
-# ---------------------------------------------------------
+# =========================================================
 # ADVANCED DATA SUMMARY
-# ---------------------------------------------------------
+# =========================================================
 
 def _build_advanced_summary(advanced):
+
     if not advanced:
         return {}
 
     result = {}
 
-    # -----------------------------
     # Multi-timeframe S/R
-    # -----------------------------
-
     sr = advanced.get(
         "multi_timeframe_sr"
     )
 
     if sr:
-
         result["multi_timeframe_sr"] = sr
 
-    # -----------------------------
     # BTC context
-    # -----------------------------
-
     btc = advanced.get(
         "btc_context"
     )
 
     if btc:
-
         result["btc_context"] = btc
 
-    # -----------------------------
     # Open Interest
-    # -----------------------------
-
     oi = advanced.get(
         "open_interest"
     )
 
     if oi is not None:
-
         result["open_interest"] = oi
 
     oi_change = advanced.get(
@@ -337,81 +349,58 @@ def _build_advanced_summary(advanced):
     )
 
     if oi_change is not None:
-
         result["oi_change_1h_pct"] = oi_change
 
-    # -----------------------------
     # Funding
-    # -----------------------------
-
     funding = advanced.get(
         "funding_rate"
     )
 
     if funding is not None:
-
         result["funding_rate"] = funding
 
-    # -----------------------------
     # Long / Short
-    # -----------------------------
-
     long_short = advanced.get(
         "long_short_ratio"
     )
 
     if long_short:
+        result["long_short_ratio"] = long_short
 
-        result["long_short_ratio"] = (
-            long_short
-        )
-
-    # -----------------------------
     # Liquidations
-    # -----------------------------
-
     liquidations = advanced.get(
         "liquidations"
     )
 
     if liquidations:
+        result["liquidations"] = liquidations
 
-        result["liquidations"] = (
-            liquidations
-        )
-
-    # -----------------------------
     # Orderbook
-    # -----------------------------
-
     orderbook = advanced.get(
         "orderbook"
     )
 
     if orderbook:
-
-        result["orderbook"] = (
-            orderbook
-        )
+        result["orderbook"] = orderbook
 
     return result
 
 
-# ---------------------------------------------------------
+# =========================================================
 # MAJOR SUPPORT / RESISTANCE
-# ---------------------------------------------------------
+# =========================================================
 
 def _select_major_levels(
     indicators,
     advanced_market_data,
 ):
     """
-    Select the most useful support/resistance levels.
+    Select useful support/resistance levels.
 
     Priority:
     4H -> 1D -> 1W -> 1H -> 15M
 
-    Falls back to indicator-based levels.
+    Falls back to indicator levels.
     """
 
     priority = [
@@ -475,9 +464,9 @@ def _select_major_levels(
     }
 
 
-# ---------------------------------------------------------
+# =========================================================
 # RISK / REWARD
-# ---------------------------------------------------------
+# =========================================================
 
 def _apply_risk_reward(
     direction,
@@ -486,10 +475,7 @@ def _apply_risk_reward(
     atr,
 ):
     """
-    Build a conservative 2R target using ATR.
-
-    The AI can still refine the setup,
-    but this provides a numerical baseline.
+    Build a numerical 2R baseline using ATR.
     """
 
     entry_low = _safe_float(
@@ -555,9 +541,9 @@ def _apply_risk_reward(
     }
 
 
-# ---------------------------------------------------------
+# =========================================================
 # GENERATE SETUP
-# ---------------------------------------------------------
+# =========================================================
 
 def generate_setup(
     symbol,
@@ -567,7 +553,7 @@ def generate_setup(
     advanced_market_data=None,
 ):
     """
-    Ask the AI to generate one complete setup.
+    Ask Groq to generate one complete setup.
     """
 
     client = _get_client()
@@ -630,48 +616,50 @@ DATA:
 TASK:
 
 1. Decide whether the technical structure is more suitable
-   for LONG or SHORT based on the supplied data.
+   for LONG or SHORT.
 
 2. Create a realistic entry range.
 
 3. Create a stop loss.
 
-4. Create a 2R take-profit level.
+4. Create a 2R take-profit.
 
-5. Identify the most useful support and resistance.
+5. Identify useful support and resistance.
 
-6. Mention only the strongest technical signals.
-   Prefer 3–5 indicators.
+6. Use only the strongest 3–5 technical signals.
 
 7. Use OI, funding, long/short ratio, liquidation or
-   orderbook data only when they add useful context.
+   orderbook data only if supplied and useful.
 
-8. Mention BTC only in the market-context section.
+8. Use BTC only as broader market context.
 
-9. Mention news only if it is actually relevant.
+9. NEWS RULE:
+   If relevant news is supplied, create a short NEWS headline
+   using ONLY that supplied information.
 
-10. Keep the final post around 100–140 words.
+   If no relevant news is supplied:
+   return an empty news_line.
+
+10. Create a SHORT attention-grabbing title.
+
+11. Do NOT generate hashtags.
+
+12. Keep the final content around 100–140 words.
 
 Return JSON only:
 
 {{
   "direction": "LONG or SHORT",
-  "title": "short natural title",
+  "title": "SHORT ATTENTION-GRABBING TITLE",
   "entry_low": 0,
   "entry_high": 0,
   "stop_loss": 0,
   "take_profit": 0,
   "support": 0,
   "resistance": 0,
-  "news_line": "short news line or empty",
-  "technical_analysis": "2-3 sentences",
-  "market_context": "1-2 sentences",
-  "hashtags": [
-    "#COIN",
-    "#CryptoTrading",
-    "#TechnicalAnalysis",
-    "#Crypto"
-  ]
+  "news_line": "short verified news headline or empty",
+  "technical_analysis": "2-3 natural sentences",
+  "market_context": "1-2 short sentences"
 }}
 """
 
@@ -706,6 +694,7 @@ Return JSON only:
     )
 
     try:
+
         setup = json.loads(
             content
         )
@@ -717,9 +706,9 @@ Return JSON only:
             f"{err}\nResponse: {content}"
         )
 
-    # -----------------------------------------------------
-    # Validate direction
-    # -----------------------------------------------------
+    # =====================================================
+    # DIRECTION
+    # =====================================================
 
     direction = str(
         setup.get(
@@ -736,9 +725,9 @@ Return JSON only:
 
     setup["direction"] = direction
 
-    # -----------------------------------------------------
-    # Entry
-    # -----------------------------------------------------
+    # =====================================================
+    # ENTRY
+    # =====================================================
 
     entry_low = _safe_float(
         setup.get(
@@ -753,6 +742,7 @@ Return JSON only:
     )
 
     if entry_low is None:
+
         entry_low = _safe_float(
             indicators.get(
                 "current_price"
@@ -760,6 +750,7 @@ Return JSON only:
         )
 
     if entry_low is None:
+
         entry_low = _safe_float(
             indicators.get(
                 "price"
@@ -767,14 +758,15 @@ Return JSON only:
         )
 
     if entry_high is None:
+
         entry_high = entry_low
 
-    # Ensure correct ordering.
     if (
         entry_low is not None
         and entry_high is not None
         and entry_low > entry_high
     ):
+
         entry_low, entry_high = (
             entry_high,
             entry_low,
@@ -783,9 +775,9 @@ Return JSON only:
     setup["entry_low"] = entry_low
     setup["entry_high"] = entry_high
 
-    # -----------------------------------------------------
-    # ATR fallback
-    # -----------------------------------------------------
+    # =====================================================
+    # ATR FALLBACK
+    # =====================================================
 
     atr = _safe_float(
         indicators.get(
@@ -800,8 +792,6 @@ Return JSON only:
         atr,
     )
 
-    # If AI didn't provide usable values,
-    # use calculated ATR-based levels.
     ai_stop = _safe_float(
         setup.get(
             "stop_loss"
@@ -815,22 +805,24 @@ Return JSON only:
     )
 
     if ai_stop is None:
+
         ai_stop = risk_data[
             "stop_loss"
         ]
 
     if ai_target is None:
+
         ai_target = risk_data[
             "take_profit"
         ]
 
     setup["stop_loss"] = ai_stop
     setup["take_profit"] = ai_target
-    setup["rr"] = risk_data["rr"]
+    setup["rr"] = 2
 
-    # -----------------------------------------------------
-    # Major levels
-    # -----------------------------------------------------
+    # =====================================================
+    # MAJOR LEVELS
+    # =====================================================
 
     if setup.get(
         "support"
@@ -852,17 +844,43 @@ Return JSON only:
             ]
         )
 
-    # -----------------------------------------------------
-    # Clean text fields
-    # -----------------------------------------------------
+    # =====================================================
+    # CLEAN TEXT
+    # =====================================================
 
-    setup["title"] = _clean_text(
+    coin = symbol.replace(
+        "USDT",
+        "",
+    )
+
+    title = _clean_text(
         setup.get(
             "title",
-            f"{symbol} Market Setup",
+            f"{coin}: MARKET SETUP?",
         ),
-        120,
+        100,
     )
+
+    # Remove accidental hashtags from title.
+    title = re.sub(
+        r"#\w+",
+        "",
+        title,
+    ).strip()
+
+    # Remove accidental "$COIN" from title
+    # because formatter adds the coin name.
+    title = re.sub(
+        rf"^\$?{re.escape(coin)}\s*[:\-]?\s*",
+        "",
+        title,
+        flags=re.IGNORECASE,
+    ).strip()
+
+    if not title:
+        title = "MOMENTUM OR PULLBACK?"
+
+    setup["title"] = title
 
     setup["news_line"] = _clean_text(
         setup.get(
@@ -888,82 +906,42 @@ Return JSON only:
         400,
     )
 
-    # -----------------------------------------------------
-    # Hashtags
-    # -----------------------------------------------------
+    # =====================================================
+    # REMOVE HASHTAGS COMPLETELY
+    # =====================================================
 
-    hashtags = setup.get(
-        "hashtags",
-        [],
-    )
-
-    if not isinstance(
-        hashtags,
-        list,
-    ):
-        hashtags = []
-
-    cleaned_hashtags = []
-
-    for tag in hashtags:
-
-        tag = str(tag).strip()
-
-        if not tag:
-            continue
-
-        if not tag.startswith("#"):
-            tag = "#" + tag
-
-        if tag not in cleaned_hashtags:
-            cleaned_hashtags.append(
-                tag
-            )
-
-    # Guarantee coin hashtag.
-    coin_tag = (
-        "#" + symbol.replace(
-            "USDT",
-            "",
-        )
-    )
-
-    if coin_tag not in cleaned_hashtags:
-        cleaned_hashtags.insert(
-            0,
-            coin_tag,
-        )
-
-    default_tags = [
-        "#CryptoTrading",
-        "#TechnicalAnalysis",
-        "#Crypto",
-    ]
-
-    for tag in default_tags:
-
-        if len(cleaned_hashtags) >= 4:
-            break
-
-        if tag not in cleaned_hashtags:
-            cleaned_hashtags.append(
-                tag
-            )
-
-    setup["hashtags"] = (
-        cleaned_hashtags[:4]
-    )
+    setup["hashtags"] = []
 
     return setup
 
 
-# ---------------------------------------------------------
+# =========================================================
 # FORMAT FINAL BINANCE SQUARE POST
-# ---------------------------------------------------------
+# =========================================================
 
 def format_post_text(setup):
     """
-    Convert setup JSON into the final short Binance Square post.
+    Convert setup JSON into the final Binance Square format.
+
+    Example:
+
+    NOT: MOMENTUM OR PULLBACK?
+
+    LONG SETUP — NOT
+
+    Entry: $0.000471–$0.000474
+    Stop Loss: $0.000469
+    Take Profit: $0.000478 (2R)
+
+    Key Levels: Support $0.000471 | Resistance $0.000475
+
+    Price is holding above EMA9, EMA21 and SMA50,
+    keeping the short-term structure constructive.
+
+    NEWS: TON ecosystem momentum has recently supported NOT
+    sentiment.
+
+    Long $NOT 👆
     """
 
     symbol = setup.get(
@@ -971,14 +949,14 @@ def format_post_text(setup):
         "",
     )
 
+    coin = symbol.replace(
+        "USDT",
+        "",
+    )
+
     direction = setup.get(
         "direction",
         "LONG",
-    )
-
-    title = setup.get(
-        "title",
-        f"{symbol} Market Setup",
     )
 
     entry_low = _format_price(
@@ -1032,72 +1010,99 @@ def format_post_text(setup):
         "",
     ).strip()
 
-    rr_label = (
-        "L:2R"
-        if direction == "LONG"
-        else "S:2R"
-    )
+    # -----------------------------------------------------
+    # TITLE
+    # -----------------------------------------------------
 
-    direction_line = (
-        f"LONG SETUP — ${symbol.replace('USDT', '')}"
-        if direction == "LONG"
-        else f"SHORT SETUP — ${symbol.replace('USDT', '')}"
-    )
+    title = setup.get(
+        "title",
+        "MOMENTUM OR PULLBACK?",
+    ).strip()
 
-    action_line = (
-        f"Long ${symbol.replace('USDT', '')} 👆"
-        if direction == "LONG"
-        else f"Short ${symbol.replace('USDT', '')} 👇"
-    )
+    title = re.sub(
+        r"#\w+",
+        "",
+        title,
+    ).strip()
 
-    hashtags = " ".join(
-        setup.get(
-            "hashtags",
-            [],
-        )[:4]
-    )
+    title = re.sub(
+        rf"^\$?{re.escape(coin)}\s*[:\-]?\s*",
+        "",
+        title,
+        flags=re.IGNORECASE,
+    ).strip()
+
+    if not title:
+        title = "MOMENTUM OR PULLBACK?"
+
+    # -----------------------------------------------------
+    # DIRECTION
+    # -----------------------------------------------------
+
+    if direction == "LONG":
+
+        direction_line = (
+            f"LONG SETUP — {coin}"
+        )
+
+        action_line = (
+            f"Long ${coin} 👆"
+        )
+
+    else:
+
+        direction_line = (
+            f"SHORT SETUP — {coin}"
+        )
+
+        action_line = (
+            f"Short ${coin} 👇"
+        )
+
+    # -----------------------------------------------------
+    # BUILD POST
+    # -----------------------------------------------------
 
     lines = []
 
+    # Short title
     lines.append(
-        f"${symbol.replace('USDT', '')} {title}"
+        f"{coin}: {title}"
     )
 
     lines.append("")
 
+    # Setup
     lines.append(
         direction_line
     )
 
     lines.append("")
 
+    # Entry
     lines.append(
         f"Entry: ${entry_low}–${entry_high}"
     )
 
+    # Stop
     lines.append(
         f"Stop Loss: ${stop_loss}"
     )
 
+    # Take profit
     lines.append(
-        f"Take Profit: ${take_profit} ({rr_label})"
+        f"Take Profit: ${take_profit} (2R)"
     )
 
     lines.append("")
 
+    # Key levels
     lines.append(
-        f"Major Level: Support ${support} | "
+        f"Key Levels: Support ${support} | "
         f"Resistance ${resistance}"
     )
 
-    if news_line:
-
-        lines.append("")
-
-        lines.append(
-            f"📰 {news_line}"
-        )
-
+    # Technical analysis
     if technical:
 
         lines.append("")
@@ -1106,6 +1111,16 @@ def format_post_text(setup):
             technical
         )
 
+    # News
+    if news_line:
+
+        lines.append("")
+
+        lines.append(
+            f"NEWS: {news_line}"
+        )
+
+    # Market context
     if market:
 
         lines.append("")
@@ -1116,22 +1131,47 @@ def format_post_text(setup):
 
     lines.append("")
 
+    # Final action line
     lines.append(
         action_line
-    )
-
-    lines.append("")
-
-    lines.append(
-        hashtags
     )
 
     text = "\n".join(
         lines
     ).strip()
 
-    # Binance character safety.
+    # -----------------------------------------------------
+    # REMOVE ANY ACCIDENTAL HASHTAGS
+    # -----------------------------------------------------
+
+    text = re.sub(
+        r"[ \t]+#\w+",
+        "",
+        text,
+    )
+
+    text = re.sub(
+        r"\n+#\w+",
+        "",
+        text,
+    )
+
+    # -----------------------------------------------------
+    # CLEAN EXTRA BLANK LINES
+    # -----------------------------------------------------
+
+    text = re.sub(
+        r"\n{3,}",
+        "\n\n",
+        text,
+    ).strip()
+
+    # -----------------------------------------------------
+    # BINANCE CHARACTER SAFETY
+    # -----------------------------------------------------
+
     if len(text) > cfg.CHAR_LIMIT:
+
         text = text[
             :cfg.CHAR_LIMIT
         ].rstrip()
