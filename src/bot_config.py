@@ -95,3 +95,17 @@ MAX_POSTS_PER_DAY = int(os.environ.get("TRADE_MAX_POSTS_PER_DAY", "20"))
 # screener shortlist (instead of always the #1) so consecutive runs aren't
 # always the same coin.
 PICK_FROM_TOP_N = int(os.environ.get("TRADE_PICK_FROM_TOP_N", "10"))
+
+# Risk sizing: SL is placed at ATR_MULTIPLIER x ATR(14) away from entry —
+# proportionate to the coin's actual recent volatility, instead of a
+# freeform AI guess (which tended to produce unrealistically wide stops).
+ATR_MULTIPLIER = float(os.environ.get("ATR_MULTIPLIER", "1.5"))
+# Reward is this multiple of the risk distance — randomly 2x or 3x each
+# post, so posts don't all look identical.
+RISK_REWARD_CHOICES = [2, 3]
+
+# News (reuses your existing FINNHUB_API_KEY from config.py if present)
+try:
+    FINNHUB_API_KEY = base_config.FINNHUB_API_KEY
+except (NameError, AttributeError):
+    FINNHUB_API_KEY = os.environ.get("FINNHUB_API_KEY", "")
