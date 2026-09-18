@@ -17,7 +17,7 @@ POLL_INTERVAL_MINUTES = int(os.environ.get("POLL_INTERVAL_MINUTES", "10"))
 # Kept deliberately conservative: real human creators rarely post more than
 # a handful of times a day. Posting too often (even under Binance's 100/day
 # hard cap) can itself look bot-like to the recommendation algorithm.
-MAX_POSTS_PER_DAY = int(os.environ.get("MAX_POSTS_PER_DAY", "6"))
+MAX_POSTS_PER_DAY = int(os.environ.get("MAX_POSTS_PER_DAY", "60"))
 
 # Randomized delay range (minutes) added on top of POLL_INTERVAL_MINUTES,
 # so posts don't land on a suspiciously exact, machine-like schedule.
