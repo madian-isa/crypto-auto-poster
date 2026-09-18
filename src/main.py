@@ -1,18 +1,17 @@
-```python
 """
 main.py
 
-Single-run mode: each invocation of `python main.py` builds and publishes
-ONE trade-setup post, then exits. A scheduler (GitHub Actions cron) re-runs
-this every ~20 minutes.
+Single-run mode:
+Each invocation of `python -m src.main` builds and publishes
+ONE trade-setup post, then exits.
 
 Daily rules:
 - Maximum posts per day are controlled by cfg.MAX_POSTS_PER_DAY.
 - The same crypto symbol can be posted only ONCE per day.
-- A new day resets the daily symbol history.
+- A new UTC day resets the daily symbol history.
 
-For local testing without a scheduler, RUN_MODE=cycle still runs the old
-3-posts-with-sleep behavior.
+For local testing:
+RUN_MODE=cycle can still run the older multi-post cycle.
 """
 
 import os
@@ -23,8 +22,13 @@ import traceback
 from src import bot_config as cfg
 from src.screener import get_screener_shortlist
 from src.indicators import fetch_klines, compute_indicators
-from src.setup_generator import generate_setup, format_post_text
-from src.advanced_market_data import get_advanced_market_data
+from src.setup_generator import (
+    generate_setup,
+    format_post_text,
+)
+from src.advanced_market_data import (
+    get_advanced_market_data,
+)
 from src.news import get_relevant_news
 from src.square_post_ext import post_text_v2
 from src.state import (
@@ -35,35 +39,54 @@ from src.state import (
 )
 
 
+# =========================================================
+# RUN ONCE
+# =========================================================
+
 def run_once():
-    """Post exactly one setup while respecting:
-    1. The daily post cap.
-    2. The rule that each crypto can appear only once per day.
+    """
+    Build and publish exactly one setup.
+
+    Rules:
+    1. Respect daily post limit.
+    2. Do not post the same symbol twice in one day.
     """
 
     state = load_state()
 
-    # Check daily maximum
+    # -----------------------------------------------------
+    # Daily limit
+    # -----------------------------------------------------
+
     if not can_post_more_today(state):
+
         print(
             f"[run_once] daily cap reached "
-            f"({cfg.MAX_POSTS_PER_DAY}) — skipping this run."
+            f"({cfg.MAX_POSTS_PER_DAY}) "
+            f"— skipping this run."
         )
+
         return
+
+    # -----------------------------------------------------
+    # Screener
+    # -----------------------------------------------------
 
     shortlist = get_screener_shortlist()
 
     if not shortlist:
+
         print(
-            "[run_once] screener returned nothing — skipping."
+            "[run_once] screener returned nothing "
+            "— skipping."
         )
+
         return
 
-    # Use the ENTIRE screener shortlist.
-    # Do not limit selection to PICK_FROM_TOP_N here.
-    candidates = shortlist
+    # -----------------------------------------------------
+    # Remove coins already posted today
+    # -----------------------------------------------------
 
-    # Only use coins that have NOT been posted today.
     posted_today = set(
         state.get(
             "posted_symbols_today",
@@ -72,43 +95,52 @@ def run_once():
     )
 
     fresh = [
-        c
-        for c in candidates
-        if c["symbol"] not in posted_today
+        item
+        for item in shortlist
+        if item["symbol"] not in posted_today
     ]
 
-    # If every available candidate was already posted today,
-    # skip this run instead of reposting any coin.
     if not fresh:
+
         print(
-            "[run_once] all current candidates were already "
-            "posted today — skipping this run."
+            "[run_once] all current candidates were "
+            "already posted today — skipping this run."
         )
+
         return
 
-    # Randomize fresh candidates so the same top-ranked coin
-    # does not always get selected first.
+    # Randomize candidates so the same coin is not
+    # always selected when several are available.
     pool = fresh.copy()
+
     random.shuffle(pool)
 
+    # -----------------------------------------------------
+    # Try candidates
+    # -----------------------------------------------------
+
     for pick in pool:
+
         symbol = pick["symbol"]
 
-        # Extra safety check before building/posting.
         if symbol in posted_today:
+
             print(
                 f"[run_once] {symbol} already posted today "
-                f"— skipping."
+                "— skipping."
             )
+
             continue
 
         try:
+
             _build_and_publish(
                 symbol,
                 pick,
             )
 
-            # Only record the symbol AFTER successful completion.
+            # Record only after the build/publish function
+            # completes successfully.
             state = record_post(
                 state,
                 symbol,
@@ -118,30 +150,40 @@ def run_once():
 
             print(
                 f"[run_once] {symbol} recorded "
-                f"as posted today."
+                "as posted today."
             )
 
             return
 
         except Exception as err:
+
             print(
-                f"[run_once] {symbol} failed, "
-                f"trying next candidate: {err}"
+                f"[run_once] {symbol} failed: {err}"
             )
 
             traceback.print_exc()
 
+            print(
+                "[run_once] trying next candidate..."
+            )
+
             continue
 
     print(
-        "[run_once] every fresh candidate failed this run "
-        "— nothing posted."
+        "[run_once] every fresh candidate failed "
+        "this run — nothing posted."
     )
 
 
+# =========================================================
+# OLD CYCLE MODE
+# =========================================================
+
 def run_cycle():
-    """Old behavior, kept for local testing: 3 posts, 20 min apart, in one
-    long-lived process. Not what the GitHub Actions workflow uses.
+    """
+    Old multi-post mode for local testing.
+
+    GitHub Actions should normally use RUN_MODE=once.
     """
 
     mode = (
@@ -156,21 +198,32 @@ def run_cycle():
 
     shortlist = get_screener_shortlist()
 
+    if not shortlist:
+
+        print(
+            "[cycle] screener returned nothing."
+        )
+
+        return
+
     picks = _pick_diverse(
         shortlist,
         cfg.POSTS_PER_CYCLE,
     )
 
     for i, pick in enumerate(picks):
+
         symbol = pick["symbol"]
 
         try:
+
             _build_and_publish(
                 symbol,
                 pick,
             )
 
         except Exception as err:
+
             print(
                 f"[cycle] skipping {symbol}: {err}"
             )
@@ -182,6 +235,7 @@ def run_cycle():
         )
 
         if not is_last:
+
             print(
                 f"[cycle] waiting "
                 f"{cfg.MINUTES_BETWEEN_POSTS} "
@@ -192,66 +246,92 @@ def run_cycle():
                 cfg.MINUTES_BETWEEN_POSTS * 60
             )
 
-    print("[cycle] done")
+    print(
+        "[cycle] done"
+    )
 
+
+# =========================================================
+# BUILD + PUBLISH
+# =========================================================
 
 def _build_and_publish(
     symbol: str,
     pick=None,
 ):
     """
-    Build one complete trade setup.
+    Complete analysis pipeline:
 
-    Data flow:
     1. Binance klines
     2. Technical indicators
     3. Relevant news
-    4. Basic BTC / market context
+    4. Basic market context
     5. Advanced market data
-    6. AI-generated setup
-    7. Final Binance Square post
+    6. AI setup generation
+    7. Binance Square formatting
+    8. Publish or DRY RUN
     """
 
-    # ---------------------------------------------------------
-    # 1. Get candle data
-    # ---------------------------------------------------------
+    print(
+        f"\n[run] starting analysis for {symbol}"
+    )
+
+    # -----------------------------------------------------
+    # Technical data
+    # -----------------------------------------------------
+
+    print(
+        f"[run] fetching technical data for {symbol}..."
+    )
 
     klines_df = fetch_klines(
         symbol
     )
 
-    # ---------------------------------------------------------
-    # 2. Calculate technical indicators
-    # ---------------------------------------------------------
-
     indicators = compute_indicators(
         klines_df
     )
 
-    # ---------------------------------------------------------
-    # 3. Get real relevant news
-    # ---------------------------------------------------------
+    print(
+        f"[run] technical indicators ready for {symbol}"
+    )
+
+    # -----------------------------------------------------
+    # News
+    # -----------------------------------------------------
+
+    print(
+        f"[run] checking relevant news for {symbol}..."
+    )
 
     news = get_relevant_news(
         symbol
     )
 
-    # None if nothing real found.
-    # News must never be fabricated.
+    print(
+        f"[run] news data ready for {symbol}"
+    )
 
-    # ---------------------------------------------------------
-    # 4. Basic market context from screener
-    # ---------------------------------------------------------
+    # -----------------------------------------------------
+    # Basic market context
+    # -----------------------------------------------------
 
     market_context = (
-        pick.get("market_context")
+        pick.get(
+            "market_context"
+        )
         if pick
         else None
     )
 
-    # ---------------------------------------------------------
-    # 5. Advanced market data
-    # ---------------------------------------------------------
+    # -----------------------------------------------------
+    # Advanced market data
+    # -----------------------------------------------------
+
+    print(
+        f"[run] collecting advanced market data "
+        f"for {symbol}..."
+    )
 
     advanced_market_data = (
         get_advanced_market_data(
@@ -259,19 +339,17 @@ def _build_and_publish(
         )
     )
 
-    # Advanced data includes:
-    # - 15M / 1H / 4H / 1D / 1W support/resistance
-    # - BTC 4H / 1D trend
-    # - Symbol open interest
-    # - OI change
-    # - Funding rate
-    # - Long/short ratio
-    # - Recent liquidation activity
-    # - Order-book liquidity
+    print(
+        f"[run] advanced market data ready for {symbol}"
+    )
 
-    # ---------------------------------------------------------
-    # 6. Generate AI trade setup
-    # ---------------------------------------------------------
+    # -----------------------------------------------------
+    # AI setup
+    # -----------------------------------------------------
+
+    print(
+        f"[run] generating AI setup for {symbol}..."
+    )
 
     setup = generate_setup(
         symbol,
@@ -281,56 +359,69 @@ def _build_and_publish(
         advanced_market_data,
     )
 
-    # ---------------------------------------------------------
-    # 7. Never trust the model to echo the symbol correctly
-    # ---------------------------------------------------------
-
+    # Add symbol/timeframe for formatter.
     setup["symbol"] = symbol
 
     setup["timeframe"] = (
         cfg.KLINE_INTERVAL.upper()
     )
 
-    # ---------------------------------------------------------
-    # 8. Format final Binance Square post
-    # ---------------------------------------------------------
+    # -----------------------------------------------------
+    # Final post
+    # -----------------------------------------------------
 
     text = format_post_text(
         setup
     )
 
-    # ---------------------------------------------------------
-    # 9. Dry run or real posting
-    # ---------------------------------------------------------
+    print(
+        f"[run] final post generated for {symbol}"
+    )
+
+    # -----------------------------------------------------
+    # DRY RUN
+    # -----------------------------------------------------
 
     if cfg.DRY_RUN:
 
         print(
-            f"\n[DRY RUN] would post for "
-            f"{symbol} "
-            f"({setup['direction']}):"
+            "\n"
+            + "=" * 60
         )
 
         print(
-            "-" * 40
-        )
-
-        print(text)
-
-        print(
-            "-" * 40
+            f"[DRY RUN] {symbol}"
         )
 
         print(
-            "[DRY RUN] nothing posted "
-            "to Binance Square.\n"
+            "=" * 60
         )
+
+        print(
+            text
+        )
+
+        print(
+            "=" * 60
+        )
+
+        print(
+            "[DRY RUN] Nothing was posted "
+            "to Binance Square."
+        )
+
+        print()
 
         return
 
-    # ---------------------------------------------------------
-    # 10. Publish to Binance Square
-    # ---------------------------------------------------------
+    # -----------------------------------------------------
+    # LIVE POST
+    # -----------------------------------------------------
+
+    print(
+        f"[run] publishing {symbol} "
+        "to Binance Square..."
+    )
 
     result = post_text_v2(
         text
@@ -338,18 +429,21 @@ def _build_and_publish(
 
     print(
         f"[run] published {symbol} "
-        f"({setup['direction']}) "
+        f"({setup.get('direction', 'UNKNOWN')}) "
         f"-> {result.get('link')}"
     )
 
+
+# =========================================================
+# PICK DIVERSE COINS
+# =========================================================
 
 def _pick_diverse(
     shortlist,
     count,
 ):
     """
-    Pick unique symbols from the shortlist.
-    Used only by RUN_MODE=cycle.
+    Select unique symbols from the screener shortlist.
     """
 
     seen = set()
@@ -358,33 +452,44 @@ def _pick_diverse(
 
     for item in shortlist:
 
-        if item["symbol"] in seen:
+        symbol = item["symbol"]
+
+        if symbol in seen:
             continue
 
         seen.add(
-            item["symbol"]
+            symbol
         )
 
         picks.append(
             item
         )
 
-        if len(picks) == count:
+        if len(picks) >= count:
             break
 
     return picks
 
 
+# =========================================================
+# ENTRY POINT
+# =========================================================
+
 if __name__ == "__main__":
 
-    if os.environ.get(
+    run_mode = os.environ.get(
         "RUN_MODE",
         "once",
-    ) == "cycle":
+    ).lower()
+
+    print(
+        f"[main] RUN_MODE={run_mode}"
+    )
+
+    if run_mode == "cycle":
 
         run_cycle()
 
     else:
 
         run_once()
-```
