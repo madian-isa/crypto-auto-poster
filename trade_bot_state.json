@@ -1,6 +1,6 @@
 {
   "date": "2026-09-18",
-  "count": 53,
+  "count": 54,
   "recent_symbols": [
     "WLDUSDT",
     "JUPUSDT",
@@ -39,6 +39,7 @@
     "AVAXUSDT",
     "NOTUSDT",
     "LTCUSDT",
-    "XRPUSDT"
+    "XRPUSDT",
+    "ICPUSDT"
   ]
 }
