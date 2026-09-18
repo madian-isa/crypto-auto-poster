@@ -25,7 +25,7 @@ GROQ_MODEL = os.environ.get("GROQ_MODEL", "openai/gpt-oss-120b")
 BINANCE_FAPI_BASE = "https://data-api.binance.vision"
 
 # Screener
-SCREENER_SHORTLIST_SIZE = int(os.environ.get("SCREENER_SHORTLIST_SIZE", "25"))
+SCREENER_SHORTLIST_SIZE = int(os.environ.get("SCREENER_SHORTLIST_SIZE", "100"))
 EXCLUDE_SYMBOLS = {"USDCUSDT", "FDUSDUSDT", "TUSDUSDT", "BUSDUSDT"}
 
 # Market data comes from Binance's SPOT mirror (data-api.binance.vision) to
