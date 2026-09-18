@@ -31,7 +31,7 @@ jobs:
           BINANCE_SQUARE_OPENAPI_KEY: ${{ secrets.BINANCE_SQUARE_OPENAPI_KEY }}
           FINNHUB_API_KEY: ${{ secrets.FINNHUB_API_KEY }}
           DRY_RUN: ${{ vars.DRY_RUN || 'true' }}
-          TRADE_MAX_POSTS_PER_DAY: ${{ vars.TRADE_MAX_POSTS_PER_DAY || '20' }}
+          TRADE_MAX_POSTS_PER_DAY: ${{ vars.TRADE_MAX_POSTS_PER_DAY || '70' }}
         run: python -m src.main
 
       - name: Commit updated state file
