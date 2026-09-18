@@ -33,6 +33,23 @@
       "technical_analysis": "Price sits comfortably above the EMA9 (0.000470) and EMA21 (0.000465), and the SMA50 (0.000451) is also in bullish territory. The stochastic is deep in overbought territory (K 92.3, D 74.4), hinting at a possible pull‑back but still supporting momentum. MACD lines are flat with a tiny negative histogram, suggesting limited downside pressure.",
       "market_context": "BTC is up about 5.8% in the last 24 hours and the broader market shows a 93.8% green bias, keeping overall sentiment bullish.",
       "result": "PENDING"
+    },
+    {
+      "id": 3,
+      "created_at": "2026-09-18T19:11:36.334463+00:00",
+      "symbol": "LTCUSDT",
+      "direction": "LONG",
+      "title": "BULLISH EDGE?",
+      "entry_low": 56.85,
+      "entry_high": 57.0,
+      "stop_loss": 56.7,
+      "take_profit": 57.15,
+      "support": 56.82,
+      "resistance": 57.1,
+      "news_line": "",
+      "technical_analysis": "LTC trades above its EMA9 (56.21), EMA21 (55.45) and SMA50 (53.76), indicating a clear uptrend. The MACD is positive (0.82) and above its signal line (0.74), adding bullish momentum. Although the stochastic is in overbought territory (96/93), the price remains firm near resistance, suggesting room for a short‑term push higher.",
+      "market_context": "BTC is up about 6% and the broader market is broadly positive, supporting risk‑on sentiment.",
+      "result": "PENDING"
     }
   ]
 }
