@@ -13,8 +13,7 @@ Daily rules:
 Backtest collection:
 - When DRY_RUN=true, generated setups are saved to
   backtest_setups.json.
-- Advanced market data is skipped during DRY_RUN
-  to keep baseline backtest collection fast.
+- Advanced market data is DISABLED for now.
 - TP/SL result checking will be added in Step 3.
 
 For local testing:
@@ -32,9 +31,6 @@ from src.indicators import fetch_klines, compute_indicators
 from src.setup_generator import (
     generate_setup,
     format_post_text,
-)
-from src.advanced_market_data import (
-    get_advanced_market_data,
 )
 from src.news import get_relevant_news
 from src.square_post_ext import post_text_v2
@@ -247,36 +243,27 @@ def _build_and_publish(
     )
 
     # -------------------------------------------------
-    # ADVANCED MARKET DATA
+    # ADVANCED MARKET DATA DISABLED
     # -------------------------------------------------
-    # Skip advanced data during DRY RUN so that the
-    # baseline backtest collection remains fast.
-    # Advanced data will be used later in Step 4.
+    # Binance Futures API is currently returning HTTP 451
+    # from GitHub Actions.
+    #
+    # Advanced data such as:
+    # - Open Interest
+    # - Funding Rate
+    # - Long/Short Ratio
+    # - Liquidations
+    # - Order Book
+    #
+    # will be added again later after a reliable data
+    # source is selected.
     # -------------------------------------------------
 
-    if cfg.DRY_RUN:
-        print(
-            f"[run] DRY RUN — skipping advanced market data "
-            f"for {symbol}"
-        )
+    print(
+        f"[run] advanced market data disabled for {symbol}"
+    )
 
-        advanced_market_data = None
-
-    else:
-        print(
-            f"[run] collecting advanced market data "
-            f"for {symbol}..."
-        )
-
-        advanced_market_data = (
-            get_advanced_market_data(
-                symbol
-            )
-        )
-
-        print(
-            f"[run] advanced market data ready for {symbol}"
-        )
+    advanced_market_data = None
 
     print(
         f"[run] generating AI setup for {symbol}..."
