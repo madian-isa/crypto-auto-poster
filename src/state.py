@@ -1,4 +1,3 @@
-```python
 """
 state.py
 
@@ -46,7 +45,6 @@ def load_state() -> dict:
 
     today = _today_str()
 
-    # New day → reset daily count and symbol history.
     if state.get("date") != today:
         state = {
             "date": today,
@@ -54,7 +52,6 @@ def load_state() -> dict:
             "posted_symbols_today": [],
         }
 
-    # Ensure required fields exist.
     state.setdefault("date", today)
     state.setdefault("count", 0)
     state.setdefault("posted_symbols_today", [])
@@ -84,4 +81,3 @@ def record_post(state: dict, symbol: str) -> dict:
     state["posted_symbols_today"] = posted_today
 
     return state
-```
