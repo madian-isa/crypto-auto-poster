@@ -118,3 +118,27 @@ try:
     FINNHUB_API_KEY = base_config.FINNHUB_API_KEY
 except (NameError, AttributeError):
     FINNHUB_API_KEY = os.environ.get("FINNHUB_API_KEY", "")
+
+# --- Market Context ---
+MARKET_CONTEXT_ENABLED = (
+    os.environ.get("MARKET_CONTEXT_ENABLED", "true").lower()
+    not in ("false", "0", "no")
+)
+
+BTC_SYMBOL = "BTCUSDT"
+
+MAJOR_HIGH_VOLUME = {
+    "BTCUSDT",
+    "ETHUSDT",
+    "BNBUSDT",
+    "SOLUSDT",
+    "XRPUSDT",
+}
+
+MARKET_BREADTH_LIMIT = int(
+    os.environ.get("MARKET_BREADTH_LIMIT", "100")
+)
+
+MAJOR_COIN_SCORE_BOOST = float(
+    os.environ.get("MAJOR_COIN_SCORE_BOOST", "0.12")
+)
