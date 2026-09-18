@@ -11,7 +11,7 @@ Uses:
 - Relevant news
 
 Final post format:
-COIN: LONG TITLE?
+COIN: SHORT TITLE?
 
 LONG SETUP — COIN
 
