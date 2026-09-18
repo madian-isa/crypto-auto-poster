@@ -1,6 +1,6 @@
 {
   "date": "2026-09-18",
-  "count": 33,
+  "count": 34,
   "recent_symbols": [
     "WLDUSDT",
     "JUPUSDT",
@@ -19,6 +19,7 @@
     "ARUSDT",
     "WLDUSDT",
     "ONEUSDT",
-    "TIAUSDT"
+    "TIAUSDT",
+    "JUPUSDT"
   ]
 }
