@@ -11,9 +11,10 @@ Daily rules:
 - A new UTC day resets the daily symbol history.
 
 Backtest collection:
-- When DRY_RUN=true, every generated setup is saved to
+- When DRY_RUN=true, generated setups are saved to
   backtest_setups.json.
-- Backtest result remains PENDING for now.
+- Advanced market data is skipped during DRY_RUN
+  to keep baseline backtest collection fast.
 - TP/SL result checking will be added in Step 3.
 
 For local testing:
@@ -37,13 +38,13 @@ from src.advanced_market_data import (
 )
 from src.news import get_relevant_news
 from src.square_post_ext import post_text_v2
+from src.backtest import save_setup
 from src.state import (
     load_state,
     save_state,
     can_post_more_today,
     record_post,
 )
-from src.backtest import save_setup
 
 
 def run_once():
@@ -245,20 +246,37 @@ def _build_and_publish(
         else None
     )
 
-    print(
-        f"[run] collecting advanced market data "
-        f"for {symbol}..."
-    )
+    # -------------------------------------------------
+    # ADVANCED MARKET DATA
+    # -------------------------------------------------
+    # Skip advanced data during DRY RUN so that the
+    # baseline backtest collection remains fast.
+    # Advanced data will be used later in Step 4.
+    # -------------------------------------------------
 
-    advanced_market_data = (
-        get_advanced_market_data(
-            symbol
+    if cfg.DRY_RUN:
+        print(
+            f"[run] DRY RUN — skipping advanced market data "
+            f"for {symbol}"
         )
-    )
 
-    print(
-        f"[run] advanced market data ready for {symbol}"
-    )
+        advanced_market_data = None
+
+    else:
+        print(
+            f"[run] collecting advanced market data "
+            f"for {symbol}..."
+        )
+
+        advanced_market_data = (
+            get_advanced_market_data(
+                symbol
+            )
+        )
+
+        print(
+            f"[run] advanced market data ready for {symbol}"
+        )
 
     print(
         f"[run] generating AI setup for {symbol}..."
@@ -279,15 +297,7 @@ def _build_and_publish(
     )
 
     # -------------------------------------------------
-    # STEP 2: SAVE SETUP FOR BACKTESTING
-    # -------------------------------------------------
-    #
-    # Only save during DRY RUN.
-    # This prevents live Binance posts from being
-    # automatically added to the test dataset.
-    #
-    # Result remains PENDING.
-    # TP/SL result checking comes in Step 3.
+    # SAVE BASELINE BACKTEST SETUP
     # -------------------------------------------------
 
     if cfg.DRY_RUN:
@@ -337,9 +347,6 @@ def _build_and_publish(
 
         print()
 
-        # False means no real post happened.
-        # Therefore run_once() will NOT save this
-        # symbol into the daily posted list.
         return False
 
     # -------------------------------------------------
@@ -361,7 +368,6 @@ def _build_and_publish(
         f"-> {result.get('link')}"
     )
 
-    # True means the post was actually published.
     return True
 
 
