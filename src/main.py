@@ -87,7 +87,7 @@ def run_once():
             continue
 
         try:
-            _build_and_publish(symbol)
+            _build_and_publish(symbol, pick)
 
             # Only record the symbol AFTER successful completion.
             state = record_post(state, symbol)
@@ -133,7 +133,7 @@ def run_cycle():
         symbol = pick["symbol"]
 
         try:
-            _build_and_publish(symbol)
+            _build_and_publish(symbol, pick)
 
         except Exception as err:
             print(f"[cycle] skipping {symbol}: {err}")
@@ -151,14 +151,22 @@ def run_cycle():
     print("[cycle] done")
 
 
-def _build_and_publish(symbol: str):
+def _build_and_publish(symbol: str, pick=None):
     klines_df = fetch_klines(symbol)
     indicators = compute_indicators(klines_df)
 
     news = get_relevant_news(symbol)
     # None if nothing real found — never fabricated
 
-    setup = generate_setup(symbol, indicators, news)
+    # Market context comes from the screener.
+    market_context = pick.get("market_context") if pick else None
+
+    setup = generate_setup(
+        symbol,
+        indicators,
+        news,
+        market_context
+    )
 
     # Don't trust the model to echo the symbol correctly.
     setup["symbol"] = symbol
