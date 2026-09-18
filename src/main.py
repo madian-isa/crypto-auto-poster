@@ -10,6 +10,12 @@ Daily rules:
 - The same crypto symbol can be posted only ONCE per day.
 - A new UTC day resets the daily symbol history.
 
+Backtest collection:
+- When DRY_RUN=true, every generated setup is saved to
+  backtest_setups.json.
+- Backtest result remains PENDING for now.
+- TP/SL result checking will be added in Step 3.
+
 For local testing:
 RUN_MODE=cycle can still run the older multi-post cycle.
 """
@@ -37,6 +43,7 @@ from src.state import (
     can_post_more_today,
     record_post,
 )
+from src.backtest import save_setup
 
 
 def run_once():
@@ -271,6 +278,24 @@ def _build_and_publish(
         cfg.KLINE_INTERVAL.upper()
     )
 
+    # -------------------------------------------------
+    # STEP 2: SAVE SETUP FOR BACKTESTING
+    # -------------------------------------------------
+    #
+    # Only save during DRY RUN.
+    # This prevents live Binance posts from being
+    # automatically added to the test dataset.
+    #
+    # Result remains PENDING.
+    # TP/SL result checking comes in Step 3.
+    # -------------------------------------------------
+
+    if cfg.DRY_RUN:
+        save_setup(
+            symbol,
+            setup,
+        )
+
     text = format_post_text(
         setup
     )
@@ -312,7 +337,6 @@ def _build_and_publish(
 
         print()
 
-        # IMPORTANT:
         # False means no real post happened.
         # Therefore run_once() will NOT save this
         # symbol into the daily posted list.
