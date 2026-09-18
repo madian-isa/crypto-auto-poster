@@ -50,6 +50,23 @@
       "technical_analysis": "LTC trades above its EMA9 (56.21), EMA21 (55.45) and SMA50 (53.76), indicating a clear uptrend. The MACD is positive (0.82) and above its signal line (0.74), adding bullish momentum. Although the stochastic is in overbought territory (96/93), the price remains firm near resistance, suggesting room for a short‑term push higher.",
       "market_context": "BTC is up about 6% and the broader market is broadly positive, supporting risk‑on sentiment.",
       "result": "PENDING"
+    },
+    {
+      "id": 4,
+      "created_at": "2026-09-18T19:30:52.231132+00:00",
+      "symbol": "XRPUSDT",
+      "direction": "LONG",
+      "title": "BULLISH BREAKOUT OR PULLBACK?",
+      "entry_low": 1.389,
+      "entry_high": 1.395,
+      "stop_loss": 1.383,
+      "take_profit": 1.419,
+      "support": 1.3862,
+      "resistance": 1.402,
+      "news_line": "",
+      "technical_analysis": "Price sits above the EMA9 (1.376), EMA21 (1.352) and SMA50 (1.317), confirming a bullish trend. MACD is positive with a rising histogram, adding momentum. Stochastic is near the top (K 97.9, D 88.9), suggesting the market may be overbought but still holding strength.",
+      "market_context": "BTC is up 6% in the last 24 hours and the broader market is broadly positive, supporting upside bias for XRP.",
+      "result": "PENDING"
     }
   ]
 }
