@@ -118,6 +118,23 @@
       "technical_analysis": "Price sits above both the 9‑EMA (0.4643) and 21‑EMA (0.4571), indicating bullish momentum. MACD is positive with a small histogram, supporting the upside bias. Stochastic is high (K 85.7, D 87.9), hinting at possible short‑term overbought pressure but not yet a clear reversal.",
       "market_context": "BTC is up about 6% in the past 24 hours and overall market breadth is broadly positive, which can help lift risk assets like MASK.",
       "result": "PENDING"
+    },
+    {
+      "id": 8,
+      "created_at": "2026-09-18T21:14:38.115555+00:00",
+      "symbol": "1INCHUSDT",
+      "direction": "LONG",
+      "title": "BULLISH MOMENTUM?",
+      "entry_low": 0.0969,
+      "entry_high": 0.0972,
+      "stop_loss": 0.0965,
+      "take_profit": 0.0977,
+      "support": 0.0968,
+      "resistance": 0.0975,
+      "news_line": "",
+      "technical_analysis": "Price sits at $0.0974, comfortably above the EMA9 (0.09646) and EMA21 (0.09505), with EMA9 crossing above EMA21, indicating short‑term bullish bias. MACD is positive (0.00153) and above its signal line, adding momentum. Stochastic is near the top (K 97.4/D 98.4), suggesting the pair is overbought but still holding.",
+      "market_context": "BTC is up 6.3% in the last 24 h and the broader market remains broadly positive, supporting risk‑on sentiment.",
+      "result": "PENDING"
     }
   ]
 }
