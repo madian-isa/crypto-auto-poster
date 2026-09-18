@@ -19,6 +19,7 @@ from src import bot_config as cfg
 from src.screener import get_screener_shortlist
 from src.indicators import fetch_klines, compute_indicators
 from src.setup_generator import generate_setup, format_post_text
+from src.news import get_relevant_news
 from src.square_post_ext import post_text_v2
 from src.state import load_state, save_state, can_post_more_today, record_post
 
@@ -84,9 +85,11 @@ def run_cycle():
 def _build_and_publish(symbol: str):
     klines_df = fetch_klines(symbol)
     indicators = compute_indicators(klines_df)
+    news = get_relevant_news(symbol)  # None if nothing real found — never fabricated
 
-    setup = generate_setup(symbol, indicators)
+    setup = generate_setup(symbol, indicators, news)
     setup["symbol"] = symbol  # don't trust the model to echo it back correctly
+    setup["timeframe"] = cfg.KLINE_INTERVAL.upper()
     text = format_post_text(setup)
 
     if cfg.DRY_RUN:
