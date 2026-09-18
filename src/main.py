@@ -6,15 +6,15 @@ Each invocation of `python -m src.main` builds and publishes
 ONE trade-setup post, then exits.
 
 Daily rules:
-- Maximum posts per day are controlled by cfg.MAX_POSTS_PER_DAY.
+- Maximum daily posts are controlled by cfg.MAX_POSTS_PER_DAY.
 - The same crypto symbol can be posted only ONCE per day.
 - A new UTC day resets the daily symbol history.
 
 Backtest collection:
-- When DRY_RUN=true, generated setups are saved to
-  backtest_setups.json.
-- Advanced market data is DISABLED for now.
-- TP/SL result checking will be added in Step 3.
+- Every generated setup is saved to backtest_setups.json.
+- This works in both DRY RUN and LIVE mode.
+- Maximum stored setups are controlled by backtest.py.
+- Advanced market data is disabled for now.
 
 For local testing:
 RUN_MODE=cycle can still run the older multi-post cycle.
@@ -206,6 +206,10 @@ def _build_and_publish(
         f"\n[run] starting analysis for {symbol}"
     )
 
+    # -------------------------------------------------
+    # TECHNICAL DATA
+    # -------------------------------------------------
+
     print(
         f"[run] fetching technical data for {symbol}..."
     )
@@ -222,6 +226,10 @@ def _build_and_publish(
         f"[run] technical indicators ready for {symbol}"
     )
 
+    # -------------------------------------------------
+    # NEWS
+    # -------------------------------------------------
+
     print(
         f"[run] checking relevant news for {symbol}..."
     )
@@ -234,6 +242,10 @@ def _build_and_publish(
         f"[run] news data ready for {symbol}"
     )
 
+    # -------------------------------------------------
+    # MARKET CONTEXT
+    # -------------------------------------------------
+
     market_context = (
         pick.get(
             "market_context"
@@ -245,18 +257,20 @@ def _build_and_publish(
     # -------------------------------------------------
     # ADVANCED MARKET DATA DISABLED
     # -------------------------------------------------
-    # Binance Futures API is currently returning HTTP 451
+    #
+    # Binance Futures API was returning HTTP 451
     # from GitHub Actions.
     #
-    # Advanced data such as:
+    # Advanced data is disabled for now:
+    #
     # - Open Interest
     # - Funding Rate
     # - Long/Short Ratio
     # - Liquidations
     # - Order Book
     #
-    # will be added again later after a reliable data
-    # source is selected.
+    # We will add these later using a reliable
+    # alternative data source.
     # -------------------------------------------------
 
     print(
@@ -264,6 +278,10 @@ def _build_and_publish(
     )
 
     advanced_market_data = None
+
+    # -------------------------------------------------
+    # AI SETUP GENERATION
+    # -------------------------------------------------
 
     print(
         f"[run] generating AI setup for {symbol}..."
@@ -284,14 +302,36 @@ def _build_and_publish(
     )
 
     # -------------------------------------------------
-    # SAVE BASELINE BACKTEST SETUP
+    # SAVE SETUP FOR BACKTEST
+    # -------------------------------------------------
+    #
+    # IMPORTANT:
+    # Save the setup in BOTH:
+    # DRY RUN and LIVE mode.
+    #
+    # backtest.py itself limits the collection
+    # to 50 setups.
     # -------------------------------------------------
 
-    if cfg.DRY_RUN:
-        save_setup(
-            symbol,
-            setup,
+    saved = save_setup(
+        symbol,
+        setup,
+    )
+
+    if saved:
+        print(
+            f"[run] setup saved to backtest data "
+            f"for {symbol}"
         )
+    else:
+        print(
+            f"[run] backtest collection already complete "
+            f"or setup was not saved for {symbol}"
+        )
+
+    # -------------------------------------------------
+    # FORMAT FINAL POST
+    # -------------------------------------------------
 
     text = format_post_text(
         setup
