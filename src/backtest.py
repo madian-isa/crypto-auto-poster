@@ -6,14 +6,12 @@ Stores generated trade setups for later performance testing.
 Step 2:
 - Save each generated setup
 - Do not calculate TP/SL result yet
-- Maximum stored setups can be controlled by BACKTEST_MAX_SETUPS
+- Maximum stored setups = 50
 """
 
 import json
 import os
 from datetime import datetime, timezone
-
-from src import bot_config as cfg
 
 
 BACKTEST_FILE = os.environ.get(
@@ -24,7 +22,7 @@ BACKTEST_FILE = os.environ.get(
 BACKTEST_MAX_SETUPS = int(
     os.environ.get(
         "BACKTEST_MAX_SETUPS",
-        "100",
+        "50",
     )
 )
 
