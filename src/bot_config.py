@@ -44,23 +44,29 @@ FUTURES_PERPETUAL_WHITELIST = {
     "NEOUSDT", "WAVESUSDT", "DASHUSDT", "ZECUSDT", "QTUMUSDT", "ONTUSDT",
     "ZRXUSDT", "BATUSDT", "OMGUSDT", "KSMUSDT", "RVNUSDT",
     "HOTUSDT", "IOSTUSDT", "ZILUSDT", "ONEUSDT",
+
     # DeFi
     "AAVEUSDT", "UNIUSDT", "MKRUSDT", "LDOUSDT", "SNXUSDT", "CRVUSDT",
     "COMPUSDT", "SUSHIUSDT", "YFIUSDT", "1INCHUSDT", "DYDXUSDT", "GMXUSDT",
     "PENDLEUSDT", "WOOUSDT", "CVXUSDT",
+
     # Layer-1 / Layer-2 growth names
     "APTUSDT", "ARBUSDT", "OPUSDT", "SUIUSDT", "INJUSDT", "STXUSDT",
     "IMXUSDT", "MANTAUSDT", "STRKUSDT", "SEIUSDT", "TIAUSDT", "ARUSDT",
     "KASUSDT", "ROSEUSDT", "CFXUSDT", "CELOUSDT", "FLOWUSDT",
+
     # Gaming / metaverse / NFT-adjacent
     "SANDUSDT", "MANAUSDT", "GALAUSDT", "AXSUSDT", "ENJUSDT", "CHZUSDT",
     "APEUSDT", "GMTUSDT", "MAGICUSDT", "PEOPLEUSDT",
+
     # AI / data
     "FETUSDT", "AGIXUSDT", "OCEANUSDT", "RNDRUSDT", "GRTUSDT", "ARKMUSDT",
     "WLDUSDT",
+
     # Meme / high-volume trending
     "PEPEUSDT", "WIFUSDT", "BONKUSDT", "FLOKIUSDT", "1000SHIBUSDT",
     "ORDIUSDT", "JUPUSDT", "NOTUSDT",
+
     # Other established liquid pairs
     "BANDUSDT", "SKLUSDT", "ANKRUSDT", "CTSIUSDT",
     "MASKUSDT", "BLURUSDT", "LPTUSDT", "HIGHUSDT", "PYTHUSDT", "JTOUSDT",
@@ -86,10 +92,12 @@ DRY_RUN = os.environ.get("DRY_RUN", "true").lower() not in ("false", "0", "no")
 # --- single-run mode (for GitHub Actions / any external scheduler) ---
 # Each invocation of `python main.py` posts ONE setup, then exits — no
 # internal sleep loop. A scheduler (GitHub Actions cron, etc.) re-runs it
-# every N minutes. This file tracks how many posts have gone out today so
-# we don't blow past a daily cap even if the scheduler runs often.
+# every N minutes. This file tracks how many posts have gone out today so we
+# don't blow past a daily cap even if the scheduler runs often.
 STATE_FILE = os.environ.get("TRADE_BOT_STATE_FILE", "trade_bot_state.json")
-MAX_POSTS_PER_DAY = int(os.environ.get("TRADE_MAX_POSTS_PER_DAY", "20"))
+
+# Daily post limit
+MAX_POSTS_PER_DAY = int(os.environ.get("TRADE_MAX_POSTS_PER_DAY", "70"))
 
 # When picking a symbol each run, choose randomly among the top N of the
 # screener shortlist (instead of always the #1) so consecutive runs aren't
@@ -100,6 +108,7 @@ PICK_FROM_TOP_N = int(os.environ.get("TRADE_PICK_FROM_TOP_N", "10"))
 # proportionate to the coin's actual recent volatility, instead of a
 # freeform AI guess (which tended to produce unrealistically wide stops).
 ATR_MULTIPLIER = float(os.environ.get("ATR_MULTIPLIER", "1.5"))
+
 # Reward is this multiple of the risk distance — randomly 2x or 3x each
 # post, so posts don't all look identical.
 RISK_REWARD_CHOICES = [2, 3]
