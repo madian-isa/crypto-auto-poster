@@ -3,8 +3,12 @@ main.py
 
 Single-run mode: each invocation of `python main.py` builds and publishes
 ONE trade-setup post, then exits. A scheduler (GitHub Actions cron) re-runs
-this every ~20 minutes. A small state file (state.py) enforces a daily cap
-and avoids immediately repeating the same coin.
+this every ~20 minutes.
+
+Daily rules:
+- Maximum posts per day are controlled by cfg.MAX_POSTS_PER_DAY.
+- The same crypto symbol can be posted only ONCE per day.
+- A new day resets the daily symbol history.
 
 For local testing without a scheduler, RUN_MODE=cycle still runs the old
 3-posts-with-sleep behavior.
@@ -25,42 +29,90 @@ from src.state import load_state, save_state, can_post_more_today, record_post
 
 
 def run_once():
-    """Post exactly one setup, respecting the daily cap. Meant to be called
-    on a schedule (e.g. every 20 minutes) by an external scheduler."""
+    """Post exactly one setup while respecting:
+    1. The daily post cap.
+    2. The rule that each crypto can appear only once per day.
+    """
+
     state = load_state()
 
+    # Check daily maximum
     if not can_post_more_today(state):
-        print(f"[run_once] daily cap reached ({cfg.MAX_POSTS_PER_DAY}) — skipping this run.")
+        print(
+            f"[run_once] daily cap reached "
+            f"({cfg.MAX_POSTS_PER_DAY}) — skipping this run."
+        )
         return
 
     shortlist = get_screener_shortlist()
+
     if not shortlist:
         print("[run_once] screener returned nothing — skipping.")
         return
 
-    candidates = shortlist[: cfg.PICK_FROM_TOP_N]
-    fresh = [c for c in candidates if c["symbol"] not in state.get("recent_symbols", [])]
-    pool = fresh or candidates
+    candidates = shortlist[:cfg.PICK_FROM_TOP_N]
+
+    # Only use coins that have NOT been posted today.
+    posted_today = set(state.get("posted_symbols_today", []))
+
+    fresh = [
+        c for c in candidates
+        if c["symbol"] not in posted_today
+    ]
+
+    # IMPORTANT:
+    # Do NOT fall back to candidates if all candidates were already posted.
+    # Otherwise the same crypto could be posted twice on the same day.
+    if not fresh:
+        print(
+            "[run_once] all current candidates were already posted today "
+            "— skipping this run."
+        )
+        return
+
+    pool = fresh.copy()
     random.shuffle(pool)
 
     for pick in pool:
         symbol = pick["symbol"]
-        try:
-            _build_and_publish(symbol)
-            state = record_post(state, symbol)
-            save_state(state)
-            return
-        except Exception as err:
-            print(f"[run_once] {symbol} failed, trying next candidate: {err}")
+
+        # Extra safety check before building/posting.
+        if symbol in posted_today:
+            print(
+                f"[run_once] {symbol} already posted today — skipping."
+            )
             continue
 
-    print("[run_once] every candidate failed this run — nothing posted.")
+        try:
+            _build_and_publish(symbol)
+
+            # Only record the symbol AFTER successful completion.
+            state = record_post(state, symbol)
+            save_state(state)
+
+            return
+
+        except Exception as err:
+            print(
+                f"[run_once] {symbol} failed, "
+                f"trying next candidate: {err}"
+            )
+            continue
+
+    print("[run_once] every fresh candidate failed this run — nothing posted.")
 
 
 def run_cycle():
     """Old behavior, kept for local testing: 3 posts, 20 min apart, in one
-    long-lived process. Not what the GitHub Actions workflow uses."""
-    mode = "DRY RUN (nothing will be posted)" if cfg.DRY_RUN else "LIVE (posting for real)"
+    long-lived process. Not what the GitHub Actions workflow uses.
+    """
+
+    mode = (
+        "DRY RUN (nothing will be posted)"
+        if cfg.DRY_RUN
+        else "LIVE (posting for real)"
+    )
+
     print(f"[cycle] starting — mode: {mode}")
 
     shortlist = get_screener_shortlist()
@@ -68,15 +120,21 @@ def run_cycle():
 
     for i, pick in enumerate(picks):
         symbol = pick["symbol"]
+
         try:
             _build_and_publish(symbol)
+
         except Exception as err:
             print(f"[cycle] skipping {symbol}: {err}")
             traceback.print_exc()
 
         is_last = i == len(picks) - 1
+
         if not is_last:
-            print(f"[cycle] waiting {cfg.MINUTES_BETWEEN_POSTS} min before next post...")
+            print(
+                f"[cycle] waiting "
+                f"{cfg.MINUTES_BETWEEN_POSTS} min before next post..."
+            )
             time.sleep(cfg.MINUTES_BETWEEN_POSTS * 60)
 
     print("[cycle] done")
@@ -85,15 +143,23 @@ def run_cycle():
 def _build_and_publish(symbol: str):
     klines_df = fetch_klines(symbol)
     indicators = compute_indicators(klines_df)
-    news = get_relevant_news(symbol)  # None if nothing real found — never fabricated
+
+    news = get_relevant_news(symbol)
+    # None if nothing real found — never fabricated
 
     setup = generate_setup(symbol, indicators, news)
-    setup["symbol"] = symbol  # don't trust the model to echo it back correctly
+
+    # Don't trust the model to echo the symbol correctly.
+    setup["symbol"] = symbol
     setup["timeframe"] = cfg.KLINE_INTERVAL.upper()
+
     text = format_post_text(setup)
 
     if cfg.DRY_RUN:
-        print(f"\n[DRY RUN] would post for {symbol} ({setup['direction']}):")
+        print(
+            f"\n[DRY RUN] would post for "
+            f"{symbol} ({setup['direction']}):"
+        )
         print("-" * 40)
         print(text)
         print("-" * 40)
@@ -101,19 +167,27 @@ def _build_and_publish(symbol: str):
         return
 
     result = post_text_v2(text)
-    print(f"[run] published {symbol} ({setup['direction']}) -> {result.get('link')}")
+
+    print(
+        f"[run] published {symbol} "
+        f"({setup['direction']}) -> {result.get('link')}"
+    )
 
 
 def _pick_diverse(shortlist, count):
     seen = set()
     picks = []
+
     for item in shortlist:
         if item["symbol"] in seen:
             continue
+
         seen.add(item["symbol"])
         picks.append(item)
+
         if len(picks) == count:
             break
+
     return picks
 
 
