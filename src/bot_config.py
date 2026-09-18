@@ -89,7 +89,7 @@ DRY_RUN = os.environ.get("DRY_RUN", "true").lower() not in ("false", "0", "no")
 # every N minutes. This file tracks how many posts have gone out today so
 # we don't blow past a daily cap even if the scheduler runs often.
 STATE_FILE = os.environ.get("TRADE_BOT_STATE_FILE", "trade_bot_state.json")
-MAX_POSTS_PER_DAY = int(os.environ.get("TRADE_MAX_POSTS_PER_DAY", 20"))
+MAX_POSTS_PER_DAY = int(os.environ.get("TRADE_MAX_POSTS_PER_DAY", "20"))
 
 # When picking a symbol each run, choose randomly among the top N of the
 # screener shortlist (instead of always the #1) so consecutive runs aren't
