@@ -135,6 +135,23 @@
       "technical_analysis": "Price sits at $0.0974, comfortably above the EMA9 (0.09646) and EMA21 (0.09505), with EMA9 crossing above EMA21, indicating short‑term bullish bias. MACD is positive (0.00153) and above its signal line, adding momentum. Stochastic is near the top (K 97.4/D 98.4), suggesting the pair is overbought but still holding.",
       "market_context": "BTC is up 6.3% in the last 24 h and the broader market remains broadly positive, supporting risk‑on sentiment.",
       "result": "PENDING"
+    },
+    {
+      "id": 9,
+      "created_at": "2026-09-18T21:30:58.458940+00:00",
+      "symbol": "HOTUSDT",
+      "direction": "SHORT",
+      "title": "ROLLING INTO RESISTANCE?",
+      "entry_low": 0.0003885,
+      "entry_high": 0.000389,
+      "stop_loss": 0.0003905,
+      "take_profit": 0.000385,
+      "support": 0.000387,
+      "resistance": 0.000389,
+      "news_line": "",
+      "technical_analysis": "Price sits just below the $0.000389 resistance, holding above the 9‑EMA (0.000387) and 21‑EMA (0.000383), but the stochastic is deep in overbought territory (K 80, D 91). MACD is flat, suggesting little momentum. The narrow $0.000387‑$0.000389 range hints at a potential pull‑back toward support.",
+      "market_context": "BTC is up about 6 % and the overall market is broadly positive, which can support short‑term reversals in lower‑cap pairs.",
+      "result": "PENDING"
     }
   ]
 }
