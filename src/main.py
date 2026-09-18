@@ -50,7 +50,9 @@ def run_once():
         print("[run_once] screener returned nothing — skipping.")
         return
 
-    candidates = shortlist[:cfg.PICK_FROM_TOP_N]
+    # Use the ENTIRE screener shortlist.
+    # Do not limit selection to PICK_FROM_TOP_N here.
+    candidates = shortlist
 
     # Only use coins that have NOT been posted today.
     posted_today = set(state.get("posted_symbols_today", []))
@@ -60,9 +62,8 @@ def run_once():
         if c["symbol"] not in posted_today
     ]
 
-    # IMPORTANT:
-    # Do NOT fall back to candidates if all candidates were already posted.
-    # Otherwise the same crypto could be posted twice on the same day.
+    # If every available candidate was already posted today,
+    # skip this run instead of reposting any coin.
     if not fresh:
         print(
             "[run_once] all current candidates were already posted today "
@@ -70,6 +71,8 @@ def run_once():
         )
         return
 
+    # Randomize fresh candidates so the same top-ranked coin
+    # does not always get selected first.
     pool = fresh.copy()
     random.shuffle(pool)
 
@@ -90,6 +93,10 @@ def run_once():
             state = record_post(state, symbol)
             save_state(state)
 
+            print(
+                f"[run_once] {symbol} recorded as posted today."
+            )
+
             return
 
         except Exception as err:
@@ -97,9 +104,13 @@ def run_once():
                 f"[run_once] {symbol} failed, "
                 f"trying next candidate: {err}"
             )
+            traceback.print_exc()
             continue
 
-    print("[run_once] every fresh candidate failed this run — nothing posted.")
+    print(
+        "[run_once] every fresh candidate failed this run "
+        "— nothing posted."
+    )
 
 
 def run_cycle():
