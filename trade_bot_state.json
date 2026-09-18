@@ -1,6 +1,6 @@
 {
   "date": "2026-09-18",
-  "count": 60,
+  "count": 61,
   "recent_symbols": [
     "WLDUSDT",
     "JUPUSDT",
@@ -46,6 +46,7 @@
     "1INCHUSDT",
     "HOTUSDT",
     "FLOWUSDT",
-    "WAVESUSDT"
+    "WAVESUSDT",
+    "TAOUSDT"
   ]
 }
