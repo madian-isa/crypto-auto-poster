@@ -6,13 +6,13 @@ Advanced market-data collector.
 Design:
 - Advanced data is optional.
 - API failures never stop the main bot.
-- Futures 451 responses are detected once and cached for the
-  current process, so the bot does not repeatedly hit blocked endpoints.
-- Public Spot market data is used as a fallback for:
+- Futures 451 responses are detected once and cached for
+  the current process.
+- Public Spot market data is used for:
     - multi-timeframe S/R
     - BTC context
     - order book
-- Futures-only data remains optional:
+- Futures-only data is optional:
     - Open Interest
     - OI change
     - Funding
@@ -39,7 +39,6 @@ FUTURES_BASE_URLS = [
     "https://fapi3.binance.com",
 ]
 
-# Binance public Spot market-data endpoint.
 SPOT_BASE_URLS = [
     "https://data-api.binance.vision",
     "https://api.binance.com",
@@ -66,16 +65,14 @@ HEADERS = {
 
 
 # ============================================================
-# PROCESS-LEVEL STATUS
+# PROCESS STATUS
 # ============================================================
 
-# Once Futures API returns 451, don't repeatedly hit the
-# same blocked service during this bot run.
 _FUTURES_BLOCKED = False
 
 
 # ============================================================
-# GENERIC HELPERS
+# HELPERS
 # ============================================================
 
 def _safe_float(value):
@@ -95,13 +92,11 @@ def _request_json(
     """
     Generic GET helper.
 
-    Returns:
-        parsed JSON on success
-        None on failure
+    451:
+        Stop trying the current service immediately.
 
-    Special behavior:
-    - 451 => immediately stop trying that service
-    - other request errors => try next base URL
+    Other request errors:
+        Try the next available base URL.
     """
 
     timeout = (
@@ -113,9 +108,11 @@ def _request_json(
     last_error = None
 
     for base_url in base_urls:
+
         url = f"{base_url}{endpoint}"
 
         try:
+
             response = requests.get(
                 url,
                 params=params or {},
@@ -124,11 +121,13 @@ def _request_json(
             )
 
             if response.status_code == 451:
+
                 print(
                     f"[advanced_market_data] "
                     f"{service_name} 451 blocked: "
                     f"{base_url}"
                 )
+
                 return None
 
             response.raise_for_status()
@@ -136,6 +135,7 @@ def _request_json(
             return response.json()
 
         except requests.RequestException as err:
+
             last_error = err
 
             print(
@@ -147,6 +147,7 @@ def _request_json(
             continue
 
         except Exception as err:
+
             last_error = err
 
             print(
@@ -175,12 +176,6 @@ def _spot_get(
     params=None,
     timeout=None,
 ):
-    """
-    Public Spot market-data request.
-
-    Uses data-api.binance.vision first.
-    """
-
     return _request_json(
         SPOT_BASE_URLS,
         endpoint,
@@ -218,6 +213,10 @@ def get_spot_orderbook(
     )
 
 
+# ============================================================
+# SUPPORT / RESISTANCE
+# ============================================================
+
 def _spot_swing_levels(
     klines,
     lookback=60,
@@ -234,13 +233,16 @@ def _spot_swing_levels(
     highs = []
 
     for row in rows:
+
         try:
             lows.append(
                 float(row[3])
             )
+
             highs.append(
                 float(row[2])
             )
+
         except Exception:
             continue
 
@@ -260,10 +262,7 @@ def get_multi_timeframe_sr(
     symbol,
 ):
     """
-    Multi-timeframe S/R.
-
-    Uses Spot market data as fallback because it does not
-    require Futures-specific endpoints.
+    Multi-timeframe S/R using public Spot klines.
     """
 
     timeframes = {
@@ -279,6 +278,7 @@ def get_multi_timeframe_sr(
     for timeframe, limit in timeframes.items():
 
         try:
+
             klines = get_spot_klines(
                 symbol,
                 timeframe,
@@ -326,6 +326,7 @@ def _ema(
     ema = values[0]
 
     for price in values[1:]:
+
         ema = (
             price - ema
         ) * multiplier + ema
@@ -361,14 +362,17 @@ def get_trend(
     closes = []
 
     for row in klines:
+
         try:
             closes.append(
                 float(row[4])
             )
+
         except Exception:
             continue
 
     if len(closes) < 50:
+
         return {
             "trend": "Unknown",
             "price": None,
@@ -394,6 +398,7 @@ def get_trend(
         and price > ema20
         and ema20 > ema50
     ):
+
         trend = "Bullish"
 
     elif (
@@ -402,9 +407,11 @@ def get_trend(
         and price < ema20
         and ema20 < ema50
     ):
+
         trend = "Bearish"
 
     else:
+
         trend = "Mixed"
 
     return {
@@ -433,7 +440,7 @@ def get_btc_context():
 
 
 # ============================================================
-# SPOT ORDER BOOK
+# ORDER BOOK
 # ============================================================
 
 def _parse_orderbook(
@@ -443,6 +450,7 @@ def _parse_orderbook(
         return None
 
     try:
+
         bids = [
             (
                 float(price),
@@ -485,6 +493,7 @@ def _parse_orderbook(
         )
 
         if total > 0:
+
             imbalance = (
                 (
                     bid_value
@@ -492,7 +501,9 @@ def _parse_orderbook(
                 )
                 / total
             ) * 100
+
         else:
+
             imbalance = 0.0
 
         best_bid = (
@@ -513,6 +524,7 @@ def _parse_orderbook(
             best_bid is not None
             and best_ask is not None
         ):
+
             spread = (
                 best_ask
                 - best_bid
@@ -562,7 +574,7 @@ def get_orderbook(
 
 
 # ============================================================
-# FUTURES MARKET DATA
+# FUTURES API
 # ============================================================
 
 def _futures_get(
@@ -572,17 +584,15 @@ def _futures_get(
     """
     Futures request.
 
-    Important:
     Once a 451 is received, Futures requests are disabled
-    for the remainder of the current Python process.
+    for the rest of the current Python process.
     """
 
     global _FUTURES_BLOCKED
 
     if _FUTURES_BLOCKED:
-        return None
 
-    timeout = REQUEST_TIMEOUT
+        return None
 
     for base_url in FUTURES_BASE_URLS:
 
@@ -593,7 +603,7 @@ def _futures_get(
             response = requests.get(
                 url,
                 params=params or {},
-                timeout=timeout,
+                timeout=REQUEST_TIMEOUT,
                 headers=HEADERS,
             )
 
@@ -641,6 +651,10 @@ def _futures_get(
     return None
 
 
+# ============================================================
+# OPEN INTEREST
+# ============================================================
+
 def get_open_interest(
     symbol,
 ):
@@ -660,6 +674,10 @@ def get_open_interest(
         )
     )
 
+
+# ============================================================
+# OI CHANGE
+# ============================================================
 
 def get_oi_change(
     symbol,
@@ -698,19 +716,27 @@ def get_oi_change(
             or new is None
             or old == 0
         ):
+
             return None
 
         return round(
             (
-                (new - old)
+                (
+                    new - old
+                )
                 / old
             ) * 100,
             2,
         )
 
     except Exception:
+
         return None
 
+
+# ============================================================
+# FUNDING
+# ============================================================
 
 def get_funding(
     symbol,
@@ -731,6 +757,10 @@ def get_funding(
         )
     )
 
+
+# ============================================================
+# LONG / SHORT RATIO
+# ============================================================
 
 def get_long_short_ratio(
     symbol,
@@ -776,8 +806,13 @@ def get_long_short_ratio(
         }
 
     except Exception:
+
         return None
 
+
+# ============================================================
+# LIQUIDATIONS
+# ============================================================
 
 def get_liquidations(
     symbol,
@@ -816,6 +851,7 @@ def get_liquidations(
                 price is None
                 or quantity is None
             ):
+
                 continue
 
             value = (
@@ -829,12 +865,15 @@ def get_liquidations(
             )
 
             if side == "SELL":
+
                 long_liq += value
 
             elif side == "BUY":
+
                 short_liq += value
 
         except Exception:
+
             continue
 
     return {
@@ -854,7 +893,7 @@ def get_liquidations(
 
 
 # ============================================================
-# FUTURES DATA COLLECTION
+# FUTURES COLLECTION
 # ============================================================
 
 def _collect_futures_data(
@@ -862,9 +901,6 @@ def _collect_futures_data(
 ):
     """
     Collect Futures-only data concurrently.
-
-    If Futures API becomes blocked with 451,
-    remaining tasks return None immediately.
     """
 
     tasks = {
@@ -937,7 +973,7 @@ def _collect_futures_data(
 
 
 # ============================================================
-# MAIN ADVANCED DATA FUNCTION
+# MAIN FUNCTION
 # ============================================================
 
 def get_advanced_market_data(
@@ -946,8 +982,7 @@ def get_advanced_market_data(
     """
     Main advanced-data collector.
 
-    Returns a consistent dictionary even when some
-    APIs are unavailable.
+    Always returns a dictionary.
     """
 
     print(
@@ -980,9 +1015,9 @@ def get_advanced_market_data(
     }
 
 
-    # --------------------------------------------------------
-    # SPOT DATA
-    # --------------------------------------------------------
+    # ========================================================
+    # SPOT S/R
+    # ========================================================
 
     try:
 
@@ -1007,9 +1042,9 @@ def get_advanced_market_data(
         )
 
 
-    # --------------------------------------------------------
+    # ========================================================
     # BTC CONTEXT
-    # --------------------------------------------------------
+    # ========================================================
 
     try:
 
@@ -1026,9 +1061,9 @@ def get_advanced_market_data(
         )
 
 
-    # --------------------------------------------------------
+    # ========================================================
     # ORDER BOOK
-    # --------------------------------------------------------
+    # ========================================================
 
     try:
 
@@ -1047,9 +1082,9 @@ def get_advanced_market_data(
         )
 
 
-    # --------------------------------------------------------
-    # FUTURES DATA
-    # --------------------------------------------------------
+    # ========================================================
+    # FUTURES
+    # ========================================================
 
     try:
 
@@ -1065,8 +1100,7 @@ def get_advanced_market_data(
 
         futures_available = any(
             value is not None
-            for key, value
-            in futures_data.items()
+            for value in futures_data.values()
         )
 
         if futures_available:
@@ -1108,9 +1142,9 @@ def get_advanced_market_data(
         ] = "error"
 
 
-    # --------------------------------------------------------
+    # ========================================================
     # SUMMARY
-    # --------------------------------------------------------
+    # ========================================================
 
     available = []
 
@@ -1123,6 +1157,7 @@ def get_advanced_market_data(
             available.append(
                 key
             )
+
 
     print(
         f"[advanced_market_data] "
@@ -1142,20 +1177,6 @@ def get_advanced_market_data(
         f"{data['source_status']['futures']}"
     )
 
-    print(
-        f"[advanced_market_data] "
-        f"available fields: "
-        f"{', '.join(available) "
-        if available "
-        else 'none'}"
-    )
-
-    return data
-```
-
-**একটা গুরুত্বপূর্ণ correction:** উপরের code-এর final `print`-এর f-string line-এ formatting issue হতে পারে। তাই **এই exact corrected শেষ অংশটা** ব্যবহার করবে:
-
-```python
     print(
         f"[advanced_market_data] "
         f"available fields: "
