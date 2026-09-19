@@ -781,6 +781,23 @@
       "technical_analysis": "Price sits just above the 9‑EMA (0.198094) and 21‑EMA (0.193102), indicating short‑term buying pressure. The MACD histogram is marginally negative and Stochastic K is below D, suggesting some downside bias, while the order‑book shows a modest 4.2% bid‑side imbalance.",
       "market_context": "BTC is in a bullish trend on both 4‑hour and daily frames, and the broader market is broadly positive with 78.5% of assets advancing.",
       "result": "PENDING"
+    },
+    {
+      "id": 47,
+      "created_at": "2026-09-19T11:00:52.108593+00:00",
+      "symbol": "THETAUSDT",
+      "direction": "LONG",
+      "title": "$THETA Outperformance Signal: Buying Momentum Beats Broader Market",
+      "entry_low": 0.2202,
+      "entry_high": 0.2207,
+      "stop_loss": 0.211392,
+      "take_profit": 0.237816,
+      "support": 0.2151,
+      "resistance": 0.2252,
+      "news_line": "",
+      "technical_analysis": "Theta is trading at $0.2205, comfortably above the 9‑period EMA (0.2188) and 21‑period EMA (0.2142), indicating short‑term bullish bias. Stochastic is in the 60s (K 62, D 60) supporting upward momentum, while the MACD line sits just below the signal, leaving the histogram slightly negative. The price is nestled between a tight 1‑hour support at $0.2202 and resistance at $0.2207, with a broader swing range of $0.2151–$0.2252.",
+      "market_context": "Bitcoin remains in a bullish 4‑hour and daily trend, and overall market breadth is broadly positive (82.6% green), which reinforces a risk‑on environment for altcoins like THETA.",
+      "result": "PENDING"
     }
   ]
 }
