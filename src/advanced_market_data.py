@@ -9,7 +9,7 @@ Design:
 - Futures 451 responses are detected once and cached for
   the current process.
 - Public Spot market data is used for:
-    - multi-timeframe S/R
+    - 1H support/resistance
     - BTC context
     - order book
 - Futures-only data is optional:
@@ -221,6 +221,17 @@ def _spot_swing_levels(
     klines,
     lookback=60,
 ):
+    """
+    Calculate simple swing-style support/resistance
+    from the selected timeframe.
+
+    Support:
+        Lowest low in the lookback window.
+
+    Resistance:
+        Highest high in the lookback window.
+    """
+
     if not klines:
         return {
             "support": None,
@@ -235,6 +246,7 @@ def _spot_swing_levels(
     for row in rows:
 
         try:
+
             lows.append(
                 float(row[3])
             )
@@ -244,9 +256,11 @@ def _spot_swing_levels(
             )
 
         except Exception:
+
             continue
 
     if not lows or not highs:
+
         return {
             "support": None,
             "resistance": None,
@@ -262,50 +276,50 @@ def get_multi_timeframe_sr(
     symbol,
 ):
     """
-    Multi-timeframe S/R using public Spot klines.
+    Support / resistance using ONLY 1H Spot candles.
+
+    IMPORTANT:
+    15m, 4h, 1d and 1w are intentionally not used.
+
+    The existing function name is kept so that other modules
+    calling get_multi_timeframe_sr() do not break.
     """
 
-    timeframes = {
-        "15m": 100,
-        "1h": 100,
-        "4h": 100,
-        "1d": 100,
-        "1w": 100,
-    }
+    timeframe = "1h"
+    limit = 100
 
-    result = {}
+    try:
 
-    for timeframe, limit in timeframes.items():
+        klines = get_spot_klines(
+            symbol,
+            timeframe,
+            limit,
+        )
 
-        try:
+        levels = _spot_swing_levels(
+            klines,
+            min(60, limit),
+        )
 
-            klines = get_spot_klines(
-                symbol,
-                timeframe,
-                limit,
-            )
+        return {
+            "1h": levels,
+        }
 
-            result[timeframe] = _spot_swing_levels(
-                klines,
-                min(60, limit),
-            )
+    except Exception as err:
 
-        except Exception as err:
+        print(
+            f"[advanced_market_data] "
+            f"1H S/R failed "
+            f"{symbol}: "
+            f"{err}"
+        )
 
-            print(
-                f"[advanced_market_data] "
-                f"S/R failed "
-                f"{symbol} "
-                f"{timeframe}: "
-                f"{err}"
-            )
-
-            result[timeframe] = {
+        return {
+            "1h": {
                 "support": None,
                 "resistance": None,
-            }
-
-    return result
+            },
+        }
 
 
 # ============================================================
@@ -364,11 +378,13 @@ def get_trend(
     for row in klines:
 
         try:
+
             closes.append(
                 float(row[4])
             )
 
         except Exception:
+
             continue
 
     if len(closes) < 50:
@@ -477,14 +493,12 @@ def _parse_orderbook(
 
         bid_value = sum(
             price * quantity
-            for price, quantity
-            in bids
+            for price, quantity in bids
         )
 
         ask_value = sum(
             price * quantity
-            for price, quantity
-            in asks
+            for price, quantity in asks
         )
 
         total = (
@@ -997,6 +1011,18 @@ def get_advanced_market_data(
             "futures": "pending",
         },
 
+        # NOTE:
+        # The key name is kept as
+        # "multi_timeframe_sr"
+        # for compatibility with the rest of the bot.
+        #
+        # Internally it now contains ONLY:
+        # {
+        #     "1h": {
+        #         "support": ...,
+        #         "resistance": ...
+        #     }
+        # }
         "multi_timeframe_sr": {},
 
         "btc_context": {},
@@ -1016,7 +1042,7 @@ def get_advanced_market_data(
 
 
     # ========================================================
-    # SPOT S/R
+    # SPOT 1H S/R
     # ========================================================
 
     try:
@@ -1037,7 +1063,7 @@ def get_advanced_market_data(
 
         print(
             f"[advanced_market_data] "
-            f"Spot S/R failed: "
+            f"Spot 1H S/R failed: "
             f"{err}"
         )
 
