@@ -222,14 +222,25 @@ def _spot_swing_levels(
     lookback=60,
 ):
     """
-    Calculate simple swing-style support/resistance
-    from the selected timeframe.
+    Calculate 1H swing-style support/resistance.
 
-    Support:
-        Lowest low in the lookback window.
+    Rules:
+    - Only the supplied timeframe is used.
+    - The caller supplies 1H candles.
+    - Last `lookback` candles are inspected.
+    - A swing low must be lower than the surrounding
+      candles within a small local window.
+    - A swing high must be higher than the surrounding
+      candles within a small local window.
+    - Support is selected from swing lows BELOW current price.
+    - Resistance is selected from swing highs ABOVE current price.
 
-    Resistance:
-        Highest high in the lookback window.
+    This avoids simply using:
+        support = absolute lowest low
+        resistance = absolute highest high
+
+    which can place a level far away or directly at an
+    unrelated extreme.
     """
 
     if not klines:
@@ -240,35 +251,166 @@ def _spot_swing_levels(
 
     rows = klines[-lookback:]
 
-    lows = []
-    highs = []
+    if len(rows) < 7:
+        return {
+            "support": None,
+            "resistance": None,
+        }
+
+    candles = []
 
     for row in rows:
 
         try:
 
-            lows.append(
-                float(row[3])
-            )
-
-            highs.append(
-                float(row[2])
+            candles.append(
+                {
+                    "high": float(row[2]),
+                    "low": float(row[3]),
+                    "close": float(row[4]),
+                }
             )
 
         except Exception:
 
             continue
 
-    if not lows or not highs:
-
+    if len(candles) < 7:
         return {
             "support": None,
             "resistance": None,
         }
 
+    # --------------------------------------------------------
+    # Current price
+    # --------------------------------------------------------
+
+    current_price = candles[-1]["close"]
+
+    # --------------------------------------------------------
+    # Find local swing highs/lows
+    # --------------------------------------------------------
+
+    swing_lows = []
+    swing_highs = []
+
+    for i in range(
+        2,
+        len(candles) - 2,
+    ):
+
+        current = candles[i]
+
+        previous_1 = candles[i - 1]
+        previous_2 = candles[i - 2]
+
+        next_1 = candles[i + 1]
+        next_2 = candles[i + 2]
+
+        # ----------------------------------------------------
+        # Swing low
+        # ----------------------------------------------------
+
+        is_swing_low = (
+            current["low"] <= previous_1["low"]
+            and
+            current["low"] <= previous_2["low"]
+            and
+            current["low"] <= next_1["low"]
+            and
+            current["low"] <= next_2["low"]
+        )
+
+        if is_swing_low:
+
+            swing_lows.append(
+                current["low"]
+            )
+
+        # ----------------------------------------------------
+        # Swing high
+        # ----------------------------------------------------
+
+        is_swing_high = (
+            current["high"] >= previous_1["high"]
+            and
+            current["high"] >= previous_2["high"]
+            and
+            current["high"] >= next_1["high"]
+            and
+            current["high"] >= next_2["high"]
+        )
+
+        if is_swing_high:
+
+            swing_highs.append(
+                current["high"]
+            )
+
+    # --------------------------------------------------------
+    # Only use levels relative to current price
+    # --------------------------------------------------------
+
+    supports = [
+        level
+        for level in swing_lows
+        if level < current_price
+    ]
+
+    resistances = [
+        level
+        for level in swing_highs
+        if level > current_price
+    ]
+
+    # Nearest valid swing levels
+    support = (
+        max(supports)
+        if supports
+        else None
+    )
+
+    resistance = (
+        min(resistances)
+        if resistances
+        else None
+    )
+
+    # --------------------------------------------------------
+    # Fallback
+    # --------------------------------------------------------
+
+    if support is None:
+
+        below = [
+            candle["low"]
+            for candle in candles
+            if candle["low"] < current_price
+        ]
+
+        if below:
+
+            support = min(
+                below
+            )
+
+    if resistance is None:
+
+        above = [
+            candle["high"]
+            for candle in candles
+            if candle["high"] > current_price
+        ]
+
+        if above:
+
+            resistance = max(
+                above
+            )
+
     return {
-        "support": min(lows),
-        "resistance": max(highs),
+        "support": support,
+        "resistance": resistance,
     }
 
 
