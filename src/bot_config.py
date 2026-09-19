@@ -1,5 +1,10 @@
 import os
 
+
+# =========================================================
+# Base config
+# =========================================================
+
 try:
     from src import config as base_config
 
@@ -64,13 +69,6 @@ EXCLUDE_SYMBOLS = {
 # =========================================================
 # Futures perpetual whitelist
 # =========================================================
-#
-# If the environment variable is not set,
-# the screener will receive an empty whitelist.
-#
-# The actual Futures API can still be unavailable
-# in GitHub Actions because of HTTP 451.
-#
 
 FUTURES_PERPETUAL_WHITELIST = set(
     os.environ.get(
@@ -175,32 +173,13 @@ PICK_FROM_TOP_N = int(
 
 
 # =========================================================
-# Setup parameters
+# Risk / reward
 # =========================================================
-
-ATR_MULTIPLIER = float(
-    os.environ.get(
-        "ATR_MULTIPLIER",
-        "1.5",
-    )
-)
 
 RISK_REWARD_CHOICES = [
     2,
     3,
 ]
-
-
-# =========================================================
-# Minimum 1H volatility filter
-# =========================================================
-
-MIN_1H_ATR_PERCENT = float(
-    os.environ.get(
-        "MIN_1H_ATR_PERCENT",
-        "1.0",
-    )
-)
 
 
 # =========================================================
