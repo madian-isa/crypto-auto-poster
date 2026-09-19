@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-09-19T07:45:46.706565+00:00",
+  "generated_at": "2026-09-19T13:31:54.666663+00:00",
   "input_file": "backtest_setups.json",
   "horizon_minutes": 360,
   "interval": "1m",
   "method": "Historical Binance Spot 1-minute OHLC backtest",
   "summary": {
     "total": 30,
-    "TP_HIT": 9,
-    "SL_HIT": 9,
+    "TP_HIT": 11,
+    "SL_HIT": 15,
     "NO_ENTRY": 0,
-    "AMBIGUOUS": 0,
-    "PENDING": 11,
-    "NO_DATA": 1
+    "AMBIGUOUS": 1,
+    "PENDING": 1,
+    "NO_DATA": 2
   },
   "results": [
     {
@@ -302,11 +302,14 @@
       "direction": "SHORT",
       "created_at": "2026-09-19T02:00:50.072779+00:00",
       "horizon_end": "2026-09-19T08:00:50.072779+00:00",
+      "entry_low": 2.95e-06,
+      "entry_high": 3.05e-06,
+      "stop_loss": 3.15e-06,
+      "take_profit": 2.7e-06,
       "result": "PENDING",
-      "entry_time": null,
-      "entry_price": null,
-      "result_time": null,
-      "reason": "6-hour test window has not completed yet"
+      "entry_time": "2026-09-19T02:01:00+00:00",
+      "entry_price": 3e-06,
+      "result_time": null
     },
     {
       "id": 21,
@@ -314,11 +317,14 @@
       "direction": "LONG",
       "created_at": "2026-09-19T02:30:44.552979+00:00",
       "horizon_end": "2026-09-19T08:30:44.552979+00:00",
-      "result": "PENDING",
-      "entry_time": null,
-      "entry_price": null,
-      "result_time": null,
-      "reason": "6-hour test window has not completed yet"
+      "entry_low": 0.4308,
+      "entry_high": 0.4314,
+      "stop_loss": 0.43,
+      "take_profit": 0.432,
+      "result": "TP_HIT",
+      "entry_time": "2026-09-19T02:53:00+00:00",
+      "entry_price": 0.43110000000000004,
+      "result_time": "2026-09-19T02:53:00+00:00"
     },
     {
       "id": 22,
@@ -326,11 +332,14 @@
       "direction": "LONG",
       "created_at": "2026-09-19T03:00:48.825855+00:00",
       "horizon_end": "2026-09-19T09:00:48.825855+00:00",
-      "result": "PENDING",
-      "entry_time": null,
-      "entry_price": null,
-      "result_time": null,
-      "reason": "6-hour test window has not completed yet"
+      "entry_low": 2.899,
+      "entry_high": 2.9,
+      "stop_loss": 2.898,
+      "take_profit": 2.902,
+      "result": "AMBIGUOUS",
+      "entry_time": "2026-09-19T03:02:00+00:00",
+      "entry_price": 2.8994999999999997,
+      "result_time": "2026-09-19T03:03:00+00:00"
     },
     {
       "id": 23,
@@ -338,11 +347,14 @@
       "direction": "LONG",
       "created_at": "2026-09-19T03:30:44.892731+00:00",
       "horizon_end": "2026-09-19T09:30:44.892731+00:00",
-      "result": "PENDING",
-      "entry_time": null,
-      "entry_price": null,
-      "result_time": null,
-      "reason": "6-hour test window has not completed yet"
+      "entry_low": 2.58e-05,
+      "entry_high": 2.6e-05,
+      "stop_loss": 2.55e-05,
+      "take_profit": 2.66e-05,
+      "result": "SL_HIT",
+      "entry_time": "2026-09-19T03:31:00+00:00",
+      "entry_price": 2.59e-05,
+      "result_time": "2026-09-19T04:47:00+00:00"
     },
     {
       "id": 24,
@@ -350,11 +362,14 @@
       "direction": "LONG",
       "created_at": "2026-09-19T04:00:52.168533+00:00",
       "horizon_end": "2026-09-19T10:00:52.168533+00:00",
-      "result": "PENDING",
-      "entry_time": null,
-      "entry_price": null,
-      "result_time": null,
-      "reason": "6-hour test window has not completed yet"
+      "entry_low": 0.0457,
+      "entry_high": 0.0459,
+      "stop_loss": 0.0455,
+      "take_profit": 0.0461,
+      "result": "SL_HIT",
+      "entry_time": "2026-09-19T04:01:00+00:00",
+      "entry_price": 0.0458,
+      "result_time": "2026-09-19T04:39:00+00:00"
     },
     {
       "id": 25,
@@ -362,11 +377,14 @@
       "direction": "LONG",
       "created_at": "2026-09-19T04:30:41.821825+00:00",
       "horizon_end": "2026-09-19T10:30:41.821825+00:00",
-      "result": "PENDING",
-      "entry_time": null,
-      "entry_price": null,
-      "result_time": null,
-      "reason": "6-hour test window has not completed yet"
+      "entry_low": 142.63,
+      "entry_high": 142.9,
+      "stop_loss": 142.2,
+      "take_profit": 144.0,
+      "result": "SL_HIT",
+      "entry_time": "2026-09-19T04:32:00+00:00",
+      "entry_price": 142.765,
+      "result_time": "2026-09-19T04:33:00+00:00"
     },
     {
       "id": 26,
@@ -374,11 +392,14 @@
       "direction": "SHORT",
       "created_at": "2026-09-19T04:45:38.431198+00:00",
       "horizon_end": "2026-09-19T10:45:38.431198+00:00",
-      "result": "PENDING",
-      "entry_time": null,
-      "entry_price": null,
-      "result_time": null,
-      "reason": "6-hour test window has not completed yet"
+      "entry_low": 0.2459,
+      "entry_high": 0.2464,
+      "stop_loss": 0.247,
+      "take_profit": 0.2446,
+      "result": "SL_HIT",
+      "entry_time": "2026-09-19T04:46:00+00:00",
+      "entry_price": 0.24615,
+      "result_time": "2026-09-19T04:55:00+00:00"
     },
     {
       "id": 27,
@@ -386,11 +407,14 @@
       "direction": "LONG",
       "created_at": "2026-09-19T05:00:52.783918+00:00",
       "horizon_end": "2026-09-19T11:00:52.783918+00:00",
-      "result": "PENDING",
-      "entry_time": null,
-      "entry_price": null,
-      "result_time": null,
-      "reason": "6-hour test window has not completed yet"
+      "entry_low": 2.671,
+      "entry_high": 2.672,
+      "stop_loss": 2.668,
+      "take_profit": 2.68,
+      "result": "SL_HIT",
+      "entry_time": "2026-09-19T05:02:00+00:00",
+      "entry_price": 2.6715,
+      "result_time": "2026-09-19T05:04:00+00:00"
     },
     {
       "id": 28,
@@ -398,11 +422,11 @@
       "direction": "SHORT",
       "created_at": "2026-09-19T05:11:45.265875+00:00",
       "horizon_end": "2026-09-19T11:11:45.265875+00:00",
-      "result": "PENDING",
+      "result": "NO_DATA",
       "entry_time": null,
       "entry_price": null,
       "result_time": null,
-      "reason": "6-hour test window has not completed yet"
+      "reason": "No Binance Spot 1-minute data available"
     },
     {
       "id": 29,
@@ -410,11 +434,14 @@
       "direction": "LONG",
       "created_at": "2026-09-19T05:15:42.160022+00:00",
       "horizon_end": "2026-09-19T11:15:42.160022+00:00",
-      "result": "PENDING",
-      "entry_time": null,
-      "entry_price": null,
-      "result_time": null,
-      "reason": "6-hour test window has not completed yet"
+      "entry_low": 4.572,
+      "entry_high": 4.585,
+      "stop_loss": 4.55,
+      "take_profit": 4.637,
+      "result": "SL_HIT",
+      "entry_time": "2026-09-19T05:17:00+00:00",
+      "entry_price": 4.5785,
+      "result_time": "2026-09-19T05:43:00+00:00"
     },
     {
       "id": 30,
@@ -422,11 +449,14 @@
       "direction": "LONG",
       "created_at": "2026-09-19T05:30:44.383005+00:00",
       "horizon_end": "2026-09-19T11:30:44.383005+00:00",
-      "result": "PENDING",
-      "entry_time": null,
-      "entry_price": null,
-      "result_time": null,
-      "reason": "6-hour test window has not completed yet"
+      "entry_low": 0.0082,
+      "entry_high": 0.0083,
+      "stop_loss": 0.0081,
+      "take_profit": 0.00855,
+      "result": "TP_HIT",
+      "entry_time": "2026-09-19T05:33:00+00:00",
+      "entry_price": 0.00825,
+      "result_time": "2026-09-19T06:49:00+00:00"
     }
   ]
 }
