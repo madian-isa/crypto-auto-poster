@@ -781,23 +781,6 @@
       "technical_analysis": "Price sits just above the 9‑EMA (0.198094) and 21‑EMA (0.193102), indicating short‑term buying pressure. The MACD histogram is marginally negative and Stochastic K is below D, suggesting some downside bias, while the order‑book shows a modest 4.2% bid‑side imbalance.",
       "market_context": "BTC is in a bullish trend on both 4‑hour and daily frames, and the broader market is broadly positive with 78.5% of assets advancing.",
       "result": "PENDING"
-    },
-    {
-      "id": 47,
-      "created_at": "2026-09-19T10:30:50.734821+00:00",
-      "symbol": "COTIUSDT",
-      "direction": "SHORT",
-      "title": "$COTI Fails Resistance Retest: Bearish Extension Imminent",
-      "entry_low": 0.02049,
-      "entry_high": 0.02054,
-      "stop_loss": 0.02126,
-      "take_profit": 0.01895,
-      "support": 0.02027,
-      "resistance": 0.02049,
-      "news_line": "",
-      "technical_analysis": "Price sits just below the EMA9 (0.02048) and EMA21 (0.02076), with MACD in negative territory and a bearish histogram. Stochastic K/D around 44/42 signals a lack of upward momentum. Order‑book shows a modest bid‑side imbalance, but the technical picture leans lower.",
-      "market_context": "BTC remains in a bullish trend across 4H and 1D frames, supporting a broadly positive market, yet COTI shows localized weakness.",
-      "result": "PENDING"
     }
   ]
 }
