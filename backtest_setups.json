@@ -781,23 +781,6 @@
       "technical_analysis": "Price sits just above the 9‑EMA (0.198094) and 21‑EMA (0.193102), indicating short‑term buying pressure. The MACD histogram is marginally negative and Stochastic K is below D, suggesting some downside bias, while the order‑book shows a modest 4.2% bid‑side imbalance.",
       "market_context": "BTC is in a bullish trend on both 4‑hour and daily frames, and the broader market is broadly positive with 78.5% of assets advancing.",
       "result": "PENDING"
-    },
-    {
-      "id": 47,
-      "created_at": "2026-09-19T21:30:54.237978+00:00",
-      "symbol": "BIGTIMEUSDT",
-      "direction": "LONG",
-      "title": "$BIGTIME Breaks Out of Falling Wedge Pattern: Targets Set Higher",
-      "entry_low": 0.00811,
-      "entry_high": 0.00812,
-      "stop_loss": 0.0077856,
-      "take_profit": 0.0087588,
-      "support": 0.00811,
-      "resistance": 0.00843,
-      "news_line": "",
-      "technical_analysis": "Price sits just above the 50‑period SMA and the 21‑EMA, indicating underlying bullish bias, while the 9‑EMA is slightly higher and the MACD histogram remains negative, hinting at short‑term pressure. A 9.5% bid‑side order‑book imbalance adds modest buying support near the 0.00812 level.",
-      "market_context": "BTC maintains a bullish stance on higher timeframes and the broader market is broadly positive, which can help sustain upward moves in altcoins like BIGTIME.",
-      "result": "PENDING"
     }
   ]
 }
