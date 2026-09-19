@@ -1,27 +1,78 @@
+"""
+chart.py
+
+1H dark Binance-style market analysis chart.
+
+Includes:
+- 1H candlesticks
+- Asia/Dhaka timezone
+- Correct timestamp handling
+- EMA21
+- SMA50
+- Current Price
+- Support
+- Resistance
+- Market-structure zones
+- PNG output for Binance Square upload
+"""
+
 import os
 
 import pandas as pd
 import mplfinance as mpf
+import matplotlib.pyplot as plt
+from matplotlib.patches import Rectangle
 
 from src import bot_config
 
 
+# =========================================================
+# DARK BINANCE-STYLE
+# =========================================================
+
 _CHART_STYLE = mpf.make_mpf_style(
     base_mpf_style="nightclouds",
-    gridstyle="-",
-    gridcolor="#333333",
+
+    marketcolors=mpf.make_marketcolors(
+        up="#0ecb81",
+        down="#f6465d",
+
+        edge={
+            "up": "#0ecb81",
+            "down": "#f6465d",
+        },
+
+        wick={
+            "up": "#0ecb81",
+            "down": "#f6465d",
+        },
+
+        volume={
+            "up": "#0ecb81",
+            "down": "#f6465d",
+        },
+    ),
+
     facecolor="#0b0f14",
-    edgecolor="#555555",
     figcolor="#0b0f14",
+
+    gridcolor="#1e2329",
+    gridstyle="-",
+
     rc={
+        "axes.edgecolor": "#2b3139",
+        "axes.labelcolor": "#848e9c",
+        "xtick.color": "#848e9c",
+        "ytick.color": "#848e9c",
+        "text.color": "#eaecef",
         "font.size": 9,
-        "axes.labelcolor": "white",
-        "xtick.color": "white",
-        "ytick.color": "white",
-        "text.color": "white",
     },
 )
 
+
+# =========================================================
+# MAIN CHART FUNCTION
+# =========================================================
 
 def render_chart_image(
     symbol: str,
@@ -34,11 +85,30 @@ def render_chart_image(
             f"No kline data available for {symbol}"
         )
 
+    # -----------------------------------------------------
+    # Output directory
+    # -----------------------------------------------------
+
+    output_dir = getattr(
+        bot_config,
+        "CHART_OUTPUT_DIR",
+        "/tmp/trade_setup_charts",
+    )
+
+    os.makedirs(
+        output_dir,
+        exist_ok=True,
+    )
+
+    # -----------------------------------------------------
+    # Copy dataframe
+    # -----------------------------------------------------
+
     df = klines_df.copy()
 
-    # ---------------------------------------------------------
+    # -----------------------------------------------------
     # Rename columns
-    # ---------------------------------------------------------
+    # -----------------------------------------------------
 
     rename_map = {
         "open": "Open",
@@ -46,8 +116,9 @@ def render_chart_image(
         "low": "Low",
         "close": "Close",
         "volume": "Volume",
-        "Open time": "Date",
+
         "open_time": "Date",
+        "Open time": "Date",
         "timestamp": "Date",
     }
 
@@ -59,11 +130,11 @@ def render_chart_image(
         }
     )
 
-    # ---------------------------------------------------------
+    # -----------------------------------------------------
     # Validate OHLC
-    # ---------------------------------------------------------
+    # -----------------------------------------------------
 
-    required = [
+    required_columns = [
         "Open",
         "High",
         "Low",
@@ -72,7 +143,7 @@ def render_chart_image(
 
     missing = [
         col
-        for col in required
+        for col in required_columns
         if col not in df.columns
     ]
 
@@ -81,14 +152,15 @@ def render_chart_image(
             f"Missing OHLC columns for {symbol}: {missing}"
         )
 
-    for col in required:
+    for col in required_columns:
+
         df[col] = pd.to_numeric(
             df[col],
             errors="coerce",
         )
 
     df = df.dropna(
-        subset=required
+        subset=required_columns
     )
 
     if df.empty:
@@ -96,10 +168,10 @@ def render_chart_image(
             f"No valid OHLC data available for {symbol}"
         )
 
-    # ---------------------------------------------------------
-    # TIMESTAMP / TIMEZONE FIX
-    # Binance timestamps -> UTC -> Bangladesh UTC+6
-    # ---------------------------------------------------------
+    # =====================================================
+    # TIMESTAMP
+    # UTC -> ASIA/DHAKA
+    # =====================================================
 
     if "Date" in df.columns:
 
@@ -123,13 +195,16 @@ def render_chart_image(
                 float(sample.iloc[0])
             )
 
-            # Automatically detect timestamp unit
+            # Automatically detect Binance timestamp unit
             if magnitude >= 1e18:
                 unit = "ns"
+
             elif magnitude >= 1e15:
                 unit = "us"
+
             elif magnitude >= 1e12:
                 unit = "ms"
+
             else:
                 unit = "s"
 
@@ -156,7 +231,7 @@ def render_chart_image(
             subset=["Date"]
         )
 
-        # UTC -> Bangladesh time
+        # Bangladesh UTC+6
         df["Date"] = (
             df["Date"]
             .dt.tz_convert("Asia/Dhaka")
@@ -193,11 +268,15 @@ def render_chart_image(
             f"Datetime index required for {symbol}"
         )
 
-    # ---------------------------------------------------------
-    # Sort + latest 80 candles
-    # ---------------------------------------------------------
+    # -----------------------------------------------------
+    # Sort
+    # -----------------------------------------------------
 
     df = df.sort_index()
+
+    # -----------------------------------------------------
+    # Latest 80 candles
+    # -----------------------------------------------------
 
     df = df.tail(80).copy()
 
@@ -206,9 +285,9 @@ def render_chart_image(
             f"Not enough candles available for {symbol}"
         )
 
-    # ---------------------------------------------------------
-    # Indicators
-    # ---------------------------------------------------------
+    # =====================================================
+    # INDICATORS
+    # =====================================================
 
     df["EMA21"] = (
         df["Close"]
@@ -228,31 +307,424 @@ def render_chart_image(
         .mean()
     )
 
+    # -----------------------------------------------------
+    # Indicator plots
+    # -----------------------------------------------------
+
     addplots = [
+
         mpf.make_addplot(
             df["EMA21"],
+            color="#f0b90b",
             width=1.2,
         ),
+
         mpf.make_addplot(
             df["SMA50"],
+            color="#8b5cf6",
             width=1.0,
         ),
     ]
 
-    # ---------------------------------------------------------
-    # Output
-    # ---------------------------------------------------------
+    # =====================================================
+    # CURRENT PRICE
+    # =====================================================
 
-    output_dir = getattr(
-        bot_config,
-        "CHART_OUTPUT_DIR",
-        "/tmp/trade_setup_charts",
+    current_price = float(
+        df["Close"].iloc[-1]
     )
 
-    os.makedirs(
-        output_dir,
-        exist_ok=True,
+    # =====================================================
+    # SUPPORT / RESISTANCE
+    # =====================================================
+
+    support = None
+    resistance = None
+
+    if setup:
+
+        try:
+
+            value = setup.get("support")
+
+            if value is not None:
+                support = float(value)
+
+        except (
+            TypeError,
+            ValueError,
+        ):
+
+            support = None
+
+        try:
+
+            value = setup.get("resistance")
+
+            if value is not None:
+                resistance = float(value)
+
+        except (
+            TypeError,
+            ValueError,
+        ):
+
+            resistance = None
+
+    # =====================================================
+    # TITLE
+    # =====================================================
+
+    title = (
+        f"\n{symbol} — 1H Market Analysis"
     )
+
+    # =====================================================
+    # PLOT
+    # =====================================================
+
+    plot_kwargs = {
+
+        "type": "candle",
+
+        "style": _CHART_STYLE,
+
+        "title": title,
+
+        "figsize": (10, 6),
+
+        "tight_layout": True,
+
+        "returnfig": True,
+
+        "datetime_format": "%d %b %H:%M",
+
+        "xrotation": 0,
+
+        "addplot": addplots,
+
+        "volume": False,
+    }
+
+    fig, axes = mpf.plot(
+        df,
+        **plot_kwargs,
+    )
+
+    ax = axes[0]
+
+    # =====================================================
+    # COLORS
+    # =====================================================
+
+    GREEN = "#0ecb81"
+    RED = "#f6465d"
+    WHITE = "#eaecef"
+    YELLOW = "#f0b90b"
+    PURPLE = "#8b5cf6"
+
+    # =====================================================
+    # MARKET STRUCTURE ZONES
+    # =====================================================
+
+    data_low = float(
+        df["Low"].min()
+    )
+
+    data_high = float(
+        df["High"].max()
+    )
+
+    # -----------------------------------------------------
+    # Support zone
+    # -----------------------------------------------------
+
+    if support is not None:
+
+        support_width = (
+            data_high - data_low
+        ) * 0.012
+
+        support_low = (
+            support - support_width
+        )
+
+        support_high = (
+            support + support_width
+        )
+
+        ax.add_patch(
+            Rectangle(
+                (
+                    -0.5,
+                    support_low,
+                ),
+
+                len(df) + 8,
+
+                support_high - support_low,
+
+                facecolor=GREEN,
+
+                edgecolor="none",
+
+                alpha=0.08,
+
+                zorder=0,
+            )
+        )
+
+        ax.axhline(
+            support,
+
+            color=GREEN,
+
+            linestyle="--",
+
+            linewidth=1,
+
+            alpha=0.75,
+
+            zorder=1,
+        )
+
+        ax.text(
+            0.995,
+            support,
+
+            f" Support {support:.6g} ",
+
+            transform=ax.get_yaxis_transform(),
+
+            ha="right",
+
+            va="bottom",
+
+            fontsize=8,
+
+            color="#0b0f14",
+
+            fontweight="bold",
+
+            bbox=dict(
+                boxstyle="round,pad=0.25",
+
+                facecolor=GREEN,
+
+                edgecolor="none",
+
+                alpha=0.95,
+            ),
+
+            zorder=6,
+        )
+
+    # -----------------------------------------------------
+    # Resistance zone
+    # -----------------------------------------------------
+
+    if resistance is not None:
+
+        resistance_width = (
+            data_high - data_low
+        ) * 0.012
+
+        resistance_low = (
+            resistance - resistance_width
+        )
+
+        resistance_high = (
+            resistance + resistance_width
+        )
+
+        ax.add_patch(
+            Rectangle(
+                (
+                    -0.5,
+                    resistance_low,
+                ),
+
+                len(df) + 8,
+
+                resistance_high - resistance_low,
+
+                facecolor=RED,
+
+                edgecolor="none",
+
+                alpha=0.08,
+
+                zorder=0,
+            )
+        )
+
+        ax.axhline(
+            resistance,
+
+            color=RED,
+
+            linestyle="--",
+
+            linewidth=1,
+
+            alpha=0.75,
+
+            zorder=1,
+        )
+
+        ax.text(
+            0.995,
+            resistance,
+
+            f" Resistance {resistance:.6g} ",
+
+            transform=ax.get_yaxis_transform(),
+
+            ha="right",
+
+            va="bottom",
+
+            fontsize=8,
+
+            color="#0b0f14",
+
+            fontweight="bold",
+
+            bbox=dict(
+                boxstyle="round,pad=0.25",
+
+                facecolor=RED,
+
+                edgecolor="none",
+
+                alpha=0.95,
+            ),
+
+            zorder=6,
+        )
+
+    # =====================================================
+    # CURRENT PRICE
+    # =====================================================
+
+    ax.axhline(
+        current_price,
+
+        color=WHITE,
+
+        linestyle=":",
+
+        linewidth=1,
+
+        alpha=0.85,
+
+        zorder=1,
+    )
+
+    ax.text(
+        0.995,
+        current_price,
+
+        f" Current {current_price:.6g} ",
+
+        transform=ax.get_yaxis_transform(),
+
+        ha="right",
+
+        va="bottom",
+
+        fontsize=8,
+
+        color="#0b0f14",
+
+        fontweight="bold",
+
+        bbox=dict(
+            boxstyle="round,pad=0.25",
+
+            facecolor=WHITE,
+
+            edgecolor="none",
+
+            alpha=0.95,
+        ),
+
+        zorder=6,
+    )
+
+    # =====================================================
+    # INDICATOR LABELS
+    # =====================================================
+
+    ax.text(
+        0.015,
+        0.96,
+
+        "EMA21",
+
+        transform=ax.transAxes,
+
+        fontsize=8,
+
+        color=YELLOW,
+
+        fontweight="bold",
+
+        va="top",
+    )
+
+    ax.text(
+        0.075,
+        0.96,
+
+        "SMA50",
+
+        transform=ax.transAxes,
+
+        fontsize=8,
+
+        color=PURPLE,
+
+        fontweight="bold",
+
+        va="top",
+    )
+
+    # =====================================================
+    # Y-AXIS PADDING
+    # =====================================================
+
+    levels = [
+        data_low,
+        data_high,
+        current_price,
+    ]
+
+    if support is not None:
+        levels.append(support)
+
+    if resistance is not None:
+        levels.append(resistance)
+
+    y_low = min(levels)
+    y_high = max(levels)
+
+    price_range = y_high - y_low
+
+    if price_range > 0:
+
+        padding = (
+            price_range * 0.08
+        )
+
+        ax.set_ylim(
+            y_low - padding,
+            y_high + padding,
+        )
+
+    # =====================================================
+    # SAVE
+    # =====================================================
 
     safe_symbol = (
         symbol
@@ -265,35 +737,21 @@ def render_chart_image(
         f"{safe_symbol}_market_chart.png",
     )
 
-    title = (
-        f"{symbol} — 1H Market Analysis"
-    )
-
-    plot_kwargs = {
-        "type": "candle",
-        "style": _CHART_STYLE,
-        "title": title,
-        "figsize": (10, 6),
-        "tight_layout": True,
-        "returnfig": True,
-        "datetime_format": "%d %b %H:%M",
-        "xrotation": 0,
-        "addplot": addplots,
-    }
-
-    fig, axes = mpf.plot(
-        df,
-        **plot_kwargs,
-    )
-
     fig.savefig(
         chart_path,
+
         dpi=160,
+
         bbox_inches="tight",
+
+        facecolor="#0b0f14",
     )
 
+    # -----------------------------------------------------
+    # Close matplotlib figure
+    # -----------------------------------------------------
+
     try:
-        import matplotlib.pyplot as plt
 
         plt.close(fig)
 
@@ -305,7 +763,27 @@ def render_chart_image(
     )
 
     print(
+        "[chart] timeframe: 1H"
+    )
+
+    print(
         "[chart] timezone: Asia/Dhaka (UTC+6)"
     )
 
-    return chart_path
+    print(
+        f"[chart] current price: {current_price}"
+    )
+
+    if support is not None:
+
+        print(
+            f"[chart] support: {support}"
+        )
+
+    if resistance is not None:
+
+        print(
+            f"[chart] resistance: {resistance}"
+        )
+
+    return chart_pathv
