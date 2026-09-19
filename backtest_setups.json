@@ -662,6 +662,23 @@
       "technical_analysis": "Price sits just below the 9‑ and 21‑period EMAs (0.4538 / 0.4523) while the MACD histogram remains negative and the stochastic shows K under D, all pointing to downward pressure. The order book shows a modest bid‑side imbalance (≈75 %) and a tight spread, offering a slight counter‑bias but not enough to offset the bearish momentum.",
       "market_context": "BTC continues a bullish trend on both 4‑hour and daily charts and overall market breadth is strongly positive, providing a supportive backdrop for risk‑off assets.",
       "result": "PENDING"
+    },
+    {
+      "id": 40,
+      "created_at": "2026-09-19T07:00:54.272169+00:00",
+      "symbol": "FILUSDT",
+      "direction": "LONG",
+      "title": "Bullish Momentum Accelerates as $FIL Liquidity Sweep Completes",
+      "entry_low": 0.9608,
+      "entry_high": 0.9627,
+      "stop_loss": 0.958,
+      "take_profit": 0.9683,
+      "support": 0.9608,
+      "resistance": 0.9746,
+      "news_line": "",
+      "technical_analysis": "The price sits just below the 9‑period EMA (0.9635) while comfortably above the 21‑EMA (0.9352) and the 50‑SMA (0.8732), indicating an overall uptrend. MACD remains bullish with a positive histogram, and the stochastic is in the upper‑mid range (K 67, D 76), suggesting momentum is still intact. Immediate support at 0.9608 holds the downside, with the next resistance near 0.9746.",
+      "market_context": "Bitcoin is trading higher on both the 4‑hour and daily charts, reinforcing a bullish backdrop, and 90 % of the broader market is in green, which adds to the positive sentiment for altcoins like FIL.",
+      "result": "PENDING"
     }
   ]
 }
