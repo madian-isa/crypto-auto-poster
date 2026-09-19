@@ -19,7 +19,7 @@ except ImportError:
 
 
 # =========================================================
-# AI / GROQ
+# Groq
 # =========================================================
 
 GROQ_API_KEY = os.environ.get(
@@ -34,7 +34,7 @@ GROQ_MODEL = os.environ.get(
 
 
 # =========================================================
-# BINANCE
+# Binance data
 # =========================================================
 
 BINANCE_FAPI_BASE = (
@@ -43,7 +43,7 @@ BINANCE_FAPI_BASE = (
 
 
 # =========================================================
-# SCREENER
+# Screener
 # =========================================================
 
 SCREENER_SHORTLIST_SIZE = int(
@@ -62,7 +62,32 @@ EXCLUDE_SYMBOLS = {
 
 
 # =========================================================
-# KLINE
+# Futures perpetual whitelist
+# =========================================================
+#
+# If the environment variable is not set,
+# the screener will receive an empty whitelist.
+#
+# The actual Futures API can still be unavailable
+# in GitHub Actions because of HTTP 451.
+#
+
+FUTURES_PERPETUAL_WHITELIST = set(
+    os.environ.get(
+        "FUTURES_PERPETUAL_WHITELIST",
+        "",
+    ).split(",")
+)
+
+FUTURES_PERPETUAL_WHITELIST = {
+    symbol.strip().upper()
+    for symbol in FUTURES_PERPETUAL_WHITELIST
+    if symbol.strip()
+}
+
+
+# =========================================================
+# Kline settings
 # =========================================================
 
 KLINE_INTERVAL = os.environ.get(
@@ -79,7 +104,7 @@ KLINE_LIMIT = int(
 
 
 # =========================================================
-# POST SETTINGS
+# Posting
 # =========================================================
 
 POSTS_PER_CYCLE = int(
@@ -98,7 +123,7 @@ MINUTES_BETWEEN_POSTS = int(
 
 
 # =========================================================
-# CHART
+# Chart
 # =========================================================
 
 CHART_OUTPUT_DIR = os.environ.get(
@@ -108,7 +133,7 @@ CHART_OUTPUT_DIR = os.environ.get(
 
 
 # =========================================================
-# DRY RUN
+# Runtime
 # =========================================================
 
 DRY_RUN = (
@@ -121,7 +146,7 @@ DRY_RUN = (
 
 
 # =========================================================
-# STATE
+# State
 # =========================================================
 
 STATE_FILE = os.environ.get(
@@ -138,7 +163,7 @@ MAX_POSTS_PER_DAY = int(
 
 
 # =========================================================
-# SCORING / SELECTION
+# Candidate selection
 # =========================================================
 
 PICK_FROM_TOP_N = int(
@@ -150,7 +175,7 @@ PICK_FROM_TOP_N = int(
 
 
 # =========================================================
-# MARKET ANALYSIS
+# Setup parameters
 # =========================================================
 
 ATR_MULTIPLIER = float(
@@ -167,7 +192,7 @@ RISK_REWARD_CHOICES = [
 
 
 # =========================================================
-# 1H VOLATILITY FILTER
+# Minimum 1H volatility filter
 # =========================================================
 
 MIN_1H_ATR_PERCENT = float(
@@ -179,7 +204,7 @@ MIN_1H_ATR_PERCENT = float(
 
 
 # =========================================================
-# FINNHUB
+# Finnhub
 # =========================================================
 
 try:
@@ -195,7 +220,7 @@ except (NameError, AttributeError):
 
 
 # =========================================================
-# MARKET CONTEXT
+# Market context
 # =========================================================
 
 MARKET_CONTEXT_ENABLED = (
@@ -211,7 +236,7 @@ BTC_SYMBOL = "BTCUSDT"
 
 
 # =========================================================
-# MAJOR COINS
+# Major coins
 # =========================================================
 
 MAJOR_HIGH_VOLUME = {
@@ -224,7 +249,7 @@ MAJOR_HIGH_VOLUME = {
 
 
 # =========================================================
-# MARKET BREADTH
+# Market breadth
 # =========================================================
 
 MARKET_BREADTH_LIMIT = int(
@@ -236,7 +261,7 @@ MARKET_BREADTH_LIMIT = int(
 
 
 # =========================================================
-# MAJOR COIN SCORE BOOST
+# Major coin score boost
 # =========================================================
 
 MAJOR_COIN_SCORE_BOOST = float(
