@@ -1,0 +1,39 @@
+name: Backtest 30 Setups
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  backtest:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          pip install requests
+
+      - name: Run historical backtest
+        run: |
+          python src/backtest_results.py
+
+      - name: Commit backtest results
+        run: |
+          git config user.name "backtest-bot"
+          git config user.email "actions@github.com"
+
+          git add backtest_results.json
+
+          git diff --staged --quiet || git commit -m "chore: update backtest results [skip ci]"
+
+          git push
