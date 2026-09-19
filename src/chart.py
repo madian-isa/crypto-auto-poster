@@ -1,291 +1,213 @@
-"""
-chart.py
-
-Creates a clean market-data candlestick chart for Binance Square.
-
-This chart is for educational market visualization only.
-It uses the existing kline dataframe and does not generate
-or calculate trade-entry, stop-loss, or take-profit signals.
-"""
-
 import os
 
 import pandas as pd
 import mplfinance as mpf
 
-from src import bot_config as cfg
+from src import bot_config
 
-
-# =========================================================
-# CHART STYLE
-# =========================================================
 
 _CHART_STYLE = mpf.make_mpf_style(
     base_mpf_style="nightclouds",
-    marketcolors=mpf.make_marketcolors(
-        up="#0ecb81",
-        down="#f6465d",
-        edge={
-            "up": "#0ecb81",
-            "down": "#f6465d",
-        },
-        wick={
-            "up": "#0ecb81",
-            "down": "#f6465d",
-        },
-        volume={
-            "up": "#0ecb81",
-            "down": "#f6465d",
-        },
-    ),
-    facecolor="#0b0e11",
-    figcolor="#0b0e11",
-    gridcolor="#1e2329",
     gridstyle="-",
+    gridcolor="#333333",
+    facecolor="#0b0f14",
+    edgecolor="#555555",
+    figcolor="#0b0f14",
     rc={
-        "axes.edgecolor": "#2b3139",
-        "text.color": "#eaecef",
-        "axes.labelcolor": "#848e9c",
-        "xtick.color": "#848e9c",
-        "ytick.color": "#848e9c",
+        "font.size": 9,
+        "axes.labelcolor": "white",
+        "xtick.color": "white",
+        "ytick.color": "white",
+        "text.color": "white",
     },
 )
 
-
-# =========================================================
-# RENDER CHART
-# =========================================================
 
 def render_chart_image(
     symbol: str,
     klines_df: pd.DataFrame,
     setup: dict | None = None,
 ) -> str:
+    """
+    Create a neutral market-analysis chart.
 
-    os.makedirs(
-        cfg.CHART_OUTPUT_DIR,
-        exist_ok=True,
-    )
+    Includes:
+      - Candlesticks
+      - EMA 21
+      - SMA 50
+
+    Does not include automated entry/SL/TP levels.
+    Does not use mplfinance volume panel.
+    """
 
     if klines_df is None or klines_df.empty:
-        raise ValueError(
-            f"No kline data available for {symbol}"
-        )
+        raise ValueError(f"No kline data available for {symbol}")
 
     df = klines_df.copy()
 
-    # -----------------------------------------------------
-    # DATETIME INDEX
-    # -----------------------------------------------------
-
-    if "open_time" in df.columns:
-
-        df.index = pd.to_datetime(
-            df["open_time"],
-            unit="ms",
-        )
-
-    elif not isinstance(
-        df.index,
-        pd.DatetimeIndex,
-    ):
-
-        raise ValueError(
-            "Kline dataframe must contain "
-            "'open_time' or a DatetimeIndex."
-        )
-
-    # -----------------------------------------------------
-    # RENAME OHLCV
-    # -----------------------------------------------------
-
+    # Normalize column names
     rename_map = {
         "open": "Open",
         "high": "High",
         "low": "Low",
         "close": "Close",
         "volume": "Volume",
+        "Open time": "Date",
+        "open_time": "Date",
+        "timestamp": "Date",
     }
 
     df = df.rename(
-        columns=rename_map
+        columns={
+            old: new
+            for old, new in rename_map.items()
+            if old in df.columns
+        }
     )
 
-    required = [
-        "Open",
-        "High",
-        "Low",
-        "Close",
-    ]
+    # Make sure required OHLC columns exist
+    required = ["Open", "High", "Low", "Close"]
 
-    missing = [
-        col
-        for col in required
-        if col not in df.columns
-    ]
+    missing = [col for col in required if col not in df.columns]
 
     if missing:
-
         raise ValueError(
-            "Missing OHLC columns: "
-            + ", ".join(missing)
+            f"Missing OHLC columns for {symbol}: {missing}"
         )
 
-    # -----------------------------------------------------
-    # NUMERIC CLEANUP
-    # -----------------------------------------------------
-
-    for column in required:
-
-        df[column] = pd.to_numeric(
-            df[column],
+    # Convert OHLC values to numeric
+    for col in required:
+        df[col] = pd.to_numeric(
+            df[col],
             errors="coerce",
         )
 
-    if "Volume" in df.columns:
-
-        df["Volume"] = pd.to_numeric(
-            df["Volume"],
-            errors="coerce",
-        )
-
+    # Remove invalid rows
     df = df.dropna(
         subset=required
     )
 
     if df.empty:
-
         raise ValueError(
-            f"No valid OHLC data for {symbol}"
+            f"No valid OHLC data available for {symbol}"
         )
 
-    # -----------------------------------------------------
-    # LIMIT CHART DATA
-    # -----------------------------------------------------
+    # Handle datetime index
+    if "Date" in df.columns:
+        df["Date"] = pd.to_datetime(
+            df["Date"],
+            errors="coerce",
+        )
 
-    # Keep the latest candles so the image remains readable.
-    df = df.tail(80)
+        df = df.dropna(
+            subset=["Date"]
+        )
 
-    # -----------------------------------------------------
-    # OUTPUT PATH
-    # -----------------------------------------------------
+        df = df.set_index("Date")
+
+    elif not isinstance(
+        df.index,
+        pd.DatetimeIndex,
+    ):
+        raise ValueError(
+            f"Datetime index required for {symbol}"
+        )
+
+    # Sort chronologically
+    df = df.sort_index()
+
+    # Keep latest 80 candles
+    df = df.tail(80).copy()
+
+    if len(df) < 10:
+        raise ValueError(
+            f"Not enough candles available for {symbol}"
+        )
+
+    # Technical indicators
+    df["EMA21"] = (
+        df["Close"]
+        .ewm(
+            span=21,
+            adjust=False,
+        )
+        .mean()
+    )
+
+    df["SMA50"] = (
+        df["Close"]
+        .rolling(
+            window=50,
+            min_periods=1,
+        )
+        .mean()
+    )
+
+    # Moving-average overlays
+    addplots = [
+        mpf.make_addplot(
+            df["EMA21"],
+            width=1.2,
+        ),
+        mpf.make_addplot(
+            df["SMA50"],
+            width=1.0,
+        ),
+    ]
+
+    # Output directory
+    output_dir = getattr(
+        bot_config,
+        "CHART_OUTPUT_DIR",
+        "/tmp/trade_setup_charts",
+    )
+
+    os.makedirs(
+        output_dir,
+        exist_ok=True,
+    )
 
     safe_symbol = (
-        str(symbol)
-        .upper()
+        symbol
         .replace("/", "_")
         .replace(":", "_")
     )
 
-    out_path = os.path.join(
-        cfg.CHART_OUTPUT_DIR,
+    chart_path = os.path.join(
+        output_dir,
         f"{safe_symbol}_market_chart.png",
     )
 
-    # -----------------------------------------------------
-    # TITLE
-    # -----------------------------------------------------
+    title = f"{symbol} — Market Analysis"
 
-    timeframe = str(
-        getattr(
-            cfg,
-            "KLINE_INTERVAL",
-            "1h",
-        )
-    ).upper()
-
-    title = (
-        f"{safe_symbol}  |  "
-        f"{timeframe} Market Chart"
-    )
-
-    # -----------------------------------------------------
-    # VOLUME
-    # -----------------------------------------------------
-
-    show_volume = (
-        "Volume" in df.columns
-        and df["Volume"].notna().any()
-    )
-
-    # -----------------------------------------------------
-    # MOVING AVERAGES
-    # -----------------------------------------------------
-
-    addplots = []
-
-    if len(df) >= 21:
-
-        ema21 = (
-            df["Close"]
-            .ewm(
-                span=21,
-                adjust=False,
-            )
-            .mean()
-        )
-
-        addplots.append(
-            mpf.make_addplot(
-                ema21,
-                panel=0,
-                width=1.0,
-                color="#f0b90b",
-            )
-        )
-
-    if len(df) >= 50:
-
-        sma50 = (
-            df["Close"]
-            .rolling(50)
-            .mean()
-        )
-
-        addplots.append(
-            mpf.make_addplot(
-                sma50,
-                panel=0,
-                width=1.0,
-                color="#8b5cf6",
-            )
-        )
-
-    # -----------------------------------------------------
-    # CREATE CHART
-    # -----------------------------------------------------
+    # IMPORTANT:
+    # Do NOT pass volume=True/False.
+    # This avoids the mplfinance volume validator error.
+    plot_kwargs = {
+        "type": "candle",
+        "style": _CHART_STYLE,
+        "title": title,
+        "figsize": (10, 6),
+        "tight_layout": True,
+        "returnfig": True,
+        "datetime_format": "%d %b %H:%M",
+        "xrotation": 0,
+        "addplot": addplots,
+    }
 
     fig, axes = mpf.plot(
         df,
-        type="candle",
-        style=_CHART_STYLE,
-        title=title,
-        volume=show_volume,
-        addplot=addplots or None,
-        figsize=(10, 6),
-        tight_layout=True,
-        returnfig=True,
-        datetime_format="%d %b %H:%M",
-        xrotation=0,
+        **plot_kwargs,
     )
-
-    # -----------------------------------------------------
-    # SAVE
-    # -----------------------------------------------------
 
     fig.savefig(
-        out_path,
-        dpi=150,
+        chart_path,
+        dpi=160,
         bbox_inches="tight",
-        facecolor="#0b0e11",
     )
 
-    # -----------------------------------------------------
-    # CLOSE FIGURE
-    # -----------------------------------------------------
-
+    # Close figure to avoid memory buildup
     try:
-
         import matplotlib.pyplot as plt
 
         plt.close(fig)
@@ -294,7 +216,7 @@ def render_chart_image(
         pass
 
     print(
-        f"[chart] saved market chart: {out_path}"
+        f"[chart] generated: {chart_path}"
     )
 
-    return out_path
+    return chart_path
