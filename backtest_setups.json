@@ -781,6 +781,23 @@
       "technical_analysis": "Price sits just above the 9‑EMA (0.198094) and 21‑EMA (0.193102), indicating short‑term buying pressure. The MACD histogram is marginally negative and Stochastic K is below D, suggesting some downside bias, while the order‑book shows a modest 4.2% bid‑side imbalance.",
       "market_context": "BTC is in a bullish trend on both 4‑hour and daily frames, and the broader market is broadly positive with 78.5% of assets advancing.",
       "result": "PENDING"
+    },
+    {
+      "id": 47,
+      "created_at": "2026-09-19T17:50:23.018254+00:00",
+      "symbol": "EPICUSDT",
+      "direction": "LONG",
+      "title": "Buyers Defend Key Demand Zone: $EPIC Ready for Extension",
+      "entry_low": 0.452,
+      "entry_high": 0.453,
+      "stop_loss": 0.43,
+      "take_profit": 0.496,
+      "support": 0.4325,
+      "resistance": 0.498,
+      "news_line": "",
+      "technical_analysis": "Price is comfortably above EMA9 (0.4558), EMA21 (0.4355) and SMA50 (0.3934), confirming a strong bullish bias. MACD remains positive (0.0215) and above its signal (0.0191) with a growing histogram, while the stochastic oscillator sits in the high 80s, indicating momentum is still upward despite overbought conditions. Order‑book shows a modest ask‑side imbalance of -9.17% with a tight spread.",
+      "market_context": "BTC maintains bullish momentum on both 4H and 1D timeframes, and 81.6% of the broader crypto market is green, supporting a favorable backdrop for long positions.",
+      "result": "PENDING"
     }
   ]
 }
