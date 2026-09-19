@@ -764,6 +764,23 @@
       "technical_analysis": "Price sits below EMA9 (0.000397), EMA21 (0.00048) and SMA50 (0.000619), signaling bearish bias. MACD is negative with a shrinking histogram, and Stochastic is in the low‑20 range, reinforcing downside pressure. Immediate resistance sits around 0.00038, offering a logical short entry zone.",
       "market_context": "BTC is in a bullish trend on both 4‑hour and daily frames, and the broader market shows a net positive breadth, but AMB's technical picture remains bearish.",
       "result": "PENDING"
+    },
+    {
+      "id": 46,
+      "created_at": "2026-09-19T07:45:12.552789+00:00",
+      "symbol": "SOMIUSDT",
+      "direction": "LONG",
+      "title": "Bullish Divergence Flashed on $SOMI Daily Chart Structure",
+      "entry_low": 0.198,
+      "entry_high": 0.1982,
+      "stop_loss": 0.1975,
+      "take_profit": 0.199,
+      "support": 0.198,
+      "resistance": 0.1986,
+      "news_line": "",
+      "technical_analysis": "Price sits just above the 9‑EMA (0.198094) and 21‑EMA (0.193102), indicating short‑term buying pressure. The MACD histogram is marginally negative and Stochastic K is below D, suggesting some downside bias, while the order‑book shows a modest 4.2% bid‑side imbalance.",
+      "market_context": "BTC is in a bullish trend on both 4‑hour and daily frames, and the broader market is broadly positive with 78.5% of assets advancing.",
+      "result": "PENDING"
     }
   ]
 }
