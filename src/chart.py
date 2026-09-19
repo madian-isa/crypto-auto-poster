@@ -66,6 +66,7 @@ _CHART_STYLE = mpf.make_mpf_style(
         "ytick.color": "#848e9c",
         "text.color": "#eaecef",
         "font.size": 9,
+        "font.weight": "normal",
     },
 )
 
@@ -787,7 +788,7 @@ def render_chart_image(
         )
 
     # =====================================================
-    # RETURN CHART PATH
+    # RETURN
     # =====================================================
 
     return chart_path
