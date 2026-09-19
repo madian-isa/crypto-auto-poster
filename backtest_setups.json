@@ -781,23 +781,6 @@
       "technical_analysis": "Price sits just above the 9‑EMA (0.198094) and 21‑EMA (0.193102), indicating short‑term buying pressure. The MACD histogram is marginally negative and Stochastic K is below D, suggesting some downside bias, while the order‑book shows a modest 4.2% bid‑side imbalance.",
       "market_context": "BTC is in a bullish trend on both 4‑hour and daily frames, and the broader market is broadly positive with 78.5% of assets advancing.",
       "result": "PENDING"
-    },
-    {
-      "id": 47,
-      "created_at": "2026-09-19T12:00:55.065295+00:00",
-      "symbol": "MORPHOUSDT",
-      "direction": "LONG",
-      "title": "Bullish Momentum Accelerates as $MORPHO Liquidity Sweep Completes",
-      "entry_low": 2.703,
-      "entry_high": 2.706,
-      "stop_loss": 2.6,
-      "take_profit": 2.909,
-      "support": 2.67,
-      "resistance": 2.793,
-      "news_line": "",
-      "technical_analysis": "Price is holding just above the 2.703 intraday support while sitting above the EMA21 (2.631) and well above the SMA50 (2.419), indicating underlying bullish bias. The MACD histogram is narrowing and the stochastic is turning down from overbought levels, suggesting a potential rebound from the tight 2.703‑2.708 range.",
-      "market_context": "BTC remains in a bullish trend on higher timeframes, and the broader crypto market shows strong green breadth, supporting risk‑on sentiment.",
-      "result": "PENDING"
     }
   ]
 }
