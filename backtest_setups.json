@@ -322,6 +322,23 @@
       "technical_analysis": "Price sits just above the immediate support of $0.198 while the 9‑period EMA sits higher at $0.1991, hinting at short‑term downside. MACD is bearish, with the line below the signal and a negative histogram, and the stochastic shows K (59.6) below D (72.8), reinforcing a weakening momentum.",
       "market_context": "Bitcoin is up nearly 6% and the broader market is broadly positive, but BAND's own bearish signals dominate the setup.",
       "result": "PENDING"
+    },
+    {
+      "id": 20,
+      "created_at": "2026-09-19T02:00:50.072779+00:00",
+      "symbol": "BONKUSDT",
+      "direction": "SHORT",
+      "title": "OVERBOUGHT TURN?",
+      "entry_low": 2.95e-06,
+      "entry_high": 3.05e-06,
+      "stop_loss": 3.15e-06,
+      "take_profit": 2.7e-06,
+      "support": 3e-06,
+      "resistance": 3e-06,
+      "news_line": "",
+      "technical_analysis": "Price sits flat at the 3‑µBTC level with EMA9, EMA21 and SMA50 overlapping, indicating a lack of trend. MACD is neutral at zero while the stochastic shows K around 69 and D near 77, a classic overbought divergence that often precedes a pullback. The pair is hugging a tight support/resistance cluster at 3.0 µBTC.",
+      "market_context": "BTC is up about 6 % and the broader market remains broadly positive, which can keep alt‑coins volatile.",
+      "result": "PENDING"
     }
   ]
 }
