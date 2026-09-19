@@ -10,6 +10,7 @@ The post can include a neutral market-data chart:
 - SMA 50
 - Volume
 
+No ATR volatility filter is used here.
 No automated entry/SL/TP chart instructions are generated here.
 """
 
@@ -17,8 +18,6 @@ import os
 import random
 import time
 import traceback
-
-import pandas as pd
 
 from src import bot_config as cfg
 
@@ -52,123 +51,6 @@ from src.advanced_market_data import (
 )
 
 from src.chart import render_chart_image
-
-
-def has_enough_1h_volatility(klines_df):
-    """
-    Reject very low-volatility 1H markets.
-
-    This is only a market-quality filter.
-    It does not modify entry, stop-loss,
-    or take-profit values.
-    """
-
-    if klines_df is None or len(klines_df) < 20:
-        print(
-            "[volatility] not enough candles "
-            "for ATR check."
-        )
-        return True
-
-    df = klines_df.copy()
-
-    # Handle both lowercase and capitalized columns.
-    column_map = {
-        "High": "high",
-        "Low": "low",
-        "Close": "close",
-    }
-
-    df = df.rename(columns=column_map)
-
-    required = [
-        "high",
-        "low",
-        "close",
-    ]
-
-    missing = [
-        col
-        for col in required
-        if col not in df.columns
-    ]
-
-    if missing:
-        print(
-            f"[volatility] missing columns {missing} "
-            "— skipping volatility filter."
-        )
-        return True
-
-    high = pd.to_numeric(
-        df["high"],
-        errors="coerce",
-    )
-
-    low = pd.to_numeric(
-        df["low"],
-        errors="coerce",
-    )
-
-    close = pd.to_numeric(
-        df["close"],
-        errors="coerce",
-    )
-
-    previous_close = close.shift(1)
-
-    true_range = pd.concat(
-        [
-            high - low,
-            (high - previous_close).abs(),
-            (low - previous_close).abs(),
-        ],
-        axis=1,
-    ).max(axis=1)
-
-    atr = true_range.rolling(
-        window=14,
-        min_periods=14,
-    ).mean()
-
-    current_close = close.iloc[-1]
-    current_atr = atr.iloc[-1]
-
-    if (
-        pd.isna(current_close)
-        or pd.isna(current_atr)
-        or current_close <= 0
-    ):
-        print(
-            "[volatility] ATR calculation unavailable "
-            "— skipping filter."
-        )
-        return True
-
-    atr_percent = (
-        current_atr / current_close
-    ) * 100
-
-    minimum = cfg.MIN_1H_ATR_PERCENT
-
-    print(
-        f"[volatility] 1H ATR: "
-        f"{atr_percent:.2f}% | "
-        f"minimum: {minimum:.2f}%"
-    )
-
-    if atr_percent < minimum:
-        print(
-            "[volatility] market volatility too low "
-            "— skipping candidate."
-        )
-        return False
-
-    print(
-        "[volatility] volatility check passed."
-    )
-
-    return True
 
 
 def run_once():
@@ -346,24 +228,6 @@ def _build_and_publish(
         f"[run] technical indicators ready "
         f"for {symbol}"
     )
-
-    # -----------------------------
-    # 1H volatility filter
-    # -----------------------------
-
-    print(
-        f"[run] checking 1H volatility "
-        f"for {symbol}..."
-    )
-
-    if not has_enough_1h_volatility(
-        klines_df
-    ):
-        raise ValueError(
-            f"{symbol} rejected: "
-            "1H volatility is below "
-            "the configured minimum."
-        )
 
     # -----------------------------
     # News
