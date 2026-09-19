@@ -441,6 +441,23 @@
       "technical_analysis": "Price sits just above the 0.2457 support while the 9‑EMA is higher at 0.2483, indicating short‑term downside pressure. MACD is below its signal line with a negative histogram, and the stochastic oscillator shows K (25) under D (48), both pointing bearish. The price is confined within a tight 0.2457‑0.2464 range.",
       "market_context": "BTC is up about 4.5% and the broader market is broadly positive, yet SUSHI’s short‑term indicators remain bearish.",
       "result": "PENDING"
+    },
+    {
+      "id": 27,
+      "created_at": "2026-09-19T05:00:52.783918+00:00",
+      "symbol": "PENDLEUSDT",
+      "direction": "LONG",
+      "title": "BULLISH EDGE OR FLICKER?",
+      "entry_low": 2.671,
+      "entry_high": 2.672,
+      "stop_loss": 2.668,
+      "take_profit": 2.68,
+      "support": 2.671,
+      "resistance": 2.673,
+      "news_line": "",
+      "technical_analysis": "Price sits just above the 9‑EMA (2.652) and 21‑EMA (2.607), indicating short‑term strength. The MACD histogram is slightly negative, hinting at a minor pullback, while the stochastic is near the 60‑70 zone with K below D, suggesting cautious optimism.",
+      "market_context": "BTC is up about 4.4% and the broader market shows a strong green bias, supporting risk‑on sentiment for altcoins like PENDLE.",
+      "result": "PENDING"
     }
   ]
 }
