@@ -5,15 +5,14 @@ Historical backtest for generated crypto setups.
 
 Purpose:
 - Test the first 30 generated setups.
-- Use 1-minute historical Spot candles.
-- Determine whether the entry was reached.
-- After entry:
+- Use 1-minute historical Binance Spot candles.
+- Determine:
     TP_HIT
     SL_HIT
     AMBIGUOUS
-    PENDING
-- If entry was never reached:
     NO_ENTRY
+    PENDING
+    NO_DATA
 
 Important:
 This is historical analysis only.
@@ -22,7 +21,7 @@ It does not place trades or generate live signals.
 
 import json
 import time
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 
 import requests
 
@@ -32,8 +31,7 @@ OUTPUT_FILE = "backtest_results.json"
 
 MAX_SETUPS = 30
 
-# Maximum time after setup creation to wait for entry/TP/SL.
-# 6 hours = 360 minutes.
+# Test each setup for 6 hours after creation.
 HORIZON_MINUTES = 360
 
 INTERVAL = "1m"
@@ -51,48 +49,96 @@ HEADERS = {
 TIMEOUT = 10
 
 
-# ============================================================
-# LOAD SETUPS
-# ============================================================
-
 def load_setups():
-    with open(
-        INPUT_FILE,
-        "r",
-        encoding="utf-8",
-    ) as f:
-        data = json.load(f)
+    """Load the first MAX_SETUPS setups."""
+
+    try:
+        with open(
+            INPUT_FILE,
+            "r",
+            encoding="utf-8",
+        ) as f:
+            data = json.load(f)
+
+    except FileNotFoundError:
+        print(
+            f"[backtest] ERROR: {INPUT_FILE} not found."
+        )
+        return []
+
+    except Exception as err:
+        print(
+            f"[backtest] ERROR loading {INPUT_FILE}: {err}"
+        )
+        return []
 
     setups = data.get(
         "setups",
         [],
     )
 
+    if not isinstance(setups, list):
+        return []
+
     return setups[:MAX_SETUPS]
 
 
-# ============================================================
-# TIME
-# ============================================================
+def load_previous_results():
+    """Load existing results so completed results are not unnecessarily replaced."""
+
+    try:
+        with open(
+            OUTPUT_FILE,
+            "r",
+            encoding="utf-8",
+        ) as f:
+            data = json.load(f)
+
+        if not isinstance(data, dict):
+            return {}
+
+        return data
+
+    except Exception:
+        return {}
+
 
 def parse_time(value):
-    return datetime.fromisoformat(
-        value.replace(
-            "Z",
-            "+00:00",
+    """Convert ISO timestamp to timezone-aware datetime."""
+
+    if not value:
+        return None
+
+    try:
+        dt = datetime.fromisoformat(
+            value.replace(
+                "Z",
+                "+00:00",
+            )
         )
-    )
+
+        if dt.tzinfo is None:
+            dt = dt.replace(
+                tzinfo=timezone.utc
+            )
+
+        return dt
+
+    except Exception as err:
+        print(
+            f"[backtest] invalid timestamp "
+            f"{value}: {err}"
+        )
+        return None
 
 
 def to_milliseconds(dt):
+    """Convert datetime to Unix milliseconds."""
+
     return int(
         dt.timestamp() * 1000
     )
 
-
-# ============================================================
-# BINANCE DATA
-# ============================================================
 
 def get_klines(
     symbol,
@@ -100,10 +146,10 @@ def get_klines(
     end_ms,
 ):
     """
-    Fetch 1-minute candles.
+    Download 1-minute Spot candles.
 
-    1000 candles are enough for the 6-hour horizon,
-    but pagination is included for safety.
+    Binance normally returns up to 1000 candles per request,
+    so this function paginates when necessary.
     """
 
     all_rows = []
@@ -125,12 +171,10 @@ def get_klines(
         for base_url in BASE_URLS:
 
             url = (
-                f"{base_url}"
-                "/api/v3/klines"
+                f"{base_url}/api/v3/klines"
             )
 
             try:
-
                 response = requests.get(
                     url,
                     params=params,
@@ -148,11 +192,12 @@ def get_klines(
 
                 print(
                     f"[backtest] "
-                    f"{symbol} request failed: "
-                    f"{err}"
+                    f"{symbol} request failed "
+                    f"via {base_url}: {err}"
                 )
 
-                continue
+        if rows is None:
+            return []
 
         if not rows:
             break
@@ -167,8 +212,7 @@ def get_klines(
         )
 
         next_start = (
-            last_open_time
-            + 60_000
+            last_open_time + 60_000
         )
 
         if next_start <= current_start:
@@ -181,11 +225,9 @@ def get_klines(
     return all_rows
 
 
-# ============================================================
-# CANDLE HELPERS
-# ============================================================
-
 def candle_values(row):
+    """Convert Binance kline row into a simpler dictionary."""
+
     return {
         "time": int(row[0]),
         "open": float(row[1]),
@@ -195,15 +237,13 @@ def candle_values(row):
     }
 
 
-# ============================================================
-# ENTRY CHECK
-# ============================================================
-
 def entry_touched(
     candle,
     entry_low,
     entry_high,
 ):
+    """Check whether the candle touched the entry zone."""
+
     return (
         candle["high"] >= entry_low
         and
@@ -211,36 +251,79 @@ def entry_touched(
     )
 
 
-# ============================================================
-# RESULT ENGINE
-# ============================================================
-
 def evaluate_setup(
     setup,
     candles,
 ):
-    direction = (
-        setup["direction"]
-        .upper()
-    )
+    """
+    Evaluate one setup.
 
-    entry_low = float(
-        setup["entry_low"]
-    )
+    Logic:
 
-    entry_high = float(
-        setup["entry_high"]
-    )
+    1. Wait until price touches the entry zone.
+    2. After entry:
+       - LONG:
+           TP if high >= TP
+           SL if low <= SL
+       - SHORT:
+           TP if low <= TP
+           SL if high >= SL
 
-    stop_loss = float(
-        setup["stop_loss"]
-    )
+    If one candle touches both TP and SL,
+    result is AMBIGUOUS because 1-minute OHLC data
+    cannot reliably tell which level was reached first.
+    """
 
-    take_profit = float(
-        setup["take_profit"]
-    )
+    direction = str(
+        setup.get(
+            "direction",
+            "",
+        )
+    ).upper()
+
+    try:
+        entry_low = float(
+            setup["entry_low"]
+        )
+
+        entry_high = float(
+            setup["entry_high"]
+        )
+
+        stop_loss = float(
+            setup["stop_loss"]
+        )
+
+        take_profit = float(
+            setup["take_profit"]
+        )
+
+    except Exception as err:
+
+        return {
+            "result": "NO_DATA",
+            "entry_time": None,
+            "entry_price": None,
+            "result_time": None,
+            "error": (
+                f"Invalid setup values: {err}"
+            ),
+        }
+
+    if direction not in (
+        "LONG",
+        "SHORT",
+    ):
+        return {
+            "result": "NO_DATA",
+            "entry_time": None,
+            "entry_price": None,
+            "result_time": None,
+            "error": "Invalid direction",
+        }
 
     entry_time = None
+
     entry_price = None
 
     for candle_row in candles:
@@ -249,90 +332,28 @@ def evaluate_setup(
             candle_row
         )
 
-        # ----------------------------------------------------
-        # BEFORE ENTRY
-        # ----------------------------------------------------
-
+        # -----------------------------
+        # Before entry
+        # -----------------------------
         if entry_time is None:
 
-            if entry_touched(
+            if not entry_touched(
                 candle,
                 entry_low,
                 entry_high,
             ):
-
-                entry_time = (
-                    candle["time"]
-                )
-
-                # Use midpoint of entry range
-                # for reporting only.
-                entry_price = (
-                    entry_low
-                    + entry_high
-                ) / 2
-
-                # Check if the same candle also
-                # touched TP and SL.
-                if direction == "LONG":
-
-                    tp_hit = (
-                        candle["high"]
-                        >= take_profit
-                    )
-
-                    sl_hit = (
-                        candle["low"]
-                        <= stop_loss
-                    )
-
-                else:
-
-                    tp_hit = (
-                        candle["low"]
-                        <= take_profit
-                    )
-
-                    sl_hit = (
-                        candle["high"]
-                        >= stop_loss
-                    )
-
-                if tp_hit and sl_hit:
-
-                    return {
-                        "result": "AMBIGUOUS",
-                        "entry_time": entry_time,
-                        "entry_price": entry_price,
-                        "result_time": entry_time,
-                    }
-
-                if tp_hit:
-
-                    return {
-                        "result": "TP_HIT",
-                        "entry_time": entry_time,
-                        "entry_price": entry_price,
-                        "result_time": entry_time,
-                    }
-
-                if sl_hit:
-
-                    return {
-                        "result": "SL_HIT",
-                        "entry_time": entry_time,
-                        "entry_price": entry_price,
-                        "result_time": entry_time,
-                    }
-
                 continue
 
-        # ----------------------------------------------------
-        # AFTER ENTRY
-        # ----------------------------------------------------
+            entry_time = candle["time"]
 
-        else:
+            # Midpoint of the entry zone
+            entry_price = (
+                entry_low + entry_high
+            ) / 2
 
+            # Check whether TP or SL
+            # was already touched in
+            # the same candle.
             if direction == "LONG":
 
                 tp_hit = (
@@ -357,8 +378,6 @@ def evaluate_setup(
                     >= stop_loss
                 )
 
-            # If both occur in one 1-minute candle,
-            # the exact order is unknown.
             if tp_hit and sl_hit:
 
                 return {
@@ -386,23 +405,67 @@ def evaluate_setup(
                     "result_time": candle["time"],
                 }
 
-    # --------------------------------------------------------
-    # NO ENTRY
-    # --------------------------------------------------------
+            continue
 
-    if entry_time is None:
+        # -----------------------------
+        # After entry
+        # -----------------------------
 
-        return {
-            "result": "NO_ENTRY",
-            "entry_time": None,
-            "entry_price": None,
-            "result_time": None,
-        }
+        if direction == "LONG":
 
-    # --------------------------------------------------------
-    # STILL OPEN / NO TP OR SL
-    # --------------------------------------------------------
+            tp_hit = (
+                candle["high"]
+                >= take_profit
+            )
 
+            sl_hit = (
+                candle["low"]
+                <= stop_loss
+            )
+
+        else:
+
+            tp_hit = (
+                candle["low"]
+                <= take_profit
+            )
+
+            sl_hit = (
+                candle["high"]
+                >= stop_loss
+            )
+
+        # Both levels touched in
+        # the same 1-minute candle.
+        if tp_hit and sl_hit:
+
+            return {
+                "result": "AMBIGUOUS",
+                "entry_time": entry_time,
+                "entry_price": entry_price,
+                "result_time": candle["time"],
+            }
+
+        if tp_hit:
+
+            return {
+                "result": "TP_HIT",
+                "entry_time": entry_time,
+                "entry_price": entry_price,
+                "result_time": candle["time"],
+            }
+
+        if sl_hit:
+
+            return {
+                "result": "SL_HIT",
+                "entry_time": entry_time,
+                "entry_price": entry_price,
+                "result_time": candle["time"],
+            }
+
+    # Entry happened, but neither
+    # TP nor SL was reached yet.
     return {
         "result": "PENDING",
         "entry_time": entry_time,
@@ -411,11 +474,9 @@ def evaluate_setup(
     }
 
 
-# ============================================================
-# FORMAT RESULT
-# ============================================================
-
 def format_time(ms):
+    """Convert milliseconds to ISO UTC timestamp."""
+
     if ms is None:
         return None
 
@@ -425,57 +486,153 @@ def format_time(ms):
     ).isoformat()
 
 
-# ============================================================
-# MAIN BACKTEST
-# ============================================================
-
 def run_backtest():
 
     setups = load_setups()
 
-    print(
-        f"[backtest] loaded "
-        f"{len(setups)} setups"
+    if not setups:
+
+        print(
+            "[backtest] No setups found."
+        )
+
+        return
+
+    previous_data = (
+        load_previous_results()
+    )
+
+    previous_results = (
+        previous_data.get(
+            "results",
+            {},
+        )
     )
 
     results = []
+
+    now = datetime.now(
+        timezone.utc
+    )
+
+    print(
+        f"[backtest] "
+        f"Testing {len(setups)} setups..."
+    )
+
+    print(
+        f"[backtest] "
+        f"Horizon: {HORIZON_MINUTES} minutes"
+    )
 
     for index, setup in enumerate(
         setups,
         start=1,
     ):
 
-        symbol = setup[
-            "symbol"
-        ]
+        setup_id = setup.get(
+            "id",
+            index,
+        )
+
+        symbol = str(
+            setup.get(
+                "symbol",
+                "",
+            )
+        ).upper()
 
         created_at = parse_time(
-            setup["created_at"]
+            setup.get(
+                "created_at"
+            )
         )
+
+        print(
+            ""
+        )
+
+        print(
+            f"[backtest] "
+            f"{index}/{len(setups)} "
+            f"#{setup_id} "
+            f"{symbol}"
+        )
+
+        if not created_at:
+
+            result = {
+                "id": setup_id,
+                "symbol": symbol,
+                "result": "NO_DATA",
+                "reason": (
+                    "Invalid created_at timestamp"
+                ),
+            }
+
+            results.append(result)
+
+            continue
+
+        horizon_end = (
+            created_at
+            + timedelta(
+                minutes=HORIZON_MINUTES
+            )
+        )
+
+        # -----------------------------
+        # Important:
+        # If the 6-hour window has not
+        # finished yet, don't evaluate
+        # the setup prematurely.
+        # -----------------------------
+        if now < horizon_end:
+
+            print(
+                "[backtest] "
+                "6-hour window not finished. "
+                "Keeping PENDING."
+            )
+
+            results.append(
+                {
+                    "id": setup_id,
+                    "symbol": symbol,
+                    "direction": setup.get(
+                        "direction"
+                    ),
+                    "created_at": (
+                        created_at.isoformat()
+                    ),
+                    "horizon_end": (
+                        horizon_end.isoformat()
+                    ),
+                    "result": "PENDING",
+                    "entry_time": None,
+                    "entry_price": None,
+                    "result_time": None,
+                    "reason": (
+                        "6-hour test window "
+                        "has not completed yet"
+                    ),
+                }
+            )
+
+            continue
 
         start_ms = to_milliseconds(
             created_at
         )
 
         end_ms = to_milliseconds(
-            created_at
-            + __import__(
-                "datetime"
-            ).timedelta(
-                minutes=HORIZON_MINUTES
-            )
-        )
-
-        print(
-            f"\n[backtest] "
-            f"{index}/{len(setups)} "
-            f"{symbol}"
+            horizon_end
         )
 
         print(
             f"[backtest] "
-            f"direction: "
-            f"{setup['direction']}"
+            f"Downloading candles for "
+            f"{symbol}..."
         )
 
         candles = get_klines(
@@ -487,75 +644,105 @@ def run_backtest():
         if not candles:
 
             print(
-                "[backtest] "
-                "no historical data"
-            )
-
-            result_data = {
-                "result": "NO_DATA",
-                "entry_time": None,
-                "entry_price": None,
-                "result_time": None,
-            }
-
-        else:
-
-            result_data = evaluate_setup(
-                setup,
-                candles,
-            )
-
-            print(
                 f"[backtest] "
-                f"result: "
-                f"{result_data['result']}"
+                f"No Spot candle data "
+                f"available for {symbol}."
             )
 
-        record = dict(setup)
-
-        record.update(
-            {
-                "backtest_result":
-                    result_data[
-                        "result"
-                    ],
-
-                "entry_time":
-                    format_time(
-                        result_data[
-                            "entry_time"
-                        ]
+            results.append(
+                {
+                    "id": setup_id,
+                    "symbol": symbol,
+                    "direction": setup.get(
+                        "direction"
                     ),
-
-                "entry_price":
-                    result_data[
-                        "entry_price"
-                    ],
-
-                "result_time":
-                    format_time(
-                        result_data[
-                            "result_time"
-                        ]
+                    "created_at": (
+                        created_at.isoformat()
                     ),
+                    "horizon_end": (
+                        horizon_end.isoformat()
+                    ),
+                    "result": "NO_DATA",
+                    "entry_time": None,
+                    "entry_price": None,
+                    "result_time": None,
+                    "reason": (
+                        "No Binance Spot "
+                        "1-minute data available"
+                    ),
+                }
+            )
 
-                "horizon_minutes":
-                    HORIZON_MINUTES,
+            continue
 
-                "candle_interval":
-                    INTERVAL,
-            }
+        evaluation = evaluate_setup(
+            setup,
+            candles,
         )
 
-        results.append(
-            record
+        result = {
+            "id": setup_id,
+            "symbol": symbol,
+            "direction": setup.get(
+                "direction"
+            ),
+            "created_at": (
+                created_at.isoformat()
+            ),
+            "horizon_end": (
+                horizon_end.isoformat()
+            ),
+            "entry_low": setup.get(
+                "entry_low"
+            ),
+            "entry_high": setup.get(
+                "entry_high"
+            ),
+            "stop_loss": setup.get(
+                "stop_loss"
+            ),
+            "take_profit": setup.get(
+                "take_profit"
+            ),
+            "result": evaluation.get(
+                "result"
+            ),
+            "entry_time": format_time(
+                evaluation.get(
+                    "entry_time"
+                )
+            ),
+            "entry_price": evaluation.get(
+                "entry_price"
+            ),
+            "result_time": format_time(
+                evaluation.get(
+                    "result_time"
+                )
+            ),
+        }
+
+        if evaluation.get(
+            "error"
+        ):
+            result["error"] = (
+                evaluation["error"]
+            )
+
+        results.append(result)
+
+        print(
+            f"[backtest] "
+            f"{symbol} -> "
+            f"{result['result']}"
         )
 
-    # ========================================================
-    # SUMMARY
-    # ========================================================
+    # -----------------------------
+    # Summary
+    # -----------------------------
 
-    counts = {
+    summary = {
+        "total": len(results),
         "TP_HIT": 0,
         "SL_HIT": 0,
         "NO_ENTRY": 0,
@@ -564,83 +751,36 @@ def run_backtest():
         "NO_DATA": 0,
     }
 
-    for record in results:
+    for result in results:
 
-        result = record[
-            "backtest_result"
-        ]
+        status = result.get(
+            "result"
+        )
 
-        if result in counts:
-            counts[result] += 1
-
-    completed = (
-        counts["TP_HIT"]
-        + counts["SL_HIT"]
-    )
-
-    if completed > 0:
-
-        tp_rate = (
-            counts["TP_HIT"]
-            / completed
-        ) * 100
-
-        sl_rate = (
-            counts["SL_HIT"]
-            / completed
-        ) * 100
-
-    else:
-
-        tp_rate = 0
-        sl_rate = 0
+        if status in summary:
+            summary[status] += 1
 
     output = {
-        "metadata": {
-            "setups_tested":
-                len(results),
+        "generated_at": datetime.now(
+            timezone.utc
+        ).isoformat(),
 
-            "candle_interval":
-                INTERVAL,
+        "input_file": INPUT_FILE,
 
-            "horizon_minutes":
-                HORIZON_MINUTES,
+        "horizon_minutes": (
+            HORIZON_MINUTES
+        ),
 
-            "completed":
-                completed,
+        "interval": INTERVAL,
 
-            "tp_hit":
-                counts["TP_HIT"],
+        "method": (
+            "Historical Binance Spot "
+            "1-minute OHLC backtest"
+        ),
 
-            "sl_hit":
-                counts["SL_HIT"],
+        "summary": summary,
 
-            "no_entry":
-                counts["NO_ENTRY"],
-
-            "ambiguous":
-                counts["AMBIGUOUS"],
-
-            "pending":
-                counts["PENDING"],
-
-            "no_data":
-                counts["NO_DATA"],
-
-            "tp_rate_among_completed":
-                round(
-                    tp_rate,
-                    2,
-                ),
-
-            "sl_rate_among_completed":
-                round(
-                    sl_rate,
-                    2,
-                ),
-        },
-
-        "setups": results,
+        "results": results,
     }
 
     with open(
@@ -657,66 +797,55 @@ def run_backtest():
         )
 
     print(
-        "\n"
-        + "=" * 60
+        ""
     )
 
     print(
-        "30-SETUP BACKTEST SUMMARY"
+        "================================"
     )
 
     print(
-        "=" * 60
+        "BACKTEST COMPLETE"
     )
 
     print(
-        f"Total tested: "
-        f"{len(results)}"
+        "================================"
     )
 
     print(
-        f"TP hit: "
-        f"{counts['TP_HIT']}"
+        f"Total:      {summary['total']}"
     )
 
     print(
-        f"SL hit: "
-        f"{counts['SL_HIT']}"
+        f"TP_HIT:     {summary['TP_HIT']}"
     )
 
     print(
-        f"No entry: "
-        f"{counts['NO_ENTRY']}"
+        f"SL_HIT:     {summary['SL_HIT']}"
     )
 
     print(
-        f"Ambiguous: "
-        f"{counts['AMBIGUOUS']}"
+        f"NO_ENTRY:   {summary['NO_ENTRY']}"
     )
 
     print(
-        f"Pending: "
-        f"{counts['PENDING']}"
+        f"AMBIGUOUS:  {summary['AMBIGUOUS']}"
     )
 
     print(
-        f"No data: "
-        f"{counts['NO_DATA']}"
+        f"PENDING:    {summary['PENDING']}"
     )
 
     print(
-        f"TP rate among completed: "
-        f"{tp_rate:.2f}%"
+        f"NO_DATA:    {summary['NO_DATA']}"
     )
 
     print(
-        f"SL rate among completed: "
-        f"{sl_rate:.2f}%"
+        "================================"
     )
 
     print(
-        f"\nSaved to: "
-        f"{OUTPUT_FILE}"
+        f"Saved to {OUTPUT_FILE}"
     )
 
 
