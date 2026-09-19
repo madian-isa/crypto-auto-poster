@@ -781,6 +781,23 @@
       "technical_analysis": "Price sits just above the 9‑EMA (0.198094) and 21‑EMA (0.193102), indicating short‑term buying pressure. The MACD histogram is marginally negative and Stochastic K is below D, suggesting some downside bias, while the order‑book shows a modest 4.2% bid‑side imbalance.",
       "market_context": "BTC is in a bullish trend on both 4‑hour and daily frames, and the broader market is broadly positive with 78.5% of assets advancing.",
       "result": "PENDING"
+    },
+    {
+      "id": 47,
+      "created_at": "2026-09-19T09:30:50.001135+00:00",
+      "symbol": "LPTUSDT",
+      "direction": "LONG",
+      "title": "On-Chain Metrics Confirm Strong Whale Accumulation on $LPT",
+      "entry_low": 1.596,
+      "entry_high": 1.609,
+      "stop_loss": 1.54,
+      "take_profit": 1.708,
+      "support": 1.567,
+      "resistance": 1.65,
+      "news_line": "",
+      "technical_analysis": "Price sits above EMA9 (1.596) and EMA21 (1.572), with EMA9 still higher than EMA21, indicating bullish momentum. Stochastic K (59) is above D (53.9), showing upward pressure, while the orderbook shows a 16.6% bid‑side imbalance. MACD histogram is slightly negative, but the overall structure leans bullish.",
+      "market_context": "BTC remains in a bullish trend on both 4H and 1D charts, and the broader market is broadly positive with over 80% of assets in green.",
+      "result": "PENDING"
     }
   ]
 }
