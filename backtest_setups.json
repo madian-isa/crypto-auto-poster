@@ -781,23 +781,6 @@
       "technical_analysis": "Price sits just above the 9‑EMA (0.198094) and 21‑EMA (0.193102), indicating short‑term buying pressure. The MACD histogram is marginally negative and Stochastic K is below D, suggesting some downside bias, while the order‑book shows a modest 4.2% bid‑side imbalance.",
       "market_context": "BTC is in a bullish trend on both 4‑hour and daily frames, and the broader market is broadly positive with 78.5% of assets advancing.",
       "result": "PENDING"
-    },
-    {
-      "id": 47,
-      "created_at": "2026-09-19T10:00:56.000208+00:00",
-      "symbol": "AEROUSDT",
-      "direction": "LONG",
-      "title": "$AERO Volume Expansion Signals High Conviction Upward Move",
-      "entry_low": 0.6801,
-      "entry_high": 0.6804,
-      "stop_loss": 0.6358,
-      "take_profit": 0.7687,
-      "support": 0.6358,
-      "resistance": 0.6922,
-      "news_line": "",
-      "technical_analysis": "AERO is trading above its EMA9 (0.6697), EMA21 (0.6574) and SMA50 (0.6246), confirming short‑term bullish bias. MACD lines are nearly aligned with a tiny negative histogram, while the stochastic is in the upper‑mid zone (K 79, D 73), indicating upward momentum. Order‑book shows a modest bid side imbalance (+1.9%).",
-      "market_context": "BTC remains in a bullish trend on both 4H and 1D frames, and the broader market is broadly positive with 82% green assets.",
-      "result": "PENDING"
     }
   ]
 }
