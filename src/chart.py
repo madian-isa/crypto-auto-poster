@@ -786,4 +786,8 @@ def render_chart_image(
             f"[chart] resistance: {resistance}"
         )
 
-    return chart_pathv
+    # =====================================================
+    # RETURN CHART PATH
+    # =====================================================
+
+    return chart_path
