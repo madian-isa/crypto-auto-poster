@@ -1,17 +1,38 @@
 """
 advanced_market_data.py
 
-Advanced market data for the trade-setup bot.
+Advanced market data collector.
 
-Design:
+Purpose:
+- Collect market data for research/backtesting.
 - Advanced data is optional.
-- If Binance Futures blocks an endpoint with 451,
-  the bot continues safely.
-- Missing advanced data never stops the main bot.
+- API failures must never stop the main bot.
+- 451 responses fail fast instead of retrying multiple blocked hosts.
+- Requests are made concurrently where possible to reduce runtime.
+
+Collected data:
+- Multi-timeframe support/resistance
+- BTC 4H/1D context
+- Open Interest
+- OI change
+- Funding rate
+- Long/Short account ratio
+- Liquidation data
+- Order book imbalance
 """
+
+import os
+from concurrent.futures import (
+    ThreadPoolExecutor,
+    as_completed,
+)
 
 import requests
 
+
+# =========================================================
+# CONFIG
+# =========================================================
 
 BINANCE_FAPI_URLS = [
     "https://fapi.binance.com",
@@ -20,25 +41,58 @@ BINANCE_FAPI_URLS = [
     "https://fapi3.binance.com",
 ]
 
+REQUEST_TIMEOUT = float(
+    os.environ.get(
+        "ADVANCED_DATA_TIMEOUT",
+        "5",
+    )
+)
+
+MAX_WORKERS = int(
+    os.environ.get(
+        "ADVANCED_DATA_WORKERS",
+        "8",
+    )
+)
+
+HEADERS = {
+    "User-Agent": "trade-setup-bot/1.0",
+    "Accept": "application/json",
+}
+
 
 # =========================================================
 # REQUEST HELPER
 # =========================================================
 
-def _get(endpoint, params=None, timeout=10):
+def _get(
+    endpoint,
+    params=None,
+    timeout=None,
+):
     """
-    Try multiple Binance Futures endpoints.
+    Request one Binance Futures endpoint.
 
-    Returns:
-        JSON data if successful
-        None if all endpoints fail
+    Important:
+    - 451 fails immediately.
+    - Other connection errors may try the next host.
+    - Successful response returns JSON.
+    - Failure returns None.
     """
+
+    timeout = (
+        timeout
+        if timeout is not None
+        else REQUEST_TIMEOUT
+    )
 
     last_error = None
 
     for base_url in BINANCE_FAPI_URLS:
 
-        url = f"{base_url}{endpoint}"
+        url = (
+            f"{base_url}{endpoint}"
+        )
 
         try:
 
@@ -46,11 +100,16 @@ def _get(endpoint, params=None, timeout=10):
                 url,
                 params=params or {},
                 timeout=timeout,
-                headers={
-                    "User-Agent": "Mozilla/5.0",
-                    "Accept": "application/json",
-                },
+                headers=HEADERS,
             )
+
+            # -------------------------------------------------
+            # 451 = access restriction
+            #
+            # Trying the other Binance hosts usually does not
+            # solve the same environment restriction.
+            # Fail fast instead.
+            # -------------------------------------------------
 
             if response.status_code == 451:
 
@@ -59,15 +118,17 @@ def _get(endpoint, params=None, timeout=10):
                     f"451 blocked: {base_url}"
                 )
 
-                last_error = (
-                    f"451 from {base_url}"
-                )
-
-                continue
+                return None
 
             response.raise_for_status()
 
             return response.json()
+
+        except requests.RequestException as err:
+
+            last_error = err
+
+            continue
 
         except Exception as err:
 
@@ -77,17 +138,37 @@ def _get(endpoint, params=None, timeout=10):
 
     print(
         f"[advanced_market_data] "
-        f"unavailable {endpoint}: {last_error}"
+        f"unavailable {endpoint}: "
+        f"{last_error}"
     )
 
     return None
 
 
 # =========================================================
+# SAFE FLOAT
+# =========================================================
+
+def _safe_float(value):
+
+    try:
+
+        return float(value)
+
+    except Exception:
+
+        return None
+
+
+# =========================================================
 # KLINES
 # =========================================================
 
-def get_klines(symbol, interval, limit=100):
+def get_klines(
+    symbol,
+    interval,
+    limit=100,
+):
 
     return _get(
         "/fapi/v1/klines",
@@ -100,12 +181,16 @@ def get_klines(symbol, interval, limit=100):
 
 
 # =========================================================
-# SUPPORT / RESISTANCE
+# SWING LEVELS
 # =========================================================
 
-def _swing_levels(klines, lookback=60):
+def _swing_levels(
+    klines,
+    lookback=60,
+):
 
     if not klines:
+
         return {
             "support": None,
             "resistance": None,
@@ -114,7 +199,6 @@ def _swing_levels(klines, lookback=60):
     rows = klines[-lookback:]
 
     lows = []
-
     highs = []
 
     for row in rows:
@@ -146,7 +230,13 @@ def _swing_levels(klines, lookback=60):
     }
 
 
-def get_multi_timeframe_sr(symbol):
+# =========================================================
+# MULTI-TIMEFRAME S/R
+# =========================================================
+
+def get_multi_timeframe_sr(
+    symbol,
+):
 
     timeframes = {
         "15m": 100,
@@ -160,16 +250,36 @@ def get_multi_timeframe_sr(symbol):
 
     for timeframe, limit in timeframes.items():
 
-        klines = get_klines(
-            symbol,
-            timeframe,
-            limit,
-        )
+        try:
 
-        result[timeframe] = _swing_levels(
-            klines,
-            min(60, limit),
-        )
+            klines = get_klines(
+                symbol,
+                timeframe,
+                limit,
+            )
+
+            result[timeframe] = (
+                _swing_levels(
+                    klines,
+                    min(
+                        60,
+                        limit,
+                    ),
+                )
+            )
+
+        except Exception as err:
+
+            print(
+                f"[advanced_market_data] "
+                f"S/R failed {symbol} "
+                f"{timeframe}: {err}"
+            )
+
+            result[timeframe] = {
+                "support": None,
+                "resistance": None,
+            }
 
     return result
 
@@ -178,12 +288,18 @@ def get_multi_timeframe_sr(symbol):
 # EMA
 # =========================================================
 
-def _ema(values, period):
+def _ema(
+    values,
+    period,
+):
 
     if not values:
+
         return None
 
-    multiplier = 2 / (period + 1)
+    multiplier = (
+        2 / (period + 1)
+    )
 
     ema = values[0]
 
@@ -200,7 +316,10 @@ def _ema(values, period):
 # TREND
 # =========================================================
 
-def get_trend(symbol, interval):
+def get_trend(
+    symbol,
+    interval,
+):
 
     klines = get_klines(
         symbol,
@@ -208,7 +327,10 @@ def get_trend(symbol, interval):
         100,
     )
 
-    if not klines or len(klines) < 50:
+    if (
+        not klines
+        or len(klines) < 50
+    ):
 
         return {
             "trend": "Unknown",
@@ -305,7 +427,9 @@ def get_btc_context():
 # OPEN INTEREST
 # =========================================================
 
-def get_open_interest(symbol):
+def get_open_interest(
+    symbol,
+):
 
     data = _get(
         "/fapi/v1/openInterest",
@@ -315,24 +439,23 @@ def get_open_interest(symbol):
     )
 
     if not data:
+
         return None
 
-    try:
-
-        return float(
-            data["openInterest"]
+    return _safe_float(
+        data.get(
+            "openInterest"
         )
-
-    except Exception:
-
-        return None
+    )
 
 
 # =========================================================
 # OI CHANGE
 # =========================================================
 
-def get_oi_change(symbol):
+def get_oi_change(
+    symbol,
+):
 
     data = _get(
         "/futures/data/openInterestHist",
@@ -343,24 +466,40 @@ def get_oi_change(symbol):
         },
     )
 
-    if not data or len(data) < 2:
+    if (
+        not data
+        or len(data) < 2
+    ):
+
         return None
 
     try:
 
-        old = float(
-            data[0]["sumOpenInterest"]
+        old = _safe_float(
+            data[0].get(
+                "sumOpenInterest"
+            )
         )
 
-        new = float(
-            data[-1]["sumOpenInterest"]
+        new = _safe_float(
+            data[-1].get(
+                "sumOpenInterest"
+            )
         )
 
-        if old == 0:
+        if (
+            old is None
+            or new is None
+            or old == 0
+        ):
+
             return None
 
         return round(
-            ((new - old) / old) * 100,
+            (
+                (new - old)
+                / old
+            ) * 100,
             2,
         )
 
@@ -373,7 +512,9 @@ def get_oi_change(symbol):
 # FUNDING
 # =========================================================
 
-def get_funding(symbol):
+def get_funding(
+    symbol,
+):
 
     data = _get(
         "/fapi/v1/premiumIndex",
@@ -383,24 +524,23 @@ def get_funding(symbol):
     )
 
     if not data:
+
         return None
 
-    try:
-
-        return float(
-            data["lastFundingRate"]
+    return _safe_float(
+        data.get(
+            "lastFundingRate"
         )
-
-    except Exception:
-
-        return None
+    )
 
 
 # =========================================================
-# LONG / SHORT RATIO
+# LONG / SHORT ACCOUNT RATIO
 # =========================================================
 
-def get_long_short_ratio(symbol):
+def get_long_short_ratio(
+    symbol,
+):
 
     data = _get(
         "/futures/data/globalLongShortAccountRatio",
@@ -412,24 +552,35 @@ def get_long_short_ratio(symbol):
     )
 
     if not data:
+
         return None
 
     try:
 
         row = data[-1]
 
+        long_account = _safe_float(
+            row.get(
+                "longAccount"
+            )
+        )
+
+        short_account = _safe_float(
+            row.get(
+                "shortAccount"
+            )
+        )
+
+        ratio = _safe_float(
+            row.get(
+                "longShortRatio"
+            )
+        )
+
         return {
-            "long_account": float(
-                row["longAccount"]
-            ),
-
-            "short_account": float(
-                row["shortAccount"]
-            ),
-
-            "ratio": float(
-                row["longShortRatio"]
-            ),
+            "long_account": long_account,
+            "short_account": short_account,
+            "ratio": ratio,
         }
 
     except Exception:
@@ -441,7 +592,9 @@ def get_long_short_ratio(symbol):
 # LIQUIDATIONS
 # =========================================================
 
-def get_liquidations(symbol):
+def get_liquidations(
+    symbol,
+):
 
     data = _get(
         "/fapi/v1/allForceOrders",
@@ -460,20 +613,30 @@ def get_liquidations(symbol):
         }
 
     long_liq = 0.0
-
     short_liq = 0.0
 
     for row in data:
 
         try:
 
-            price = float(
-                row["price"]
+            price = _safe_float(
+                row.get(
+                    "price"
+                )
             )
 
-            quantity = float(
-                row["origQty"]
+            quantity = _safe_float(
+                row.get(
+                    "origQty"
+                )
             )
+
+            if (
+                price is None
+                or quantity is None
+            ):
+
+                continue
 
             value = (
                 price * quantity
@@ -484,9 +647,17 @@ def get_liquidations(symbol):
                 "",
             )
 
+            # SELL force order generally
+            # corresponds to a long position
+            # being liquidated.
+
             if side == "SELL":
 
                 long_liq += value
+
+            # BUY force order generally
+            # corresponds to a short position
+            # being liquidated.
 
             elif side == "BUY":
 
@@ -515,10 +686,12 @@ def get_liquidations(symbol):
 
 
 # =========================================================
-# ORDERBOOK
+# ORDER BOOK
 # =========================================================
 
-def get_orderbook(symbol):
+def get_orderbook(
+    symbol,
+):
 
     data = _get(
         "/fapi/v1/depth",
@@ -529,6 +702,7 @@ def get_orderbook(symbol):
     )
 
     if not data:
+
         return None
 
     try:
@@ -540,7 +714,10 @@ def get_orderbook(symbol):
             )
 
             for price, quantity
-            in data.get("bids", [])
+            in data.get(
+                "bids",
+                [],
+            )
         ]
 
         asks = [
@@ -550,17 +727,22 @@ def get_orderbook(symbol):
             )
 
             for price, quantity
-            in data.get("asks", [])
+            in data.get(
+                "asks",
+                [],
+            )
         ]
 
         bid_value = sum(
             price * quantity
-            for price, quantity in bids
+            for price, quantity
+            in bids
         )
 
         ask_value = sum(
             price * quantity
-            for price, quantity in asks
+            for price, quantity
+            in asks
         )
 
         total = (
@@ -571,14 +753,16 @@ def get_orderbook(symbol):
         if total > 0:
 
             imbalance = (
-                (bid_value - ask_value)
+                (
+                    bid_value
+                    - ask_value
+                )
                 / total
-                * 100
-            )
+            ) * 100
 
         else:
 
-            imbalance = 0
+            imbalance = 0.0
 
         best_bid = (
             bids[0][0]
@@ -633,10 +817,94 @@ def get_orderbook(symbol):
 
 
 # =========================================================
+# COLLECT ONE SYMBOL
+# =========================================================
+
+def _collect_symbol_data(
+    symbol,
+):
+
+    results = {}
+
+    tasks = {
+        "open_interest":
+            lambda: get_open_interest(
+                symbol
+            ),
+
+        "oi_change_1h_pct":
+            lambda: get_oi_change(
+                symbol
+            ),
+
+        "funding_rate":
+            lambda: get_funding(
+                symbol
+            ),
+
+        "long_short_ratio":
+            lambda: get_long_short_ratio(
+                symbol
+            ),
+
+        "liquidations":
+            lambda: get_liquidations(
+                symbol
+            ),
+
+        "orderbook":
+            lambda: get_orderbook(
+                symbol
+            ),
+    }
+
+    with ThreadPoolExecutor(
+        max_workers=MAX_WORKERS
+    ) as executor:
+
+        future_map = {
+            executor.submit(
+                func
+            ): name
+
+            for name, func
+            in tasks.items()
+        }
+
+        for future in as_completed(
+            future_map
+        ):
+
+            name = future_map[
+                future
+            ]
+
+            try:
+
+                results[name] = (
+                    future.result()
+                )
+
+            except Exception as err:
+
+                print(
+                    f"[advanced_market_data] "
+                    f"{name} failed for "
+                    f"{symbol}: {err}"
+                )
+
+                results[name] = None
+
+    return results
+
+
+# =========================================================
 # MAIN FUNCTION
 # =========================================================
 
-def get_advanced_market_data(symbol):
+def get_advanced_market_data(
+    symbol,
+):
 
     print(
         f"[advanced_market_data] "
@@ -644,48 +912,98 @@ def get_advanced_market_data(symbol):
     )
 
     data = {
-        "multi_timeframe_sr":
-            get_multi_timeframe_sr(
-                symbol
-            ),
-
-        "btc_context":
-            get_btc_context(),
-
-        "open_interest":
-            get_open_interest(
-                symbol
-            ),
-
-        "oi_change_1h_pct":
-            get_oi_change(
-                symbol
-            ),
-
-        "funding_rate":
-            get_funding(
-                symbol
-            ),
-
-        "long_short_ratio":
-            get_long_short_ratio(
-                symbol
-            ),
-
-        "liquidations":
-            get_liquidations(
-                symbol
-            ),
-
-        "orderbook":
-            get_orderbook(
-                symbol
-            ),
+        "multi_timeframe_sr": {},
+        "btc_context": {},
+        "open_interest": None,
+        "oi_change_1h_pct": None,
+        "funding_rate": None,
+        "long_short_ratio": None,
+        "liquidations": None,
+        "orderbook": None,
     }
+
+    # -----------------------------------------------------
+    # SYMBOL ADVANCED DATA
+    # -----------------------------------------------------
+
+    try:
+
+        symbol_data = (
+            _collect_symbol_data(
+                symbol
+            )
+        )
+
+        data.update(
+            symbol_data
+        )
+
+    except Exception as err:
+
+        print(
+            f"[advanced_market_data] "
+            f"symbol data failed: {err}"
+        )
+
+    # -----------------------------------------------------
+    # MULTI-TIMEFRAME S/R
+    # -----------------------------------------------------
+
+    try:
+
+        data[
+            "multi_timeframe_sr"
+        ] = get_multi_timeframe_sr(
+            symbol
+        )
+
+    except Exception as err:
+
+        print(
+            f"[advanced_market_data] "
+            f"S/R collection failed: {err}"
+        )
+
+    # -----------------------------------------------------
+    # BTC CONTEXT
+    # -----------------------------------------------------
+
+    try:
+
+        data[
+            "btc_context"
+        ] = get_btc_context()
+
+    except Exception as err:
+
+        print(
+            f"[advanced_market_data] "
+            f"BTC context failed: {err}"
+        )
+
+    # -----------------------------------------------------
+    # SUMMARY
+    # -----------------------------------------------------
+
+    available = []
+
+    for key, value in data.items():
+
+        if value:
+
+            available.append(
+                key
+            )
 
     print(
         f"[advanced_market_data] "
         f"completed for {symbol}"
+    )
+
+    print(
+        f"[advanced_market_data] "
+        f"available fields: "
+        f"{', '.join(available) if available else 'none'}"
     )
 
     return data
