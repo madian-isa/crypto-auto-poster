@@ -1,64 +1,35 @@
-"""
-chart.py
-
-1H dark Binance-style market analysis chart.
-
-Includes:
-- 1H candlesticks
-- Asia/Dhaka timezone
-- Correct timestamp handling
-- EMA21
-- SMA50
-- Current Price
-- Support
-- Resistance
-- Market-structure zones
-- PNG output for Binance Square upload
-"""
+from __future__ import annotations
 
 import os
+from datetime import timezone
+from zoneinfo import ZoneInfo
 
-import pandas as pd
-import mplfinance as mpf
 import matplotlib.pyplot as plt
-from matplotlib.patches import Rectangle
+import mplfinance as mpf
+import pandas as pd
 
-from src import bot_config
 
+CHART_OUTPUT_DIR = os.environ.get(
+    "CHART_OUTPUT_DIR",
+    "/tmp/trade_setup_charts",
+)
 
-# =========================================================
-# DARK BINANCE-STYLE
-# =========================================================
+DHAKA_TZ = ZoneInfo("Asia/Dhaka")
+
 
 _CHART_STYLE = mpf.make_mpf_style(
     base_mpf_style="nightclouds",
-
     marketcolors=mpf.make_marketcolors(
         up="#0ecb81",
         down="#f6465d",
-
-        edge={
-            "up": "#0ecb81",
-            "down": "#f6465d",
-        },
-
-        wick={
-            "up": "#0ecb81",
-            "down": "#f6465d",
-        },
-
-        volume={
-            "up": "#0ecb81",
-            "down": "#f6465d",
-        },
+        edge={"up": "#0ecb81", "down": "#f6465d"},
+        wick={"up": "#0ecb81", "down": "#f6465d"},
+        volume={"up": "#0ecb81", "down": "#f6465d"},
     ),
-
     facecolor="#0b0f14",
     figcolor="#0b0f14",
-
     gridcolor="#1e2329",
     gridstyle="-",
-
     rc={
         "axes.edgecolor": "#2b3139",
         "axes.labelcolor": "#848e9c",
@@ -71,225 +42,169 @@ _CHART_STYLE = mpf.make_mpf_style(
 )
 
 
-# =========================================================
-# MAIN CHART FUNCTION
-# =========================================================
+def _detect_timestamp_unit(series: pd.Series) -> str:
+    """Detect Binance timestamp unit."""
+    values = pd.to_numeric(series, errors="coerce").dropna()
+
+    if values.empty:
+        return "ms"
+
+    value = abs(float(values.iloc[-1]))
+
+    if value > 1e17:
+        return "ns"
+    if value > 1e14:
+        return "us"
+    if value > 1e11:
+        return "ms"
+
+    return "s"
+
+
+def _prepare_dataframe(klines_df: pd.DataFrame) -> pd.DataFrame:
+    """Prepare OHLC dataframe and convert timestamps to Asia/Dhaka."""
+
+    df = klines_df.copy()
+
+    # ---------------------------------------------------------
+    # Detect timestamp column
+    # ---------------------------------------------------------
+    timestamp_candidates = [
+        "timestamp",
+        "time",
+        "open_time",
+        "openTime",
+        "date",
+    ]
+
+    timestamp_col = None
+
+    for col in timestamp_candidates:
+        if col in df.columns:
+            timestamp_col = col
+            break
+
+    if timestamp_col is None:
+        if isinstance(df.index, pd.DatetimeIndex):
+            index = df.index
+
+            if index.tz is None:
+                index = index.tz_localize("UTC")
+
+            df.index = index.tz_convert(DHAKA_TZ)
+        else:
+            raise ValueError(
+                "No timestamp column found and index is not DatetimeIndex."
+            )
+    else:
+        unit = _detect_timestamp_unit(df[timestamp_col])
+
+        print(f"[chart] detected timestamp unit: {unit}")
+
+        dt = pd.to_datetime(
+            df[timestamp_col],
+            unit=unit,
+            utc=True,
+            errors="coerce",
+        )
+
+        df.index = dt.dt.tz_convert(DHAKA_TZ)
+
+        df = df.drop(columns=[timestamp_col])
+
+    # ---------------------------------------------------------
+    # Remove invalid timestamps
+    # ---------------------------------------------------------
+    df = df[~df.index.isna()]
+
+    # ---------------------------------------------------------
+    # Normalize OHLC column names
+    # ---------------------------------------------------------
+    rename_map = {}
+
+    for col in df.columns:
+        lower = str(col).lower()
+
+        if lower == "open":
+            rename_map[col] = "Open"
+        elif lower == "high":
+            rename_map[col] = "High"
+        elif lower == "low":
+            rename_map[col] = "Low"
+        elif lower == "close":
+            rename_map[col] = "Close"
+        elif lower == "volume":
+            rename_map[col] = "Volume"
+
+    df = df.rename(columns=rename_map)
+
+    required = ["Open", "High", "Low", "Close"]
+
+    missing = [col for col in required if col not in df.columns]
+
+    if missing:
+        raise ValueError(
+            f"Missing OHLC columns: {missing}"
+        )
+
+    # ---------------------------------------------------------
+    # Numeric conversion
+    # ---------------------------------------------------------
+    for col in ["Open", "High", "Low", "Close", "Volume"]:
+        if col in df.columns:
+            df[col] = pd.to_numeric(
+                df[col],
+                errors="coerce",
+            )
+
+    df = df.dropna(
+        subset=["Open", "High", "Low", "Close"]
+    )
+
+    df = df.sort_index()
+
+    return df
+
 
 def render_chart_image(
     symbol: str,
     klines_df: pd.DataFrame,
     setup: dict | None = None,
 ) -> str:
+    """
+    Generate Binance-style 1H market chart.
 
-    if klines_df is None or klines_df.empty:
-        raise ValueError(
-            f"No kline data available for {symbol}"
-        )
+    Includes:
+    - 1H candlesticks
+    - EMA 21
+    - SMA 50
+    - Current price
+    - Asia/Dhaka timezone
 
-    # -----------------------------------------------------
-    # Output directory
-    # -----------------------------------------------------
-
-    output_dir = getattr(
-        bot_config,
-        "CHART_OUTPUT_DIR",
-        "/tmp/trade_setup_charts",
-    )
+    Does NOT include:
+    - Support
+    - Resistance
+    - Entry
+    - Stop loss
+    - Take profit
+    """
 
     os.makedirs(
-        output_dir,
+        CHART_OUTPUT_DIR,
         exist_ok=True,
     )
 
-    # -----------------------------------------------------
-    # Copy dataframe
-    # -----------------------------------------------------
+    # ---------------------------------------------------------
+    # Prepare data
+    # ---------------------------------------------------------
+    df = _prepare_dataframe(klines_df)
 
-    df = klines_df.copy()
-
-    # -----------------------------------------------------
-    # Rename columns
-    # -----------------------------------------------------
-
-    rename_map = {
-        "open": "Open",
-        "high": "High",
-        "low": "Low",
-        "close": "Close",
-        "volume": "Volume",
-
-        "open_time": "Date",
-        "Open time": "Date",
-        "timestamp": "Date",
-    }
-
-    df = df.rename(
-        columns={
-            old: new
-            for old, new in rename_map.items()
-            if old in df.columns
-        }
-    )
-
-    # -----------------------------------------------------
-    # Validate OHLC
-    # -----------------------------------------------------
-
-    required_columns = [
-        "Open",
-        "High",
-        "Low",
-        "Close",
-    ]
-
-    missing = [
-        col
-        for col in required_columns
-        if col not in df.columns
-    ]
-
-    if missing:
-        raise ValueError(
-            f"Missing OHLC columns for {symbol}: {missing}"
-        )
-
-    for col in required_columns:
-
-        df[col] = pd.to_numeric(
-            df[col],
-            errors="coerce",
-        )
-
-    df = df.dropna(
-        subset=required_columns
-    )
-
-    if df.empty:
-        raise ValueError(
-            f"No valid OHLC data available for {symbol}"
-        )
-
-    # =====================================================
-    # TIMESTAMP
-    # UTC -> ASIA/DHAKA
-    # =====================================================
-
-    if "Date" in df.columns:
-
-        raw_dates = df["Date"]
-
-        if pd.api.types.is_numeric_dtype(raw_dates):
-
-            values = pd.to_numeric(
-                raw_dates,
-                errors="coerce",
-            )
-
-            sample = values.dropna()
-
-            if sample.empty:
-                raise ValueError(
-                    f"Invalid timestamp data for {symbol}"
-                )
-
-            magnitude = abs(
-                float(sample.iloc[0])
-            )
-
-            # Automatically detect Binance timestamp unit
-            if magnitude >= 1e18:
-                unit = "ns"
-
-            elif magnitude >= 1e15:
-                unit = "us"
-
-            elif magnitude >= 1e12:
-                unit = "ms"
-
-            else:
-                unit = "s"
-
-            print(
-                f"[chart] detected timestamp unit: {unit}"
-            )
-
-            df["Date"] = pd.to_datetime(
-                values,
-                unit=unit,
-                utc=True,
-                errors="coerce",
-            )
-
-        else:
-
-            df["Date"] = pd.to_datetime(
-                raw_dates,
-                utc=True,
-                errors="coerce",
-            )
-
-        df = df.dropna(
-            subset=["Date"]
-        )
-
-        # Bangladesh UTC+6
-        df["Date"] = (
-            df["Date"]
-            .dt.tz_convert("Asia/Dhaka")
-            .dt.tz_localize(None)
-        )
-
-        df = df.set_index("Date")
-
-    elif isinstance(
-        df.index,
-        pd.DatetimeIndex,
-    ):
-
-        if df.index.tz is None:
-
-            df.index = (
-                pd.DatetimeIndex(df.index)
-                .tz_localize("UTC")
-                .tz_convert("Asia/Dhaka")
-                .tz_localize(None)
-            )
-
-        else:
-
-            df.index = (
-                df.index
-                .tz_convert("Asia/Dhaka")
-                .tz_localize(None)
-            )
-
-    else:
-
-        raise ValueError(
-            f"Datetime index required for {symbol}"
-        )
-
-    # -----------------------------------------------------
-    # Sort
-    # -----------------------------------------------------
-
-    df = df.sort_index()
-
-    # -----------------------------------------------------
     # Latest 80 candles
-    # -----------------------------------------------------
-
     df = df.tail(80).copy()
 
-    if len(df) < 10:
-        raise ValueError(
-            f"Not enough candles available for {symbol}"
-        )
-
-    # =====================================================
-    # INDICATORS
-    # =====================================================
-
+    # ---------------------------------------------------------
+    # Indicators
+    # ---------------------------------------------------------
     df["EMA21"] = (
         df["Close"]
         .ewm(
@@ -308,457 +223,152 @@ def render_chart_image(
         .mean()
     )
 
-    # -----------------------------------------------------
-    # Indicator plots
-    # -----------------------------------------------------
+    # ---------------------------------------------------------
+    # Current price
+    # ---------------------------------------------------------
+    current_price = float(df["Close"].iloc[-1])
 
-    addplots = [
-
+    # ---------------------------------------------------------
+    # Add plots
+    # ---------------------------------------------------------
+    add_plots = [
         mpf.make_addplot(
             df["EMA21"],
             color="#f0b90b",
             width=1.2,
+            label="EMA 21",
         ),
-
         mpf.make_addplot(
             df["SMA50"],
-            color="#8b5cf6",
-            width=1.0,
+            color="#5b8def",
+            width=1.2,
+            label="SMA 50",
         ),
     ]
 
-    # =====================================================
-    # CURRENT PRICE
-    # =====================================================
-
-    current_price = float(
-        df["Close"].iloc[-1]
-    )
-
-    # =====================================================
-    # SUPPORT / RESISTANCE
-    # =====================================================
-
-    support = None
-    resistance = None
-
-    if setup:
-
-        try:
-
-            value = setup.get("support")
-
-            if value is not None:
-                support = float(value)
-
-        except (
-            TypeError,
-            ValueError,
-        ):
-
-            support = None
-
-        try:
-
-            value = setup.get("resistance")
-
-            if value is not None:
-                resistance = float(value)
-
-        except (
-            TypeError,
-            ValueError,
-        ):
-
-            resistance = None
-
-    # =====================================================
-    # TITLE
-    # =====================================================
-
-    title = (
-        f"\n{symbol} — 1H Market Analysis"
-    )
-
-    # =====================================================
-    # PLOT
-    # =====================================================
-
-    plot_kwargs = {
-
-        "type": "candle",
-
-        "style": _CHART_STYLE,
-
-        "title": title,
-
-        "figsize": (10, 6),
-
-        "tight_layout": True,
-
-        "returnfig": True,
-
-        "datetime_format": "%d %b %H:%M",
-
-        "xrotation": 0,
-
-        "addplot": addplots,
-
-        "volume": False,
-    }
-
+    # ---------------------------------------------------------
+    # Create chart
+    # ---------------------------------------------------------
     fig, axes = mpf.plot(
-        df,
-        **plot_kwargs,
+        df[
+            [
+                "Open",
+                "High",
+                "Low",
+                "Close",
+            ]
+        ],
+        type="candle",
+        style=_CHART_STYLE,
+        addplot=add_plots,
+        figsize=(16, 8),
+        volume=False,
+        returnfig=True,
+        tight_layout=True,
+        datetime_format="%d %b %H:%M",
+        xrotation=0,
+        show_nontrading=False,
+        title=f"{symbol} • 1H",
     )
 
+    # ---------------------------------------------------------
+    # Main price axis
+    # ---------------------------------------------------------
     ax = axes[0]
 
-    # =====================================================
-    # COLORS
-    # =====================================================
-
-    GREEN = "#0ecb81"
-    RED = "#f6465d"
-    WHITE = "#eaecef"
-    YELLOW = "#f0b90b"
-    PURPLE = "#8b5cf6"
-
-    # =====================================================
-    # MARKET STRUCTURE ZONES
-    # =====================================================
-
-    data_low = float(
-        df["Low"].min()
-    )
-
-    data_high = float(
-        df["High"].max()
-    )
-
-    # -----------------------------------------------------
-    # Support zone
-    # -----------------------------------------------------
-
-    if support is not None:
-
-        support_width = (
-            data_high - data_low
-        ) * 0.012
-
-        support_low = (
-            support - support_width
-        )
-
-        support_high = (
-            support + support_width
-        )
-
-        ax.add_patch(
-            Rectangle(
-                (
-                    -0.5,
-                    support_low,
-                ),
-
-                len(df) + 8,
-
-                support_high - support_low,
-
-                facecolor=GREEN,
-
-                edgecolor="none",
-
-                alpha=0.08,
-
-                zorder=0,
-            )
-        )
-
-        ax.axhline(
-            support,
-
-            color=GREEN,
-
-            linestyle="--",
-
-            linewidth=1,
-
-            alpha=0.75,
-
-            zorder=1,
-        )
-
-        ax.text(
-            0.995,
-            support,
-
-            f" Support {support:.6g} ",
-
-            transform=ax.get_yaxis_transform(),
-
-            ha="right",
-
-            va="bottom",
-
-            fontsize=8,
-
-            color="#0b0f14",
-
-            fontweight="bold",
-
-            bbox=dict(
-                boxstyle="round,pad=0.25",
-
-                facecolor=GREEN,
-
-                edgecolor="none",
-
-                alpha=0.95,
-            ),
-
-            zorder=6,
-        )
-
-    # -----------------------------------------------------
-    # Resistance zone
-    # -----------------------------------------------------
-
-    if resistance is not None:
-
-        resistance_width = (
-            data_high - data_low
-        ) * 0.012
-
-        resistance_low = (
-            resistance - resistance_width
-        )
-
-        resistance_high = (
-            resistance + resistance_width
-        )
-
-        ax.add_patch(
-            Rectangle(
-                (
-                    -0.5,
-                    resistance_low,
-                ),
-
-                len(df) + 8,
-
-                resistance_high - resistance_low,
-
-                facecolor=RED,
-
-                edgecolor="none",
-
-                alpha=0.08,
-
-                zorder=0,
-            )
-        )
-
-        ax.axhline(
-            resistance,
-
-            color=RED,
-
-            linestyle="--",
-
-            linewidth=1,
-
-            alpha=0.75,
-
-            zorder=1,
-        )
-
-        ax.text(
-            0.995,
-            resistance,
-
-            f" Resistance {resistance:.6g} ",
-
-            transform=ax.get_yaxis_transform(),
-
-            ha="right",
-
-            va="bottom",
-
-            fontsize=8,
-
-            color="#0b0f14",
-
-            fontweight="bold",
-
-            bbox=dict(
-                boxstyle="round,pad=0.25",
-
-                facecolor=RED,
-
-                edgecolor="none",
-
-                alpha=0.95,
-            ),
-
-            zorder=6,
-        )
-
-    # =====================================================
-    # CURRENT PRICE
-    # =====================================================
-
+    # Current price line
     ax.axhline(
         current_price,
-
-        color=WHITE,
-
-        linestyle=":",
-
-        linewidth=1,
-
-        alpha=0.85,
-
-        zorder=1,
+        color="#848e9c",
+        linewidth=0.8,
+        linestyle="--",
+        alpha=0.7,
     )
 
+    # Current price label
     ax.text(
-        0.995,
+        1.005,
         current_price,
-
-        f" Current {current_price:.6g} ",
-
+        f"{current_price:g}",
         transform=ax.get_yaxis_transform(),
-
-        ha="right",
-
-        va="bottom",
-
-        fontsize=8,
-
-        color="#0b0f14",
-
-        fontweight="bold",
-
+        va="center",
+        ha="left",
+        fontsize=9,
+        color="#eaecef",
+        fontweight="normal",
         bbox=dict(
             boxstyle="round,pad=0.25",
-
-            facecolor=WHITE,
-
-            edgecolor="none",
-
-            alpha=0.95,
+            facecolor="#1e2329",
+            edgecolor="#2b3139",
         ),
-
-        zorder=6,
     )
 
-    # =====================================================
-    # INDICATOR LABELS
-    # =====================================================
+    # ---------------------------------------------------------
+    # Chart title
+    # ---------------------------------------------------------
+    ax.set_title(
+        f"{symbol} • 1H Market Chart",
+        color="#eaecef",
+        fontsize=13,
+        fontweight="normal",
+        pad=12,
+    )
 
-    ax.text(
+    # ---------------------------------------------------------
+    # Footer
+    # ---------------------------------------------------------
+    latest_time = df.index[-1]
+
+    if latest_time.tzinfo is None:
+        latest_time = latest_time.replace(
+            tzinfo=timezone.utc
+        )
+
+    latest_time = latest_time.astimezone(
+        DHAKA_TZ
+    )
+
+    fig.text(
+        0.5,
         0.015,
-        0.96,
-
-        "EMA21",
-
-        transform=ax.transAxes,
-
+        (
+            f"Time: {latest_time.strftime('%d %b %Y, %I:%M %p')} "
+            f"• Asia/Dhaka (UTC+6)"
+        ),
+        ha="center",
+        color="#848e9c",
         fontsize=8,
-
-        color=YELLOW,
-
-        fontweight="bold",
-
-        va="top",
     )
 
-    ax.text(
-        0.075,
-        0.96,
-
-        "SMA50",
-
-        transform=ax.transAxes,
-
+    # ---------------------------------------------------------
+    # Legend
+    # ---------------------------------------------------------
+    ax.legend(
+        loc="upper left",
         fontsize=8,
-
-        color=PURPLE,
-
-        fontweight="bold",
-
-        va="top",
+        frameon=False,
     )
 
-    # =====================================================
-    # Y-AXIS PADDING
-    # =====================================================
-
-    levels = [
-        data_low,
-        data_high,
-        current_price,
-    ]
-
-    if support is not None:
-        levels.append(support)
-
-    if resistance is not None:
-        levels.append(resistance)
-
-    y_low = min(levels)
-    y_high = max(levels)
-
-    price_range = y_high - y_low
-
-    if price_range > 0:
-
-        padding = (
-            price_range * 0.08
-        )
-
-        ax.set_ylim(
-            y_low - padding,
-            y_high + padding,
-        )
-
-    # =====================================================
-    # SAVE
-    # =====================================================
-
-    safe_symbol = (
-        symbol
-        .replace("/", "_")
-        .replace(":", "_")
-    )
-
+    # ---------------------------------------------------------
+    # Save
+    # ---------------------------------------------------------
     chart_path = os.path.join(
-        output_dir,
-        f"{safe_symbol}_market_chart.png",
+        CHART_OUTPUT_DIR,
+        f"{symbol}_market_chart.png",
     )
 
     fig.savefig(
         chart_path,
-
-        dpi=160,
-
+        dpi=150,
         bbox_inches="tight",
-
         facecolor="#0b0f14",
     )
 
-    # -----------------------------------------------------
-    # Close matplotlib figure
-    # -----------------------------------------------------
+    plt.close(fig)
 
-    try:
-
-        plt.close(fig)
-
-    except Exception:
-        pass
-
+    # ---------------------------------------------------------
+    # Logs
+    # ---------------------------------------------------------
     print(
         f"[chart] generated: {chart_path}"
     )
@@ -772,23 +382,7 @@ def render_chart_image(
     )
 
     print(
-        f"[chart] current price: {current_price}"
+        f"[chart] current price: {current_price:g}"
     )
-
-    if support is not None:
-
-        print(
-            f"[chart] support: {support}"
-        )
-
-    if resistance is not None:
-
-        print(
-            f"[chart] resistance: {resistance}"
-        )
-
-    # =====================================================
-    # RETURN
-    # =====================================================
 
     return chart_path
