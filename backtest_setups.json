@@ -679,6 +679,23 @@
       "technical_analysis": "The price sits just below the 9‑period EMA (0.9635) while comfortably above the 21‑EMA (0.9352) and the 50‑SMA (0.8732), indicating an overall uptrend. MACD remains bullish with a positive histogram, and the stochastic is in the upper‑mid range (K 67, D 76), suggesting momentum is still intact. Immediate support at 0.9608 holds the downside, with the next resistance near 0.9746.",
       "market_context": "Bitcoin is trading higher on both the 4‑hour and daily charts, reinforcing a bullish backdrop, and 90 % of the broader market is in green, which adds to the positive sentiment for altcoins like FIL.",
       "result": "PENDING"
+    },
+    {
+      "id": 41,
+      "created_at": "2026-09-19T07:11:15.001743+00:00",
+      "symbol": "GMTUSDT",
+      "direction": "LONG",
+      "title": "Major Breakout Signals Emerge on $GMT Higher Timeframes",
+      "entry_low": 0.00757,
+      "entry_high": 0.00768,
+      "stop_loss": 0.00755,
+      "take_profit": 0.00779,
+      "support": 0.00757,
+      "resistance": 0.00778,
+      "news_line": "",
+      "technical_analysis": "GMT is trading just above its EMA9 (0.007671) and EMA21 (0.007624), with price also above the 50‑period SMA. The MACD histogram is slightly negative, but the stochastic oscillator is turning upward (K 52.4, D 41.3) and the order book shows a modest bid‑side imbalance. A break above the 15‑minute resistance at 0.00778 could confirm the bias.",
+      "market_context": "The broader market remains broadly positive, with 91% of assets in green and Bitcoin holding a bullish trend on the 4‑hour and daily charts.",
+      "result": "PENDING"
     }
   ]
 }
