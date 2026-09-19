@@ -781,6 +781,23 @@
       "technical_analysis": "Price sits just above the 9‑EMA (0.198094) and 21‑EMA (0.193102), indicating short‑term buying pressure. The MACD histogram is marginally negative and Stochastic K is below D, suggesting some downside bias, while the order‑book shows a modest 4.2% bid‑side imbalance.",
       "market_context": "BTC is in a bullish trend on both 4‑hour and daily frames, and the broader market is broadly positive with 78.5% of assets advancing.",
       "result": "PENDING"
+    },
+    {
+      "id": 47,
+      "created_at": "2026-09-19T23:00:58.924312+00:00",
+      "symbol": "PHAUSDT",
+      "direction": "LONG",
+      "title": "Smart Money Flow Increases into $PHA Ahead of Catalysts",
+      "entry_low": 0.0354,
+      "entry_high": 0.0356,
+      "stop_loss": 0.033984,
+      "take_profit": 0.038232,
+      "support": 0.0352,
+      "resistance": 0.0366,
+      "news_line": "",
+      "technical_analysis": "Price is holding above the 9‑EMA (0.035588) and 21‑EMA (0.034667), while the 50‑SMA sits well lower, indicating an uptrend. MACD is flat at the signal line, and the stochastic oscillator is in the mid‑60s with K slightly below D, suggesting modest momentum but no overbought warning. Order‑book data shows a modest sell‑side imbalance, yet the price remains near the upper edge of the 1H range (0.0358).",
+      "market_context": "BTC continues a bullish stance on both 4H and daily frames, and overall market breadth is broadly positive, supporting risk‑on sentiment for altcoins like PHA.",
+      "result": "PENDING"
     }
   ]
 }
