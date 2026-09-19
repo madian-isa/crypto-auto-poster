@@ -1,13 +1,16 @@
 """
 screener.py
 
-Builds a shortlist from Binance 24h USDT market data.
+Builds a shortlist from Binance 24h Spot ticker data.
 
-The screener uses available Spot ticker data as the fallback market
-universe because Binance Futures endpoints may be unavailable from
-GitHub Actions.
-
-Futures-specific BTC OI / funding data is optional.
+The screener:
+- Uses Binance Spot exchangeInfo to verify currently tradable symbols.
+- Keeps only TRADING USDT pairs.
+- Excludes configured stablecoin pairs.
+- Scores candidates using liquidity + momentum + volume proxy.
+- Provides BTC and market-breadth context.
+- Treats Futures OI/funding as optional because Futures endpoints
+  may be unavailable from GitHub Actions.
 """
 
 import math
@@ -16,93 +19,156 @@ import requests
 from src import bot_config as cfg
 
 
+# =========================================================
+# Binance Spot endpoints
+# =========================================================
+
+SPOT_BASE_URL = "https://data-api.binance.vision"
+
+EXCHANGE_INFO_URL = (
+    f"{SPOT_BASE_URL}/api/v3/exchangeInfo"
+)
+
+TICKER_24HR_URL = (
+    f"{SPOT_BASE_URL}/api/v3/ticker/24hr"
+)
+
+
+# =========================================================
+# Main screener
+# =========================================================
+
 def get_screener_shortlist(limit=None):
     limit = limit or cfg.SCREENER_SHORTLIST_SIZE
 
+    # -----------------------------------------------------
+    # Fetch currently tradable Binance Spot symbols
+    # -----------------------------------------------------
+
+    active_symbols = _fetch_active_usdt_symbols()
+
+    print(
+        f"[screener] active Binance USDT symbols: "
+        f"{len(active_symbols)}"
+    )
+
+    if not active_symbols:
+        print(
+            "[screener] no active USDT symbols found."
+        )
+        return []
+
+    # -----------------------------------------------------
+    # Fetch 24h ticker data
+    # -----------------------------------------------------
+
     tickers = _fetch_all_24hr_tickers()
 
-    # ---------------------------------------------------------
-    # Build usable USDT universe
-    # ---------------------------------------------------------
-    #
-    # Do NOT require FUTURES_PERPETUAL_WHITELIST here.
-    # That whitelist may be empty when Futures API is unavailable.
-    #
+    print(
+        f"[screener] total tickers: "
+        f"{len(tickers)}"
+    )
+
+    # -----------------------------------------------------
+    # Keep only active Binance symbols
+    # -----------------------------------------------------
 
     usdt_pairs = []
 
-    for t in tickers:
-        symbol = t.get("symbol", "")
+    for ticker in tickers:
+        symbol = ticker.get("symbol", "")
 
-        if not symbol.endswith("USDT"):
+        if symbol not in active_symbols:
             continue
 
         if symbol in cfg.EXCLUDE_SYMBOLS:
             continue
 
         try:
-            quote_volume = float(t.get("quoteVolume", 0))
-            last_price = float(t.get("lastPrice", 0))
-            pct_change = float(t.get("priceChangePercent", 0))
+            quote_volume = float(
+                ticker.get("quoteVolume", 0)
+            )
+
+            last_price = float(
+                ticker.get("lastPrice", 0)
+            )
+
+            pct_change = float(
+                ticker.get("priceChangePercent", 0)
+            )
+
         except (TypeError, ValueError):
             continue
 
-        if quote_volume <= 0 or last_price <= 0:
+        if quote_volume <= 0:
             continue
 
-        usdt_pairs.append(t)
+        if last_price <= 0:
+            continue
+
+        usdt_pairs.append(ticker)
 
     print(
-        f"[screener] total tickers: {len(tickers)}"
-    )
-
-    print(
-        f"[screener] usable USDT pairs: "
+        f"[screener] usable active USDT pairs: "
         f"{len(usdt_pairs)}"
     )
 
-    # ---------------------------------------------------------
+    if not usdt_pairs:
+        print(
+            "[screener] no usable active USDT pairs."
+        )
+        return []
+
+    # -----------------------------------------------------
     # Market context
-    # ---------------------------------------------------------
+    # -----------------------------------------------------
 
     market_context = get_market_context(
-        tickers
+        tickers,
+        active_symbols,
     )
+
+    # -----------------------------------------------------
+    # Score candidates
+    # -----------------------------------------------------
 
     scored = []
 
-    # ---------------------------------------------------------
-    # Score candidates
-    # ---------------------------------------------------------
-
-    for t in usdt_pairs:
-        symbol = t["symbol"]
+    for ticker in usdt_pairs:
+        symbol = ticker["symbol"]
 
         try:
             quote_volume = float(
-                t["quoteVolume"]
+                ticker["quoteVolume"]
             )
 
             pct_change = abs(
-                float(t["priceChangePercent"])
+                float(
+                    ticker["priceChangePercent"]
+                )
             )
 
             weighted_avg = float(
-                t.get("weightedAvgPrice") or 1
-            ) or 1
+                ticker.get("weightedAvgPrice") or 1
+            )
 
             base_volume = float(
-                t.get("volume") or 0
+                ticker.get("volume") or 0
+            )
+
+            last_price = float(
+                ticker["lastPrice"]
             )
 
         except (TypeError, ValueError):
             continue
 
-        # Simple volume-spike proxy.
+        if weighted_avg <= 0:
+            weighted_avg = 1
+
+        # Simple volume proxy.
         volume_spike = (
             base_volume / weighted_avg
-            if weighted_avg > 0
-            else 0
         )
 
         # Existing screener score.
@@ -120,15 +186,17 @@ def get_screener_shortlist(limit=None):
             "symbol": symbol,
             "quote_volume": quote_volume,
             "pct_change": pct_change,
-            "last_price": float(
-                t["lastPrice"]
-            ),
+            "last_price": last_price,
             "score": score,
             "market_context": market_context,
         })
 
+    # -----------------------------------------------------
+    # Sort
+    # -----------------------------------------------------
+
     scored.sort(
-        key=lambda x: x["score"],
+        key=lambda row: row["score"],
         reverse=True,
     )
 
@@ -151,8 +219,91 @@ def get_screener_shortlist(limit=None):
     return result
 
 
-def get_market_context(tickers):
-    """Build market-wide context for the setup generator."""
+# =========================================================
+# Active Binance Spot symbols
+# =========================================================
+
+def _fetch_active_usdt_symbols():
+    """
+    Fetch Binance Spot exchange information.
+
+    Only symbols satisfying all of these are accepted:
+
+    - status == TRADING
+    - quoteAsset == USDT
+    - symbol is not in EXCLUDE_SYMBOLS
+
+    This prevents inactive/delisted symbols from entering
+    the screener.
+    """
+
+    try:
+        response = requests.get(
+            EXCHANGE_INFO_URL,
+            timeout=15,
+        )
+
+        response.raise_for_status()
+
+        data = response.json()
+
+    except Exception as exc:
+        print(
+            "[screener] failed to fetch exchangeInfo: "
+            f"{exc}"
+        )
+        return set()
+
+    symbols = data.get(
+        "symbols",
+        [],
+    )
+
+    active = set()
+
+    for item in symbols:
+        symbol = item.get(
+            "symbol",
+            "",
+        )
+
+        status = item.get(
+            "status",
+            "",
+        )
+
+        quote_asset = item.get(
+            "quoteAsset",
+            "",
+        )
+
+        if status != "TRADING":
+            continue
+
+        if quote_asset != "USDT":
+            continue
+
+        if symbol in cfg.EXCLUDE_SYMBOLS:
+            continue
+
+        active.add(symbol)
+
+    return active
+
+
+# =========================================================
+# Market context
+# =========================================================
+
+def get_market_context(
+    tickers,
+    active_symbols,
+):
+    """
+    Build market-wide context.
+
+    Futures OI and funding are optional.
+    """
 
     if not cfg.MARKET_CONTEXT_ENABLED:
         return {
@@ -165,14 +316,16 @@ def get_market_context(tickers):
             "btc_funding_rate": None,
         }
 
-    # ---------------------------------------------------------
+    # -----------------------------------------------------
     # BTC direction
-    # ---------------------------------------------------------
+    # -----------------------------------------------------
 
     btc = next(
         (
-            t for t in tickers
-            if t.get("symbol") == cfg.BTC_SYMBOL
+            ticker
+            for ticker in tickers
+            if ticker.get("symbol")
+            == cfg.BTC_SYMBOL
         ),
         None,
     )
@@ -188,28 +341,27 @@ def get_market_context(tickers):
 
             if btc_change > 0:
                 btc_direction = "Bullish"
+
             elif btc_change < 0:
                 btc_direction = "Bearish"
+
             else:
                 btc_direction = "Flat"
 
         except (TypeError, ValueError):
             pass
 
-    # ---------------------------------------------------------
+    # -----------------------------------------------------
     # Market breadth
-    # ---------------------------------------------------------
-    #
-    # Use available USDT tickers instead of the Futures
-    # whitelist so breadth still works when Futures API
-    # is blocked.
-    #
+    # -----------------------------------------------------
 
     breadth_tickers = [
-        t for t in tickers
+        ticker
+        for ticker in tickers
         if (
-            t.get("symbol", "").endswith("USDT")
-            and t.get("symbol")
+            ticker.get("symbol")
+            in active_symbols
+            and ticker.get("symbol")
             not in cfg.EXCLUDE_SYMBOLS
         )
     ]
@@ -217,30 +369,32 @@ def get_market_context(tickers):
     green = 0
     red = 0
 
-    for t in breadth_tickers:
+    for ticker in breadth_tickers:
         try:
             change = float(
-                t["priceChangePercent"]
+                ticker["priceChangePercent"]
             )
-
-            if change > 0:
-                green += 1
-            elif change < 0:
-                red += 1
 
         except (TypeError, ValueError):
             continue
 
+        if change > 0:
+            green += 1
+
+        elif change < 0:
+            red += 1
+
     total = green + red
 
-    if total:
+    if total > 0:
+
         green_pct = round(
-            green / total * 100,
+            (green / total) * 100,
             1,
         )
 
         red_pct = round(
-            red / total * 100,
+            (red / total) * 100,
             1,
         )
 
@@ -260,9 +414,9 @@ def get_market_context(tickers):
     else:
         breadth = "Mixed"
 
-    # ---------------------------------------------------------
-    # BTC Futures data
-    # ---------------------------------------------------------
+    # -----------------------------------------------------
+    # Optional BTC Futures data
+    # -----------------------------------------------------
 
     btc_oi = _fetch_btc_open_interest()
 
@@ -279,6 +433,10 @@ def get_market_context(tickers):
     }
 
 
+# =========================================================
+# BTC Futures Open Interest
+# =========================================================
+
 def _fetch_btc_open_interest():
     """Fetch current BTCUSDT Futures open interest."""
 
@@ -289,7 +447,7 @@ def _fetch_btc_open_interest():
 
     for url in urls:
         try:
-            res = requests.get(
+            response = requests.get(
                 url,
                 params={
                     "symbol": "BTCUSDT"
@@ -297,15 +455,17 @@ def _fetch_btc_open_interest():
                 timeout=5,
             )
 
-            if res.ok:
-                data = res.json()
+            if not response.ok:
+                continue
 
-                value = data.get(
-                    "openInterest"
-                )
+            data = response.json()
 
-                if value is not None:
-                    return float(value)
+            value = data.get(
+                "openInterest"
+            )
+
+            if value is not None:
+                return float(value)
 
         except Exception:
             continue
@@ -317,6 +477,10 @@ def _fetch_btc_open_interest():
     return None
 
 
+# =========================================================
+# BTC Funding Rate
+# =========================================================
+
 def _fetch_btc_funding_rate():
     """Fetch latest BTCUSDT Futures funding rate."""
 
@@ -327,7 +491,7 @@ def _fetch_btc_funding_rate():
 
     for url in urls:
         try:
-            res = requests.get(
+            response = requests.get(
                 url,
                 params={
                     "symbol": "BTCUSDT"
@@ -335,15 +499,17 @@ def _fetch_btc_funding_rate():
                 timeout=5,
             )
 
-            if res.ok:
-                data = res.json()
+            if not response.ok:
+                continue
 
-                value = data.get(
-                    "lastFundingRate"
-                )
+            data = response.json()
 
-                if value is not None:
-                    return float(value)
+            value = data.get(
+                "lastFundingRate"
+            )
+
+            if value is not None:
+                return float(value)
 
         except Exception:
             continue
@@ -355,33 +521,33 @@ def _fetch_btc_funding_rate():
     return None
 
 
+# =========================================================
+# 24h ticker data
+# =========================================================
+
 def _fetch_all_24hr_tickers():
-    """
-    Fetch Binance 24h ticker data.
+    """Fetch Binance Spot 24h ticker statistics."""
 
-    Uses the Binance data API Spot endpoint because it
-    remains accessible when Futures endpoints return 451.
-    """
-
-    url = (
-        f"{cfg.BINANCE_FAPI_BASE}"
-        "/api/v3/ticker/24hr"
-    )
-
-    res = requests.get(
-        url,
+    response = requests.get(
+        TICKER_24HR_URL,
         timeout=15,
     )
 
-    res.raise_for_status()
+    response.raise_for_status()
 
-    return res.json()
+    return response.json()
 
+
+# =========================================================
+# Score helpers
+# =========================================================
 
 def _norm_log(value):
-    return math.log10(
-        max(value, 0) + 1
-    ) / 10
+    return (
+        math.log10(
+            max(value, 0) + 1
+        ) / 10
+    )
 
 
 def _norm(value, cap):
@@ -394,7 +560,12 @@ def _norm(value, cap):
     )
 
 
+# =========================================================
+# Manual test
+# =========================================================
+
 if __name__ == "__main__":
+
     rows = get_screener_shortlist()
 
     for row in rows:
