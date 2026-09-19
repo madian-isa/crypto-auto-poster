@@ -781,23 +781,6 @@
       "technical_analysis": "Price sits just above the 9‑EMA (0.198094) and 21‑EMA (0.193102), indicating short‑term buying pressure. The MACD histogram is marginally negative and Stochastic K is below D, suggesting some downside bias, while the order‑book shows a modest 4.2% bid‑side imbalance.",
       "market_context": "BTC is in a bullish trend on both 4‑hour and daily frames, and the broader market is broadly positive with 78.5% of assets advancing.",
       "result": "PENDING"
-    },
-    {
-      "id": 47,
-      "created_at": "2026-09-19T14:00:55.928318+00:00",
-      "symbol": "APEUSDT",
-      "direction": "SHORT",
-      "title": "High Volume Selling Sweep Breaks $APE Market Structure",
-      "entry_low": 0.1414,
-      "entry_high": 0.1415,
-      "stop_loss": 0.1464,
-      "take_profit": 0.1314,
-      "support": 0.1376,
-      "resistance": 0.1436,
-      "news_line": "",
-      "technical_analysis": "Price sits just below the EMA9 (0.1408) and EMA21 (0.1391), indicating bearish pressure despite the short‑term EMA alignment. MACD histogram is marginally negative and the stochastic shows K (65.6) below D (68.2), hinting at a possible downward shift. Order‑book imbalance of -1.9% adds to the short bias.",
-      "market_context": "The broader market remains bullish, with BTC up 1.26% and overall market breadth at 84.7% green, but APEUSDT shows localized weakness.",
-      "result": "PENDING"
     }
   ]
 }
