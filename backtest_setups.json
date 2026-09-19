@@ -781,6 +781,23 @@
       "technical_analysis": "Price sits just above the 9‑EMA (0.198094) and 21‑EMA (0.193102), indicating short‑term buying pressure. The MACD histogram is marginally negative and Stochastic K is below D, suggesting some downside bias, while the order‑book shows a modest 4.2% bid‑side imbalance.",
       "market_context": "BTC is in a bullish trend on both 4‑hour and daily frames, and the broader market is broadly positive with 78.5% of assets advancing.",
       "result": "PENDING"
+    },
+    {
+      "id": 47,
+      "created_at": "2026-09-19T09:00:54.362851+00:00",
+      "symbol": "XTZUSDT",
+      "direction": "LONG",
+      "title": "Bullish Divergence Flashed on $XTZ Daily Chart Structure",
+      "entry_low": 0.3362,
+      "entry_high": 0.3368,
+      "stop_loss": 0.322752,
+      "take_profit": 0.363096,
+      "support": 0.3145,
+      "resistance": 0.395,
+      "news_line": "",
+      "technical_analysis": "Price is trading at 0.3368, comfortably above the 9‑period EMA (0.3299) and 21‑period EMA (0.3106), indicating short‑term bullish momentum. MACD is positive with a rising histogram, and the SMA‑50 sits far lower at 0.2763, reinforcing a longer‑term uptrend. The order‑book shows a slight bid‑side imbalance, adding subtle support.",
+      "market_context": "BTC continues a bullish trend on both 4‑hour and daily frames, and the broader crypto market is broadly positive with over 80% of assets in green, supporting risk‑on sentiment.",
+      "result": "PENDING"
     }
   ]
 }
