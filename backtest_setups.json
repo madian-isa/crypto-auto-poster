@@ -781,23 +781,6 @@
       "technical_analysis": "Price sits just above the 9‑EMA (0.198094) and 21‑EMA (0.193102), indicating short‑term buying pressure. The MACD histogram is marginally negative and Stochastic K is below D, suggesting some downside bias, while the order‑book shows a modest 4.2% bid‑side imbalance.",
       "market_context": "BTC is in a bullish trend on both 4‑hour and daily frames, and the broader market is broadly positive with 78.5% of assets advancing.",
       "result": "PENDING"
-    },
-    {
-      "id": 47,
-      "created_at": "2026-09-19T15:00:56.656083+00:00",
-      "symbol": "TRUMPUSDT",
-      "direction": "LONG",
-      "title": "Key Support Holds Firm: $TRUMP Bullish Continuation Setup Active",
-      "entry_low": 2.061,
-      "entry_high": 2.062,
-      "stop_loss": 1.97856,
-      "take_profit": 2.22588,
-      "support": 2.041,
-      "resistance": 2.067,
-      "news_line": "",
-      "technical_analysis": "Price is trading just above the 9‑ and 21‑period EMAs and the 50‑SMA, signaling short‑term bullish bias. The MACD histogram is negative and stochastic is in the overbought zone, hinting at a possible pull‑back. Order‑book imbalance shows a 16.5% bid‑side advantage.",
-      "market_context": "BTC continues a bullish trend on 4H and 1D timeframes, and the overall crypto market is broadly positive.",
-      "result": "PENDING"
     }
   ]
 }
