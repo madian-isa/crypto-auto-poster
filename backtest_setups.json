@@ -611,6 +611,23 @@
       "technical_analysis": "Price is sitting just above the 0.3366 support and below the 9‑ and 21‑period EMAs, while the MACD histogram remains negative. The stochastic oscillator is deep in oversold territory (K ≈ 17, D ≈ 23) and the order book shows a 21 % bid‑side imbalance, suggesting buying pressure.",
       "market_context": "BTC remains bullish on both the 4‑hour and daily charts and the broader market is broadly positive, adding support to a short‑term upside bias for CRV.",
       "result": "PENDING"
+    },
+    {
+      "id": 37,
+      "created_at": "2026-09-19T06:38:50.237764+00:00",
+      "symbol": "ROSEUSDT",
+      "direction": "SHORT",
+      "title": "$ROSE Fakeout Confirmed: Bulls Trapped at Local Highs",
+      "entry_low": 0.00733,
+      "entry_high": 0.00735,
+      "stop_loss": 0.0074,
+      "take_profit": 0.00719,
+      "support": 0.00726,
+      "resistance": 0.00733,
+      "news_line": "",
+      "technical_analysis": "Price sits just below the 9‑ and 21‑period EMAs (0.007414 / 0.007379) while remaining above the 50‑SMA, indicating short‑term downside pressure. The MACD histogram is negative and the line remains under its signal, reinforcing bearish momentum. Stochastic is deep in oversold territory (K 15.4, D 18.2), suggesting a possible bounce but the order‑book shows a 19.6 % sell‑side imbalance.",
+      "market_context": "BTC is in a bullish trend on both 4‑h and daily frames and overall market breadth is broadly positive, which can support risk‑off moves into lower‑priced altcoins.",
+      "result": "PENDING"
     }
   ]
 }
