@@ -29,23 +29,28 @@ def render_chart_image(
     setup: dict | None = None,
 ) -> str:
     """
-    Create a neutral market-analysis chart.
+    Create a neutral 1H market-analysis chart.
 
     Includes:
       - Candlesticks
       - EMA 21
       - SMA 50
 
-    Does not include automated entry/SL/TP levels.
-    Does not use mplfinance volume panel.
+    Time shown on chart:
+      - Bangladesh time (UTC+6)
+
+    Does not include:
+      - Entry / SL / TP overlays
+      - Volume panel
     """
 
     if klines_df is None or klines_df.empty:
-        raise ValueError(f"No kline data available for {symbol}")
+        raise ValueError(
+            f"No kline data available for {symbol}"
+        )
 
     df = klines_df.copy()
 
-    # Normalize column names
     rename_map = {
         "open": "Open",
         "high": "High",
@@ -65,24 +70,30 @@ def render_chart_image(
         }
     )
 
-    # Make sure required OHLC columns exist
-    required = ["Open", "High", "Low", "Close"]
+    required = [
+        "Open",
+        "High",
+        "Low",
+        "Close",
+    ]
 
-    missing = [col for col in required if col not in df.columns]
+    missing = [
+        col
+        for col in required
+        if col not in df.columns
+    ]
 
     if missing:
         raise ValueError(
             f"Missing OHLC columns for {symbol}: {missing}"
         )
 
-    # Convert OHLC values to numeric
     for col in required:
         df[col] = pd.to_numeric(
             df[col],
             errors="coerce",
         )
 
-    # Remove invalid rows
     df = df.dropna(
         subset=required
     )
@@ -92,15 +103,44 @@ def render_chart_image(
             f"No valid OHLC data available for {symbol}"
         )
 
-    # Handle datetime index
+    # ---------------------------------------------------------
+    # FIX TIMEZONE
+    # Binance timestamps are normally UTC.
+    # Convert them explicitly to Bangladesh time (UTC+6).
+    # ---------------------------------------------------------
+
     if "Date" in df.columns:
-        df["Date"] = pd.to_datetime(
-            df["Date"],
-            errors="coerce",
-        )
+
+        raw_dates = df["Date"]
+
+        # Numeric timestamps from Binance are usually
+        # milliseconds since Unix epoch.
+        if pd.api.types.is_numeric_dtype(raw_dates):
+
+            df["Date"] = pd.to_datetime(
+                raw_dates,
+                unit="ms",
+                utc=True,
+                errors="coerce",
+            )
+
+        else:
+
+            df["Date"] = pd.to_datetime(
+                raw_dates,
+                utc=True,
+                errors="coerce",
+            )
 
         df = df.dropna(
             subset=["Date"]
+        )
+
+        # Convert UTC -> Bangladesh Standard Time
+        df["Date"] = (
+            df["Date"]
+            .dt.tz_convert("Asia/Dhaka")
+            .dt.tz_localize(None)
         )
 
         df = df.set_index("Date")
@@ -109,14 +149,38 @@ def render_chart_image(
         df.index,
         pd.DatetimeIndex,
     ):
+
         raise ValueError(
             f"Datetime index required for {symbol}"
         )
 
-    # Sort chronologically
+    else:
+
+        # If the index already exists as datetime,
+        # make sure it is interpreted as UTC first.
+        if df.index.tz is None:
+
+            df.index = (
+                pd.to_datetime(
+                    df.index,
+                    errors="coerce",
+                    utc=True,
+                )
+                .tz_convert("Asia/Dhaka")
+                .tz_localize(None)
+            )
+
+        else:
+
+            df.index = (
+                df.index
+                .tz_convert("Asia/Dhaka")
+                .tz_localize(None)
+            )
+
     df = df.sort_index()
 
-    # Keep latest 80 candles
+    # Latest 80 candles
     df = df.tail(80).copy()
 
     if len(df) < 10:
@@ -124,7 +188,10 @@ def render_chart_image(
             f"Not enough candles available for {symbol}"
         )
 
-    # Technical indicators
+    # ---------------------------------------------------------
+    # INDICATORS
+    # ---------------------------------------------------------
+
     df["EMA21"] = (
         df["Close"]
         .ewm(
@@ -143,7 +210,6 @@ def render_chart_image(
         .mean()
     )
 
-    # Moving-average overlays
     addplots = [
         mpf.make_addplot(
             df["EMA21"],
@@ -155,7 +221,10 @@ def render_chart_image(
         ),
     ]
 
-    # Output directory
+    # ---------------------------------------------------------
+    # OUTPUT
+    # ---------------------------------------------------------
+
     output_dir = getattr(
         bot_config,
         "CHART_OUTPUT_DIR",
@@ -178,11 +247,10 @@ def render_chart_image(
         f"{safe_symbol}_market_chart.png",
     )
 
-    title = f"{symbol} — Market Analysis"
+    title = (
+        f"{symbol} — 1H Market Analysis"
+    )
 
-    # IMPORTANT:
-    # Do NOT pass volume=True/False.
-    # This avoids the mplfinance volume validator error.
     plot_kwargs = {
         "type": "candle",
         "style": _CHART_STYLE,
@@ -190,7 +258,10 @@ def render_chart_image(
         "figsize": (10, 6),
         "tight_layout": True,
         "returnfig": True,
+
+        # Bangladesh local time
         "datetime_format": "%d %b %H:%M",
+
         "xrotation": 0,
         "addplot": addplots,
     }
@@ -206,7 +277,6 @@ def render_chart_image(
         bbox_inches="tight",
     )
 
-    # Close figure to avoid memory buildup
     try:
         import matplotlib.pyplot as plt
 
@@ -217,6 +287,11 @@ def render_chart_image(
 
     print(
         f"[chart] generated: {chart_path}"
+    )
+
+    print(
+        "[chart] timezone: "
+        "Asia/Dhaka (UTC+6)"
     )
 
     return chart_path
