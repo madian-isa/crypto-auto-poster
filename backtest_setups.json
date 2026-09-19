@@ -288,6 +288,23 @@
       "technical_analysis": "ETH trades above its 9‑EMA (2612.96) and 21‑EMA (2575.63), indicating short‑term bullish bias. MACD histogram is positive (1.33) with MACD above its signal line, reinforcing upward momentum. Stochastic %K sits at 86, suggesting the asset is in overbought territory but still climbing.",
       "market_context": "BTC is up 6.6% in the last 24 h and the broader market shows 95.6% green symbols, supporting risk‑on sentiment.",
       "result": "PENDING"
+    },
+    {
+      "id": 18,
+      "created_at": "2026-09-19T01:31:19.412633+00:00",
+      "symbol": "HBARUSDT",
+      "direction": "SHORT",
+      "title": "PRESSURE BUILDING?",
+      "entry_low": 0.07856,
+      "entry_high": 0.07865,
+      "stop_loss": 0.0788,
+      "take_profit": 0.0782,
+      "support": 0.07856,
+      "resistance": 0.07877,
+      "news_line": "",
+      "technical_analysis": "Price sits just above the key support at $0.07856, while the 9‑EMA ($0.07891) sits above both the price and the 21‑EMA ($0.07819), creating a short‑term resistance zone. MACD remains below its signal line with a negative histogram, and the stochastic shows K (58) below D (71), both pointing to bearish momentum. A break below support could trigger a move toward the next low around $0.07820.",
+      "market_context": "BTC is up about 6% and the broader market is broadly positive, but HBAR’s immediate indicators suggest downside pressure.",
+      "result": "PENDING"
     }
   ]
 }
