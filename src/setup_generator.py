@@ -5,7 +5,7 @@ Generates concise, natural Binance Square crypto market-analysis posts.
 
 Features:
 - Technical indicators
-- Multi-timeframe support/resistance
+- 1H support/resistance
 - BTC market context
 - Advanced market data when available
 - Relevant supplied news
@@ -22,6 +22,7 @@ Important:
 - This module does not place trades.
 - It does not tell readers to invest.
 - It does not fabricate news or market data.
+- ATR is not used for setup fallback calculations.
 """
 
 import json
@@ -120,6 +121,12 @@ IMPORTANT RULES:
 - Do NOT use NFA or DYOR.
 - Do not use guaranteed-profit language.
 - Do not make the post sound repetitive or AI-generated.
+
+TIMEFRAME RULE:
+- Use ONLY 1H data for the coin's trend,
+  market structure, support and resistance.
+- Do not combine 15m, 4H, 1D or 1W levels
+  for the coin's support/resistance.
 
 TITLE:
 A title will be selected from the supplied title library.
@@ -258,8 +265,6 @@ def _select_title(
 
     The selection is deterministic for a given symbol/day,
     while different symbols rotate through different titles.
-
-    This avoids using the same title for every post.
     """
 
     if direction == "LONG":
@@ -273,8 +278,6 @@ def _select_title(
         "%Y-%m-%d"
     )
 
-    # Stable numeric value based on
-    # coin + date.
     seed_text = (
         f"{coin}-{today}-{direction}"
     )
@@ -410,7 +413,6 @@ def _build_indicator_summary(
         "bollinger_lower",
         "stochastic",
         "adx",
-        "atr",
         "obv",
         "volume",
         "volume_change",
@@ -443,17 +445,29 @@ def _build_advanced_summary(
 
     result = {}
 
-    # Multi-timeframe S/R
+    # -----------------------------------------------------
+    # 1H SUPPORT / RESISTANCE
+    # -----------------------------------------------------
+
     sr = advanced.get(
         "multi_timeframe_sr"
     )
 
     if sr:
-        result[
-            "multi_timeframe_sr"
-        ] = sr
 
-    # BTC context
+        one_hour = sr.get(
+            "1h"
+        )
+
+        if one_hour:
+            result[
+                "1h_support_resistance"
+            ] = one_hour
+
+    # -----------------------------------------------------
+    # BTC CONTEXT
+    # -----------------------------------------------------
+
     btc = advanced.get(
         "btc_context"
     )
@@ -463,7 +477,10 @@ def _build_advanced_summary(
             "btc_context"
         ] = btc
 
-    # Open Interest
+    # -----------------------------------------------------
+    # OPEN INTEREST
+    # -----------------------------------------------------
+
     oi = advanced.get(
         "open_interest"
     )
@@ -482,7 +499,10 @@ def _build_advanced_summary(
             "oi_change_1h_pct"
         ] = oi_change
 
-    # Funding
+    # -----------------------------------------------------
+    # FUNDING
+    # -----------------------------------------------------
+
     funding = advanced.get(
         "funding_rate"
     )
@@ -492,7 +512,10 @@ def _build_advanced_summary(
             "funding_rate"
         ] = funding
 
-    # Long / Short
+    # -----------------------------------------------------
+    # LONG / SHORT
+    # -----------------------------------------------------
+
     long_short = advanced.get(
         "long_short_ratio"
     )
@@ -502,7 +525,10 @@ def _build_advanced_summary(
             "long_short_ratio"
         ] = long_short
 
-    # Liquidations
+    # -----------------------------------------------------
+    # LIQUIDATIONS
+    # -----------------------------------------------------
+
     liquidations = advanced.get(
         "liquidations"
     )
@@ -512,7 +538,10 @@ def _build_advanced_summary(
             "liquidations"
         ] = liquidations
 
-    # Orderbook
+    # -----------------------------------------------------
+    # ORDERBOOK
+    # -----------------------------------------------------
+
     orderbook = advanced.get(
         "orderbook"
     )
@@ -534,21 +563,11 @@ def _select_major_levels(
     advanced_market_data,
 ):
     """
-    Select useful support/resistance levels.
+    Select support/resistance using ONLY 1H levels.
 
     Priority:
-    4H -> 1D -> 1W -> 1H -> 15M
-
-    Falls back to indicator levels.
+    1H -> indicator fallback
     """
-
-    priority = [
-        "4h",
-        "1d",
-        "1w",
-        "1h",
-        "15m",
-    ]
 
     sr = (
         advanced_market_data or {}
@@ -557,33 +576,18 @@ def _select_major_levels(
         {}
     )
 
-    support = None
-    resistance = None
+    one_hour = sr.get(
+        "1h",
+        {}
+    )
 
-    for timeframe in priority:
+    support = one_hour.get(
+        "support"
+    )
 
-        levels = sr.get(
-            timeframe
-        )
-
-        if not levels:
-            continue
-
-        if support is None:
-            support = levels.get(
-                "support"
-            )
-
-        if resistance is None:
-            resistance = levels.get(
-                "resistance"
-            )
-
-        if (
-            support is not None
-            and resistance is not None
-        ):
-            break
+    resistance = one_hour.get(
+        "resistance"
+    )
 
     if support is None and indicators:
 
@@ -604,83 +608,6 @@ def _select_major_levels(
 
 
 # =========================================================
-# RISK / REWARD
-# =========================================================
-
-def _apply_risk_reward(
-    direction,
-    entry_low,
-    entry_high,
-    atr,
-):
-    """
-    Build a numerical 2R baseline using ATR.
-    """
-
-    entry_low = _safe_float(
-        entry_low
-    )
-
-    entry_high = _safe_float(
-        entry_high
-    )
-
-    atr = _safe_float(
-        atr
-    )
-
-    if (
-        entry_low is None
-        or entry_high is None
-        or atr is None
-        or atr <= 0
-    ):
-        return {
-            "stop_loss": None,
-            "take_profit": None,
-            "rr": 2,
-        }
-
-    entry = (
-        entry_low + entry_high
-    ) / 2
-
-    stop_distance = (
-        atr * cfg.ATR_MULTIPLIER
-    )
-
-    rr = 2
-
-    if direction == "LONG":
-
-        stop_loss = (
-            entry - stop_distance
-        )
-
-        take_profit = (
-            entry
-            + stop_distance * rr
-        )
-
-    else:
-
-        stop_loss = (
-            entry + stop_distance
-        )
-
-        take_profit = (
-            entry
-            - stop_distance * rr
-        )
-
-    return {
-        "stop_loss": stop_loss,
-        "take_profit": take_profit,
-        "rr": rr,
-    }
-
-
-# =========================================================
 # GENERATE SETUP
 # =========================================================
 
@@ -692,7 +619,9 @@ def generate_setup(
     advanced_market_data=None,
 ):
     """
-    Ask Groq to generate one complete setup.
+    Ask Groq to generate one complete market-analysis setup.
+
+    ATR is not used for fallback calculations.
     """
 
     client = _get_client()
@@ -763,35 +692,34 @@ TASK:
 
 2. Create a realistic entry range.
 
-3. Create a stop loss.
+3. Use supplied stop-loss and take-profit values when available.
+   Do not invent missing values.
 
-4. Create a 2R take-profit.
+4. Identify useful 1H support and resistance.
 
-5. Identify useful support and resistance.
+5. Use only the strongest 3–5 technical signals.
 
-6. Use only the strongest 3–5 technical signals.
-
-7. Use OI, funding, long/short ratio, liquidation or
+6. Use OI, funding, long/short ratio, liquidation or
    orderbook data only if supplied and useful.
 
-8. Use BTC only as broader market context.
+7. Use BTC only as broader market context.
 
-9. NEWS RULE:
+8. NEWS RULE:
    If relevant news is supplied, create a short NEWS line
    using ONLY the supplied information.
 
    If no relevant news is supplied:
    return an empty news_line.
 
-10. TITLE RULE:
-    After deciding LONG or SHORT, select the appropriate
-    title style.
+9. TITLE RULE:
+   After deciding LONG or SHORT, select the appropriate
+   title style.
 
-    Do not create an unrelated title.
-    Do not use emojis.
-    Do not use hashtags.
+   Do not create an unrelated title.
+   Do not use emojis.
+   Do not use hashtags.
 
-11. Keep the final content around 100–140 words.
+10. Keep the final content around 100–140 words.
 
 Return JSON only:
 
@@ -800,8 +728,8 @@ Return JSON only:
   "title": "",
   "entry_low": 0,
   "entry_high": 0,
-  "stop_loss": 0,
-  "take_profit": 0,
+  "stop_loss": null,
+  "take_profit": null,
   "support": 0,
   "resistance": 0,
   "news_line": "short verified news headline or empty",
@@ -923,21 +851,15 @@ Return JSON only:
     setup["entry_high"] = entry_high
 
     # =====================================================
-    # ATR FALLBACK
+    # STOP LOSS / TAKE PROFIT
     # =====================================================
-
-    atr = _safe_float(
-        indicators.get(
-            "atr"
-        )
-    )
-
-    risk_data = _apply_risk_reward(
-        direction,
-        entry_low,
-        entry_high,
-        atr,
-    )
+    #
+    # ATR fallback has been completely removed.
+    #
+    # If the model does not supply these values,
+    # they remain unavailable instead of being calculated
+    # from ATR.
+    #
 
     ai_stop = _safe_float(
         setup.get(
@@ -951,20 +873,11 @@ Return JSON only:
         )
     )
 
-    if ai_stop is None:
-
-        ai_stop = risk_data[
-            "stop_loss"
-        ]
-
-    if ai_target is None:
-
-        ai_target = risk_data[
-            "take_profit"
-        ]
-
     setup["stop_loss"] = ai_stop
     setup["take_profit"] = ai_target
+
+    # Keep this field for compatibility with
+    # existing backtest/state code.
     setup["rr"] = 2
 
     # =====================================================
@@ -997,6 +910,7 @@ Return JSON only:
 
     # Ignore whatever title the model generated.
     # Select one from the user's title library instead.
+
     setup["title"] = _select_title(
         direction,
         coin,
@@ -1140,21 +1054,18 @@ def format_post_text(
         "",
     ).strip()
 
-    # Remove hashtags.
     title = re.sub(
         r"#\w+",
         "",
         title,
     ).strip()
 
-    # Remove emojis/non-ASCII symbols.
     title = re.sub(
         r"[^\x00-\x7F]+",
         "",
         title,
     ).strip()
 
-    # Make sure title has $COIN exactly once.
     title = re.sub(
         rf"\$?{re.escape(coin)}\s*:\s*",
         "",
@@ -1203,10 +1114,6 @@ def format_post_text(
     # -----------------------------------------------------
     # TECHNICAL BODY
     # -----------------------------------------------------
-    #
-    # We deliberately put $COIN here.
-    # This creates the second $COIN mention.
-    #
 
     if technical:
 
@@ -1243,7 +1150,7 @@ def format_post_text(
     lines.append("")
 
     lines.append(
-        f"Entry: ${entry_low}–${entry_high}"
+        f"Entry: ${entry_low} - ${entry_high}"
     )
 
     lines.append(
