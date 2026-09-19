@@ -5,7 +5,7 @@ Generates concise, natural Binance Square crypto market-analysis posts.
 
 Features:
 - Technical indicators
-- 1H support/resistance
+- 1H and 4H Swing support/resistance
 - BTC market context
 - Advanced market data when available
 - Relevant supplied news
@@ -123,10 +123,10 @@ IMPORTANT RULES:
 - Do not make the post sound repetitive or AI-generated.
 
 TIMEFRAME RULE:
-- Use ONLY 1H data for the coin's trend,
-  market structure, support and resistance.
-- Do not combine 15m, 4H, 1D or 1W levels
-  for the coin's support/resistance.
+- Identify swing high and swing low structures using 1H and 4H market structure.
+- Focus on key major swing levels rather than tiny micro-ranges.
+- Always aim for clean wide swing trade setups with solid Risk-to-Reward ratios.
+- Do NOT output micro-scalp setups or extremely narrow SL/TP ranges.
 
 TITLE:
 A title will be selected from the supplied title library.
@@ -446,7 +446,7 @@ def _build_advanced_summary(
     result = {}
 
     # -----------------------------------------------------
-    # 1H SUPPORT / RESISTANCE
+    # 1H / 4H SUPPORT / RESISTANCE
     # -----------------------------------------------------
 
     sr = advanced.get(
@@ -455,14 +455,13 @@ def _build_advanced_summary(
 
     if sr:
 
-        one_hour = sr.get(
-            "1h"
-        )
+        one_hour = sr.get("1h")
+        four_hour = sr.get("4h")
 
         if one_hour:
-            result[
-                "1h_support_resistance"
-            ] = one_hour
+            result["1h_support_resistance"] = one_hour
+        if four_hour:
+            result["4h_support_resistance"] = four_hour
 
     # -----------------------------------------------------
     # BTC CONTEXT
@@ -563,10 +562,10 @@ def _select_major_levels(
     advanced_market_data,
 ):
     """
-    Select support/resistance using ONLY 1H levels.
+    Select support/resistance using 1H/4H levels.
 
     Priority:
-    1H -> indicator fallback
+    1H/4H -> indicator fallback
     """
 
     sr = (
@@ -692,10 +691,13 @@ TASK:
 
 2. Create a realistic entry range.
 
-3. Use supplied stop-loss and take-profit values when available.
-   Do not invent missing values.
+3. Set Stop Loss and Take Profit (Swing Structure):
+   - Place Stop-Loss below the recent 1H/4H swing low (for LONG) or above the swing high (for SHORT).
+   - Ensure Stop-Loss distance is at least 3% to 5% away from entry.
+   - Set Take-Profit at the next major swing resistance or 2R target (at least 6% to 10% target distance).
+   - NEVER create tight scalping/micro-trades.
 
-4. Identify useful 1H support and resistance.
+4. Identify major 1H and 4H swing support and resistance levels.
 
 5. Use only the strongest 3–5 technical signals.
 
@@ -851,15 +853,8 @@ Return JSON only:
     setup["entry_high"] = entry_high
 
     # =====================================================
-    # STOP LOSS / TAKE PROFIT
+    # STOP LOSS / TAKE PROFIT (SWING ENFORCER)
     # =====================================================
-    #
-    # ATR fallback has been completely removed.
-    #
-    # If the model does not supply these values,
-    # they remain unavailable instead of being calculated
-    # from ATR.
-    #
 
     ai_stop = _safe_float(
         setup.get(
@@ -872,6 +867,21 @@ Return JSON only:
             "take_profit"
         )
     )
+
+    # SWING TRADING DISTANCE CHECK (Minimum 3.5% SL, 1:2 RR TP)
+    if entry_low and entry_low > 0:
+        if ai_stop is None or abs(entry_low - ai_stop) / entry_low < 0.035:
+            if direction == "LONG":
+                ai_stop = round(entry_low * 0.96, 8)       # 4% Stop Loss below
+            else:
+                ai_stop = round(entry_low * 1.04, 8)       # 4% Stop Loss above
+
+        sl_distance = abs(entry_low - ai_stop)
+        if ai_target is None or abs(entry_low - ai_target) / entry_low < 0.06:
+            if direction == "LONG":
+                ai_target = round(entry_low + (sl_distance * 2), 8)   # 1:2 R:R Target
+            else:
+                ai_target = round(entry_low - (sl_distance * 2), 8)   # 1:2 R:R Target
 
     setup["stop_loss"] = ai_stop
     setup["take_profit"] = ai_target
