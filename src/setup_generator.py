@@ -693,8 +693,8 @@ TASK:
 
 3. Set Stop Loss and Take Profit (Swing Structure):
    - Place Stop-Loss below the recent 1H/4H swing low (for LONG) or above the swing high (for SHORT).
-   - Ensure Stop-Loss distance is at least 3% to 5% away from entry.
-   - Set Take-Profit at the next major swing resistance or 2R target (at least 6% to 10% target distance).
+   - Ensure Stop-Loss distance is at least 3.5% to 5% away from entry.
+   - Set Take-Profit at 2R target (exactly double the Stop-Loss distance).
    - NEVER create tight scalping/micro-trades.
 
 4. Identify major 1H and 4H swing support and resistance levels.
@@ -853,7 +853,7 @@ Return JSON only:
     setup["entry_high"] = entry_high
 
     # =====================================================
-    # STOP LOSS / TAKE PROFIT (SWING ENFORCER)
+    # STOP LOSS / TAKE PROFIT (STRICT 1:2 RR SWING ENFORCER)
     # =====================================================
 
     ai_stop = _safe_float(
@@ -862,26 +862,22 @@ Return JSON only:
         )
     )
 
-    ai_target = _safe_float(
-        setup.get(
-            "take_profit"
-        )
-    )
-
-    # SWING TRADING DISTANCE CHECK (Minimum 3.5% SL, 1:2 RR TP)
     if entry_low and entry_low > 0:
+        # 1. Check if Stop Loss exists and is at least 3.5% away
         if ai_stop is None or abs(entry_low - ai_stop) / entry_low < 0.035:
             if direction == "LONG":
-                ai_stop = round(entry_low * 0.96, 8)       # 4% Stop Loss below
+                ai_stop = round(entry_low * 0.96, 8)       # 4.0% Stop Loss below
             else:
-                ai_stop = round(entry_low * 1.04, 8)       # 4% Stop Loss above
+                ai_stop = round(entry_low * 1.04, 8)       # 4.0% Stop Loss above
 
+        # 2. Calculate actual Risk Distance (SL Gap)
         sl_distance = abs(entry_low - ai_stop)
-        if ai_target is None or abs(entry_low - ai_target) / entry_low < 0.06:
-            if direction == "LONG":
-                ai_target = round(entry_low + (sl_distance * 2), 8)   # 1:2 R:R Target
-            else:
-                ai_target = round(entry_low - (sl_distance * 2), 8)   # 1:2 R:R Target
+
+        # 3. Force Take Profit to be EXACTLY double the SL Distance (Strict 1:2 RR)
+        if direction == "LONG":
+            ai_target = round(entry_low + (sl_distance * 2.0), 8)
+        else:
+            ai_target = round(entry_low - (sl_distance * 2.0), 8)
 
     setup["stop_loss"] = ai_stop
     setup["take_profit"] = ai_target
