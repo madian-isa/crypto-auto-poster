@@ -1,4 +1,3 @@
-```python
 """
 main.py
 
@@ -554,4 +553,43 @@ def _pick_diverse(
         symbol = item["symbol"]
 
         if symbol in seen:
-```
+
+            continue
+
+        seen.add(
+            symbol
+        )
+
+        picks.append(
+            item
+        )
+
+        if len(picks) >= count:
+
+            break
+
+    return picks
+
+
+# =========================================================
+# ENTRY POINT
+# =========================================================
+
+if __name__ == "__main__":
+
+    run_mode = os.environ.get(
+        "RUN_MODE",
+        "once",
+    ).lower()
+
+    print(
+        f"[main] RUN_MODE={run_mode}"
+    )
+
+    if run_mode == "cycle":
+
+        run_cycle()
+
+    else:
+
+        run_once()
