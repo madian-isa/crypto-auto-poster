@@ -781,6 +781,23 @@
       "technical_analysis": "Price sits just above the 9‑EMA (0.198094) and 21‑EMA (0.193102), indicating short‑term buying pressure. The MACD histogram is marginally negative and Stochastic K is below D, suggesting some downside bias, while the order‑book shows a modest 4.2% bid‑side imbalance.",
       "market_context": "BTC is in a bullish trend on both 4‑hour and daily frames, and the broader market is broadly positive with 78.5% of assets advancing.",
       "result": "PENDING"
+    },
+    {
+      "id": 47,
+      "created_at": "2026-09-19T08:24:20.900240+00:00",
+      "symbol": "BANKUSDT",
+      "direction": "SHORT",
+      "title": "$BANK Rejection at Key Supply Zone: Short Setup Activated",
+      "entry_low": 0.02955,
+      "entry_high": 0.0296,
+      "stop_loss": null,
+      "take_profit": null,
+      "support": 0.0294,
+      "resistance": 0.0296,
+      "news_line": "",
+      "technical_analysis": "The price sits at 0.0295, just below the 9‑ and 21‑period EMAs (0.029603 and 0.029557), indicating short‑term pressure. MACD shows a negative histogram (-0.000108) with the line under the signal, reinforcing bearish momentum. Stochastic is in the lower‑mid range (K 28.6, D 23.8), hinting at a possible rebound but still below 50. The order book shows a modest bid‑side imbalance (3.4%), suggesting limited buying support.",
+      "market_context": "Bitcoin remains on a bullish 4‑hour and daily trend, with a 4.16% 24‑hour rise, and overall market breadth is broadly positive (82.8% green).",
+      "result": "PENDING"
     }
   ]
 }
