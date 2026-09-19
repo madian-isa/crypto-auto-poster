@@ -2,18 +2,13 @@ name: Trade Setup Bot
 
 on:
   schedule:
-    # Runs every 20 minutes.
-    # GitHub's scheduler may sometimes delay a run slightly.
     - cron: "*/20 * * * *"
 
-  # Lets you trigger a run manually from the Actions tab.
   workflow_dispatch: {}
 
 permissions:
   contents: write
 
-# Prevent two bot runs from trying to push to main
-# at the same time.
 concurrency:
   group: trade-setup-bot
   cancel-in-progress: false
@@ -36,11 +31,12 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Run trade setup bot (single post)
+      - name: Run trade setup bot
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           BINANCE_SQUARE_OPENAPI_KEY: ${{ secrets.BINANCE_SQUARE_OPENAPI_KEY }}
           FINNHUB_API_KEY: ${{ secrets.FINNHUB_API_KEY }}
+
           DRY_RUN: ${{ vars.DRY_RUN || 'true' }}
           TRADE_MAX_POSTS_PER_DAY: ${{ vars.TRADE_MAX_POSTS_PER_DAY || '70' }}
 
@@ -61,6 +57,14 @@ jobs:
 
           git commit -m "chore: update trade bot state and backtest data [skip ci]"
 
-          git pull --rebase origin main
+          git fetch origin main
 
-          git push origin main
+          git checkout origin/main -- trade_bot_state.json
+          git checkout origin/main -- backtest_setups.json
+
+          git add trade_bot_state.json
+          git add backtest_setups.json
+
+          git commit -m "chore: sync bot state with main [skip ci]" || true
+
+          git push origin HEAD:main
