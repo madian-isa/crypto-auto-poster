@@ -1,37 +1,32 @@
 """
 setup_generator.py
 
-Generates short, natural Binance Square trade-setup posts.
+Generates concise, natural Binance Square crypto market-analysis posts.
 
-Uses:
+Features:
 - Technical indicators
 - Multi-timeframe support/resistance
 - BTC market context
 - Advanced market data when available
-- Relevant news
+- Relevant supplied news
+- 25 LONG title templates
+- 25 SHORT title templates
+- Title rotation
+- No emojis
+- Exactly 3 $COIN mentions in the final post:
+    1. Title
+    2. Technical-analysis/body section
+    3. Final LONG/SHORT line
 
-Final post format:
-COIN: SHORT TITLE?
-
-LONG SETUP — COIN
-
-Entry: $X–$Y
-Stop Loss: $X
-Take Profit: $X (2R)
-
-Key Levels: Support $X | Resistance $X
-
-Technical analysis.
-
-NEWS: Short relevant news headline/summary.
-
-Long $COIN 👆
-OR
-Short $COIN 👇
+Important:
+- This module does not place trades.
+- It does not tell readers to invest.
+- It does not fabricate news or market data.
 """
 
 import json
 import re
+from datetime import datetime, timezone
 
 from groq import Groq
 
@@ -39,74 +34,111 @@ from src import bot_config as cfg
 
 
 # =========================================================
+# TITLE LIBRARY
+# =========================================================
+
+LONG_TITLES = [
+    "Technical Signals Turn Positive as Market Momentum Builds",
+    "Bullish Momentum Is Building: Can $XXX Continue Its Breakout?",
+    "$XXX Buying Pressure Rises as Bulls Test Key Resistance",
+    "Strong Accumulation Detected: $XXX Prepares for Next Wave Up",
+    "Major Breakout Signals Emerge on $XXX Higher Timeframes",
+    "Key Support Holds Firm: $XXX Bullish Continuation Setup Active",
+    "$XXX Liquidation Squeeze: Bears Trapped Near Critical Resistance",
+    "Trend Reversal Confirmed for $XXX as Volume Spikes Upward",
+    "$XXX Holds Moving Average Support: High Probability Long Setup",
+    "Bullish Divergence Flashed on $XXX Daily Chart Structure",
+    "$XXX Breaks Out of Falling Wedge Pattern: Targets Set Higher",
+    "Buyers Defend Key Demand Zone: $XXX Ready for Extension",
+    "On-Chain Metrics Confirm Strong Whale Accumulation on $XXX",
+    "$XXX Higher Low Structure Confirmed: Long Entry Level Reached",
+    "Smart Money Flow Increases into $XXX Ahead of Catalysts",
+    "$XXX Reclaims Key Resistance Level: Flip to Support Complete",
+    "Bullish Momentum Accelerates as $XXX Liquidity Sweep Completes",
+    "$XXX Volume Expansion Signals High Conviction Upward Move",
+    "Golden Cross Formation Confirmed on $XXX 4-Hour Timeframe",
+    "$XXX Breakout Confirmation: Bulls Target Next Supply Zone",
+    "High R-Multiple Long Trade Setup Forming on $XXX",
+    "$XXX Outperformance Signal: Buying Momentum Beats Broader Market",
+    "Critical Resistance Test: $XXX Preparing to Surge Higher",
+    "Spot Inflows Surge for $XXX as Futures Open Interest Rises",
+    "$XXX Prepares for Parabolic Phase: Key Technical Trigger Met",
+]
+
+
+SHORT_TITLES = [
+    "$XXX Resistance Test Fails: Bearish Momentum Building Fast",
+    "Technical Signals Turn Negative as $XXX Selling Pressure Rises",
+    "$XXX Rejection at Key Supply Zone: Short Setup Activated",
+    "Bearish Divergence Spotted on $XXX: Downside Targets Ahead",
+    "$XXX Breaks Below Critical Support: Further Drop Expected",
+    "Smart Money Distribution Visible on $XXX On-Chain Data",
+    "$XXX Fakeout Confirmed: Bulls Trapped at Local Highs",
+    "High Volume Selling Sweep Breaks $XXX Market Structure",
+    "$XXX Lower High Pattern Confirmed: Short Target in View",
+    "Moving Average Death Cross Signals Downward Trend for $XXX",
+    "$XXX Loses Key Demand Zone: Next Support Level Unprotected",
+    "Bearish Continuation Pattern Confirmed on $XXX Chart Structure",
+    "$XXX Derivative Data Shows Heavy Long Liquidations Incoming",
+    "Strong Rejection at Trendline Resistance: $XXX Short Entry",
+    "$XXX Volume Decreases on Rally: Weak Buyers Exposed",
+    "$XXX Prepares for Breakdown: Downside Risk Escalates",
+    "Bears Retake Control as $XXX Fails to Hold Moving Averages",
+    "$XXX Open Interest Drops Rapidly: Long Squeeze Underway",
+    "Major Support Breakdown Confirmed on $XXX Higher Timeframes",
+    "$XXX Distribution Phase Ends: Downside Target Zone Set",
+    "High Conviction Short Opportunity as $XXX Tests Supply Wall",
+    "$XXX Fails Resistance Retest: Bearish Extension Imminent",
+    "Overbought Indicators Signal Impending Correction for $XXX",
+    "$XXX Breaks Ascending Support Line: Bearish Momentum Surge",
+    "Panic Selling Risk Increases as $XXX Tests Critical Floor",
+]
+
+
+# =========================================================
 # SYSTEM PROMPT
 # =========================================================
 
 SYSTEM_PROMPT = """
-You are a professional crypto market analyst writing short
-Binance Square educational market-analysis posts.
+You are a professional crypto market analyst writing concise,
+natural Binance Square educational market-analysis posts.
 
-The writing must feel natural, human and concise.
+The writing must feel human, natural and varied.
 
 IMPORTANT RULES:
 - Do not tell readers to invest.
 - Do not promise profit.
-- Do not use exaggerated claims.
-- Do not fabricate news or market data.
-- Use ONLY the data provided.
+- Do not fabricate news.
+- Do not fabricate market data.
+- Use ONLY the supplied data.
 - If information is missing, do not invent it.
-- Focus mainly on the selected coin.
-- BTC is only broader market context.
-- Keep the post around 100–140 words when possible.
+- Keep the technical analysis.
+- Keep relevant supplied news when available.
+- Keep useful BTC/broader-market context when available.
 - Do NOT generate hashtags.
-- Do NOT use emojis except the final directional emoji.
-- Do NOT use "NFA" or "DYOR".
-- Do NOT use "guaranteed".
-- Do NOT use "will definitely".
-- Do not make the post sound like AI-generated text.
+- Do NOT use emojis.
+- Do NOT use NFA or DYOR.
+- Do not use guaranteed-profit language.
+- Do not make the post sound repetitive or AI-generated.
 
 TITLE:
-Create a SHORT attention-grabbing title.
-
-Good examples:
-"NOTCOIN: MOMENTUM OR PULLBACK?"
-"ZEC: BREAKOUT OR FAKEOUT?"
-"AVAX: BULLS BACK IN CONTROL?"
-"ETH: MOMENTUM UNDER PRESSURE?"
-
-Avoid long titles.
-
-POST STRUCTURE:
-
-COIN: SHORT TITLE?
-
-LONG SETUP — COIN
-OR
-SHORT SETUP — COIN
-
-Entry: $X–$Y
-Stop Loss: $X
-Take Profit: $X (2R)
-
-Key Levels: Support $X | Resistance $X
-
-Technical analysis:
-2–3 natural sentences using the strongest indicators.
+A title will be selected from the supplied title library.
+Do not invent a different title.
 
 NEWS:
-One short relevant news headline/summary.
-Only include this when relevant news is actually supplied.
-Do not invent a headline.
+Only use news supplied in the input.
+If no relevant news is supplied, news_line must be empty.
 
-Market context:
-Only mention BTC or broader market conditions when useful.
+TECHNICAL ANALYSIS:
+Use the strongest available technical information.
+Mention indicators such as EMA, SMA, MACD, RSI, Stochastic,
+volume, orderbook or other advanced data only when supplied.
 
-Final line:
-Long $COIN 👆
-OR
-Short $COIN 👇
+MARKET CONTEXT:
+BTC and broader market information should be used only
+as context and only when supplied.
 
-Do not add anything after the final directional line.
+Return JSON only.
 """
 
 
@@ -158,7 +190,11 @@ def _format_price(value):
     if number >= 0.01:
         return f"{number:.5f}"
 
-    return f"{number:.8f}".rstrip("0").rstrip(".")
+    return (
+        f"{number:.8f}"
+        .rstrip("0")
+        .rstrip(".")
+    )
 
 
 def _clean_text(value, max_length=500):
@@ -174,6 +210,89 @@ def _clean_text(value, max_length=500):
     ).strip()
 
     return text[:max_length]
+
+
+# =========================================================
+# COIN HELPERS
+# =========================================================
+
+def _coin_name(symbol):
+    """
+    Convert BTCUSDT -> BTC.
+    """
+
+    symbol = str(
+        symbol or ""
+    ).upper()
+
+    if symbol.endswith("USDT"):
+        return symbol[:-4]
+
+    return symbol
+
+
+def _replace_coin_placeholder(
+    title,
+    coin,
+):
+    """
+    Replace $XXX with the real $COIN.
+    """
+
+    return str(title).replace(
+        "$XXX",
+        f"${coin}",
+    )
+
+
+# =========================================================
+# TITLE ROTATION
+# =========================================================
+
+def _select_title(
+    direction,
+    coin,
+):
+    """
+    Select a title from the user's 25-title library.
+
+    The selection is deterministic for a given symbol/day,
+    while different symbols rotate through different titles.
+
+    This avoids using the same title for every post.
+    """
+
+    if direction == "LONG":
+        titles = LONG_TITLES
+    else:
+        titles = SHORT_TITLES
+
+    today = datetime.now(
+        timezone.utc
+    ).strftime(
+        "%Y-%m-%d"
+    )
+
+    # Stable numeric value based on
+    # coin + date.
+    seed_text = (
+        f"{coin}-{today}-{direction}"
+    )
+
+    seed_value = sum(
+        ord(char)
+        for char in seed_text
+    )
+
+    index = (
+        seed_value
+        % len(titles)
+    )
+
+    return _replace_coin_placeholder(
+        titles[index],
+        coin,
+    )
 
 
 # =========================================================
@@ -198,12 +317,12 @@ def _summarize_news(news):
 
         title = news.get(
             "title",
-            ""
+            "",
         )
 
         summary = news.get(
             "summary",
-            ""
+            "",
         )
 
         if title and summary:
@@ -236,12 +355,12 @@ def _summarize_news(news):
 
                 title = item.get(
                     "title",
-                    ""
+                    "",
                 )
 
                 summary = item.get(
                     "summary",
-                    ""
+                    "",
                 )
 
                 text = title
@@ -268,7 +387,9 @@ def _summarize_news(news):
 # INDICATOR SUMMARY
 # =========================================================
 
-def _build_indicator_summary(indicators):
+def _build_indicator_summary(
+    indicators,
+):
 
     if not indicators:
         return {}
@@ -313,7 +434,9 @@ def _build_indicator_summary(indicators):
 # ADVANCED DATA SUMMARY
 # =========================================================
 
-def _build_advanced_summary(advanced):
+def _build_advanced_summary(
+    advanced,
+):
 
     if not advanced:
         return {}
@@ -326,7 +449,9 @@ def _build_advanced_summary(advanced):
     )
 
     if sr:
-        result["multi_timeframe_sr"] = sr
+        result[
+            "multi_timeframe_sr"
+        ] = sr
 
     # BTC context
     btc = advanced.get(
@@ -334,7 +459,9 @@ def _build_advanced_summary(advanced):
     )
 
     if btc:
-        result["btc_context"] = btc
+        result[
+            "btc_context"
+        ] = btc
 
     # Open Interest
     oi = advanced.get(
@@ -342,14 +469,18 @@ def _build_advanced_summary(advanced):
     )
 
     if oi is not None:
-        result["open_interest"] = oi
+        result[
+            "open_interest"
+        ] = oi
 
     oi_change = advanced.get(
         "oi_change_1h_pct"
     )
 
     if oi_change is not None:
-        result["oi_change_1h_pct"] = oi_change
+        result[
+            "oi_change_1h_pct"
+        ] = oi_change
 
     # Funding
     funding = advanced.get(
@@ -357,7 +488,9 @@ def _build_advanced_summary(advanced):
     )
 
     if funding is not None:
-        result["funding_rate"] = funding
+        result[
+            "funding_rate"
+        ] = funding
 
     # Long / Short
     long_short = advanced.get(
@@ -365,7 +498,9 @@ def _build_advanced_summary(advanced):
     )
 
     if long_short:
-        result["long_short_ratio"] = long_short
+        result[
+            "long_short_ratio"
+        ] = long_short
 
     # Liquidations
     liquidations = advanced.get(
@@ -373,7 +508,9 @@ def _build_advanced_summary(advanced):
     )
 
     if liquidations:
-        result["liquidations"] = liquidations
+        result[
+            "liquidations"
+        ] = liquidations
 
     # Orderbook
     orderbook = advanced.get(
@@ -381,7 +518,9 @@ def _build_advanced_summary(advanced):
     )
 
     if orderbook:
-        result["orderbook"] = orderbook
+        result[
+            "orderbook"
+        ] = orderbook
 
     return result
 
@@ -558,6 +697,10 @@ def generate_setup(
 
     client = _get_client()
 
+    coin = _coin_name(
+        symbol
+    )
+
     indicator_summary = (
         _build_indicator_summary(
             indicators
@@ -634,23 +777,27 @@ TASK:
 8. Use BTC only as broader market context.
 
 9. NEWS RULE:
-   If relevant news is supplied, create a short NEWS headline
-   using ONLY that supplied information.
+   If relevant news is supplied, create a short NEWS line
+   using ONLY the supplied information.
 
    If no relevant news is supplied:
    return an empty news_line.
 
-10. Create a SHORT attention-grabbing title.
+10. TITLE RULE:
+    After deciding LONG or SHORT, select the appropriate
+    title style.
 
-11. Do NOT generate hashtags.
+    Do not create an unrelated title.
+    Do not use emojis.
+    Do not use hashtags.
 
-12. Keep the final content around 100–140 words.
+11. Keep the final content around 100–140 words.
 
 Return JSON only:
 
 {{
   "direction": "LONG or SHORT",
-  "title": "SHORT ATTENTION-GRABBING TITLE",
+  "title": "",
   "entry_low": 0,
   "entry_high": 0,
   "stop_loss": 0,
@@ -713,7 +860,7 @@ Return JSON only:
     direction = str(
         setup.get(
             "direction",
-            ""
+            "",
         )
     ).upper().strip()
 
@@ -845,42 +992,19 @@ Return JSON only:
         )
 
     # =====================================================
-    # CLEAN TEXT
+    # TITLE
     # =====================================================
 
-    coin = symbol.replace(
-        "USDT",
-        "",
+    # Ignore whatever title the model generated.
+    # Select one from the user's title library instead.
+    setup["title"] = _select_title(
+        direction,
+        coin,
     )
 
-    title = _clean_text(
-        setup.get(
-            "title",
-            f"{coin}: MARKET SETUP?",
-        ),
-        100,
-    )
-
-    # Remove accidental hashtags from title.
-    title = re.sub(
-        r"#\w+",
-        "",
-        title,
-    ).strip()
-
-    # Remove accidental "$COIN" from title
-    # because formatter adds the coin name.
-    title = re.sub(
-        rf"^\$?{re.escape(coin)}\s*[:\-]?\s*",
-        "",
-        title,
-        flags=re.IGNORECASE,
-    ).strip()
-
-    if not title:
-        title = "MOMENTUM OR PULLBACK?"
-
-    setup["title"] = title
+    # =====================================================
+    # CLEAN TEXT
+    # =====================================================
 
     setup["news_line"] = _clean_text(
         setup.get(
@@ -907,7 +1031,7 @@ Return JSON only:
     )
 
     # =====================================================
-    # REMOVE HASHTAGS COMPLETELY
+    # REMOVE HASHTAGS
     # =====================================================
 
     setup["hashtags"] = []
@@ -919,29 +1043,17 @@ Return JSON only:
 # FORMAT FINAL BINANCE SQUARE POST
 # =========================================================
 
-def format_post_text(setup):
+def format_post_text(
+    setup,
+):
     """
-    Convert setup JSON into the final Binance Square format.
+    Convert setup JSON into final Binance Square format.
 
-    Example:
+    The final post contains exactly three $COIN mentions:
 
-    NOT: MOMENTUM OR PULLBACK?
-
-    LONG SETUP — NOT
-
-    Entry: $0.000471–$0.000474
-    Stop Loss: $0.000469
-    Take Profit: $0.000478 (2R)
-
-    Key Levels: Support $0.000471 | Resistance $0.000475
-
-    Price is holding above EMA9, EMA21 and SMA50,
-    keeping the short-term structure constructive.
-
-    NEWS: TON ecosystem momentum has recently supported NOT
-    sentiment.
-
-    Long $NOT 👆
+    1. Title
+    2. Technical-analysis/body section
+    3. Final LONG/SHORT line
     """
 
     symbol = setup.get(
@@ -949,15 +1061,20 @@ def format_post_text(setup):
         "",
     )
 
-    coin = symbol.replace(
-        "USDT",
-        "",
+    coin = _coin_name(
+        symbol
     )
 
-    direction = setup.get(
-        "direction",
-        "LONG",
-    )
+    direction = str(
+        setup.get(
+            "direction",
+            "LONG",
+        )
+    ).upper()
+
+    # -----------------------------------------------------
+    # PRICE VALUES
+    # -----------------------------------------------------
 
     entry_low = _format_price(
         setup.get(
@@ -995,13 +1112,17 @@ def format_post_text(setup):
         )
     )
 
-    news_line = setup.get(
-        "news_line",
-        "",
-    ).strip()
+    # -----------------------------------------------------
+    # TEXT
+    # -----------------------------------------------------
 
     technical = setup.get(
         "technical_analysis",
+        "",
+    ).strip()
+
+    news_line = setup.get(
+        "news_line",
         "",
     ).strip()
 
@@ -1016,27 +1137,47 @@ def format_post_text(setup):
 
     title = setup.get(
         "title",
-        "MOMENTUM OR PULLBACK?",
+        "",
     ).strip()
 
+    # Remove hashtags.
     title = re.sub(
         r"#\w+",
         "",
         title,
     ).strip()
 
+    # Remove emojis/non-ASCII symbols.
     title = re.sub(
-        rf"^\$?{re.escape(coin)}\s*[:\-]?\s*",
+        r"[^\x00-\x7F]+",
+        "",
+        title,
+    ).strip()
+
+    # Make sure title has $COIN exactly once.
+    title = re.sub(
+        rf"\$?{re.escape(coin)}\s*:\s*",
+        "",
+        title,
+        flags=re.IGNORECASE,
+    ).strip()
+
+    title = re.sub(
+        rf"^\$?{re.escape(coin)}\s*",
         "",
         title,
         flags=re.IGNORECASE,
     ).strip()
 
     if not title:
-        title = "MOMENTUM OR PULLBACK?"
+        title = "MARKET MOMENTUM UNDER REVIEW?"
+
+    title_line = (
+        f"${coin}: {title}"
+    )
 
     # -----------------------------------------------------
-    # DIRECTION
+    # DIRECTION LINE
     # -----------------------------------------------------
 
     if direction == "LONG":
@@ -1045,8 +1186,8 @@ def format_post_text(setup):
             f"LONG SETUP — {coin}"
         )
 
-        action_line = (
-            f"Long ${coin} 👆"
+        final_line = (
+            f"LONG ${coin}"
         )
 
     else:
@@ -1055,8 +1196,31 @@ def format_post_text(setup):
             f"SHORT SETUP — {coin}"
         )
 
-        action_line = (
-            f"Short ${coin} 👇"
+        final_line = (
+            f"SHORT ${coin}"
+        )
+
+    # -----------------------------------------------------
+    # TECHNICAL BODY
+    # -----------------------------------------------------
+    #
+    # We deliberately put $COIN here.
+    # This creates the second $COIN mention.
+    #
+
+    if technical:
+
+        technical_line = (
+            f"Technical Analysis for "
+            f"${coin}: {technical}"
+        )
+
+    else:
+
+        technical_line = (
+            f"Technical Analysis for "
+            f"${coin}: Market structure "
+            f"remains the main focus."
         )
 
     # -----------------------------------------------------
@@ -1065,53 +1229,49 @@ def format_post_text(setup):
 
     lines = []
 
-    # Short title
+    # 1. First $COIN mention
     lines.append(
-        f"{coin}: {title}"
+        title_line
     )
 
     lines.append("")
 
-    # Setup
     lines.append(
         direction_line
     )
 
     lines.append("")
 
-    # Entry
     lines.append(
         f"Entry: ${entry_low}–${entry_high}"
     )
 
-    # Stop
     lines.append(
         f"Stop Loss: ${stop_loss}"
     )
 
-    # Take profit
     lines.append(
         f"Take Profit: ${take_profit} (2R)"
     )
 
     lines.append("")
 
-    # Key levels
     lines.append(
         f"Key Levels: Support ${support} | "
         f"Resistance ${resistance}"
     )
 
-    # Technical analysis
-    if technical:
+    lines.append("")
 
-        lines.append("")
+    # 2. Second $COIN mention
+    lines.append(
+        technical_line
+    )
 
-        lines.append(
-            technical
-        )
+    # -----------------------------------------------------
+    # NEWS
+    # -----------------------------------------------------
 
-    # News
     if news_line:
 
         lines.append("")
@@ -1120,20 +1280,23 @@ def format_post_text(setup):
             f"NEWS: {news_line}"
         )
 
-    # Market context
+    # -----------------------------------------------------
+    # MARKET CONTEXT
+    # -----------------------------------------------------
+
     if market:
 
         lines.append("")
 
         lines.append(
-            market
+            f"Market Context: {market}"
         )
 
     lines.append("")
 
-    # Final action line
+    # 3. Third $COIN mention
     lines.append(
-        action_line
+        final_line
     )
 
     text = "\n".join(
@@ -1141,24 +1304,34 @@ def format_post_text(setup):
     ).strip()
 
     # -----------------------------------------------------
-    # REMOVE ANY ACCIDENTAL HASHTAGS
+    # REMOVE HASHTAGS
     # -----------------------------------------------------
 
     text = re.sub(
-        r"[ \t]+#\w+",
-        "",
-        text,
-    )
-
-    text = re.sub(
-        r"\n+#\w+",
+        r"#\w+",
         "",
         text,
     )
 
     # -----------------------------------------------------
-    # CLEAN EXTRA BLANK LINES
+    # REMOVE EMOJIS / NON-ASCII
     # -----------------------------------------------------
+
+    text = re.sub(
+        r"[^\x00-\x7F]+",
+        "",
+        text,
+    )
+
+    # -----------------------------------------------------
+    # CLEAN EXTRA SPACES
+    # -----------------------------------------------------
+
+    text = re.sub(
+        r"[ \t]+",
+        " ",
+        text,
+    )
 
     text = re.sub(
         r"\n{3,}",
@@ -1167,7 +1340,7 @@ def format_post_text(setup):
     ).strip()
 
     # -----------------------------------------------------
-    # BINANCE CHARACTER SAFETY
+    # CHARACTER LIMIT
     # -----------------------------------------------------
 
     if len(text) > cfg.CHAR_LIMIT:
