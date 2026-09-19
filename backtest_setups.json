@@ -781,23 +781,6 @@
       "technical_analysis": "Price sits just above the 9‑EMA (0.198094) and 21‑EMA (0.193102), indicating short‑term buying pressure. The MACD histogram is marginally negative and Stochastic K is below D, suggesting some downside bias, while the order‑book shows a modest 4.2% bid‑side imbalance.",
       "market_context": "BTC is in a bullish trend on both 4‑hour and daily frames, and the broader market is broadly positive with 78.5% of assets advancing.",
       "result": "PENDING"
-    },
-    {
-      "id": 47,
-      "created_at": "2026-09-19T22:01:01.097093+00:00",
-      "symbol": "RONINUSDT",
-      "direction": "SHORT",
-      "title": "$RONIN Lower High Pattern Confirmed: Short Target in View",
-      "entry_low": 0.0596,
-      "entry_high": 0.0598,
-      "stop_loss": 0.0619,
-      "take_profit": 0.055,
-      "support": 0.0574,
-      "resistance": 0.0599,
-      "news_line": "",
-      "technical_analysis": "Price is holding just below the 1H resistance at 0.0599 while sitting above the EMA9 (0.0588) and EMA21 (0.0575). The MACD histogram is negative and the stochastic K (65.6) is below its D line (77), indicating bearish momentum. Order‑book data shows a -23.7% imbalance, with more sell pressure than buy pressure.",
-      "market_context": "Bitcoin is in a short‑term bearish phase (‑0.27% 24h) while the broader market remains broadly positive, with 62% of assets in green.",
-      "result": "PENDING"
     }
   ]
 }
