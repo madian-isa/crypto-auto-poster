@@ -18,6 +18,8 @@ import random
 import time
 import traceback
 
+import pandas as pd
+
 from src import bot_config as cfg
 
 from src.screener import get_screener_shortlist
@@ -52,6 +54,123 @@ from src.advanced_market_data import (
 from src.chart import render_chart_image
 
 
+def has_enough_1h_volatility(klines_df):
+    """
+    Reject very low-volatility 1H markets.
+
+    This is only a market-quality filter.
+    It does not modify entry, stop-loss,
+    or take-profit values.
+    """
+
+    if klines_df is None or len(klines_df) < 20:
+        print(
+            "[volatility] not enough candles "
+            "for ATR check."
+        )
+        return True
+
+    df = klines_df.copy()
+
+    # Handle both lowercase and capitalized columns.
+    column_map = {
+        "High": "high",
+        "Low": "low",
+        "Close": "close",
+    }
+
+    df = df.rename(columns=column_map)
+
+    required = [
+        "high",
+        "low",
+        "close",
+    ]
+
+    missing = [
+        col
+        for col in required
+        if col not in df.columns
+    ]
+
+    if missing:
+        print(
+            f"[volatility] missing columns {missing} "
+            "— skipping volatility filter."
+        )
+        return True
+
+    high = pd.to_numeric(
+        df["high"],
+        errors="coerce",
+    )
+
+    low = pd.to_numeric(
+        df["low"],
+        errors="coerce",
+    )
+
+    close = pd.to_numeric(
+        df["close"],
+        errors="coerce",
+    )
+
+    previous_close = close.shift(1)
+
+    true_range = pd.concat(
+        [
+            high - low,
+            (high - previous_close).abs(),
+            (low - previous_close).abs(),
+        ],
+        axis=1,
+    ).max(axis=1)
+
+    atr = true_range.rolling(
+        window=14,
+        min_periods=14,
+    ).mean()
+
+    current_close = close.iloc[-1]
+    current_atr = atr.iloc[-1]
+
+    if (
+        pd.isna(current_close)
+        or pd.isna(current_atr)
+        or current_close <= 0
+    ):
+        print(
+            "[volatility] ATR calculation unavailable "
+            "— skipping filter."
+        )
+        return True
+
+    atr_percent = (
+        current_atr / current_close
+    ) * 100
+
+    minimum = cfg.MIN_1H_ATR_PERCENT
+
+    print(
+        f"[volatility] 1H ATR: "
+        f"{atr_percent:.2f}% | "
+        f"minimum: {minimum:.2f}%"
+    )
+
+    if atr_percent < minimum:
+        print(
+            "[volatility] market volatility too low "
+            "— skipping candidate."
+        )
+        return False
+
+    print(
+        "[volatility] volatility check passed."
+    )
+
+    return True
+
+
 def run_once():
     state = load_state()
 
@@ -65,11 +184,17 @@ def run_once():
     shortlist = get_screener_shortlist()
 
     if not shortlist:
-        print("[run_once] screener returned nothing — skipping.")
+        print(
+            "[run_once] screener returned nothing "
+            "— skipping."
+        )
         return
 
     posted_today = set(
-        state.get("posted_symbols_today", [])
+        state.get(
+            "posted_symbols_today",
+            [],
+        )
     )
 
     fresh = [
@@ -105,11 +230,14 @@ def run_once():
                     state,
                     symbol,
                 )
+
                 save_state(state)
 
                 print(
-                    f"[run_once] {symbol} recorded as posted today."
+                    f"[run_once] {symbol} "
+                    "recorded as posted today."
                 )
+
             else:
                 print(
                     f"[run_once] {symbol} was DRY RUN "
@@ -122,7 +250,9 @@ def run_once():
             print(
                 f"[run_once] {symbol} failed: {err}"
             )
+
             traceback.print_exc()
+
             print(
                 "[run_once] trying next candidate..."
             )
@@ -140,12 +270,16 @@ def run_cycle():
         else "LIVE (posting for real)"
     )
 
-    print(f"[cycle] starting — mode: {mode}")
+    print(
+        f"[cycle] starting — mode: {mode}"
+    )
 
     shortlist = get_screener_shortlist()
 
     if not shortlist:
-        print("[cycle] screener returned nothing.")
+        print(
+            "[cycle] screener returned nothing."
+        )
         return
 
     picks = _pick_diverse(
@@ -161,10 +295,12 @@ def run_cycle():
                 symbol,
                 pick,
             )
+
         except Exception as err:
             print(
                 f"[cycle] skipping {symbol}: {err}"
             )
+
             traceback.print_exc()
 
         is_last = i == len(picks) - 1
@@ -174,6 +310,7 @@ def run_cycle():
                 f"[cycle] waiting "
                 f"{cfg.MINUTES_BETWEEN_POSTS} min..."
             )
+
             time.sleep(
                 cfg.MINUTES_BETWEEN_POSTS * 60
             )
@@ -181,7 +318,10 @@ def run_cycle():
     print("[cycle] done")
 
 
-def _build_and_publish(symbol: str, pick=None):
+def _build_and_publish(
+    symbol: str,
+    pick=None,
+):
 
     print(
         f"\n[run] starting analysis for {symbol}"
@@ -192,7 +332,8 @@ def _build_and_publish(symbol: str, pick=None):
     # -----------------------------
 
     print(
-        f"[run] fetching technical data for {symbol}..."
+        f"[run] fetching technical data "
+        f"for {symbol}..."
     )
 
     klines_df = fetch_klines(symbol)
@@ -202,15 +343,35 @@ def _build_and_publish(symbol: str, pick=None):
     )
 
     print(
-        f"[run] technical indicators ready for {symbol}"
+        f"[run] technical indicators ready "
+        f"for {symbol}"
     )
+
+    # -----------------------------
+    # 1H volatility filter
+    # -----------------------------
+
+    print(
+        f"[run] checking 1H volatility "
+        f"for {symbol}..."
+    )
+
+    if not has_enough_1h_volatility(
+        klines_df
+    ):
+        raise ValueError(
+            f"{symbol} rejected: "
+            "1H volatility is below "
+            "the configured minimum."
+        )
 
     # -----------------------------
     # News
     # -----------------------------
 
     print(
-        f"[run] checking relevant news for {symbol}..."
+        f"[run] checking relevant news "
+        f"for {symbol}..."
     )
 
     news = get_relevant_news(symbol)
@@ -250,6 +411,7 @@ def _build_and_publish(symbol: str, pick=None):
                 f"[run] advanced market data "
                 f"collected for {symbol}"
             )
+
         else:
             print(
                 f"[run] advanced market data "
@@ -272,7 +434,8 @@ def _build_and_publish(symbol: str, pick=None):
     # -----------------------------
 
     print(
-        f"[run] generating AI analysis for {symbol}..."
+        f"[run] generating AI analysis "
+        f"for {symbol}..."
     )
 
     setup = generate_setup(
@@ -300,13 +463,15 @@ def _build_and_publish(symbol: str, pick=None):
 
     if saved:
         print(
-            f"[run] setup saved to backtest data "
-            f"for {symbol}"
+            f"[run] setup saved to backtest "
+            f"data for {symbol}"
         )
+
     else:
         print(
-            f"[run] backtest collection already complete "
-            f"or setup was not saved for {symbol}"
+            f"[run] backtest collection already "
+            f"complete or setup was not saved "
+            f"for {symbol}"
         )
 
     # -----------------------------
@@ -318,7 +483,8 @@ def _build_and_publish(symbol: str, pick=None):
     )
 
     print(
-        f"[run] final post generated for {symbol}"
+        f"[run] final post generated "
+        f"for {symbol}"
     )
 
     # -----------------------------
@@ -346,13 +512,23 @@ def _build_and_publish(symbol: str, pick=None):
 
     if cfg.DRY_RUN:
 
-        print("\n" + "=" * 60)
-        print(f"[DRY RUN] {symbol}")
-        print("=" * 60)
+        print(
+            "\n" + "=" * 60
+        )
+
+        print(
+            f"[DRY RUN] {symbol}"
+        )
+
+        print(
+            "=" * 60
+        )
 
         print(text)
 
-        print("=" * 60)
+        print(
+            "=" * 60
+        )
 
         print(
             f"[DRY RUN] Chart: {chart_path}"
@@ -389,7 +565,10 @@ def _build_and_publish(symbol: str, pick=None):
     return True
 
 
-def _pick_diverse(shortlist, count):
+def _pick_diverse(
+    shortlist,
+    count,
+):
 
     seen = set()
     picks = []
@@ -402,6 +581,7 @@ def _pick_diverse(shortlist, count):
             continue
 
         seen.add(symbol)
+
         picks.append(item)
 
         if len(picks) >= count:
@@ -423,5 +603,6 @@ if __name__ == "__main__":
 
     if run_mode == "cycle":
         run_cycle()
+
     else:
         run_once()
