@@ -1,9 +1,10 @@
+```python
 """
 main.py
 
 Single-run mode:
 Each invocation of `python -m src.main` builds and publishes
-ONE trade-setup post, then exits.
+ONE market-analysis post, then exits.
 
 Daily rules:
 - Maximum daily posts are controlled by cfg.MAX_POSTS_PER_DAY.
@@ -14,7 +15,21 @@ Backtest collection:
 - Every generated setup is saved to backtest_setups.json.
 - This works in both DRY RUN and LIVE mode.
 - Maximum stored setups are controlled by backtest.py.
-- Advanced market data is disabled for now.
+
+Advanced market data:
+- Open Interest
+- OI change
+- Funding rate
+- Long/Short ratio
+- Liquidations
+- Order book
+- Multi-timeframe support/resistance
+- BTC market context
+
+Important:
+Advanced market data is optional.
+If the Binance Futures API is unavailable or returns an error,
+the bot continues using the normal technical/news data.
 
 For local testing:
 RUN_MODE=cycle can still run the older multi-post cycle.
@@ -26,15 +41,33 @@ import time
 import traceback
 
 from src import bot_config as cfg
-from src.screener import get_screener_shortlist
-from src.indicators import fetch_klines, compute_indicators
+
+from src.screener import (
+    get_screener_shortlist,
+)
+
+from src.indicators import (
+    fetch_klines,
+    compute_indicators,
+)
+
 from src.setup_generator import (
     generate_setup,
     format_post_text,
 )
-from src.news import get_relevant_news
-from src.square_post_ext import post_text_v2
-from src.backtest import save_setup
+
+from src.news import (
+    get_relevant_news,
+)
+
+from src.square_post_ext import (
+    post_text_v2,
+)
+
+from src.backtest import (
+    save_setup,
+)
+
 from src.state import (
     load_state,
     save_state,
@@ -42,26 +75,51 @@ from src.state import (
     record_post,
 )
 
+from src.advanced_market_data import (
+    get_advanced_market_data,
+)
+
+
+# =========================================================
+# SINGLE RUN
+# =========================================================
 
 def run_once():
+
     state = load_state()
 
+    # -----------------------------------------------------
+    # DAILY POST LIMIT
+    # -----------------------------------------------------
+
     if not can_post_more_today(state):
+
         print(
             f"[run_once] daily cap reached "
             f"({cfg.MAX_POSTS_PER_DAY}) "
             "— skipping this run."
         )
+
         return
+
+    # -----------------------------------------------------
+    # SCREENER
+    # -----------------------------------------------------
 
     shortlist = get_screener_shortlist()
 
     if not shortlist:
+
         print(
             "[run_once] screener returned nothing "
             "— skipping."
         )
+
         return
+
+    # -----------------------------------------------------
+    # REMOVE SYMBOLS ALREADY POSTED TODAY
+    # -----------------------------------------------------
 
     posted_today = set(
         state.get(
@@ -77,44 +135,70 @@ def run_once():
     ]
 
     if not fresh:
+
         print(
             "[run_once] all current candidates were "
             "already posted today — skipping this run."
         )
+
         return
 
+    # -----------------------------------------------------
+    # RANDOMIZE CANDIDATES
+    # -----------------------------------------------------
+
     pool = fresh.copy()
-    random.shuffle(pool)
+
+    random.shuffle(
+        pool
+    )
+
+    # -----------------------------------------------------
+    # TRY CANDIDATES
+    # -----------------------------------------------------
 
     for pick in pool:
+
         symbol = pick["symbol"]
 
         if symbol in posted_today:
+
             print(
                 f"[run_once] {symbol} already posted today "
                 "— skipping."
             )
+
             continue
 
         try:
+
             posted = _build_and_publish(
                 symbol,
                 pick,
             )
 
+            # -------------------------------------------------
+            # RECORD SUCCESSFUL LIVE POST
+            # -------------------------------------------------
+
             if posted:
+
                 state = record_post(
                     state,
                     symbol,
                 )
 
-                save_state(state)
+                save_state(
+                    state
+                )
 
                 print(
                     f"[run_once] {symbol} recorded "
                     "as posted today."
                 )
+
             else:
+
                 print(
                     f"[run_once] {symbol} was DRY RUN "
                     "— not recorded as posted."
@@ -123,15 +207,22 @@ def run_once():
             return
 
         except Exception as err:
+
             print(
                 f"[run_once] {symbol} failed: {err}"
             )
+
             traceback.print_exc()
 
             print(
                 "[run_once] trying next candidate..."
             )
+
             continue
+
+    # -----------------------------------------------------
+    # NOTHING WORKED
+    # -----------------------------------------------------
 
     print(
         "[run_once] every fresh candidate failed "
@@ -139,7 +230,12 @@ def run_once():
     )
 
 
+# =========================================================
+# CYCLE MODE
+# =========================================================
+
 def run_cycle():
+
     mode = (
         "DRY RUN (nothing will be posted)"
         if cfg.DRY_RUN
@@ -150,32 +246,50 @@ def run_cycle():
         f"[cycle] starting — mode: {mode}"
     )
 
+    # -----------------------------------------------------
+    # SCREENER
+    # -----------------------------------------------------
+
     shortlist = get_screener_shortlist()
 
     if not shortlist:
+
         print(
             "[cycle] screener returned nothing."
         )
+
         return
+
+    # -----------------------------------------------------
+    # SELECT DIVERSE PICKS
+    # -----------------------------------------------------
 
     picks = _pick_diverse(
         shortlist,
         cfg.POSTS_PER_CYCLE,
     )
 
+    # -----------------------------------------------------
+    # PROCESS PICKS
+    # -----------------------------------------------------
+
     for i, pick in enumerate(picks):
+
         symbol = pick["symbol"]
 
         try:
+
             _build_and_publish(
                 symbol,
                 pick,
             )
 
         except Exception as err:
+
             print(
                 f"[cycle] skipping {symbol}: {err}"
             )
+
             traceback.print_exc()
 
         is_last = (
@@ -183,6 +297,7 @@ def run_cycle():
         )
 
         if not is_last:
+
             print(
                 f"[cycle] waiting "
                 f"{cfg.MINUTES_BETWEEN_POSTS} "
@@ -198,17 +313,22 @@ def run_cycle():
     )
 
 
+# =========================================================
+# BUILD + PUBLISH
+# =========================================================
+
 def _build_and_publish(
     symbol: str,
     pick=None,
 ):
+
     print(
         f"\n[run] starting analysis for {symbol}"
     )
 
-    # -------------------------------------------------
+    # =====================================================
     # TECHNICAL DATA
-    # -------------------------------------------------
+    # =====================================================
 
     print(
         f"[run] fetching technical data for {symbol}..."
@@ -226,9 +346,9 @@ def _build_and_publish(
         f"[run] technical indicators ready for {symbol}"
     )
 
-    # -------------------------------------------------
+    # =====================================================
     # NEWS
-    # -------------------------------------------------
+    # =====================================================
 
     print(
         f"[run] checking relevant news for {symbol}..."
@@ -242,9 +362,9 @@ def _build_and_publish(
         f"[run] news data ready for {symbol}"
     )
 
-    # -------------------------------------------------
+    # =====================================================
     # MARKET CONTEXT
-    # -------------------------------------------------
+    # =====================================================
 
     market_context = (
         pick.get(
@@ -254,34 +374,56 @@ def _build_and_publish(
         else None
     )
 
-    # -------------------------------------------------
-    # ADVANCED MARKET DATA DISABLED
-    # -------------------------------------------------
-    #
-    # Binance Futures API was returning HTTP 451
-    # from GitHub Actions.
-    #
-    # Advanced data is disabled for now:
-    #
-    # - Open Interest
-    # - Funding Rate
-    # - Long/Short Ratio
-    # - Liquidations
-    # - Order Book
-    #
-    # We will add these later using a reliable
-    # alternative data source.
-    # -------------------------------------------------
+    # =====================================================
+    # ADVANCED MARKET DATA
+    # =====================================================
 
     print(
-        f"[run] advanced market data disabled for {symbol}"
+        f"[run] collecting advanced market data "
+        f"for {symbol}..."
     )
 
     advanced_market_data = None
 
-    # -------------------------------------------------
+    try:
+
+        advanced_market_data = (
+            get_advanced_market_data(
+                symbol
+            )
+        )
+
+        if advanced_market_data:
+
+            print(
+                f"[run] advanced market data "
+                f"collected for {symbol}"
+            )
+
+        else:
+
+            print(
+                f"[run] advanced market data "
+                f"unavailable for {symbol}"
+            )
+
+    except Exception as err:
+
+        print(
+            f"[run] advanced market data failed "
+            f"for {symbol}: {err}"
+        )
+
+        print(
+            "[run] continuing without advanced "
+            "market data..."
+        )
+
+        advanced_market_data = None
+
+    # =====================================================
     # AI SETUP GENERATION
-    # -------------------------------------------------
+    # =====================================================
 
     print(
         f"[run] generating AI setup for {symbol}..."
@@ -301,17 +443,9 @@ def _build_and_publish(
         cfg.KLINE_INTERVAL.upper()
     )
 
-    # -------------------------------------------------
+    # =====================================================
     # SAVE SETUP FOR BACKTEST
-    # -------------------------------------------------
-    #
-    # IMPORTANT:
-    # Save the setup in BOTH:
-    # DRY RUN and LIVE mode.
-    #
-    # backtest.py itself limits the collection
-    # to 50 setups.
-    # -------------------------------------------------
+    # =====================================================
 
     saved = save_setup(
         symbol,
@@ -319,19 +453,22 @@ def _build_and_publish(
     )
 
     if saved:
+
         print(
             f"[run] setup saved to backtest data "
             f"for {symbol}"
         )
+
     else:
+
         print(
             f"[run] backtest collection already complete "
             f"or setup was not saved for {symbol}"
         )
 
-    # -------------------------------------------------
-    # FORMAT FINAL POST
-    # -------------------------------------------------
+    # =====================================================
+    # FORMAT POST
+    # =====================================================
 
     text = format_post_text(
         setup
@@ -341,11 +478,12 @@ def _build_and_publish(
         f"[run] final post generated for {symbol}"
     )
 
-    # -------------------------------------------------
+    # =====================================================
     # DRY RUN
-    # -------------------------------------------------
+    # =====================================================
 
     if cfg.DRY_RUN:
+
         print(
             "\n"
             + "=" * 60
@@ -376,9 +514,9 @@ def _build_and_publish(
 
         return False
 
-    # -------------------------------------------------
+    # =====================================================
     # LIVE POST
-    # -------------------------------------------------
+    # =====================================================
 
     print(
         f"[run] publishing {symbol} "
@@ -398,40 +536,22 @@ def _build_and_publish(
     return True
 
 
+# =========================================================
+# DIVERSE PICKS
+# =========================================================
+
 def _pick_diverse(
     shortlist,
     count,
 ):
+
     seen = set()
+
     picks = []
 
     for item in shortlist:
+
         symbol = item["symbol"]
 
         if symbol in seen:
-            continue
-
-        seen.add(symbol)
-
-        picks.append(item)
-
-        if len(picks) >= count:
-            break
-
-    return picks
-
-
-if __name__ == "__main__":
-    run_mode = os.environ.get(
-        "RUN_MODE",
-        "once",
-    ).lower()
-
-    print(
-        f"[main] RUN_MODE={run_mode}"
-    )
-
-    if run_mode == "cycle":
-        run_cycle()
-    else:
-        run_once()
+```
