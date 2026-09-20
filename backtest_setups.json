@@ -781,23 +781,6 @@
       "technical_analysis": "Price sits just above the 9‑EMA (0.198094) and 21‑EMA (0.193102), indicating short‑term buying pressure. The MACD histogram is marginally negative and Stochastic K is below D, suggesting some downside bias, while the order‑book shows a modest 4.2% bid‑side imbalance.",
       "market_context": "BTC is in a bullish trend on both 4‑hour and daily frames, and the broader market is broadly positive with 78.5% of assets advancing.",
       "result": "PENDING"
-    },
-    {
-      "id": 47,
-      "created_at": "2026-09-20T07:15:47.264069+00:00",
-      "symbol": "JTOUSDT",
-      "direction": "LONG",
-      "title": "Bullish Momentum Is Building: Can $JTO Continue Its Breakout?",
-      "entry_low": 0.4985,
-      "entry_high": 0.5,
-      "stop_loss": 0.465,
-      "take_profit": 0.5655,
-      "support": 0.4981,
-      "resistance": 0.5032,
-      "news_line": "",
-      "technical_analysis": "Price sits above EMA9 (0.4925) and EMA21 (0.4828), confirming bullish bias. MACD histogram is positive (+0.0010) and the MACD line is above its signal, adding momentum. Stochastic %K is near 88, indicating the market is in an overbought but still upward phase.",
-      "market_context": "BTC shows bullish trends on 4H and 1D charts, though the 24‑hour move is slightly bearish, keeping overall market sentiment mixed.",
-      "result": "PENDING"
     }
   ]
 }
