@@ -781,6 +781,23 @@
       "technical_analysis": "Price sits just above the 9‑EMA (0.198094) and 21‑EMA (0.193102), indicating short‑term buying pressure. The MACD histogram is marginally negative and Stochastic K is below D, suggesting some downside bias, while the order‑book shows a modest 4.2% bid‑side imbalance.",
       "market_context": "BTC is in a bullish trend on both 4‑hour and daily frames, and the broader market is broadly positive with 78.5% of assets advancing.",
       "result": "PENDING"
+    },
+    {
+      "id": 47,
+      "created_at": "2026-09-20T12:30:52.370046+00:00",
+      "symbol": "SUSHIUSDT",
+      "direction": "SHORT",
+      "title": "$SUSHI Fakeout Confirmed: Bulls Trapped at Local Highs",
+      "entry_low": 0.239,
+      "entry_high": 0.2395,
+      "stop_loss": 0.2479,
+      "take_profit": 0.2212,
+      "support": 0.2364,
+      "resistance": 0.2413,
+      "news_line": "",
+      "technical_analysis": "Price sits below the 9‑EMA (0.240887) and 21‑EMA (0.243734), with the MACD histogram still in negative territory, indicating bearish momentum. Stochastic is deep in oversold territory (K 11.98, D 15.1), but the downtrend remains intact as price trades under the SMA50 (0.247202). The 1H swing range shows resistance near 0.2413 and support around 0.2364, framing a clear short bias.",
+      "market_context": "BTC is on a bearish 4H and 1D trend, and the broader market is broadly negative, adding pressure to altcoins like SUSHI.",
+      "result": "PENDING"
     }
   ]
 }
