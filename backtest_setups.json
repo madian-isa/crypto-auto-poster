@@ -781,23 +781,6 @@
       "technical_analysis": "Price sits just above the 9‑EMA (0.198094) and 21‑EMA (0.193102), indicating short‑term buying pressure. The MACD histogram is marginally negative and Stochastic K is below D, suggesting some downside bias, while the order‑book shows a modest 4.2% bid‑side imbalance.",
       "market_context": "BTC is in a bullish trend on both 4‑hour and daily frames, and the broader market is broadly positive with 78.5% of assets advancing.",
       "result": "PENDING"
-    },
-    {
-      "id": 47,
-      "created_at": "2026-09-20T06:30:52.713908+00:00",
-      "symbol": "ARUSDT",
-      "direction": "LONG",
-      "title": "Buyers Defend Key Demand Zone: $AR Ready for Extension",
-      "entry_low": 4.282,
-      "entry_high": 4.285,
-      "stop_loss": 4.13,
-      "take_profit": 4.586,
-      "support": 4.216,
-      "resistance": 4.409,
-      "news_line": "",
-      "technical_analysis": "Price sits just above the EMA21 (4.280) and well above the SMA50, while the EMA9 (4.313) is marginally higher, indicating short‑term resistance. The MACD histogram remains negative and the MACD line is under its signal, suggesting bearish momentum. Stochastic K (48.7) is above D (40.2), showing modest upward pressure. Order‑book shows a slight ask‑side imbalance.",
-      "market_context": "Bitcoin remains in a bullish 4‑hour and daily trend, though the 24‑hour change is mildly negative, keeping the broader market mixed.",
-      "result": "PENDING"
     }
   ]
 }
