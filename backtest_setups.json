@@ -781,6 +781,23 @@
       "technical_analysis": "Price sits just above the 9‑EMA (0.198094) and 21‑EMA (0.193102), indicating short‑term buying pressure. The MACD histogram is marginally negative and Stochastic K is below D, suggesting some downside bias, while the order‑book shows a modest 4.2% bid‑side imbalance.",
       "market_context": "BTC is in a bullish trend on both 4‑hour and daily frames, and the broader market is broadly positive with 78.5% of assets advancing.",
       "result": "PENDING"
+    },
+    {
+      "id": 47,
+      "created_at": "2026-09-20T09:15:48.053512+00:00",
+      "symbol": "ARBUSDT",
+      "direction": "LONG",
+      "title": "$ARB Buying Pressure Rises as Bulls Test Key Resistance",
+      "entry_low": 0.2135,
+      "entry_high": 0.2145,
+      "stop_loss": 0.20496,
+      "take_profit": 0.23058,
+      "support": 0.2086,
+      "resistance": 0.2159,
+      "news_line": "",
+      "technical_analysis": "Price at $0.2147 sits above EMA9 (0.2111), EMA21 (0.2101) and SMA50 (0.2119), confirming bullish bias. MACD histogram is positive and stochastic K/D are 72/61, indicating upward momentum. Order‑book shows a 2.4 % bid‑side imbalance, supporting the long case.",
+      "market_context": "BTC is in a short‑term bearish dip (‑1.4 % 24h) and the broader market is broadly negative, which may limit upside for risk‑averse traders.",
+      "result": "PENDING"
     }
   ]
 }
