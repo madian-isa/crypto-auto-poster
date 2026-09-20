@@ -781,6 +781,23 @@
       "technical_analysis": "Price sits just above the 9‑EMA (0.198094) and 21‑EMA (0.193102), indicating short‑term buying pressure. The MACD histogram is marginally negative and Stochastic K is below D, suggesting some downside bias, while the order‑book shows a modest 4.2% bid‑side imbalance.",
       "market_context": "BTC is in a bullish trend on both 4‑hour and daily frames, and the broader market is broadly positive with 78.5% of assets advancing.",
       "result": "PENDING"
+    },
+    {
+      "id": 47,
+      "created_at": "2026-09-20T20:04:53.491616+00:00",
+      "symbol": "KAITOUSDT",
+      "direction": "SHORT",
+      "title": "Bearish Continuation Pattern Confirmed on $KAITO Chart Structure",
+      "entry_low": 0.3309,
+      "entry_high": 0.3311,
+      "stop_loss": 0.3426,
+      "take_profit": 0.3075,
+      "support": 0.3307,
+      "resistance": 0.3351,
+      "news_line": "",
+      "technical_analysis": "Price sits just above the EMA9 (0.330174) but remains under EMA21 (0.332762) and the SMA50 (0.336994), indicating short‑term relief within a medium‑term downtrend. MACD is negative and below its signal line, while the stochastic oscillator is near the 50 level, suggesting limited upside momentum. Order‑book imbalance shows a modest bid bias, but the tight 1H range (0.3307‑0.3351) caps upside potential.",
+      "market_context": "Bitcoin is in a 24‑hour bearish phase and the broader market is broadly negative, adding pressure to risk assets like KAITO.",
+      "result": "PENDING"
     }
   ]
 }
