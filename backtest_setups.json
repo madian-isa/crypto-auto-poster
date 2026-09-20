@@ -781,6 +781,23 @@
       "technical_analysis": "Price sits just above the 9‑EMA (0.198094) and 21‑EMA (0.193102), indicating short‑term buying pressure. The MACD histogram is marginally negative and Stochastic K is below D, suggesting some downside bias, while the order‑book shows a modest 4.2% bid‑side imbalance.",
       "market_context": "BTC is in a bullish trend on both 4‑hour and daily frames, and the broader market is broadly positive with 78.5% of assets advancing.",
       "result": "PENDING"
+    },
+    {
+      "id": 47,
+      "created_at": "2026-09-20T07:45:46.014363+00:00",
+      "symbol": "HOMEUSDT",
+      "direction": "SHORT",
+      "title": "High Volume Selling Sweep Breaks $HOME Market Structure",
+      "entry_low": 0.00652,
+      "entry_high": 0.00653,
+      "stop_loss": 0.00678,
+      "take_profit": 0.006,
+      "support": 0.0064,
+      "resistance": 0.00685,
+      "news_line": "",
+      "technical_analysis": "HOME is trading just below the EMA9 (0.006578) while staying above EMA21 and SMA50, indicating short‑term pressure. The MACD histogram is negative and the stochastic shows K (32.6) under D (56.2), both pointing bearish. Price sits near the 1H resistance at 0.00655 with a modest ask‑side order‑book imbalance of -6.5%.",
+      "market_context": "BTC is in a 24‑hour bearish move, down 0.9%, and overall market breadth is mixed (44% green, 56% red).",
+      "result": "PENDING"
     }
   ]
 }
