@@ -781,6 +781,23 @@
       "technical_analysis": "Price sits just above the 9‑EMA (0.198094) and 21‑EMA (0.193102), indicating short‑term buying pressure. The MACD histogram is marginally negative and Stochastic K is below D, suggesting some downside bias, while the order‑book shows a modest 4.2% bid‑side imbalance.",
       "market_context": "BTC is in a bullish trend on both 4‑hour and daily frames, and the broader market is broadly positive with 78.5% of assets advancing.",
       "result": "PENDING"
+    },
+    {
+      "id": 47,
+      "created_at": "2026-09-20T16:00:56.232634+00:00",
+      "symbol": "HUMAUSDT",
+      "direction": "SHORT",
+      "title": "Moving Average Death Cross Signals Downward Trend for $HUMA",
+      "entry_low": 0.0223,
+      "entry_high": 0.02232,
+      "stop_loss": 0.0235,
+      "take_profit": 0.0199,
+      "support": 0.02213,
+      "resistance": 0.02458,
+      "news_line": "",
+      "technical_analysis": "Price sits below EMA9 (0.02275), EMA21 (0.02342) and SMA50 (0.02448), confirming bearish pressure. MACD is negative with a shrinking histogram, and the Stochastic is deep in oversold territory (K 13.14, D 10.34). Order‑book imbalance shows slight sell pressure, with the best ask at 0.02231.",
+      "market_context": "BTC is in a short‑term bearish phase, down 0.9% over 24 h, and the broader market breadth is largely negative.",
+      "result": "PENDING"
     }
   ]
 }
