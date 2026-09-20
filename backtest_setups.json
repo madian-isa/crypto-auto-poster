@@ -781,6 +781,23 @@
       "technical_analysis": "Price sits just above the 9‑EMA (0.198094) and 21‑EMA (0.193102), indicating short‑term buying pressure. The MACD histogram is marginally negative and Stochastic K is below D, suggesting some downside bias, while the order‑book shows a modest 4.2% bid‑side imbalance.",
       "market_context": "BTC is in a bullish trend on both 4‑hour and daily frames, and the broader market is broadly positive with 78.5% of assets advancing.",
       "result": "PENDING"
+    },
+    {
+      "id": 47,
+      "created_at": "2026-09-20T08:30:55.248804+00:00",
+      "symbol": "ONGUSDT",
+      "direction": "LONG",
+      "title": "$ONG Volume Expansion Signals High Conviction Upward Move",
+      "entry_low": 0.08985,
+      "entry_high": 0.09,
+      "stop_loss": 0.0797,
+      "take_profit": 0.11015,
+      "support": 0.07986,
+      "resistance": 0.09539,
+      "news_line": "",
+      "technical_analysis": "Price sits above the EMA9 (0.08829) and EMA21 (0.08521), with the MACD histogram still positive, indicating bullish momentum. Stochastic K/D are around 65, showing the pair is not yet overbought. The order book shows a 13.8% bid imbalance, supporting the upward bias.",
+      "market_context": "BTC remains bullish on the 4‑hour and daily charts, but overall market sentiment is broadly negative with BTC down 1.1% in 24 h.",
+      "result": "PENDING"
     }
   ]
 }
