@@ -781,6 +781,23 @@
       "technical_analysis": "Price sits just above the 9‑EMA (0.198094) and 21‑EMA (0.193102), indicating short‑term buying pressure. The MACD histogram is marginally negative and Stochastic K is below D, suggesting some downside bias, while the order‑book shows a modest 4.2% bid‑side imbalance.",
       "market_context": "BTC is in a bullish trend on both 4‑hour and daily frames, and the broader market is broadly positive with 78.5% of assets advancing.",
       "result": "PENDING"
+    },
+    {
+      "id": 47,
+      "created_at": "2026-09-20T03:00:58.692193+00:00",
+      "symbol": "PENDLEUSDT",
+      "direction": "SHORT",
+      "title": "$PENDLE Resistance Test Fails: Bearish Momentum Building Fast",
+      "entry_low": 2.57,
+      "entry_high": 2.58,
+      "stop_loss": 2.7,
+      "take_profit": 2.31,
+      "support": 2.552,
+      "resistance": 2.615,
+      "news_line": "",
+      "technical_analysis": "Price sits below the 9‑EMA (2.62), 21‑EMA (2.64) and the 50‑SMA (2.63), indicating bearish momentum. MACD is negative and under its signal line, while the stochastic is deep in oversold territory (K 7.6, D 15.4). Order‑book shows a modest bid‑side imbalance (~6%).",
+      "market_context": "Bitcoin is in a short‑term bearish phase on both 4H and 1D charts, and the broader market breadth is largely red, adding downside pressure.",
+      "result": "PENDING"
     }
   ]
 }
