@@ -781,23 +781,6 @@
       "technical_analysis": "Price sits just above the 9‑EMA (0.198094) and 21‑EMA (0.193102), indicating short‑term buying pressure. The MACD histogram is marginally negative and Stochastic K is below D, suggesting some downside bias, while the order‑book shows a modest 4.2% bid‑side imbalance.",
       "market_context": "BTC is in a bullish trend on both 4‑hour and daily frames, and the broader market is broadly positive with 78.5% of assets advancing.",
       "result": "PENDING"
-    },
-    {
-      "id": 47,
-      "created_at": "2026-09-20T00:22:49.792580+00:00",
-      "symbol": "MARSCOINUSDT",
-      "direction": "LONG",
-      "title": "Golden Cross Formation Confirmed on $MARSCOIN 4-Hour Timeframe",
-      "entry_low": 0.0996,
-      "entry_high": 0.0998,
-      "stop_loss": 0.0959,
-      "take_profit": 0.107,
-      "support": 0.0966,
-      "resistance": 0.1072,
-      "news_line": "",
-      "technical_analysis": "MARSCOIN is trading below its EMA9 (0.099995) and EMA21 (0.102681), while the MACD histogram remains negative, indicating short‑term bearish pressure. Stochastic K/D are under 35, suggesting momentum is still on the downside, but the orderbook shows a 7.1% bid imbalance, hinting at buying interest near the 0.0996‑0.0998 zone.",
-      "market_context": "Overall crypto sentiment is broadly positive, with BTC in a bullish trend on higher timeframes, supporting risk‑on bias for altcoins.",
-      "result": "PENDING"
     }
   ]
 }
