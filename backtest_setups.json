@@ -781,6 +781,23 @@
       "technical_analysis": "Price sits just above the 9‑EMA (0.198094) and 21‑EMA (0.193102), indicating short‑term buying pressure. The MACD histogram is marginally negative and Stochastic K is below D, suggesting some downside bias, while the order‑book shows a modest 4.2% bid‑side imbalance.",
       "market_context": "BTC is in a bullish trend on both 4‑hour and daily frames, and the broader market is broadly positive with 78.5% of assets advancing.",
       "result": "PENDING"
+    },
+    {
+      "id": 47,
+      "created_at": "2026-09-20T14:00:54.427850+00:00",
+      "symbol": "UNIUSDT",
+      "direction": "SHORT",
+      "title": "$UNI Fails Resistance Retest: Bearish Extension Imminent",
+      "entry_low": 8.58,
+      "entry_high": 8.62,
+      "stop_loss": 8.92,
+      "take_profit": 7.9,
+      "support": 8.54,
+      "resistance": 8.865,
+      "news_line": "",
+      "technical_analysis": "Price is trading below EMA9 (8.68) and EMA21 (8.73), confirming bearish momentum. MACD remains negative with a declining histogram, and the Stochastic oscillator is deep in oversold territory (K 19.6, D 25.3), adding further downside pressure.",
+      "market_context": "BTC shows bullish momentum on higher timeframes, yet the overall crypto market is broadly negative, which can weigh on UNIUSDT.",
+      "result": "PENDING"
     }
   ]
 }
