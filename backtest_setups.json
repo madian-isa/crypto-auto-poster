@@ -781,23 +781,6 @@
       "technical_analysis": "Price sits just above the 9‑EMA (0.198094) and 21‑EMA (0.193102), indicating short‑term buying pressure. The MACD histogram is marginally negative and Stochastic K is below D, suggesting some downside bias, while the order‑book shows a modest 4.2% bid‑side imbalance.",
       "market_context": "BTC is in a bullish trend on both 4‑hour and daily frames, and the broader market is broadly positive with 78.5% of assets advancing.",
       "result": "PENDING"
-    },
-    {
-      "id": 47,
-      "created_at": "2026-09-20T20:17:35.668499+00:00",
-      "symbol": "ENAUSDT",
-      "direction": "LONG",
-      "title": "Bullish Momentum Is Building: Can $ENA Continue Its Breakout?",
-      "entry_low": 0.2175,
-      "entry_high": 0.218,
-      "stop_loss": 0.2088,
-      "take_profit": 0.2349,
-      "support": 0.198,
-      "resistance": 0.2218,
-      "news_line": "",
-      "technical_analysis": "Price sits above the EMA9 (0.2154) and EMA21 (0.2086), with the MACD histogram still positive, indicating bullish momentum. The pair is holding just above the 1‑hour support at 0.2171, while the next resistance lies at 0.2218. Stochastic is in the upper half, supporting the upside bias.",
-      "market_context": "BTC remains on a higher‑timeframe bullish trend, though the 24‑hour move is slightly negative, suggesting a cautiously optimistic backdrop for risk‑on assets like ENA.",
-      "result": "PENDING"
     }
   ]
 }
