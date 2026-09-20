@@ -781,6 +781,23 @@
       "technical_analysis": "Price sits just above the 9‑EMA (0.198094) and 21‑EMA (0.193102), indicating short‑term buying pressure. The MACD histogram is marginally negative and Stochastic K is below D, suggesting some downside bias, while the order‑book shows a modest 4.2% bid‑side imbalance.",
       "market_context": "BTC is in a bullish trend on both 4‑hour and daily frames, and the broader market is broadly positive with 78.5% of assets advancing.",
       "result": "PENDING"
+    },
+    {
+      "id": 47,
+      "created_at": "2026-09-20T18:17:45.550939+00:00",
+      "symbol": "PHAUSDT",
+      "direction": "LONG",
+      "title": "$PHA Liquidation Squeeze: Bears Trapped Near Critical Resistance",
+      "entry_low": 0.036,
+      "entry_high": 0.0364,
+      "stop_loss": 0.03456,
+      "take_profit": 0.03888,
+      "support": 0.0357,
+      "resistance": 0.0368,
+      "news_line": "",
+      "technical_analysis": "PHA is trading just above its EMA9 (0.03638) and EMA21 (0.03593), with the price also sitting above the 50‑period SMA (0.03463). The MACD histogram is marginally negative and the stochastic oscillator is in the upper‑mid range (K 71.4, D 68.4), indicating modest bullish pressure but potential overbought conditions.",
+      "market_context": "BTC shows bullish momentum on the 4 h and daily charts, yet the 24 h change is slightly negative and overall market breadth is broadly negative, adding some caution to the trade.",
+      "result": "PENDING"
     }
   ]
 }
