@@ -781,23 +781,6 @@
       "technical_analysis": "Price sits just above the 9‑EMA (0.198094) and 21‑EMA (0.193102), indicating short‑term buying pressure. The MACD histogram is marginally negative and Stochastic K is below D, suggesting some downside bias, while the order‑book shows a modest 4.2% bid‑side imbalance.",
       "market_context": "BTC is in a bullish trend on both 4‑hour and daily frames, and the broader market is broadly positive with 78.5% of assets advancing.",
       "result": "PENDING"
-    },
-    {
-      "id": 47,
-      "created_at": "2026-09-20T05:30:55.664405+00:00",
-      "symbol": "CHIPUSDT",
-      "direction": "SHORT",
-      "title": "$CHIP Rejection at Key Supply Zone: Short Setup Activated",
-      "entry_low": 0.042,
-      "entry_high": 0.04213,
-      "stop_loss": 0.044,
-      "take_profit": 0.038,
-      "support": 0.04151,
-      "resistance": 0.044,
-      "news_line": "",
-      "technical_analysis": "Price sits below EMA9 (0.04254) and EMA21 (0.04317), with MACD still in negative territory and a falling histogram. Stochastic is deep in oversold (K 19.2, D 24.1), suggesting limited upside. Order‑book shows a modest bid‑side imbalance, reinforcing downside pressure.",
-      "market_context": "BTC is on a bullish trend on 4H and 1D charts, yet the broader market is mixed with a slight bearish tilt for BTC over the past 24 hours.",
-      "result": "PENDING"
     }
   ]
 }
