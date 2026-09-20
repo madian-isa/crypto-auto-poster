@@ -781,6 +781,23 @@
       "technical_analysis": "Price sits just above the 9‑EMA (0.198094) and 21‑EMA (0.193102), indicating short‑term buying pressure. The MACD histogram is marginally negative and Stochastic K is below D, suggesting some downside bias, while the order‑book shows a modest 4.2% bid‑side imbalance.",
       "market_context": "BTC is in a bullish trend on both 4‑hour and daily frames, and the broader market is broadly positive with 78.5% of assets advancing.",
       "result": "PENDING"
+    },
+    {
+      "id": 47,
+      "created_at": "2026-09-20T01:30:49.730998+00:00",
+      "symbol": "IOTXUSDT",
+      "direction": "LONG",
+      "title": "$IOTX Higher Low Structure Confirmed: Long Entry Level Reached",
+      "entry_low": 0.00322,
+      "entry_high": 0.00324,
+      "stop_loss": 0.0031,
+      "take_profit": 0.00346,
+      "support": 0.003223,
+      "resistance": 0.003257,
+      "news_line": "",
+      "technical_analysis": "Price sits just above the 21‑EMA and SMA‑50 while remaining slightly under the 9‑EMA, suggesting a bounce from the 0.003223 support zone. The MACD histogram is positive and the MACD line is above its signal, adding bullish momentum.",
+      "market_context": "BTC is on higher‑timeframe bullish trends, though its 24‑hour price shows slight weakness, and overall market breadth remains broadly positive.",
+      "result": "PENDING"
     }
   ]
 }
