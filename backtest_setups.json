@@ -781,6 +781,23 @@
       "technical_analysis": "Price sits just above the 9‑EMA (0.198094) and 21‑EMA (0.193102), indicating short‑term buying pressure. The MACD histogram is marginally negative and Stochastic K is below D, suggesting some downside bias, while the order‑book shows a modest 4.2% bid‑side imbalance.",
       "market_context": "BTC is in a bullish trend on both 4‑hour and daily frames, and the broader market is broadly positive with 78.5% of assets advancing.",
       "result": "PENDING"
+    },
+    {
+      "id": 47,
+      "created_at": "2026-09-20T08:45:45.943459+00:00",
+      "symbol": "ARUSDT",
+      "direction": "SHORT",
+      "title": "High Volume Selling Sweep Breaks $AR Market Structure",
+      "entry_low": 4.25,
+      "entry_high": 4.27,
+      "stop_loss": 4.409,
+      "take_profit": 3.932,
+      "support": 4.216,
+      "resistance": 4.409,
+      "news_line": "",
+      "technical_analysis": "Price sits below the 9‑EMA (4.302) while the MACD histogram remains negative, indicating bearish momentum. The pair is trading near the upper 1‑hour resistance at 4.409, offering a clear short entry zone around 4.25‑4.27.",
+      "market_context": "Bitcoin is in a short‑term bearish trend and the broader market shows a 70% red bias, adding downside pressure to ARUSDT.",
+      "result": "PENDING"
     }
   ]
 }
