@@ -781,6 +781,23 @@
       "technical_analysis": "Price sits just above the 9‑EMA (0.198094) and 21‑EMA (0.193102), indicating short‑term buying pressure. The MACD histogram is marginally negative and Stochastic K is below D, suggesting some downside bias, while the order‑book shows a modest 4.2% bid‑side imbalance.",
       "market_context": "BTC is in a bullish trend on both 4‑hour and daily frames, and the broader market is broadly positive with 78.5% of assets advancing.",
       "result": "PENDING"
+    },
+    {
+      "id": 47,
+      "created_at": "2026-09-20T08:15:47.010272+00:00",
+      "symbol": "CETUSUSDT",
+      "direction": "LONG",
+      "title": "$CETUS Buying Pressure Rises as Bulls Test Key Resistance",
+      "entry_low": 0.02378,
+      "entry_high": 0.02381,
+      "stop_loss": 0.0228288,
+      "take_profit": 0.0256824,
+      "support": 0.02376,
+      "resistance": 0.02393,
+      "news_line": "",
+      "technical_analysis": "Price sits just above EMA9 (0.02374) and EMA21 (0.02361) and comfortably above the 50‑period SMA, indicating bullish bias. MACD histogram is slightly negative but shrinking, while stochastic K (27) is above D (17) from an oversold region, suggesting upward momentum. The pair is trading in a narrow 0.02378‑0.02383 range, with clear 1H/4H swing support at 0.02376 and resistance at 0.02393.",
+      "market_context": "BTC is in a short‑term bearish phase and the broader market shows a negative breadth, which adds caution to the trade.",
+      "result": "PENDING"
     }
   ]
 }
