@@ -815,6 +815,23 @@
       "technical_analysis": "Price sits above EMA9 (0.1695), EMA21 (0.1659) and SMA50 (0.1608), confirming an uptrend. MACD is positive with a rising histogram, and the stochastic is in the 80s, indicating strong momentum. The pair is trading near the 1H resistance at 0.1795, with a clear swing low at 0.1698 offering a logical stop level.",
       "market_context": "BTC remains in a bullish trend across 4H and 1D frames, and overall market breadth is broadly positive, supporting risk‑on sentiment for altcoins like ACE.",
       "result": "PENDING"
+    },
+    {
+      "id": 49,
+      "created_at": "2026-09-21T15:19:47.389560+00:00",
+      "symbol": "SHIBUSDT",
+      "direction": "SHORT",
+      "title": "Smart Money Distribution Visible on $SHIB On-Chain Data",
+      "entry_low": 5.96e-06,
+      "entry_high": 5.98e-06,
+      "stop_loss": 6.18e-06,
+      "take_profit": 5.52e-06,
+      "support": 5.5e-06,
+      "resistance": 5.96e-06,
+      "news_line": "",
+      "technical_analysis": "Stochastic is deep in overbought territory (K = 88, D ≈ 88) while MACD is flat at zero, indicating weak upward pressure. The orderbook shows an ~18% ask‑side imbalance and price is trading just above the 1H/4H resistance at 5.96 × 10⁻⁶, suggesting a potential pull‑back. EMA9, EMA21 and SMA50 are all aligned at the current price, offering no bullish bias.",
+      "market_context": "BTC remains bullish on both 4H and daily charts and the broader market is broadly positive, but SHIB shows bearish micro‑structure diverging from the overall rally.",
+      "result": "PENDING"
     }
   ]
 }

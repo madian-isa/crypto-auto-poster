@@ -1,6 +1,6 @@
 {
   "date": "2026-09-21",
-  "count": 48,
+  "count": 47,
   "posted_symbols_today": [
     "ZRO",
     "BOME",
@@ -47,6 +47,7 @@
     "MORPHO",
     "FET",
     "PHA",
-    "XLM"
+    "XLM",
+    "SHIBUSDT"
   ]
 }
