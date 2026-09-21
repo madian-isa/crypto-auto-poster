@@ -781,23 +781,6 @@
       "technical_analysis": "Price sits just above the 9‑EMA (0.198094) and 21‑EMA (0.193102), indicating short‑term buying pressure. The MACD histogram is marginally negative and Stochastic K is below D, suggesting some downside bias, while the order‑book shows a modest 4.2% bid‑side imbalance.",
       "market_context": "BTC is in a bullish trend on both 4‑hour and daily frames, and the broader market is broadly positive with 78.5% of assets advancing.",
       "result": "PENDING"
-    },
-    {
-      "id": 47,
-      "created_at": "2026-09-21T13:30:58.091165+00:00",
-      "symbol": "ONDOUSDT",
-      "direction": "SHORT",
-      "title": "$ONDO Prepares for Breakdown: Downside Risk Escalates",
-      "entry_low": 0.4525,
-      "entry_high": 0.4555,
-      "stop_loss": 0.47,
-      "take_profit": 0.4175,
-      "support": 0.424,
-      "resistance": 0.4588,
-      "news_line": "",
-      "technical_analysis": "ONDO is trading just beneath the 1‑hour resistance of 0.4588, while EMA9 (0.444) and EMA21 (0.436) remain underneath, marking a modest pull‑back. MACD stays positive but its histogram is narrowing, and the stochastic oscillator is deep in overbought territory (K ≈ 81, D ≈ 85), hinting at fading bullish pressure. The spot order‑book shows a 25 % ask‑side imbalance, reinforcing the short bias. A recent swing low at 0.424 offers a logical profit zone.",
-      "market_context": "Bitcoin continues a bullish trend on both 4‑hour and daily frames, and the broader market is overwhelmingly green (≈94 % up), supporting risk‑on sentiment.",
-      "result": "PENDING"
     }
   ]
 }
