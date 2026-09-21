@@ -1,28 +1,25 @@
 """
 setup_generator.py
 
-Generates concise, natural Binance Square crypto market-analysis posts.
+Generates concise Binance Square crypto market-analysis posts.
 
 Features:
+- Groq AI generation
+- Automatic Python fallback when Groq fails
 - Technical indicators
-- 1H and 4H Swing support/resistance
+- 1H and 4H swing support/resistance
 - BTC market context
 - Advanced market data when available
 - Relevant supplied news
 - 25 LONG title templates
 - 25 SHORT title templates
-- Title rotation
+- Deterministic title rotation
 - No emojis
-- Exactly 3 $COIN mentions in the final post:
-    1. Title
-    2. Technical-analysis/body section
-    3. Final LONG/SHORT line
-
-Important:
-- This module does not place trades.
-- It does not tell readers to invest.
-- It does not fabricate news or market data.
-- ATR is not used for setup fallback calculations.
+- Exactly 3 $COIN mentions in the final post
+- Strict 1:2 RR
+- Minimum 3.5% SL distance
+- ATR is NOT used for fallback calculations
+- Does not place trades
 """
 
 import json
@@ -125,7 +122,7 @@ IMPORTANT RULES:
 TIMEFRAME RULE:
 - Identify swing high and swing low structures using 1H and 4H market structure.
 - Focus on key major swing levels rather than tiny micro-ranges.
-- Always aim for clean wide swing trade setups with solid Risk-to-Reward ratios.
+- Always aim for clean wide swing trade setups.
 - Do NOT output micro-scalp setups or extremely narrow SL/TP ranges.
 
 TITLE:
@@ -138,8 +135,8 @@ If no relevant news is supplied, news_line must be empty.
 
 TECHNICAL ANALYSIS:
 Use the strongest available technical information.
-Mention indicators such as EMA, SMA, MACD, RSI, Stochastic,
-volume, orderbook or other advanced data only when supplied.
+Mention EMA, SMA, MACD, RSI, Stochastic, volume,
+orderbook or advanced data only when supplied.
 
 MARKET CONTEXT:
 BTC and broader market information should be used only
@@ -155,13 +152,9 @@ Return JSON only.
 
 def _get_client():
     if not cfg.GROQ_API_KEY:
-        raise RuntimeError(
-            "GROQ_API_KEY is missing."
-        )
+        raise RuntimeError("GROQ_API_KEY is missing.")
 
-    return Groq(
-        api_key=cfg.GROQ_API_KEY
-    )
+    return Groq(api_key=cfg.GROQ_API_KEY)
 
 
 # =========================================================
@@ -170,16 +163,24 @@ def _get_client():
 
 def _safe_float(value):
     try:
-        return float(value)
+        if value is None:
+            return None
+
+        if isinstance(value, bool):
+            return None
+
+        number = float(value)
+
+        if number != number:
+            return None
+
+        return number
+
     except Exception:
         return None
 
 
 def _format_price(value):
-    """
-    Format prices without unnecessary zeros.
-    """
-
     number = _safe_float(value)
 
     if number is None:
@@ -224,28 +225,21 @@ def _clean_text(value, max_length=500):
 # =========================================================
 
 def _coin_name(symbol):
-    """
-    Convert BTCUSDT -> BTC.
-    """
-
-    symbol = str(
-        symbol or ""
-    ).upper()
+    symbol = str(symbol or "").upper()
 
     if symbol.endswith("USDT"):
+        return symbol[:-4]
+
+    if symbol.endswith("USDC"):
+        return symbol[:-4]
+
+    if symbol.endswith("BUSD"):
         return symbol[:-4]
 
     return symbol
 
 
-def _replace_coin_placeholder(
-    title,
-    coin,
-):
-    """
-    Replace $XXX with the real $COIN.
-    """
-
+def _replace_coin_placeholder(title, coin):
     return str(title).replace(
         "$XXX",
         f"${coin}",
@@ -256,16 +250,7 @@ def _replace_coin_placeholder(
 # TITLE ROTATION
 # =========================================================
 
-def _select_title(
-    direction,
-    coin,
-):
-    """
-    Select a title from the user's 25-title library.
-
-    The selection is deterministic for a given symbol/day,
-    while different symbols rotate through different titles.
-    """
+def _select_title(direction, coin):
 
     if direction == "LONG":
         titles = LONG_TITLES
@@ -274,9 +259,7 @@ def _select_title(
 
     today = datetime.now(
         timezone.utc
-    ).strftime(
-        "%Y-%m-%d"
-    )
+    ).strftime("%Y-%m-%d")
 
     seed_text = (
         f"{coin}-{today}-{direction}"
@@ -288,8 +271,7 @@ def _select_title(
     )
 
     index = (
-        seed_value
-        % len(titles)
+        seed_value % len(titles)
     )
 
     return _replace_coin_placeholder(
@@ -303,9 +285,6 @@ def _select_title(
 # =========================================================
 
 def _summarize_news(news):
-    """
-    Convert different news formats into compact text.
-    """
 
     if not news:
         return ""
@@ -390,9 +369,7 @@ def _summarize_news(news):
 # INDICATOR SUMMARY
 # =========================================================
 
-def _build_indicator_summary(
-    indicators,
-):
+def _build_indicator_summary(indicators):
 
     if not indicators:
         return {}
@@ -436,18 +413,12 @@ def _build_indicator_summary(
 # ADVANCED DATA SUMMARY
 # =========================================================
 
-def _build_advanced_summary(
-    advanced,
-):
+def _build_advanced_summary(advanced):
 
     if not advanced:
         return {}
 
     result = {}
-
-    # -----------------------------------------------------
-    # 1H / 4H SUPPORT / RESISTANCE
-    # -----------------------------------------------------
 
     sr = advanced.get(
         "multi_timeframe_sr"
@@ -459,13 +430,14 @@ def _build_advanced_summary(
         four_hour = sr.get("4h")
 
         if one_hour:
-            result["1h_support_resistance"] = one_hour
-        if four_hour:
-            result["4h_support_resistance"] = four_hour
+            result[
+                "1h_support_resistance"
+            ] = one_hour
 
-    # -----------------------------------------------------
-    # BTC CONTEXT
-    # -----------------------------------------------------
+        if four_hour:
+            result[
+                "4h_support_resistance"
+            ] = four_hour
 
     btc = advanced.get(
         "btc_context"
@@ -475,10 +447,6 @@ def _build_advanced_summary(
         result[
             "btc_context"
         ] = btc
-
-    # -----------------------------------------------------
-    # OPEN INTEREST
-    # -----------------------------------------------------
 
     oi = advanced.get(
         "open_interest"
@@ -498,10 +466,6 @@ def _build_advanced_summary(
             "oi_change_1h_pct"
         ] = oi_change
 
-    # -----------------------------------------------------
-    # FUNDING
-    # -----------------------------------------------------
-
     funding = advanced.get(
         "funding_rate"
     )
@@ -510,10 +474,6 @@ def _build_advanced_summary(
         result[
             "funding_rate"
         ] = funding
-
-    # -----------------------------------------------------
-    # LONG / SHORT
-    # -----------------------------------------------------
 
     long_short = advanced.get(
         "long_short_ratio"
@@ -524,10 +484,6 @@ def _build_advanced_summary(
             "long_short_ratio"
         ] = long_short
 
-    # -----------------------------------------------------
-    # LIQUIDATIONS
-    # -----------------------------------------------------
-
     liquidations = advanced.get(
         "liquidations"
     )
@@ -536,10 +492,6 @@ def _build_advanced_summary(
         result[
             "liquidations"
         ] = liquidations
-
-    # -----------------------------------------------------
-    # ORDERBOOK
-    # -----------------------------------------------------
 
     orderbook = advanced.get(
         "orderbook"
@@ -561,41 +513,45 @@ def _select_major_levels(
     indicators,
     advanced_market_data,
 ):
-    """
-    Select support/resistance using 1H/4H levels.
 
-    Priority:
-    1H/4H -> indicator fallback
-    """
-
-    sr = (
+    advanced_market_data = (
         advanced_market_data or {}
-    ).get(
+    )
+
+    sr = advanced_market_data.get(
         "multi_timeframe_sr",
         {}
-    )
+    ) or {}
 
     one_hour = sr.get(
         "1h",
         {}
+    ) or {}
+
+    four_hour = sr.get(
+        "4h",
+        {}
+    ) or {}
+
+    # Prefer 4H for major swing structure.
+    support = (
+        four_hour.get("support")
+        if four_hour.get("support") is not None
+        else one_hour.get("support")
     )
 
-    support = one_hour.get(
-        "support"
-    )
-
-    resistance = one_hour.get(
-        "resistance"
+    resistance = (
+        four_hour.get("resistance")
+        if four_hour.get("resistance") is not None
+        else one_hour.get("resistance")
     )
 
     if support is None and indicators:
-
         support = indicators.get(
             "support"
         )
 
     if resistance is None and indicators:
-
         resistance = indicators.get(
             "resistance"
         )
@@ -604,6 +560,812 @@ def _select_major_levels(
         "support": support,
         "resistance": resistance,
     }
+
+
+# =========================================================
+# CURRENT PRICE
+# =========================================================
+
+def _get_current_price(indicators):
+
+    if not indicators:
+        return None
+
+    for key in (
+        "current_price",
+        "price",
+    ):
+
+        value = _safe_float(
+            indicators.get(key)
+        )
+
+        if value is not None and value > 0:
+            return value
+
+    return None
+
+
+# =========================================================
+# FALLBACK: DIRECTION
+# =========================================================
+
+def _fallback_direction(
+    indicators,
+    advanced_market_data,
+):
+    """
+    Deterministic technical direction.
+
+    This does NOT use random direction.
+    Only supplied technical values are used.
+    """
+
+    indicators = indicators or {}
+    advanced = advanced_market_data or {}
+
+    score = 0
+
+    # -----------------------------------------------------
+    # RSI
+    # -----------------------------------------------------
+
+    rsi = _safe_float(
+        indicators.get("rsi")
+    )
+
+    if rsi is not None:
+
+        if rsi >= 55:
+            score += 2
+
+        elif rsi <= 45:
+            score -= 2
+
+    # -----------------------------------------------------
+    # EMA STRUCTURE
+    # -----------------------------------------------------
+
+    price = _get_current_price(
+        indicators
+    )
+
+    ema21 = _safe_float(
+        indicators.get("ema21")
+    )
+
+    ema50 = _safe_float(
+        indicators.get("ema50")
+    )
+
+    ema200 = _safe_float(
+        indicators.get("ema200")
+    )
+
+    if price is not None and ema21 is not None:
+
+        if price > ema21:
+            score += 1
+        elif price < ema21:
+            score -= 1
+
+    if ema21 is not None and ema50 is not None:
+
+        if ema21 > ema50:
+            score += 1
+        elif ema21 < ema50:
+            score -= 1
+
+    if price is not None and ema200 is not None:
+
+        if price > ema200:
+            score += 1
+        elif price < ema200:
+            score -= 1
+
+    # -----------------------------------------------------
+    # MACD
+    # -----------------------------------------------------
+
+    macd = _safe_float(
+        indicators.get("macd")
+    )
+
+    macd_signal = _safe_float(
+        indicators.get("macd_signal")
+    )
+
+    if (
+        macd is not None
+        and macd_signal is not None
+    ):
+
+        if macd > macd_signal:
+            score += 2
+
+        elif macd < macd_signal:
+            score -= 2
+
+    # -----------------------------------------------------
+    # STOCHASTIC
+    # -----------------------------------------------------
+
+    stochastic = _safe_float(
+        indicators.get("stochastic")
+    )
+
+    if stochastic is not None:
+
+        if stochastic >= 60:
+            score += 1
+
+        elif stochastic <= 40:
+            score -= 1
+
+    # -----------------------------------------------------
+    # VOLUME
+    # -----------------------------------------------------
+
+    volume_change = _safe_float(
+        indicators.get(
+            "volume_change"
+        )
+    )
+
+    if volume_change is not None:
+
+        if volume_change > 10:
+            # Volume increase confirms the
+            # existing directional score.
+            if score > 0:
+                score += 1
+            elif score < 0:
+                score -= 1
+
+    # -----------------------------------------------------
+    # OPEN INTEREST
+    # -----------------------------------------------------
+
+    oi_change = _safe_float(
+        advanced.get(
+            "oi_change_1h_pct"
+        )
+    )
+
+    if oi_change is not None:
+
+        if oi_change > 5:
+
+            if score > 0:
+                score += 1
+            elif score < 0:
+                score -= 1
+
+    # -----------------------------------------------------
+    # FUNDING
+    # -----------------------------------------------------
+
+    funding = _safe_float(
+        advanced.get(
+            "funding_rate"
+        )
+    )
+
+    if funding is not None:
+
+        if funding > 0.01:
+            score -= 1
+
+        elif funding < -0.01:
+            score += 1
+
+    # -----------------------------------------------------
+    # FINAL DIRECTION
+    # -----------------------------------------------------
+
+    if score >= 0:
+        return "LONG"
+
+    return "SHORT"
+
+
+# =========================================================
+# FALLBACK: ENTRY
+# =========================================================
+
+def _fallback_entry(
+    indicators,
+    levels,
+    direction,
+):
+    """
+    Uses supplied current price first.
+    No fabricated market price.
+    """
+
+    price = _get_current_price(
+        indicators
+    )
+
+    support = _safe_float(
+        levels.get("support")
+    )
+
+    resistance = _safe_float(
+        levels.get("resistance")
+    )
+
+    if price is None:
+        return None, None
+
+    if direction == "LONG":
+
+        # If valid support is below current price,
+        # use a modest structure-based entry range.
+        if (
+            support is not None
+            and 0 < support < price
+        ):
+            low = support
+            high = price
+
+        else:
+            low = price
+            high = price
+
+    else:
+
+        if (
+            resistance is not None
+            and resistance > price
+        ):
+            low = price
+            high = resistance
+
+        else:
+            low = price
+            high = price
+
+    return (
+        round(low, 8),
+        round(high, 8),
+    )
+
+
+# =========================================================
+# FALLBACK: STOP LOSS / TAKE PROFIT
+# =========================================================
+
+def _fallback_risk_levels(
+    entry_low,
+    entry_high,
+    direction,
+    support,
+    resistance,
+):
+    """
+    Creates a wide swing setup.
+
+    Rules:
+    - Minimum 3.5% SL distance.
+    - Uses 4% minimum baseline.
+    - 1:2 RR exactly.
+    - No ATR.
+    """
+
+    if entry_low is None:
+        return None, None
+
+    if entry_high is None:
+        entry_high = entry_low
+
+    entry_low = float(entry_low)
+    entry_high = float(entry_high)
+
+    if entry_low <= 0:
+        return None, None
+
+    support = _safe_float(support)
+    resistance = _safe_float(resistance)
+
+    if direction == "LONG":
+
+        reference = entry_low
+
+        # Prefer structural support when it is
+        # meaningfully below the entry.
+        if (
+            support is not None
+            and support > 0
+            and support < reference
+        ):
+
+            structural_sl = support * 0.995
+
+            minimum_sl = reference * 0.96
+
+            stop_loss = min(
+                structural_sl,
+                minimum_sl,
+            )
+
+        else:
+            stop_loss = reference * 0.96
+
+        # Enforce minimum 4% distance.
+        minimum_sl = reference * 0.96
+
+        if stop_loss > minimum_sl:
+            stop_loss = minimum_sl
+
+        risk = reference - stop_loss
+
+        take_profit = (
+            reference + risk * 2.0
+        )
+
+    else:
+
+        reference = entry_high
+
+        if (
+            resistance is not None
+            and resistance > reference
+        ):
+
+            structural_sl = (
+                resistance * 1.005
+            )
+
+            minimum_sl = (
+                reference * 1.04
+            )
+
+            stop_loss = max(
+                structural_sl,
+                minimum_sl,
+            )
+
+        else:
+            stop_loss = (
+                reference * 1.04
+            )
+
+        minimum_sl = reference * 1.04
+
+        if stop_loss < minimum_sl:
+            stop_loss = minimum_sl
+
+        risk = stop_loss - reference
+
+        take_profit = (
+            reference - risk * 2.0
+        )
+
+    return (
+        round(stop_loss, 8),
+        round(take_profit, 8),
+    )
+
+
+# =========================================================
+# FALLBACK: TECHNICAL TEXT
+# =========================================================
+
+def _fallback_technical_text(
+    coin,
+    indicators,
+    direction,
+):
+    """
+    Builds factual technical text only from
+    supplied indicators.
+    """
+
+    indicators = indicators or {}
+
+    parts = []
+
+    rsi = _safe_float(
+        indicators.get("rsi")
+    )
+
+    if rsi is not None:
+        parts.append(
+            f"RSI is {rsi:.1f}"
+        )
+
+    price = _get_current_price(
+        indicators
+    )
+
+    ema21 = _safe_float(
+        indicators.get("ema21")
+    )
+
+    if (
+        price is not None
+        and ema21 is not None
+    ):
+
+        if price > ema21:
+            parts.append(
+                "price is above the 21 EMA"
+            )
+        else:
+            parts.append(
+                "price is below the 21 EMA"
+            )
+
+    macd = _safe_float(
+        indicators.get("macd")
+    )
+
+    macd_signal = _safe_float(
+        indicators.get("macd_signal")
+    )
+
+    if (
+        macd is not None
+        and macd_signal is not None
+    ):
+
+        if macd > macd_signal:
+            parts.append(
+                "MACD is above its signal line"
+            )
+
+        elif macd < macd_signal:
+            parts.append(
+                "MACD is below its signal line"
+            )
+
+    volume_change = _safe_float(
+        indicators.get(
+            "volume_change"
+        )
+    )
+
+    if volume_change is not None:
+
+        parts.append(
+            f"volume change is {volume_change:.1f}%"
+        )
+
+    if not parts:
+
+        return (
+            f"${coin} is being evaluated from "
+            f"the available market structure."
+        )
+
+    if len(parts) == 1:
+
+        return (
+            f"${coin} technical structure shows "
+            f"{parts[0]}."
+        )
+
+    selected = parts[:3]
+
+    return (
+        f"${coin} technical structure shows "
+        + ", ".join(selected[:-1])
+        + f", with {selected[-1]}."
+    )
+
+
+# =========================================================
+# FALLBACK: MARKET CONTEXT
+# =========================================================
+
+def _fallback_market_context(
+    advanced_market_data,
+):
+    """
+    Uses BTC/advanced data only when supplied.
+    """
+
+    advanced = (
+        advanced_market_data or {}
+    )
+
+    btc = advanced.get(
+        "btc_context"
+    )
+
+    if not btc:
+        return ""
+
+    if isinstance(btc, str):
+
+        return _clean_text(
+            btc,
+            300,
+        )
+
+    if isinstance(btc, dict):
+
+        pieces = []
+
+        for key in (
+            "price",
+            "change_24h",
+            "trend",
+            "rsi",
+            "market_structure",
+        ):
+
+            if key in btc:
+
+                value = btc.get(key)
+
+                if value is not None:
+                    pieces.append(
+                        f"{key}: {value}"
+                    )
+
+        if pieces:
+            return (
+                "BTC context: "
+                + ", ".join(pieces[:4])
+                + "."
+            )
+
+    return ""
+
+
+# =========================================================
+# FALLBACK: NEWS
+# =========================================================
+
+def _fallback_news_line(news):
+
+    if not news:
+        return ""
+
+    if isinstance(news, str):
+
+        return _clean_text(
+            news,
+            280,
+        )
+
+    if isinstance(news, dict):
+
+        title = news.get(
+            "title",
+            "",
+        )
+
+        if title:
+            return _clean_text(
+                title,
+                280,
+            )
+
+        summary = news.get(
+            "summary",
+            "",
+        )
+
+        return _clean_text(
+            summary,
+            280,
+        )
+
+    if isinstance(news, list):
+
+        for item in news[:3]:
+
+            if isinstance(item, str):
+                return _clean_text(
+                    item,
+                    280,
+                )
+
+            if isinstance(item, dict):
+
+                title = item.get(
+                    "title",
+                    "",
+                )
+
+                if title:
+                    return _clean_text(
+                        title,
+                        280,
+                    )
+
+    return ""
+
+
+# =========================================================
+# PYTHON FALLBACK SETUP
+# =========================================================
+
+def _python_fallback_setup(
+    symbol,
+    indicators,
+    news=None,
+    market_context=None,
+    advanced_market_data=None,
+):
+    """
+    Full deterministic fallback.
+
+    This function does NOT call Groq.
+
+    It uses only supplied market data.
+    """
+
+    coin = _coin_name(
+        symbol
+    )
+
+    indicators = indicators or {}
+
+    advanced_market_data = (
+        advanced_market_data or {}
+    )
+
+    major_levels = _select_major_levels(
+        indicators,
+        advanced_market_data,
+    )
+
+    direction = _fallback_direction(
+        indicators,
+        advanced_market_data,
+    )
+
+    entry_low, entry_high = (
+        _fallback_entry(
+            indicators,
+            major_levels,
+            direction,
+        )
+    )
+
+    stop_loss, take_profit = (
+        _fallback_risk_levels(
+            entry_low,
+            entry_high,
+            direction,
+            major_levels.get(
+                "support"
+            ),
+            major_levels.get(
+                "resistance"
+            ),
+        )
+    )
+
+    technical = _fallback_technical_text(
+        coin,
+        indicators,
+        direction,
+    )
+
+    news_line = _fallback_news_line(
+        news
+    )
+
+    btc_context = _fallback_market_context(
+        advanced_market_data
+    )
+
+    if market_context:
+
+        if isinstance(
+            market_context,
+            str,
+        ):
+
+            extra_context = _clean_text(
+                market_context,
+                250,
+            )
+
+            if extra_context:
+                btc_context = (
+                    f"{btc_context} "
+                    f"{extra_context}"
+                ).strip()
+
+    setup = {
+        "symbol": symbol,
+        "direction": direction,
+        "title": _select_title(
+            direction,
+            coin,
+        ),
+        "entry_low": entry_low,
+        "entry_high": entry_high,
+        "stop_loss": stop_loss,
+        "take_profit": take_profit,
+        "support": major_levels.get(
+            "support"
+        ),
+        "resistance": major_levels.get(
+            "resistance"
+        ),
+        "news_line": news_line,
+        "technical_analysis": technical,
+        "market_context": btc_context,
+        "rr": 2,
+        "hashtags": [],
+    }
+
+    print(
+        f"[setup_generator] "
+        f"Using Python fallback for ${coin}."
+    )
+
+    return setup
+
+
+# =========================================================
+# VALIDATE AI OUTPUT
+# =========================================================
+
+def _parse_ai_response(content):
+
+    if not content:
+        raise RuntimeError(
+            "AI returned an empty response."
+        )
+
+    content = str(content).strip()
+
+    content = re.sub(
+        r"^```json\s*",
+        "",
+        content,
+        flags=re.IGNORECASE,
+    )
+
+    content = re.sub(
+        r"^```\s*",
+        "",
+        content,
+    )
+
+    content = re.sub(
+        r"\s*```$",
+        "",
+        content,
+    )
+
+    content = content.strip()
+
+    if not content:
+        raise RuntimeError(
+            "AI returned an empty response."
+        )
+
+    try:
+
+        setup = json.loads(
+            content
+        )
+
+    except Exception as err:
+
+        raise RuntimeError(
+            "AI returned invalid JSON: "
+            f"{err}\nResponse: {content}"
+        )
+
+    if not isinstance(
+        setup,
+        dict,
+    ):
+        raise RuntimeError(
+            "AI JSON response is not an object."
+        )
+
+    return setup
 
 
 # =========================================================
@@ -618,12 +1380,18 @@ def generate_setup(
     advanced_market_data=None,
 ):
     """
-    Ask Groq to generate one complete market-analysis setup.
+    Generate one complete market-analysis setup.
 
-    ATR is not used for fallback calculations.
+    Flow:
+
+    Groq success
+        ->
+    validate + enforce setup
+
+    Groq failure
+        ->
+    Python fallback
     """
-
-    client = _get_client()
 
     coin = _coin_name(
         symbol
@@ -691,37 +1459,28 @@ TASK:
 
 2. Create a realistic entry range.
 
-3. Set Stop Loss and Take Profit (Swing Structure):
-   - Place Stop-Loss below the recent 1H/4H swing low (for LONG) or above the swing high (for SHORT).
-   - Ensure Stop-Loss distance is at least 3.5% to 5% away from entry.
-   - Set Take-Profit at 2R target (exactly double the Stop-Loss distance).
-   - NEVER create tight scalping/micro-trades.
+3. Set Stop Loss and Take Profit:
+   - Use 1H/4H swing structure.
+   - Stop loss must be at least 3.5% away from entry.
+   - Prefer approximately 4% minimum distance when needed.
+   - Take Profit must be exactly 2R.
+   - Never create a micro-scalp setup.
 
-4. Identify major 1H and 4H swing support and resistance levels.
+4. Identify major 1H and 4H support/resistance.
 
-5. Use only the strongest 3–5 technical signals.
+5. Use only the strongest 3–5 supplied technical signals.
 
 6. Use OI, funding, long/short ratio, liquidation or
-   orderbook data only if supplied and useful.
+   orderbook data only if supplied.
 
-7. Use BTC only as broader market context.
+7. Use BTC only as broader context.
 
-8. NEWS RULE:
-   If relevant news is supplied, create a short NEWS line
-   using ONLY the supplied information.
+8. If relevant news is supplied, use only that news.
+   If no news is supplied, news_line must be empty.
 
-   If no relevant news is supplied:
-   return an empty news_line.
+9. Do not invent a title. A title will be replaced by code.
 
-9. TITLE RULE:
-   After deciding LONG or SHORT, select the appropriate
-   title style.
-
-   Do not create an unrelated title.
-   Do not use emojis.
-   Do not use hashtags.
-
-10. Keep the final content around 100–140 words.
+10. Keep the content concise.
 
 Return JSON only:
 
@@ -734,53 +1493,74 @@ Return JSON only:
   "take_profit": null,
   "support": 0,
   "resistance": 0,
-  "news_line": "short verified news headline or empty",
-  "technical_analysis": "2-3 natural sentences",
-  "market_context": "1-2 short sentences"
+  "news_line": "",
+  "technical_analysis": "",
+  "market_context": ""
 }}
 """
 
-    response = client.chat.completions.create(
-        model=cfg.GROQ_MODEL,
-        messages=[
-            {
-                "role": "system",
-                "content": SYSTEM_PROMPT,
-            },
-            {
-                "role": "user",
-                "content": user_prompt,
-            },
-        ],
-        temperature=0.75,
-    )
-
-    content = response.choices[0].message.content
-
-    content = (
-        content
-        .replace(
-            "```json",
-            "",
-        )
-        .replace(
-            "```",
-            "",
-        )
-        .strip()
-    )
+    # =====================================================
+    # GROQ
+    # =====================================================
 
     try:
 
-        setup = json.loads(
+        if not cfg.GROQ_API_KEY:
+
+            raise RuntimeError(
+                "GROQ_API_KEY is missing."
+            )
+
+        print(
+            f"[setup_generator] "
+            f"Generating setup for ${coin} via Groq..."
+        )
+
+        client = _get_client()
+
+        response = client.chat.completions.create(
+            model=cfg.GROQ_MODEL,
+            messages=[
+                {
+                    "role": "system",
+                    "content": SYSTEM_PROMPT,
+                },
+                {
+                    "role": "user",
+                    "content": user_prompt,
+                },
+            ],
+            temperature=0.75,
+        )
+
+        if not response.choices:
+
+            raise RuntimeError(
+                "AI returned no choices."
+            )
+
+        content = (
+            response.choices[0]
+            .message.content
+        )
+
+        setup = _parse_ai_response(
             content
         )
 
     except Exception as err:
 
-        raise RuntimeError(
-            "AI returned invalid JSON: "
-            f"{err}\nResponse: {content}"
+        print(
+            f"[setup_generator] "
+            f"Groq failed for ${coin}: {err}"
+        )
+
+        return _python_fallback_setup(
+            symbol=symbol,
+            indicators=indicators,
+            news=news,
+            market_context=market_context,
+            advanced_market_data=advanced_market_data,
         )
 
     # =====================================================
@@ -798,7 +1578,13 @@ Return JSON only:
         "LONG",
         "SHORT",
     ):
-        direction = "LONG"
+
+        # If AI direction is invalid,
+        # use deterministic fallback direction.
+        direction = _fallback_direction(
+            indicators,
+            advanced_market_data,
+        )
 
     setup["direction"] = direction
 
@@ -820,18 +1606,8 @@ Return JSON only:
 
     if entry_low is None:
 
-        entry_low = _safe_float(
-            indicators.get(
-                "current_price"
-            )
-        )
-
-    if entry_low is None:
-
-        entry_low = _safe_float(
-            indicators.get(
-                "price"
-            )
+        entry_low = _get_current_price(
+            indicators
         )
 
     if entry_high is None:
@@ -853,7 +1629,42 @@ Return JSON only:
     setup["entry_high"] = entry_high
 
     # =====================================================
-    # STOP LOSS / TAKE PROFIT (STRICT 1:2 RR SWING ENFORCER)
+    # MAJOR LEVELS
+    # =====================================================
+
+    ai_support = _safe_float(
+        setup.get(
+            "support"
+        )
+    )
+
+    ai_resistance = _safe_float(
+        setup.get(
+            "resistance"
+        )
+    )
+
+    if ai_support is None:
+
+        ai_support = _safe_float(
+            major_levels.get(
+                "support"
+            )
+        )
+
+    if ai_resistance is None:
+
+        ai_resistance = _safe_float(
+            major_levels.get(
+                "resistance"
+            )
+        )
+
+    setup["support"] = ai_support
+    setup["resistance"] = ai_resistance
+
+    # =====================================================
+    # STOP LOSS / TAKE PROFIT
     # =====================================================
 
     ai_stop = _safe_float(
@@ -862,60 +1673,93 @@ Return JSON only:
         )
     )
 
-    if entry_low and entry_low > 0:
-        # 1. Check if Stop Loss exists and is at least 3.5% away
-        if ai_stop is None or abs(entry_low - ai_stop) / entry_low < 0.035:
+    ai_target = _safe_float(
+        setup.get(
+            "take_profit"
+        )
+    )
+
+    if entry_low is not None and entry_low > 0:
+
+        # Use the AI stop only if it satisfies
+        # the minimum distance requirement.
+        valid_ai_stop = False
+
+        if ai_stop is not None:
+
+            distance = (
+                abs(entry_low - ai_stop)
+                / entry_low
+            )
+
+            if distance >= 0.035:
+                valid_ai_stop = True
+
+        if not valid_ai_stop:
+
             if direction == "LONG":
-                ai_stop = round(entry_low * 0.96, 8)       # 4.0% Stop Loss below
+
+                ai_stop = round(
+                    entry_low * 0.96,
+                    8,
+                )
+
             else:
-                ai_stop = round(entry_low * 1.04, 8)       # 4.0% Stop Loss above
 
-        # 2. Calculate actual Risk Distance (SL Gap)
-        sl_distance = abs(entry_low - ai_stop)
+                ai_stop = round(
+                    entry_low * 1.04,
+                    8,
+                )
 
-        # 3. Force Take Profit to be EXACTLY double the SL Distance (Strict 1:2 RR)
+        # -------------------------------------------------
+        # EXACT 1:2 RR
+        # -------------------------------------------------
+
+        sl_distance = abs(
+            entry_low - ai_stop
+        )
+
         if direction == "LONG":
-            ai_target = round(entry_low + (sl_distance * 2.0), 8)
+
+            ai_target = round(
+                entry_low
+                + (sl_distance * 2.0),
+                8,
+            )
+
         else:
-            ai_target = round(entry_low - (sl_distance * 2.0), 8)
+
+            ai_target = round(
+                entry_low
+                - (sl_distance * 2.0),
+                8,
+            )
+
+    else:
+
+        # AI did not provide a usable price.
+        # Rebuild the complete setup through fallback.
+        return _python_fallback_setup(
+            symbol=symbol,
+            indicators=indicators,
+            news=news,
+            market_context=market_context,
+            advanced_market_data=advanced_market_data,
+        )
 
     setup["stop_loss"] = ai_stop
     setup["take_profit"] = ai_target
 
-    # Keep this field for compatibility with
-    # existing backtest/state code.
+    # Keep compatibility with existing
+    # backtest/state code.
     setup["rr"] = 2
-
-    # =====================================================
-    # MAJOR LEVELS
-    # =====================================================
-
-    if setup.get(
-        "support"
-    ) is None:
-
-        setup["support"] = (
-            major_levels[
-                "support"
-            ]
-        )
-
-    if setup.get(
-        "resistance"
-    ) is None:
-
-        setup["resistance"] = (
-            major_levels[
-                "resistance"
-            ]
-        )
 
     # =====================================================
     # TITLE
     # =====================================================
 
-    # Ignore whatever title the model generated.
-    # Select one from the user's title library instead.
+    # Never trust AI-generated title.
+    # Always use the user's title library.
 
     setup["title"] = _select_title(
         direction,
@@ -956,6 +1800,11 @@ Return JSON only:
 
     setup["hashtags"] = []
 
+    print(
+        f"[setup_generator] "
+        f"Groq setup ready for ${coin}."
+    )
+
     return setup
 
 
@@ -963,18 +1812,19 @@ Return JSON only:
 # FORMAT FINAL BINANCE SQUARE POST
 # =========================================================
 
-def format_post_text(
-    setup,
-):
+def format_post_text(setup):
     """
     Convert setup JSON into final Binance Square format.
 
-    The final post contains exactly three $COIN mentions:
+    Exactly three $COIN mentions:
 
     1. Title
-    2. Technical-analysis/body section
+    2. Technical-analysis section
     3. Final LONG/SHORT line
     """
+
+    if not setup:
+        return ""
 
     symbol = setup.get(
         "symbol",
@@ -991,6 +1841,12 @@ def format_post_text(
             "LONG",
         )
     ).upper()
+
+    if direction not in (
+        "LONG",
+        "SHORT",
+    ):
+        direction = "LONG"
 
     # -----------------------------------------------------
     # PRICE VALUES
@@ -1142,7 +1998,7 @@ def format_post_text(
 
     lines = []
 
-    # 1. First $COIN mention
+    # 1st $COIN
     lines.append(
         title_line
     )
@@ -1176,7 +2032,7 @@ def format_post_text(
 
     lines.append("")
 
-    # 2. Second $COIN mention
+    # 2nd $COIN
     lines.append(
         technical_line
     )
@@ -1207,7 +2063,7 @@ def format_post_text(
 
     lines.append("")
 
-    # 3. Third $COIN mention
+    # 3rd $COIN
     lines.append(
         final_line
     )
@@ -1237,7 +2093,7 @@ def format_post_text(
     )
 
     # -----------------------------------------------------
-    # CLEAN EXTRA SPACES
+    # CLEAN SPACES
     # -----------------------------------------------------
 
     text = re.sub(
