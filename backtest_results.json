@@ -1,1 +1,25 @@
-
+{
+  "generated_at": "2026-09-21T15:47:59.280626+00:00",
+  "input_file": "backtest_setups.json",
+  "summary": {
+    "total": 1,
+    "TP_HIT": 0,
+    "SL_HIT": 0,
+    "NO_ENTRY": 0,
+    "AMBIGUOUS": 0,
+    "PENDING": 1,
+    "NO_DATA": 0
+  },
+  "results": [
+    {
+      "id": 1,
+      "symbol": "MINAUSDT",
+      "direction": "SHORT",
+      "created_at": "2026-09-21T15:45:50.408874+00:00",
+      "result": "PENDING",
+      "entry_time": "2026-09-21T15:46:00+00:00",
+      "entry_price": 0.12475,
+      "result_time": null
+    }
+  ]
+}
