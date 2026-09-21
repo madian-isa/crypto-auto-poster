@@ -288,6 +288,23 @@
       "technical_analysis": "Price (1.822) is above EMA9 (1.797) and EMA21 (1.763), supporting a bullish bias. SMA50 (1.663) lies well below, confirming higher‑time strength. MACD line (0.040) sits just under its signal (0.043) with a small negative histogram, suggesting a modest short‑term pull. Stochastic K (89.4) / D (83.0) is in overbought territory. The 1‑hour swing shows support at 1.756 and resistance at 1.83, matching the major levels.",
       "market_context": "BTC is bullish on both 4H and 1D timeframes, up about 6.9% in the last 24 h. Overall crypto market breadth is broadly positive, with roughly 87 % of assets showing green performance.",
       "result": "PENDING"
+    },
+    {
+      "id": 18,
+      "created_at": "2026-09-21T20:30:53.607109+00:00",
+      "symbol": "GENIUSUSDT",
+      "direction": "SHORT",
+      "title": "High Conviction Short Opportunity as $GENIUS Tests Supply Wall",
+      "entry_low": 0.347,
+      "entry_high": 0.3477,
+      "stop_loss": 0.3592,
+      "take_profit": 0.3226,
+      "support": 0.3408,
+      "resistance": 0.3477,
+      "news_line": "",
+      "technical_analysis": "Price (0.3466) sits below EMA9 (0.3547), EMA21 (0.3614) and SMA50 (0.3621), indicating bearish short‑term momentum. MACD is negative and under the signal line (‑0.0049 vs ‑0.0015) with a bearish histogram. Stochastic is deep in oversold territory (K 8.1, D 7.3). Order‑book shows a -10.8% imbalance, more sell pressure. The 1H/4H resistance cluster around 0.3477‑0.3489 and support near 0.3408 provide clear swing points.",
+      "market_context": "BTC remains in a bullish trend on both 4H and 1D frames, and the broader crypto market is broadly positive (88% green). This backdrop does not offset the bearish setup on GENIUSUSDT.",
+      "result": "PENDING"
     }
   ]
 }
