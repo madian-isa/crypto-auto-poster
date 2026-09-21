@@ -781,6 +781,23 @@
       "technical_analysis": "Price sits just above the 9‑EMA (0.198094) and 21‑EMA (0.193102), indicating short‑term buying pressure. The MACD histogram is marginally negative and Stochastic K is below D, suggesting some downside bias, while the order‑book shows a modest 4.2% bid‑side imbalance.",
       "market_context": "BTC is in a bullish trend on both 4‑hour and daily frames, and the broader market is broadly positive with 78.5% of assets advancing.",
       "result": "PENDING"
+    },
+    {
+      "id": 47,
+      "created_at": "2026-09-21T13:15:48.754442+00:00",
+      "symbol": "SAGAUSDT",
+      "direction": "LONG",
+      "title": "$SAGA Prepares for Parabolic Phase: Key Technical Trigger Met",
+      "entry_low": 0.03503,
+      "entry_high": 0.03512,
+      "stop_loss": 0.0335,
+      "take_profit": 0.03809,
+      "support": 0.03494,
+      "resistance": 0.03944,
+      "news_line": "",
+      "technical_analysis": "Price sits just above the 21‑period EMA and below the 9‑period EMA, while the MACD histogram remains negative, indicating short‑term bearish pressure. However, the Stochastic oscillator is deep in oversold territory (K ≈ 19, D ≈ 16) and the order book shows a 16% bid‑side imbalance, suggesting buying interest. The pair is holding within a tight 0.03503‑0.03527 range, with a clear swing low at 0.03494.",
+      "market_context": "The broader market remains strongly bullish, with BTC up over 5% on the day and 94.5% of assets in green, providing a supportive backdrop for risk‑on setups.",
+      "result": "PENDING"
     }
   ]
 }
