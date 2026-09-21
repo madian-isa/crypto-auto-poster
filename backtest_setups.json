@@ -101,6 +101,23 @@
       "technical_analysis": "Price sits above the EMA9 (0.0429), EMA21 (0.0395) and SMA50 (0.0347), indicating bullish momentum. MACD is positive with a rising histogram, and the stochastic is in the high 70s, confirming strength. The pair is trading near its 1H support (0.04437) with a clear upside bias toward the 1H resistance at 0.04538.",
       "market_context": "The broader market remains bullish, with Bitcoin up 5.8% on the day and overall market breadth showing 88.5% green assets.",
       "result": "PENDING"
+    },
+    {
+      "id": 7,
+      "created_at": "2026-09-21T17:42:39.916899+00:00",
+      "symbol": "HOMEUSDT",
+      "direction": "LONG",
+      "title": "On-Chain Metrics Confirm Strong Whale Accumulation on $HOME",
+      "entry_low": 0.00705,
+      "entry_high": 0.00712,
+      "stop_loss": 0.0068,
+      "take_profit": 0.00755,
+      "support": 0.00687,
+      "resistance": 0.00715,
+      "news_line": "",
+      "technical_analysis": "HOME is trading at $0.00712, comfortably above its EMA9 (0.007013), EMA21 (0.00684) and SMA50 (0.006585), indicating a short‑term uptrend. The MACD line sits 0.000176 above its signal at 0.00015, producing a modest positive histogram, while the Stochastic oscillator is in the high‑70s (K 79.8, D 84.4), suggesting continued momentum but approaching overbought territory. Order‑book data shows a 21 % ask‑side imbalance, adding a slight caution to the bullish bias.",
+      "market_context": "Bitcoin remains on a bullish trajectory on both 4‑hour and daily frames, and 87 % of the market is green, supporting risk‑on sentiment for altcoins like HOME.",
+      "result": "PENDING"
     }
   ]
 }
