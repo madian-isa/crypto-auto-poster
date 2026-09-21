@@ -1,12 +1,7 @@
 """
 backtest.py
 
-Stores generated trade setups for later performance testing.
-
-Step 2:
-- Save each generated setup
-- Do not calculate TP/SL result yet
-- Maximum stored setups = 50
+Stores generated trade setups for later performance testing without losing previous history.
 """
 
 import json
@@ -17,13 +12,6 @@ from datetime import datetime, timezone
 BACKTEST_FILE = os.environ.get(
     "BACKTEST_FILE",
     "backtest_setups.json",
-)
-
-BACKTEST_MAX_SETUPS = int(
-    os.environ.get(
-        "BACKTEST_MAX_SETUPS",
-        "50",
-    )
 )
 
 
@@ -97,15 +85,8 @@ def save_setup(
         [],
     )
 
-    if len(setups) >= BACKTEST_MAX_SETUPS:
-        print(
-            f"[backtest] collection complete "
-            f"({BACKTEST_MAX_SETUPS} setups)"
-        )
-        return False
-
     setup_record = {
-        "id": len(setups) + 1,
+        "id": (setups[-1]["id"] + 1) if setups else 1,
         "created_at": _now_utc(),
 
         "symbol": symbol,
@@ -175,9 +156,7 @@ def save_setup(
     )
 
     print(
-        f"[backtest] "
-        f"{len(setups)}/{BACKTEST_MAX_SETUPS} "
-        "setups collected."
+        f"[backtest] Total setups stored so far: {len(setups)}"
     )
 
     return True
