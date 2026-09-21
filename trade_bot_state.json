@@ -1,6 +1,6 @@
 {
   "date": "2026-09-21",
-  "count": 56,
+  "count": 57,
   "posted_symbols_today": [
     "ZRO",
     "BOME",
@@ -57,6 +57,7 @@
     "PHAUSDT",
     "MUBARAKUSDT",
     "HOMEUSDT",
-    "EDENUSDT"
+    "EDENUSDT",
+    "NEARUSDT"
   ]
 }
