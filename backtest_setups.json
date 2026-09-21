@@ -781,6 +781,23 @@
       "technical_analysis": "Price sits just above the 9‑EMA (0.198094) and 21‑EMA (0.193102), indicating short‑term buying pressure. The MACD histogram is marginally negative and Stochastic K is below D, suggesting some downside bias, while the order‑book shows a modest 4.2% bid‑side imbalance.",
       "market_context": "BTC is in a bullish trend on both 4‑hour and daily frames, and the broader market is broadly positive with 78.5% of assets advancing.",
       "result": "PENDING"
+    },
+    {
+      "id": 47,
+      "created_at": "2026-09-21T13:01:03.781525+00:00",
+      "symbol": "SUIUSDT",
+      "direction": "LONG",
+      "title": "$SUI Liquidation Squeeze: Bears Trapped Near Critical Resistance",
+      "entry_low": 1.0357,
+      "entry_high": 1.0365,
+      "stop_loss": 0.999,
+      "take_profit": 1.1091,
+      "support": 0.8711,
+      "resistance": 1.0438,
+      "news_line": "",
+      "technical_analysis": "Price sits above EMA9 (0.997) and EMA21 (0.954), confirming bullish momentum. MACD is positive with a rising histogram, and the Stochastic is in the over‑bought zone but still trending higher, supporting a continued up move. The pair is respecting a tight 1H range between 1.0357 and 1.0397.",
+      "market_context": "BTC remains bullish on higher timeframes and 94% of the market is green, providing broad upside bias for risk assets.",
+      "result": "PENDING"
     }
   ]
 }
