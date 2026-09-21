@@ -271,6 +271,23 @@
       "technical_analysis": "Price sits just above EMA9 (0.12465) and EMA21 (0.12217) while comfortably above SMA50, indicating an overall uptrend. MACD is near the zero line with a small negative histogram, suggesting momentum is still consolidating. Stochastic K/D around 44% points to a neutral stance, not yet overbought. The order book shows a ~9% bid‑side imbalance and a tight spread (0.125 / 0.1251), reinforcing short‑term buying pressure. The immediate 0.125/0.1252 range sits above the 1‑hour support (0.122) and well below the 4‑hour resistance (0.1366), offering a clean swing‑high setup.",
       "market_context": "BTC remains bullish on higher timeframes (4H and 1D) with price above its EMA20/50, and the broader crypto market is broadly positive (87.5% green). This supportive backdrop adds confidence to a long bias on ARKM.",
       "result": "PENDING"
+    },
+    {
+      "id": 17,
+      "created_at": "2026-09-21T20:15:50.380475+00:00",
+      "symbol": "RENDERUSDT",
+      "direction": "LONG",
+      "title": "$RENDER Higher Low Structure Confirmed: Long Entry Level Reached",
+      "entry_low": 1.756,
+      "entry_high": 1.812,
+      "stop_loss": 1.68576,
+      "take_profit": 1.89648,
+      "support": 1.756,
+      "resistance": 1.83,
+      "news_line": "",
+      "technical_analysis": "Price (1.822) is above EMA9 (1.797) and EMA21 (1.763), supporting a bullish bias. SMA50 (1.663) lies well below, confirming higher‑time strength. MACD line (0.040) sits just under its signal (0.043) with a small negative histogram, suggesting a modest short‑term pull. Stochastic K (89.4) / D (83.0) is in overbought territory. The 1‑hour swing shows support at 1.756 and resistance at 1.83, matching the major levels.",
+      "market_context": "BTC is bullish on both 4H and 1D timeframes, up about 6.9% in the last 24 h. Overall crypto market breadth is broadly positive, with roughly 87 % of assets showing green performance.",
+      "result": "PENDING"
     }
   ]
 }
