@@ -220,6 +220,23 @@
       "technical_analysis": "Price (0.1855) sits below EMA9 (0.1901), EMA21 (0.1940) and SMA50 (0.1984), indicating bearish momentum. MACD is negative and below its signal line, reinforcing the downtrend. Stochastic %K is around 11 and %D near 8, showing an oversold condition but not enough to offset the moving‑average bias. The orderbook shows a modest bid side imbalance (25%) with best bid at 0.1857 and best ask at 0.1859, suggesting limited upward pressure. The pair is approaching the short‑term resistance at 0.1858, making a short entry near that level logical.",
       "market_context": "BTC is in a bullish trend on both 4H and 1D frames, and the overall crypto market is broadly positive (87.4% green). While the broader market is strong, SOMIUSDT's own technicals point to a near‑term pullback.",
       "result": "PENDING"
+    },
+    {
+      "id": 14,
+      "created_at": "2026-09-21T19:30:50.226962+00:00",
+      "symbol": "ONDOUSDT",
+      "direction": "SHORT",
+      "title": "$ONDO Prepares for Breakdown: Downside Risk Escalates",
+      "entry_low": 0.4415,
+      "entry_high": 0.4425,
+      "stop_loss": 0.4575,
+      "take_profit": 0.4095,
+      "support": 0.4372,
+      "resistance": 0.4434,
+      "news_line": "",
+      "technical_analysis": "Price sits just below EMA9 (0.4429) while staying above EMA21 (0.4388), indicating short‑term bearish pressure. MACD histogram is negative and MACD line is under the signal line, confirming momentum to the downside. Stochastic K (42.6) is below D (45.1), also bearish. Order‑book shows a slight ask‑side imbalance (-0.28%). The pair is near the 1H/4H resistance zone (~0.4434), supporting a short bias.",
+      "market_context": "BTC remains in a bullish trend on higher timeframes, and the broader market is largely positive (87% green). However, ONDOUSDT shows localized bearish signals despite the overall market optimism.",
+      "result": "PENDING"
     }
   ]
 }
