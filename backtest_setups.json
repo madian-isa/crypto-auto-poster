@@ -781,23 +781,6 @@
       "technical_analysis": "Price sits just above the 9‑EMA (0.198094) and 21‑EMA (0.193102), indicating short‑term buying pressure. The MACD histogram is marginally negative and Stochastic K is below D, suggesting some downside bias, while the order‑book shows a modest 4.2% bid‑side imbalance.",
       "market_context": "BTC is in a bullish trend on both 4‑hour and daily frames, and the broader market is broadly positive with 78.5% of assets advancing.",
       "result": "PENDING"
-    },
-    {
-      "id": 47,
-      "created_at": "2026-09-21T08:30:54.332104+00:00",
-      "symbol": "NEARUSDT",
-      "direction": "LONG",
-      "title": "Bullish Divergence Flashed on $NEAR Daily Chart Structure",
-      "entry_low": 4.31,
-      "entry_high": 4.34,
-      "stop_loss": 4.1376,
-      "take_profit": 4.6548,
-      "support": 4.199,
-      "resistance": 4.358,
-      "news_line": "",
-      "technical_analysis": "NEAR is trading above its EMA9 (4.271) and EMA21 (4.127), indicating short‑term strength. The MACD histogram is near zero and the signal line is just above the MACD line, suggesting the down‑trend momentum is fading. Stochastic %K sits at 74.6 above %D (66.1), showing overbought conditions but still upward pressure. Order‑book data shows a modest sell‑side imbalance, yet price remains near the upper end of the 1‑hour range.",
-      "market_context": "BTC continues a bullish trend on higher‑time frames and the overall crypto market is broadly positive, supporting risk‑on sentiment for altcoins like NEAR.",
-      "result": "PENDING"
     }
   ]
 }
