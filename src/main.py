@@ -44,6 +44,7 @@ from src.state import (
     save_state,
     can_post_more_today,
     record_post,
+    is_symbol_posted_today,
 )
 
 from src.advanced_market_data import (
@@ -72,17 +73,11 @@ def run_once():
         )
         return
 
-    posted_today = set(
-        state.get(
-            "posted_symbols_today",
-            [],
-        )
-    )
-
+    # Filter candidates to ensure they haven't been posted today
     fresh = [
         item
         for item in shortlist
-        if item["symbol"] not in posted_today
+        if not is_symbol_posted_today(state, item.get("symbol"))
     ]
 
     if not fresh:
@@ -98,7 +93,7 @@ def run_once():
     for pick in pool:
         symbol = pick["symbol"]
 
-        if symbol in posted_today:
+        if is_symbol_posted_today(state, symbol):
             continue
 
         try:
@@ -156,6 +151,15 @@ def run_cycle():
         f"[cycle] starting — mode: {mode}"
     )
 
+    state = load_state()
+
+    if not can_post_more_today(state):
+        print(
+            f"[cycle] daily cap reached "
+            f"({cfg.MAX_POSTS_PER_DAY}) — skipping cycle."
+        )
+        return
+
     shortlist = get_screener_shortlist()
 
     if not shortlist:
@@ -164,19 +168,40 @@ def run_cycle():
         )
         return
 
+    # Exclude already posted coins
+    fresh_shortlist = [
+        item for item in shortlist
+        if not is_symbol_posted_today(state, item.get("symbol"))
+    ]
+
+    if not fresh_shortlist:
+        print("[cycle] no fresh candidates available for today.")
+        return
+
     picks = _pick_diverse(
-        shortlist,
+        fresh_shortlist,
         cfg.POSTS_PER_CYCLE,
     )
 
     for i, pick in enumerate(picks):
         symbol = pick["symbol"]
 
+        # Reload state to verify inside cycle
+        state = load_state()
+        if is_symbol_posted_today(state, symbol):
+            print(f"[cycle] {symbol} already posted today — skipping.")
+            continue
+
         try:
-            _build_and_publish(
+            posted = _build_and_publish(
                 symbol,
                 pick,
             )
+
+            if posted:
+                state = record_post(state, symbol)
+                save_state(state)
+                print(f"[cycle] {symbol} recorded as posted today.")
 
         except Exception as err:
             print(
