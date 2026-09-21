@@ -1,4 +1,4 @@
-name: Backtest 30 Setups
+name: Backtest Setups
 
 on:
   workflow_dispatch:
