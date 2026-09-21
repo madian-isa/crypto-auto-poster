@@ -169,6 +169,23 @@
       "technical_analysis": "Price sits just below EMA9 (1.0056) while staying above EMA21 (0.9756), indicating short‑term downward pressure. MACD histogram is negative and stochastic K (58.7) is slightly under D (59.5), both hinting at bearish momentum. Order‑book shows a strong ask side imbalance (-53%). Local resistance at 1.0055 and major 1H/4H resistance at 1.0566 cap upside, while support sits at 0.9994. The confluence supports a short bias.",
       "market_context": "BTC remains bullish on higher timeframes and the broader market is broadly positive (86.9% green). This favorable backdrop adds confidence to the short setup on SUIUSDT.",
       "result": "PENDING"
+    },
+    {
+      "id": 11,
+      "created_at": "2026-09-21T18:45:48.076525+00:00",
+      "symbol": "DOLOUSDT",
+      "direction": "LONG",
+      "title": "$DOLO Volume Expansion Signals High Conviction Upward Move",
+      "entry_low": 0.02647,
+      "entry_high": 0.02776,
+      "stop_loss": 0.0254112,
+      "take_profit": 0.0285876,
+      "support": 0.02647,
+      "resistance": 0.02922,
+      "news_line": "",
+      "technical_analysis": "$DOLO technical structure shows price is above the 21 EMA.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
