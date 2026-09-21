@@ -42,29 +42,18 @@ jobs:
 
         run: python -m src.main
 
-      - name: Commit updated bot state and backtest data
+      - name: Commit and Push updated state
         run: |
           git config user.name "trade-setup-bot"
           git config user.email "actions@github.com"
 
-          git add trade_bot_state.json
-          git add backtest_setups.json
+          git add trade_bot_state.json backtest_setups.json
 
           if git diff --staged --quiet; then
-            echo "No state/backtest changes to commit."
+            echo "No state or backtest changes to commit."
             exit 0
           fi
 
-          git commit -m "chore: update trade bot state and backtest data [skip ci]"
-
-          git fetch origin main
-
-          git checkout origin/main -- trade_bot_state.json
-          git checkout origin/main -- backtest_setups.json
-
-          git add trade_bot_state.json
-          git add backtest_setups.json
-
-          git commit -m "chore: sync bot state with main [skip ci]" || true
-
+          git commit -m "chore: sync bot state with main [skip ci]"
+          git pull --rebase origin main
           git push origin HEAD:main
