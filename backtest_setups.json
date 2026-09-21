@@ -781,23 +781,6 @@
       "technical_analysis": "Price sits just above the 9‑EMA (0.198094) and 21‑EMA (0.193102), indicating short‑term buying pressure. The MACD histogram is marginally negative and Stochastic K is below D, suggesting some downside bias, while the order‑book shows a modest 4.2% bid‑side imbalance.",
       "market_context": "BTC is in a bullish trend on both 4‑hour and daily frames, and the broader market is broadly positive with 78.5% of assets advancing.",
       "result": "PENDING"
-    },
-    {
-      "id": 47,
-      "created_at": "2026-09-21T06:30:54.661955+00:00",
-      "symbol": "POLUSDT",
-      "direction": "LONG",
-      "title": "Technical Signals Turn Positive as Market Momentum Builds",
-      "entry_low": 0.10733,
-      "entry_high": 0.10736,
-      "stop_loss": 0.1030368,
-      "take_profit": 0.1159164,
-      "support": 0.10574,
-      "resistance": 0.1079,
-      "news_line": "",
-      "technical_analysis": "Price is hugging the immediate support band (0.10733‑0.10736) while EMA9 (0.107527) sits above EMA21 (0.106797), indicating short‑term bullish bias. MACD histogram is marginally positive and the SMA50 remains well below price, adding to the upside view. Order‑book shows a slight ask‑side imbalance, but the tight spread suggests limited immediate pressure.",
-      "market_context": "BTC continues a bullish trend on higher‑time frames, and the broader crypto market is broadly positive, supporting risk‑on sentiment for altcoins like POLU.",
-      "result": "PENDING"
     }
   ]
 }
