@@ -781,23 +781,6 @@
       "technical_analysis": "Price sits just above the 9‑EMA (0.198094) and 21‑EMA (0.193102), indicating short‑term buying pressure. The MACD histogram is marginally negative and Stochastic K is below D, suggesting some downside bias, while the order‑book shows a modest 4.2% bid‑side imbalance.",
       "market_context": "BTC is in a bullish trend on both 4‑hour and daily frames, and the broader market is broadly positive with 78.5% of assets advancing.",
       "result": "PENDING"
-    },
-    {
-      "id": 47,
-      "created_at": "2026-09-21T12:15:55.831179+00:00",
-      "symbol": "AVNTUSDT",
-      "direction": "LONG",
-      "title": "Strong Accumulation Detected: $AVNT Prepares for Next Wave Up",
-      "entry_low": 0.1176,
-      "entry_high": 0.1182,
-      "stop_loss": 0.1126,
-      "take_profit": 0.1276,
-      "support": 0.1126,
-      "resistance": 0.1195,
-      "news_line": "",
-      "technical_analysis": "AVNT is trading at 0.1182, comfortably above its EMA9 (0.1162) and EMA21 (0.1135), indicating short‑term bullish momentum. The MACD histogram stays positive (+0.0006) and the stochastic oscillator is in the high‑80s, supporting an upward bias. Immediate resistance clusters around 0.1184‑0.1195, while strong support sits near 0.1177‑0.1126.",
-      "market_context": "BTC remains bullish on 4‑hour and daily charts, and 94.9 % of the market is green, providing broader upside pressure.",
-      "result": "PENDING"
     }
   ]
 }
