@@ -407,6 +407,23 @@
       "technical_analysis": "PEPE is trading at the EMA9/EMA21 cluster (5.0 µ) and above the SMA50 (4 µ), indicating short‑term alignment with recent price action. Stochastic is deep in overbought territory (K 81.4, D 70.3) while MACD shows a flat histogram, suggesting weakening momentum. The orderbook shows a modest ask‑side imbalance (-3.59%). With price pinned below the 1H/4H resistance at 5.15 µ, a short bias is supported.",
       "market_context": "The broader market remains broadly positive (87% green) and BTC is in a bullish trend on both 4H and 1D frames, providing overall upside bias but not directly influencing PEPE's short setup.",
       "result": "PENDING"
+    },
+    {
+      "id": 25,
+      "created_at": "2026-09-22T00:45:50.032524+00:00",
+      "symbol": "JASMYUSDT",
+      "direction": "LONG",
+      "title": "Major Breakout Signals Emerge on $JASMY Higher Timeframes",
+      "entry_low": 0.00439,
+      "entry_high": 0.00445,
+      "stop_loss": 0.00423,
+      "take_profit": 0.00471,
+      "support": 0.00427,
+      "resistance": 0.00447,
+      "news_line": "",
+      "technical_analysis": "Price sits above EMA9 (0.004369), EMA21 (0.004305) and SMA50 (0.004164), indicating bullish momentum. MACD is positive (6.8e-05 vs signal 6.2e-05) with a small bullish histogram. Stochastic is in the overbought zone (K 91.3, D 93.4) but the overall trend remains upward. Order‑book shows a bid‑ask imbalance of +11.6% and a tighter spread, supporting the bias. Long accounts outnumber shorts (ratio 1.21) and funding is slightly positive, suggesting longs are paying shorts.",
+      "market_context": "BTC is in a bullish 4H and 1D trend, up around 5.6% in 24 h, and the broader market is broadly positive (≈89% green). This supportive environment reinforces the bullish outlook for JASMYUSDT.",
+      "result": "PENDING"
     }
   ]
 }
