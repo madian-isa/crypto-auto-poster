@@ -1690,6 +1690,23 @@
       "technical_analysis": "Price is above EMA200 (0.3376) and sits comfortably over EMA50 (0.3466), EMA20 (0.3520) and EMA9 (0.3551). EMA9 is higher than EMA21, confirming a bullish short‑term trend. MACD is positive (0.0034) with the histogram above zero (0.0007), reinforcing upward momentum. OBV is rising and the order‑book shows a 14.7 % bid‑side imbalance, indicating buying pressure. RSI at 65.1 and stochastic K/D in the low‑70s point to a near‑overbought condition, while price has just breached the upper Bollinger band (0.3595), suggesting a possible short‑term correction risk.",
       "market_context": "Bitcoin is down 0.59 % over the past 24 hours, but the overall crypto market remains broadly positive, with roughly 74 % of assets showing gains.",
       "result": "PENDING"
+    },
+    {
+      "id": 100,
+      "created_at": "2026-09-22T20:30:53.410670+00:00",
+      "symbol": "ETHUSDT",
+      "direction": "LONG",
+      "title": "Bullish Momentum Accelerates as $ETH Liquidity Sweep Completes",
+      "entry_low": 2725.0,
+      "entry_high": 2730.0,
+      "stop_loss": 2616.0,
+      "take_profit": 2943.0,
+      "support": 2721.57,
+      "resistance": 2764.0,
+      "news_line": "",
+      "technical_analysis": "The EMA stack is bullish – EMA9 (2750.77) sits above EMA21 (2745.68) and price (2756.36) remains well above EMA200 (2656.14). EMA20 also stays above EMA200, confirming the upward bias. ADX at 29 shows a solid trend, while OBV is rising. Counter‑signals include a negative MACD histogram, stochastic K/D in the high‑80s (overbought), and a strong ask‑side order‑book imbalance (-41%). Bollinger bands place price near the upper band, and the 1‑hour range is tight (support 2721.57, resistance 2764). The confluence suggests a bounce from the 1‑hour support zone with a long bias.",
+      "market_context": "BTC is down 0.9% over 24 h, but the broader market is broadly positive (72.6% green). ETH’s setup is evaluated independently, using BTC only as background.",
+      "result": "PENDING"
     }
   ]
 }
