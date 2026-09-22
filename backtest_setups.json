@@ -1121,6 +1121,23 @@
       "technical_analysis": "Price sits just below EMA9 (0.003182) and well under EMA21 (0.003245) and SMA50 (0.003414), indicating short‑term downside pressure. However, MACD shows a bullish crossover (MACD -7.3e-05 above signal -7.6e-05) with a small positive histogram, and Stochastic %K (33.78) is above %D (25.49), suggesting upward momentum. The 1H/4H swing structure places the next major support at 0.003154 and resistance at 0.003244. Order‑book imbalance is slightly negative (-7.22%), hinting at modest sell pressure, but the tight spread and proximity to the identified support make a long bias reasonable.",
       "market_context": "BTC remains in a bullish trend on both 4H and 1D timeframes, supporting overall market optimism. The broader crypto market shows a mixed breadth with 55.7% of assets green, providing a neutral to slightly positive backdrop for CELR.",
       "result": "PENDING"
+    },
+    {
+      "id": 67,
+      "created_at": "2026-09-22T13:15:50.136479+00:00",
+      "symbol": "ADAUSDT",
+      "direction": "LONG",
+      "title": "Smart Money Flow Increases into $ADA Ahead of Catalysts",
+      "entry_low": 0.2497,
+      "entry_high": 0.2505,
+      "stop_loss": 0.2409,
+      "take_profit": 0.2673,
+      "support": 0.2437,
+      "resistance": 0.2527,
+      "news_line": "",
+      "technical_analysis": "Price sits above EMA9 (0.2477) and EMA21 (0.2455) with the short‑term EMAs in bullish order, while SMA50 remains lower, indicating an uptrend on the 1H/4H charts. Stochastic is in the overbought zone (K 84.9, D 69.8) but still bullish as K > D. MACD histogram is slightly negative, suggesting a modest pull‑back pressure. The pair is trading near the 1H resistance 0.2527 and above the immediate support at 0.2496, offering a clean entry window between 0.2497‑0.2505. Order‑book imbalance shows more ask volume, but the EMA alignment and bullish BTC backdrop support a long bias.",
+      "market_context": "BTC remains in a bullish trend on both 4H and 1D timeframes, with the broader market showing a 61.3% green breadth. This overall positive sentiment adds ancillary support to the ADA long setup.",
+      "result": "PENDING"
     }
   ]
 }
