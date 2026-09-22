@@ -1512,6 +1512,31 @@
       "technical_analysis": "$SXT technical structure shows price is above the 21 EMA.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 90,
+      "created_at": "2026-09-22T18:25:20.455024+00:00",
+      "symbol": "FETUSDT",
+      "direction": "LONG",
+      "title": "$FET Buyers Gain Control — But Resistance Still Matters",
+      "entry_low": null,
+      "entry_high": null,
+      "stop_loss": 0.196812,
+      "take_profit": 0.218227,
+      "support": null,
+      "resistance": null,
+      "news_line": null,
+      "technical_analysis": "Technical and derivatives data are mixed.",
+      "market_context": {
+        "btc_change_24h": 0.607,
+        "btc_direction": "Bullish",
+        "market_green_pct": 79.1,
+        "market_red_pct": 20.9,
+        "market_breadth": "Broadly Positive",
+        "btc_open_interest": null,
+        "btc_funding_rate": null
+      },
+      "result": "PENDING"
     }
   ]
 }
