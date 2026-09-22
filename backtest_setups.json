@@ -526,6 +526,23 @@
       "technical_analysis": "Price sits below EMA9 (2.525) and EMA21 (2.574), with SMA50 even higher, indicating bearish bias. MACD is negative and its histogram is shrinking, while Stochastic %K (21.38) is near oversold yet below %D (26.26). Order‑book shows a slight ask‑side imbalance (-0.68%). The 1H/4H structure places price under the 1H resistance at 2.548 and above the 1H support at 2.48, forming a short‑side swing high.",
       "market_context": "BTC remains in a bullish trend on both 4H and 1D timeframes, and the broader market is broadly positive (88.5% green). This bullish backdrop does not offset the bearish technical setup for PENDLE.",
       "result": "PENDING"
+    },
+    {
+      "id": 32,
+      "created_at": "2026-09-22T02:30:55.908911+00:00",
+      "symbol": "TAOUSDT",
+      "direction": "LONG",
+      "title": "$TAO Breakout Confirmation: Bulls Target Next Supply Zone",
+      "entry_low": 313.5,
+      "entry_high": 318.0,
+      "stop_loss": 300.96,
+      "take_profit": 338.58,
+      "support": 281.0,
+      "resistance": 324.5,
+      "news_line": "",
+      "technical_analysis": "Price (323.2) sits above EMA9 (310.0), EMA21 (296.8) and SMA50 (273.2), indicating bullish momentum. MACD is positive (13.2 vs signal 10.8) with a rising histogram, reinforcing the uptrend. Stochastic is in the overbought zone (K 97.2, D 86.8) but still points to strong buying pressure. The 1‑hour swing shows support at 281.0 and resistance at 324.5, with a nearer intraday support around 313.3. Order‑book shows a larger ask side (‑29% imbalance) but the best bid/ask cluster around the current price, suggesting limited immediate downside.",
+      "market_context": "BTC is up 5.3% on the day in a bullish trend, and the broader market is 89.3% green, providing a favorable backdrop for altcoins like TAO.",
+      "result": "PENDING"
     }
   ]
 }
