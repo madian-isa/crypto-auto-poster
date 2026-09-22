@@ -543,6 +543,23 @@
       "technical_analysis": "Price (323.2) sits above EMA9 (310.0), EMA21 (296.8) and SMA50 (273.2), indicating bullish momentum. MACD is positive (13.2 vs signal 10.8) with a rising histogram, reinforcing the uptrend. Stochastic is in the overbought zone (K 97.2, D 86.8) but still points to strong buying pressure. The 1‑hour swing shows support at 281.0 and resistance at 324.5, with a nearer intraday support around 313.3. Order‑book shows a larger ask side (‑29% imbalance) but the best bid/ask cluster around the current price, suggesting limited immediate downside.",
       "market_context": "BTC is up 5.3% on the day in a bullish trend, and the broader market is 89.3% green, providing a favorable backdrop for altcoins like TAO.",
       "result": "PENDING"
+    },
+    {
+      "id": 33,
+      "created_at": "2026-09-22T02:45:51.272777+00:00",
+      "symbol": "SHIBUSDT",
+      "direction": "LONG",
+      "title": "$SHIB Breaks Out of Falling Wedge Pattern: Targets Set Higher",
+      "entry_low": 5.9e-06,
+      "entry_high": 5.99e-06,
+      "stop_loss": 5.66e-06,
+      "take_profit": 6.38e-06,
+      "support": 5.66e-06,
+      "resistance": 6.08e-06,
+      "news_line": "",
+      "technical_analysis": "Price is holding just above the 1H support of 5.66 µUSDT and below the 1H resistance of 6.08 µUSDT. EMA9, EMA21 and SMA50 all align with the current price, indicating a flat moving‑average environment. Stochastic %K is 68.75 and %D is 71.53, keeping the oscillator in the bullish zone. Order‑book shows a modest ask‑side bias with a -10.93% imbalance; best bid is 5.98 µUSDT and best ask 5.99 µUSDT.",
+      "market_context": "BTC is in a bullish trend on both 4H and 1D timeframes, up 5.55% in the last 24 h, and the broader market is broadly positive with 89.5% of assets green.",
+      "result": "PENDING"
     }
   ]
 }
