@@ -1053,6 +1053,23 @@
       "technical_analysis": "Price (0.04429) is above EMA9 (0.04333) and EMA21 (0.04162), confirming short‑term bullish bias. MACD line (0.001615) sits above its signal (0.001131) with a positive histogram, adding momentum. Stochastic K = 58, D = 75 shows no over‑bought condition. The 1H swing low at 0.04408 provides immediate support, while 0.04470 is the nearest resistance.",
       "market_context": "BTC is in a bullish trend on both 4H and 1D frames, trading around $85,932 with EMA20/50 aligned higher. Overall crypto market breadth is mixed (43.3% green, 56.7% red).",
       "result": "PENDING"
+    },
+    {
+      "id": 63,
+      "created_at": "2026-09-22T12:01:02.796221+00:00",
+      "symbol": "EIGENUSDT",
+      "direction": "SHORT",
+      "title": "Overbought Indicators Signal Impending Correction for $EIGEN",
+      "entry_low": 0.2378,
+      "entry_high": 0.2379,
+      "stop_loss": 0.2474,
+      "take_profit": 0.2186,
+      "support": 0.2367,
+      "resistance": 0.2379,
+      "news_line": "",
+      "technical_analysis": "Price sits below EMA9 (0.2380) and EMA21 (0.23896), and under the SMA50 (0.23767), indicating short‑term bearish pressure. MACD is negative with a bearish histogram, while the stochastic oscillator is in the low‑30s, confirming down‑trend momentum. Order‑book shows a -25% imbalance (more asks than bids) and a tight spread around 0.2372‑0.2373, adding sell‑side bias. The 1H/4H swing structure places resistance at 0.2379 and support at 0.2367, making a short entry near the top of the range logical.",
+      "market_context": "BTC remains in a bullish trend on both 4H and 1D timeframes, while the broader crypto market shows mixed breadth (48.2% green, 51.8% red). This suggests limited upside spill‑over for altcoins like EIGEN, supporting a short bias.",
+      "result": "PENDING"
     }
   ]
 }
