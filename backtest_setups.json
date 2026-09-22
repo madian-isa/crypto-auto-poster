@@ -1376,6 +1376,23 @@
       "technical_analysis": "Price sits just below the 9‑EMA (1.5527) while comfortably above the 21‑EMA (1.5342) and the 50‑SMA (1.4844), indicating an overall upward bias. MACD is positive (0.0213 vs signal 0.0208) with a small bullish histogram. Stochastic shows K at 57.6 below D at 68.1, suggesting momentum is easing but still in the upper‑mid range. Order‑book imbalance (+20% bids) and a tight spread support short‑term buying pressure. The nearest resistance is 1.5545 and the next major support sits at 1.5035.",
       "market_context": "BTC remains in a bullish trend on both 4‑hour and daily frames, with price above its 20‑EMA and 50‑EMA. Overall market breadth is slightly positive (57.3% green). The broader environment supports a cautious long bias on XRP.",
       "result": "PENDING"
+    },
+    {
+      "id": 82,
+      "created_at": "2026-09-22T16:45:51.885369+00:00",
+      "symbol": "WLDUSDT",
+      "direction": "LONG",
+      "title": "Critical Resistance Test: $WLD Preparing to Surge Higher",
+      "entry_low": 0.4504,
+      "entry_high": 0.4508,
+      "stop_loss": 0.4345,
+      "take_profit": 0.4822,
+      "support": 0.4467,
+      "resistance": 0.4541,
+      "news_line": "",
+      "technical_analysis": "Price is holding just above the 1‑hour support (0.4504) while the 9‑ and 21‑period EMAs sit slightly above at ~0.4528, indicating short‑term bearish pressure. The 50‑period SMA remains below price (~0.4473), providing a longer‑term bullish bias. MACD shows the line under the signal and a negative histogram, suggesting weakening momentum, but the stochastic oscillator is rising (K 42.5, D 38.8), hinting at a possible upward turn. Order‑book data shows an 11% bid‑side imbalance, adding buying pressure at the current level.",
+      "market_context": "The broader market is broadly positive, with Bitcoin in a bullish trend on both 4‑hour and daily frames and a 24‑hour rise of ~0.5%. This supportive backdrop reinforces a cautious long bias for WLDUSDT.",
+      "result": "PENDING"
     }
   ]
 }
