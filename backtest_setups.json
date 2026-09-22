@@ -1673,6 +1673,23 @@
       "technical_analysis": "The pair trades just below the 1‑hour resistance (0.0124) with EMA9 (0.011899) still above EMA21 (0.011612) and EMA20 above EMA200, indicating a bullish EMA hierarchy. MACD is positive (0.000271 vs signal 0.000194) and the histogram is expanding, supporting momentum. ADX is strong at 43.44, confirming a firm trend. However, RSI is at 74.7 and Stochastic K/D are above 80, signalling overbought conditions. The order‑book shows a -26% imbalance (more asks than bids), adding short‑side pressure.",
       "market_context": "BTC is slightly bearish on the 24h chart (‑0.511%) while the broader crypto market remains broadly positive with 75% of assets in green. This mixed backdrop adds weight to a short pull‑back on GPSUSDT despite the overall bullish EMA setup.",
       "result": "PENDING"
+    },
+    {
+      "id": 99,
+      "created_at": "2026-09-22T20:15:55.838470+00:00",
+      "symbol": "KAITOUSDT",
+      "direction": "LONG",
+      "title": "$KAITO Volume Expansion Signals High Conviction Upward Move",
+      "entry_low": 0.3604,
+      "entry_high": 0.3605,
+      "stop_loss": 0.345984,
+      "take_profit": 0.389232,
+      "support": 0.3433,
+      "resistance": 0.3676,
+      "news_line": "",
+      "technical_analysis": "Price is above EMA200 (0.3376) and sits comfortably over EMA50 (0.3466), EMA20 (0.3520) and EMA9 (0.3551). EMA9 is higher than EMA21, confirming a bullish short‑term trend. MACD is positive (0.0034) with the histogram above zero (0.0007), reinforcing upward momentum. OBV is rising and the order‑book shows a 14.7 % bid‑side imbalance, indicating buying pressure. RSI at 65.1 and stochastic K/D in the low‑70s point to a near‑overbought condition, while price has just breached the upper Bollinger band (0.3595), suggesting a possible short‑term correction risk.",
+      "market_context": "Bitcoin is down 0.59 % over the past 24 hours, but the overall crypto market remains broadly positive, with roughly 74 % of assets showing gains.",
+      "result": "PENDING"
     }
   ]
 }
