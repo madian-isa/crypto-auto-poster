@@ -3,961 +3,801 @@ setup_generator.py
 
 Generates concise Binance Square crypto market-analysis posts.
 
-Data sources:
+Features:
+- Groq AI generation
+- Automatic Python fallback when Groq fails
 - Technical indicators
-- Binance advanced market data
-- CoinGlass market data
+- 1H and 4H swing support/resistance
 - BTC market context
-- Relevant news
-
-Design:
-- Professional crypto-analysis style
-- No direct investment language
-- No guaranteed-profit claims
-- No fabricated data/news
-- LONG/SHORT setup formatting preserved
-- Exactly 1:2 risk/reward
-- Minimum 3.5% stop-loss distance
-- CoinGlass is optional
-- CoinGlass failure never stops setup generation
+- Advanced market data when available
+- Relevant supplied news
+- 25 LONG title templates
+- 25 SHORT title templates
+- Deterministic title rotation
+- No emojis
+- Exactly 3 $COIN mentions in the final post
+- Strict 1:2 RR
+- Minimum 3.5% SL distance
+- ATR is NOT used for fallback calculations
+- Does not place trades
 """
 
 import json
-import os
 import re
-import time
+from datetime import datetime, timezone
 
-import requests
+from groq import Groq
 
-
-# ============================================================
-# CONFIG
-# ============================================================
-
-try:
-    from src import bot_config as cfg
-except Exception:
-    cfg = None
+from src import bot_config as cfg
 
 
-GROQ_API_KEY = (
-    getattr(
-        cfg,
-        "GROQ_API_KEY",
-        "",
-    )
-    if cfg
-    else os.environ.get(
-        "GROQ_API_KEY",
-        "",
-    )
-)
-
-GROQ_MODEL = (
-    getattr(
-        cfg,
-        "GROQ_MODEL",
-        "openai/gpt-oss-120b",
-    )
-    if cfg
-    else os.environ.get(
-        "GROQ_MODEL",
-        "openai/gpt-oss-120b",
-    )
-)
-
-
-GROQ_URL = (
-    "https://api.groq.com/openai/v1/chat/completions"
-)
-
-
-# ============================================================
+# =========================================================
 # TITLE LIBRARY
-# ============================================================
+# =========================================================
 
 LONG_TITLES = [
-    "$COIN Momentum Is Building — What the Market Structure Shows",
-    "$COIN Buyers Are Stepping In — Key Levels to Watch",
-    "$COIN Is Holding Strong — The Next Market Test Matters",
-    "$COIN Market Structure Turns Constructive — Key Levels Ahead",
-    "$COIN Demand Is Picking Up — Here’s What to Watch",
-    "$COIN Reclaims Key Ground — Market Structure in Focus",
-    "$COIN Pushes Higher — Volume and Structure Tell the Story",
-    "$COIN Strength Returns — The Important Levels Are Clear",
-    "$COIN Buyers Defend Support — Momentum Enters Focus",
-    "$COIN Builds a Stronger Structure — What Comes Next?",
-    "$COIN Shows Relative Strength — Key Technical Levels",
-    "$COIN Momentum Improves — The Market Is Testing Resistance",
-    "$COIN Holds Its Structure — Buyers Face the Next Barrier",
-    "$COIN Recovery Gains Attention — Volume Becomes Important",
-    "$COIN Moves Back Into Focus — Structure vs Resistance",
-    "$COIN Demand Strengthens — Watching the Next Break",
-    "$COIN Technical Structure Improves — Levels That Matter",
-    "$COIN Attempts a Recovery — Market Data Under the Lens",
-    "$COIN Buyers Gain Control — But Resistance Still Matters",
-    "$COIN Setup Develops — Momentum Meets Key Resistance",
-    "$COIN Strength Builds — OI, Volume and Price in Focus",
-    "$COIN Market Momentum Improves — What the Data Shows",
-    "$COIN Holds Buyers’ Zone — The Next Move Depends on Resistance",
-    "$COIN Structure Is Improving — Here Are the Levels to Watch",
-    "$COIN Starts Showing Strength — Market Data Gives Context",
+    "Technical Signals Turn Positive as Market Momentum Builds",
+    "Bullish Momentum Is Building: Can $XXX Continue Its Breakout?",
+    "$XXX Buying Pressure Rises as Bulls Test Key Resistance",
+    "Strong Accumulation Detected: $XXX Prepares for Next Wave Up",
+    "Major Breakout Signals Emerge on $XXX Higher Timeframes",
+    "Key Support Holds Firm: $XXX Bullish Continuation Setup Active",
+    "$XXX Liquidation Squeeze: Bears Trapped Near Critical Resistance",
+    "Trend Reversal Confirmed for $XXX as Volume Spikes Upward",
+    "$XXX Holds Moving Average Support: High Probability Long Setup",
+    "Bullish Divergence Flashed on $XXX Daily Chart Structure",
+    "$XXX Breaks Out of Falling Wedge Pattern: Targets Set Higher",
+    "Buyers Defend Key Demand Zone: $XXX Ready for Extension",
+    "On-Chain Metrics Confirm Strong Whale Accumulation on $XXX",
+    "$XXX Higher Low Structure Confirmed: Long Entry Level Reached",
+    "Smart Money Flow Increases into $XXX Ahead of Catalysts",
+    "$XXX Reclaims Key Resistance Level: Flip to Support Complete",
+    "Bullish Momentum Accelerates as $XXX Liquidity Sweep Completes",
+    "$XXX Volume Expansion Signals High Conviction Upward Move",
+    "Golden Cross Formation Confirmed on $XXX 4-Hour Timeframe",
+    "$XXX Breakout Confirmation: Bulls Target Next Supply Zone",
+    "High R-Multiple Long Trade Setup Forming on $XXX",
+    "$XXX Outperformance Signal: Buying Momentum Beats Broader Market",
+    "Critical Resistance Test: $XXX Preparing to Surge Higher",
+    "Spot Inflows Surge for $XXX as Futures Open Interest Rises",
+    "$XXX Prepares for Parabolic Phase: Key Technical Trigger Met",
 ]
 
 
 SHORT_TITLES = [
-    "$COIN Momentum Weakens — Key Support Is Now in Focus",
-    "$COIN Sellers Step In — The Market Structure Matters",
-    "$COIN Faces Selling Pressure — Levels to Watch Next",
-    "$COIN Loses Momentum — Support Becomes the Main Test",
-    "$COIN Structure Turns Weaker — What the Market Data Shows",
-    "$COIN Rejection Gains Attention — Key Levels Ahead",
-    "$COIN Buyers Lose Control — Resistance Continues to Hold",
-    "$COIN Selling Pressure Builds — Volume and OI in Focus",
-    "$COIN Drops From Resistance — The Next Support Matters",
-    "$COIN Momentum Fades — Market Structure Under Pressure",
-    "$COIN Struggles at Resistance — Sellers Remain Active",
-    "$COIN Weakness Appears — Key Support Could Decide the Next Move",
-    "$COIN Faces a Technical Breakdown Risk — Levels to Watch",
-    "$COIN Market Structure Deteriorates — Data Under the Lens",
-    "$COIN Rejection Continues — Buyers Need to Defend Support",
-    "$COIN Loses Key Ground — Momentum Becomes the Main Question",
-    "$COIN Selling Activity Increases — Watch the Next Support",
-    "$COIN Attempts to Break Down — Market Structure in Focus",
-    "$COIN Weakens Below Resistance — What Comes Next?",
-    "$COIN Bears Gain Momentum — But Support Still Matters",
-    "$COIN Pressure Builds — OI, Volume and Price in Focus",
-    "$COIN Struggles to Recover — The Market Is Testing Support",
-    "$COIN Downside Momentum Develops — Key Levels Ahead",
-    "$COIN Sellers Gain Ground — Technical Data Turns Cautious",
-    "$COIN Faces Increasing Pressure — Structure vs Support",
+    "$XXX Resistance Test Fails: Bearish Momentum Building Fast",
+    "Technical Signals Turn Negative as $XXX Selling Pressure Rises",
+    "$XXX Rejection at Key Supply Zone: Short Setup Activated",
+    "Bearish Divergence Spotted on $XXX: Downside Targets Ahead",
+    "$XXX Breaks Below Critical Support: Further Drop Expected",
+    "Smart Money Distribution Visible on $XXX On-Chain Data",
+    "$XXX Fakeout Confirmed: Bulls Trapped at Local Highs",
+    "High Volume Selling Sweep Breaks $XXX Market Structure",
+    "$XXX Lower High Pattern Confirmed: Short Target in View",
+    "Moving Average Death Cross Signals Downward Trend for $XXX",
+    "$XXX Loses Key Demand Zone: Next Support Level Unprotected",
+    "Bearish Continuation Pattern Confirmed on $XXX Chart Structure",
+    "$XXX Derivative Data Shows Heavy Long Liquidations Incoming",
+    "Strong Rejection at Trendline Resistance: $XXX Short Entry",
+    "$XXX Volume Decreases on Rally: Weak Buyers Exposed",
+    "$XXX Prepares for Breakdown: Downside Risk Escalates",
+    "Bears Retake Control as $XXX Fails to Hold Moving Averages",
+    "$XXX Open Interest Drops Rapidly: Long Squeeze Underway",
+    "Major Support Breakdown Confirmed on $XXX Higher Timeframes",
+    "$XXX Distribution Phase Ends: Downside Target Zone Set",
+    "High Conviction Short Opportunity as $XXX Tests Supply Wall",
+    "$XXX Fails Resistance Retest: Bearish Extension Imminent",
+    "Overbought Indicators Signal Impending Correction for $XXX",
+    "$XXX Breaks Ascending Support Line: Bearish Momentum Surge",
+    "Panic Selling Risk Increases as $XXX Tests Critical Floor",
 ]
 
 
-# ============================================================
-# PROMPT
-# ============================================================
+# =========================================================
+# SYSTEM PROMPT
+# =========================================================
 
 SYSTEM_PROMPT = """
-You are a professional crypto market analyst writing a concise
-Binance Square market-analysis post.
+You are a professional crypto market analyst writing concise,
+natural Binance Square educational market-analysis posts.
 
-Your job is to analyze supplied market data only.
+The writing must feel human, natural and varied.
 
-IMPORTANT:
-- Never invent data.
-- Never invent news.
-- Never claim certainty.
-- Never promise profit.
-- Never tell readers to invest.
-- Never use guaranteed-profit language.
-- Do not use emojis.
-- Do not use hashtags.
-- Do not use NFA/DYOR filler.
-- Do not describe a setup as guaranteed, confirmed,
-  certain, imminent or high probability.
-- Treat CoinGlass data as market context/confirmation,
-  not as proof of future price direction.
-- If CoinGlass data conflicts with technical structure,
-  explicitly acknowledge the conflict.
-- Use 1H and 4H structure where supplied.
-- Prefer meaningful swing levels over tiny intraday noise.
-- Use supplied news only.
-- Keep the writing natural and human.
+IMPORTANT RULES:
+- Do not tell readers to invest.
+- Do not promise profit.
+- Do not fabricate news.
+- Do not fabricate market data.
+- Use ONLY the supplied data.
+- If information is missing, do not invent it.
+- Keep the technical analysis.
+- Keep relevant supplied news when available.
+- Keep useful BTC/broader-market context when available.
+- Do NOT generate hashtags.
+- Do NOT use emojis.
+- Do NOT use NFA or DYOR.
+- Do not use guaranteed-profit language.
+- Do not make the post sound repetitive or AI-generated.
 
-The setup is an analytical scenario, not an instruction
-to place a trade.
+TIMEFRAME RULE:
+- Identify swing high and swing low structures using 1H and 4H market structure.
+- Focus on key major swing levels rather than tiny micro-ranges.
+- Always aim for clean wide swing trade setups.
+- Do NOT output micro-scalp setups or extremely narrow SL/TP ranges.
 
-Return valid JSON only.
+TITLE:
+A title will be selected from the supplied title library.
+Do not invent a different title.
+
+NEWS:
+Only use news supplied in the input.
+If no relevant news is supplied, news_line must be empty.
+
+TECHNICAL ANALYSIS:
+Use the strongest available technical information.
+Mention EMA, SMA, MACD, RSI, Stochastic, volume,
+orderbook or advanced data only when supplied.
+
+MARKET CONTEXT:
+BTC and broader market information should be used only
+as context and only when supplied.
+
+Return JSON only.
 """
 
 
-# ============================================================
-# HELPERS
-# ============================================================
+# =========================================================
+# GROQ CLIENT
+# =========================================================
+
+def _get_client():
+    if not cfg.GROQ_API_KEY:
+        raise RuntimeError("GROQ_API_KEY is missing.")
+
+    return Groq(api_key=cfg.GROQ_API_KEY)
+
+
+# =========================================================
+# NUMBER HELPERS
+# =========================================================
 
 def _safe_float(value):
     try:
-        return float(value)
+        if value is None:
+            return None
+
+        if isinstance(value, bool):
+            return None
+
+        number = float(value)
+
+        if number != number:
+            return None
+
+        return number
+
     except Exception:
         return None
 
 
-def _clean_text(value):
+def _format_price(value):
+    number = _safe_float(value)
+
+    if number is None:
+        return "N/A"
+
+    if number >= 1000:
+        return f"{number:.2f}"
+
+    if number >= 100:
+        return f"{number:.3f}"
+
+    if number >= 1:
+        return f"{number:.4f}"
+
+    if number >= 0.01:
+        return f"{number:.5f}"
+
+    return (
+        f"{number:.8f}"
+        .rstrip("0")
+        .rstrip(".")
+    )
+
+
+def _clean_text(value, max_length=500):
     if value is None:
         return ""
 
-    text = str(
-        value
-    ).strip()
+    text = str(value)
 
     text = re.sub(
         r"\s+",
         " ",
         text,
-    )
+    ).strip()
 
-    return text
+    return text[:max_length]
 
 
-def _round_price(value):
-    value = _safe_float(
-        value
-    )
-
-    if value is None:
-        return None
-
-    if value >= 1000:
-        return round(
-            value,
-            2,
-        )
-
-    if value >= 1:
-        return round(
-            value,
-            4,
-        )
-
-    if value >= 0.01:
-        return round(
-            value,
-            6,
-        )
-
-    return round(
-        value,
-        8,
-    )
-
+# =========================================================
+# COIN HELPERS
+# =========================================================
 
 def _coin_name(symbol):
-    symbol = str(
-        symbol or ""
-    ).upper()
+    symbol = str(symbol or "").upper()
 
-    for suffix in (
-        "USDT",
-        "USDC",
-        "BUSD",
-        "FDUSD",
-    ):
+    if symbol.endswith("USDT"):
+        return symbol[:-4]
 
-        if symbol.endswith(
-            suffix
-        ):
+    if symbol.endswith("USDC"):
+        return symbol[:-4]
 
-            return symbol[
-                :-len(suffix)
-            ]
+    if symbol.endswith("BUSD"):
+        return symbol[:-4]
 
     return symbol
 
 
-# ============================================================
-# INDICATOR SUMMARY
-# ============================================================
+def _replace_coin_placeholder(title, coin):
+    return str(title).replace(
+        "$XXX",
+        f"${coin}",
+    )
 
-def _build_indicator_summary(
-    indicators,
-):
-    if not isinstance(
-        indicators,
-        dict,
-    ):
-        return {}
 
-    keys = [
-        "price",
-        "current_price",
+# =========================================================
+# TITLE ROTATION
+# =========================================================
 
-        "rsi",
+def _select_title(direction, coin):
 
-        "ema21",
-        "ema50",
-        "ema200",
+    if direction == "LONG":
+        titles = LONG_TITLES
+    else:
+        titles = SHORT_TITLES
 
-        "sma50",
+    today = datetime.now(
+        timezone.utc
+    ).strftime("%Y-%m-%d")
 
-        "ema_structure",
+    seed_text = (
+        f"{coin}-{today}-{direction}"
+    )
 
-        "macd",
-        "macd_signal",
-        "macd_histogram",
+    seed_value = sum(
+        ord(char)
+        for char in seed_text
+    )
 
-        "bollinger_upper",
-        "bollinger_middle",
-        "bollinger_lower",
+    index = (
+        seed_value % len(titles)
+    )
 
-        "stochastic_k",
-        "stochastic_d",
+    return _replace_coin_placeholder(
+        titles[index],
+        coin,
+    )
 
-        "adx",
 
-        "atr",
+# =========================================================
+# NEWS
+# =========================================================
 
-        "volume",
-        "volume_change",
+def _summarize_news(news):
 
-        "obv",
+    if not news:
+        return ""
 
-        "high_24h",
-        "low_24h",
+    if isinstance(news, str):
+        return _clean_text(
+            news,
+            600,
+        )
 
-        "support",
-        "resistance",
-    ]
+    if isinstance(news, dict):
 
-    summary = {}
+        title = news.get(
+            "title",
+            "",
+        )
 
-    for key in keys:
+        summary = news.get(
+            "summary",
+            "",
+        )
 
-        if key in indicators:
-
-            summary[key] = indicators.get(
-                key
+        if title and summary:
+            return _clean_text(
+                f"{title} — {summary}",
+                600,
             )
 
-    return summary
+        return _clean_text(
+            title or summary,
+            600,
+        )
+
+    if isinstance(news, list):
+
+        items = []
+
+        for item in news[:3]:
+
+            if isinstance(item, str):
+
+                items.append(
+                    _clean_text(
+                        item,
+                        250,
+                    )
+                )
+
+            elif isinstance(item, dict):
+
+                title = item.get(
+                    "title",
+                    "",
+                )
+
+                summary = item.get(
+                    "summary",
+                    "",
+                )
+
+                text = title
+
+                if summary:
+                    text += (
+                        f" — {summary}"
+                    )
+
+                if text:
+                    items.append(
+                        _clean_text(
+                            text,
+                            250,
+                        )
+                    )
+
+        return " | ".join(items)
+
+    return ""
 
 
-# ============================================================
-# BINANCE ADVANCED DATA
-# ============================================================
+# =========================================================
+# INDICATOR SUMMARY
+# =========================================================
 
-def _build_advanced_summary(
-    advanced,
-):
-    if not isinstance(
-        advanced,
-        dict,
-    ):
+def _build_indicator_summary(indicators):
+    """
+    Build a clean technical-indicator summary for the AI prompt.
+
+    Only values supplied by indicators.py are forwarded.
+    No market data is calculated or modified here.
+    """
+
+    if not indicators:
         return {}
 
     result = {}
 
-    # --------------------------------------------------------
-    # Source status
-    # --------------------------------------------------------
+    # ---------------------------------------------------------
+    # PRICE
+    # ---------------------------------------------------------
+    for key in [
+        "price",
+        "current_price",
+    ]:
+        if key in indicators and indicators[key] is not None:
+            result[key] = indicators[key]
 
-    if advanced.get(
-        "source_status"
-    ):
+    # ---------------------------------------------------------
+    # MOMENTUM
+    # ---------------------------------------------------------
+    for key in [
+        "rsi",
+        "rsi14",
+    ]:
+        if key in indicators and indicators[key] is not None:
+            result[key] = indicators[key]
 
-        result[
-            "source_status"
-        ] = advanced.get(
-            "source_status"
-        )
+    # ---------------------------------------------------------
+    # MOVING AVERAGES
+    # ---------------------------------------------------------
+    for key in [
+        "ema9",
+        "ema20",
+        "ema21",
+        "ema50",
+        "ema200",
+        "sma50",
+        "sma200",
+    ]:
+        if key in indicators and indicators[key] is not None:
+            result[key] = indicators[key]
 
-    # --------------------------------------------------------
-    # S/R
-    # --------------------------------------------------------
+    # ---------------------------------------------------------
+    # EMA STRUCTURE
+    # ---------------------------------------------------------
+    for key in [
+        "emaTrend",
+        "ema20_200_relation",
+        "ema20_200_cross",
+        "price_vs_ema200",
+    ]:
+        if key in indicators and indicators[key] is not None:
+            result[key] = indicators[key]
+
+    # ---------------------------------------------------------
+    # MACD
+    # ---------------------------------------------------------
+    for key in [
+        "macd",
+        "macd_signal",
+    ]:
+        if key in indicators and indicators[key] is not None:
+            result[key] = indicators[key]
+
+    # ---------------------------------------------------------
+    # BOLLINGER BANDS
+    # ---------------------------------------------------------
+    if "bollinger" in indicators and indicators["bollinger"] is not None:
+        result["bollinger"] = indicators["bollinger"]
+
+    for key in [
+        "bollinger_upper",
+        "bollinger_lower",
+    ]:
+        if key in indicators and indicators[key] is not None:
+            result[key] = indicators[key]
+
+    # ---------------------------------------------------------
+    # STOCHASTIC / ADX / ATR
+    # ---------------------------------------------------------
+    for key in [
+        "stochastic",
+        "adx",
+        "adx14",
+        "atr",
+        "atr14",
+    ]:
+        if key in indicators and indicators[key] is not None:
+            result[key] = indicators[key]
+
+    # ---------------------------------------------------------
+    # VOLUME / OBV
+    # ---------------------------------------------------------
+    for key in [
+        "volume",
+        "volume_change",
+        "obv",
+        "obvTrend",
+    ]:
+        if key in indicators and indicators[key] is not None:
+            result[key] = indicators[key]
+
+    # ---------------------------------------------------------
+    # RECENT PRICE RANGE
+    # ---------------------------------------------------------
+    for key in [
+        "high_24h",
+        "low_24h",
+        "high24Approx",
+        "low24Approx",
+    ]:
+        if key in indicators and indicators[key] is not None:
+            result[key] = indicators[key]
+
+    # ---------------------------------------------------------
+    # SUPPORT / RESISTANCE
+    # ---------------------------------------------------------
+    for key in [
+        "support",
+        "resistance",
+    ]:
+        if key in indicators and indicators[key] is not None:
+            result[key] = indicators[key]
+
+    return result
+
+
+# =========================================================
+# ADVANCED DATA SUMMARY
+# =========================================================
+
+def _build_advanced_summary(advanced):
+
+    if not advanced:
+        return {}
+
+    result = {}
 
     sr = advanced.get(
         "multi_timeframe_sr"
     )
 
-    if isinstance(
-        sr,
-        dict,
-    ):
+    if sr:
 
-        result[
-            "multi_timeframe_sr"
-        ] = sr
+        one_hour = sr.get("1h")
+        four_hour = sr.get("4h")
 
-    # --------------------------------------------------------
-    # BTC context
-    # --------------------------------------------------------
+        if one_hour:
+            result[
+                "1h_support_resistance"
+            ] = one_hour
+
+        if four_hour:
+            result[
+                "4h_support_resistance"
+            ] = four_hour
 
     btc = advanced.get(
         "btc_context"
     )
 
-    if isinstance(
-        btc,
-        dict,
-    ):
-
+    if btc:
         result[
             "btc_context"
         ] = btc
 
-    # --------------------------------------------------------
-    # Futures data
-    # --------------------------------------------------------
-
-    for key in (
-        "open_interest",
-        "oi_change_1h_pct",
-        "funding_rate",
-        "long_short_ratio",
-        "liquidations",
-        "orderbook",
-    ):
-
-        value = advanced.get(
-            key
-        )
-
-        if value is not None:
-
-            result[
-                key
-            ] = value
-
-    return result
-
-
-# ============================================================
-# COINGLASS SUMMARY
-# ============================================================
-
-def _build_coinglass_summary(
-    coinglass,
-):
-    """
-    Keep CoinGlass separate from Binance advanced data.
-
-    Only useful values are forwarded to the AI.
-    """
-
-    if not isinstance(
-        coinglass,
-        dict,
-    ):
-        return {}
-
-    result = {
-        "source": "CoinGlass",
-    }
-
-    status = coinglass.get(
-        "source_status"
-    )
-
-    if status:
-
-        result[
-            "source_status"
-        ] = status
-
-    # --------------------------------------------------------
-    # Open interest
-    # --------------------------------------------------------
-
-    oi = coinglass.get(
+    oi = advanced.get(
         "open_interest"
     )
 
-    if isinstance(
-        oi,
-        dict,
-    ):
-
+    if oi is not None:
         result[
             "open_interest"
         ] = oi
 
-    # --------------------------------------------------------
-    # Funding
-    # --------------------------------------------------------
+    oi_change = advanced.get(
+        "oi_change_1h_pct"
+    )
 
-    funding = coinglass.get(
+    if oi_change is not None:
+        result[
+            "oi_change_1h_pct"
+        ] = oi_change
+
+    funding = advanced.get(
         "funding_rate"
     )
 
-    if isinstance(
-        funding,
-        dict,
-    ):
-
+    if funding is not None:
         result[
             "funding_rate"
         ] = funding
 
-    # --------------------------------------------------------
-    # Long / short
-    # --------------------------------------------------------
-
-    ls = coinglass.get(
+    long_short = advanced.get(
         "long_short_ratio"
     )
 
-    if isinstance(
-        ls,
-        dict,
-    ):
-
+    if long_short:
         result[
             "long_short_ratio"
-        ] = ls
+        ] = long_short
 
-    # --------------------------------------------------------
-    # Liquidations
-    # --------------------------------------------------------
-
-    liquidations = coinglass.get(
+    liquidations = advanced.get(
         "liquidations"
     )
 
-    if isinstance(
-        liquidations,
-        dict,
-    ):
-
+    if liquidations:
         result[
             "liquidations"
         ] = liquidations
 
-    # --------------------------------------------------------
-    # Taker flow
-    # --------------------------------------------------------
-
-    taker = coinglass.get(
-        "taker_buy_sell"
+    orderbook = advanced.get(
+        "orderbook"
     )
 
-    if isinstance(
-        taker,
-        dict,
-    ):
-
+    if orderbook:
         result[
-            "taker_buy_sell"
-        ] = taker
-
-    # --------------------------------------------------------
-    # CVD
-    # --------------------------------------------------------
-
-    cvd = coinglass.get(
-        "cvd"
-    )
-
-    if isinstance(
-        cvd,
-        dict,
-    ):
-
-        result[
-            "cvd"
-        ] = cvd
+            "orderbook"
+        ] = orderbook
 
     return result
 
 
-# ============================================================
-# LEVEL SELECTION
-# ============================================================
+# =========================================================
+# MAJOR SUPPORT / RESISTANCE
+# =========================================================
 
 def _select_major_levels(
     indicators,
-    advanced,
+    advanced_market_data,
 ):
-    """
-    Prefer 4H/1H structural levels when available.
-    """
 
-    support = None
-    resistance = None
+    advanced_market_data = (
+        advanced_market_data or {}
+    )
 
-    # --------------------------------------------------------
-    # Advanced S/R
-    # --------------------------------------------------------
+    sr = advanced_market_data.get(
+        "multi_timeframe_sr",
+        {}
+    ) or {}
 
-    sr = {}
+    one_hour = sr.get(
+        "1h",
+        {}
+    ) or {}
 
-    if isinstance(
-        advanced,
-        dict,
-    ):
+    four_hour = sr.get(
+        "4h",
+        {}
+    ) or {}
 
-        sr = advanced.get(
-            "multi_timeframe_sr",
-            {},
+    # Prefer 4H for major swing structure.
+    support = (
+        four_hour.get("support")
+        if four_hour.get("support") is not None
+        else one_hour.get("support")
+    )
+
+    resistance = (
+        four_hour.get("resistance")
+        if four_hour.get("resistance") is not None
+        else one_hour.get("resistance")
+    )
+
+    if support is None and indicators:
+        support = indicators.get(
+            "support"
         )
 
-    if isinstance(
-        sr,
-        dict,
-    ):
-
-        # Prefer 4H if supplied by another version.
-        for timeframe in (
-            "4h",
-            "1h",
-        ):
-
-            levels = sr.get(
-                timeframe
-            )
-
-            if not isinstance(
-                levels,
-                dict,
-            ):
-                continue
-
-            if support is None:
-
-                support = _safe_float(
-                    levels.get(
-                        "support"
-                    )
-                )
-
-            if resistance is None:
-
-                resistance = _safe_float(
-                    levels.get(
-                        "resistance"
-                    )
-                )
-
-    # --------------------------------------------------------
-    # Indicator fallback
-    # --------------------------------------------------------
-
-    if support is None:
-
-        support = _safe_float(
-            indicators.get(
-                "support"
-            )
-        )
-
-    if resistance is None:
-
-        resistance = _safe_float(
-            indicators.get(
-                "resistance"
-            )
+    if resistance is None and indicators:
+        resistance = indicators.get(
+            "resistance"
         )
 
     return {
-        "support": _round_price(
-            support
-        ),
-        "resistance": _round_price(
-            resistance
-        ),
+        "support": support,
+        "resistance": resistance,
     }
 
 
-# ============================================================
-# COINGLASS SIGNAL CONTEXT
-# ============================================================
+# =========================================================
+# CURRENT PRICE
+# =========================================================
 
-def _coinglass_direction_context(
-    coinglass,
-):
-    """
-    Convert CoinGlass data into a cautious directional
-    context.
+def _get_current_price(indicators):
 
-    This is NOT used as a standalone signal.
+    if not indicators:
+        return None
 
-    Returns:
-        bullish
-        bearish
-        mixed
-        unavailable
-    """
-
-    if not isinstance(
-        coinglass,
-        dict,
-    ):
-        return "unavailable"
-
-    scores = []
-
-    # --------------------------------------------------------
-    # OI
-    # --------------------------------------------------------
-
-    oi = coinglass.get(
-        "open_interest"
-    )
-
-    if isinstance(
-        oi,
-        dict,
-    ):
-
-        oi_change = _safe_float(
-            oi.get(
-                "oi_change_1h_pct"
-            )
-        )
-
-        if oi_change is not None:
-
-            if oi_change > 1:
-                scores.append(
-                    1
-                )
-
-            elif oi_change < -1:
-                scores.append(
-                    -1
-                )
-
-    # --------------------------------------------------------
-    # Long / short
-    # --------------------------------------------------------
-
-    ls = coinglass.get(
-        "long_short_ratio"
-    )
-
-    if isinstance(
-        ls,
-        dict,
-    ):
-
-        ratio = _safe_float(
-            ls.get(
-                "ratio"
-            )
-        )
-
-        if ratio is not None:
-
-            if ratio > 1.05:
-                scores.append(
-                    1
-                )
-
-            elif ratio < 0.95:
-                scores.append(
-                    -1
-                )
-
-    # --------------------------------------------------------
-    # Taker flow
-    # --------------------------------------------------------
-
-    taker = coinglass.get(
-        "taker_buy_sell"
-    )
-
-    if isinstance(
-        taker,
-        dict,
-    ):
-
-        ratio = _safe_float(
-            taker.get(
-                "buy_sell_ratio"
-            )
-        )
-
-        if ratio is not None:
-
-            if ratio > 1.05:
-                scores.append(
-                    1
-                )
-
-            elif ratio < 0.95:
-                scores.append(
-                    -1
-                )
-
-    # --------------------------------------------------------
-    # CVD
-    # --------------------------------------------------------
-
-    cvd = coinglass.get(
-        "cvd"
-    )
-
-    if isinstance(
-        cvd,
-        dict,
+    for key in (
+        "current_price",
+        "price",
     ):
 
         value = _safe_float(
-            cvd.get(
-                "cum_vol_delta"
-            )
+            indicators.get(key)
         )
 
-        if value is not None:
+        if value is not None and value > 0:
+            return value
 
-            if value > 0:
-                scores.append(
-                    1
-                )
-
-            elif value < 0:
-                scores.append(
-                    -1
-                )
-
-    if not scores:
-
-        return "unavailable"
-
-    total = sum(
-        scores
-    )
-
-    if total >= 2:
-
-        return "bullish"
-
-    if total <= -2:
-
-        return "bearish"
-
-    return "mixed"
+    return None
 
 
-# ============================================================
-# FALLBACK DIRECTION
-# ============================================================
+# =========================================================
+# FALLBACK: DIRECTION
+# =========================================================
 
 def _fallback_direction(
     indicators,
-    advanced=None,
-    coinglass=None,
+    advanced_market_data,
 ):
     """
-    Deterministic fallback direction.
+    Deterministic technical direction.
 
-    CoinGlass acts as confirmation, not as the sole driver.
+    This does NOT use random direction.
+    Only supplied technical values are used.
     """
 
-    score = 0.0
+    indicators = indicators or {}
+    advanced = advanced_market_data or {}
 
-    # --------------------------------------------------------
+    score = 0
+
+    # -----------------------------------------------------
     # RSI
-    # --------------------------------------------------------
+    # -----------------------------------------------------
 
     rsi = _safe_float(
-        indicators.get(
-            "rsi"
-        )
+        indicators.get("rsi")
     )
 
     if rsi is not None:
 
         if rsi >= 55:
-            score += 1
+            score += 2
 
         elif rsi <= 45:
-            score -= 1
+            score -= 2
 
+    # -----------------------------------------------------
+    # EMA STRUCTURE
+    # -----------------------------------------------------
 
-    # --------------------------------------------------------
-    # EMA structure
-    # --------------------------------------------------------
-
-    price = _safe_float(
-        indicators.get(
-            "price",
-            indicators.get(
-                "current_price"
-            ),
-        )
+    price = _get_current_price(
+        indicators
     )
 
     ema21 = _safe_float(
-        indicators.get(
-            "ema21"
-        )
+        indicators.get("ema21")
     )
 
     ema50 = _safe_float(
-        indicators.get(
-            "ema50"
-        )
+        indicators.get("ema50")
     )
 
     ema200 = _safe_float(
-        indicators.get(
-            "ema200"
-        )
+        indicators.get("ema200")
     )
 
-    if (
-        price is not None
-        and ema21 is not None
-        and ema50 is not None
-    ):
+    if price is not None and ema21 is not None:
 
-        if (
-            price > ema21
-            and ema21 > ema50
-        ):
-
+        if price > ema21:
             score += 1
-
-        elif (
-            price < ema21
-            and ema21 < ema50
-        ):
-
+        elif price < ema21:
             score -= 1
 
-    if (
-        price is not None
-        and ema200 is not None
-    ):
+    if ema21 is not None and ema50 is not None:
+
+        if ema21 > ema50:
+            score += 1
+        elif ema21 < ema50:
+            score -= 1
+
+    if price is not None and ema200 is not None:
 
         if price > ema200:
-            score += 0.5
-
-        elif price < ema200:
-            score -= 0.5
-
-
-    # --------------------------------------------------------
-    # MACD
-    # --------------------------------------------------------
-
-    macd_hist = _safe_float(
-        indicators.get(
-            "macd_histogram"
-        )
-    )
-
-    if macd_hist is not None:
-
-        if macd_hist > 0:
             score += 1
-
-        elif macd_hist < 0:
+        elif price < ema200:
             score -= 1
 
+    # -----------------------------------------------------
+    # MACD
+    # -----------------------------------------------------
 
-    # --------------------------------------------------------
-    # Stochastic
-    # --------------------------------------------------------
-
-    stochastic_k = _safe_float(
-        indicators.get(
-            "stochastic_k"
-        )
+    macd = _safe_float(
+        indicators.get("macd")
     )
 
-    if stochastic_k is not None:
+    macd_signal = _safe_float(
+        indicators.get("macd_signal")
+    )
 
-        if stochastic_k > 55:
-            score += 0.5
+    if (
+        macd is not None
+        and macd_signal is not None
+    ):
 
-        elif stochastic_k < 45:
-            score -= 0.5
+        if macd > macd_signal:
+            score += 2
 
+        elif macd < macd_signal:
+            score -= 2
 
-    # --------------------------------------------------------
-    # Volume
-    # --------------------------------------------------------
+    # -----------------------------------------------------
+    # STOCHASTIC
+    # -----------------------------------------------------
+
+    stochastic = _safe_float(
+        indicators.get("stochastic")
+    )
+
+    if stochastic is not None:
+
+        if stochastic >= 60:
+            score += 1
+
+        elif stochastic <= 40:
+            score -= 1
+
+    # -----------------------------------------------------
+    # VOLUME
+    # -----------------------------------------------------
 
     volume_change = _safe_float(
         indicators.get(
@@ -968,521 +808,310 @@ def _fallback_direction(
     if volume_change is not None:
 
         if volume_change > 10:
-            score += 0.5
+            # Volume increase confirms the
+            # existing directional score.
+            if score > 0:
+                score += 1
+            elif score < 0:
+                score -= 1
 
-        elif volume_change < -10:
-            score -= 0.5
+    # -----------------------------------------------------
+    # OPEN INTEREST
+    # -----------------------------------------------------
 
-
-    # --------------------------------------------------------
-    # Binance OI
-    # --------------------------------------------------------
-
-    if isinstance(
-        advanced,
-        dict,
-    ):
-
-        oi_change = _safe_float(
-            advanced.get(
-                "oi_change_1h_pct"
-            )
-        )
-
-        if oi_change is not None:
-
-            if oi_change > 1:
-                score += 0.5
-
-            elif oi_change < -1:
-                score -= 0.5
-
-
-        # ----------------------------------------------------
-        # Funding
-        # ----------------------------------------------------
-
-        funding = _safe_float(
-            advanced.get(
-                "funding_rate"
-            )
-        )
-
-        if funding is not None:
-
-            # Very positive funding can indicate
-            # crowded longs, so don't automatically
-            # treat positive funding as bullish.
-
-            if funding > 0.001:
-                score -= 0.25
-
-            elif funding < -0.001:
-                score += 0.25
-
-
-    # --------------------------------------------------------
-    # CoinGlass confirmation
-    # --------------------------------------------------------
-
-    cg_context = (
-        _coinglass_direction_context(
-            coinglass
+    oi_change = _safe_float(
+        advanced.get(
+            "oi_change_1h_pct"
         )
     )
 
-    if cg_context == "bullish":
+    if oi_change is not None:
 
-        score += 0.75
+        if oi_change > 5:
 
-    elif cg_context == "bearish":
+            if score > 0:
+                score += 1
+            elif score < 0:
+                score -= 1
 
-        score -= 0.75
+    # -----------------------------------------------------
+    # FUNDING
+    # -----------------------------------------------------
 
+    funding = _safe_float(
+        advanced.get(
+            "funding_rate"
+        )
+    )
 
-    # --------------------------------------------------------
-    # Final
-    # --------------------------------------------------------
+    if funding is not None:
+
+        if funding > 0.01:
+            score -= 1
+
+        elif funding < -0.01:
+            score += 1
+
+    # -----------------------------------------------------
+    # FINAL DIRECTION
+    # -----------------------------------------------------
 
     if score >= 0:
-
         return "LONG"
 
     return "SHORT"
 
 
-# ============================================================
-# FALLBACK ENTRY
-# ============================================================
+# =========================================================
+# FALLBACK: ENTRY
+# =========================================================
 
 def _fallback_entry(
     indicators,
-    major_levels,
+    levels,
+    direction,
 ):
-    price = _safe_float(
-        indicators.get(
-            "price",
-            indicators.get(
-                "current_price"
-            ),
-        )
+    """
+    Uses supplied current price first.
+    No fabricated market price.
+    """
+
+    price = _get_current_price(
+        indicators
     )
 
     support = _safe_float(
-        major_levels.get(
-            "support"
-        )
+        levels.get("support")
     )
 
     resistance = _safe_float(
-        major_levels.get(
-            "resistance"
-        )
+        levels.get("resistance")
     )
 
     if price is None:
-
-        return None
-
-    # Prefer current market price.
-    # Structural levels are used only when
-    # reasonably close to price.
-
-    if support is not None:
-
-        distance = (
-            abs(
-                price - support
-            )
-            / price
-        ) * 100
-
-        if distance <= 8:
-
-            lower = min(
-                price,
-                support,
-            )
-
-            upper = max(
-                price,
-                support,
-            )
-
-            return [
-                _round_price(
-                    lower
-                ),
-                _round_price(
-                    upper
-                ),
-            ]
-
-    if resistance is not None:
-
-        distance = (
-            abs(
-                resistance - price
-            )
-            / price
-        ) * 100
-
-        if distance <= 8:
-
-            lower = min(
-                price,
-                resistance,
-            )
-
-            upper = max(
-                price,
-                resistance,
-            )
-
-            return [
-                _round_price(
-                    lower
-                ),
-                _round_price(
-                    upper
-                ),
-            ]
-
-    return [
-        _round_price(
-            price * 0.995
-        ),
-        _round_price(
-            price * 1.005
-        ),
-    ]
-
-
-# ============================================================
-# FALLBACK RISK LEVELS
-# ============================================================
-
-def _fallback_risk_levels(
-    entry,
-    direction,
-    major_levels,
-):
-    """
-    Minimum 3.5% stop distance.
-    Exact 1:2 RR.
-    """
-
-    if not entry:
-
         return None, None
-
-    direction = str(
-        direction
-    ).upper()
-
-    if isinstance(
-        entry,
-        (list, tuple),
-    ):
-
-        entry_low = _safe_float(
-            entry[0]
-        )
-
-        entry_high = _safe_float(
-            entry[1]
-        )
-
-        if (
-            entry_low is None
-            or entry_high is None
-        ):
-            return None, None
-
-        entry_price = (
-            entry_low
-            + entry_high
-        ) / 2
-
-    else:
-
-        entry_price = _safe_float(
-            entry
-        )
-
-    if entry_price is None:
-
-        return None, None
-
-    support = _safe_float(
-        major_levels.get(
-            "support"
-        )
-    )
-
-    resistance = _safe_float(
-        major_levels.get(
-            "resistance"
-        )
-    )
-
-    minimum_risk = (
-        entry_price * 0.035
-    )
 
     if direction == "LONG":
 
-        structural_sl = None
-
+        # If valid support is below current price,
+        # use a modest structure-based entry range.
         if (
             support is not None
-            and support < entry_price
+            and 0 < support < price
         ):
-
-            structural_sl = (
-                support * 0.995
-            )
-
-        if structural_sl is not None:
-
-            risk = (
-                entry_price
-                - structural_sl
-            )
-
-            if risk >= minimum_risk:
-
-                stop_loss = (
-                    structural_sl
-                )
-
-            else:
-
-                stop_loss = (
-                    entry_price
-                    - minimum_risk
-                )
+            low = support
+            high = price
 
         else:
+            low = price
+            high = price
 
-            stop_loss = (
-                entry_price
-                - minimum_risk
+    else:
+
+        if (
+            resistance is not None
+            and resistance > price
+        ):
+            low = price
+            high = resistance
+
+        else:
+            low = price
+            high = price
+
+    return (
+        round(low, 8),
+        round(high, 8),
+    )
+
+
+# =========================================================
+# FALLBACK: STOP LOSS / TAKE PROFIT
+# =========================================================
+
+def _fallback_risk_levels(
+    entry_low,
+    entry_high,
+    direction,
+    support,
+    resistance,
+):
+    """
+    Creates a wide swing setup.
+
+    Rules:
+    - Minimum 3.5% SL distance.
+    - Uses 4% minimum baseline.
+    - 1:2 RR exactly.
+    - No ATR.
+    """
+
+    if entry_low is None:
+        return None, None
+
+    if entry_high is None:
+        entry_high = entry_low
+
+    entry_low = float(entry_low)
+    entry_high = float(entry_high)
+
+    if entry_low <= 0:
+        return None, None
+
+    support = _safe_float(support)
+    resistance = _safe_float(resistance)
+
+    if direction == "LONG":
+
+        reference = entry_low
+
+        # Prefer structural support when it is
+        # meaningfully below the entry.
+        if (
+            support is not None
+            and support > 0
+            and support < reference
+        ):
+
+            structural_sl = support * 0.995
+
+            minimum_sl = reference * 0.96
+
+            stop_loss = min(
+                structural_sl,
+                minimum_sl,
             )
 
-        risk = (
-            entry_price
-            - stop_loss
-        )
+        else:
+            stop_loss = reference * 0.96
+
+        # Enforce minimum 4% distance.
+        minimum_sl = reference * 0.96
+
+        if stop_loss > minimum_sl:
+            stop_loss = minimum_sl
+
+        risk = reference - stop_loss
 
         take_profit = (
-            entry_price
-            + (risk * 2)
+            reference + risk * 2.0
         )
 
     else:
 
-        structural_sl = None
+        reference = entry_high
 
         if (
             resistance is not None
-            and resistance > entry_price
+            and resistance > reference
         ):
 
             structural_sl = (
                 resistance * 1.005
             )
 
-        if structural_sl is not None:
-
-            risk = (
-                structural_sl
-                - entry_price
+            minimum_sl = (
+                reference * 1.04
             )
 
-            if risk >= minimum_risk:
-
-                stop_loss = (
-                    structural_sl
-                )
-
-            else:
-
-                stop_loss = (
-                    entry_price
-                    + minimum_risk
-                )
+            stop_loss = max(
+                structural_sl,
+                minimum_sl,
+            )
 
         else:
-
             stop_loss = (
-                entry_price
-                + minimum_risk
+                reference * 1.04
             )
 
-        risk = (
-            stop_loss
-            - entry_price
-        )
+        minimum_sl = reference * 1.04
+
+        if stop_loss < minimum_sl:
+            stop_loss = minimum_sl
+
+        risk = stop_loss - reference
 
         take_profit = (
-            entry_price
-            - (risk * 2)
+            reference - risk * 2.0
         )
 
     return (
-        _round_price(
-            stop_loss
-        ),
-        _round_price(
-            take_profit
-        ),
+        round(stop_loss, 8),
+        round(take_profit, 8),
     )
 
 
-# ============================================================
-# FALLBACK MARKET CONTEXT
-# ============================================================
+# =========================================================
+# FALLBACK: TECHNICAL TEXT
+# =========================================================
 
-def _fallback_market_context(
-    advanced,
-    coinglass=None,
+def _fallback_technical_text(
+    coin,
+    indicators,
+    direction,
 ):
+    """
+    Builds factual technical text only from
+    supplied indicators.
+    """
+
+    indicators = indicators or {}
+
     parts = []
 
-    if isinstance(
-        advanced,
-        dict,
-    ):
-
-        btc = advanced.get(
-            "btc_context"
-        )
-
-        if isinstance(
-            btc,
-            dict,
-        ):
-
-            for timeframe in (
-                "4h",
-                "1d",
-            ):
-
-                context = btc.get(
-                    timeframe
-                )
-
-                if not isinstance(
-                    context,
-                    dict,
-                ):
-                    continue
-
-                trend = context.get(
-                    "trend"
-                )
-
-                if trend:
-
-                    parts.append(
-                        f"BTC {timeframe} trend: "
-                        f"{trend}"
-                    )
-
-
-    cg_context = (
-        _coinglass_direction_context(
-            coinglass
-        )
-    )
-
-    if cg_context != "unavailable":
-
-        parts.append(
-            "CoinGlass derivatives context: "
-            f"{cg_context}"
-        )
-
-    return " | ".join(
-        parts
-    )
-
-
-# ============================================================
-# PYTHON FALLBACK
-# ============================================================
-
-def _python_fallback_setup(
-    symbol,
-    indicators,
-    news=None,
-    market_context=None,
-    advanced_market_data=None,
-    coinglass_market_data=None,
-):
-    direction = _fallback_direction(
-        indicators,
-        advanced_market_data,
-        coinglass_market_data,
-    )
-
-    major_levels = _select_major_levels(
-        indicators,
-        advanced_market_data,
-    )
-
-    entry = _fallback_entry(
-        indicators,
-        major_levels,
-    )
-
-    stop_loss, take_profit = (
-        _fallback_risk_levels(
-            entry,
-            direction,
-            major_levels,
-        )
-    )
-
-    if direction == "LONG":
-
-        title = (
-            f"${_coin_name(symbol)} "
-            "Market Structure Is Improving"
-        )
-
-    else:
-
-        title = (
-            f"${_coin_name(symbol)} "
-            "Market Structure Faces Pressure"
-        )
-
-    technical_parts = []
-
     rsi = _safe_float(
-        indicators.get(
-            "rsi"
-        )
+        indicators.get("rsi")
     )
 
     if rsi is not None:
-
-        technical_parts.append(
-            f"RSI {rsi:.1f}"
+        parts.append(
+            f"RSI is {rsi:.1f}"
         )
 
-    ema_structure = indicators.get(
-        "ema_structure"
+    price = _get_current_price(
+        indicators
     )
 
-    if ema_structure:
+    ema21 = _safe_float(
+        indicators.get("ema21")
+    )
 
-        technical_parts.append(
-            f"EMA structure: "
-            f"{ema_structure}"
-        )
+    if (
+        price is not None
+        and ema21 is not None
+    ):
+
+        if price > ema21:
+            parts.append(
+                "price is above the 21 EMA"
+            )
+        else:
+            parts.append(
+                "price is below the 21 EMA"
+            )
+
+    macd = _safe_float(
+        indicators.get("macd")
+    )
+
+    macd_signal = _safe_float(
+        indicators.get("macd_signal")
+    )
+
+    if (
+        macd is not None
+        and macd_signal is not None
+    ):
+
+        if macd > macd_signal:
+            parts.append(
+                "MACD is above its signal line"
+            )
+
+        elif macd < macd_signal:
+            parts.append(
+                "MACD is below its signal line"
+            )
 
     volume_change = _safe_float(
         indicators.get(
@@ -1492,498 +1121,349 @@ def _python_fallback_setup(
 
     if volume_change is not None:
 
-        technical_parts.append(
-            f"volume {volume_change:+.1f}%"
+        parts.append(
+            f"volume change is {volume_change:.1f}%"
         )
 
-    cg_context = (
-        _coinglass_direction_context(
-            coinglass_market_data
-        )
-    )
-
-    if cg_context != "unavailable":
-
-        technical_parts.append(
-            f"CoinGlass context: "
-            f"{cg_context}"
-        )
-
-    technical_analysis = (
-        "; ".join(
-            technical_parts
-        )
-        if technical_parts
-        else
-        "Technical and derivatives data are mixed."
-    )
-
-    setup = {
-        "symbol": symbol.upper(),
-
-        "direction": direction,
-
-        "entry": entry,
-
-        "stop_loss": stop_loss,
-
-        "take_profit": take_profit,
-
-        "risk_reward": "1:2",
-
-        "title": title,
-
-        "key_levels": major_levels,
-
-        "technical_analysis":
-            technical_analysis,
-
-        "news": news,
-
-        "market_context":
-            market_context
-            or _fallback_market_context(
-                advanced_market_data,
-                coinglass_market_data,
-            ),
-
-        "coin_mentions": 3,
-    }
-
-    return setup
-
-
-# ============================================================
-# TITLE SELECTION
-# ============================================================
-
-def _title_index(
-    symbol,
-):
-    """
-    Deterministic title rotation.
-    """
-
-    value = sum(
-        ord(char)
-        for char in str(
-            symbol or ""
-        ).upper()
-    )
-
-    return value
-
-
-def _select_title(
-    symbol,
-    direction,
-):
-    titles = (
-        LONG_TITLES
-        if direction == "LONG"
-        else SHORT_TITLES
-    )
-
-    if not titles:
+    if not parts:
 
         return (
-            f"${_coin_name(symbol)} "
-            "Market Analysis"
+            f"${coin} is being evaluated from "
+            f"the available market structure."
         )
 
-    index = (
-        _title_index(
-            symbol
+    if len(parts) == 1:
+
+        return (
+            f"${coin} technical structure shows "
+            f"{parts[0]}."
         )
-        % len(titles)
+
+    selected = parts[:3]
+
+    return (
+        f"${coin} technical structure shows "
+        + ", ".join(selected[:-1])
+        + f", with {selected[-1]}."
     )
 
-    return titles[
-        index
-    ].replace(
-        "$COIN",
-        f"${_coin_name(symbol)}",
-    )
 
+# =========================================================
+# FALLBACK: MARKET CONTEXT
+# =========================================================
 
-# ============================================================
-# GROQ
-# ============================================================
-
-def _call_groq(
-    prompt,
+def _fallback_market_context(
+    advanced_market_data,
 ):
-    if not GROQ_API_KEY:
+    """
+    Uses BTC/advanced data only when supplied.
+    """
 
-        print(
-            "[setup_generator] "
-            "GROQ_API_KEY not configured."
-        )
-
-        return None
-
-    headers = {
-        "Authorization":
-            f"Bearer {GROQ_API_KEY}",
-
-        "Content-Type":
-            "application/json",
-    }
-
-    payload = {
-        "model": GROQ_MODEL,
-
-        "temperature": 0.25,
-
-        "max_tokens": 900,
-
-        "messages": [
-            {
-                "role": "system",
-                "content": SYSTEM_PROMPT,
-            },
-            {
-                "role": "user",
-                "content": prompt,
-            },
-        ],
-    }
-
-    try:
-
-        response = requests.post(
-            GROQ_URL,
-            headers=headers,
-            json=payload,
-            timeout=30,
-        )
-
-        response.raise_for_status()
-
-        data = response.json()
-
-        choices = data.get(
-            "choices",
-            [],
-        )
-
-        if not choices:
-
-            return None
-
-        message = choices[0].get(
-            "message",
-            {},
-        )
-
-        content = message.get(
-            "content"
-        )
-
-        if not content:
-
-            return None
-
-        return content
-
-    except Exception as err:
-
-        print(
-            "[setup_generator] "
-            f"Groq request failed: {err}"
-        )
-
-        return None
-
-
-# ============================================================
-# JSON EXTRACTION
-# ============================================================
-
-def _extract_json(
-    text,
-):
-    if not text:
-
-        return None
-
-    text = text.strip()
-
-    # --------------------------------------------------------
-    # Direct JSON
-    # --------------------------------------------------------
-
-    try:
-
-        return json.loads(
-            text
-        )
-
-    except Exception:
-
-        pass
-
-
-    # --------------------------------------------------------
-    # Markdown code block
-    # --------------------------------------------------------
-
-    match = re.search(
-        r"```(?:json)?\s*(.*?)\s*```",
-        text,
-        flags=re.DOTALL,
+    advanced = (
+        advanced_market_data or {}
     )
 
-    if match:
+    btc = advanced.get(
+        "btc_context"
+    )
 
-        try:
+    if not btc:
+        return ""
 
-            return json.loads(
-                match.group(1)
+    if isinstance(btc, str):
+
+        return _clean_text(
+            btc,
+            300,
+        )
+
+    if isinstance(btc, dict):
+
+        pieces = []
+
+        for key in (
+            "price",
+            "change_24h",
+            "trend",
+            "rsi",
+            "market_structure",
+        ):
+
+            if key in btc:
+
+                value = btc.get(key)
+
+                if value is not None:
+                    pieces.append(
+                        f"{key}: {value}"
+                    )
+
+        if pieces:
+            return (
+                "BTC context: "
+                + ", ".join(pieces[:4])
+                + "."
             )
 
-        except Exception:
-
-            pass
+    return ""
 
 
-    # --------------------------------------------------------
-    # First object
-    # --------------------------------------------------------
+# =========================================================
+# FALLBACK: NEWS
+# =========================================================
 
-    start = text.find(
-        "{"
-    )
+def _fallback_news_line(news):
 
-    end = text.rfind(
-        "}"
-    )
+    if not news:
+        return ""
 
-    if (
-        start >= 0
-        and end > start
-    ):
+    if isinstance(news, str):
 
-        try:
+        return _clean_text(
+            news,
+            280,
+        )
 
-            return json.loads(
-                text[
-                    start:end + 1
-                ]
-            )
+    if isinstance(news, dict):
 
-        except Exception:
-
-            return None
-
-    return None
-
-
-# ============================================================
-# VALIDATION
-# ============================================================
-
-def _validate_setup(
-    setup,
-    symbol,
-):
-    if not isinstance(
-        setup,
-        dict,
-    ):
-
-        return False
-
-    direction = str(
-        setup.get(
-            "direction",
+        title = news.get(
+            "title",
             "",
         )
-    ).upper().strip()
 
-    if direction not in (
-        "LONG",
-        "SHORT",
-    ):
+        if title:
+            return _clean_text(
+                title,
+                280,
+            )
 
-        return False
-
-    entry = setup.get(
-        "entry"
-    )
-
-    stop_loss = _safe_float(
-        setup.get(
-            "stop_loss"
-        )
-    )
-
-    take_profit = _safe_float(
-        setup.get(
-            "take_profit"
-        )
-    )
-
-    if (
-        entry is None
-        or stop_loss is None
-        or take_profit is None
-    ):
-
-        return False
-
-    if isinstance(
-        entry,
-        (list, tuple),
-    ):
-
-        if len(entry) < 2:
-
-            return False
-
-        entry_low = _safe_float(
-            entry[0]
+        summary = news.get(
+            "summary",
+            "",
         )
 
-        entry_high = _safe_float(
-            entry[1]
+        return _clean_text(
+            summary,
+            280,
         )
 
-        if (
-            entry_low is None
-            or entry_high is None
-        ):
+    if isinstance(news, list):
 
-            return False
+        for item in news[:3]:
 
-        entry_price = (
-            entry_low
-            + entry_high
-        ) / 2
+            if isinstance(item, str):
+                return _clean_text(
+                    item,
+                    280,
+                )
 
-    else:
+            if isinstance(item, dict):
 
-        entry_price = _safe_float(
-            entry
-        )
+                title = item.get(
+                    "title",
+                    "",
+                )
 
-    if entry_price is None:
+                if title:
+                    return _clean_text(
+                        title,
+                        280,
+                    )
 
-        return False
-
-    # --------------------------------------------------------
-    # Direction validity
-    # --------------------------------------------------------
-
-    if direction == "LONG":
-
-        if not (
-            stop_loss
-            < entry_price
-            < take_profit
-        ):
-
-            return False
-
-    else:
-
-        if not (
-            take_profit
-            < entry_price
-            < stop_loss
-        ):
-
-            return False
-
-    # --------------------------------------------------------
-    # Minimum 3.5% stop distance
-    # --------------------------------------------------------
-
-    stop_distance = (
-        abs(
-            entry_price
-            - stop_loss
-        )
-        / entry_price
-    ) * 100
-
-    if stop_distance < 3.5:
-
-        return False
-
-    # --------------------------------------------------------
-    # Exact 1:2 RR
-    # --------------------------------------------------------
-
-    risk = abs(
-        entry_price
-        - stop_loss
-    )
-
-    reward = abs(
-        take_profit
-        - entry_price
-    )
-
-    if risk <= 0:
-
-        return False
-
-    rr = reward / risk
-
-    if abs(
-        rr - 2
-    ) > 0.05:
-
-        return False
-
-    return True
+    return ""
 
 
-# ============================================================
-# CLEAN COIN MENTIONS
-# ============================================================
+# =========================================================
+# PYTHON FALLBACK SETUP
+# =========================================================
 
-def _ensure_coin_mentions(
-    text,
+def _python_fallback_setup(
     symbol,
+    indicators,
+    news=None,
+    market_context=None,
+    advanced_market_data=None,
 ):
+    """
+    Full deterministic fallback.
+
+    This function does NOT call Groq.
+
+    It uses only supplied market data.
+    """
+
     coin = _coin_name(
         symbol
     )
 
-    token = f"${coin}"
+    indicators = indicators or {}
 
-    text = str(
-        text or ""
+    advanced_market_data = (
+        advanced_market_data or {}
     )
 
-    # Remove existing variants first.
-    text = re.sub(
-        rf"\${re.escape(coin)}\b",
+    major_levels = _select_major_levels(
+        indicators,
+        advanced_market_data,
+    )
+
+    direction = _fallback_direction(
+        indicators,
+        advanced_market_data,
+    )
+
+    entry_low, entry_high = (
+        _fallback_entry(
+            indicators,
+            major_levels,
+            direction,
+        )
+    )
+
+    stop_loss, take_profit = (
+        _fallback_risk_levels(
+            entry_low,
+            entry_high,
+            direction,
+            major_levels.get(
+                "support"
+            ),
+            major_levels.get(
+                "resistance"
+            ),
+        )
+    )
+
+    technical = _fallback_technical_text(
+        coin,
+        indicators,
+        direction,
+    )
+
+    news_line = _fallback_news_line(
+        news
+    )
+
+    btc_context = _fallback_market_context(
+        advanced_market_data
+    )
+
+    if market_context:
+
+        if isinstance(
+            market_context,
+            str,
+        ):
+
+            extra_context = _clean_text(
+                market_context,
+                250,
+            )
+
+            if extra_context:
+                btc_context = (
+                    f"{btc_context} "
+                    f"{extra_context}"
+                ).strip()
+
+    setup = {
+        "symbol": symbol,
+        "direction": direction,
+        "title": _select_title(
+            direction,
+            coin,
+        ),
+        "entry_low": entry_low,
+        "entry_high": entry_high,
+        "stop_loss": stop_loss,
+        "take_profit": take_profit,
+        "support": major_levels.get(
+            "support"
+        ),
+        "resistance": major_levels.get(
+            "resistance"
+        ),
+        "news_line": news_line,
+        "technical_analysis": technical,
+        "market_context": btc_context,
+        "rr": 2,
+        "hashtags": [],
+    }
+
+    print(
+        f"[setup_generator] "
+        f"Using Python fallback for ${coin}."
+    )
+
+    return setup
+
+
+# =========================================================
+# VALIDATE AI OUTPUT
+# =========================================================
+
+def _parse_ai_response(content):
+
+    if not content:
+        raise RuntimeError(
+            "AI returned an empty response."
+        )
+
+    content = str(content).strip()
+
+    content = re.sub(
+        r"^```json\s*",
         "",
-        text,
+        content,
         flags=re.IGNORECASE,
     )
 
-    text = re.sub(
-        r"\s+",
-        " ",
-        text,
-    ).strip()
-
-    # Exactly 3 mentions.
-    text = (
-        text
-        + f" {token} {token} {token}"
+    content = re.sub(
+        r"^```\s*",
+        "",
+        content,
     )
 
-    return text.strip()
+    content = re.sub(
+        r"\s*```$",
+        "",
+        content,
+    )
+
+    content = content.strip()
+
+    if not content:
+        raise RuntimeError(
+            "AI returned an empty response."
+        )
+
+    try:
+
+        setup = json.loads(
+            content
+        )
+
+    except Exception as err:
+
+        raise RuntimeError(
+            "AI returned invalid JSON: "
+            f"{err}\nResponse: {content}"
+        )
+
+    if not isinstance(
+        setup,
+        dict,
+    ):
+        raise RuntimeError(
+            "AI JSON response is not an object."
+        )
+
+    return setup
 
 
-# ============================================================
+# =========================================================
 # GENERATE SETUP
-# ============================================================
+# =========================================================
 
 def generate_setup(
     symbol,
@@ -1991,25 +1471,24 @@ def generate_setup(
     news=None,
     market_context=None,
     advanced_market_data=None,
-    coinglass_market_data=None,
 ):
     """
-    Main setup generator.
+    Generate one complete market-analysis setup.
 
-    New argument:
-        coinglass_market_data
+    Flow:
 
-    Existing arguments remain compatible.
+    Groq success
+        ->
+    validate + enforce setup
+
+    Groq failure
+        ->
+    Python fallback
     """
 
-    symbol = str(
-        symbol or ""
-    ).upper().strip()
-
-
-    # ========================================================
-    # SUMMARIES
-    # ========================================================
+    coin = _coin_name(
+        symbol
+    )
 
     indicator_summary = (
         _build_indicator_summary(
@@ -2023,439 +1502,163 @@ def generate_setup(
         )
     )
 
-    coinglass_summary = (
-        _build_coinglass_summary(
-            coinglass_market_data
-        )
+    major_levels = _select_major_levels(
+        indicators,
+        advanced_market_data,
     )
 
-    major_levels = (
-        _select_major_levels(
-            indicators,
-            advanced_market_data,
-        )
+    news_summary = _summarize_news(
+        news
     )
 
-
-    # ========================================================
-    # FALLBACK FIRST DIRECTION
-    # ========================================================
-
-    fallback_direction = (
-        _fallback_direction(
-            indicators,
-            advanced_market_data,
-            coinglass_market_data,
-        )
+    market_summary = (
+        market_context
+        if market_context
+        else {}
     )
-
-    fallback_title = _select_title(
-        symbol,
-        fallback_direction,
-    )
-
-
-    # ========================================================
-    # PROMPT DATA
-    # ========================================================
 
     prompt_data = {
         "symbol": symbol,
-
         "technical_indicators":
             indicator_summary,
-
         "major_levels":
             major_levels,
-
-        "binance_advanced_market_data":
+        "advanced_market_data":
             advanced_summary,
-
-        "coinglass_market_data":
-            coinglass_summary,
-
         "market_context":
-            market_context,
-
+            market_summary,
         "relevant_news":
-            news,
+            news_summary,
     }
 
+    user_prompt = f"""
+Create one short crypto market-analysis setup
+for {symbol}.
 
-    # ========================================================
-    # AI PROMPT
-    # ========================================================
+Use ONLY the data below.
 
-    prompt = f"""
-Analyze the following crypto market data.
+DATA:
 
 {json.dumps(
     prompt_data,
-    ensure_ascii=False,
-    default=str,
     indent=2,
+    default=str,
 )}
 
-Create one concise market-analysis setup.
+TASK:
 
-Requirements:
+1. Decide whether the technical structure is more suitable
+   for LONG or SHORT.
 
-1. Choose LONG or SHORT from the supplied data.
+2. Create a realistic entry range.
 
-2. Do not use CoinGlass as a standalone signal.
+3. Set Stop Loss and Take Profit:
+   - Use 1H/4H swing structure.
+   - Stop loss must be at least 3.5% away from entry.
+   - Prefer approximately 4% minimum distance when needed.
+   - Take Profit must be exactly 2R.
+   - Never create a micro-scalp setup.
 
-3. Use CoinGlass as confirmation/context:
-   - Open Interest
-   - OI change
-   - Funding
-   - Long/Short ratio
-   - Liquidations
-   - Taker flow
-   - CVD
+4. Identify major 1H and 4H support/resistance.
 
-4. If Binance and CoinGlass derivatives data disagree,
-   do not hide the disagreement. Mention the conflict
-   briefly in technical_analysis.
+5. Use only the strongest 3–5 supplied technical signals.
 
-5. Entry must be a realistic range around current market
-   structure.
+6. Use OI, funding, long/short ratio, liquidation or
+   orderbook data only if supplied.
 
-6. Stop loss must be at least 3.5% away from the midpoint
-   entry.
+7. Use BTC only as broader context.
 
-7. Take profit must produce exactly 1:2 risk/reward.
+8. If relevant news is supplied, use only that news.
+   If no news is supplied, news_line must be empty.
 
-8. Use meaningful 1H/4H structural support/resistance
-   where available.
+9. Do not invent a title. A title will be replaced by code.
 
-9. Use supplied news only.
+10. Keep the content concise.
 
-10. Do not invent missing data.
-
-11. Do not say:
-    guaranteed
-    confirmed
-    certain
-    high probability
-    imminent
-    risk-free
-    easy profit
-    smart money is definitely buying/selling
-
-12. Return ONLY JSON in this structure:
+Return JSON only:
 
 {{
   "direction": "LONG or SHORT",
-  "entry": [number, number],
-  "stop_loss": number,
-  "take_profit": number,
-  "title": "title",
-  "key_levels": {{
-    "support": number or null,
-    "resistance": number or null
-  }},
-  "technical_analysis": "short analysis",
-  "news": "short relevant news context or empty string",
-  "market_context": "short market context or empty string"
+  "title": "",
+  "entry_low": 0,
+  "entry_high": 0,
+  "stop_loss": null,
+  "take_profit": null,
+  "support": 0,
+  "resistance": 0,
+  "news_line": "",
+  "technical_analysis": "",
+  "market_context": ""
 }}
-
-A suitable title direction is:
-{fallback_title}
 """
 
-
-    # ========================================================
+    # =====================================================
     # GROQ
-    # ========================================================
+    # =====================================================
 
-    raw = _call_groq(
-        prompt
-    )
+    try:
 
-    setup = _extract_json(
-        raw
-    )
+        if not cfg.GROQ_API_KEY:
 
-
-    # ========================================================
-    # FALLBACK
-    # ========================================================
-
-    if not _validate_setup(
-        setup,
-        symbol,
-    ):
+            raise RuntimeError(
+                "GROQ_API_KEY is missing."
+            )
 
         print(
-            "[setup_generator] "
-            "Groq setup invalid or unavailable. "
-            "Using Python fallback."
+            f"[setup_generator] "
+            f"Generating setup for ${coin} via Groq..."
         )
 
-        setup = (
-            _python_fallback_setup(
-                symbol,
-                indicators,
-                news,
-                market_context,
-                advanced_market_data,
-                coinglass_market_data,
-            )
-        )
+        client = _get_client()
 
-
-    # ========================================================
-    # NORMALIZE
-    # ========================================================
-
-    setup[
-        "symbol"
-    ] = symbol
-
-    setup[
-        "direction"
-    ] = str(
-        setup.get(
-            "direction",
-            fallback_direction,
-        )
-    ).upper().strip()
-
-
-    # --------------------------------------------------------
-    # Title
-    # --------------------------------------------------------
-
-    setup[
-        "title"
-    ] = _select_title(
-        symbol,
-        setup[
-            "direction"
-        ],
-    )
-
-
-    # --------------------------------------------------------
-    # Levels
-    # --------------------------------------------------------
-
-    levels = setup.get(
-        "key_levels"
-    )
-
-    if not isinstance(
-        levels,
-        dict,
-    ):
-
-        levels = {}
-
-    levels[
-        "support"
-    ] = _round_price(
-        levels.get(
-            "support",
-            major_levels.get(
-                "support"
-            ),
-        )
-    )
-
-    levels[
-        "resistance"
-    ] = _round_price(
-        levels.get(
-            "resistance",
-            major_levels.get(
-                "resistance"
-            ),
-        )
-    )
-
-    setup[
-        "key_levels"
-    ] = levels
-
-
-    # --------------------------------------------------------
-    # RR
-    # --------------------------------------------------------
-
-    setup[
-        "risk_reward"
-    ] = "1:2"
-
-
-    # --------------------------------------------------------
-    # CoinGlass context
-    # --------------------------------------------------------
-
-    cg_context = (
-        _coinglass_direction_context(
-            coinglass_market_data
-        )
-    )
-
-    if cg_context != "unavailable":
-
-        existing_context = _clean_text(
-            setup.get(
-                "market_context"
-            )
-        )
-
-        cg_note = (
-            "CoinGlass derivatives context: "
-            f"{cg_context}."
-        )
-
-        if existing_context:
-
-            setup[
-                "market_context"
-            ] = (
-                existing_context
-                + " "
-                + cg_note
-            )
-
-        else:
-
-            setup[
-                "market_context"
-            ] = cg_note
-
-
-    # --------------------------------------------------------
-    # Technical analysis
-    # --------------------------------------------------------
-
-    setup[
-        "technical_analysis"
-    ] = _clean_text(
-        setup.get(
-            "technical_analysis",
-            "",
-        )
-    )
-
-
-    if not setup[
-        "technical_analysis"
-    ]:
-
-        setup[
-            "technical_analysis"
-        ] = (
-            "Technical structure and "
-            "market derivatives data "
-            "are being monitored."
-        )
-
-
-    # --------------------------------------------------------
-    # News
-    # --------------------------------------------------------
-
-    setup[
-        "news"
-    ] = _clean_text(
-        setup.get(
-            "news",
-            "",
-        )
-    )
-
-
-    # --------------------------------------------------------
-    # Market context
-    # --------------------------------------------------------
-
-    setup[
-        "market_context"
-    ] = _clean_text(
-        setup.get(
-            "market_context",
-            market_context
-            or "",
-        )
-    )
-
-
-    # ========================================================
-    # FINAL VALIDATION
-    # ========================================================
-
-    if not _validate_setup(
-        setup,
-        symbol,
-    ):
-
-        print(
-            "[setup_generator] "
-            "Final setup validation failed. "
-            "Rebuilding deterministic fallback."
-        )
-
-        setup = (
-            _python_fallback_setup(
-                symbol,
-                indicators,
-                news,
-                market_context,
-                advanced_market_data,
-                coinglass_market_data,
-            )
-        )
-
-        setup[
-            "title"
-        ] = _select_title(
-            symbol,
-            setup[
-                "direction"
+        response = client.chat.completions.create(
+            model=cfg.GROQ_MODEL,
+            messages=[
+                {
+                    "role": "system",
+                    "content": SYSTEM_PROMPT,
+                },
+                {
+                    "role": "user",
+                    "content": user_prompt,
+                },
             ],
+            temperature=0.75,
         )
 
+        if not response.choices:
 
-    return setup
+            raise RuntimeError(
+                "AI returned no choices."
+            )
 
-
-# ============================================================
-# POST FORMATTER
-# ============================================================
-
-def format_post_text(
-    setup,
-):
-    """
-    Format setup for Binance Square.
-
-    Exactly 3 $COIN mentions.
-    """
-
-    if not isinstance(
-        setup,
-        dict,
-    ):
-
-        return ""
-
-
-    symbol = str(
-        setup.get(
-            "symbol",
-            "",
+        content = (
+            response.choices[0]
+            .message.content
         )
-    ).upper().strip()
 
-    coin = _coin_name(
-        symbol
-    )
+        setup = _parse_ai_response(
+            content
+        )
 
-    token = f"${coin}"
+    except Exception as err:
 
+        print(
+            f"[setup_generator] "
+            f"Groq failed for ${coin}: {err}"
+        )
+
+        return _python_fallback_setup(
+            symbol=symbol,
+            indicators=indicators,
+            news=news,
+            market_context=market_context,
+            advanced_market_data=advanced_market_data,
+        )
+
+    # =====================================================
+    # DIRECTION
+    # =====================================================
 
     direction = str(
         setup.get(
@@ -2464,254 +1667,527 @@ def format_post_text(
         )
     ).upper().strip()
 
+    if direction not in (
+        "LONG",
+        "SHORT",
+    ):
 
-    entry = setup.get(
-        "entry"
-    )
+        # If AI direction is invalid,
+        # use deterministic fallback direction.
+        direction = _fallback_direction(
+            indicators,
+            advanced_market_data,
+        )
 
-    stop_loss = setup.get(
-        "stop_loss"
-    )
+    setup["direction"] = direction
 
-    take_profit = setup.get(
-        "take_profit"
-    )
+    # =====================================================
+    # ENTRY
+    # =====================================================
 
-    levels = setup.get(
-        "key_levels",
-        {},
-    )
-
-    support = levels.get(
-        "support"
-    )
-
-    resistance = levels.get(
-        "resistance"
-    )
-
-
-    title = _clean_text(
+    entry_low = _safe_float(
         setup.get(
-            "title",
-            "",
+            "entry_low"
         )
     )
 
-    technical_analysis = _clean_text(
+    entry_high = _safe_float(
+        setup.get(
+            "entry_high"
+        )
+    )
+
+    if entry_low is None:
+
+        entry_low = _get_current_price(
+            indicators
+        )
+
+    if entry_high is None:
+
+        entry_high = entry_low
+
+    if (
+        entry_low is not None
+        and entry_high is not None
+        and entry_low > entry_high
+    ):
+
+        entry_low, entry_high = (
+            entry_high,
+            entry_low,
+        )
+
+    setup["entry_low"] = entry_low
+    setup["entry_high"] = entry_high
+
+    # =====================================================
+    # MAJOR LEVELS
+    # =====================================================
+
+    ai_support = _safe_float(
+        setup.get(
+            "support"
+        )
+    )
+
+    ai_resistance = _safe_float(
+        setup.get(
+            "resistance"
+        )
+    )
+
+    if ai_support is None:
+
+        ai_support = _safe_float(
+            major_levels.get(
+                "support"
+            )
+        )
+
+    if ai_resistance is None:
+
+        ai_resistance = _safe_float(
+            major_levels.get(
+                "resistance"
+            )
+        )
+
+    setup["support"] = ai_support
+    setup["resistance"] = ai_resistance
+
+    # =====================================================
+    # STOP LOSS / TAKE PROFIT
+    # =====================================================
+
+    ai_stop = _safe_float(
+        setup.get(
+            "stop_loss"
+        )
+    )
+
+    ai_target = _safe_float(
+        setup.get(
+            "take_profit"
+        )
+    )
+
+    if entry_low is not None and entry_low > 0:
+
+        # Use the AI stop only if it satisfies
+        # the minimum distance requirement.
+        valid_ai_stop = False
+
+        if ai_stop is not None:
+
+            distance = (
+                abs(entry_low - ai_stop)
+                / entry_low
+            )
+
+            if distance >= 0.035:
+                valid_ai_stop = True
+
+        if not valid_ai_stop:
+
+            if direction == "LONG":
+
+                ai_stop = round(
+                    entry_low * 0.96,
+                    8,
+                )
+
+            else:
+
+                ai_stop = round(
+                    entry_low * 1.04,
+                    8,
+                )
+
+        # -------------------------------------------------
+        # EXACT 1:2 RR
+        # -------------------------------------------------
+
+        sl_distance = abs(
+            entry_low - ai_stop
+        )
+
+        if direction == "LONG":
+
+            ai_target = round(
+                entry_low
+                + (sl_distance * 2.0),
+                8,
+            )
+
+        else:
+
+            ai_target = round(
+                entry_low
+                - (sl_distance * 2.0),
+                8,
+            )
+
+    else:
+
+        # AI did not provide a usable price.
+        # Rebuild the complete setup through fallback.
+        return _python_fallback_setup(
+            symbol=symbol,
+            indicators=indicators,
+            news=news,
+            market_context=market_context,
+            advanced_market_data=advanced_market_data,
+        )
+
+    setup["stop_loss"] = ai_stop
+    setup["take_profit"] = ai_target
+
+    # Keep compatibility with existing
+    # backtest/state code.
+    setup["rr"] = 2
+
+    # =====================================================
+    # TITLE
+    # =====================================================
+
+    # Never trust AI-generated title.
+    # Always use the user's title library.
+
+    setup["title"] = _select_title(
+        direction,
+        coin,
+    )
+
+    # =====================================================
+    # CLEAN TEXT
+    # =====================================================
+
+    setup["news_line"] = _clean_text(
+        setup.get(
+            "news_line",
+            "",
+        ),
+        300,
+    )
+
+    setup["technical_analysis"] = _clean_text(
         setup.get(
             "technical_analysis",
             "",
-        )
+        ),
+        600,
     )
 
-    news = _clean_text(
-        setup.get(
-            "news",
-            "",
-        )
-    )
-
-    market_context = _clean_text(
+    setup["market_context"] = _clean_text(
         setup.get(
             "market_context",
             "",
+        ),
+        400,
+    )
+
+    # =====================================================
+    # REMOVE HASHTAGS
+    # =====================================================
+
+    setup["hashtags"] = []
+
+    print(
+        f"[setup_generator] "
+        f"Groq setup ready for ${coin}."
+    )
+
+    return setup
+
+
+# =========================================================
+# FORMAT FINAL BINANCE SQUARE POST
+# =========================================================
+
+def format_post_text(setup):
+    """
+    Convert setup JSON into final Binance Square format.
+
+    Exactly three $COIN mentions:
+
+    1. Title
+    2. Technical-analysis section
+    3. Final LONG/SHORT line
+    """
+
+    if not setup:
+        return ""
+
+    symbol = setup.get(
+        "symbol",
+        "",
+    )
+
+    coin = _coin_name(
+        symbol
+    )
+
+    direction = str(
+        setup.get(
+            "direction",
+            "LONG",
+        )
+    ).upper()
+
+    if direction not in (
+        "LONG",
+        "SHORT",
+    ):
+        direction = "LONG"
+
+    # -----------------------------------------------------
+    # PRICE VALUES
+    # -----------------------------------------------------
+
+    entry_low = _format_price(
+        setup.get(
+            "entry_low"
         )
     )
 
+    entry_high = _format_price(
+        setup.get(
+            "entry_high"
+        )
+    )
 
-    # ========================================================
-    # ENTRY
-    # ========================================================
+    stop_loss = _format_price(
+        setup.get(
+            "stop_loss"
+        )
+    )
 
-    if isinstance(
-        entry,
-        (list, tuple),
-    ) and len(entry) >= 2:
+    take_profit = _format_price(
+        setup.get(
+            "take_profit"
+        )
+    )
 
-        entry_text = (
-            f"{_round_price(entry[0])} - "
-            f"{_round_price(entry[1])}"
+    support = _format_price(
+        setup.get(
+            "support"
+        )
+    )
+
+    resistance = _format_price(
+        setup.get(
+            "resistance"
+        )
+    )
+
+    # -----------------------------------------------------
+    # TEXT
+    # -----------------------------------------------------
+
+    technical = setup.get(
+        "technical_analysis",
+        "",
+    ).strip()
+
+    news_line = setup.get(
+        "news_line",
+        "",
+    ).strip()
+
+    market = setup.get(
+        "market_context",
+        "",
+    ).strip()
+
+    # -----------------------------------------------------
+    # TITLE
+    # -----------------------------------------------------
+
+    title = setup.get(
+        "title",
+        "",
+    ).strip()
+
+    title = re.sub(
+        r"#\w+",
+        "",
+        title,
+    ).strip()
+
+    title = re.sub(
+        r"[^\x00-\x7F]+",
+        "",
+        title,
+    ).strip()
+
+    title = re.sub(
+        rf"\$?{re.escape(coin)}\s*:\s*",
+        "",
+        title,
+        flags=re.IGNORECASE,
+    ).strip()
+
+    title = re.sub(
+        rf"^\$?{re.escape(coin)}\s*",
+        "",
+        title,
+        flags=re.IGNORECASE,
+    ).strip()
+
+    if not title:
+        title = "MARKET MOMENTUM UNDER REVIEW?"
+
+    title_line = (
+        f"${coin}: {title}"
+    )
+
+    # -----------------------------------------------------
+    # DIRECTION LINE
+    # -----------------------------------------------------
+
+    if direction == "LONG":
+
+        direction_line = (
+            f"LONG SETUP — {coin}"
+        )
+
+        final_line = (
+            f"LONG ${coin}"
         )
 
     else:
 
-        entry_text = str(
-            _round_price(
-                entry
-            )
+        direction_line = (
+            f"SHORT SETUP — {coin}"
         )
 
+        final_line = (
+            f"SHORT ${coin}"
+        )
 
-    # ========================================================
-    # BUILD
-    # ========================================================
+    # -----------------------------------------------------
+    # TECHNICAL BODY
+    # -----------------------------------------------------
+
+    if technical:
+
+        technical_line = (
+            f"Technical Analysis for "
+            f"${coin}: {technical}"
+        )
+
+    else:
+
+        technical_line = (
+            f"Technical Analysis for "
+            f"${coin}: Market structure "
+            f"remains the main focus."
+        )
+
+    # -----------------------------------------------------
+    # BUILD POST
+    # -----------------------------------------------------
 
     lines = []
 
+    # 1st $COIN
     lines.append(
-        title
+        title_line
+    )
+
+    lines.append("")
+
+    lines.append(
+        direction_line
+    )
+
+    lines.append("")
+
+    lines.append(
+        f"Entry: ${entry_low} - ${entry_high}"
     )
 
     lines.append(
-        ""
+        f"Stop Loss: ${stop_loss}"
     )
 
     lines.append(
-        f"{direction} SETUP"
+        f"Take Profit: ${take_profit} (2R)"
     )
+
+    lines.append("")
 
     lines.append(
-        f"Entry: {entry_text}"
+        f"Key Levels: Support ${support} | "
+        f"Resistance ${resistance}"
     )
 
+    lines.append("")
+
+    # 2nd $COIN
     lines.append(
-        f"Stop Loss: "
-        f"{_round_price(stop_loss)}"
+        technical_line
     )
 
-    lines.append(
-        f"Take Profit (2R): "
-        f"{_round_price(take_profit)}"
-    )
+    # -----------------------------------------------------
+    # NEWS
+    # -----------------------------------------------------
 
-    lines.append(
-        ""
-    )
+    if news_line:
 
-    lines.append(
-        "Key Levels"
-    )
-
-    lines.append(
-        f"Support: "
-        f"{_round_price(support) if support is not None else 'N/A'}"
-    )
-
-    lines.append(
-        f"Resistance: "
-        f"{_round_price(resistance) if resistance is not None else 'N/A'}"
-    )
-
-    lines.append(
-        ""
-    )
-
-    lines.append(
-        "Technical Analysis"
-    )
-
-    lines.append(
-        technical_analysis
-    )
-
-
-    if news:
+        lines.append("")
 
         lines.append(
-            ""
+            f"NEWS: {news_line}"
         )
+
+    # -----------------------------------------------------
+    # MARKET CONTEXT
+    # -----------------------------------------------------
+
+    if market:
+
+        lines.append("")
 
         lines.append(
-            "News Context"
+            f"Market Context: {market}"
         )
 
-        lines.append(
-            news
-        )
+    lines.append("")
 
-
-    if market_context:
-
-        lines.append(
-            ""
-        )
-
-        lines.append(
-            "Market Context"
-        )
-
-        lines.append(
-            market_context
-        )
-
-
+    # 3rd $COIN
     lines.append(
-        ""
+        final_line
     )
-
-    lines.append(
-        f"{direction} scenario remains "
-        f"dependent on the key levels above."
-    )
-
 
     text = "\n".join(
         lines
-    )
+    ).strip()
 
-
-    # ========================================================
-    # EXACTLY 3 COIN MENTIONS
-    # ========================================================
+    # -----------------------------------------------------
+    # REMOVE HASHTAGS
+    # -----------------------------------------------------
 
     text = re.sub(
-        rf"\${re.escape(coin)}\b",
+        r"#\w+",
         "",
         text,
-        flags=re.IGNORECASE,
     )
 
+    # -----------------------------------------------------
+    # REMOVE EMOJIS / NON-ASCII
+    # -----------------------------------------------------
+
     text = re.sub(
-        r"\s+",
-        " ",
+        r"[^\x00-\x7F]+",
+        "",
         text,
     )
 
-    # Rebuild line breaks after whitespace cleanup.
-    # Keep content readable.
-
-    text = text.replace(
-        " \n",
-        "\n",
-    ).replace(
-        "\n ",
-        "\n",
-    )
-
-
-    # Put three mentions naturally.
-    lines = text.split(
-        "\n"
-    )
-
-    if lines:
-
-        lines[0] = (
-            lines[0]
-            + f" {token}"
-        )
-
-    lines.insert(
-        min(
-            5,
-            len(lines),
-        ),
-        token
-    )
-
-    lines.append(
-        token
-    )
-
-    text = "\n".join(
-        lines
-    )
-
-
-    # ========================================================
-    # CLEAN
-    # ========================================================
+    # -----------------------------------------------------
+    # CLEAN SPACES
+    # -----------------------------------------------------
 
     text = re.sub(
         r"[ \t]+",
@@ -2723,6 +2199,16 @@ def format_post_text(
         r"\n{3,}",
         "\n\n",
         text,
-    )
+    ).strip()
 
-    return text.strip()
+    # -----------------------------------------------------
+    # CHARACTER LIMIT
+    # -----------------------------------------------------
+
+    if len(text) > cfg.CHAR_LIMIT:
+
+        text = text[
+            :cfg.CHAR_LIMIT
+        ].rstrip()
+
+    return text
