@@ -1622,6 +1622,23 @@
       "technical_analysis": "$MOVR technical structure shows price is above the 21 EMA.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 96,
+      "created_at": "2026-09-22T19:31:43.095702+00:00",
+      "symbol": "SAGAUSDT",
+      "direction": "SHORT",
+      "title": "$SAGA Fails Resistance Retest: Bearish Extension Imminent",
+      "entry_low": 0.0379,
+      "entry_high": 0.03795,
+      "stop_loss": 0.03944,
+      "take_profit": 0.03482,
+      "support": 0.03605,
+      "resistance": 0.03944,
+      "news_line": "",
+      "technical_analysis": "The pair is trading below the EMA9 (0.038238) and EMA21 (0.038471), confirming a bearish EMA crossover. MACD histogram is negative (-0.000387) and the MACD line sits well under its signal, adding momentum to the downside. ADX is 31.8, indicating a strong trend. Stochastic K/D are both near 18, suggesting the price is in oversold territory but still below the Bollinger mid‑line, reinforcing short bias. Order‑book shows a bid‑side imbalance, yet the technical picture remains bearish.",
+      "market_context": "BTC is in a bullish phase on both 4H and 1D charts, and the broader market is broadly positive (81.6% green). Despite the overall market optimism, SAGAUSDT shows bearish intra‑hour signals, making a short swing trade viable within the identified 1H/4H range.",
+      "result": "PENDING"
     }
   ]
 }
