@@ -1223,6 +1223,23 @@
       "technical_analysis": "Price (0.723) sits below EMA9 (0.7276), EMA21 (0.7326) and SMA50 (0.7395), indicating a downtrend. MACD is negative and under its signal line, while the histogram stays below zero. Stochastic K/D are in the low‑20s, showing weak momentum. Immediate resistance sits at 0.726 with support at 0.722, and the 1H/4H swing structure confirms a bearish bias. Order‑book shows a modest bid imbalance (8.27%) but not enough to offset the technical downside.",
       "market_context": "BTC remains in a bullish trend on higher timeframes and the overall crypto market is broadly positive (72.4% green). Despite the favorable BTC backdrop, ASTERUSDT's own indicators point to further downside.",
       "result": "PENDING"
+    },
+    {
+      "id": 73,
+      "created_at": "2026-09-22T14:30:57.320188+00:00",
+      "symbol": "BCHUSDT",
+      "direction": "LONG",
+      "title": "$BCH Outperformance Signal: Buying Momentum Beats Broader Market",
+      "entry_low": 315.5,
+      "entry_high": 318.0,
+      "stop_loss": 304.0,
+      "take_profit": 338.5,
+      "support": 315.5,
+      "resistance": 327.3,
+      "news_line": "",
+      "technical_analysis": "Price is comfortably above EMA9 (292.9), EMA21 (279.3) and SMA50 (264.0), indicating strong upward bias. MACD shows a solid bullish divergence (MACD 11.49 vs signal 5.75) with a healthy histogram. Stochastic is in the high‑80s, suggesting momentum is near its peak but still bullish. The 1H/4H swing structure places the next resistance around 327‑328 and support near 315‑316, aligning with the current price action.",
+      "market_context": "BTC maintains a bullish trend on both 4H and 1D frames, supporting risk‑on sentiment. Overall market breadth is mixed with a slight green bias (56.9% green). Order‑book shows a modest ask‑side imbalance, but the spread is tight, reinforcing the bullish setup for BCH.",
+      "result": "PENDING"
     }
   ]
 }
