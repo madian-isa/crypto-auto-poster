@@ -1,6 +1,6 @@
 {
   "date": "2026-09-22",
-  "count": 78,
+  "count": 79,
   "posted_symbols_today": [
     "BTCUSDT",
     "PEPEUSDT",
@@ -79,6 +79,7 @@
     "ONEUSDT",
     "GPSUSDT",
     "KAITOUSDT",
-    "ETHUSDT"
+    "ETHUSDT",
+    "PROVEUSDT"
   ]
 }
