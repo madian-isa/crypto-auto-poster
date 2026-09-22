@@ -89,16 +89,6 @@ def _request_json(
     timeout=None,
     service_name="api",
 ):
-    """
-    Generic GET helper.
-
-    451:
-        Stop trying the current service immediately.
-
-    Other request errors:
-        Try the next available base URL.
-    """
-
     timeout = (
         timeout
         if timeout is not None
@@ -108,11 +98,9 @@ def _request_json(
     last_error = None
 
     for base_url in base_urls:
-
         url = f"{base_url}{endpoint}"
 
         try:
-
             response = requests.get(
                 url,
                 params=params or {},
@@ -121,48 +109,22 @@ def _request_json(
             )
 
             if response.status_code == 451:
-
                 print(
                     f"[advanced_market_data] "
                     f"{service_name} 451 blocked: "
                     f"{base_url}"
                 )
-
                 return None
 
             response.raise_for_status()
-
             return response.json()
 
         except requests.RequestException as err:
-
             last_error = err
-
-            print(
-                f"[advanced_market_data] "
-                f"{service_name} request failed: "
-                f"{base_url} -> {err}"
-            )
-
             continue
-
         except Exception as err:
-
             last_error = err
-
-            print(
-                f"[advanced_market_data] "
-                f"{service_name} unexpected error: "
-                f"{err}"
-            )
-
             continue
-
-    print(
-        f"[advanced_market_data] "
-        f"{service_name} unavailable: "
-        f"{last_error}"
-    )
 
     return None
 
@@ -221,28 +183,6 @@ def _spot_swing_levels(
     klines,
     lookback=60,
 ):
-    """
-    Calculate 1H swing-style support/resistance.
-
-    Rules:
-    - Only the supplied timeframe is used.
-    - The caller supplies 1H candles.
-    - Last `lookback` candles are inspected.
-    - A swing low must be lower than the surrounding
-      candles within a small local window.
-    - A swing high must be higher than the surrounding
-      candles within a small local window.
-    - Support is selected from swing lows BELOW current price.
-    - Resistance is selected from swing highs ABOVE current price.
-
-    This avoids simply using:
-        support = absolute lowest low
-        resistance = absolute highest high
-
-    which can place a level far away or directly at an
-    unrelated extreme.
-    """
-
     if not klines:
         return {
             "support": None,
@@ -258,11 +198,8 @@ def _spot_swing_levels(
         }
 
     candles = []
-
     for row in rows:
-
         try:
-
             candles.append(
                 {
                     "high": float(row[2]),
@@ -270,9 +207,7 @@ def _spot_swing_levels(
                     "close": float(row[4]),
                 }
             )
-
         except Exception:
-
             continue
 
     if len(candles) < 7:
@@ -281,132 +216,50 @@ def _spot_swing_levels(
             "resistance": None,
         }
 
-    # --------------------------------------------------------
-    # Current price
-    # --------------------------------------------------------
-
     current_price = candles[-1]["close"]
-
-    # --------------------------------------------------------
-    # Find local swing highs/lows
-    # --------------------------------------------------------
-
     swing_lows = []
     swing_highs = []
 
-    for i in range(
-        2,
-        len(candles) - 2,
-    ):
-
+    for i in range(2, len(candles) - 2):
         current = candles[i]
-
         previous_1 = candles[i - 1]
         previous_2 = candles[i - 2]
-
         next_1 = candles[i + 1]
         next_2 = candles[i + 2]
 
-        # ----------------------------------------------------
-        # Swing low
-        # ----------------------------------------------------
-
         is_swing_low = (
             current["low"] <= previous_1["low"]
-            and
-            current["low"] <= previous_2["low"]
-            and
-            current["low"] <= next_1["low"]
-            and
-            current["low"] <= next_2["low"]
+            and current["low"] <= previous_2["low"]
+            and current["low"] <= next_1["low"]
+            and current["low"] <= next_2["low"]
         )
-
         if is_swing_low:
-
-            swing_lows.append(
-                current["low"]
-            )
-
-        # ----------------------------------------------------
-        # Swing high
-        # ----------------------------------------------------
+            swing_lows.append(current["low"])
 
         is_swing_high = (
             current["high"] >= previous_1["high"]
-            and
-            current["high"] >= previous_2["high"]
-            and
-            current["high"] >= next_1["high"]
-            and
-            current["high"] >= next_2["high"]
+            and current["high"] >= previous_2["high"]
+            and current["high"] >= next_1["high"]
+            and current["high"] >= next_2["high"]
         )
-
         if is_swing_high:
+            swing_highs.append(current["high"])
 
-            swing_highs.append(
-                current["high"]
-            )
+    supports = [l for l in swing_lows if l < current_price]
+    resistances = [l for l in swing_highs if l > current_price]
 
-    # --------------------------------------------------------
-    # Only use levels relative to current price
-    # --------------------------------------------------------
-
-    supports = [
-        level
-        for level in swing_lows
-        if level < current_price
-    ]
-
-    resistances = [
-        level
-        for level in swing_highs
-        if level > current_price
-    ]
-
-    # Nearest valid swing levels
-    support = (
-        max(supports)
-        if supports
-        else None
-    )
-
-    resistance = (
-        min(resistances)
-        if resistances
-        else None
-    )
-
-    # --------------------------------------------------------
-    # Fallback
-    # --------------------------------------------------------
+    support = max(supports) if supports else None
+    resistance = min(resistances) if resistances else None
 
     if support is None:
-
-        below = [
-            candle["low"]
-            for candle in candles
-            if candle["low"] < current_price
-        ]
-
+        below = [c["low"] for c in candles if c["low"] < current_price]
         if below:
-
-            support = min(
-                below
-            )
+            support = min(below)
 
     if resistance is None:
-
-        above = [
-            candle["high"]
-            for candle in candles
-            if candle["high"] > current_price
-        ]
-
+        above = [c["high"] for c in candles if c["high"] > current_price]
         if above:
-
-            resistance = max(
-                above
-            )
+            resistance = max(above)
 
     return {
         "support": support,
@@ -414,53 +267,19 @@ def _spot_swing_levels(
     }
 
 
-def get_multi_timeframe_sr(
-    symbol,
-):
-    """
-    Support / resistance using ONLY 1H Spot candles.
-
-    IMPORTANT:
-    15m, 4h, 1d and 1w are intentionally not used.
-
-    The existing function name is kept so that other modules
-    calling get_multi_timeframe_sr() do not break.
-    """
-
+def get_multi_timeframe_sr(symbol):
     timeframe = "1h"
     limit = 100
-
     try:
-
-        klines = get_spot_klines(
-            symbol,
-            timeframe,
-            limit,
-        )
-
-        levels = _spot_swing_levels(
-            klines,
-            min(60, limit),
-        )
-
-        return {
-            "1h": levels,
-        }
-
-    except Exception as err:
-
-        print(
-            f"[advanced_market_data] "
-            f"1H S/R failed "
-            f"{symbol}: "
-            f"{err}"
-        )
-
+        klines = get_spot_klines(symbol, timeframe, limit)
+        levels = _spot_swing_levels(klines, min(60, limit))
+        return {"1h": levels}
+    except Exception:
         return {
             "1h": {
                 "support": None,
                 "resistance": None,
-            },
+            }
         }
 
 
@@ -468,46 +287,19 @@ def get_multi_timeframe_sr(
 # EMA / TREND
 # ============================================================
 
-def _ema(
-    values,
-    period,
-):
+def _ema(values, period):
     if not values:
         return None
-
-    multiplier = 2 / (
-        period + 1
-    )
-
+    multiplier = 2 / (period + 1)
     ema = values[0]
-
     for price in values[1:]:
-
-        ema = (
-            price - ema
-        ) * multiplier + ema
-
+        ema = (price - ema) * multiplier + ema
     return ema
 
 
-def get_trend(
-    symbol,
-    interval,
-):
-    """
-    Trend calculation using public Spot klines.
-    """
-
-    klines = get_spot_klines(
-        symbol,
-        interval,
-        100,
-    )
-
-    if (
-        not klines
-        or len(klines) < 50
-    ):
+def get_trend(symbol, interval):
+    klines = get_spot_klines(symbol, interval, 100)
+    if not klines or len(klines) < 50:
         return {
             "trend": "Unknown",
             "price": None,
@@ -516,21 +308,13 @@ def get_trend(
         }
 
     closes = []
-
     for row in klines:
-
         try:
-
-            closes.append(
-                float(row[4])
-            )
-
+            closes.append(float(row[4]))
         except Exception:
-
             continue
 
     if len(closes) < 50:
-
         return {
             "trend": "Unknown",
             "price": None,
@@ -539,37 +323,14 @@ def get_trend(
         }
 
     price = closes[-1]
+    ema20 = _ema(closes, 20)
+    ema50 = _ema(closes, 50)
 
-    ema20 = _ema(
-        closes,
-        20,
-    )
-
-    ema50 = _ema(
-        closes,
-        50,
-    )
-
-    if (
-        ema20 is not None
-        and ema50 is not None
-        and price > ema20
-        and ema20 > ema50
-    ):
-
+    if ema20 is not None and ema50 is not None and price > ema20 and ema20 > ema50:
         trend = "Bullish"
-
-    elif (
-        ema20 is not None
-        and ema50 is not None
-        and price < ema20
-        and ema20 < ema50
-    ):
-
+    elif ema20 is not None and ema50 is not None and price < ema20 and ema20 < ema50:
         trend = "Bearish"
-
     else:
-
         trend = "Mixed"
 
     return {
@@ -581,19 +342,9 @@ def get_trend(
 
 
 def get_btc_context():
-    """
-    BTC context using public Spot data.
-    """
-
     return {
-        "4h": get_trend(
-            "BTCUSDT",
-            "4h",
-        ),
-        "1d": get_trend(
-            "BTCUSDT",
-            "1d",
-        ),
+        "4h": get_trend("BTCUSDT", "4h"),
+        "1d": get_trend("BTCUSDT", "1d"),
     }
 
 
@@ -601,530 +352,163 @@ def get_btc_context():
 # ORDER BOOK
 # ============================================================
 
-def _parse_orderbook(
-    data,
-):
+def _parse_orderbook(data):
     if not data:
         return None
-
     try:
+        bids = [(float(p), float(q)) for p, q in data.get("bids", [])]
+        asks = [(float(p), float(q)) for p, q in data.get("asks", [])]
 
-        bids = [
-            (
-                float(price),
-                float(quantity),
-            )
-            for price, quantity
-            in data.get(
-                "bids",
-                [],
-            )
-        ]
+        bid_value = sum(p * q for p, q in bids)
+        ask_value = sum(p * q for p, q in asks)
+        total = bid_value + ask_value
 
-        asks = [
-            (
-                float(price),
-                float(quantity),
-            )
-            for price, quantity
-            in data.get(
-                "asks",
-                [],
-            )
-        ]
-
-        bid_value = sum(
-            price * quantity
-            for price, quantity in bids
-        )
-
-        ask_value = sum(
-            price * quantity
-            for price, quantity in asks
-        )
-
-        total = (
-            bid_value
-            + ask_value
-        )
-
-        if total > 0:
-
-            imbalance = (
-                (
-                    bid_value
-                    - ask_value
-                )
-                / total
-            ) * 100
-
-        else:
-
-            imbalance = 0.0
-
-        best_bid = (
-            bids[0][0]
-            if bids
-            else None
-        )
-
-        best_ask = (
-            asks[0][0]
-            if asks
-            else None
-        )
-
-        spread = None
-
-        if (
-            best_bid is not None
-            and best_ask is not None
-        ):
-
-            spread = (
-                best_ask
-                - best_bid
-            )
+        imbalance = ((bid_value - ask_value) / total) * 100 if total > 0 else 0.0
+        best_bid = bids[0][0] if bids else None
+        best_ask = asks[0][0] if asks else None
+        spread = (best_ask - best_bid) if best_bid and best_ask else None
 
         return {
-            "bid_value_usdt": round(
-                bid_value,
-                2,
-            ),
-            "ask_value_usdt": round(
-                ask_value,
-                2,
-            ),
-            "imbalance_pct": round(
-                imbalance,
-                2,
-            ),
+            "bid_value_usdt": round(bid_value, 2),
+            "ask_value_usdt": round(ask_value, 2),
+            "imbalance_pct": round(imbalance, 2),
             "best_bid": best_bid,
             "best_ask": best_ask,
             "spread": spread,
             "source": "spot",
         }
-
-    except Exception as err:
-
-        print(
-            f"[advanced_market_data] "
-            f"orderbook parse failed: "
-            f"{err}"
-        )
-
+    except Exception:
         return None
 
 
-def get_orderbook(
-    symbol,
-):
-    data = get_spot_orderbook(
-        symbol,
-        limit=100,
-    )
-
-    return _parse_orderbook(
-        data
-    )
+def get_orderbook(symbol):
+    data = get_spot_orderbook(symbol, limit=100)
+    return _parse_orderbook(data)
 
 
 # ============================================================
 # FUTURES API
 # ============================================================
 
-def _futures_get(
-    endpoint,
-    params=None,
-):
-    """
-    Futures request.
-
-    Once a 451 is received, Futures requests are disabled
-    for the rest of the current Python process.
-    """
-
+def _futures_get(endpoint, params=None):
     global _FUTURES_BLOCKED
-
     if _FUTURES_BLOCKED:
-
         return None
 
     for base_url in FUTURES_BASE_URLS:
-
         url = f"{base_url}{endpoint}"
-
         try:
-
             response = requests.get(
                 url,
                 params=params or {},
                 timeout=REQUEST_TIMEOUT,
                 headers=HEADERS,
             )
-
             if response.status_code == 451:
-
                 print(
-                    "[advanced_market_data] "
-                    "Futures API returned 451."
+                    f"[advanced_market_data] Futures API returned 451. Disabling Futures requests for this run."
                 )
-
-                print(
-                    "[advanced_market_data] "
-                    "Disabling Futures requests "
-                    "for this run."
-                )
-
                 _FUTURES_BLOCKED = True
-
                 return None
 
             response.raise_for_status()
-
             return response.json()
-
-        except requests.RequestException as err:
-
-            print(
-                f"[advanced_market_data] "
-                f"Futures request failed: "
-                f"{base_url} -> {err}"
-            )
-
+        except requests.RequestException:
             continue
-
-        except Exception as err:
-
-            print(
-                f"[advanced_market_data] "
-                f"Futures unexpected error: "
-                f"{err}"
-            )
-
+        except Exception:
             continue
 
     return None
 
 
-# ============================================================
-# OPEN INTEREST
-# ============================================================
-
-def get_open_interest(
-    symbol,
-):
-    data = _futures_get(
-        "/fapi/v1/openInterest",
-        {
-            "symbol": symbol,
-        },
-    )
-
+def get_open_interest(symbol):
+    data = _futures_get("/fapi/v1/openInterest", {"symbol": symbol})
     if not data:
         return None
-
-    return _safe_float(
-        data.get(
-            "openInterest"
-        )
-    )
+    return _safe_float(data.get("openInterest"))
 
 
-# ============================================================
-# OI CHANGE
-# ============================================================
-
-def get_oi_change(
-    symbol,
-):
-    data = _futures_get(
-        "/futures/data/openInterestHist",
-        {
-            "symbol": symbol,
-            "period": "1h",
-            "limit": 5,
-        },
-    )
-
-    if (
-        not data
-        or len(data) < 2
-    ):
+def get_oi_change(symbol):
+    data = _futures_get("/futures/data/openInterestHist", {"symbol": symbol, "period": "1h", "limit": 5})
+    if not data or len(data) < 2:
         return None
-
     try:
-
-        old = _safe_float(
-            data[0].get(
-                "sumOpenInterest"
-            )
-        )
-
-        new = _safe_float(
-            data[-1].get(
-                "sumOpenInterest"
-            )
-        )
-
-        if (
-            old is None
-            or new is None
-            or old == 0
-        ):
-
+        old = _safe_float(data[0].get("sumOpenInterest"))
+        new = _safe_float(data[-1].get("sumOpenInterest"))
+        if old is None or new is None or old == 0:
             return None
-
-        return round(
-            (
-                (
-                    new - old
-                )
-                / old
-            ) * 100,
-            2,
-        )
-
+        return round(((new - old) / old) * 100, 2)
     except Exception:
-
         return None
 
 
-# ============================================================
-# FUNDING
-# ============================================================
-
-def get_funding(
-    symbol,
-):
-    data = _futures_get(
-        "/fapi/v1/premiumIndex",
-        {
-            "symbol": symbol,
-        },
-    )
-
+def get_funding(symbol):
+    data = _futures_get("/fapi/v1/premiumIndex", {"symbol": symbol})
     if not data:
         return None
-
-    return _safe_float(
-        data.get(
-            "lastFundingRate"
-        )
-    )
+    return _safe_float(data.get("lastFundingRate"))
 
 
-# ============================================================
-# LONG / SHORT RATIO
-# ============================================================
-
-def get_long_short_ratio(
-    symbol,
-):
-    data = _futures_get(
-        "/futures/data/globalLongShortAccountRatio",
-        {
-            "symbol": symbol,
-            "period": "1h",
-            "limit": 1,
-        },
-    )
-
+def get_long_short_ratio(symbol):
+    data = _futures_get("/futures/data/globalLongShortAccountRatio", {"symbol": symbol, "period": "1h", "limit": 1})
     if not data:
         return None
-
     try:
-
         row = data[-1]
-
-        long_account = _safe_float(
-            row.get(
-                "longAccount"
-            )
-        )
-
-        short_account = _safe_float(
-            row.get(
-                "shortAccount"
-            )
-        )
-
-        ratio = _safe_float(
-            row.get(
-                "longShortRatio"
-            )
-        )
-
         return {
-            "long_account": long_account,
-            "short_account": short_account,
-            "ratio": ratio,
+            "long_account": _safe_float(row.get("longAccount")),
+            "short_account": _safe_float(row.get("shortAccount")),
+            "ratio": _safe_float(row.get("longShortRatio")),
         }
-
     except Exception:
-
         return None
 
 
-# ============================================================
-# LIQUIDATIONS
-# ============================================================
-
-def get_liquidations(
-    symbol,
-):
-    data = _futures_get(
-        "/fapi/v1/allForceOrders",
-        {
-            "symbol": symbol,
-            "limit": 100,
-        },
-    )
-
+def get_liquidations(symbol):
+    data = _futures_get("/fapi/v1/allForceOrders", {"symbol": symbol, "limit": 100})
     if not data:
         return None
-
     long_liq = 0.0
     short_liq = 0.0
-
     for row in data:
-
         try:
-
-            price = _safe_float(
-                row.get(
-                    "price"
-                )
-            )
-
-            quantity = _safe_float(
-                row.get(
-                    "origQty"
-                )
-            )
-
-            if (
-                price is None
-                or quantity is None
-            ):
-
+            price = _safe_float(row.get("price"))
+            quantity = _safe_float(row.get("origQty"))
+            if price is None or quantity is None:
                 continue
-
-            value = (
-                price
-                * quantity
-            )
-
-            side = row.get(
-                "side",
-                "",
-            )
-
+            value = price * quantity
+            side = row.get("side", "")
             if side == "SELL":
-
                 long_liq += value
-
             elif side == "BUY":
-
                 short_liq += value
-
         except Exception:
-
             continue
-
     return {
-        "long_liquidation_usdt": round(
-            long_liq,
-            2,
-        ),
-        "short_liquidation_usdt": round(
-            short_liq,
-            2,
-        ),
-        "total_usdt": round(
-            long_liq + short_liq,
-            2,
-        ),
+        "long_liquidation_usdt": round(long_liq, 2),
+        "short_liquidation_usdt": round(short_liq, 2),
+        "total_usdt": round(long_liq + short_liq, 2),
     }
 
 
-# ============================================================
-# FUTURES COLLECTION
-# ============================================================
-
-def _collect_futures_data(
-    symbol,
-):
-    """
-    Collect Futures-only data concurrently.
-    """
-
+def _collect_futures_data(symbol):
     tasks = {
-        "open_interest":
-            lambda: get_open_interest(
-                symbol
-            ),
-
-        "oi_change_1h_pct":
-            lambda: get_oi_change(
-                symbol
-            ),
-
-        "funding_rate":
-            lambda: get_funding(
-                symbol
-            ),
-
-        "long_short_ratio":
-            lambda: get_long_short_ratio(
-                symbol
-            ),
-
-        "liquidations":
-            lambda: get_liquidations(
-                symbol
-            ),
+        "open_interest": lambda: get_open_interest(symbol),
+        "oi_change_1h_pct": lambda: get_oi_change(symbol),
+        "funding_rate": lambda: get_funding(symbol),
+        "long_short_ratio": lambda: get_long_short_ratio(symbol),
+        "liquidations": lambda: get_liquidations(symbol),
     }
 
     results = {}
-
-    with ThreadPoolExecutor(
-        max_workers=MAX_WORKERS
-    ) as executor:
-
-        future_map = {
-            executor.submit(
-                func
-            ): name
-            for name, func
-            in tasks.items()
-        }
-
-        for future in as_completed(
-            future_map
-        ):
-
-            name = future_map[
-                future
-            ]
-
+    with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
+        future_map = {executor.submit(func): name for name, func in tasks.items()}
+        for future in as_completed(future_map):
+            name = future_map[future]
             try:
-
-                results[name] = (
-                    future.result()
-                )
-
-            except Exception as err:
-
-                print(
-                    f"[advanced_market_data] "
-                    f"{name} failed for "
-                    f"{symbol}: "
-                    f"{err}"
-                )
-
+                results[name] = future.result()
+            except Exception:
                 results[name] = None
-
     return results
 
 
@@ -1132,223 +516,59 @@ def _collect_futures_data(
 # MAIN FUNCTION
 # ============================================================
 
-def get_advanced_market_data(
-    symbol,
-):
-    """
-    Main advanced-data collector.
-
-    Always returns a dictionary.
-    """
-
-    print(
-        f"[advanced_market_data] "
-        f"collecting data for "
-        f"{symbol}..."
-    )
+def get_advanced_market_data(symbol):
+    print(f"[advanced_market_data] collecting data for {symbol}...")
 
     data = {
         "source_status": {
             "spot": "pending",
             "futures": "pending",
         },
-
-        # NOTE:
-        # The key name is kept as
-        # "multi_timeframe_sr"
-        # for compatibility with the rest of the bot.
-        #
-        # Internally it now contains ONLY:
-        # {
-        #     "1h": {
-        #         "support": ...,
-        #         "resistance": ...
-        #     }
-        # }
         "multi_timeframe_sr": {},
-
         "btc_context": {},
-
         "open_interest": None,
-
         "oi_change_1h_pct": None,
-
         "funding_rate": None,
-
         "long_short_ratio": None,
-
         "liquidations": None,
-
         "orderbook": None,
     }
 
-
-    # ========================================================
-    # SPOT 1H S/R
-    # ========================================================
+    try:
+        data["multi_timeframe_sr"] = get_multi_timeframe_sr(symbol)
+        data["source_status"]["spot"] = "available"
+    except Exception:
+        pass
 
     try:
-
-        data[
-            "multi_timeframe_sr"
-        ] = get_multi_timeframe_sr(
-            symbol
-        )
-
-        data[
-            "source_status"
-        ][
-            "spot"
-        ] = "available"
-
-    except Exception as err:
-
-        print(
-            f"[advanced_market_data] "
-            f"Spot 1H S/R failed: "
-            f"{err}"
-        )
-
-
-    # ========================================================
-    # BTC CONTEXT
-    # ========================================================
+        data["btc_context"] = get_btc_context()
+    except Exception:
+        pass
 
     try:
-
-        data[
-            "btc_context"
-        ] = get_btc_context()
-
-    except Exception as err:
-
-        print(
-            f"[advanced_market_data] "
-            f"BTC context failed: "
-            f"{err}"
-        )
-
-
-    # ========================================================
-    # ORDER BOOK
-    # ========================================================
+        data["orderbook"] = get_orderbook(symbol)
+    except Exception:
+        pass
 
     try:
+        futures_data = _collect_futures_data(symbol)
+        data.update(futures_data)
 
-        data[
-            "orderbook"
-        ] = get_orderbook(
-            symbol
-        )
-
-    except Exception as err:
-
-        print(
-            f"[advanced_market_data] "
-            f"Orderbook failed: "
-            f"{err}"
-        )
-
-
-    # ========================================================
-    # FUTURES
-    # ========================================================
-
-    try:
-
-        futures_data = (
-            _collect_futures_data(
-                symbol
-            )
-        )
-
-        data.update(
-            futures_data
-        )
-
-        futures_available = any(
-            value is not None
-            for value in futures_data.values()
-        )
-
+        futures_available = any(value is not None for value in futures_data.values())
         if futures_available:
-
-            data[
-                "source_status"
-            ][
-                "futures"
-            ] = "partially_available"
-
+            data["source_status"]["futures"] = "partially_available"
         elif _FUTURES_BLOCKED:
-
-            data[
-                "source_status"
-            ][
-                "futures"
-            ] = "blocked_451"
-
+            data["source_status"]["futures"] = "blocked_451"
         else:
+            data["source_status"]["futures"] = "unavailable"
+    except Exception:
+        data["source_status"]["futures"] = "error"
 
-            data[
-                "source_status"
-            ][
-                "futures"
-            ] = "unavailable"
+    available = [key for key, value in data.items() if key != "source_status" and value]
 
-    except Exception as err:
-
-        print(
-            f"[advanced_market_data] "
-            f"Futures collection failed: "
-            f"{err}"
-        )
-
-        data[
-            "source_status"
-        ][
-            "futures"
-        ] = "error"
-
-
-    # ========================================================
-    # SUMMARY
-    # ========================================================
-
-    available = []
-
-    for key, value in data.items():
-
-        if key == "source_status":
-            continue
-
-        if value:
-            available.append(
-                key
-            )
-
-
-    print(
-        f"[advanced_market_data] "
-        f"completed for "
-        f"{symbol}"
-    )
-
-    print(
-        f"[advanced_market_data] "
-        f"spot status: "
-        f"{data['source_status']['spot']}"
-    )
-
-    print(
-        f"[advanced_market_data] "
-        f"futures status: "
-        f"{data['source_status']['futures']}"
-    )
-
-    print(
-        f"[advanced_market_data] "
-        f"available fields: "
-        f"{', '.join(available) if available else 'none'}"
-    )
+    print(f"[advanced_market_data] completed for {symbol}")
+    print(f"[advanced_market_data] spot status: {data['source_status']['spot']}")
+    print(f"[advanced_market_data] futures status: {data['source_status']['futures']}")
+    print(f"[advanced_market_data] available fields: {', '.join(available) if available else 'none'}")
 
     return data
