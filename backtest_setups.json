@@ -594,6 +594,23 @@
       "technical_analysis": "Price sits just above EMA9 (0.026485) and EMA21 (0.025955), with SMA50 (0.024812) further below, confirming a bullish short‑term bias. MACD line (0.00057) is above its signal (0.000508) and the histogram is positive, adding momentum. Stochastic is in the high 80s (K 89.47, D 94.64), indicating overbought conditions but still supporting upward pressure. The 1H swing structure shows support at 0.026 and resistance at 0.0273; the current price is near the upper edge, making a pull‑back to the 0.0270‑0.0271 zone a reasonable entry. Order‑book imbalance is negative (-17.15%), suggesting more sell o",
       "market_context": "BTC is in a bullish trend on both 4H and 1D timeframes, with price above its 20‑ and 50‑period EMAs, and the broader market shows 87% green assets. This favorable backdrop supports a long bias on SHELLUSDT.",
       "result": "PENDING"
+    },
+    {
+      "id": 36,
+      "created_at": "2026-09-22T03:30:50.721402+00:00",
+      "symbol": "GRAMUSDT",
+      "direction": "SHORT",
+      "title": "High Volume Selling Sweep Breaks $GRAM Market Structure",
+      "entry_low": 1.444,
+      "entry_high": 1.446,
+      "stop_loss": 1.496,
+      "take_profit": 1.34,
+      "support": 1.412,
+      "resistance": 1.448,
+      "news_line": "",
+      "technical_analysis": "Price at 1.445 sits just below EMA9 (1.4455) but remains above EMA21 (1.4349) and SMA50 (1.4046). MACD line is under its signal with a negative histogram, signalling bearish momentum. Stochastic K (37.7) is below D (45.4) and both are under 50, reinforcing a downtrend. Orderbook shows a modest 5.7% bid‑side imbalance, yet price is hugging the 1H/4H resistance at 1.448. The narrow 1.444‑1.446 range provides a clean short entry zone.",
+      "market_context": "BTC is bullish on 4H and 1D timeframes, trading around $85.5k, while the broader crypto market is broadly positive (84.6% green).",
+      "result": "PENDING"
     }
   ]
 }
