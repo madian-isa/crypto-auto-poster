@@ -764,6 +764,23 @@
       "technical_analysis": "Price at 0.0468 sits above EMA9 (0.04657) and EMA21 (0.04563) and above the 50‑period SMA (0.04416), indicating short‑term bullish bias. MACD line (0.000887) is above its signal (0.00064) with a positive histogram (0.000247). Stochastic shows K≈51 below D≈66, suggesting momentum still climbing. Immediate support at 0.0465 holds, while resistance lies near 0.0474. Order‑book shows a sell‑side imbalance (~‑35 %) but price remains above key averages, supporting a cautious long bias.",
       "market_context": "BTC is in a bullish trend on both 4 h and daily frames, up 4.35 % in the last 24 h, and the broader market is 81.5 % green, adding a positive backdrop for risk assets.",
       "result": "PENDING"
+    },
+    {
+      "id": 46,
+      "created_at": "2026-09-22T05:45:48.707255+00:00",
+      "symbol": "SUPERUSDT",
+      "direction": "LONG",
+      "title": "$SUPER Reclaims Key Resistance Level: Flip to Support Complete",
+      "entry_low": 0.1509,
+      "entry_high": 0.1516,
+      "stop_loss": 0.1456,
+      "take_profit": 0.1615,
+      "support": 0.1499,
+      "resistance": 0.1542,
+      "news_line": "",
+      "technical_analysis": "Price sits above EMA9 (0.151254) and EMA21 (0.149428) and comfortably over the SMA50 (0.14323), indicating short‑term bullish bias. The MACD histogram is slightly negative, suggesting a modest bearish pullback, but the overall momentum remains bullish. Stochastic K/D are around 45, neutral and not overbought. Order‑book shows a 15.9% bid‑side imbalance with higher bid value (≈64.6k USDT) versus ask (≈46.8k USDT), reinforcing buying pressure. Key 1H/4H swing levels are support at 0.1499 and resistance at 0.1542, with a tighter technical support at 0.1509 and resistance at 0.1518.",
+      "market_context": "BTC is in a bullish trend on both 4H and 1D charts, and the broader crypto market is broadly positive (84.5% green). This backdrop supports a long bias for SUPERUSDT.",
+      "result": "PENDING"
     }
   ]
 }
