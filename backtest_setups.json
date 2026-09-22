@@ -458,6 +458,23 @@
       "technical_analysis": "Price sits below EMA9 (0.22494) and EMA21 (0.22422), indicating short‑term bearish pressure. MACD histogram is negative (-0.0012) with the MACD line under its signal, confirming downside momentum. Stochastic K/D are in the 13‑18 range, still low and suggesting the market is oversold but not yet reversing. Order‑book shows a -6.59% imbalance (more sell pressure) and a tight spread around 0.2225‑0.2226. The 1H swing high sits at 0.2251 and swing low at 0.2203, framing a short‑bias zone.",
       "market_context": "BTC remains in a bullish trend on both 4H and 1D frames, supporting overall market optimism. The broader market is broadly positive with 85.6% of assets in green, yet ARB shows clear downside signals relative to its moving averages.",
       "result": "PENDING"
+    },
+    {
+      "id": 28,
+      "created_at": "2026-09-22T01:31:02.855212+00:00",
+      "symbol": "ENAUSDT",
+      "direction": "SHORT",
+      "title": "Panic Selling Risk Increases as $ENA Tests Critical Floor",
+      "entry_low": 0.2143,
+      "entry_high": 0.2145,
+      "stop_loss": 0.2219,
+      "take_profit": 0.1991,
+      "support": 0.2129,
+      "resistance": 0.2148,
+      "news_line": "",
+      "technical_analysis": "Price sits just above the 1‑hour resistance (0.2148) while EMA9 (0.2130) remains under EMA21 (0.2141), a bearish crossover on the short‑term chart. MACD is negative and its histogram is expanding, confirming downward momentum. Stochastic K/D are in the low‑30s, indicating limited upside. Order‑book shows a -9.42% imbalance (more asks than bids) and the best ask is at the current price, adding pressure to the downside.",
+      "market_context": "BTC is in a bullish trend on both 4‑hour and daily frames, and the broader market is broadly positive (86.7% green). Despite the overall bullish backdrop, ENAUSDT exhibits several bearish technical signals, supporting a short bias.",
+      "result": "PENDING"
     }
   ]
 }
