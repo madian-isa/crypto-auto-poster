@@ -662,6 +662,23 @@
       "technical_analysis": "Price sits just above EMA9 (0.09647) and EMA21 (0.09539), with EMA9 still above EMA21, confirming short‑term bullish bias. SMA50 (0.09141) is far lower, reinforcing a longer‑term uptrend. MACD histogram is slightly negative (-0.00014) and stochastic K (58.8) is below D (61.5), suggesting modest short‑term weakness, but the overall structure remains bullish. Order‑book shows a modest sell‑side imbalance (-22%) and a tight spread at 0.09749/0.09750, indicating limited immediate pressure.",
       "market_context": "BTC is in a bullish trend on both 4H and 1D timeframes, and the broader crypto market is broadly positive with 85.3% of assets in green. This supportive backdrop aligns with a cautious long outlook on ZAMA.",
       "result": "PENDING"
+    },
+    {
+      "id": 40,
+      "created_at": "2026-09-22T04:15:54.208593+00:00",
+      "symbol": "GENIUSUSDT",
+      "direction": "SHORT",
+      "title": "$GENIUS Fails Resistance Retest: Bearish Extension Imminent",
+      "entry_low": 0.3508,
+      "entry_high": 0.3514,
+      "stop_loss": 0.3638,
+      "take_profit": 0.3248,
+      "support": 0.3469,
+      "resistance": 0.3608,
+      "news_line": "",
+      "technical_analysis": "Price (0.3506) is trading below EMA9 (0.3508), EMA21 (0.3557) and SMA50 (0.3636), indicating bearish bias. MACD histogram remains negative (-0.00068) and the MACD line is under its signal, confirming down momentum. Stochastic is in the lower zone (K 25.8, D 15.8). Order‑book shows a sell‑side imbalance of -8.66% with best ask at 0.3506, adding pressure to the downside. Immediate resistance sits near 0.3515 and support at 0.3486, while the 1H/4H swing levels are 0.3608 resistance and 0.3469 support.",
+      "market_context": "Bitcoin remains on a bullish trend across 4H and 1D timeframes, up ~5.3% in the last 24 h, and overall market breadth is broadly positive (87.7% green). The risk‑on environment supports short pressure on weaker altcoins like GENIUSUSDT.",
+      "result": "PENDING"
     }
   ]
 }
