@@ -492,6 +492,23 @@
       "technical_analysis": "Price sits above EMA9 (0.059289) and EMA21 (0.058361) and comfortably over the SMA50 (0.054047), indicating bullish bias. Stochastic K (40.69) is above D (29.02), hinting at upward momentum. MACD histogram is slightly negative, but the overall structure on the 1H/4H charts shows a clear swing range between 0.05809 support and 0.05999 resistance. Order‑book shows a modest ask‑side pressure (‑4.57% imbalance). The confluence suggests a long entry near the lower swing support.",
       "market_context": "BTC is in a bullish trend on both 4H and 1D frames, up 5.2% in 24h, and the broader market is broadly positive (87.7% green). This supportive backdrop reinforces the long outlook for SEIUSDT.",
       "result": "PENDING"
+    },
+    {
+      "id": 30,
+      "created_at": "2026-09-22T02:00:48.442606+00:00",
+      "symbol": "MUBARAKUSDT",
+      "direction": "LONG",
+      "title": "$MUBARAK Liquidation Squeeze: Bears Trapped Near Critical Resistance",
+      "entry_low": 0.04489,
+      "entry_high": 0.04492,
+      "stop_loss": 0.0430944,
+      "take_profit": 0.0484812,
+      "support": 0.04206,
+      "resistance": 0.04785,
+      "news_line": "",
+      "technical_analysis": "Price is above the 9‑EMA (0.04405) and 21‑EMA (0.04209), showing short‑term bullish bias. Stochastic %K/%D sit near 58/57, comfortably above the 50 threshold. MACD histogram is slightly negative, indicating marginal bearish pressure but near zero. The token is confined to a 1‑hour range between 0.04489 support and 0.04497 resistance, with the order‑book showing a modest sell‑side imbalance (‑18%).",
+      "market_context": "Bitcoin is in a bullish trend on both 4H and 1D charts, up about 5.7% in the last 24 hours, and the overall crypto market is broadly positive with roughly 91% of assets green, providing a supportive environment.",
+      "result": "PENDING"
     }
   ]
 }
