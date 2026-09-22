@@ -1571,6 +1571,23 @@
       "technical_analysis": "$CYBER technical structure shows price is above the 21 EMA.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 93,
+      "created_at": "2026-09-22T18:51:12.890081+00:00",
+      "symbol": "CHZUSDT",
+      "direction": "LONG",
+      "title": "High R-Multiple Long Trade Setup Forming on $CHZ",
+      "entry_low": 0.01658,
+      "entry_high": 0.01662,
+      "stop_loss": 0.0159168,
+      "take_profit": 0.0179064,
+      "support": 0.01659,
+      "resistance": 0.01688,
+      "news_line": "",
+      "technical_analysis": "Price (0.01668) is above EMA200 (0.01520) and sits between the 1‑hour support (0.01583) and resistance (0.01689). EMA9 (0.016336) is higher than EMA21 (0.016093) and EMA20 (0.016107) remains above EMA200, confirming a bullish short‑term structure. MACD histogram is positive (8.1e‑05) and OBV is rising, adding momentum. RSI is 68 and stochastic K/D are in the high 80s, indicating overbought but not yet extreme conditions. Order‑book shows a 16.9 % bid‑side imbalance, supporting upside bias.",
+      "market_context": "BTC is in a bullish trend on both 4‑hour and daily charts, up 0.55 % over 24 h, while overall market breadth is 77 % green, suggesting a broadly positive environment.",
+      "result": "PENDING"
     }
   ]
 }
