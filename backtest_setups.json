@@ -866,6 +866,23 @@
       "technical_analysis": "Price sits just below the 9‑EMA (0.212365) while staying above the 21‑EMA (0.21067), indicating a weakening bullish bias. MACD histogram is negative and the MACD line sits under the signal line, reinforcing bearish momentum. Stochastic shows K (37.3) below D (43.3), also pointing down. Order‑book imbalance is -10.79%, meaning sell pressure dominates. The immediate 1H swing range is 0.2105‑0.2132, with price testing the upper edge.",
       "market_context": "BTC is in a bullish trend on both 4H and 1D timeframes and the broader crypto market is broadly positive (81.9% green). The overall environment remains supportive of short‑term pull‑backs in altcoins like XLM.",
       "result": "PENDING"
+    },
+    {
+      "id": 52,
+      "created_at": "2026-09-22T07:20:06.180395+00:00",
+      "symbol": "NEIROUSDT",
+      "direction": "LONG",
+      "title": "Critical Resistance Test: $NEIRO Preparing to Surge Higher",
+      "entry_low": 9.7e-05,
+      "entry_high": 9.732e-05,
+      "stop_loss": 9.35e-05,
+      "take_profit": 0.000104,
+      "support": 9.495e-05,
+      "resistance": 9.853e-05,
+      "news_line": "",
+      "technical_analysis": "On the 1H chart NEIROUSDT respects a swing low at 9.495e-05 and a swing high at 9.853e-05. Price sits near 9.70e-05, just above the 1‑hour support. EMA9 aligns with price, EMA21 is slightly below, and the 50‑period SMA sits further down, suggesting a mild bullish bias. MACD lines are flat and the histogram near zero, while the stochastic oscillator hovers around the 50 level, indicating neutral momentum. Order‑book shows a 9.36% bid‑side imbalance and larger bid volume, adding subtle upside pressure.",
+      "market_context": "BTC is in a bullish trend on both 4H and 1D timeframes, trading above its 20‑ and 50‑EMA, and the broader crypto market is 82.4% green, providing a supportive environment for long setups.",
+      "result": "PENDING"
     }
   ]
 }
