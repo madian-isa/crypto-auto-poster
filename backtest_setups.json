@@ -1639,6 +1639,23 @@
       "technical_analysis": "The pair is trading below the EMA9 (0.038238) and EMA21 (0.038471), confirming a bearish EMA crossover. MACD histogram is negative (-0.000387) and the MACD line sits well under its signal, adding momentum to the downside. ADX is 31.8, indicating a strong trend. Stochastic K/D are both near 18, suggesting the price is in oversold territory but still below the Bollinger mid‑line, reinforcing short bias. Order‑book shows a bid‑side imbalance, yet the technical picture remains bearish.",
       "market_context": "BTC is in a bullish phase on both 4H and 1D charts, and the broader market is broadly positive (81.6% green). Despite the overall market optimism, SAGAUSDT shows bearish intra‑hour signals, making a short swing trade viable within the identified 1H/4H range.",
       "result": "PENDING"
+    },
+    {
+      "id": 97,
+      "created_at": "2026-09-22T19:45:53.142052+00:00",
+      "symbol": "ONEUSDT",
+      "direction": "LONG",
+      "title": "$ONE Volume Expansion Signals High Conviction Upward Move",
+      "entry_low": 0.00331,
+      "entry_high": 0.00333,
+      "stop_loss": 0.00317,
+      "take_profit": 0.00359,
+      "support": 0.003327,
+      "resistance": 0.004028,
+      "news_line": "",
+      "technical_analysis": "Price is hugging the 1‑hour support at 0.003327 while RSI (35.5) and Stochastic (K 1.7/D 6.65) are deep in oversold territory. EMA9 (0.003584) sits below EMA21 (0.003759), indicating a short‑term bearish tilt, but the market is above EMA200 (0.003021) and the order‑book shows a 36 % bid imbalance, suggesting buying pressure at the current level. MACD remains negative. The confluence of oversold momentum and buying‑side order‑book bias supports a cautious long bounce toward the next resistance.",
+      "market_context": "BTC is in a 24‑hour bearish phase (‑0.22 %), yet overall market breadth is broadly positive with 76 % of assets green. This backdrop adds modest upside potential for risk‑managed long positions on ONE.",
+      "result": "PENDING"
     }
   ]
 }
