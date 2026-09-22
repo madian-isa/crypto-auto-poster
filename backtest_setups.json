@@ -1155,6 +1155,23 @@
       "technical_analysis": "Price sits above EMA9 (0.08613) and EMA21 (0.08512), with MACD histogram still positive (+0.00011). Stochastic is in the high‑70s, indicating strong upward momentum. Order‑book shows a modest bid imbalance (+4.6%). These factors point to bullish bias on the 1H/4H swing structure.",
       "market_context": "BTC remains in a bullish trend on both 4H and 1D timeframes, supporting a broadly positive market environment (63.8% green).",
       "result": "PENDING"
+    },
+    {
+      "id": 69,
+      "created_at": "2026-09-22T13:45:49.975892+00:00",
+      "symbol": "TUTUSDT",
+      "direction": "LONG",
+      "title": "$TUT Breakout Confirmation: Bulls Target Next Supply Zone",
+      "entry_low": 0.02381,
+      "entry_high": 0.0239,
+      "stop_loss": 0.0225,
+      "take_profit": 0.02643,
+      "support": 0.02224,
+      "resistance": 0.02397,
+      "news_line": "",
+      "technical_analysis": "Price sits just above EMA9 (0.023658) and EMA21 (0.023191) and well above the SMA50 (0.02234), indicating short‑term bullish bias. MACD is positive with a rising histogram, supporting upward momentum. Stochastic shows K (66.94) below D (82.15) but both remain in the upper zone, suggesting the market is near overbought yet still holding strength. Order‑book imbalance is +20.78% on the bid side, reinforcing buying pressure. The 1‑hour swing range is bounded by support 0.02224 and resistance 0.02397, with the current price near the top of that range, making a pull‑back entry around 0.02381‑0.0239",
+      "market_context": "BTC is in a bullish trend on both 4‑hour and daily timeframes, and the broader crypto market shows a 64.1% green breadth, providing a favorable backdrop for long‑biased setups on altcoins like TUT.",
+      "result": "PENDING"
     }
   ]
 }
