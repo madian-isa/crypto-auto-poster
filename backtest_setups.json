@@ -849,6 +849,23 @@
       "technical_analysis": "Price sits above EMA9 (0.006505), EMA21 (0.006439) and SMA50 (0.006334), indicating bullish momentum. MACD is positive (0.000063 vs signal 0.000049) with a rising histogram, reinforcing the uptrend. Stochastic %K at 86.8% and %D at 72.8% shows strong upward pressure, though nearing overbought levels. The 1‑hour swing range is bounded by support 0.00647 and resistance 0.00663, with current price near the top of this range. Order‑book shows a tight spread and a slight ask‑side imbalance, but the technical picture remains bullish.",
       "market_context": "The broader market is broadly positive (81.2% green). BTC is in a bullish trend on both 4‑hour and daily frames, trading around $85,470 well above its 20‑EMA and 50‑EMA. This overall risk‑on environment supports a long bias for HEMIUSDT.",
       "result": "PENDING"
+    },
+    {
+      "id": 51,
+      "created_at": "2026-09-22T07:00:59.260255+00:00",
+      "symbol": "XLMUSDT",
+      "direction": "SHORT",
+      "title": "Bearish Divergence Spotted on $XLM: Downside Targets Ahead",
+      "entry_low": 0.2118,
+      "entry_high": 0.212,
+      "stop_loss": 0.2194,
+      "take_profit": 0.1966,
+      "support": 0.2105,
+      "resistance": 0.2132,
+      "news_line": "",
+      "technical_analysis": "Price sits just below the 9‑EMA (0.212365) while staying above the 21‑EMA (0.21067), indicating a weakening bullish bias. MACD histogram is negative and the MACD line sits under the signal line, reinforcing bearish momentum. Stochastic shows K (37.3) below D (43.3), also pointing down. Order‑book imbalance is -10.79%, meaning sell pressure dominates. The immediate 1H swing range is 0.2105‑0.2132, with price testing the upper edge.",
+      "market_context": "BTC is in a bullish trend on both 4H and 1D timeframes and the broader crypto market is broadly positive (81.9% green). The overall environment remains supportive of short‑term pull‑backs in altcoins like XLM.",
+      "result": "PENDING"
     }
   ]
 }
