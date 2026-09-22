@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-09-21T17:42:33.668344+00:00",
+  "generated_at": "2026-09-22T07:05:50.419963+00:00",
   "input_file": "backtest_setups.json",
   "summary": {
-    "total": 6,
-    "TP_HIT": 0,
-    "SL_HIT": 1,
-    "NO_ENTRY": 0,
+    "total": 51,
+    "TP_HIT": 1,
+    "SL_HIT": 10,
+    "NO_ENTRY": 4,
     "AMBIGUOUS": 0,
-    "PENDING": 5,
+    "PENDING": 36,
     "NO_DATA": 0
   },
   "results": [
@@ -66,9 +66,459 @@
       "symbol": "MUBARAKUSDT",
       "direction": "LONG",
       "created_at": "2026-09-21T17:16:10.279301+00:00",
-      "result": "PENDING",
+      "result": "SL_HIT",
       "entry_time": "2026-09-21T17:17:00+00:00",
       "entry_price": 0.044700000000000004,
+      "result_time": "2026-09-21T20:36:00+00:00"
+    },
+    {
+      "id": 7,
+      "symbol": "HOMEUSDT",
+      "direction": "LONG",
+      "created_at": "2026-09-21T17:42:39.916899+00:00",
+      "result": "SL_HIT",
+      "entry_time": "2026-09-21T17:43:00+00:00",
+      "entry_price": 0.007084999999999999,
+      "result_time": "2026-09-21T23:34:00+00:00"
+    },
+    {
+      "id": 8,
+      "symbol": "EDENUSDT",
+      "direction": "LONG",
+      "created_at": "2026-09-21T18:00:59.674383+00:00",
+      "result": "PENDING",
+      "entry_time": "2026-09-21T18:01:00+00:00",
+      "entry_price": 0.0598,
+      "result_time": null
+    },
+    {
+      "id": 9,
+      "symbol": "NEARUSDT",
+      "direction": "SHORT",
+      "created_at": "2026-09-21T18:15:47.124467+00:00",
+      "result": "PENDING",
+      "entry_time": "2026-09-21T18:16:00+00:00",
+      "entry_price": 4.147,
+      "result_time": null
+    },
+    {
+      "id": 10,
+      "symbol": "SUIUSDT",
+      "direction": "SHORT",
+      "created_at": "2026-09-21T18:30:54.990995+00:00",
+      "result": "SL_HIT",
+      "entry_time": "2026-09-21T18:31:00+00:00",
+      "entry_price": 1.0035,
+      "result_time": "2026-09-21T23:13:00+00:00"
+    },
+    {
+      "id": 11,
+      "symbol": "DOLOUSDT",
+      "direction": "LONG",
+      "created_at": "2026-09-21T18:45:48.076525+00:00",
+      "result": "PENDING",
+      "entry_time": "2026-09-21T18:46:00+00:00",
+      "entry_price": 0.027115,
+      "result_time": null
+    },
+    {
+      "id": 12,
+      "symbol": "SUPERUSDT",
+      "direction": "LONG",
+      "created_at": "2026-09-21T19:00:55.206934+00:00",
+      "result": "PENDING",
+      "entry_time": "2026-09-21T19:02:00+00:00",
+      "entry_price": 0.1473,
+      "result_time": null
+    },
+    {
+      "id": 13,
+      "symbol": "SOMIUSDT",
+      "direction": "SHORT",
+      "created_at": "2026-09-21T19:15:50.959632+00:00",
+      "result": "PENDING",
+      "entry_time": "2026-09-21T19:20:00+00:00",
+      "entry_price": 0.18569999999999998,
+      "result_time": null
+    },
+    {
+      "id": 14,
+      "symbol": "ONDOUSDT",
+      "direction": "SHORT",
+      "created_at": "2026-09-21T19:30:50.226962+00:00",
+      "result": "SL_HIT",
+      "entry_time": "2026-09-21T19:31:00+00:00",
+      "entry_price": 0.442,
+      "result_time": "2026-09-21T22:19:00+00:00"
+    },
+    {
+      "id": 15,
+      "symbol": "XPLUSDT",
+      "direction": "LONG",
+      "created_at": "2026-09-21T19:45:45.281350+00:00",
+      "result": "SL_HIT",
+      "entry_time": "2026-09-21T19:55:00+00:00",
+      "entry_price": 0.099925,
+      "result_time": "2026-09-22T01:04:00+00:00"
+    },
+    {
+      "id": 16,
+      "symbol": "ARKMUSDT",
+      "direction": "LONG",
+      "created_at": "2026-09-21T20:00:55.892911+00:00",
+      "result": "PENDING",
+      "entry_time": "2026-09-21T20:01:00+00:00",
+      "entry_price": 0.125,
+      "result_time": null
+    },
+    {
+      "id": 17,
+      "symbol": "RENDERUSDT",
+      "direction": "LONG",
+      "created_at": "2026-09-21T20:15:50.380475+00:00",
+      "result": "PENDING",
+      "entry_time": "2026-09-22T01:18:00+00:00",
+      "entry_price": 1.784,
+      "result_time": null
+    },
+    {
+      "id": 18,
+      "symbol": "GENIUSUSDT",
+      "direction": "SHORT",
+      "created_at": "2026-09-21T20:30:53.607109+00:00",
+      "result": "SL_HIT",
+      "entry_time": "2026-09-21T20:32:00+00:00",
+      "entry_price": 0.34735,
+      "result_time": "2026-09-21T23:19:00+00:00"
+    },
+    {
+      "id": 19,
+      "symbol": "LQTYUSDT",
+      "direction": "LONG",
+      "created_at": "2026-09-21T20:45:51.122052+00:00",
+      "result": "PENDING",
+      "entry_time": "2026-09-21T20:47:00+00:00",
+      "entry_price": 0.2365,
+      "result_time": null
+    },
+    {
+      "id": 20,
+      "symbol": "JUPUSDT",
+      "direction": "LONG",
+      "created_at": "2026-09-21T20:51:36.350062+00:00",
+      "result": "PENDING",
+      "entry_time": "2026-09-21T20:52:00+00:00",
+      "entry_price": 0.29855,
+      "result_time": null
+    },
+    {
+      "id": 21,
+      "symbol": "DUSKUSDT",
+      "direction": "LONG",
+      "created_at": "2026-09-21T21:00:56.422090+00:00",
+      "result": "PENDING",
+      "entry_time": "2026-09-21T21:02:00+00:00",
+      "entry_price": 0.0874,
+      "result_time": null
+    },
+    {
+      "id": 22,
+      "symbol": "KMNOUSDT",
+      "direction": "SHORT",
+      "created_at": "2026-09-21T21:15:50.024536+00:00",
+      "result": "PENDING",
+      "entry_time": "2026-09-21T21:30:00+00:00",
+      "entry_price": 0.03388,
+      "result_time": null
+    },
+    {
+      "id": 23,
+      "symbol": "BTCUSDT",
+      "direction": "LONG",
+      "created_at": "2026-09-22T00:15:47.234284+00:00",
+      "result": "PENDING",
+      "entry_time": "2026-09-22T00:17:00+00:00",
+      "entry_price": 86413.3,
+      "result_time": null
+    },
+    {
+      "id": 24,
+      "symbol": "PEPEUSDT",
+      "direction": "SHORT",
+      "created_at": "2026-09-22T00:30:55.191021+00:00",
+      "result": "SL_HIT",
+      "entry_time": "2026-09-22T00:34:00+00:00",
+      "entry_price": 5.005e-06,
+      "result_time": "2026-09-22T03:28:00+00:00"
+    },
+    {
+      "id": 25,
+      "symbol": "JASMYUSDT",
+      "direction": "LONG",
+      "created_at": "2026-09-22T00:45:50.032524+00:00",
+      "result": "PENDING",
+      "entry_time": "2026-09-22T00:46:00+00:00",
+      "entry_price": 0.00442,
+      "result_time": null
+    },
+    {
+      "id": 26,
+      "symbol": "FILUSDT",
+      "direction": "LONG",
+      "created_at": "2026-09-22T01:00:57.566478+00:00",
+      "result": "PENDING",
+      "entry_time": "2026-09-22T01:01:00+00:00",
+      "entry_price": 0.9890000000000001,
+      "result_time": null
+    },
+    {
+      "id": 27,
+      "symbol": "ARBUSDT",
+      "direction": "SHORT",
+      "created_at": "2026-09-22T01:15:50.005776+00:00",
+      "result": "NO_ENTRY",
+      "entry_time": null,
+      "entry_price": null,
+      "result_time": null
+    },
+    {
+      "id": 28,
+      "symbol": "ENAUSDT",
+      "direction": "SHORT",
+      "created_at": "2026-09-22T01:31:02.855212+00:00",
+      "result": "PENDING",
+      "entry_time": "2026-09-22T01:32:00+00:00",
+      "entry_price": 0.21439999999999998,
+      "result_time": null
+    },
+    {
+      "id": 29,
+      "symbol": "SEIUSDT",
+      "direction": "LONG",
+      "created_at": "2026-09-22T01:45:47.885990+00:00",
+      "result": "NO_ENTRY",
+      "entry_time": null,
+      "entry_price": null,
+      "result_time": null
+    },
+    {
+      "id": 30,
+      "symbol": "MUBARAKUSDT",
+      "direction": "LONG",
+      "created_at": "2026-09-22T02:00:48.442606+00:00",
+      "result": "TP_HIT",
+      "entry_time": "2026-09-22T02:01:00+00:00",
+      "entry_price": 0.044905,
+      "result_time": "2026-09-22T04:21:00+00:00"
+    },
+    {
+      "id": 31,
+      "symbol": "PENDLEUSDT",
+      "direction": "SHORT",
+      "created_at": "2026-09-22T02:15:44.696746+00:00",
+      "result": "NO_ENTRY",
+      "entry_time": null,
+      "entry_price": null,
+      "result_time": null
+    },
+    {
+      "id": 32,
+      "symbol": "TAOUSDT",
+      "direction": "LONG",
+      "created_at": "2026-09-22T02:30:55.908911+00:00",
+      "result": "PENDING",
+      "entry_time": "2026-09-22T02:43:00+00:00",
+      "entry_price": 315.75,
+      "result_time": null
+    },
+    {
+      "id": 33,
+      "symbol": "SHIBUSDT",
+      "direction": "LONG",
+      "created_at": "2026-09-22T02:45:51.272777+00:00",
+      "result": "PENDING",
+      "entry_time": "2026-09-22T02:46:00+00:00",
+      "entry_price": 5.945e-06,
+      "result_time": null
+    },
+    {
+      "id": 34,
+      "symbol": "NILUSDT",
+      "direction": "LONG",
+      "created_at": "2026-09-22T03:01:02.249179+00:00",
+      "result": "SL_HIT",
+      "entry_time": "2026-09-22T03:02:00+00:00",
+      "entry_price": 0.07127,
+      "result_time": "2026-09-22T04:02:00+00:00"
+    },
+    {
+      "id": 35,
+      "symbol": "SHELLUSDT",
+      "direction": "LONG",
+      "created_at": "2026-09-22T03:15:49.934548+00:00",
+      "result": "PENDING",
+      "entry_time": "2026-09-22T03:16:00+00:00",
+      "entry_price": 0.027049999999999998,
+      "result_time": null
+    },
+    {
+      "id": 36,
+      "symbol": "GRAMUSDT",
+      "direction": "SHORT",
+      "created_at": "2026-09-22T03:30:50.721402+00:00",
+      "result": "PENDING",
+      "entry_time": "2026-09-22T03:31:00+00:00",
+      "entry_price": 1.4449999999999998,
+      "result_time": null
+    },
+    {
+      "id": 37,
+      "symbol": "BERAUSDT",
+      "direction": "SHORT",
+      "created_at": "2026-09-22T03:46:22.007413+00:00",
+      "result": "PENDING",
+      "entry_time": "2026-09-22T03:47:00+00:00",
+      "entry_price": 0.23099999999999998,
+      "result_time": null
+    },
+    {
+      "id": 38,
+      "symbol": "ETHFIUSDT",
+      "direction": "LONG",
+      "created_at": "2026-09-22T03:54:47.432356+00:00",
+      "result": "PENDING",
+      "entry_time": "2026-09-22T03:55:00+00:00",
+      "entry_price": 0.7035,
+      "result_time": null
+    },
+    {
+      "id": 39,
+      "symbol": "ZAMAUSDT",
+      "direction": "LONG",
+      "created_at": "2026-09-22T04:00:57.304611+00:00",
+      "result": "SL_HIT",
+      "entry_time": "2026-09-22T04:01:00+00:00",
+      "entry_price": 0.09740499999999999,
+      "result_time": "2026-09-22T05:14:00+00:00"
+    },
+    {
+      "id": 40,
+      "symbol": "GENIUSUSDT",
+      "direction": "SHORT",
+      "created_at": "2026-09-22T04:15:54.208593+00:00",
+      "result": "PENDING",
+      "entry_time": "2026-09-22T04:16:00+00:00",
+      "entry_price": 0.35109999999999997,
+      "result_time": null
+    },
+    {
+      "id": 41,
+      "symbol": "PEOPLEUSDT",
+      "direction": "LONG",
+      "created_at": "2026-09-22T04:30:52.501637+00:00",
+      "result": "PENDING",
+      "entry_time": "2026-09-22T04:35:00+00:00",
+      "entry_price": 0.009389999999999999,
+      "result_time": null
+    },
+    {
+      "id": 42,
+      "symbol": "INITUSDT",
+      "direction": "SHORT",
+      "created_at": "2026-09-22T04:45:46.844951+00:00",
+      "result": "PENDING",
+      "entry_time": "2026-09-22T04:47:00+00:00",
+      "entry_price": 0.082925,
+      "result_time": null
+    },
+    {
+      "id": 43,
+      "symbol": "FTTUSDT",
+      "direction": "SHORT",
+      "created_at": "2026-09-22T05:00:53.623911+00:00",
+      "result": "PENDING",
+      "entry_time": "2026-09-22T05:02:00+00:00",
+      "entry_price": 0.25315,
+      "result_time": null
+    },
+    {
+      "id": 44,
+      "symbol": "ACEUSDT",
+      "direction": "LONG",
+      "created_at": "2026-09-22T05:15:47.700572+00:00",
+      "result": "PENDING",
+      "entry_time": "2026-09-22T05:16:00+00:00",
+      "entry_price": 0.17705,
+      "result_time": null
+    },
+    {
+      "id": 45,
+      "symbol": "TREEUSDT",
+      "direction": "LONG",
+      "created_at": "2026-09-22T05:30:51.076331+00:00",
+      "result": "PENDING",
+      "entry_time": "2026-09-22T05:31:00+00:00",
+      "entry_price": 0.04665,
+      "result_time": null
+    },
+    {
+      "id": 46,
+      "symbol": "SUPERUSDT",
+      "direction": "LONG",
+      "created_at": "2026-09-22T05:45:48.707255+00:00",
+      "result": "PENDING",
+      "entry_time": "2026-09-22T05:46:00+00:00",
+      "entry_price": 0.15125,
+      "result_time": null
+    },
+    {
+      "id": 47,
+      "symbol": "DUSKUSDT",
+      "direction": "LONG",
+      "created_at": "2026-09-22T06:01:06.431126+00:00",
+      "result": "PENDING",
+      "entry_time": "2026-09-22T06:02:00+00:00",
+      "entry_price": 0.08555,
+      "result_time": null
+    },
+    {
+      "id": 48,
+      "symbol": "OPNUSDT",
+      "direction": "SHORT",
+      "created_at": "2026-09-22T06:15:49.399440+00:00",
+      "result": "PENDING",
+      "entry_time": "2026-09-22T06:16:00+00:00",
+      "entry_price": 0.05255,
+      "result_time": null
+    },
+    {
+      "id": 49,
+      "symbol": "VETUSDT",
+      "direction": "LONG",
+      "created_at": "2026-09-22T06:30:53.731466+00:00",
+      "result": "NO_ENTRY",
+      "entry_time": null,
+      "entry_price": null,
+      "result_time": null
+    },
+    {
+      "id": 50,
+      "symbol": "HEMIUSDT",
+      "direction": "LONG",
+      "created_at": "2026-09-22T06:45:47.156739+00:00",
+      "result": "PENDING",
+      "entry_time": "2026-09-22T06:46:00+00:00",
+      "entry_price": 0.006535,
+      "result_time": null
+    },
+    {
+      "id": 51,
+      "symbol": "XLMUSDT",
+      "direction": "SHORT",
+      "created_at": "2026-09-22T07:00:59.260255+00:00",
+      "result": "PENDING",
+      "entry_time": "2026-09-22T07:01:00+00:00",
+      "entry_price": 0.21189999999999998,
       "result_time": null
     }
   ]
