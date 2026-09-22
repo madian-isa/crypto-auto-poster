@@ -1537,6 +1537,23 @@
         "btc_funding_rate": null
       },
       "result": "PENDING"
+    },
+    {
+      "id": 91,
+      "created_at": "2026-09-22T18:30:51.140995+00:00",
+      "symbol": "VIRTUALUSDT",
+      "direction": "LONG",
+      "title": "$VIRTUAL Market Momentum Improves — What the Data Shows",
+      "entry_low": null,
+      "entry_high": null,
+      "stop_loss": 0.697309,
+      "take_profit": 0.773182,
+      "support": null,
+      "resistance": null,
+      "news_line": null,
+      "technical_analysis": "Technical and derivatives data are mixed.",
+      "market_context": "{'btc_change_24h': 0.405, 'btc_direction': 'Bullish', 'market_green_pct': 77.9, 'market_red_pct': 22.1, 'market_breadth': 'Broadly Positive', 'btc_open_interest': None, 'btc_funding_rate': None}",
+      "result": "PENDING"
     }
   ]
 }
