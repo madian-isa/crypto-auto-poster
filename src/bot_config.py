@@ -48,35 +48,6 @@ BINANCE_FAPI_BASE = (
 
 
 # =========================================================
-# CoinGlass
-# =========================================================
-
-COINGLASS_API_KEY = os.environ.get(
-    "COINGLASS_API_KEY",
-    "",
-)
-
-COINGLASS_BASE_URL = os.environ.get(
-    "COINGLASS_BASE_URL",
-    "https://open-api-v4.coinglass.com",
-)
-
-COINGLASS_TIMEOUT = float(
-    os.environ.get(
-        "COINGLASS_TIMEOUT",
-        "6",
-    )
-)
-
-COINGLASS_WORKERS = int(
-    os.environ.get(
-        "COINGLASS_WORKERS",
-        "6",
-    )
-)
-
-
-# =========================================================
 # Screener
 # =========================================================
 
