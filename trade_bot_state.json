@@ -1,6 +1,6 @@
 {
   "date": "2026-09-22",
-  "count": 32,
+  "count": 33,
   "posted_symbols_today": [
     "BTCUSDT",
     "PEPEUSDT",
@@ -33,6 +33,7 @@
     "XLMUSDT",
     "NEIROUSDT",
     "COTIUSDT",
-    "VTHOUSDT"
+    "VTHOUSDT",
+    "SYNUSDT"
   ]
 }
