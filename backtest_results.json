@@ -1,14 +1,20 @@
 {
-  "generated_at": "2026-09-22T12:24:15.023287+00:00",
+  "generated_at": "2026-09-22T14:58:53.995897+00:00",
   "input_file": "backtest_setups.json",
+  "horizon_minutes": 360,
+  "interval": "1m",
   "summary": {
-    "total": 63,
-    "TP_HIT": 2,
-    "SL_HIT": 11,
-    "NO_ENTRY": 5,
+    "total": 74,
+    "TP_HIT": 3,
+    "SL_HIT": 16,
+    "NO_ENTRY": 3,
+    "TIMEOUT": 38,
     "AMBIGUOUS": 0,
-    "PENDING": 45,
-    "NO_DATA": 0
+    "PENDING": 14,
+    "NO_DATA": 0,
+    "resolved": 19,
+    "tp_rate_resolved_pct": 15.79,
+    "sl_rate_resolved_pct": 84.21
   },
   "results": [
     {
@@ -16,7 +22,7 @@
       "symbol": "MINAUSDT",
       "direction": "SHORT",
       "created_at": "2026-09-21T15:45:50.408874+00:00",
-      "result": "PENDING",
+      "result": "TIMEOUT",
       "entry_time": "2026-09-21T15:46:00+00:00",
       "entry_price": 0.12475,
       "result_time": null
@@ -36,7 +42,7 @@
       "symbol": "BOMEUSDT",
       "direction": "LONG",
       "created_at": "2026-09-21T16:30:53.107083+00:00",
-      "result": "PENDING",
+      "result": "TIMEOUT",
       "entry_time": "2026-09-21T16:31:00+00:00",
       "entry_price": 0.00106015,
       "result_time": null
@@ -46,7 +52,7 @@
       "symbol": "METUSDT",
       "direction": "LONG",
       "created_at": "2026-09-21T16:45:50.475608+00:00",
-      "result": "PENDING",
+      "result": "TIMEOUT",
       "entry_time": "2026-09-21T17:03:00+00:00",
       "entry_price": 0.275,
       "result_time": null
@@ -56,7 +62,7 @@
       "symbol": "PHAUSDT",
       "direction": "SHORT",
       "created_at": "2026-09-21T17:00:56.934378+00:00",
-      "result": "PENDING",
+      "result": "TIMEOUT",
       "entry_time": "2026-09-21T17:02:00+00:00",
       "entry_price": 0.0493,
       "result_time": null
@@ -86,7 +92,7 @@
       "symbol": "EDENUSDT",
       "direction": "LONG",
       "created_at": "2026-09-21T18:00:59.674383+00:00",
-      "result": "PENDING",
+      "result": "TIMEOUT",
       "entry_time": "2026-09-21T18:01:00+00:00",
       "entry_price": 0.0598,
       "result_time": null
@@ -96,7 +102,7 @@
       "symbol": "NEARUSDT",
       "direction": "SHORT",
       "created_at": "2026-09-21T18:15:47.124467+00:00",
-      "result": "PENDING",
+      "result": "TIMEOUT",
       "entry_time": "2026-09-21T18:16:00+00:00",
       "entry_price": 4.147,
       "result_time": null
@@ -116,7 +122,7 @@
       "symbol": "DOLOUSDT",
       "direction": "LONG",
       "created_at": "2026-09-21T18:45:48.076525+00:00",
-      "result": "PENDING",
+      "result": "TIMEOUT",
       "entry_time": "2026-09-21T18:46:00+00:00",
       "entry_price": 0.027115,
       "result_time": null
@@ -126,7 +132,7 @@
       "symbol": "SUPERUSDT",
       "direction": "LONG",
       "created_at": "2026-09-21T19:00:55.206934+00:00",
-      "result": "PENDING",
+      "result": "TIMEOUT",
       "entry_time": "2026-09-21T19:02:00+00:00",
       "entry_price": 0.1473,
       "result_time": null
@@ -136,7 +142,7 @@
       "symbol": "SOMIUSDT",
       "direction": "SHORT",
       "created_at": "2026-09-21T19:15:50.959632+00:00",
-      "result": "PENDING",
+      "result": "TIMEOUT",
       "entry_time": "2026-09-21T19:20:00+00:00",
       "entry_price": 0.18569999999999998,
       "result_time": null
@@ -166,7 +172,7 @@
       "symbol": "ARKMUSDT",
       "direction": "LONG",
       "created_at": "2026-09-21T20:00:55.892911+00:00",
-      "result": "PENDING",
+      "result": "TIMEOUT",
       "entry_time": "2026-09-21T20:01:00+00:00",
       "entry_price": 0.125,
       "result_time": null
@@ -176,7 +182,7 @@
       "symbol": "RENDERUSDT",
       "direction": "LONG",
       "created_at": "2026-09-21T20:15:50.380475+00:00",
-      "result": "PENDING",
+      "result": "TIMEOUT",
       "entry_time": "2026-09-22T01:18:00+00:00",
       "entry_price": 1.784,
       "result_time": null
@@ -196,7 +202,7 @@
       "symbol": "LQTYUSDT",
       "direction": "LONG",
       "created_at": "2026-09-21T20:45:51.122052+00:00",
-      "result": "PENDING",
+      "result": "TIMEOUT",
       "entry_time": "2026-09-21T20:47:00+00:00",
       "entry_price": 0.2365,
       "result_time": null
@@ -206,7 +212,7 @@
       "symbol": "JUPUSDT",
       "direction": "LONG",
       "created_at": "2026-09-21T20:51:36.350062+00:00",
-      "result": "PENDING",
+      "result": "TIMEOUT",
       "entry_time": "2026-09-21T20:52:00+00:00",
       "entry_price": 0.29855,
       "result_time": null
@@ -216,7 +222,7 @@
       "symbol": "DUSKUSDT",
       "direction": "LONG",
       "created_at": "2026-09-21T21:00:56.422090+00:00",
-      "result": "PENDING",
+      "result": "TIMEOUT",
       "entry_time": "2026-09-21T21:02:00+00:00",
       "entry_price": 0.0874,
       "result_time": null
@@ -226,7 +232,7 @@
       "symbol": "KMNOUSDT",
       "direction": "SHORT",
       "created_at": "2026-09-21T21:15:50.024536+00:00",
-      "result": "PENDING",
+      "result": "TIMEOUT",
       "entry_time": "2026-09-21T21:30:00+00:00",
       "entry_price": 0.03388,
       "result_time": null
@@ -236,7 +242,7 @@
       "symbol": "BTCUSDT",
       "direction": "LONG",
       "created_at": "2026-09-22T00:15:47.234284+00:00",
-      "result": "PENDING",
+      "result": "TIMEOUT",
       "entry_time": "2026-09-22T00:17:00+00:00",
       "entry_price": 86413.3,
       "result_time": null
@@ -256,7 +262,7 @@
       "symbol": "JASMYUSDT",
       "direction": "LONG",
       "created_at": "2026-09-22T00:45:50.032524+00:00",
-      "result": "PENDING",
+      "result": "TIMEOUT",
       "entry_time": "2026-09-22T00:46:00+00:00",
       "entry_price": 0.00442,
       "result_time": null
@@ -266,7 +272,7 @@
       "symbol": "FILUSDT",
       "direction": "LONG",
       "created_at": "2026-09-22T01:00:57.566478+00:00",
-      "result": "PENDING",
+      "result": "TIMEOUT",
       "entry_time": "2026-09-22T01:01:00+00:00",
       "entry_price": 0.9890000000000001,
       "result_time": null
@@ -286,7 +292,7 @@
       "symbol": "ENAUSDT",
       "direction": "SHORT",
       "created_at": "2026-09-22T01:31:02.855212+00:00",
-      "result": "PENDING",
+      "result": "TIMEOUT",
       "entry_time": "2026-09-22T01:32:00+00:00",
       "entry_price": 0.21439999999999998,
       "result_time": null
@@ -326,7 +332,7 @@
       "symbol": "TAOUSDT",
       "direction": "LONG",
       "created_at": "2026-09-22T02:30:55.908911+00:00",
-      "result": "PENDING",
+      "result": "TIMEOUT",
       "entry_time": "2026-09-22T02:43:00+00:00",
       "entry_price": 315.75,
       "result_time": null
@@ -336,7 +342,7 @@
       "symbol": "SHIBUSDT",
       "direction": "LONG",
       "created_at": "2026-09-22T02:45:51.272777+00:00",
-      "result": "PENDING",
+      "result": "TIMEOUT",
       "entry_time": "2026-09-22T02:46:00+00:00",
       "entry_price": 5.945e-06,
       "result_time": null
@@ -356,7 +362,7 @@
       "symbol": "SHELLUSDT",
       "direction": "LONG",
       "created_at": "2026-09-22T03:15:49.934548+00:00",
-      "result": "PENDING",
+      "result": "TIMEOUT",
       "entry_time": "2026-09-22T03:16:00+00:00",
       "entry_price": 0.027049999999999998,
       "result_time": null
@@ -366,7 +372,7 @@
       "symbol": "GRAMUSDT",
       "direction": "SHORT",
       "created_at": "2026-09-22T03:30:50.721402+00:00",
-      "result": "PENDING",
+      "result": "TIMEOUT",
       "entry_time": "2026-09-22T03:31:00+00:00",
       "entry_price": 1.4449999999999998,
       "result_time": null
@@ -376,7 +382,7 @@
       "symbol": "BERAUSDT",
       "direction": "SHORT",
       "created_at": "2026-09-22T03:46:22.007413+00:00",
-      "result": "PENDING",
+      "result": "TIMEOUT",
       "entry_time": "2026-09-22T03:47:00+00:00",
       "entry_price": 0.23099999999999998,
       "result_time": null
@@ -386,7 +392,7 @@
       "symbol": "ETHFIUSDT",
       "direction": "LONG",
       "created_at": "2026-09-22T03:54:47.432356+00:00",
-      "result": "PENDING",
+      "result": "TIMEOUT",
       "entry_time": "2026-09-22T03:55:00+00:00",
       "entry_price": 0.7035,
       "result_time": null
@@ -406,7 +412,7 @@
       "symbol": "GENIUSUSDT",
       "direction": "SHORT",
       "created_at": "2026-09-22T04:15:54.208593+00:00",
-      "result": "PENDING",
+      "result": "TIMEOUT",
       "entry_time": "2026-09-22T04:16:00+00:00",
       "entry_price": 0.35109999999999997,
       "result_time": null
@@ -416,7 +422,7 @@
       "symbol": "PEOPLEUSDT",
       "direction": "LONG",
       "created_at": "2026-09-22T04:30:52.501637+00:00",
-      "result": "PENDING",
+      "result": "TIMEOUT",
       "entry_time": "2026-09-22T04:35:00+00:00",
       "entry_price": 0.009389999999999999,
       "result_time": null
@@ -436,7 +442,7 @@
       "symbol": "FTTUSDT",
       "direction": "SHORT",
       "created_at": "2026-09-22T05:00:53.623911+00:00",
-      "result": "PENDING",
+      "result": "TIMEOUT",
       "entry_time": "2026-09-22T05:02:00+00:00",
       "entry_price": 0.25315,
       "result_time": null
@@ -446,7 +452,7 @@
       "symbol": "ACEUSDT",
       "direction": "LONG",
       "created_at": "2026-09-22T05:15:47.700572+00:00",
-      "result": "PENDING",
+      "result": "TIMEOUT",
       "entry_time": "2026-09-22T05:16:00+00:00",
       "entry_price": 0.17705,
       "result_time": null
@@ -456,7 +462,7 @@
       "symbol": "TREEUSDT",
       "direction": "LONG",
       "created_at": "2026-09-22T05:30:51.076331+00:00",
-      "result": "PENDING",
+      "result": "TIMEOUT",
       "entry_time": "2026-09-22T05:31:00+00:00",
       "entry_price": 0.04665,
       "result_time": null
@@ -466,7 +472,7 @@
       "symbol": "SUPERUSDT",
       "direction": "LONG",
       "created_at": "2026-09-22T05:45:48.707255+00:00",
-      "result": "PENDING",
+      "result": "TIMEOUT",
       "entry_time": "2026-09-22T05:46:00+00:00",
       "entry_price": 0.15125,
       "result_time": null
@@ -476,7 +482,7 @@
       "symbol": "DUSKUSDT",
       "direction": "LONG",
       "created_at": "2026-09-22T06:01:06.431126+00:00",
-      "result": "PENDING",
+      "result": "TIMEOUT",
       "entry_time": "2026-09-22T06:02:00+00:00",
       "entry_price": 0.08555,
       "result_time": null
@@ -486,7 +492,7 @@
       "symbol": "OPNUSDT",
       "direction": "SHORT",
       "created_at": "2026-09-22T06:15:49.399440+00:00",
-      "result": "PENDING",
+      "result": "TIMEOUT",
       "entry_time": "2026-09-22T06:16:00+00:00",
       "entry_price": 0.05255,
       "result_time": null
@@ -496,7 +502,7 @@
       "symbol": "VETUSDT",
       "direction": "LONG",
       "created_at": "2026-09-22T06:30:53.731466+00:00",
-      "result": "PENDING",
+      "result": "TIMEOUT",
       "entry_time": "2026-09-22T07:21:00+00:00",
       "entry_price": 0.008955000000000001,
       "result_time": null
@@ -506,7 +512,7 @@
       "symbol": "HEMIUSDT",
       "direction": "LONG",
       "created_at": "2026-09-22T06:45:47.156739+00:00",
-      "result": "PENDING",
+      "result": "TIMEOUT",
       "entry_time": "2026-09-22T06:46:00+00:00",
       "entry_price": 0.006535,
       "result_time": null
@@ -516,7 +522,7 @@
       "symbol": "XLMUSDT",
       "direction": "SHORT",
       "created_at": "2026-09-22T07:00:59.260255+00:00",
-      "result": "PENDING",
+      "result": "TIMEOUT",
       "entry_time": "2026-09-22T07:01:00+00:00",
       "entry_price": 0.21189999999999998,
       "result_time": null
@@ -526,7 +532,7 @@
       "symbol": "NEIROUSDT",
       "direction": "LONG",
       "created_at": "2026-09-22T07:20:06.180395+00:00",
-      "result": "PENDING",
+      "result": "TIMEOUT",
       "entry_time": "2026-09-22T07:22:00+00:00",
       "entry_price": 9.716e-05,
       "result_time": null
@@ -546,17 +552,17 @@
       "symbol": "VTHOUSDT",
       "direction": "LONG",
       "created_at": "2026-09-22T08:01:03.974449+00:00",
-      "result": "PENDING",
+      "result": "TP_HIT",
       "entry_time": "2026-09-22T09:44:00+00:00",
       "entry_price": 0.0006805,
-      "result_time": null
+      "result_time": "2026-09-22T13:03:00+00:00"
     },
     {
       "id": 55,
       "symbol": "SYNUSDT",
       "direction": "LONG",
       "created_at": "2026-09-22T08:31:04.828218+00:00",
-      "result": "PENDING",
+      "result": "TIMEOUT",
       "entry_time": "2026-09-22T08:32:00+00:00",
       "entry_price": 0.2444,
       "result_time": null
@@ -596,10 +602,10 @@
       "symbol": "UNIUSDT",
       "direction": "SHORT",
       "created_at": "2026-09-22T10:01:00.959641+00:00",
-      "result": "NO_ENTRY",
-      "entry_time": null,
-      "entry_price": null,
-      "result_time": null
+      "result": "SL_HIT",
+      "entry_time": "2026-09-22T12:30:00+00:00",
+      "entry_price": 8.8585,
+      "result_time": "2026-09-22T12:38:00+00:00"
     },
     {
       "id": 60,
@@ -626,17 +632,127 @@
       "symbol": "SUSDT",
       "direction": "LONG",
       "created_at": "2026-09-22T11:30:55.660427+00:00",
-      "result": "PENDING",
+      "result": "SL_HIT",
       "entry_time": "2026-09-22T11:31:00+00:00",
       "entry_price": 0.04414,
-      "result_time": null
+      "result_time": "2026-09-22T14:42:00+00:00"
     },
     {
       "id": 63,
       "symbol": "EIGENUSDT",
       "direction": "SHORT",
       "created_at": "2026-09-22T12:01:02.796221+00:00",
-      "result": "NO_ENTRY",
+      "result": "PENDING",
+      "entry_time": "2026-09-22T12:32:00+00:00",
+      "entry_price": 0.23785,
+      "result_time": null
+    },
+    {
+      "id": 64,
+      "symbol": "PUMPUSDT",
+      "direction": "LONG",
+      "created_at": "2026-09-22T12:30:54.722024+00:00",
+      "result": "SL_HIT",
+      "entry_time": "2026-09-22T12:35:00+00:00",
+      "entry_price": 0.0045755,
+      "result_time": "2026-09-22T14:30:00+00:00"
+    },
+    {
+      "id": 65,
+      "symbol": "POLUSDT",
+      "direction": "SHORT",
+      "created_at": "2026-09-22T12:45:46.264637+00:00",
+      "result": "PENDING",
+      "entry_time": "2026-09-22T12:46:00+00:00",
+      "entry_price": 0.10829,
+      "result_time": null
+    },
+    {
+      "id": 66,
+      "symbol": "CELRUSDT",
+      "direction": "LONG",
+      "created_at": "2026-09-22T13:01:02.208434+00:00",
+      "result": "SL_HIT",
+      "entry_time": "2026-09-22T13:11:00+00:00",
+      "entry_price": 0.0031715,
+      "result_time": "2026-09-22T14:43:00+00:00"
+    },
+    {
+      "id": 67,
+      "symbol": "ADAUSDT",
+      "direction": "LONG",
+      "created_at": "2026-09-22T13:15:50.136479+00:00",
+      "result": "PENDING",
+      "entry_time": "2026-09-22T13:16:00+00:00",
+      "entry_price": 0.2501,
+      "result_time": null
+    },
+    {
+      "id": 68,
+      "symbol": "ZBTUSDT",
+      "direction": "LONG",
+      "created_at": "2026-09-22T13:31:07.250960+00:00",
+      "result": "PENDING",
+      "entry_time": "2026-09-22T14:20:00+00:00",
+      "entry_price": 0.087,
+      "result_time": null
+    },
+    {
+      "id": 69,
+      "symbol": "TUTUSDT",
+      "direction": "LONG",
+      "created_at": "2026-09-22T13:45:49.975892+00:00",
+      "result": "PENDING",
+      "entry_time": "2026-09-22T13:46:00+00:00",
+      "entry_price": 0.023855,
+      "result_time": null
+    },
+    {
+      "id": 70,
+      "symbol": "PENGUUSDT",
+      "direction": "LONG",
+      "created_at": "2026-09-22T14:01:02.744342+00:00",
+      "result": "SL_HIT",
+      "entry_time": "2026-09-22T14:02:00+00:00",
+      "entry_price": 0.009135,
+      "result_time": "2026-09-22T14:35:00+00:00"
+    },
+    {
+      "id": 71,
+      "symbol": "SNXXBUSDT",
+      "direction": "LONG",
+      "created_at": "2026-09-22T14:05:01.384066+00:00",
+      "result": "PENDING",
+      "entry_time": "2026-09-22T14:06:00+00:00",
+      "entry_price": 19.875,
+      "result_time": null
+    },
+    {
+      "id": 72,
+      "symbol": "ASTERUSDT",
+      "direction": "SHORT",
+      "created_at": "2026-09-22T14:15:46.037492+00:00",
+      "result": "PENDING",
+      "entry_time": null,
+      "entry_price": null,
+      "result_time": null
+    },
+    {
+      "id": 73,
+      "symbol": "BCHUSDT",
+      "direction": "LONG",
+      "created_at": "2026-09-22T14:30:57.320188+00:00",
+      "result": "PENDING",
+      "entry_time": "2026-09-22T14:31:00+00:00",
+      "entry_price": 316.75,
+      "result_time": null
+    },
+    {
+      "id": 74,
+      "symbol": "CFGUSDT",
+      "direction": "SHORT",
+      "created_at": "2026-09-22T14:45:49.957842+00:00",
+      "result": "PENDING",
       "entry_time": null,
       "entry_price": null,
       "result_time": null
