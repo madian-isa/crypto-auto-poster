@@ -577,6 +577,23 @@
       "technical_analysis": "Price (0.07133) sits above EMA9 (0.06939), EMA21 (0.06703) and SMA50 (0.06075), confirming bullish bias. MACD histogram is positive (0.000186) and MACD line is above its signal, adding momentum. Stochastic K (78.8) is higher than D (86.4) – overbought but still supportive of the uptrend. Order‑book shows a 22.5% bid imbalance and a tight spread, indicating buying pressure near the current level.",
       "market_context": "BTC is in a bullish trend on both 4H and 1D frames, and the broader crypto market is 88.4% green, providing a favorable backdrop for risk‑on assets like NILU.",
       "result": "PENDING"
+    },
+    {
+      "id": 35,
+      "created_at": "2026-09-22T03:15:49.934548+00:00",
+      "symbol": "SHELLUSDT",
+      "direction": "LONG",
+      "title": "$SHELL Volume Expansion Signals High Conviction Upward Move",
+      "entry_low": 0.027,
+      "entry_high": 0.0271,
+      "stop_loss": 0.026,
+      "take_profit": 0.029,
+      "support": 0.026,
+      "resistance": 0.0273,
+      "news_line": "",
+      "technical_analysis": "Price sits just above EMA9 (0.026485) and EMA21 (0.025955), with SMA50 (0.024812) further below, confirming a bullish short‑term bias. MACD line (0.00057) is above its signal (0.000508) and the histogram is positive, adding momentum. Stochastic is in the high 80s (K 89.47, D 94.64), indicating overbought conditions but still supporting upward pressure. The 1H swing structure shows support at 0.026 and resistance at 0.0273; the current price is near the upper edge, making a pull‑back to the 0.0270‑0.0271 zone a reasonable entry. Order‑book imbalance is negative (-17.15%), suggesting more sell o",
+      "market_context": "BTC is in a bullish trend on both 4H and 1D timeframes, with price above its 20‑ and 50‑period EMAs, and the broader market shows 87% green assets. This favorable backdrop supports a long bias on SHELLUSDT.",
+      "result": "PENDING"
     }
   ]
 }
