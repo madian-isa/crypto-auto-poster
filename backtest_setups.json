@@ -900,6 +900,23 @@
       "technical_analysis": "$COTI technical structure shows price is below the 21 EMA.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 54,
+      "created_at": "2026-09-22T08:01:03.974449+00:00",
+      "symbol": "VTHOUSDT",
+      "direction": "LONG",
+      "title": "On-Chain Metrics Confirm Strong Whale Accumulation on $VTHO",
+      "entry_low": 0.000674,
+      "entry_high": 0.000687,
+      "stop_loss": 0.00065,
+      "take_profit": 0.000722,
+      "support": 0.000674,
+      "resistance": 0.00069,
+      "news_line": "",
+      "technical_analysis": "Price sits above EMA9 (0.000684) and EMA21 (0.000681) and comfortably above the 50‑period SMA (0.000672), indicating bullish momentum on both 1‑hour and 4‑hour frames. Stochastic K (35.09) is above D (30.41) and rising, suggesting continued upward pressure. MACD lines are near zero, showing a neutral but not bearish stance. Order‑book shows a 13.68% bid‑ask imbalance with the best bid at 0.000687 and best ask at 0.000689, reinforcing buying interest near the current price.",
+      "market_context": "BTC is in a bullish trend on both 4‑hour and daily charts, up ~4.4% in the last 24 h. Overall market breadth is broadly positive (81.6% green). This backdrop supports the bullish bias on VTHOUSDT.",
+      "result": "PENDING"
     }
   ]
 }
