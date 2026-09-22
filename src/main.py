@@ -22,7 +22,6 @@ import random
 import time
 import traceback
 
-
 from src import bot_config as cfg
 
 from src.screener import (
@@ -110,19 +109,79 @@ def _get_pick_symbol(pick):
         "ticker",
         "pair",
     ):
-
         value = pick.get(
             key
         )
 
         if value:
-
             return _safe_symbol(
                 value
             )
 
     return None
 
+
+def _has_klines(klines):
+    """
+    Safely check whether kline data exists.
+
+    fetch_klines() may return:
+    - pandas DataFrame
+    - list
+    - tuple
+    - None
+
+    Never use `if not klines` directly on a DataFrame.
+    """
+
+    if klines is None:
+        return False
+
+    # Pandas DataFrame / Series
+    if hasattr(
+        klines,
+        "empty",
+    ):
+        return not klines.empty
+
+    # Normal containers
+    try:
+        return len(klines) > 0
+
+    except TypeError:
+        return bool(klines)
+
+
+def _has_indicators(indicators):
+    """
+    Safely check indicator result.
+    """
+
+    if indicators is None:
+        return False
+
+    if hasattr(
+        indicators,
+        "empty",
+    ):
+        return not indicators.empty
+
+    if isinstance(
+        indicators,
+        dict,
+    ):
+        return len(indicators) > 0
+
+    try:
+        return len(indicators) > 0
+
+    except TypeError:
+        return bool(indicators)
+
+
+# ============================================================
+# MARKET DATA STATUS
+# ============================================================
 
 def _print_market_data_status(
     symbol,
@@ -148,7 +207,10 @@ def _print_market_data_status(
 
         status = (
             advanced_market_data
-            .get("source_status", {})
+            .get(
+                "source_status",
+                {},
+            )
         )
 
         print(
@@ -189,8 +251,7 @@ def _print_market_data_status(
         available = []
 
         for key, value in (
-            coinglass_market_data
-            .items()
+            coinglass_market_data.items()
         ):
 
             if key in (
@@ -201,7 +262,6 @@ def _print_market_data_status(
                 continue
 
             if value is not None:
-
                 available.append(
                     key
                 )
@@ -229,13 +289,13 @@ def _pick_diverse(
     limit,
 ):
     """
-    Select symbols while avoiding symbols already posted today.
+    Select symbols while avoiding symbols
+    already posted today.
 
     Existing daily-post protection is preserved.
     """
 
     if not shortlist:
-
         return []
 
     fresh = []
@@ -260,9 +320,7 @@ def _pick_diverse(
         fresh
     )
 
-    return fresh[
-        :limit
-    ]
+    return fresh[:limit]
 
 
 # ============================================================
@@ -276,8 +334,8 @@ def _build_and_publish(
     """
     Build one setup and publish one post.
 
-    CoinGlass is optional and isolated from the
-    existing Binance advanced-data layer.
+    CoinGlass is optional and isolated from
+    the existing Binance advanced-data layer.
     """
 
     symbol = _safe_symbol(
@@ -292,22 +350,12 @@ def _build_and_publish(
 
         return False
 
-    print(
-        ""
-    )
-
-    print(
-        "=" * 70
-    )
-
+    print("")
+    print("=" * 70)
     print(
         f"[main] processing {symbol}"
     )
-
-    print(
-        "=" * 70
-    )
-
+    print("=" * 70)
 
     # ========================================================
     # KLINES
@@ -330,7 +378,16 @@ def _build_and_publish(
 
         return False
 
-    if not klines:
+    # IMPORTANT:
+    # Do NOT use:
+    #
+    #     if not klines:
+    #
+    # because klines can be a pandas DataFrame.
+
+    if not _has_klines(
+        klines
+    ):
 
         print(
             f"[main] no klines for "
@@ -338,7 +395,6 @@ def _build_and_publish(
         )
 
         return False
-
 
     # ========================================================
     # INDICATORS
@@ -361,8 +417,9 @@ def _build_and_publish(
 
         return False
 
-
-    if not indicators:
+    if not _has_indicators(
+        indicators
+    ):
 
         print(
             f"[main] no indicators for "
@@ -370,7 +427,6 @@ def _build_and_publish(
         )
 
         return False
-
 
     # ========================================================
     # NEWS
@@ -393,7 +449,6 @@ def _build_and_publish(
 
         news = None
 
-
     # ========================================================
     # MARKET CONTEXT FROM SCREENER
     # ========================================================
@@ -408,7 +463,6 @@ def _build_and_publish(
         market_context = pick.get(
             "market_context"
         )
-
 
     # ========================================================
     # BINANCE ADVANCED MARKET DATA
@@ -438,7 +492,6 @@ def _build_and_publish(
 
         advanced_market_data = None
 
-
     # ========================================================
     # COINGLASS MARKET DATA
     # ========================================================
@@ -465,10 +518,8 @@ def _build_and_publish(
             f"{symbol}: {err}"
         )
 
-        # IMPORTANT:
         # CoinGlass must never stop the bot.
         coinglass_market_data = None
-
 
     # ========================================================
     # DATA STATUS
@@ -479,7 +530,6 @@ def _build_and_publish(
         advanced_market_data,
         coinglass_market_data,
     )
-
 
     # ========================================================
     # GENERATE SETUP
@@ -522,7 +572,6 @@ def _build_and_publish(
 
         return False
 
-
     # ========================================================
     # VALIDATE SETUP
     # ========================================================
@@ -539,14 +588,12 @@ def _build_and_publish(
 
         return False
 
-
     direction = str(
         setup.get(
             "direction",
             "",
         )
     ).upper().strip()
-
 
     if direction not in (
         "LONG",
@@ -561,7 +608,6 @@ def _build_and_publish(
 
         return False
 
-
     entry = setup.get(
         "entry"
     )
@@ -573,7 +619,6 @@ def _build_and_publish(
     take_profit = setup.get(
         "take_profit"
     )
-
 
     if (
         entry is None
@@ -587,7 +632,6 @@ def _build_and_publish(
         )
 
         return False
-
 
     # ========================================================
     # SAVE SETUP / BACKTEST STATE
@@ -622,7 +666,6 @@ def _build_and_publish(
             f"{symbol}: {err}"
         )
 
-
     # ========================================================
     # FORMAT POST
     # ========================================================
@@ -644,7 +687,6 @@ def _build_and_publish(
 
         return False
 
-
     if not post_text:
 
         print(
@@ -653,7 +695,6 @@ def _build_and_publish(
         )
 
         return False
-
 
     # ========================================================
     # RENDER CHART
@@ -701,14 +742,11 @@ def _build_and_publish(
 
         chart_path = None
 
-
     # ========================================================
     # PREVIEW
     # ========================================================
 
-    print(
-        ""
-    )
+    print("")
 
     print(
         "-" * 70
@@ -727,7 +765,6 @@ def _build_and_publish(
         "-" * 70
     )
 
-
     # ========================================================
     # DRY RUN
     # ========================================================
@@ -740,7 +777,6 @@ def _build_and_publish(
         )
 
         return True
-
 
     # ========================================================
     # PUBLISH
@@ -792,7 +828,6 @@ def _build_and_publish(
 
         return False
 
-
     # ========================================================
     # POST SUCCESS
     # ========================================================
@@ -805,7 +840,6 @@ def _build_and_publish(
         )
 
         return False
-
 
     print(
         f"[main] published successfully: "
@@ -830,13 +864,11 @@ def run_once():
         "[main] RUN_MODE=once"
     )
 
-
     # ========================================================
     # STATE
     # ========================================================
 
     state = load_state()
-
 
     # ========================================================
     # DAILY CAP
@@ -853,7 +885,6 @@ def run_once():
         )
 
         return
-
 
     # ========================================================
     # SCREENER
@@ -876,7 +907,6 @@ def run_once():
 
         return
 
-
     if not shortlist:
 
         print(
@@ -886,12 +916,10 @@ def run_once():
 
         return
 
-
     print(
         f"[run_once] shortlist size: "
         f"{len(shortlist)}"
     )
-
 
     # ========================================================
     # POSTED TODAY
@@ -926,7 +954,6 @@ def run_once():
                 f"failed for {symbol}: {err}"
             )
 
-
     # ========================================================
     # FRESH CANDIDATES
     # ========================================================
@@ -940,7 +967,6 @@ def run_once():
         ),
     )
 
-
     if not candidates:
 
         print(
@@ -951,7 +977,6 @@ def run_once():
 
         return
 
-
     # ========================================================
     # SHUFFLE
     # ========================================================
@@ -959,7 +984,6 @@ def run_once():
     random.shuffle(
         candidates
     )
-
 
     # ========================================================
     # TRY CANDIDATES
@@ -991,7 +1015,6 @@ def run_once():
 
             return
 
-
         try:
 
             if is_symbol_posted_today(
@@ -1016,7 +1039,6 @@ def run_once():
 
             continue
 
-
         # ----------------------------------------------------
         # Build + publish
         # ----------------------------------------------------
@@ -1026,7 +1048,6 @@ def run_once():
             pick,
         )
 
-
         if not success:
 
             print(
@@ -1035,7 +1056,6 @@ def run_once():
             )
 
             continue
-
 
         # ----------------------------------------------------
         # Record successful post
@@ -1069,7 +1089,6 @@ def run_once():
 
         return
 
-
     print(
         "[run_once] "
         "no candidate successfully processed"
@@ -1101,9 +1120,7 @@ def run_cycle():
         f"{cfg.POSTS_PER_CYCLE}"
     )
 
-
     posts_done = 0
-
 
     while (
         posts_done
@@ -1115,7 +1132,6 @@ def run_cycle():
         # ====================================================
 
         state = load_state()
-
 
         # ====================================================
         # DAILY CAP
@@ -1131,7 +1147,6 @@ def run_cycle():
             )
 
             break
-
 
         # ====================================================
         # SCREENER
@@ -1154,7 +1169,6 @@ def run_cycle():
 
             break
 
-
         if not shortlist:
 
             print(
@@ -1163,7 +1177,6 @@ def run_cycle():
             )
 
             break
-
 
         # ====================================================
         # REMOVE POSTED SYMBOLS
@@ -1195,7 +1208,6 @@ def run_cycle():
 
                 continue
 
-
         # ====================================================
         # PICK
         # ====================================================
@@ -1209,7 +1221,6 @@ def run_cycle():
             ),
         )
 
-
         if not candidates:
 
             print(
@@ -1219,11 +1230,9 @@ def run_cycle():
 
             break
 
-
         random.shuffle(
             candidates
         )
-
 
         # ====================================================
         # TRY CANDIDATES
@@ -1240,13 +1249,11 @@ def run_cycle():
             if not symbol:
                 continue
 
-
             # ------------------------------------------------
             # Re-load state before every post.
             # ------------------------------------------------
 
             state = load_state()
-
 
             if not can_post_more_today(
                 state
@@ -1258,7 +1265,6 @@ def run_cycle():
                 )
 
                 return
-
 
             try:
 
@@ -1279,7 +1285,6 @@ def run_cycle():
 
                 continue
 
-
             # ------------------------------------------------
             # Build + publish
             # ------------------------------------------------
@@ -1289,7 +1294,6 @@ def run_cycle():
                 pick,
             )
 
-
             if not success:
 
                 print(
@@ -1298,7 +1302,6 @@ def run_cycle():
                 )
 
                 continue
-
 
             # ------------------------------------------------
             # Record successful post
@@ -1325,11 +1328,9 @@ def run_cycle():
                     f"{symbol}: {err}"
                 )
 
-
             posts_done += 1
 
             posted_this_round = True
-
 
             print(
                 f"[run_cycle] "
@@ -1337,7 +1338,6 @@ def run_cycle():
                 f"{posts_done}/"
                 f"{cfg.POSTS_PER_CYCLE}"
             )
-
 
             # ------------------------------------------------
             # Wait before next post
@@ -1369,9 +1369,7 @@ def run_cycle():
                         wait_seconds
                     )
 
-
             break
-
 
         if not posted_this_round:
 
@@ -1382,7 +1380,6 @@ def run_cycle():
             )
 
             break
-
 
     print(
         "[run_cycle] completed. "
@@ -1396,9 +1393,7 @@ def run_cycle():
 
 def main():
 
-    print(
-        ""
-    )
+    print("")
 
     print(
         "=" * 70
@@ -1447,7 +1442,6 @@ def main():
     print(
         "=" * 70
     )
-
 
     if RUN_MODE == "cycle":
 
