@@ -441,6 +441,23 @@
       "technical_analysis": "Price sits above EMA9 (0.9824), EMA21 (0.9754) and SMA50 (0.9605), indicating bullish bias. MACD histogram is positive (0.0015) and MACD line remains above its signal, reinforcing upward momentum. Stochastic %K at 77.9 and %D at 73.5 suggest the market is in the upper range but not yet overbought. Order‑book shows a 23.6% bid‑side imbalance with stronger buying pressure (bid value USDT 287,353 vs ask 177,689). Combined, these signals support a long stance.",
       "market_context": "BTC is in a bullish trend on both 4H and 1D timeframes, and the broader market is broadly positive (87.1% green). This overall risk‑on environment complements the bullish setup on FILUSDT.",
       "result": "PENDING"
+    },
+    {
+      "id": 27,
+      "created_at": "2026-09-22T01:15:50.005776+00:00",
+      "symbol": "ARBUSDT",
+      "direction": "SHORT",
+      "title": "$ARB Resistance Test Fails: Bearish Momentum Building Fast",
+      "entry_low": 0.2248,
+      "entry_high": 0.225,
+      "stop_loss": 0.233,
+      "take_profit": 0.2084,
+      "support": 0.2203,
+      "resistance": 0.2251,
+      "news_line": "",
+      "technical_analysis": "Price sits below EMA9 (0.22494) and EMA21 (0.22422), indicating short‑term bearish pressure. MACD histogram is negative (-0.0012) with the MACD line under its signal, confirming downside momentum. Stochastic K/D are in the 13‑18 range, still low and suggesting the market is oversold but not yet reversing. Order‑book shows a -6.59% imbalance (more sell pressure) and a tight spread around 0.2225‑0.2226. The 1H swing high sits at 0.2251 and swing low at 0.2203, framing a short‑bias zone.",
+      "market_context": "BTC remains in a bullish trend on both 4H and 1D frames, supporting overall market optimism. The broader market is broadly positive with 85.6% of assets in green, yet ARB shows clear downside signals relative to its moving averages.",
+      "result": "PENDING"
     }
   ]
 }
