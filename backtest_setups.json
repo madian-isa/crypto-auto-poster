@@ -713,6 +713,23 @@
       "technical_analysis": "INIT is trading just below the 1‑hour resistance (0.0836) and above both the 9‑EMA (0.082533) and 21‑EMA (0.081308), giving a short‑term bullish bias. However, the MACD histogram is negative and stochastic K (56.3) is below D (65.3), indicating weakening upside momentum. The order‑book shows a 22.8% ask‑side imbalance, further supporting downside pressure. The 1‑hour swing low at 0.08128 provides a logical target area.",
       "market_context": "Bitcoin is in a bullish trend on 4‑hour and daily charts, up about 5% in the last 24 h, while 84.7% of the broader market is green, suggesting overall risk‑on conditions.",
       "result": "PENDING"
+    },
+    {
+      "id": 43,
+      "created_at": "2026-09-22T05:00:53.623911+00:00",
+      "symbol": "FTTUSDT",
+      "direction": "SHORT",
+      "title": "$FTT Resistance Test Fails: Bearish Momentum Building Fast",
+      "entry_low": 0.253,
+      "entry_high": 0.2533,
+      "stop_loss": 0.2635,
+      "take_profit": 0.232,
+      "support": 0.2432,
+      "resistance": 0.2646,
+      "news_line": "",
+      "technical_analysis": "Price is below EMA9 (0.2609), EMA21 (0.2660) and SMA50 (0.2606), signaling bearish bias. MACD (-0.00286) sits under its signal (0.00037) with a negative histogram, confirming down momentum. Stochastic is deep oversold (K 4.3/D 5.15) but still below 20, limiting upside potential. Order‑book shows a modest ask‑side imbalance (-3.1%). On the 1‑hour swing structure the pair is bounded by a low at 0.2432 and a high at 0.2646, with current price near the upper bound, supporting a short setup.",
+      "market_context": "BTC remains bullish on 4‑hour and daily frames, up roughly 5% today, and the broader crypto market is broadly positive (85% green). Despite the strong BTC backdrop, FTT exhibits bearish technical signals.",
+      "result": "PENDING"
     }
   ]
 }
