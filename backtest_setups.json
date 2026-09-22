@@ -951,6 +951,23 @@
       "technical_analysis": "Price is just above the 1‑hour support at 2.168 and below the tight 2.172 resistance. EMA9 (2.1638) and EMA21 (2.1572) sit beneath the market, indicating a short‑term uptrend. MACD histogram is slightly negative and stochastic K/D are in the 37/34 range, leaving room for upside. The order‑book shows a ~39 % bid imbalance, reinforcing buying pressure.",
       "market_context": "BTC is in a bullish trend on both 4‑hour and daily charts, up about 2.9 % in the last 24 h, while overall market breadth is broadly positive (≈75 % green).",
       "result": "PENDING"
+    },
+    {
+      "id": 57,
+      "created_at": "2026-09-22T09:09:46.062274+00:00",
+      "symbol": "SOMIUSDT",
+      "direction": "SHORT",
+      "title": "Panic Selling Risk Increases as $SOMI Tests Critical Floor",
+      "entry_low": 0.1886,
+      "entry_high": 0.1888,
+      "stop_loss": 0.1955,
+      "take_profit": 0.1748,
+      "support": 0.1872,
+      "resistance": 0.1918,
+      "news_line": "",
+      "technical_analysis": "Price sits below EMA9 (0.1896), EMA21 (0.1909) and SMA50 (0.1955), indicating bearish bias. MACD line is modestly above its signal (+0.000209 histogram), offering a slight bullish counter‑signal. Stochastic shows K (30.7) under D (41.9) in the lower half, reinforcing downside pressure. Order‑book imbalance is negative (‑4.26%), with more ask volume than bid, supporting a short outlook. The pair is near the 1H/4H resistance zone (0.1888‑0.1918) and above the immediate technical support (0.1882), making a short entry around the resistance logical.",
+      "market_context": "Broader market remains bullish, with BTC up 2.26% and overall market green at 66.9%. While risk sentiment is positive, SOMI shows weaker momentum relative to the broader trend.",
+      "result": "PENDING"
     }
   ]
 }
