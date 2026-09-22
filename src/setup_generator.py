@@ -370,40 +370,133 @@ def _summarize_news(news):
 # =========================================================
 
 def _build_indicator_summary(indicators):
+    """
+    Build a clean technical-indicator summary for the AI prompt.
+
+    Only values supplied by indicators.py are forwarded.
+    No market data is calculated or modified here.
+    """
 
     if not indicators:
         return {}
 
-    keys = [
+    result = {}
+
+    # ---------------------------------------------------------
+    # PRICE
+    # ---------------------------------------------------------
+    for key in [
         "price",
         "current_price",
+    ]:
+        if key in indicators and indicators[key] is not None:
+            result[key] = indicators[key]
+
+    # ---------------------------------------------------------
+    # MOMENTUM
+    # ---------------------------------------------------------
+    for key in [
         "rsi",
+        "rsi14",
+    ]:
+        if key in indicators and indicators[key] is not None:
+            result[key] = indicators[key]
+
+    # ---------------------------------------------------------
+    # MOVING AVERAGES
+    # ---------------------------------------------------------
+    for key in [
         "ema9",
+        "ema20",
         "ema21",
         "ema50",
         "ema200",
         "sma50",
         "sma200",
+    ]:
+        if key in indicators and indicators[key] is not None:
+            result[key] = indicators[key]
+
+    # ---------------------------------------------------------
+    # EMA STRUCTURE
+    # ---------------------------------------------------------
+    for key in [
+        "emaTrend",
+        "ema20_200_relation",
+        "ema20_200_cross",
+        "price_vs_ema200",
+    ]:
+        if key in indicators and indicators[key] is not None:
+            result[key] = indicators[key]
+
+    # ---------------------------------------------------------
+    # MACD
+    # ---------------------------------------------------------
+    for key in [
         "macd",
         "macd_signal",
+    ]:
+        if key in indicators and indicators[key] is not None:
+            result[key] = indicators[key]
+
+    # ---------------------------------------------------------
+    # BOLLINGER BANDS
+    # ---------------------------------------------------------
+    if "bollinger" in indicators and indicators["bollinger"] is not None:
+        result["bollinger"] = indicators["bollinger"]
+
+    for key in [
         "bollinger_upper",
         "bollinger_lower",
+    ]:
+        if key in indicators and indicators[key] is not None:
+            result[key] = indicators[key]
+
+    # ---------------------------------------------------------
+    # STOCHASTIC / ADX / ATR
+    # ---------------------------------------------------------
+    for key in [
         "stochastic",
         "adx",
-        "obv",
+        "adx14",
+        "atr",
+        "atr14",
+    ]:
+        if key in indicators and indicators[key] is not None:
+            result[key] = indicators[key]
+
+    # ---------------------------------------------------------
+    # VOLUME / OBV
+    # ---------------------------------------------------------
+    for key in [
         "volume",
         "volume_change",
+        "obv",
+        "obvTrend",
+    ]:
+        if key in indicators and indicators[key] is not None:
+            result[key] = indicators[key]
+
+    # ---------------------------------------------------------
+    # RECENT PRICE RANGE
+    # ---------------------------------------------------------
+    for key in [
         "high_24h",
         "low_24h",
+        "high24Approx",
+        "low24Approx",
+    ]:
+        if key in indicators and indicators[key] is not None:
+            result[key] = indicators[key]
+
+    # ---------------------------------------------------------
+    # SUPPORT / RESISTANCE
+    # ---------------------------------------------------------
+    for key in [
         "support",
         "resistance",
-    ]
-
-    result = {}
-
-    for key in keys:
-
-        if key in indicators:
+    ]:
+        if key in indicators and indicators[key] is not None:
             result[key] = indicators[key]
 
     return result
