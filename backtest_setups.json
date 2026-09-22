@@ -1172,6 +1172,23 @@
       "technical_analysis": "Price sits just above EMA9 (0.023658) and EMA21 (0.023191) and well above the SMA50 (0.02234), indicating short‑term bullish bias. MACD is positive with a rising histogram, supporting upward momentum. Stochastic shows K (66.94) below D (82.15) but both remain in the upper zone, suggesting the market is near overbought yet still holding strength. Order‑book imbalance is +20.78% on the bid side, reinforcing buying pressure. The 1‑hour swing range is bounded by support 0.02224 and resistance 0.02397, with the current price near the top of that range, making a pull‑back entry around 0.02381‑0.0239",
       "market_context": "BTC is in a bullish trend on both 4‑hour and daily timeframes, and the broader crypto market shows a 64.1% green breadth, providing a favorable backdrop for long‑biased setups on altcoins like TUT.",
       "result": "PENDING"
+    },
+    {
+      "id": 70,
+      "created_at": "2026-09-22T14:01:02.744342+00:00",
+      "symbol": "PENGUUSDT",
+      "direction": "LONG",
+      "title": "$PENGU Prepares for Parabolic Phase: Key Technical Trigger Met",
+      "entry_low": 0.00912,
+      "entry_high": 0.00915,
+      "stop_loss": 0.0088,
+      "take_profit": 0.00976,
+      "support": 0.0088,
+      "resistance": 0.009251,
+      "news_line": "",
+      "technical_analysis": "Price (0.009152) sits above EMA9 (0.009076) and EMA21 (0.008914), with EMA9 still above EMA21, indicating a bullish short‑term trend. The MACD histogram is near zero and only slightly negative, suggesting momentum is consolidating but not yet reversed. Stochastic %K is 77.6 and %D is 81.05, showing the pair is in the upper range yet still trending higher. Order‑book data shows a bid‑ask imbalance of +7.65% and a tight spread, pointing to buying pressure around the current level. The immediate support at 0.009149 and the 1‑hour/4‑hour support at 0.0088 back the upside, while resistance sits nea",
+      "market_context": "BTC is in a bullish phase on both 4‑hour and daily charts, and the broader market is broadly positive (65.6% green). This overall risk‑on environment supports a long bias for PENGU.",
+      "result": "PENDING"
     }
   ]
 }
