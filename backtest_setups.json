@@ -390,6 +390,23 @@
       "technical_analysis": "Price sits just above EMA9 (86,240) and EMA21 (85,121), keeping the short‑term trend bullish. EMA9 is still above EMA21, and the price is well above the SMA50 (82,576). MACD line is marginally below its signal, but the histogram is near zero, suggesting the down‑trend pressure is weakening. Stochastic K (67.9) is below D (72.9) yet both are in the upper zone, indicating momentum remains on the upside side of the range. Order‑book shows a 34% bid‑side imbalance, reinforcing buying pressure. Immediate support sits at 86,364 with resistance at 86,626, while the 1‑hour swing range is 80,904‑87,396",
       "market_context": "BTC is up 5.8% over 24 h, the broader market is 88% green and overall sentiment is bullish. This backdrop supports a longer‑term upside bias for the pair.",
       "result": "PENDING"
+    },
+    {
+      "id": 24,
+      "created_at": "2026-09-22T00:30:55.191021+00:00",
+      "symbol": "PEPEUSDT",
+      "direction": "SHORT",
+      "title": "$PEPE Loses Key Demand Zone: Next Support Level Unprotected",
+      "entry_low": 4.99e-06,
+      "entry_high": 5.02e-06,
+      "stop_loss": 5.2e-06,
+      "take_profit": 4.57e-06,
+      "support": 4e-06,
+      "resistance": 5.15e-06,
+      "news_line": "",
+      "technical_analysis": "PEPE is trading at the EMA9/EMA21 cluster (5.0 µ) and above the SMA50 (4 µ), indicating short‑term alignment with recent price action. Stochastic is deep in overbought territory (K 81.4, D 70.3) while MACD shows a flat histogram, suggesting weakening momentum. The orderbook shows a modest ask‑side imbalance (-3.59%). With price pinned below the 1H/4H resistance at 5.15 µ, a short bias is supported.",
+      "market_context": "The broader market remains broadly positive (87% green) and BTC is in a bullish trend on both 4H and 1D frames, providing overall upside bias but not directly influencing PEPE's short setup.",
+      "result": "PENDING"
     }
   ]
 }
