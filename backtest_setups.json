@@ -560,6 +560,23 @@
       "technical_analysis": "Price is holding just above the 1H support of 5.66 µUSDT and below the 1H resistance of 6.08 µUSDT. EMA9, EMA21 and SMA50 all align with the current price, indicating a flat moving‑average environment. Stochastic %K is 68.75 and %D is 71.53, keeping the oscillator in the bullish zone. Order‑book shows a modest ask‑side bias with a -10.93% imbalance; best bid is 5.98 µUSDT and best ask 5.99 µUSDT.",
       "market_context": "BTC is in a bullish trend on both 4H and 1D timeframes, up 5.55% in the last 24 h, and the broader market is broadly positive with 89.5% of assets green.",
       "result": "PENDING"
+    },
+    {
+      "id": 34,
+      "created_at": "2026-09-22T03:01:02.249179+00:00",
+      "symbol": "NILUSDT",
+      "direction": "LONG",
+      "title": "Golden Cross Formation Confirmed on $NIL 4-Hour Timeframe",
+      "entry_low": 0.0712,
+      "entry_high": 0.07134,
+      "stop_loss": 0.0687,
+      "take_profit": 0.0762,
+      "support": 0.07124,
+      "resistance": 0.07178,
+      "news_line": "",
+      "technical_analysis": "Price (0.07133) sits above EMA9 (0.06939), EMA21 (0.06703) and SMA50 (0.06075), confirming bullish bias. MACD histogram is positive (0.000186) and MACD line is above its signal, adding momentum. Stochastic K (78.8) is higher than D (86.4) – overbought but still supportive of the uptrend. Order‑book shows a 22.5% bid imbalance and a tight spread, indicating buying pressure near the current level.",
+      "market_context": "BTC is in a bullish trend on both 4H and 1D frames, and the broader crypto market is 88.4% green, providing a favorable backdrop for risk‑on assets like NILU.",
+      "result": "PENDING"
     }
   ]
 }
