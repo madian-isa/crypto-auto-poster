@@ -1138,6 +1138,23 @@
       "technical_analysis": "Price sits above EMA9 (0.2477) and EMA21 (0.2455) with the short‑term EMAs in bullish order, while SMA50 remains lower, indicating an uptrend on the 1H/4H charts. Stochastic is in the overbought zone (K 84.9, D 69.8) but still bullish as K > D. MACD histogram is slightly negative, suggesting a modest pull‑back pressure. The pair is trading near the 1H resistance 0.2527 and above the immediate support at 0.2496, offering a clean entry window between 0.2497‑0.2505. Order‑book imbalance shows more ask volume, but the EMA alignment and bullish BTC backdrop support a long bias.",
       "market_context": "BTC remains in a bullish trend on both 4H and 1D timeframes, with the broader market showing a 61.3% green breadth. This overall positive sentiment adds ancillary support to the ADA long setup.",
       "result": "PENDING"
+    },
+    {
+      "id": 68,
+      "created_at": "2026-09-22T13:31:07.250960+00:00",
+      "symbol": "ZBTUSDT",
+      "direction": "LONG",
+      "title": "$ZBT Liquidation Squeeze: Bears Trapped Near Critical Resistance",
+      "entry_low": 0.0866,
+      "entry_high": 0.0874,
+      "stop_loss": 0.083136,
+      "take_profit": 0.093528,
+      "support": 0.0851,
+      "resistance": 0.0885,
+      "news_line": "",
+      "technical_analysis": "Price sits above EMA9 (0.08613) and EMA21 (0.08512), with MACD histogram still positive (+0.00011). Stochastic is in the high‑70s, indicating strong upward momentum. Order‑book shows a modest bid imbalance (+4.6%). These factors point to bullish bias on the 1H/4H swing structure.",
+      "market_context": "BTC remains in a bullish trend on both 4H and 1D timeframes, supporting a broadly positive market environment (63.8% green).",
+      "result": "PENDING"
     }
   ]
 }
