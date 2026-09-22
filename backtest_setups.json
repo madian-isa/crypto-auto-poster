@@ -730,6 +730,23 @@
       "technical_analysis": "Price is below EMA9 (0.2609), EMA21 (0.2660) and SMA50 (0.2606), signaling bearish bias. MACD (-0.00286) sits under its signal (0.00037) with a negative histogram, confirming down momentum. Stochastic is deep oversold (K 4.3/D 5.15) but still below 20, limiting upside potential. Order‑book shows a modest ask‑side imbalance (-3.1%). On the 1‑hour swing structure the pair is bounded by a low at 0.2432 and a high at 0.2646, with current price near the upper bound, supporting a short setup.",
       "market_context": "BTC remains bullish on 4‑hour and daily frames, up roughly 5% today, and the broader crypto market is broadly positive (85% green). Despite the strong BTC backdrop, FTT exhibits bearish technical signals.",
       "result": "PENDING"
+    },
+    {
+      "id": 44,
+      "created_at": "2026-09-22T05:15:47.700572+00:00",
+      "symbol": "ACEUSDT",
+      "direction": "LONG",
+      "title": "$ACE Volume Expansion Signals High Conviction Upward Move",
+      "entry_low": 0.1768,
+      "entry_high": 0.1773,
+      "stop_loss": 0.1704,
+      "take_profit": 0.1896,
+      "support": 0.1704,
+      "resistance": 0.1795,
+      "news_line": "",
+      "technical_analysis": "Price sits above EMA9 (0.17468) and EMA21 (0.17218) while still above the SMA50 (0.16582), indicating short‑term bullish momentum. Stochastic %K at 67.9 is above %D (61.5) and well over the 50 level, supporting an upward bias. MACD line is marginally below its signal, producing a tiny negative histogram, which tempers the bullish case but is not decisive. Order‑book shows a notable ask‑side imbalance (-41.3%), suggesting some selling pressure near the current price. The nearest swing‑low on the 1H/4H chart is at 0.1704 and the swing‑high at 0.1795, framing a clean long setup.",
+      "market_context": "The broader market is broadly positive (85.6% green) and Bitcoin is in a bullish trend on both 4H and 1D timeframes, reinforcing a risk‑on environment for altcoins like ACE.",
+      "result": "PENDING"
     }
   ]
 }
