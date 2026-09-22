@@ -424,6 +424,23 @@
       "technical_analysis": "Price sits above EMA9 (0.004369), EMA21 (0.004305) and SMA50 (0.004164), indicating bullish momentum. MACD is positive (6.8e-05 vs signal 6.2e-05) with a small bullish histogram. Stochastic is in the overbought zone (K 91.3, D 93.4) but the overall trend remains upward. Order‑book shows a bid‑ask imbalance of +11.6% and a tighter spread, supporting the bias. Long accounts outnumber shorts (ratio 1.21) and funding is slightly positive, suggesting longs are paying shorts.",
       "market_context": "BTC is in a bullish 4H and 1D trend, up around 5.6% in 24 h, and the broader market is broadly positive (≈89% green). This supportive environment reinforces the bullish outlook for JASMYUSDT.",
       "result": "PENDING"
+    },
+    {
+      "id": 26,
+      "created_at": "2026-09-22T01:00:57.566478+00:00",
+      "symbol": "FILUSDT",
+      "direction": "LONG",
+      "title": "$FIL Breaks Out of Falling Wedge Pattern: Targets Set Higher",
+      "entry_low": 0.9875,
+      "entry_high": 0.9905,
+      "stop_loss": 0.9522,
+      "take_profit": 1.0581,
+      "support": 0.9878,
+      "resistance": 0.9934,
+      "news_line": "",
+      "technical_analysis": "Price sits above EMA9 (0.9824), EMA21 (0.9754) and SMA50 (0.9605), indicating bullish bias. MACD histogram is positive (0.0015) and MACD line remains above its signal, reinforcing upward momentum. Stochastic %K at 77.9 and %D at 73.5 suggest the market is in the upper range but not yet overbought. Order‑book shows a 23.6% bid‑side imbalance with stronger buying pressure (bid value USDT 287,353 vs ask 177,689). Combined, these signals support a long stance.",
+      "market_context": "BTC is in a bullish trend on both 4H and 1D timeframes, and the broader market is broadly positive (87.1% green). This overall risk‑on environment complements the bullish setup on FILUSDT.",
+      "result": "PENDING"
     }
   ]
 }
