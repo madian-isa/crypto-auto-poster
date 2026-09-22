@@ -509,6 +509,23 @@
       "technical_analysis": "Price is above the 9‑EMA (0.04405) and 21‑EMA (0.04209), showing short‑term bullish bias. Stochastic %K/%D sit near 58/57, comfortably above the 50 threshold. MACD histogram is slightly negative, indicating marginal bearish pressure but near zero. The token is confined to a 1‑hour range between 0.04489 support and 0.04497 resistance, with the order‑book showing a modest sell‑side imbalance (‑18%).",
       "market_context": "Bitcoin is in a bullish trend on both 4H and 1D charts, up about 5.7% in the last 24 hours, and the overall crypto market is broadly positive with roughly 91% of assets green, providing a supportive environment.",
       "result": "PENDING"
+    },
+    {
+      "id": 31,
+      "created_at": "2026-09-22T02:15:44.696746+00:00",
+      "symbol": "PENDLEUSDT",
+      "direction": "SHORT",
+      "title": "$PENDLE Rejection at Key Supply Zone: Short Setup Activated",
+      "entry_low": 2.545,
+      "entry_high": 2.548,
+      "stop_loss": 2.6468,
+      "take_profit": 2.3414,
+      "support": 2.48,
+      "resistance": 2.548,
+      "news_line": "",
+      "technical_analysis": "Price sits below EMA9 (2.525) and EMA21 (2.574), with SMA50 even higher, indicating bearish bias. MACD is negative and its histogram is shrinking, while Stochastic %K (21.38) is near oversold yet below %D (26.26). Order‑book shows a slight ask‑side imbalance (-0.68%). The 1H/4H structure places price under the 1H resistance at 2.548 and above the 1H support at 2.48, forming a short‑side swing high.",
+      "market_context": "BTC remains in a bullish trend on both 4H and 1D timeframes, and the broader market is broadly positive (88.5% green). This bullish backdrop does not offset the bearish technical setup for PENDLE.",
+      "result": "PENDING"
     }
   ]
 }
