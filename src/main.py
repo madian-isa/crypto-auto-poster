@@ -1,20 +1,20 @@
 """
 main.py
 
-Single-run / cycle mode for Binance Square educational
-crypto market-analysis posts.
+Single-run / cycle mode:
+Builds and publishes educational crypto market-analysis posts.
 
-Data sources:
-- Binance market data
-- Binance advanced market data
-- CoinGlass market data
-- Finnhub news
-- Groq AI
+The post can include a neutral market-data chart:
+- Candlesticks
+- EMA 21
+- SMA 50
+- Volume
 
-CoinGlass is optional:
-- Missing API key does not stop the bot.
-- CoinGlass API failures do not stop the bot.
-- Existing Binance advanced data remains active.
+No ATR volatility filter is used here.
+No automated entry/SL/TP chart instructions are generated here.
+
+Groq failures are handled inside setup_generator.py
+through a deterministic Python fallback.
 """
 
 import os
@@ -24,9 +24,7 @@ import traceback
 
 from src import bot_config as cfg
 
-from src.screener import (
-    get_screener_shortlist,
-)
+from src.screener import get_screener_shortlist
 
 from src.indicators import (
     fetch_klines,
@@ -38,17 +36,11 @@ from src.setup_generator import (
     format_post_text,
 )
 
-from src.news import (
-    get_relevant_news,
-)
+from src.news import get_relevant_news
 
-from src.square_post_ext import (
-    post_with_images,
-)
+from src.square_post_ext import post_with_images
 
-from src.backtest import (
-    save_setup,
-)
+from src.backtest import save_setup
 
 from src.state import (
     load_state,
@@ -62,377 +54,316 @@ from src.advanced_market_data import (
     get_advanced_market_data,
 )
 
-from src.coinglass_data import (
-    get_coinglass_market_data,
-)
-
-from src.chart import (
-    render_chart_image,
-)
+from src.chart import render_chart_image
 
 
-# ============================================================
-# RUNTIME
-# ============================================================
+# =========================================================
+# RUN ONCE
+# =========================================================
 
-RUN_MODE = os.environ.get(
-    "RUN_MODE",
-    "once",
-).lower().strip()
+def run_once():
 
+    state = load_state()
 
-# ============================================================
-# HELPERS
-# ============================================================
-
-def _safe_symbol(value):
-    return str(
-        value or ""
-    ).upper().strip()
-
-
-def _get_pick_symbol(pick):
-    """
-    Extract symbol from screener result.
-
-    Supports common screener structures.
-    """
-
-    if not isinstance(
-        pick,
-        dict,
-    ):
-        return None
-
-    for key in (
-        "symbol",
-        "ticker",
-        "pair",
-    ):
-        value = pick.get(
-            key
-        )
-
-        if value:
-            return _safe_symbol(
-                value
-            )
-
-    return None
-
-
-def _has_klines(klines):
-    """
-    Safely check whether kline data exists.
-
-    fetch_klines() may return:
-    - pandas DataFrame
-    - list
-    - tuple
-    - None
-
-    Never use `if not klines` directly on a DataFrame.
-    """
-
-    if klines is None:
-        return False
-
-    # Pandas DataFrame / Series
-    if hasattr(
-        klines,
-        "empty",
-    ):
-        return not klines.empty
-
-    # Normal containers
-    try:
-        return len(klines) > 0
-
-    except TypeError:
-        return bool(klines)
-
-
-def _has_indicators(indicators):
-    """
-    Safely check indicator result.
-    """
-
-    if indicators is None:
-        return False
-
-    if hasattr(
-        indicators,
-        "empty",
-    ):
-        return not indicators.empty
-
-    if isinstance(
-        indicators,
-        dict,
-    ):
-        return len(indicators) > 0
-
-    try:
-        return len(indicators) > 0
-
-    except TypeError:
-        return bool(indicators)
-
-
-# ============================================================
-# MARKET DATA STATUS
-# ============================================================
-
-def _print_market_data_status(
-    symbol,
-    advanced_market_data,
-    coinglass_market_data,
-):
-    """
-    Print a compact data-source summary.
-    """
-
-    print(
-        f"[main] market data status for {symbol}"
-    )
-
-    # --------------------------------------------------------
-    # Binance advanced data
-    # --------------------------------------------------------
-
-    if isinstance(
-        advanced_market_data,
-        dict,
-    ):
-
-        status = (
-            advanced_market_data
-            .get(
-                "source_status",
-                {},
-            )
-        )
+    if not can_post_more_today(state):
 
         print(
-            "[main] Binance advanced "
-            f"spot={status.get('spot')} "
-            f"futures={status.get('futures')}"
+            f"[run_once] daily cap reached "
+            f"({cfg.MAX_POSTS_PER_DAY}) — skipping this run."
         )
 
-    else:
+        return
 
-        print(
-            "[main] Binance advanced data "
-            "unavailable"
-        )
-
-    # --------------------------------------------------------
-    # CoinGlass
-    # --------------------------------------------------------
-
-    if isinstance(
-        coinglass_market_data,
-        dict,
-    ):
-
-        status = (
-            coinglass_market_data
-            .get(
-                "source_status",
-                "unknown",
-            )
-        )
-
-        print(
-            "[main] CoinGlass status="
-            f"{status}"
-        )
-
-        available = []
-
-        for key, value in (
-            coinglass_market_data.items()
-        ):
-
-            if key in (
-                "source",
-                "source_status",
-                "symbol",
-            ):
-                continue
-
-            if value is not None:
-                available.append(
-                    key
-                )
-
-        print(
-            "[main] CoinGlass fields="
-            f"{', '.join(available) if available else 'none'}"
-        )
-
-    else:
-
-        print(
-            "[main] CoinGlass data "
-            "unavailable"
-        )
-
-
-# ============================================================
-# DIVERSE PICKING
-# ============================================================
-
-def _pick_diverse(
-    shortlist,
-    posted_symbols,
-    limit,
-):
-    """
-    Select symbols while avoiding symbols
-    already posted today.
-
-    Existing daily-post protection is preserved.
-    """
+    shortlist = get_screener_shortlist()
 
     if not shortlist:
-        return []
 
-    fresh = []
-
-    for pick in shortlist:
-
-        symbol = _get_pick_symbol(
-            pick
+        print(
+            "[run_once] screener returned nothing "
+            "— skipping."
         )
 
-        if not symbol:
-            continue
+        return
 
-        if symbol in posted_symbols:
-            continue
+    # -----------------------------------------------------
+    # Remove symbols already posted today
+    # -----------------------------------------------------
 
-        fresh.append(
-            pick
+    fresh = [
+        item
+        for item in shortlist
+        if not is_symbol_posted_today(
+            state,
+            item.get("symbol"),
+        )
+    ]
+
+    if not fresh:
+
+        print(
+            "[run_once] all current candidates were "
+            "already posted today — skipping this run."
         )
 
-    random.shuffle(
-        fresh
+        return
+
+    pool = fresh.copy()
+
+    random.shuffle(pool)
+
+    # -----------------------------------------------------
+    # Try candidates one by one
+    # -----------------------------------------------------
+
+    for pick in pool:
+
+        symbol = pick["symbol"]
+
+        if is_symbol_posted_today(
+            state,
+            symbol,
+        ):
+            continue
+
+        try:
+
+            posted = _build_and_publish(
+                symbol,
+                pick,
+            )
+
+            if posted:
+
+                state = record_post(
+                    state,
+                    symbol,
+                )
+
+                save_state(state)
+
+                print(
+                    f"[run_once] {symbol} "
+                    "recorded as posted today."
+                )
+
+            else:
+
+                print(
+                    f"[run_once] {symbol} was DRY RUN "
+                    "— not recorded as posted."
+                )
+
+            return
+
+        except Exception as err:
+
+            print(
+                f"[run_once] {symbol} failed: {err}"
+            )
+
+            traceback.print_exc()
+
+            print(
+                "[run_once] trying next candidate..."
+            )
+
+    print(
+        "[run_once] every fresh candidate failed "
+        "this run — nothing posted."
     )
 
-    return fresh[:limit]
+
+# =========================================================
+# RUN CYCLE
+# =========================================================
+
+def run_cycle():
+
+    mode = (
+        "DRY RUN (nothing will be posted)"
+        if cfg.DRY_RUN
+        else "LIVE (posting for real)"
+    )
+
+    print(
+        f"[cycle] starting — mode: {mode}"
+    )
+
+    state = load_state()
+
+    if not can_post_more_today(state):
+
+        print(
+            f"[cycle] daily cap reached "
+            f"({cfg.MAX_POSTS_PER_DAY}) — skipping cycle."
+        )
+
+        return
+
+    shortlist = get_screener_shortlist()
+
+    if not shortlist:
+
+        print(
+            "[cycle] screener returned nothing."
+        )
+
+        return
+
+    # -----------------------------------------------------
+    # Exclude already posted coins
+    # -----------------------------------------------------
+
+    fresh_shortlist = [
+        item
+        for item in shortlist
+        if not is_symbol_posted_today(
+            state,
+            item.get("symbol"),
+        )
+    ]
+
+    if not fresh_shortlist:
+
+        print(
+            "[cycle] no fresh candidates available "
+            "for today."
+        )
+
+        return
+
+    picks = _pick_diverse(
+        fresh_shortlist,
+        cfg.POSTS_PER_CYCLE,
+    )
+
+    for i, pick in enumerate(picks):
+
+        symbol = pick["symbol"]
+
+        # -------------------------------------------------
+        # Reload state before every post
+        # -------------------------------------------------
+
+        state = load_state()
+
+        if is_symbol_posted_today(
+            state,
+            symbol,
+        ):
+
+            print(
+                f"[cycle] {symbol} already posted "
+                "today — skipping."
+            )
+
+            continue
+
+        try:
+
+            posted = _build_and_publish(
+                symbol,
+                pick,
+            )
+
+            if posted:
+
+                state = record_post(
+                    state,
+                    symbol,
+                )
+
+                save_state(state)
+
+                print(
+                    f"[cycle] {symbol} "
+                    "recorded as posted today."
+                )
+
+        except Exception as err:
+
+            print(
+                f"[cycle] skipping {symbol}: {err}"
+            )
+
+            traceback.print_exc()
+
+        is_last = (
+            i == len(picks) - 1
+        )
+
+        if not is_last:
+
+            print(
+                f"[cycle] waiting "
+                f"{cfg.MINUTES_BETWEEN_POSTS} min..."
+            )
+
+            time.sleep(
+                cfg.MINUTES_BETWEEN_POSTS * 60
+            )
+
+    print(
+        "[cycle] done"
+    )
 
 
-# ============================================================
+# =========================================================
 # BUILD + PUBLISH
-# ============================================================
+# =========================================================
 
 def _build_and_publish(
-    symbol,
-    pick,
+    symbol: str,
+    pick=None,
 ):
-    """
-    Build one setup and publish one post.
 
-    CoinGlass is optional and isolated from
-    the existing Binance advanced-data layer.
-    """
+    print(
+        f"\n[run] starting analysis for {symbol}"
+    )
 
-    symbol = _safe_symbol(
+    # =====================================================
+    # TECHNICAL DATA
+    # =====================================================
+
+    print(
+        f"[run] fetching technical data "
+        f"for {symbol}..."
+    )
+
+    klines_df = fetch_klines(
         symbol
     )
 
-    if not symbol:
+    if klines_df is None:
 
-        print(
-            "[main] invalid symbol"
+        raise RuntimeError(
+            f"No kline data returned for {symbol}."
         )
 
-        return False
-
-    print("")
-    print("=" * 70)
-    print(
-        f"[main] processing {symbol}"
+    indicators = compute_indicators(
+        klines_df
     )
-    print("=" * 70)
 
-    # ========================================================
-    # KLINES
-    # ========================================================
+    if not indicators:
 
-    try:
-
-        klines = fetch_klines(
-            symbol,
-            interval=cfg.KLINE_INTERVAL,
-            limit=cfg.KLINE_LIMIT,
+        raise RuntimeError(
+            f"No technical indicators available "
+            f"for {symbol}."
         )
 
-    except Exception as err:
+    print(
+        f"[run] technical indicators ready "
+        f"for {symbol}"
+    )
 
-        print(
-            f"[main] kline fetch failed "
-            f"{symbol}: {err}"
-        )
-
-        return False
-
-    # IMPORTANT:
-    # Do NOT use:
-    #
-    #     if not klines:
-    #
-    # because klines can be a pandas DataFrame.
-
-    if not _has_klines(
-        klines
-    ):
-
-        print(
-            f"[main] no klines for "
-            f"{symbol}"
-        )
-
-        return False
-
-    # ========================================================
-    # INDICATORS
-    # ========================================================
-
-    try:
-
-        indicators = compute_indicators(
-            klines
-        )
-
-    except Exception as err:
-
-        print(
-            f"[main] indicator calculation "
-            f"failed {symbol}: {err}"
-        )
-
-        traceback.print_exc()
-
-        return False
-
-    if not _has_indicators(
-        indicators
-    ):
-
-        print(
-            f"[main] no indicators for "
-            f"{symbol}"
-        )
-
-        return False
-
-    # ========================================================
+    # =====================================================
     # NEWS
-    # ========================================================
+    # =====================================================
 
-    news = None
+    print(
+        f"[run] checking relevant news "
+        f"for {symbol}..."
+    )
 
     try:
 
@@ -443,39 +374,41 @@ def _build_and_publish(
     except Exception as err:
 
         print(
-            f"[main] news failed "
-            f"{symbol}: {err}"
+            f"[run] news failed for {symbol}: {err}"
+        )
+
+        print(
+            "[run] continuing without news..."
         )
 
         news = None
 
-    # ========================================================
-    # MARKET CONTEXT FROM SCREENER
-    # ========================================================
+    print(
+        f"[run] news data ready for {symbol}"
+    )
 
-    market_context = None
+    # =====================================================
+    # MARKET CONTEXT
+    # =====================================================
 
-    if isinstance(
-        pick,
-        dict,
-    ):
+    market_context = (
+        pick.get("market_context")
+        if pick
+        else None
+    )
 
-        market_context = pick.get(
-            "market_context"
-        )
+    # =====================================================
+    # ADVANCED MARKET DATA
+    # =====================================================
 
-    # ========================================================
-    # BINANCE ADVANCED MARKET DATA
-    # ========================================================
+    print(
+        f"[run] collecting advanced market data "
+        f"for {symbol}..."
+    )
 
     advanced_market_data = None
 
     try:
-
-        print(
-            "[main] collecting Binance "
-            f"advanced data for {symbol}"
-        )
 
         advanced_market_data = (
             get_advanced_market_data(
@@ -483,997 +416,310 @@ def _build_and_publish(
             )
         )
 
-    except Exception as err:
+        if advanced_market_data:
 
-        print(
-            "[main] Binance advanced "
-            f"data failed {symbol}: {err}"
-        )
-
-        advanced_market_data = None
-
-    # ========================================================
-    # COINGLASS MARKET DATA
-    # ========================================================
-
-    coinglass_market_data = None
-
-    try:
-
-        print(
-            "[main] collecting CoinGlass "
-            f"data for {symbol}"
-        )
-
-        coinglass_market_data = (
-            get_coinglass_market_data(
-                symbol
+            print(
+                f"[run] advanced market data "
+                f"collected for {symbol}"
             )
-        )
+
+        else:
+
+            print(
+                f"[run] advanced market data "
+                f"unavailable for {symbol}"
+            )
 
     except Exception as err:
 
         print(
-            "[main] CoinGlass failed "
-            f"{symbol}: {err}"
+            f"[run] advanced market data failed "
+            f"for {symbol}: {err}"
         )
 
-        # CoinGlass must never stop the bot.
-        coinglass_market_data = None
+        print(
+            "[run] continuing without advanced "
+            "market data..."
+        )
 
-    # ========================================================
-    # DATA STATUS
-    # ========================================================
+    # =====================================================
+    # GENERATE ANALYSIS
+    # =====================================================
 
-    _print_market_data_status(
-        symbol,
-        advanced_market_data,
-        coinglass_market_data,
+    print(
+        f"[run] generating AI analysis "
+        f"for {symbol}..."
     )
 
-    # ========================================================
-    # GENERATE SETUP
-    # ========================================================
+    # IMPORTANT:
+    # generate_setup() now contains its own
+    # Groq -> Python fallback system.
+    #
+    # Therefore main.py does not need to know
+    # whether the result came from Groq or Python.
 
-    try:
+    setup = generate_setup(
+        symbol,
+        indicators,
+        news,
+        market_context,
+        advanced_market_data,
+    )
 
-        setup = generate_setup(
-            symbol,
-            indicators,
-            news,
-            market_context,
-            advanced_market_data,
-            coinglass_market_data,
+    # =====================================================
+    # SETUP SAFETY CHECK
+    # =====================================================
+
+    if not setup:
+
+        raise RuntimeError(
+            f"Setup generator returned empty setup "
+            f"for {symbol}."
         )
-
-    except TypeError as err:
-
-        print(
-            "[main] setup_generator signature "
-            f"does not yet accept CoinGlass: {err}"
-        )
-
-        print(
-            "[main] CoinGlass integration "
-            "requires the updated "
-            "setup_generator.py."
-        )
-
-        return False
-
-    except Exception as err:
-
-        print(
-            f"[main] setup generation "
-            f"failed {symbol}: {err}"
-        )
-
-        traceback.print_exc()
-
-        return False
-
-    # ========================================================
-    # VALIDATE SETUP
-    # ========================================================
 
     if not isinstance(
         setup,
         dict,
     ):
 
-        print(
-            f"[main] invalid setup "
-            f"for {symbol}"
+        raise RuntimeError(
+            f"Setup generator returned invalid "
+            f"data type for {symbol}."
         )
 
-        return False
+    setup["symbol"] = symbol
+
+    setup["timeframe"] = (
+        cfg.KLINE_INTERVAL.upper()
+    )
+
+    # -----------------------------------------------------
+    # Required fields
+    # -----------------------------------------------------
 
     direction = str(
         setup.get(
             "direction",
             "",
         )
-    ).upper().strip()
+    ).upper()
 
     if direction not in (
         "LONG",
         "SHORT",
     ):
 
-        print(
-            f"[main] invalid direction "
-            f"for {symbol}: "
-            f"{direction}"
+        raise RuntimeError(
+            f"Invalid setup direction for "
+            f"{symbol}: {direction}"
         )
 
-        return False
+    if setup.get(
+        "entry_low"
+    ) is None:
 
-    entry = setup.get(
-        "entry"
-    )
+        raise RuntimeError(
+            f"Missing entry price for {symbol}."
+        )
 
-    stop_loss = setup.get(
+    if setup.get(
         "stop_loss"
-    )
+    ) is None:
 
-    take_profit = setup.get(
+        raise RuntimeError(
+            f"Missing stop loss for {symbol}."
+        )
+
+    if setup.get(
         "take_profit"
+    ) is None:
+
+        raise RuntimeError(
+            f"Missing take profit for {symbol}."
+        )
+
+    # =====================================================
+    # SAVE BACKTEST DATA
+    # =====================================================
+
+    saved = save_setup(
+        symbol,
+        setup,
     )
 
-    if (
-        entry is None
-        or stop_loss is None
-        or take_profit is None
-    ):
+    if saved:
 
         print(
-            f"[main] incomplete setup "
+            f"[run] setup saved to backtest "
+            f"data for {symbol}"
+        )
+
+    else:
+
+        print(
+            f"[run] backtest collection already "
+            f"complete or setup was not saved "
             f"for {symbol}"
         )
 
-        return False
+    # =====================================================
+    # GENERATE POST TEXT
+    # =====================================================
 
-    # ========================================================
-    # SAVE SETUP / BACKTEST STATE
-    # ========================================================
-
-    try:
-
-        save_setup(
-            setup
-        )
-
-    except TypeError:
-
-        try:
-
-            save_setup(
-                symbol,
-                setup,
-            )
-
-        except Exception as err:
-
-            print(
-                f"[main] save_setup failed "
-                f"{symbol}: {err}"
-            )
-
-    except Exception as err:
-
-        print(
-            f"[main] save_setup failed "
-            f"{symbol}: {err}"
-        )
-
-    # ========================================================
-    # FORMAT POST
-    # ========================================================
-
-    try:
-
-        post_text = format_post_text(
-            setup
-        )
-
-    except Exception as err:
-
-        print(
-            f"[main] post formatting "
-            f"failed {symbol}: {err}"
-        )
-
-        traceback.print_exc()
-
-        return False
-
-    if not post_text:
-
-        print(
-            f"[main] empty post for "
-            f"{symbol}"
-        )
-
-        return False
-
-    # ========================================================
-    # RENDER CHART
-    # ========================================================
-
-    chart_path = None
-
-    try:
-
-        chart_path = render_chart_image(
-            symbol,
-            klines,
-            indicators,
-            output_dir=cfg.CHART_OUTPUT_DIR,
-        )
-
-    except TypeError:
-
-        # Compatibility with chart.py versions
-        # using a different function signature.
-
-        try:
-
-            chart_path = render_chart_image(
-                symbol,
-                klines,
-                indicators,
-            )
-
-        except Exception as err:
-
-            print(
-                f"[main] chart failed "
-                f"{symbol}: {err}"
-            )
-
-            chart_path = None
-
-    except Exception as err:
-
-        print(
-            f"[main] chart failed "
-            f"{symbol}: {err}"
-        )
-
-        chart_path = None
-
-    # ========================================================
-    # PREVIEW
-    # ========================================================
-
-    print("")
-
-    print(
-        "-" * 70
+    text = format_post_text(
+        setup
     )
 
-    print(
-        f"[main] generated post for "
-        f"{symbol}"
-    )
+    if not text:
+
+        raise RuntimeError(
+            f"Post text is empty for {symbol}."
+        )
 
     print(
-        post_text
+        f"[run] final post generated "
+        f"for {symbol}"
     )
+
+    # =====================================================
+    # GENERATE NEUTRAL CHART
+    # =====================================================
 
     print(
-        "-" * 70
+        f"[run] generating market chart "
+        f"for {symbol}..."
     )
 
-    # ========================================================
+    chart_path = render_chart_image(
+        symbol=symbol,
+        klines_df=klines_df,
+        setup=setup,
+    )
+
+    if not chart_path:
+
+        raise RuntimeError(
+            f"Chart generation failed for {symbol}."
+        )
+
+    print(
+        f"[run] chart ready: {chart_path}"
+    )
+
+    # =====================================================
     # DRY RUN
-    # ========================================================
+    # =====================================================
 
     if cfg.DRY_RUN:
 
         print(
-            "[main] DRY_RUN enabled. "
-            "No Binance Square post sent."
+            "\n" + "=" * 60
         )
-
-        return True
-
-    # ========================================================
-    # PUBLISH
-    # ========================================================
-
-    try:
-
-        result = post_with_images(
-            post_text,
-            image_paths=(
-                [chart_path]
-                if chart_path
-                else []
-            ),
-        )
-
-    except TypeError:
-
-        try:
-
-            result = post_with_images(
-                post_text,
-                (
-                    [chart_path]
-                    if chart_path
-                    else []
-                ),
-            )
-
-        except Exception as err:
-
-            print(
-                f"[main] publish failed "
-                f"{symbol}: {err}"
-            )
-
-            traceback.print_exc()
-
-            return False
-
-    except Exception as err:
 
         print(
-            f"[main] publish failed "
-            f"{symbol}: {err}"
+            f"[DRY RUN] {symbol}"
         )
 
-        traceback.print_exc()
+        print(
+            "=" * 60
+        )
+
+        print(text)
+
+        print(
+            "=" * 60
+        )
+
+        print(
+            f"[DRY RUN] Chart: {chart_path}"
+        )
+
+        print(
+            "[DRY RUN] Nothing was posted "
+            "to Binance Square."
+        )
+
+        print()
 
         return False
 
-    # ========================================================
-    # POST SUCCESS
-    # ========================================================
-
-    if result is False:
-
-        print(
-            f"[main] publish returned "
-            f"False for {symbol}"
-        )
-
-        return False
+    # =====================================================
+    # PUBLISH TEXT + IMAGE
+    # =====================================================
 
     print(
-        f"[main] published successfully: "
-        f"{symbol}"
+        f"[run] publishing {symbol} "
+        "with market chart..."
+    )
+
+    result = post_with_images(
+        text,
+        [chart_path],
+    )
+
+    if not result:
+
+        raise RuntimeError(
+            f"Binance Square returned no result "
+            f"for {symbol}."
+        )
+
+    print(
+        f"[run] published {symbol} "
+        f"-> {result.get('link')}"
     )
 
     return True
 
 
-# ============================================================
-# RUN ONCE
-# ============================================================
+# =========================================================
+# DIVERSE PICKS
+# =========================================================
 
-def run_once():
-    """
-    Single-run mode.
+def _pick_diverse(
+    shortlist,
+    count,
+):
 
-    One invocation attempts one post.
-    """
+    seen = set()
+    picks = []
 
-    print(
-        "[main] RUN_MODE=once"
-    )
+    for item in shortlist:
 
-    # ========================================================
-    # STATE
-    # ========================================================
+        symbol = item["symbol"]
 
-    state = load_state()
-
-    # ========================================================
-    # DAILY CAP
-    # ========================================================
-
-    if not can_post_more_today(
-        state
-    ):
-
-        print(
-            f"[run_once] daily cap reached "
-            f"({cfg.MAX_POSTS_PER_DAY}) "
-            f"— skipping this run"
-        )
-
-        return
-
-    # ========================================================
-    # SCREENER
-    # ========================================================
-
-    try:
-
-        shortlist = (
-            get_screener_shortlist()
-        )
-
-    except Exception as err:
-
-        print(
-            f"[run_once] screener failed: "
-            f"{err}"
-        )
-
-        traceback.print_exc()
-
-        return
-
-    if not shortlist:
-
-        print(
-            "[run_once] "
-            "screener returned no candidates"
-        )
-
-        return
-
-    print(
-        f"[run_once] shortlist size: "
-        f"{len(shortlist)}"
-    )
-
-    # ========================================================
-    # POSTED TODAY
-    # ========================================================
-
-    posted_symbols = set()
-
-    for pick in shortlist:
-
-        symbol = _get_pick_symbol(
-            pick
-        )
-
-        if not symbol:
+        if symbol in seen:
             continue
 
-        try:
+        seen.add(symbol)
 
-            if is_symbol_posted_today(
-                state,
-                symbol,
-            ):
+        picks.append(item)
 
-                posted_symbols.add(
-                    symbol
-                )
-
-        except Exception as err:
-
-            print(
-                "[run_once] state check "
-                f"failed for {symbol}: {err}"
-            )
-
-    # ========================================================
-    # FRESH CANDIDATES
-    # ========================================================
-
-    candidates = _pick_diverse(
-        shortlist,
-        posted_symbols,
-        max(
-            1,
-            cfg.PICK_FROM_TOP_N,
-        ),
-    )
-
-    if not candidates:
-
-        print(
-            "[run_once] "
-            "all shortlisted symbols "
-            "were already posted today"
-        )
-
-        return
-
-    # ========================================================
-    # SHUFFLE
-    # ========================================================
-
-    random.shuffle(
-        candidates
-    )
-
-    # ========================================================
-    # TRY CANDIDATES
-    # ========================================================
-
-    for pick in candidates:
-
-        symbol = _get_pick_symbol(
-            pick
-        )
-
-        if not symbol:
-            continue
-
-        # Re-check state immediately before
-        # processing the symbol.
-
-        latest_state = load_state()
-
-        if not can_post_more_today(
-            latest_state
-        ):
-
-            print(
-                "[run_once] "
-                "daily cap reached "
-                "before posting"
-            )
-
-            return
-
-        try:
-
-            if is_symbol_posted_today(
-                latest_state,
-                symbol,
-            ):
-
-                print(
-                    f"[run_once] {symbol} "
-                    "already posted today. "
-                    "Skipping."
-                )
-
-                continue
-
-        except Exception as err:
-
-            print(
-                "[run_once] latest state "
-                f"check failed for {symbol}: {err}"
-            )
-
-            continue
-
-        # ----------------------------------------------------
-        # Build + publish
-        # ----------------------------------------------------
-
-        success = _build_and_publish(
-            symbol,
-            pick,
-        )
-
-        if not success:
-
-            print(
-                f"[run_once] "
-                f"{symbol} failed."
-            )
-
-            continue
-
-        # ----------------------------------------------------
-        # Record successful post
-        # ----------------------------------------------------
-
-        try:
-
-            state = load_state()
-
-            record_post(
-                state,
-                symbol,
-            )
-
-            save_state(
-                state
-            )
-
-            print(
-                f"[run_once] "
-                f"{symbol} recorded in state."
-            )
-
-        except Exception as err:
-
-            print(
-                f"[run_once] "
-                f"failed to record {symbol}: "
-                f"{err}"
-            )
-
-        return
-
-    print(
-        "[run_once] "
-        "no candidate successfully processed"
-    )
-
-
-# ============================================================
-# RUN CYCLE
-# ============================================================
-
-def run_cycle():
-    """
-    Multi-post cycle.
-
-    Posts up to POSTS_PER_CYCLE symbols,
-    while respecting:
-    - daily cap
-    - already-posted-today protection
-    - posting interval
-    """
-
-    print(
-        "[main] RUN_MODE=cycle"
-    )
-
-    print(
-        f"[run_cycle] "
-        f"target posts: "
-        f"{cfg.POSTS_PER_CYCLE}"
-    )
-
-    posts_done = 0
-
-    while (
-        posts_done
-        < cfg.POSTS_PER_CYCLE
-    ):
-
-        # ====================================================
-        # STATE
-        # ====================================================
-
-        state = load_state()
-
-        # ====================================================
-        # DAILY CAP
-        # ====================================================
-
-        if not can_post_more_today(
-            state
-        ):
-
-            print(
-                "[run_cycle] "
-                "daily cap reached."
-            )
-
+        if len(picks) >= count:
             break
 
-        # ====================================================
-        # SCREENER
-        # ====================================================
+    return picks
 
-        try:
 
-            shortlist = (
-                get_screener_shortlist()
-            )
+# =========================================================
+# ENTRY POINT
+# =========================================================
 
-        except Exception as err:
+if __name__ == "__main__":
 
-            print(
-                f"[run_cycle] "
-                f"screener failed: {err}"
-            )
-
-            traceback.print_exc()
-
-            break
-
-        if not shortlist:
-
-            print(
-                "[run_cycle] "
-                "no candidates."
-            )
-
-            break
-
-        # ====================================================
-        # REMOVE POSTED SYMBOLS
-        # ====================================================
-
-        posted_symbols = set()
-
-        for pick in shortlist:
-
-            symbol = _get_pick_symbol(
-                pick
-            )
-
-            if not symbol:
-                continue
-
-            try:
-
-                if is_symbol_posted_today(
-                    state,
-                    symbol,
-                ):
-
-                    posted_symbols.add(
-                        symbol
-                    )
-
-            except Exception:
-
-                continue
-
-        # ====================================================
-        # PICK
-        # ====================================================
-
-        candidates = _pick_diverse(
-            shortlist,
-            posted_symbols,
-            max(
-                1,
-                cfg.PICK_FROM_TOP_N,
-            ),
-        )
-
-        if not candidates:
-
-            print(
-                "[run_cycle] "
-                "no fresh symbols remain."
-            )
-
-            break
-
-        random.shuffle(
-            candidates
-        )
-
-        # ====================================================
-        # TRY CANDIDATES
-        # ====================================================
-
-        posted_this_round = False
-
-        for pick in candidates:
-
-            symbol = _get_pick_symbol(
-                pick
-            )
-
-            if not symbol:
-                continue
-
-            # ------------------------------------------------
-            # Re-load state before every post.
-            # ------------------------------------------------
-
-            state = load_state()
-
-            if not can_post_more_today(
-                state
-            ):
-
-                print(
-                    "[run_cycle] "
-                    "daily cap reached."
-                )
-
-                return
-
-            try:
-
-                if is_symbol_posted_today(
-                    state,
-                    symbol,
-                ):
-
-                    print(
-                        f"[run_cycle] "
-                        f"{symbol} already posted "
-                        "today. Skipping."
-                    )
-
-                    continue
-
-            except Exception:
-
-                continue
-
-            # ------------------------------------------------
-            # Build + publish
-            # ------------------------------------------------
-
-            success = _build_and_publish(
-                symbol,
-                pick,
-            )
-
-            if not success:
-
-                print(
-                    f"[run_cycle] "
-                    f"{symbol} failed."
-                )
-
-                continue
-
-            # ------------------------------------------------
-            # Record successful post
-            # ------------------------------------------------
-
-            try:
-
-                state = load_state()
-
-                record_post(
-                    state,
-                    symbol,
-                )
-
-                save_state(
-                    state
-                )
-
-            except Exception as err:
-
-                print(
-                    f"[run_cycle] "
-                    f"state save failed "
-                    f"{symbol}: {err}"
-                )
-
-            posts_done += 1
-
-            posted_this_round = True
-
-            print(
-                f"[run_cycle] "
-                f"posts completed: "
-                f"{posts_done}/"
-                f"{cfg.POSTS_PER_CYCLE}"
-            )
-
-            # ------------------------------------------------
-            # Wait before next post
-            # ------------------------------------------------
-
-            if (
-                posts_done
-                < cfg.POSTS_PER_CYCLE
-            ):
-
-                wait_seconds = (
-                    max(
-                        0,
-                        cfg.MINUTES_BETWEEN_POSTS,
-                    )
-                    * 60
-                )
-
-                if wait_seconds > 0:
-
-                    print(
-                        "[run_cycle] "
-                        f"waiting "
-                        f"{cfg.MINUTES_BETWEEN_POSTS} "
-                        "minutes before next post..."
-                    )
-
-                    time.sleep(
-                        wait_seconds
-                    )
-
-            break
-
-        if not posted_this_round:
-
-            print(
-                "[run_cycle] "
-                "no candidate successfully "
-                "processed in this round."
-            )
-
-            break
+    run_mode = os.environ.get(
+        "RUN_MODE",
+        "once",
+    ).lower()
 
     print(
-        "[run_cycle] completed. "
-        f"posts_done={posts_done}"
+        f"[main] RUN_MODE={run_mode}"
     )
 
-
-# ============================================================
-# MAIN
-# ============================================================
-
-def main():
-
-    print("")
-
-    print(
-        "=" * 70
-    )
-
-    print(
-        "TRADE SETUP BOT"
-    )
-
-    print(
-        "=" * 70
-    )
-
-    print(
-        f"RUN_MODE={RUN_MODE}"
-    )
-
-    print(
-        f"DRY_RUN={cfg.DRY_RUN}"
-    )
-
-    print(
-        f"MAX_POSTS_PER_DAY="
-        f"{cfg.MAX_POSTS_PER_DAY}"
-    )
-
-    print(
-        f"POSTS_PER_CYCLE="
-        f"{cfg.POSTS_PER_CYCLE}"
-    )
-
-    print(
-        f"MINUTES_BETWEEN_POSTS="
-        f"{cfg.MINUTES_BETWEEN_POSTS}"
-    )
-
-    print(
-        "CoinGlass="
-        + (
-            "configured"
-            if cfg.COINGLASS_API_KEY
-            else "not configured"
-        )
-    )
-
-    print(
-        "=" * 70
-    )
-
-    if RUN_MODE == "cycle":
+    if run_mode == "cycle":
 
         run_cycle()
 
     else:
 
         run_once()
-
-
-# ============================================================
-# ENTRY POINT
-# ============================================================
-
-if __name__ == "__main__":
-
-    try:
-
-        main()
-
-    except KeyboardInterrupt:
-
-        print(
-            "[main] stopped by user."
-        )
-
-    except Exception as err:
-
-        print(
-            f"[main] fatal error: {err}"
-        )
-
-        traceback.print_exc()
-
-        raise
