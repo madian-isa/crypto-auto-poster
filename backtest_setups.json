@@ -781,6 +781,23 @@
       "technical_analysis": "Price sits above EMA9 (0.151254) and EMA21 (0.149428) and comfortably over the SMA50 (0.14323), indicating short‑term bullish bias. The MACD histogram is slightly negative, suggesting a modest bearish pullback, but the overall momentum remains bullish. Stochastic K/D are around 45, neutral and not overbought. Order‑book shows a 15.9% bid‑side imbalance with higher bid value (≈64.6k USDT) versus ask (≈46.8k USDT), reinforcing buying pressure. Key 1H/4H swing levels are support at 0.1499 and resistance at 0.1542, with a tighter technical support at 0.1509 and resistance at 0.1518.",
       "market_context": "BTC is in a bullish trend on both 4H and 1D charts, and the broader crypto market is broadly positive (84.5% green). This backdrop supports a long bias for SUPERUSDT.",
       "result": "PENDING"
+    },
+    {
+      "id": 47,
+      "created_at": "2026-09-22T06:01:06.431126+00:00",
+      "symbol": "DUSKUSDT",
+      "direction": "LONG",
+      "title": "$DUSK Buying Pressure Rises as Bulls Test Key Resistance",
+      "entry_low": 0.085,
+      "entry_high": 0.0861,
+      "stop_loss": 0.0816,
+      "take_profit": 0.0918,
+      "support": 0.085,
+      "resistance": 0.0891,
+      "news_line": "",
+      "technical_analysis": "$DUSK technical structure shows price is above the 21 EMA.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
