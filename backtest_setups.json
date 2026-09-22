@@ -968,6 +968,23 @@
       "technical_analysis": "Price sits below EMA9 (0.1896), EMA21 (0.1909) and SMA50 (0.1955), indicating bearish bias. MACD line is modestly above its signal (+0.000209 histogram), offering a slight bullish counter‑signal. Stochastic shows K (30.7) under D (41.9) in the lower half, reinforcing downside pressure. Order‑book imbalance is negative (‑4.26%), with more ask volume than bid, supporting a short outlook. The pair is near the 1H/4H resistance zone (0.1888‑0.1918) and above the immediate technical support (0.1882), making a short entry around the resistance logical.",
       "market_context": "Broader market remains bullish, with BTC up 2.26% and overall market green at 66.9%. While risk sentiment is positive, SOMI shows weaker momentum relative to the broader trend.",
       "result": "PENDING"
+    },
+    {
+      "id": 58,
+      "created_at": "2026-09-22T09:31:03.500154+00:00",
+      "symbol": "DOGEUSDT",
+      "direction": "LONG",
+      "title": "Strong Accumulation Detected: $DOGE Prepares for Next Wave Up",
+      "entry_low": 0.0984,
+      "entry_high": 0.09844,
+      "stop_loss": 0.094464,
+      "take_profit": 0.106272,
+      "support": 0.0984,
+      "resistance": 0.10211,
+      "news_line": "",
+      "technical_analysis": "Price sits just above the 21‑EMA (0.09797) but below the 9‑EMA (0.09931), indicating short‑term pressure. The MACD histogram is negative, reinforcing bearish momentum, while the Stochastic is deep in oversold territory (K ≈ 9.8, D ≈ 18.4), suggesting a possible reversal. Order‑book data shows a bid‑ask imbalance of +13.3% with the best bid at 0.09841, supporting buying interest near the 1‑hour support level (0.09840). The nearest resistance on the 1‑hour chart is 0.10211.",
+      "market_context": "BTC is in a bullish trend on both 4‑hour and daily timeframes, with the broader market showing a slight green bias (58.4% assets up). This backdrop adds a modest supportive tone for risk‑on assets like DOGE.",
+      "result": "PENDING"
     }
   ]
 }
