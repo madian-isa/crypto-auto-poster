@@ -1359,6 +1359,23 @@
       "technical_analysis": "$USUAL technical structure shows price is above the 21 EMA.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 81,
+      "created_at": "2026-09-22T16:30:54.864762+00:00",
+      "symbol": "XRPUSDT",
+      "direction": "LONG",
+      "title": "Bullish Momentum Accelerates as $XRP Liquidity Sweep Completes",
+      "entry_low": 1.548,
+      "entry_high": 1.552,
+      "stop_loss": 1.48608,
+      "take_profit": 1.67184,
+      "support": 1.5035,
+      "resistance": 1.5545,
+      "news_line": "",
+      "technical_analysis": "Price sits just below the 9‑EMA (1.5527) while comfortably above the 21‑EMA (1.5342) and the 50‑SMA (1.4844), indicating an overall upward bias. MACD is positive (0.0213 vs signal 0.0208) with a small bullish histogram. Stochastic shows K at 57.6 below D at 68.1, suggesting momentum is easing but still in the upper‑mid range. Order‑book imbalance (+20% bids) and a tight spread support short‑term buying pressure. The nearest resistance is 1.5545 and the next major support sits at 1.5035.",
+      "market_context": "BTC remains in a bullish trend on both 4‑hour and daily frames, with price above its 20‑EMA and 50‑EMA. Overall market breadth is slightly positive (57.3% green). The broader environment supports a cautious long bias on XRP.",
+      "result": "PENDING"
     }
   ]
 }
