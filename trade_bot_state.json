@@ -1,6 +1,6 @@
 {
   "date": "2026-09-23",
-  "count": 32,
+  "count": 33,
   "posted_symbols_today": [
     "SENTUSDT",
     "VIRTUALUSDT",
@@ -33,6 +33,7 @@
     "ZAMAUSDT",
     "BCHUSDT",
     "MOVEUSDT",
-    "FORMUSDT"
+    "FORMUSDT",
+    "EIGENUSDT"
   ]
 }
