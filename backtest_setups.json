@@ -9867,6 +9867,23 @@
       "technical_analysis": "Price is hovering just above the 1H support (0.10901) and near the immediate support level (0.10944). Stochastic K is deep in oversold territory (~9) while the orderbook shows a 13.8% bid imbalance, indicating buying pressure. The EMA9 and EMA21 sit above the current price, but the price remains above EMA50, suggesting a potential bounce from the short‑term lows. MACD histogram is negative but small, and RSI is near 50, keeping the downside risk limited.",
       "market_context": "BTC is in a short‑term bearish dip (‑0.37% 24h) despite bullish trends on higher timeframes, and the overall crypto market breadth is broadly positive (81.5% green). This backdrop supports a cautious long bias on the pair.",
       "result": "PENDING"
+    },
+    {
+      "id": 581,
+      "created_at": "2026-09-23T10:31:32.426624+00:00",
+      "symbol": "APTUSDT",
+      "direction": "LONG",
+      "title": "$APT Outperformance Signal: Buying Momentum Beats Broader Market",
+      "entry_low": 0.822,
+      "entry_high": 0.828,
+      "stop_loss": 0.796,
+      "take_profit": 0.883,
+      "support": 0.807,
+      "resistance": 0.844,
+      "news_line": "",
+      "technical_analysis": "Price sits just above the 1‑hour support (0.807) and below the 1‑hour resistance (0.844). The market is in an overall uptrend: price is above EMA21 (0.814), EMA50 (0.790) and EMA200 (0.712) while only slightly under EMA9 (0.829). RSI at 60.7 and a modestly positive MACD histogram (+0.00033) reinforce bullish bias. ADX at 35 indicates a strong trend. Stochastic is neutral (K 56 / D 62). Order‑book shows a small ask‑side imbalance, but the spread is negligible. These factors support a long swing trade.",
+      "market_context": "BTC is down 4.3% on the day, yet the broader crypto market remains broadly positive with 85% of assets in green. The bullish BTC trend on higher timeframes (4H and 1D) adds supportive backdrop for APTUSDT.",
+      "result": "PENDING"
     }
   ]
 }
