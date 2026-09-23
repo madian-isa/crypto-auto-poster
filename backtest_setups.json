@@ -9306,6 +9306,23 @@
       "technical_analysis": "Price sits just above key 1H/4H support (≈117.6) and is trading near the upper Bollinger band. Bullish EMA alignment (EMA9 > EMA21, EMA20 > EMA200) and price above EMA200 reinforce an uptrend. MACD histogram is positive, RSI at 66 shows momentum, and OBV is rising. Stochastic is overbought (≈97) but the broader structure remains bullish.",
       "market_context": "The broader market is broadly positive (≈80% green). BTC is in a bullish trend on both 4H and 1D frames, supporting risk‑on sentiment for altcoins like SOL.",
       "result": "PENDING"
+    },
+    {
+      "id": 548,
+      "created_at": "2026-09-23T00:45:46.989823+00:00",
+      "symbol": "USD1USDT",
+      "direction": "SHORT",
+      "title": "$USD1 Breaks Ascending Support Line: Bearish Momentum Surge",
+      "entry_low": 0.99955,
+      "entry_high": 0.99965,
+      "stop_loss": 1.039532,
+      "take_profit": 0.919586,
+      "support": 0.99944,
+      "resistance": 0.99967,
+      "news_line": "",
+      "technical_analysis": "The pair is under bearish pressure: EMA9 (0.999512) sits below EMA21 (0.999565) and both EMA20 (0.999561) and EMA200 (0.999832) sit above price (0.99953). MACD is negative (‑0.000064) with the signal line even lower, indicating down‑trend momentum. RSI at 44.8 and Stochastic K/D around 48/43 stay below the 50‑level, reinforcing a lack of bullish strength. Order‑book data shows a -18.42% imbalance, meaning sell orders dominate. These three to five signals align for a short bias.",
+      "market_context": "BTC is in a bullish stance on both 4H and 1D frames, and the overall market breadth is broadly positive (74.8% green). While the broader market is upbeat, the specific technical picture for USD1USDT remains bearish, supporting a short setup.",
+      "result": "PENDING"
     }
   ]
 }
