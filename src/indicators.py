@@ -34,7 +34,7 @@ def fetch_klines(symbol, interval=None, limit=None):
     interval = interval or cfg.KLINE_INTERVAL
     limit = limit or cfg.KLINE_LIMIT
 
-    url = f"{cfg.BINANCE_FAPI_BASE}/api/v3/klines"
+    url = f"{cfg.BINANCE_SPOT_BASE}/api/v3/klines"
 
     response = requests.get(
         url,
@@ -323,6 +323,16 @@ def compute_indicators(df: pd.DataFrame) -> dict:
         "ema21": round(last_ema21, 8),
         "ema50": round(last_ema50, 8),
         "ema200": round(last_ema200, 8),
+        "previous_ema20": (
+            round(previous_ema20, 8)
+            if len(ema20) >= 2
+            else None
+        ),
+        "previous_ema200": (
+            round(previous_ema200, 8)
+            if len(ema200) >= 2
+            else None
+        ),
 
         "sma50": (
             round(float(sma50.iloc[-1]), 8)
