@@ -9714,6 +9714,23 @@
       "technical_analysis": "Price is trading at 1625.57, comfortably above EMA200 (1519.47) and EMA20 (1577.08). EMA9 (1606.06) sits above EMA21 (1574.99), confirming a short‑term bullish tilt. MACD histogram is positive (+4.77) and the MACD line is above the signal line, reinforcing momentum. RSI is at 69 and Stochastic K/D are in the low 80s, indicating the market is near overbought but still trending higher. ADX at 30.9 signals a strong trend, while OBV is rising. The 1‑hour swing range shows support at 1596.91 and resistance at 1650.0, with the current price just below the upper band of the Bollinger channel.",
       "market_context": "BTC is in a bullish phase on both 4‑hour and daily charts, and the overall crypto market is broadly positive with 88% of assets in green. This backdrop supports the bullish bias for ZEC.",
       "result": "PENDING"
+    },
+    {
+      "id": 572,
+      "created_at": "2026-09-23T07:49:39.503480+00:00",
+      "symbol": "MINAUSDT",
+      "direction": "LONG",
+      "title": "$MINA Breaks Out of Falling Wedge Pattern: Targets Set Higher",
+      "entry_low": 0.1475,
+      "entry_high": 0.1485,
+      "stop_loss": 0.1416,
+      "take_profit": 0.1593,
+      "support": 0.1448,
+      "resistance": 0.1584,
+      "news_line": "",
+      "technical_analysis": "MINA is trading just above the 1‑hour support level (0.1448) but remains under the short‑term EMA9 (0.1509) and EMA21 (0.1491), suggesting a pull‑back within a broader uptrend as price stays above EMA50 (0.1399) and EMA200 (0.1191). The MACD histogram is negative and the MACD line sits below its signal, pointing to short‑term bearish momentum, while the stochastic oscillator (~26/16) hints at an oversold condition. Order‑book data shows a 6.3% bid‑side imbalance, adding buying pressure. The next clear resistance is at 0.1584, which aligns with a 2R target from the proposed stop.",
+      "market_context": "Bitcoin is in a bullish trend on both 4‑hour and daily frames, and 85.7% of the crypto market is green, providing a supportive backdrop for long‑biased setups like this.",
+      "result": "PENDING"
     }
   ]
 }
