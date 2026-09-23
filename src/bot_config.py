@@ -39,11 +39,22 @@ GROQ_MODEL = os.environ.get(
 
 
 # =========================================================
-# Binance data
+# Binance market data
 # =========================================================
 
-BINANCE_FAPI_BASE = (
-    "https://data-api.binance.vision"
+# Spot API: candles, price, technical indicators
+BINANCE_SPOT_BASE = os.environ.get(
+    "BINANCE_SPOT_BASE",
+    "https://data-api.binance.vision",
+)
+
+# Kept for compatibility with existing code.
+BINANCE_FAPI_BASE = BINANCE_SPOT_BASE
+
+# Futures API: funding, open interest, liquidations, etc.
+BINANCE_FUTURES_BASE = os.environ.get(
+    "BINANCE_FUTURES_BASE",
+    "https://fapi.binance.com",
 )
 
 
@@ -210,7 +221,6 @@ MARKET_CONTEXT_ENABLED = (
     ).lower()
     not in ("false", "0", "no")
 )
-
 
 BTC_SYMBOL = "BTCUSDT"
 
