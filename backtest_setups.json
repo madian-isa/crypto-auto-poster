@@ -9595,6 +9595,23 @@
       "technical_analysis": "EMA9 (0.001001) is above EMA21 (0.000983) and EMA20 (0.000984) stays above EMA200 (0.000946), confirming a bullish EMA hierarchy. Price (0.00102) sits above EMA200 and just below the upper Bollinger band (0.001031). MACD histogram is positive (5e-06) and ADX at 42.7 shows a strong trend. RSI at 64 indicates upward momentum without being overbought.",
       "market_context": "BTC is bullish on both 4‑hour and daily charts, up about 1.8% in the last 24 h, and overall crypto market breadth is 86% green, reinforcing a risk‑on environment.",
       "result": "PENDING"
+    },
+    {
+      "id": 565,
+      "created_at": "2026-09-23T04:45:41.322219+00:00",
+      "symbol": "OPUSDT",
+      "direction": "LONG",
+      "title": "Bullish Momentum Is Building: Can $OP Continue Its Breakout?",
+      "entry_low": 0.1324,
+      "entry_high": 0.1362,
+      "stop_loss": 0.127104,
+      "take_profit": 0.142992,
+      "support": 0.1324,
+      "resistance": 0.1382,
+      "news_line": "",
+      "technical_analysis": "$OP technical structure shows price is above the 21 EMA.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
