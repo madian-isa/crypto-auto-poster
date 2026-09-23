@@ -10122,6 +10122,23 @@
       "technical_analysis": "Price sits above EMA9, EMA21, EMA50 and EMA200, indicating a prevailing uptrend. RSI at 54.6 is neutral, while Stochastic K (44.9) is above its D line, suggesting modest bullish momentum. MACD histogram is negative and the MACD line sits below its signal, hinting at short‑term pressure, but the overall EMA alignment outweighs this. ADX around 28 shows a moderate trend strength. Order‑book shows a 22.7% bid‑side imbalance, reinforcing buying interest. The 1H swing range is 0.124‑0.1331, with current price near the upper half, offering a clean long entry near 0.1314‑0.1318.",
       "market_context": "BTC is down 2.05% on the day, keeping the broader market slightly bearish (58.6% red). Despite the crypto‑wide pressure, MARSCOINUSDT displays stronger relative strength, supporting a long bias.",
       "result": "PENDING"
+    },
+    {
+      "id": 596,
+      "created_at": "2026-09-23T15:15:48.348093+00:00",
+      "symbol": "DOTUSDT",
+      "direction": "SHORT",
+      "title": "$DOT Distribution Phase Ends: Downside Target Zone Set",
+      "entry_low": 1.14,
+      "entry_high": 1.155,
+      "stop_loss": 1.2,
+      "take_profit": 1.0425,
+      "support": 1.09,
+      "resistance": 1.183,
+      "news_line": "",
+      "technical_analysis": "DOT is trading below EMA9 (1.157), EMA21 (1.171) and EMA50 (1.173), indicating a prevailing downtrend. MACD is negative with the histogram below zero, confirming bearish momentum. RSI at 27.9 and stochastic K/D around 20/14 signal oversold conditions but do not outweigh the trend bias. Order‑book shows a modest bid‑side imbalance (+5.8%), yet price remains under key moving averages. The 1H/4H swing structure places the next resistance at ~1.183 and support at 1.09, framing a short‑bias range.",
+      "market_context": "Overall crypto market breadth is negative (60.8% red) and BTC is 1.8% lower on the day, adding broader downside pressure.",
+      "result": "PENDING"
     }
   ]
 }
