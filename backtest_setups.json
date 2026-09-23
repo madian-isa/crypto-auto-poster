@@ -9833,6 +9833,23 @@
       "technical_analysis": "Price sits below the 9‑EMA (0.13627) and 21‑EMA (0.13522), while remaining above the 50‑EMA (0.12977), indicating short‑term bearish pressure within a longer‑term uptrend. MACD line (0.00206) is under its signal (0.00314) with a negative histogram, reinforcing downside momentum. ADX at 43 shows a strong trend, and order‑book imbalance (-6.35%) plus a 22% drop in volume suggest sellers are in control. Stochastic is deep in oversold territory (K 17, D 13) but the confluence of EMA and MACD bias points to a short bias.",
       "market_context": "BTC is in a bullish phase on both 4H and 1D frames, and the broader market is broadly positive (86.5% green). KITEUSDT’s short setup aligns with the prevailing sell pressure despite the overall market optimism.",
       "result": "PENDING"
+    },
+    {
+      "id": 579,
+      "created_at": "2026-09-23T09:33:30.611508+00:00",
+      "symbol": "BTTCUSDT",
+      "direction": "LONG",
+      "title": "Golden Cross Formation Confirmed on $BTTC 4-Hour Timeframe",
+      "entry_low": 3.9e-07,
+      "entry_high": 3.9e-07,
+      "stop_loss": 3.7e-07,
+      "take_profit": 4.2e-07,
+      "support": 3.8e-07,
+      "resistance": 4e-07,
+      "news_line": "",
+      "technical_analysis": "$BTTC technical structure shows RSI is 57.6, price is below the 21 EMA, with volume change is -78.2%.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
