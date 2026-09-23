@@ -10428,6 +10428,23 @@
       "technical_analysis": "$ONDO technical structure shows RSI is 31.7, price is below the 21 EMA, with volume change is -73.3%.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 614,
+      "created_at": "2026-09-23T19:30:53.575649+00:00",
+      "symbol": "TURBOUSDT",
+      "direction": "SHORT",
+      "title": "Moving Average Death Cross Signals Downward Trend for $TURBO",
+      "entry_low": 0.00100448,
+      "entry_high": 0.00100952,
+      "stop_loss": 0.00104728,
+      "take_profit": 0.00092644,
+      "support": 0.001009,
+      "resistance": 0.001085,
+      "news_line": "",
+      "technical_analysis": "$TURBO technical structure shows RSI is 32.2, price is below the 21 EMA, with volume change is -43.3%.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
