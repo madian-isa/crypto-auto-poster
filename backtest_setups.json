@@ -10309,6 +10309,23 @@
       "technical_analysis": "Price sits below EMA9, EMA21, EMA50 and EMA200, confirming a down‑trend on both 1H and 4H. RSI (27.5) and Stochastic K/D (~22/18) are in oversold territory, while MACD is negative with a bearish histogram. Bollinger lower band (0.00615496) is just above the current price, indicating limited upside. Order‑book shows a -19.5% imbalance (more asks), reinforcing short pressure. The 1H swing high sits near 0.00665 resistance, with a swing low around 0.00599 support, providing clear swing‑trade levels.",
       "market_context": "BTC is in a bearish 24h move (-2.55%) and the broader market is broadly negative (80.6% red). This backdrop supports a short bias on HOMEUSDT.",
       "result": "PENDING"
+    },
+    {
+      "id": 607,
+      "created_at": "2026-09-23T18:00:55.601192+00:00",
+      "symbol": "BROCCOLI714USDT",
+      "direction": "SHORT",
+      "title": "$BROCCOLI714 Lower High Pattern Confirmed: Short Target in View",
+      "entry_low": 0.02296245,
+      "entry_high": 0.02307755,
+      "stop_loss": 0.0239408,
+      "take_profit": 0.0211784,
+      "support": 0.02179,
+      "resistance": 0.0235,
+      "news_line": "",
+      "technical_analysis": "$BROCCOLI714 technical structure shows RSI is 42.4, price is below the 21 EMA, with volume change is -41.6%.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
