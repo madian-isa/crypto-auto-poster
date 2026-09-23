@@ -10003,6 +10003,23 @@
       "technical_analysis": "Price is perched at the 1‑hour resistance (~0.1628) while staying above EMA9 (0.1614), EMA21 (0.1590) and EMA50 (0.1534), confirming a bullish baseline. However, MACD histogram is negative and the MACD line sits below its signal, indicating short‑term bearish momentum. Stochastic K (58.9) is below its D line (62.0), adding to the downside bias. ADX is strong at 41, showing the trend is active, but the prevailing momentum signals point to a short swing. Order‑book shows a modest 6 % bid imbalance, but the proximity to resistance supports a short bias.",
       "market_context": "BTC is in a 24‑hour bearish phase (‑0.06 %) while the overall market breadth remains broadly positive, with roughly 73 % of assets in green.",
       "result": "PENDING"
+    },
+    {
+      "id": 589,
+      "created_at": "2026-09-23T13:46:02.624346+00:00",
+      "symbol": "BONKUSDT",
+      "direction": "LONG",
+      "title": "$BONK Reclaims Key Resistance Level: Flip to Support Complete",
+      "entry_low": 3.78e-06,
+      "entry_high": 3.8e-06,
+      "stop_loss": 3.64e-06,
+      "take_profit": 4.09e-06,
+      "support": 3.6e-06,
+      "resistance": 3.8e-06,
+      "news_line": "",
+      "technical_analysis": "Price is just above the 1‑hour resistance (3.8 µUSDT). EMA9 (3.89 µ) remains above price while EMA21 (3.79 µ) sits below, showing a short‑term pullback in a longer uptrend (EMA50/200 well lower). RSI at 55 and ADX above 40 confirm a strong, still‑positive trend. Stochastic K (~40) under D (~54) adds mild bearish pressure, but the overall bias stays bullish. Order‑book imbalance of -7 % indicates modest ask‑side pressure.",
+      "market_context": "BTC is bullish on 4‑hour and daily timeframes, and the broader market is broadly positive with 70 % of assets in green, providing a supportive backdrop for risk‑on moves.",
+      "result": "PENDING"
     }
   ]
 }

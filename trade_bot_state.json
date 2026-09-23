@@ -1,6 +1,6 @@
 {
   "date": "2026-09-23",
-  "count": 44,
+  "count": 45,
   "posted_symbols_today": [
     "SENTUSDT",
     "VIRTUALUSDT",
@@ -45,6 +45,7 @@
     "ARPAUSDT",
     "ETHUSDT",
     "SXTUSDT",
-    "APEUSDT"
+    "APEUSDT",
+    "BONKUSDT"
   ]
 }
