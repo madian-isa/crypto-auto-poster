@@ -9952,6 +9952,23 @@
       "technical_analysis": "ARPA is trading below the 9‑EMA (0.011448) but above the 21‑EMA (0.011262) and comfortably above the 50‑EMA (0.010993) and 200‑EMA (0.010365), indicating a short‑term pullback within a longer‑term uptrend. MACD is bullish (line 0.0001929 above signal 0.0001676) and ADX is high at 49.4, confirming a strong trend. RSI sits at 55.9, showing neutral momentum, while Stochastic %K (29) is below %D (50), hinting at modest upside potential. The 1H swing structure shows support at 0.01102 and resistance at 0.0119, with price currently near the intraday support level of 0.01134, providing a clean entry ",
       "market_context": "BTC is in a short‑term bearish stance (‑0.71% 24h) while the broader market remains broadly positive (75.8% green). ARPA’s bullish technical setup contrasts with BTC’s dip, suggesting relative strength.",
       "result": "PENDING"
+    },
+    {
+      "id": 586,
+      "created_at": "2026-09-23T13:01:01.249750+00:00",
+      "symbol": "ETHUSDT",
+      "direction": "LONG",
+      "title": "$ETH Volume Expansion Signals High Conviction Upward Move",
+      "entry_low": 2716.02,
+      "entry_high": 2722.2,
+      "stop_loss": 2610.3456,
+      "take_profit": 2936.6388,
+      "support": 2716.02,
+      "resistance": 2749.98,
+      "news_line": "",
+      "technical_analysis": "Price is trading just above the 1‑hour lower Bollinger band and the identified 1H support (2716.02). Although the market is below the short‑term EMAs (EMA9 = 2738.75, EMA21 = 2745.01, EMA50 = 2732.02), the RSI at 37.9 and Stochastic K/D around 12/16 suggest oversold conditions that could trigger a bounce. MACD remains bearish (‑2.99 histogram), but the order‑book shows a ~10% bid‑side imbalance, adding modest buying pressure. The 200‑EMA at 2627 acts as a strong longer‑term support, making a 3.5%‑plus stop loss feasible.",
+      "market_context": "BTC is slightly bearish on the 24h chart (‑0.65%) while the broader crypto market remains broadly positive, with 71.5% of assets in green. This backdrop supports risk‑on sentiment for ETH.",
+      "result": "PENDING"
     }
   ]
 }
