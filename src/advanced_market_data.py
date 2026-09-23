@@ -27,13 +27,19 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 
 import requests
 
+from src import bot_config as cfg
+
 
 # ============================================================
 # CONFIG
 # ============================================================
 
 FUTURES_BASE_URLS = [
-    "https://fapi.binance.com",
+    getattr(
+        cfg,
+        "BINANCE_FUTURES_BASE",
+        "https://fapi.binance.com",
+    ),
     "https://fapi1.binance.com",
     "https://fapi2.binance.com",
     "https://fapi3.binance.com",
