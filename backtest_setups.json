@@ -10258,6 +10258,23 @@
       "technical_analysis": "$SHIB technical structure shows RSI is 27.1, price is below the 21 EMA, with volume change is 50.8%.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 604,
+      "created_at": "2026-09-23T17:15:53.252096+00:00",
+      "symbol": "XVGUSDT",
+      "direction": "SHORT",
+      "title": "$XVG Lower High Pattern Confirmed: Short Target in View",
+      "entry_low": 0.002885,
+      "entry_high": 0.002895,
+      "stop_loss": 0.003,
+      "take_profit": 0.00267,
+      "support": 0.002844,
+      "resistance": 0.003068,
+      "news_line": "",
+      "technical_analysis": "Price sits below all key EMAs (EMA9, EMA21, EMA50, EMA200), indicating bearish bias. RSI is near 30 (30.45) and Stochastic K/D are low (~14/16), suggesting oversold conditions but still weak momentum. MACD line and histogram are negative, reinforcing downside pressure. ADX at 22.7 points to a non‑strong trend. Order‑book shows a bid‑side imbalance (~26% more bids), but the broader market is bearish with BTC down 3% and market breadth largely red.",
+      "market_context": "BTC is in a bearish 24‑hour move (‑3.0%) and the overall crypto market is broadly negative (82.8% red). This adds downward pressure to XVGUSDT.",
+      "result": "PENDING"
     }
   ]
 }
