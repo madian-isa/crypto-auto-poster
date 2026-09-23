@@ -9561,6 +9561,23 @@
       "technical_analysis": "Price sits above EMA200 and the short‑term EMA9 is above EMA21, confirming a bullish EMA hierarchy. MACD is positive with a rising histogram, ADX at 40 signals a strong trend, and OBV is increasing. RSI (68.9) and Stochastic (K 71.9/D 67.9) are in the upper zone but not yet overbought, while the 1H swing low at 0.1304 offers a clear support level.",
       "market_context": "BTC remains in a bullish phase on both 4H and 1D charts, and the broader market shows a 84.6% green breadth, supporting the bullish bias for BEL.",
       "result": "PENDING"
+    },
+    {
+      "id": 563,
+      "created_at": "2026-09-23T04:15:48.943709+00:00",
+      "symbol": "METUSDT",
+      "direction": "SHORT",
+      "title": "Major Support Breakdown Confirmed on $MET Higher Timeframes",
+      "entry_low": 0.351,
+      "entry_high": 0.3518,
+      "stop_loss": 0.3638,
+      "take_profit": 0.3254,
+      "support": 0.2873,
+      "resistance": 0.3527,
+      "news_line": "",
+      "technical_analysis": "MET is trading at 0.3503, just below the 1H resistance of 0.3527. EMA9 (0.3333) sits above EMA21 (0.3161) and EMA20 remains above EMA200, confirming a bullish EMA hierarchy, while MACD histogram stays positive. ADX is very strong at 58.9, indicating a firm trend. However, RSI (86.3) and Stochastic (K 96, D 94) are deep in overbought territory, and the order‑book shows a -38.2% imbalance (more sell pressure). The combination of overbought momentum and sell‑side order‑book bias points to a short‑bias near the current swing high.",
+      "market_context": "BTC is in a bullish phase and the broader market is broadly positive (84% green). MET’s overbought condition stands out against the overall market optimism, supporting a contrarian short view.",
+      "result": "PENDING"
     }
   ]
 }
