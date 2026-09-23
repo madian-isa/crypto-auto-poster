@@ -9357,6 +9357,23 @@
       "technical_analysis": "Price sits above EMA9 (0.2530) and EMA21 (0.2505) confirming a bullish EMA alignment. EMA20 remains above EMA200, and price is comfortably above EMA200, indicating higher‑time strength. MACD histogram is positive (0.000119) and the MACD line sits above its signal, supporting upward momentum. RSI at 65.9 shows solid buying pressure without being over‑extended, while ADX at 33.4 confirms a strong trend. OBV is rising, adding volume‑based confirmation. Stochastic is high (K 85, D 78) suggesting short‑term overbought conditions but the broader trend remains intact.",
       "market_context": "BTC is in a bullish phase on both 4H and 1D timeframes, and the overall market breadth is broadly positive (84% green). This macro backdrop aligns with the bullish bias for ADAUSDT.",
       "result": "PENDING"
+    },
+    {
+      "id": 551,
+      "created_at": "2026-09-23T01:30:53.000853+00:00",
+      "symbol": "UNIUSDT",
+      "direction": "LONG",
+      "title": "Strong Accumulation Detected: $UNI Prepares for Next Wave Up",
+      "entry_low": 10.388,
+      "entry_high": 10.55,
+      "stop_loss": 9.97248,
+      "take_profit": 11.21904,
+      "support": 10.388,
+      "resistance": 10.852,
+      "news_line": "",
+      "technical_analysis": "Price sits above EMA200 with EMA9 (9.93) comfortably above EMA21 (9.52) and EMA20 (9.54), confirming a bullish EMA hierarchy. MACD is positive (0.353 vs 0.201 signal) and expanding, while ADX at 43.8 signals a strong trend. OBV is rising, indicating buying pressure. Although RSI (75) and Stochastic (K 88/D 92) show overbought conditions, the overall structure on 1H/4H remains bullish, targeting the next resistance at 10.852.",
+      "market_context": "BTC remains in a bullish phase on both 4H and 1D horizons, supporting a broadly positive market environment (82% green).",
+      "result": "PENDING"
     }
   ]
 }
