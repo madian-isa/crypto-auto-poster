@@ -9782,6 +9782,23 @@
       "technical_analysis": "$MOVE technical structure shows RSI is 57.0, price is above the 21 EMA, with volume change is 443.8%.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 576,
+      "created_at": "2026-09-23T09:00:52.482496+00:00",
+      "symbol": "FORMUSDT",
+      "direction": "SHORT",
+      "title": "$FORM Fails Resistance Retest: Bearish Extension Imminent",
+      "entry_low": 0.3038385,
+      "entry_high": 0.3053615,
+      "stop_loss": 0.3194895,
+      "take_profit": 0.274821,
+      "support": 0.3024,
+      "resistance": 0.3179,
+      "news_line": "",
+      "technical_analysis": "$FORM technical structure shows RSI is 42.1, price is below the 21 EMA, with volume change is -38.1%.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
