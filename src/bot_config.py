@@ -93,10 +93,11 @@ KLINE_INTERVAL = os.environ.get(
     "1h",
 )
 
+# 500 candles gives EMA200 enough historical data.
 KLINE_LIMIT = int(
     os.environ.get(
         "KLINE_LIMIT",
-        "100",
+        "500",
     )
 )
 
