@@ -10275,6 +10275,23 @@
       "technical_analysis": "Price sits below all key EMAs (EMA9, EMA21, EMA50, EMA200), indicating bearish bias. RSI is near 30 (30.45) and Stochastic K/D are low (~14/16), suggesting oversold conditions but still weak momentum. MACD line and histogram are negative, reinforcing downside pressure. ADX at 22.7 points to a non‑strong trend. Order‑book shows a bid‑side imbalance (~26% more bids), but the broader market is bearish with BTC down 3% and market breadth largely red.",
       "market_context": "BTC is in a bearish 24‑hour move (‑3.0%) and the overall crypto market is broadly negative (82.8% red). This adds downward pressure to XVGUSDT.",
       "result": "PENDING"
+    },
+    {
+      "id": 605,
+      "created_at": "2026-09-23T17:30:51.630330+00:00",
+      "symbol": "CUSDT",
+      "direction": "LONG",
+      "title": "Bullish Divergence Flashed on $C Daily Chart Structure",
+      "entry_low": 0.0752,
+      "entry_high": 0.0754,
+      "stop_loss": 0.0725,
+      "take_profit": 0.0809,
+      "support": 0.0745,
+      "resistance": 0.0807,
+      "news_line": "",
+      "technical_analysis": "Price sits just above the lower Bollinger Band and the 1‑hour support (0.0745). RSI is at 30.3 and Stochastic K/D are below 15, indicating oversold conditions. EMA9 (0.0785) and EMA21 (0.0803) sit above the market, but EMA200 (0.0723) remains below, suggesting a potential short‑term bounce. MACD histogram is negative, showing lingering bearish momentum, yet the confluence of oversold signals and proximity to support supports a cautious long setup.",
+      "market_context": "The broader market is broadly negative with BTC down 2.9% on the day and a bearish 4‑hour trend, reinforcing risk‑off sentiment. Order‑book imbalance shows more sell pressure (‑21.3%).",
+      "result": "PENDING"
     }
   ]
 }
