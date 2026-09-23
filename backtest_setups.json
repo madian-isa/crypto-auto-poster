@@ -9493,6 +9493,23 @@
       "technical_analysis": "Price sits above EMA200 and the EMA9 is above EMA21, confirming a bullish EMA hierarchy. ADX14 is above 60, indicating a very strong trend. OBV is rising, showing accumulation. RSI at 67 and Stochastic K/D in the high‑60s suggest momentum is still healthy but approaching overbought levels. Order‑book imbalance (+8.17% bids) adds buying pressure on the 1‑hour chart.",
       "market_context": "BTC is in a bullish phase on both 4‑hour and daily timeframes, and overall market breadth is broadly positive (≈83% green). This broader upside supports a long bias for XECUSDT.",
       "result": "PENDING"
+    },
+    {
+      "id": 559,
+      "created_at": "2026-09-23T03:30:45.809437+00:00",
+      "symbol": "VETUSDT",
+      "direction": "LONG",
+      "title": "$VET Liquidation Squeeze: Bears Trapped Near Critical Resistance",
+      "entry_low": 0.00955,
+      "entry_high": 0.00965,
+      "stop_loss": 0.00915,
+      "take_profit": 0.01035,
+      "support": 0.00892,
+      "resistance": 0.009707,
+      "news_line": "",
+      "technical_analysis": "VETUSDT sits above EMA200 (0.008461) with a clear bullish EMA hierarchy (EMA9 > EMA21 > EMA20 > EMA50). MACD histogram remains positive and the signal line is below the MACD line, confirming upward momentum. ADX at 27.6 indicates a moderately strong trend, while OBV is rising, suggesting accumulation. Although RSI (74) and Stochastic (≈90) signal overbought conditions, the price is holding just above the upper Bollinger band and near the 1‑hour resistance at 0.009707, supporting a potential breakout.",
+      "market_context": "The broader market is broadly positive (82% green), and Bitcoin is in a bullish trend on both 4‑hour and daily timeframes, providing favorable sentiment for altcoins like VET.",
+      "result": "PENDING"
     }
   ]
 }
