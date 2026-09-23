@@ -9697,6 +9697,23 @@
       "technical_analysis": "The 1‑hour EMA9 (0.376) sits below EMA21 (0.379) indicating a bearish short‑term bias, while price remains just below the 4‑hour resistance at 0.385. MACD shows a modest bullish histogram but the EMA alignment and a -6.2% order‑book imbalance suggest sellers are in control. ADX is 32.5, confirming a strong trend, and OBV is rising, supporting the down‑move. RSI is neutral at 49, so momentum is not over‑extended.",
       "market_context": "BTC is in a bullish trend on both 4‑hour and daily frames, and overall market breadth is broadly positive (87% green). The broader market strength does not offset the specific bearish signals on XNO.",
       "result": "PENDING"
+    },
+    {
+      "id": 571,
+      "created_at": "2026-09-23T07:30:52.121130+00:00",
+      "symbol": "ZECUSDT",
+      "direction": "LONG",
+      "title": "Golden Cross Formation Confirmed on $ZEC 4-Hour Timeframe",
+      "entry_low": 1620.5,
+      "entry_high": 1624.0,
+      "stop_loss": 1563.5,
+      "take_profit": 1734.5,
+      "support": 1596.91,
+      "resistance": 1650.0,
+      "news_line": "",
+      "technical_analysis": "Price is trading at 1625.57, comfortably above EMA200 (1519.47) and EMA20 (1577.08). EMA9 (1606.06) sits above EMA21 (1574.99), confirming a short‑term bullish tilt. MACD histogram is positive (+4.77) and the MACD line is above the signal line, reinforcing momentum. RSI is at 69 and Stochastic K/D are in the low 80s, indicating the market is near overbought but still trending higher. ADX at 30.9 signals a strong trend, while OBV is rising. The 1‑hour swing range shows support at 1596.91 and resistance at 1650.0, with the current price just below the upper band of the Bollinger channel.",
+      "market_context": "BTC is in a bullish phase on both 4‑hour and daily charts, and the overall crypto market is broadly positive with 88% of assets in green. This backdrop supports the bullish bias for ZEC.",
+      "result": "PENDING"
     }
   ]
 }
