@@ -9323,6 +9323,23 @@
       "technical_analysis": "The pair is under bearish pressure: EMA9 (0.999512) sits below EMA21 (0.999565) and both EMA20 (0.999561) and EMA200 (0.999832) sit above price (0.99953). MACD is negative (‑0.000064) with the signal line even lower, indicating down‑trend momentum. RSI at 44.8 and Stochastic K/D around 48/43 stay below the 50‑level, reinforcing a lack of bullish strength. Order‑book data shows a -18.42% imbalance, meaning sell orders dominate. These three to five signals align for a short bias.",
       "market_context": "BTC is in a bullish stance on both 4H and 1D frames, and the overall market breadth is broadly positive (74.8% green). While the broader market is upbeat, the specific technical picture for USD1USDT remains bearish, supporting a short setup.",
       "result": "PENDING"
+    },
+    {
+      "id": 549,
+      "created_at": "2026-09-23T01:01:05.381826+00:00",
+      "symbol": "CELRUSDT",
+      "direction": "LONG",
+      "title": "Buyers Defend Key Demand Zone: $CELR Ready for Extension",
+      "entry_low": 0.002971,
+      "entry_high": 0.002978,
+      "stop_loss": 0.00285216,
+      "take_profit": 0.00320868,
+      "support": 0.002933,
+      "resistance": 0.003214,
+      "news_line": "",
+      "technical_analysis": "Price sits just above the immediate support (0.002971) and below a tight resistance at 0.002978. EMA9 is under EMA21, indicating short‑term bearish pressure, yet price remains above EMA200, keeping the longer‑term bias bullish. RSI at 36 and Stochastic K/D in the mid‑teens suggest the asset is near oversold levels, hinting at a possible bounce. OBV is falling and the order‑book shows a slight sell‑side imbalance, adding caution. Overall, the mixed signals point to a tentative long bias, targeting the next major resistance.",
+      "market_context": "BTC is in a bullish trend on both 4‑hour and daily frames, and the broader market shows a strong positive breadth (≈80% green). This supportive backdrop aligns with a cautious long setup on CELR.",
+      "result": "PENDING"
     }
   ]
 }
