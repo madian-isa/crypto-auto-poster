@@ -9969,6 +9969,23 @@
       "technical_analysis": "Price is trading just above the 1‑hour lower Bollinger band and the identified 1H support (2716.02). Although the market is below the short‑term EMAs (EMA9 = 2738.75, EMA21 = 2745.01, EMA50 = 2732.02), the RSI at 37.9 and Stochastic K/D around 12/16 suggest oversold conditions that could trigger a bounce. MACD remains bearish (‑2.99 histogram), but the order‑book shows a ~10% bid‑side imbalance, adding modest buying pressure. The 200‑EMA at 2627 acts as a strong longer‑term support, making a 3.5%‑plus stop loss feasible.",
       "market_context": "BTC is slightly bearish on the 24h chart (‑0.65%) while the broader crypto market remains broadly positive, with 71.5% of assets in green. This backdrop supports risk‑on sentiment for ETH.",
       "result": "PENDING"
+    },
+    {
+      "id": 587,
+      "created_at": "2026-09-23T13:16:02.517502+00:00",
+      "symbol": "SXTUSDT",
+      "direction": "SHORT",
+      "title": "Major Support Breakdown Confirmed on $SXT Higher Timeframes",
+      "entry_low": 0.00986,
+      "entry_high": 0.00992,
+      "stop_loss": 0.01026,
+      "take_profit": 0.00915,
+      "support": 0.00971,
+      "resistance": 0.01015,
+      "news_line": "",
+      "technical_analysis": "Price sits just below the EMA9 (0.009925) while staying above EMA21, indicating a weakening short‑term bullish bias. MACD histogram is negative and the MACD line sits under its signal, reinforcing bearish momentum. Stochastic K (30) is below its D line (52), suggesting down‑trend pressure. ADX at 42 confirms a strong trend, and the order‑book shows a modest ask‑side imbalance (-5.5%). Bollinger bands place price near the lower half, and volume has dropped sharply (-69%). These three to five strongest signals point to a short‑term downside bias.",
+      "market_context": "BTC is slightly bearish on the 24‑hour frame (-0.66%) while the broader crypto market remains broadly positive (67% green). The BTC context on higher timeframes stays bullish, but the local SXTUSDT setup leans bearish.",
+      "result": "PENDING"
     }
   ]
 }
