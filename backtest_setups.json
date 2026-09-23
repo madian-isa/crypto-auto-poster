@@ -10224,6 +10224,23 @@
       "technical_analysis": "GALA is sitting just above the 1H support (0.001878) and near its 24‑h low. RSI is deep in oversold territory (~23) and Stochastic K/D are both below 10, suggesting a potential bounce. Price is trading below EMA9, EMA21, EMA50 and EMA200, confirming a prevailing downtrend, while MACD remains negative and the histogram is bearish. ADX above 30 signals a strong trend, but the heavy volume surge (+71%) and a slight ask‑side order‑book imbalance (-1.14%) hint at buying interest near support.",
       "market_context": "BTC is down 2.1% on the 24h and the broader market is broadly negative (74% red). This bearish backdrop adds caution, but the oversold signals on GALA make a short‑term long setup around the 1H support plausible.",
       "result": "PENDING"
+    },
+    {
+      "id": 602,
+      "created_at": "2026-09-23T16:45:48.806053+00:00",
+      "symbol": "PNUTUSDT",
+      "direction": "LONG",
+      "title": "$PNUT Breakout Confirmation: Bulls Target Next Supply Zone",
+      "entry_low": 0.0522,
+      "entry_high": 0.0526,
+      "stop_loss": 0.0503,
+      "take_profit": 0.0566,
+      "support": 0.0521,
+      "resistance": 0.0555,
+      "news_line": "",
+      "technical_analysis": "Price sits at the lower Bollinger band and near the 1‑hour support of 0.0521. RSI is 25.3 and Stochastic K is 0, indicating oversold conditions. The market is trading below the 9‑, 21‑ and 50‑period EMAs, while MACD remains negative, pointing to short‑term bearish momentum. ADX around 29 shows a moderate trend strength. Order‑book imbalance of –9% toward asks adds slight sell pressure. These factors together suggest a possible bounce toward the 1‑hour resistance near 0.0555.",
+      "market_context": "BTC is down about 2.5% on the 24‑hour chart, with a mixed 4‑hour trend and overall market breadth remaining broadly negative (77% red).",
+      "result": "PENDING"
     }
   ]
 }
