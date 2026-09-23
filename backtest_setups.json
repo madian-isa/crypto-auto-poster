@@ -9816,6 +9816,23 @@
       "technical_analysis": "Price sits just above EMA21/EMA50 and below EMA9, with RSI at 57 and MACD histogram positive, indicating bullish momentum. ADX ~30 confirms a strong trend, and volume is up ~90%, supporting the upward bias. The 1H/4H swing low is around 0.2504 and swing high near 0.2564, providing clear entry and target zones.",
       "market_context": "BTC is in a bullish phase on both 4H and 1D charts, and overall market breadth is broadly positive (86.7% green). This favorable backdrop reinforces the long bias for EIGENUSDT.",
       "result": "PENDING"
+    },
+    {
+      "id": 578,
+      "created_at": "2026-09-23T09:30:56.570893+00:00",
+      "symbol": "KITEUSDT",
+      "direction": "SHORT",
+      "title": "$KITE Volume Decreases on Rally: Weak Buyers Exposed",
+      "entry_low": 0.1358,
+      "entry_high": 0.1362,
+      "stop_loss": 0.141,
+      "take_profit": 0.126,
+      "support": 0.1337,
+      "resistance": 0.14,
+      "news_line": "",
+      "technical_analysis": "Price sits below the 9‑EMA (0.13627) and 21‑EMA (0.13522), while remaining above the 50‑EMA (0.12977), indicating short‑term bearish pressure within a longer‑term uptrend. MACD line (0.00206) is under its signal (0.00314) with a negative histogram, reinforcing downside momentum. ADX at 43 shows a strong trend, and order‑book imbalance (-6.35%) plus a 22% drop in volume suggest sellers are in control. Stochastic is deep in oversold territory (K 17, D 13) but the confluence of EMA and MACD bias points to a short bias.",
+      "market_context": "BTC is in a bullish phase on both 4H and 1D frames, and the broader market is broadly positive (86.5% green). KITEUSDT’s short setup aligns with the prevailing sell pressure despite the overall market optimism.",
+      "result": "PENDING"
     }
   ]
 }
