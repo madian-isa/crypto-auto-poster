@@ -294,21 +294,19 @@ def entry_touched(
     entry_low,
     entry_high,
 ):
-    """
-    Check whether candle price range
-    touched the entry zone.
-    """
+    """Return True when a candle overlaps the advertised entry zone."""
+    try:
+        low = float(entry_low)
+        high = float(entry_high)
+    except (TypeError, ValueError):
+        return False
 
-    return (
-        candle["high"] >= entry_low
-        and
-        candle["low"] <= entry_high
-    )
+    if low <= 0 or high <= 0:
+        return False
 
+    low, high = sorted((low, high))
+    return candle["high"] >= low and candle["low"] <= high
 
-# ---------------------------------------------------------
-# SETUP EVALUATION
-# ---------------------------------------------------------
 
 def evaluate_setup(
     setup,
@@ -381,6 +379,25 @@ def evaluate_setup(
             "error": "Invalid direction",
         }
 
+    if entry_low > entry_high:
+        entry_low, entry_high = entry_high, entry_low
+
+    reference_entry = (entry_low + entry_high) / 2.0
+
+    if direction == "LONG":
+        valid_levels = stop_loss < reference_entry < take_profit
+    else:
+        valid_levels = take_profit < reference_entry < stop_loss
+
+    if not valid_levels:
+        return {
+            "result": "NO_DATA",
+            "entry_time": None,
+            "entry_price": None,
+            "result_time": None,
+            "error": "Invalid entry, stop-loss, or take-profit ordering",
+        }
+
     entry_time = None
     entry_price = None
 
@@ -419,10 +436,7 @@ def evaluate_setup(
 
             entry_time = candle_time
 
-            entry_price = (
-                entry_low
-                + entry_high
-            ) / 2.0
+            entry_price = reference_entry
 
             # ---------------------------------------------
             # Check TP / SL on entry candle
@@ -694,9 +708,10 @@ def run_backtest():
             horizon_end,
         )
 
-        start_ms = to_milliseconds(
-            created_at
-        )
+        raw_start_ms = to_milliseconds(created_at)
+        # The first 1m candle may have opened before the signal timestamp.
+        # Start at the next full minute so pre-signal OHLC is never used.
+        start_ms = ((raw_start_ms // 60_000) + 1) * 60_000
 
         end_ms = to_milliseconds(
             fetch_end
@@ -788,6 +803,10 @@ def run_backtest():
             "entry_price": evaluation.get(
                 "entry_price"
             ),
+            "entry_low": setup.get("entry_low"),
+            "entry_high": setup.get("entry_high"),
+            "stop_loss": setup.get("stop_loss"),
+            "take_profit": setup.get("take_profit"),
             "result_time": format_time(
                 evaluation.get(
                     "result_time"
