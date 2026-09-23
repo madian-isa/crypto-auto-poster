@@ -370,133 +370,40 @@ def _summarize_news(news):
 # =========================================================
 
 def _build_indicator_summary(indicators):
-    """
-    Build a clean technical-indicator summary for the AI prompt.
-
-    Only values supplied by indicators.py are forwarded.
-    No market data is calculated or modified here.
-    """
 
     if not indicators:
         return {}
 
-    result = {}
-
-    # ---------------------------------------------------------
-    # PRICE
-    # ---------------------------------------------------------
-    for key in [
+    keys = [
         "price",
         "current_price",
-    ]:
-        if key in indicators and indicators[key] is not None:
-            result[key] = indicators[key]
-
-    # ---------------------------------------------------------
-    # MOMENTUM
-    # ---------------------------------------------------------
-    for key in [
         "rsi",
-        "rsi14",
-    ]:
-        if key in indicators and indicators[key] is not None:
-            result[key] = indicators[key]
-
-    # ---------------------------------------------------------
-    # MOVING AVERAGES
-    # ---------------------------------------------------------
-    for key in [
         "ema9",
-        "ema20",
         "ema21",
         "ema50",
         "ema200",
         "sma50",
         "sma200",
-    ]:
-        if key in indicators and indicators[key] is not None:
-            result[key] = indicators[key]
-
-    # ---------------------------------------------------------
-    # EMA STRUCTURE
-    # ---------------------------------------------------------
-    for key in [
-        "emaTrend",
-        "ema20_200_relation",
-        "ema20_200_cross",
-        "price_vs_ema200",
-    ]:
-        if key in indicators and indicators[key] is not None:
-            result[key] = indicators[key]
-
-    # ---------------------------------------------------------
-    # MACD
-    # ---------------------------------------------------------
-    for key in [
         "macd",
         "macd_signal",
-    ]:
-        if key in indicators and indicators[key] is not None:
-            result[key] = indicators[key]
-
-    # ---------------------------------------------------------
-    # BOLLINGER BANDS
-    # ---------------------------------------------------------
-    if "bollinger" in indicators and indicators["bollinger"] is not None:
-        result["bollinger"] = indicators["bollinger"]
-
-    for key in [
         "bollinger_upper",
         "bollinger_lower",
-    ]:
-        if key in indicators and indicators[key] is not None:
-            result[key] = indicators[key]
-
-    # ---------------------------------------------------------
-    # STOCHASTIC / ADX / ATR
-    # ---------------------------------------------------------
-    for key in [
         "stochastic",
         "adx",
-        "adx14",
-        "atr",
-        "atr14",
-    ]:
-        if key in indicators and indicators[key] is not None:
-            result[key] = indicators[key]
-
-    # ---------------------------------------------------------
-    # VOLUME / OBV
-    # ---------------------------------------------------------
-    for key in [
+        "obv",
         "volume",
         "volume_change",
-        "obv",
-        "obvTrend",
-    ]:
-        if key in indicators and indicators[key] is not None:
-            result[key] = indicators[key]
-
-    # ---------------------------------------------------------
-    # RECENT PRICE RANGE
-    # ---------------------------------------------------------
-    for key in [
         "high_24h",
         "low_24h",
-        "high24Approx",
-        "low24Approx",
-    ]:
-        if key in indicators and indicators[key] is not None:
-            result[key] = indicators[key]
-
-    # ---------------------------------------------------------
-    # SUPPORT / RESISTANCE
-    # ---------------------------------------------------------
-    for key in [
         "support",
         "resistance",
-    ]:
-        if key in indicators and indicators[key] is not None:
+    ]
+
+    result = {}
+
+    for key in keys:
+
+        if key in indicators:
             result[key] = indicators[key]
 
     return result
@@ -699,10 +606,6 @@ def _fallback_direction(
 
     score = 0
 
-    # -----------------------------------------------------
-    # RSI
-    # -----------------------------------------------------
-
     rsi = _safe_float(
         indicators.get("rsi")
     )
@@ -714,10 +617,6 @@ def _fallback_direction(
 
         elif rsi <= 45:
             score -= 2
-
-    # -----------------------------------------------------
-    # EMA STRUCTURE
-    # -----------------------------------------------------
 
     price = _get_current_price(
         indicators
@@ -756,10 +655,6 @@ def _fallback_direction(
         elif price < ema200:
             score -= 1
 
-    # -----------------------------------------------------
-    # MACD
-    # -----------------------------------------------------
-
     macd = _safe_float(
         indicators.get("macd")
     )
@@ -779,10 +674,6 @@ def _fallback_direction(
         elif macd < macd_signal:
             score -= 2
 
-    # -----------------------------------------------------
-    # STOCHASTIC
-    # -----------------------------------------------------
-
     stochastic = _safe_float(
         indicators.get("stochastic")
     )
@@ -795,10 +686,6 @@ def _fallback_direction(
         elif stochastic <= 40:
             score -= 1
 
-    # -----------------------------------------------------
-    # VOLUME
-    # -----------------------------------------------------
-
     volume_change = _safe_float(
         indicators.get(
             "volume_change"
@@ -808,16 +695,10 @@ def _fallback_direction(
     if volume_change is not None:
 
         if volume_change > 10:
-            # Volume increase confirms the
-            # existing directional score.
             if score > 0:
                 score += 1
             elif score < 0:
                 score -= 1
-
-    # -----------------------------------------------------
-    # OPEN INTEREST
-    # -----------------------------------------------------
 
     oi_change = _safe_float(
         advanced.get(
@@ -834,10 +715,6 @@ def _fallback_direction(
             elif score < 0:
                 score -= 1
 
-    # -----------------------------------------------------
-    # FUNDING
-    # -----------------------------------------------------
-
     funding = _safe_float(
         advanced.get(
             "funding_rate"
@@ -851,10 +728,6 @@ def _fallback_direction(
 
         elif funding < -0.01:
             score += 1
-
-    # -----------------------------------------------------
-    # FINAL DIRECTION
-    # -----------------------------------------------------
 
     if score >= 0:
         return "LONG"
@@ -893,8 +766,6 @@ def _fallback_entry(
 
     if direction == "LONG":
 
-        # If valid support is below current price,
-        # use a modest structure-based entry range.
         if (
             support is not None
             and 0 < support < price
@@ -940,11 +811,18 @@ def _fallback_risk_levels(
     Creates a wide swing setup.
 
     Rules:
-    - Minimum 3.5% SL distance.
-    - Uses 4% minimum baseline.
-    - 1:2 RR exactly.
+    - Minimum 3.5% SL distance (MIN_SL_PCT).
+    - Maximum 6% SL distance (MAX_SL_PCT) — this is the fix: without a
+      ceiling, a distant/bad support or resistance value could blow the
+      stop out to 20-30%+, which also drags the 2R take-profit just as
+      far away, making both unrealistic to ever reach cleanly.
+    - 1:2 RR exactly, measured off the (now-capped) risk distance.
     - No ATR.
     """
+
+    MIN_SL_PCT = 0.035
+    DEFAULT_SL_PCT = 0.04
+    MAX_SL_PCT = 0.06
 
     if entry_low is None:
         return None, None
@@ -965,37 +843,22 @@ def _fallback_risk_levels(
 
         reference = entry_low
 
-        # Prefer structural support when it is
-        # meaningfully below the entry.
         if (
             support is not None
             and support > 0
             and support < reference
         ):
-
-            structural_sl = support * 0.995
-
-            minimum_sl = reference * 0.96
-
-            stop_loss = min(
-                structural_sl,
-                minimum_sl,
-            )
-
+            stop_loss = support * 0.995
         else:
-            stop_loss = reference * 0.96
+            stop_loss = reference * (1 - DEFAULT_SL_PCT)
 
-        # Enforce minimum 4% distance.
-        minimum_sl = reference * 0.96
-
-        if stop_loss > minimum_sl:
-            stop_loss = minimum_sl
+        # Clamp into the [MIN_SL_PCT, MAX_SL_PCT] band.
+        min_sl = reference * (1 - MAX_SL_PCT)
+        max_sl = reference * (1 - MIN_SL_PCT)
+        stop_loss = max(min_sl, min(stop_loss, max_sl))
 
         risk = reference - stop_loss
-
-        take_profit = (
-            reference + risk * 2.0
-        )
+        take_profit = reference + risk * 2.0
 
     else:
 
@@ -1005,35 +868,16 @@ def _fallback_risk_levels(
             resistance is not None
             and resistance > reference
         ):
-
-            structural_sl = (
-                resistance * 1.005
-            )
-
-            minimum_sl = (
-                reference * 1.04
-            )
-
-            stop_loss = max(
-                structural_sl,
-                minimum_sl,
-            )
-
+            stop_loss = resistance * 1.005
         else:
-            stop_loss = (
-                reference * 1.04
-            )
+            stop_loss = reference * (1 + DEFAULT_SL_PCT)
 
-        minimum_sl = reference * 1.04
-
-        if stop_loss < minimum_sl:
-            stop_loss = minimum_sl
+        min_sl = reference * (1 + MIN_SL_PCT)
+        max_sl = reference * (1 + MAX_SL_PCT)
+        stop_loss = max(min_sl, min(stop_loss, max_sl))
 
         risk = stop_loss - reference
-
-        take_profit = (
-            reference - risk * 2.0
-        )
+        take_profit = reference - risk * 2.0
 
     return (
         round(stop_loss, 8),
@@ -1050,11 +894,6 @@ def _fallback_technical_text(
     indicators,
     direction,
 ):
-    """
-    Builds factual technical text only from
-    supplied indicators.
-    """
-
     indicators = indicators or {}
 
     parts = []
@@ -1155,10 +994,6 @@ def _fallback_technical_text(
 def _fallback_market_context(
     advanced_market_data,
 ):
-    """
-    Uses BTC/advanced data only when supplied.
-    """
-
     advanced = (
         advanced_market_data or {}
     )
@@ -1284,14 +1119,6 @@ def _python_fallback_setup(
     market_context=None,
     advanced_market_data=None,
 ):
-    """
-    Full deterministic fallback.
-
-    This function does NOT call Groq.
-
-    It uses only supplied market data.
-    """
-
     coin = _coin_name(
         symbol
     )
@@ -1472,20 +1299,6 @@ def generate_setup(
     market_context=None,
     advanced_market_data=None,
 ):
-    """
-    Generate one complete market-analysis setup.
-
-    Flow:
-
-    Groq success
-        ->
-    validate + enforce setup
-
-    Groq failure
-        ->
-    Python fallback
-    """
-
     coin = _coin_name(
         symbol
     )
@@ -1561,7 +1374,7 @@ TASK:
 
 4. Identify major 1H and 4H support/resistance.
 
-5. Use only the strongest 3–5 supplied technical signals.
+5. Use only the strongest 3-5 supplied technical signals.
 
 6. Use OI, funding, long/short ratio, liquidation or
    orderbook data only if supplied.
@@ -1591,10 +1404,6 @@ Return JSON only:
   "market_context": ""
 }}
 """
-
-    # =====================================================
-    # GROQ
-    # =====================================================
 
     try:
 
@@ -1656,10 +1465,6 @@ Return JSON only:
             advanced_market_data=advanced_market_data,
         )
 
-    # =====================================================
-    # DIRECTION
-    # =====================================================
-
     direction = str(
         setup.get(
             "direction",
@@ -1672,18 +1477,12 @@ Return JSON only:
         "SHORT",
     ):
 
-        # If AI direction is invalid,
-        # use deterministic fallback direction.
         direction = _fallback_direction(
             indicators,
             advanced_market_data,
         )
 
     setup["direction"] = direction
-
-    # =====================================================
-    # ENTRY
-    # =====================================================
 
     entry_low = _safe_float(
         setup.get(
@@ -1721,10 +1520,6 @@ Return JSON only:
     setup["entry_low"] = entry_low
     setup["entry_high"] = entry_high
 
-    # =====================================================
-    # MAJOR LEVELS
-    # =====================================================
-
     ai_support = _safe_float(
         setup.get(
             "support"
@@ -1756,10 +1551,6 @@ Return JSON only:
     setup["support"] = ai_support
     setup["resistance"] = ai_resistance
 
-    # =====================================================
-    # STOP LOSS / TAKE PROFIT
-    # =====================================================
-
     ai_stop = _safe_float(
         setup.get(
             "stop_loss"
@@ -1774,39 +1565,34 @@ Return JSON only:
 
     if entry_low is not None and entry_low > 0:
 
-        # Use the AI stop only if it satisfies
-        # the minimum distance requirement.
-        valid_ai_stop = False
+        MIN_SL_PCT = 0.035
+        MAX_SL_PCT = 0.06
+        DEFAULT_SL_PCT = 0.04
 
         if ai_stop is not None:
+            distance = abs(entry_low - ai_stop) / entry_low
 
-            distance = (
-                abs(entry_low - ai_stop)
-                / entry_low
-            )
+            if distance < MIN_SL_PCT:
+                # Too tight — fall through to the default below.
+                ai_stop = None
+            elif distance > MAX_SL_PCT:
+                # This is the fix: the AI (or a bad support/resistance
+                # value) can suggest a stop way beyond a sane distance —
+                # clamp it back to MAX_SL_PCT instead of trusting it
+                # outright. Without this, a case like entry ~$0.049 with
+                # a suggested stop of $0.0665 (35% away!) sailed straight
+                # through the old "minimum only" check.
+                if direction == "LONG":
+                    ai_stop = round(entry_low * (1 - MAX_SL_PCT), 8)
+                else:
+                    ai_stop = round(entry_low * (1 + MAX_SL_PCT), 8)
 
-            if distance >= 0.035:
-                valid_ai_stop = True
-
-        if not valid_ai_stop:
+        if ai_stop is None:
 
             if direction == "LONG":
-
-                ai_stop = round(
-                    entry_low * 0.96,
-                    8,
-                )
-
+                ai_stop = round(entry_low * (1 - DEFAULT_SL_PCT), 8)
             else:
-
-                ai_stop = round(
-                    entry_low * 1.04,
-                    8,
-                )
-
-        # -------------------------------------------------
-        # EXACT 1:2 RR
-        # -------------------------------------------------
+                ai_stop = round(entry_low * (1 + DEFAULT_SL_PCT), 8)
 
         sl_distance = abs(
             entry_low - ai_stop
@@ -1830,8 +1616,6 @@ Return JSON only:
 
     else:
 
-        # AI did not provide a usable price.
-        # Rebuild the complete setup through fallback.
         return _python_fallback_setup(
             symbol=symbol,
             indicators=indicators,
@@ -1843,25 +1627,12 @@ Return JSON only:
     setup["stop_loss"] = ai_stop
     setup["take_profit"] = ai_target
 
-    # Keep compatibility with existing
-    # backtest/state code.
     setup["rr"] = 2
-
-    # =====================================================
-    # TITLE
-    # =====================================================
-
-    # Never trust AI-generated title.
-    # Always use the user's title library.
 
     setup["title"] = _select_title(
         direction,
         coin,
     )
-
-    # =====================================================
-    # CLEAN TEXT
-    # =====================================================
 
     setup["news_line"] = _clean_text(
         setup.get(
@@ -1887,10 +1658,6 @@ Return JSON only:
         400,
     )
 
-    # =====================================================
-    # REMOVE HASHTAGS
-    # =====================================================
-
     setup["hashtags"] = []
 
     print(
@@ -1906,16 +1673,6 @@ Return JSON only:
 # =========================================================
 
 def format_post_text(setup):
-    """
-    Convert setup JSON into final Binance Square format.
-
-    Exactly three $COIN mentions:
-
-    1. Title
-    2. Technical-analysis section
-    3. Final LONG/SHORT line
-    """
-
     if not setup:
         return ""
 
@@ -1940,10 +1697,6 @@ def format_post_text(setup):
         "SHORT",
     ):
         direction = "LONG"
-
-    # -----------------------------------------------------
-    # PRICE VALUES
-    # -----------------------------------------------------
 
     entry_low = _format_price(
         setup.get(
@@ -1981,10 +1734,6 @@ def format_post_text(setup):
         )
     )
 
-    # -----------------------------------------------------
-    # TEXT
-    # -----------------------------------------------------
-
     technical = setup.get(
         "technical_analysis",
         "",
@@ -1999,10 +1748,6 @@ def format_post_text(setup):
         "market_context",
         "",
     ).strip()
-
-    # -----------------------------------------------------
-    # TITLE
-    # -----------------------------------------------------
 
     title = setup.get(
         "title",
@@ -2042,10 +1787,6 @@ def format_post_text(setup):
         f"${coin}: {title}"
     )
 
-    # -----------------------------------------------------
-    # DIRECTION LINE
-    # -----------------------------------------------------
-
     if direction == "LONG":
 
         direction_line = (
@@ -2066,10 +1807,6 @@ def format_post_text(setup):
             f"SHORT ${coin}"
         )
 
-    # -----------------------------------------------------
-    # TECHNICAL BODY
-    # -----------------------------------------------------
-
     if technical:
 
         technical_line = (
@@ -2085,13 +1822,8 @@ def format_post_text(setup):
             f"remains the main focus."
         )
 
-    # -----------------------------------------------------
-    # BUILD POST
-    # -----------------------------------------------------
-
     lines = []
 
-    # 1st $COIN
     lines.append(
         title_line
     )
@@ -2125,14 +1857,9 @@ def format_post_text(setup):
 
     lines.append("")
 
-    # 2nd $COIN
     lines.append(
         technical_line
     )
-
-    # -----------------------------------------------------
-    # NEWS
-    # -----------------------------------------------------
 
     if news_line:
 
@@ -2141,10 +1868,6 @@ def format_post_text(setup):
         lines.append(
             f"NEWS: {news_line}"
         )
-
-    # -----------------------------------------------------
-    # MARKET CONTEXT
-    # -----------------------------------------------------
 
     if market:
 
@@ -2156,7 +1879,6 @@ def format_post_text(setup):
 
     lines.append("")
 
-    # 3rd $COIN
     lines.append(
         final_line
     )
@@ -2165,29 +1887,17 @@ def format_post_text(setup):
         lines
     ).strip()
 
-    # -----------------------------------------------------
-    # REMOVE HASHTAGS
-    # -----------------------------------------------------
-
     text = re.sub(
         r"#\w+",
         "",
         text,
     )
 
-    # -----------------------------------------------------
-    # REMOVE EMOJIS / NON-ASCII
-    # -----------------------------------------------------
-
     text = re.sub(
         r"[^\x00-\x7F]+",
         "",
         text,
     )
-
-    # -----------------------------------------------------
-    # CLEAN SPACES
-    # -----------------------------------------------------
 
     text = re.sub(
         r"[ \t]+",
@@ -2200,10 +1910,6 @@ def format_post_text(setup):
         "\n\n",
         text,
     ).strip()
-
-    # -----------------------------------------------------
-    # CHARACTER LIMIT
-    # -----------------------------------------------------
 
     if len(text) > cfg.CHAR_LIMIT:
 
