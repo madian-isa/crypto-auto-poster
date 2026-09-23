@@ -9255,6 +9255,23 @@
       "technical_analysis": "$SAHARA technical structure shows price is above the 21 EMA.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 545,
+      "created_at": "2026-09-23T00:01:29.093797+00:00",
+      "symbol": "SENTUSDT",
+      "direction": "LONG",
+      "title": "$SENT Liquidation Squeeze: Bears Trapped Near Critical Resistance",
+      "entry_low": 0.01894,
+      "entry_high": 0.02147,
+      "stop_loss": 0.0181824,
+      "take_profit": 0.0204552,
+      "support": 0.01894,
+      "resistance": 0.02163,
+      "news_line": "",
+      "technical_analysis": "$SENT technical structure shows price is above the 21 EMA.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
