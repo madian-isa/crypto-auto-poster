@@ -9986,6 +9986,23 @@
       "technical_analysis": "Price sits just below the EMA9 (0.009925) while staying above EMA21, indicating a weakening short‑term bullish bias. MACD histogram is negative and the MACD line sits under its signal, reinforcing bearish momentum. Stochastic K (30) is below its D line (52), suggesting down‑trend pressure. ADX at 42 confirms a strong trend, and the order‑book shows a modest ask‑side imbalance (-5.5%). Bollinger bands place price near the lower half, and volume has dropped sharply (-69%). These three to five strongest signals point to a short‑term downside bias.",
       "market_context": "BTC is slightly bearish on the 24‑hour frame (-0.66%) while the broader crypto market remains broadly positive (67% green). The BTC context on higher timeframes stays bullish, but the local SXTUSDT setup leans bearish.",
       "result": "PENDING"
+    },
+    {
+      "id": 588,
+      "created_at": "2026-09-23T13:31:00.086852+00:00",
+      "symbol": "APEUSDT",
+      "direction": "SHORT",
+      "title": "$APE Rejection at Key Supply Zone: Short Setup Activated",
+      "entry_low": 0.1624,
+      "entry_high": 0.1628,
+      "stop_loss": 0.169104,
+      "take_profit": 0.149592,
+      "support": 0.1579,
+      "resistance": 0.1628,
+      "news_line": "",
+      "technical_analysis": "Price is perched at the 1‑hour resistance (~0.1628) while staying above EMA9 (0.1614), EMA21 (0.1590) and EMA50 (0.1534), confirming a bullish baseline. However, MACD histogram is negative and the MACD line sits below its signal, indicating short‑term bearish momentum. Stochastic K (58.9) is below its D line (62.0), adding to the downside bias. ADX is strong at 41, showing the trend is active, but the prevailing momentum signals point to a short swing. Order‑book shows a modest 6 % bid imbalance, but the proximity to resistance supports a short bias.",
+      "market_context": "BTC is in a 24‑hour bearish phase (‑0.06 %) while the overall market breadth remains broadly positive, with roughly 73 % of assets in green.",
+      "result": "PENDING"
     }
   ]
 }
