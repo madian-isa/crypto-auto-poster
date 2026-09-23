@@ -10020,6 +10020,23 @@
       "technical_analysis": "Price is just above the 1‑hour resistance (3.8 µUSDT). EMA9 (3.89 µ) remains above price while EMA21 (3.79 µ) sits below, showing a short‑term pullback in a longer uptrend (EMA50/200 well lower). RSI at 55 and ADX above 40 confirm a strong, still‑positive trend. Stochastic K (~40) under D (~54) adds mild bearish pressure, but the overall bias stays bullish. Order‑book imbalance of -7 % indicates modest ask‑side pressure.",
       "market_context": "BTC is bullish on 4‑hour and daily timeframes, and the broader market is broadly positive with 70 % of assets in green, providing a supportive backdrop for risk‑on moves.",
       "result": "PENDING"
+    },
+    {
+      "id": 590,
+      "created_at": "2026-09-23T14:00:58.992094+00:00",
+      "symbol": "DOGEUSDT",
+      "direction": "LONG",
+      "title": "Major Breakout Signals Emerge on $DOGE Higher Timeframes",
+      "entry_low": 0.0993,
+      "entry_high": 0.09945,
+      "stop_loss": 0.0954,
+      "take_profit": 0.107325,
+      "support": 0.09927,
+      "resistance": 0.10116,
+      "news_line": "",
+      "technical_analysis": "Price sits just above the 1‑hour support at 0.09927 and below the 9‑ and 21‑period EMAs (0.10016 / 0.10035), indicating short‑term bearish pressure. MACD histogram is negative and the MACD line is under its signal, reinforcing the downside bias. RSI is neutral at 45.9 while the stochastic is deep in oversold territory (K ≈ 14, D ≈ 12), suggesting a possible reversal to the upside. ADX around 27 shows moderate trend strength. Order‑book data reveals a modest 5 % bid‑side imbalance, adding a slight bullish tilt.",
+      "market_context": "BTC is in a 24‑hour bearish slide (‑0.43 %) while the broader market remains broadly positive, with 65 % of assets in green. Higher‑timeframe BTC trends stay bullish on the 4‑hour and daily charts, providing a supportive backdrop for risk‑on assets like DOGE.",
+      "result": "PENDING"
     }
   ]
 }
