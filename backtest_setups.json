@@ -9765,6 +9765,23 @@
       "technical_analysis": "Price sits above EMA9, EMA21, EMA50 and EMA200, confirming a higher‑timeframe uptrend. ADX at 54.5 shows a strong trend. RSI is in the overbought zone (72) and MACD histogram is negative, indicating short‑term weakness, while Stochastic %K (59) is below %D (72), adding bearish pressure. Order‑book imbalance (-21.75%) also hints at selling interest. The confluence suggests a pull‑back to the 1H/4H support zone around 335‑340 before a move toward the 362.6 resistance.",
       "market_context": "BTC remains bullish on 4H and 1D charts, and the overall crypto market is broadly positive (88.7% green). This backdrop supports a cautious long bias on BCHUSDT.",
       "result": "PENDING"
+    },
+    {
+      "id": 575,
+      "created_at": "2026-09-23T08:30:50.425147+00:00",
+      "symbol": "MOVEUSDT",
+      "direction": "LONG",
+      "title": "Strong Accumulation Detected: $MOVE Prepares for Next Wave Up",
+      "entry_low": 0.00982338,
+      "entry_high": 0.00987262,
+      "stop_loss": 0.00945408,
+      "take_profit": 0.01063584,
+      "support": 0.0096,
+      "resistance": 0.0102,
+      "news_line": "",
+      "technical_analysis": "$MOVE technical structure shows RSI is 57.0, price is above the 21 EMA, with volume change is 443.8%.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
