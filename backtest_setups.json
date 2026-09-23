@@ -9391,6 +9391,23 @@
       "technical_analysis": "Price sits just below the upper Bollinger band (0.010054) and above all key EMAs (EMA9 > EMA21, EMA20 > EMA200). MACD histogram is positive, confirming bullish momentum. ADX at 35 signals a strong trend, while OBV is rising. RSI (76) and Stochastic (≈90) indicate overbought conditions, suggesting a possible pull‑back to the 1H/4H support zone around 0.00955‑0.00985 before the next leg higher.",
       "market_context": "BTC remains in a bullish phase on both 4H and 1D timeframes, and the broader market shows a 78.5% green breadth, supporting a continued upward bias for risk assets like SAHARA.",
       "result": "PENDING"
+    },
+    {
+      "id": 553,
+      "created_at": "2026-09-23T02:00:55.059879+00:00",
+      "symbol": "WLDUSDT",
+      "direction": "LONG",
+      "title": "Spot Inflows Surge for $WLD as Futures Open Interest Rises",
+      "entry_low": 0.456,
+      "entry_high": 0.458,
+      "stop_loss": 0.44,
+      "take_profit": 0.488,
+      "support": 0.4557,
+      "resistance": 0.4632,
+      "news_line": "",
+      "technical_analysis": "Price sits above EMA200 and is bullishly aligned (EMA9 > EMA21, EMA20 > EMA200). MACD histogram is positive and OBV is rising, supporting upward bias. RSI at 53 shows neutral momentum, while ADX at 16.7 indicates a weak but present trend. Order‑book shows a 24% bid imbalance, reinforcing bullish pressure. Key 1H/4H swing low is near 0.4557 and swing high near 0.4632, defining the trade range.",
+      "market_context": "BTC remains in a bullish phase on both 4H and 1D timeframes, and the broader market is broadly positive with ~74% of assets in green. This backdrop adds supportive sentiment for a long bias on WLDUSDT.",
+      "result": "PENDING"
     }
   ]
 }
