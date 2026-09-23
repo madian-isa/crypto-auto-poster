@@ -9578,6 +9578,23 @@
       "technical_analysis": "MET is trading at 0.3503, just below the 1H resistance of 0.3527. EMA9 (0.3333) sits above EMA21 (0.3161) and EMA20 remains above EMA200, confirming a bullish EMA hierarchy, while MACD histogram stays positive. ADX is very strong at 58.9, indicating a firm trend. However, RSI (86.3) and Stochastic (K 96, D 94) are deep in overbought territory, and the order‑book shows a -38.2% imbalance (more sell pressure). The combination of overbought momentum and sell‑side order‑book bias points to a short‑bias near the current swing high.",
       "market_context": "BTC is in a bullish phase and the broader market is broadly positive (84% green). MET’s overbought condition stands out against the overall market optimism, supporting a contrarian short view.",
       "result": "PENDING"
+    },
+    {
+      "id": 564,
+      "created_at": "2026-09-23T04:30:51.744634+00:00",
+      "symbol": "SCUSDT",
+      "direction": "LONG",
+      "title": "$SC Volume Expansion Signals High Conviction Upward Move",
+      "entry_low": 0.001015,
+      "entry_high": 0.001019,
+      "stop_loss": 0.000979,
+      "take_profit": 0.001087,
+      "support": 0.000952,
+      "resistance": 0.00112,
+      "news_line": "",
+      "technical_analysis": "EMA9 (0.001001) is above EMA21 (0.000983) and EMA20 (0.000984) stays above EMA200 (0.000946), confirming a bullish EMA hierarchy. Price (0.00102) sits above EMA200 and just below the upper Bollinger band (0.001031). MACD histogram is positive (5e-06) and ADX at 42.7 shows a strong trend. RSI at 64 indicates upward momentum without being overbought.",
+      "market_context": "BTC is bullish on both 4‑hour and daily charts, up about 1.8% in the last 24 h, and overall crypto market breadth is 86% green, reinforcing a risk‑on environment.",
+      "result": "PENDING"
     }
   ]
 }
