@@ -10241,6 +10241,23 @@
       "technical_analysis": "Price sits at the lower Bollinger band and near the 1‑hour support of 0.0521. RSI is 25.3 and Stochastic K is 0, indicating oversold conditions. The market is trading below the 9‑, 21‑ and 50‑period EMAs, while MACD remains negative, pointing to short‑term bearish momentum. ADX around 29 shows a moderate trend strength. Order‑book imbalance of –9% toward asks adds slight sell pressure. These factors together suggest a possible bounce toward the 1‑hour resistance near 0.0555.",
       "market_context": "BTC is down about 2.5% on the 24‑hour chart, with a mixed 4‑hour trend and overall market breadth remaining broadly negative (77% red).",
       "result": "PENDING"
+    },
+    {
+      "id": 603,
+      "created_at": "2026-09-23T17:00:51.728698+00:00",
+      "symbol": "SHIBUSDT",
+      "direction": "SHORT",
+      "title": "High Volume Selling Sweep Breaks $SHIB Market Structure",
+      "entry_low": 5.63e-06,
+      "entry_high": 5.65e-06,
+      "stop_loss": 5.87e-06,
+      "take_profit": 5.19e-06,
+      "support": 5.51e-06,
+      "resistance": 5.79e-06,
+      "news_line": "",
+      "technical_analysis": "$SHIB technical structure shows RSI is 27.1, price is below the 21 EMA, with volume change is 50.8%.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
