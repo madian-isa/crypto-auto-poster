@@ -10088,6 +10088,23 @@
       "technical_analysis": "CRV is trading below its short‑term EMAs (9, 21, 50) while still above the 200 EMA, indicating a near‑term pull‑back. MACD is in negative territory with a bearish histogram, RSI sits at 38 and the stochastic is deep oversold (K≈7, D≈11), suggesting limited upside. ADX is low (≈13), so the current trend is weak. Volume has jumped ~57% on the recent move, adding weight to the short bias. Order‑book shows a bid‑ask imbalance of ~24% favoring bids, but the price is already well above the best bid, hinting at a potential ceiling near the 1‑hour resistance (0.362).",
       "market_context": "BTC is in a bearish 24‑hour frame and the broader market is broadly negative (72% red). This downside bias in the crypto sector supports a cautious short outlook for CRV.",
       "result": "PENDING"
+    },
+    {
+      "id": 594,
+      "created_at": "2026-09-23T14:45:48.221449+00:00",
+      "symbol": "STOUSDT",
+      "direction": "LONG",
+      "title": "$STO Higher Low Structure Confirmed: Long Entry Level Reached",
+      "entry_low": 0.0442,
+      "entry_high": 0.0445,
+      "stop_loss": 0.04265,
+      "take_profit": 0.04775,
+      "support": 0.043,
+      "resistance": 0.0438,
+      "news_line": "",
+      "technical_analysis": "Price sits just above EMA21/50/200 (0.0439‑0.0428) and slightly below EMA9 (0.04452), indicating a short‑term pull‑back in an overall uptrend. RSI at 57.6 and MACD line (0.000694) above its signal (0.000666) give bullish momentum. ADX is strong at 43, confirming trend strength. Stochastic is in the mid‑range (K 48, D 57) and price remains inside Bollinger Bands, near the upper band, supporting a continued rise.",
+      "market_context": "BTC is down 1.86% on the day, showing bearish pressure, while overall market breadth is mixed (44.9% green, 55.1% red). The broader environment is slightly tilted bearish, but STO shows stronger internal bullish signals.",
+      "result": "PENDING"
     }
   ]
 }
