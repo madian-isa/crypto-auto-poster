@@ -9527,6 +9527,23 @@
       "technical_analysis": "The pair sits near the 1H/4H resistance at 0.04471. EMA9 is above EMA21 and EMA20 stays above EMA200, confirming a short‑term bullish bias, while MACD histogram remains positive. However, RSI (73.4) and Stochastic (K 91.9/D 87.2) are deep in overbought territory, price has breached the upper Bollinger band, and the order‑book shows a ~‑19% imbalance favoring sellers. These bearish pressure signals suggest a pull‑back from the recent high.",
       "market_context": "BTC is in a bullish trend on both 4H and 1D frames, and the broader crypto market is broadly positive (84.9% green). The overall environment remains supportive of risk‑on moves, but SAND shows localized overextension.",
       "result": "PENDING"
+    },
+    {
+      "id": 561,
+      "created_at": "2026-09-23T03:52:28.580286+00:00",
+      "symbol": "TRUMPUSDT",
+      "direction": "LONG",
+      "title": "Technical Signals Turn Positive as Market Momentum Builds",
+      "entry_low": 2.183,
+      "entry_high": 2.252,
+      "stop_loss": 2.09568,
+      "take_profit": 2.35764,
+      "support": 2.183,
+      "resistance": 2.262,
+      "news_line": "",
+      "technical_analysis": "$TRUMP technical structure shows price is above the 21 EMA.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
