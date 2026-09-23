@@ -9748,6 +9748,23 @@
       "technical_analysis": "Price sits just above the EMA21 (0.09705) while still under the EMA9 (0.09900), indicating short‑term pullback in a longer‑term uptrend. MACD histogram is positive (+0.00039) and the MACD line sits above its signal, supporting bullish momentum. Stochastic is near the mid‑range (K 51, D 54), showing no overbought pressure. Order‑book shows a modest bid‑side imbalance (+4.8%) with a tight spread, suggesting buying interest. Combined with the EMA hierarchy (EMA9 > EMA21 > EMA50 > EMA200) the setup leans long.",
       "market_context": "BTC remains in a bullish trend on both 4H and 1D frames, and the broader crypto market is broadly positive (84.7% green). This supportive environment reinforces the long bias for ZAMA.",
       "result": "PENDING"
+    },
+    {
+      "id": 574,
+      "created_at": "2026-09-23T08:29:38.603149+00:00",
+      "symbol": "BCHUSDT",
+      "direction": "LONG",
+      "title": "Critical Resistance Test: $BCH Preparing to Surge Higher",
+      "entry_low": 336.0,
+      "entry_high": 340.0,
+      "stop_loss": 324.48,
+      "take_profit": 365.04,
+      "support": 335.7,
+      "resistance": 362.6,
+      "news_line": "",
+      "technical_analysis": "Price sits above EMA9, EMA21, EMA50 and EMA200, confirming a higher‑timeframe uptrend. ADX at 54.5 shows a strong trend. RSI is in the overbought zone (72) and MACD histogram is negative, indicating short‑term weakness, while Stochastic %K (59) is below %D (72), adding bearish pressure. Order‑book imbalance (-21.75%) also hints at selling interest. The confluence suggests a pull‑back to the 1H/4H support zone around 335‑340 before a move toward the 362.6 resistance.",
+      "market_context": "BTC remains bullish on 4H and 1D charts, and the overall crypto market is broadly positive (88.7% green). This backdrop supports a cautious long bias on BCHUSDT.",
+      "result": "PENDING"
     }
   ]
 }
