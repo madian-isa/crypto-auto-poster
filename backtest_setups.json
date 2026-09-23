@@ -10292,6 +10292,23 @@
       "technical_analysis": "Price sits just above the lower Bollinger Band and the 1‑hour support (0.0745). RSI is at 30.3 and Stochastic K/D are below 15, indicating oversold conditions. EMA9 (0.0785) and EMA21 (0.0803) sit above the market, but EMA200 (0.0723) remains below, suggesting a potential short‑term bounce. MACD histogram is negative, showing lingering bearish momentum, yet the confluence of oversold signals and proximity to support supports a cautious long setup.",
       "market_context": "The broader market is broadly negative with BTC down 2.9% on the day and a bearish 4‑hour trend, reinforcing risk‑off sentiment. Order‑book imbalance shows more sell pressure (‑21.3%).",
       "result": "PENDING"
+    },
+    {
+      "id": 606,
+      "created_at": "2026-09-23T17:45:46.058546+00:00",
+      "symbol": "HOMEUSDT",
+      "direction": "SHORT",
+      "title": "$HOME Loses Key Demand Zone: Next Support Level Unprotected",
+      "entry_low": 0.0062,
+      "entry_high": 0.00624,
+      "stop_loss": 0.0065,
+      "take_profit": 0.00566,
+      "support": 0.00599,
+      "resistance": 0.00665,
+      "news_line": "",
+      "technical_analysis": "Price sits below EMA9, EMA21, EMA50 and EMA200, confirming a down‑trend on both 1H and 4H. RSI (27.5) and Stochastic K/D (~22/18) are in oversold territory, while MACD is negative with a bearish histogram. Bollinger lower band (0.00615496) is just above the current price, indicating limited upside. Order‑book shows a -19.5% imbalance (more asks), reinforcing short pressure. The 1H swing high sits near 0.00665 resistance, with a swing low around 0.00599 support, providing clear swing‑trade levels.",
+      "market_context": "BTC is in a bearish 24h move (-2.55%) and the broader market is broadly negative (80.6% red). This backdrop supports a short bias on HOMEUSDT.",
+      "result": "PENDING"
     }
   ]
 }
