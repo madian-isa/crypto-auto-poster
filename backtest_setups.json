@@ -10139,6 +10139,23 @@
       "technical_analysis": "DOT is trading below EMA9 (1.157), EMA21 (1.171) and EMA50 (1.173), indicating a prevailing downtrend. MACD is negative with the histogram below zero, confirming bearish momentum. RSI at 27.9 and stochastic K/D around 20/14 signal oversold conditions but do not outweigh the trend bias. Order‑book shows a modest bid‑side imbalance (+5.8%), yet price remains under key moving averages. The 1H/4H swing structure places the next resistance at ~1.183 and support at 1.09, framing a short‑bias range.",
       "market_context": "Overall crypto market breadth is negative (60.8% red) and BTC is 1.8% lower on the day, adding broader downside pressure.",
       "result": "PENDING"
+    },
+    {
+      "id": 597,
+      "created_at": "2026-09-23T15:30:56.068636+00:00",
+      "symbol": "ACEUSDT",
+      "direction": "LONG",
+      "title": "Golden Cross Formation Confirmed on $ACE 4-Hour Timeframe",
+      "entry_low": 0.1975,
+      "entry_high": 0.1995,
+      "stop_loss": 0.19056,
+      "take_profit": 0.21438,
+      "support": 0.189,
+      "resistance": 0.2052,
+      "news_line": "",
+      "technical_analysis": "Price sits above the EMA9 (0.1886), EMA21 (0.1820), EMA50 (0.1758) and EMA200 (0.1651), confirming a strong bullish stack. MACD line (0.0058) is above its signal (0.0034) with a positive histogram, indicating upward momentum. ADX is 52.6, showing a very strong trend. RSI is high at 74.4 and stochastic K (60) is below D (85), suggesting the market is overbought and may face short‑term pressure, but the dominant bullish signals and order‑book imbalance (+15% on the bid side) keep the bias bullish. Bollinger upper band is already breached, so price may test the next resistance.",
+      "market_context": "BTC is in a short‑term bearish phase (‑2.06% 24h) while broader market breadth is negative (71.5% red). Despite the overall downside, ACEUSDT’s internal momentum remains bullish, allowing a long setup with a clear risk‑to‑reward profile.",
+      "result": "PENDING"
     }
   ]
 }
