@@ -9612,6 +9612,23 @@
       "technical_analysis": "$OP technical structure shows price is above the 21 EMA.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 566,
+      "created_at": "2026-09-23T05:01:08.383486+00:00",
+      "symbol": "YGGUSDT",
+      "direction": "LONG",
+      "title": "Spot Inflows Surge for $YGG as Futures Open Interest Rises",
+      "entry_low": 0.0275,
+      "entry_high": 0.0278,
+      "stop_loss": 0.0265,
+      "take_profit": 0.0295,
+      "support": 0.02736,
+      "resistance": 0.02846,
+      "news_line": "",
+      "technical_analysis": "Price (0.02828) sits above EMA9 (0.02795) and EMA21 (0.02746), confirming a bullish EMA crossover. EMA20 remains above EMA200, and price is comfortably above EMA200, reinforcing the uptrend. MACD histogram is positive, while ADX at 37 shows a strong trend. RSI at 66 and Stochastic K/D in the low 80s indicate momentum is still healthy despite being near overbought levels. Bollinger Bands suggest the price is approaching the upper band (0.029283). Order‑book imbalance is slightly negative, but the best bid/ask cluster around the current price, indicating solid liquidity near the identified 1H su",
+      "market_context": "BTC is in a bullish phase on both 4H and 1D frames, with the broader market showing 88.3% green assets. This overall positive environment supports the bullish bias for YGGUSDT.",
+      "result": "PENDING"
     }
   ]
 }
