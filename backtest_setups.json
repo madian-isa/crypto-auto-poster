@@ -9459,6 +9459,23 @@
       "technical_analysis": "$ZRO technical structure shows price is above the 21 EMA.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 557,
+      "created_at": "2026-09-23T03:00:56.844794+00:00",
+      "symbol": "FLUXUSDT",
+      "direction": "LONG",
+      "title": "Buyers Defend Key Demand Zone: $FLUX Ready for Extension",
+      "entry_low": 0.0675,
+      "entry_high": 0.069,
+      "stop_loss": 0.0645,
+      "take_profit": 0.0735,
+      "support": 0.0662,
+      "resistance": 0.072,
+      "news_line": "",
+      "technical_analysis": "Price sits above EMA200 and the EMA hierarchy is bullish (EMA9 > EMA21, EMA20 > EMA200). MACD line is above its signal with a positive histogram, confirming upward momentum. ADX at 51.45 indicates a strong trend, while RSI at 73.9 and Stochastic K/D at 69/62 show overbought but still bullish pressure. Bollinger upper band (0.070664) is near current price, suggesting limited upside before a pull‑back, making the 0.0675‑0.0690 zone a sensible entry window.",
+      "market_context": "BTC remains in a bullish 4H and 1D trend, supporting overall market optimism. The broader market is broadly positive with 81.2% of assets in green, reinforcing the bullish bias for FLUXUSDT.",
+      "result": "PENDING"
     }
   ]
 }
