@@ -9510,6 +9510,23 @@
       "technical_analysis": "VETUSDT sits above EMA200 (0.008461) with a clear bullish EMA hierarchy (EMA9 > EMA21 > EMA20 > EMA50). MACD histogram remains positive and the signal line is below the MACD line, confirming upward momentum. ADX at 27.6 indicates a moderately strong trend, while OBV is rising, suggesting accumulation. Although RSI (74) and Stochastic (≈90) signal overbought conditions, the price is holding just above the upper Bollinger band and near the 1‑hour resistance at 0.009707, supporting a potential breakout.",
       "market_context": "The broader market is broadly positive (82% green), and Bitcoin is in a bullish trend on both 4‑hour and daily timeframes, providing favorable sentiment for altcoins like VET.",
       "result": "PENDING"
+    },
+    {
+      "id": 560,
+      "created_at": "2026-09-23T03:45:48.565985+00:00",
+      "symbol": "SANDUSDT",
+      "direction": "SHORT",
+      "title": "High Volume Selling Sweep Breaks $SAND Market Structure",
+      "entry_low": 0.04468,
+      "entry_high": 0.04474,
+      "stop_loss": 0.0465,
+      "take_profit": 0.04104,
+      "support": 0.0424,
+      "resistance": 0.04471,
+      "news_line": "",
+      "technical_analysis": "The pair sits near the 1H/4H resistance at 0.04471. EMA9 is above EMA21 and EMA20 stays above EMA200, confirming a short‑term bullish bias, while MACD histogram remains positive. However, RSI (73.4) and Stochastic (K 91.9/D 87.2) are deep in overbought territory, price has breached the upper Bollinger band, and the order‑book shows a ~‑19% imbalance favoring sellers. These bearish pressure signals suggest a pull‑back from the recent high.",
+      "market_context": "BTC is in a bullish trend on both 4H and 1D frames, and the broader crypto market is broadly positive (84.9% green). The overall environment remains supportive of risk‑on moves, but SAND shows localized overextension.",
+      "result": "PENDING"
     }
   ]
 }
