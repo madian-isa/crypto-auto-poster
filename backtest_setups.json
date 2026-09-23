@@ -9680,6 +9680,23 @@
       "technical_analysis": "Price is testing the 1H support around 0.0725 while staying above the EMA200. EMA9 (0.07478) sits above EMA21 (0.07183) and EMA20 (0.07222) remains above EMA200, indicating a bullish short‑term trend. ADX is strong at 45.5, supporting the prevailing direction. RSI is neutral‑slightly bullish at 55.7 and stochastic is rising (K 45.8, D 36.5). The MACD histogram is negative and the signal line is above the MACD line, suggesting some downside pressure, but the overall EMA alignment and order‑book bias toward bids (2.5% imbalance) favor a cautious long entry near the support zone.",
       "market_context": "The broader market is broadly positive, with 87.8% of assets in green and Bitcoin trading bullish at ~86.4k, reinforcing a risk‑on environment for altcoins like MUBARAK.",
       "result": "PENDING"
+    },
+    {
+      "id": 570,
+      "created_at": "2026-09-23T07:01:33.733989+00:00",
+      "symbol": "XNOUSDT",
+      "direction": "SHORT",
+      "title": "$XNO Lower High Pattern Confirmed: Short Target in View",
+      "entry_low": 0.379,
+      "entry_high": 0.38,
+      "stop_loss": 0.393,
+      "take_profit": 0.351,
+      "support": 0.35,
+      "resistance": 0.385,
+      "news_line": "",
+      "technical_analysis": "The 1‑hour EMA9 (0.376) sits below EMA21 (0.379) indicating a bearish short‑term bias, while price remains just below the 4‑hour resistance at 0.385. MACD shows a modest bullish histogram but the EMA alignment and a -6.2% order‑book imbalance suggest sellers are in control. ADX is 32.5, confirming a strong trend, and OBV is rising, supporting the down‑move. RSI is neutral at 49, so momentum is not over‑extended.",
+      "market_context": "BTC is in a bullish trend on both 4‑hour and daily frames, and overall market breadth is broadly positive (87% green). The broader market strength does not offset the specific bearish signals on XNO.",
+      "result": "PENDING"
     }
   ]
 }
