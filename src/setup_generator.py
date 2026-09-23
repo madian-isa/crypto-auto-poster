@@ -378,6 +378,9 @@ def _build_indicator_summary(indicators):
         "price",
         "current_price",
         "rsi",
+        "rsi14",
+        "macd_line",
+        "stochastic_k",
         "ema9",
         "ema21",
         "ema50",
@@ -590,215 +593,109 @@ def _get_current_price(indicators):
 # FALLBACK: DIRECTION
 # =========================================================
 
+def _indicator_number(indicators, *keys):
+    indicators = indicators or {}
+    for key in keys:
+        value = indicators.get(key)
+        if isinstance(value, dict):
+            for nested_key in (key, key.lower(), key.upper(), "value", "line", "MACD", "signal", "k"):
+                if nested_key in value:
+                    number = _safe_float(value.get(nested_key))
+                    if number is not None:
+                        return number
+        else:
+            number = _safe_float(value)
+            if number is not None:
+                return number
+    return None
+
+
+def _get_macd_values(indicators):
+    indicators = indicators or {}
+    macd_data = indicators.get("macd")
+    line = _indicator_number(indicators, "macd_line")
+    signal = _indicator_number(indicators, "macd_signal")
+    if isinstance(macd_data, dict):
+        if line is None:
+            line = _safe_float(macd_data.get("MACD"))
+        if signal is None:
+            signal = _safe_float(macd_data.get("signal"))
+    return line, signal
+
+
+def _get_stochastic_k(indicators):
+    value = _indicator_number(indicators or {}, "stochastic_k")
+    if value is not None:
+        return value
+    stochastic = (indicators or {}).get("stochastic")
+    if isinstance(stochastic, dict):
+        return _safe_float(stochastic.get("k"))
+    return _safe_float(stochastic)
+
+
 def _fallback_direction(
     indicators,
     advanced_market_data,
 ):
-    """
-    Deterministic technical direction.
-
-    This does NOT use random direction.
-    Only supplied technical values are used.
-    """
-
     indicators = indicators or {}
     advanced = advanced_market_data or {}
-
     score = 0
+    evidence = 0
 
-    rsi = _safe_float(
-        indicators.get("rsi")
-    )
+    price = _get_current_price(indicators)
+    rsi = _indicator_number(indicators, "rsi", "rsi14")
+    ema21 = _indicator_number(indicators, "ema21")
+    ema50 = _indicator_number(indicators, "ema50")
+    ema200 = _indicator_number(indicators, "ema200")
 
     if rsi is not None:
-
-        if rsi >= 55:
-            score += 2
-
-        elif rsi <= 45:
-            score -= 2
-
-    price = _get_current_price(
-        indicators
-    )
-
-    ema21 = _safe_float(
-        indicators.get("ema21")
-    )
-
-    ema50 = _safe_float(
-        indicators.get("ema50")
-    )
-
-    ema200 = _safe_float(
-        indicators.get("ema200")
-    )
-
+        evidence += 1
+        score += 2 if rsi >= 55 else -2 if rsi <= 45 else 0
     if price is not None and ema21 is not None:
-
-        if price > ema21:
-            score += 1
-        elif price < ema21:
-            score -= 1
-
+        evidence += 1
+        score += 1 if price > ema21 else -1 if price < ema21 else 0
     if ema21 is not None and ema50 is not None:
-
-        if ema21 > ema50:
-            score += 1
-        elif ema21 < ema50:
-            score -= 1
-
+        evidence += 1
+        score += 1 if ema21 > ema50 else -1 if ema21 < ema50 else 0
     if price is not None and ema200 is not None:
+        evidence += 1
+        score += 1 if price > ema200 else -1 if price < ema200 else 0
 
-        if price > ema200:
-            score += 1
-        elif price < ema200:
-            score -= 1
+    macd_line, macd_signal = _get_macd_values(indicators)
+    if macd_line is not None and macd_signal is not None:
+        evidence += 1
+        score += 2 if macd_line > macd_signal else -2 if macd_line < macd_signal else 0
 
-    macd = _safe_float(
-        indicators.get("macd")
-    )
+    stochastic_k = _get_stochastic_k(indicators)
+    if stochastic_k is not None:
+        evidence += 1
+        score += 1 if stochastic_k >= 60 else -1 if stochastic_k <= 40 else 0
 
-    macd_signal = _safe_float(
-        indicators.get("macd_signal")
-    )
-
-    if (
-        macd is not None
-        and macd_signal is not None
-    ):
-
-        if macd > macd_signal:
-            score += 2
-
-        elif macd < macd_signal:
-            score -= 2
-
-    stochastic = _safe_float(
-        indicators.get("stochastic")
-    )
-
-    if stochastic is not None:
-
-        if stochastic >= 60:
-            score += 1
-
-        elif stochastic <= 40:
-            score -= 1
-
-    volume_change = _safe_float(
-        indicators.get(
-            "volume_change"
-        )
-    )
-
-    if volume_change is not None:
-
-        if volume_change > 10:
-            if score > 0:
-                score += 1
-            elif score < 0:
-                score -= 1
-
-    oi_change = _safe_float(
-        advanced.get(
-            "oi_change_1h_pct"
-        )
-    )
-
-    if oi_change is not None:
-
-        if oi_change > 5:
-
-            if score > 0:
-                score += 1
-            elif score < 0:
-                score -= 1
-
-    funding = _safe_float(
-        advanced.get(
-            "funding_rate"
-        )
-    )
-
+    funding = _safe_float(advanced.get("funding_rate"))
     if funding is not None:
+        score += -1 if funding > 0.01 else 1 if funding < -0.01 else 0
 
-        if funding > 0.01:
-            score -= 1
-
-        elif funding < -0.01:
-            score += 1
-
-    if score >= 0:
+    if evidence < 3:
+        return None
+    if score >= 3:
         return "LONG"
-
-    return "SHORT"
-
-
-# =========================================================
-# FALLBACK: ENTRY
-# =========================================================
+    if score <= -3:
+        return "SHORT"
+    return None
 
 def _fallback_entry(
     indicators,
     levels,
     direction,
 ):
-    """
-    Uses supplied current price first.
-    No fabricated market price.
-    """
-
-    price = _get_current_price(
-        indicators
-    )
-
-    support = _safe_float(
-        levels.get("support")
-    )
-
-    resistance = _safe_float(
-        levels.get("resistance")
-    )
-
-    if price is None:
+    price = _get_current_price(indicators)
+    if price is None or price <= 0:
         return None, None
-
-    if direction == "LONG":
-
-        if (
-            support is not None
-            and 0 < support < price
-        ):
-            low = support
-            high = price
-
-        else:
-            low = price
-            high = price
-
-    else:
-
-        if (
-            resistance is not None
-            and resistance > price
-        ):
-            low = price
-            high = resistance
-
-        else:
-            low = price
-            high = price
-
+    zone = 0.0025
     return (
-        round(low, 8),
-        round(high, 8),
+        round(price * (1 - zone), 8),
+        round(price * (1 + zone), 8),
     )
-
-
-# =========================================================
-# FALLBACK: STOP LOSS / TAKE PROFIT
-# =========================================================
 
 def _fallback_risk_levels(
     entry_low,
@@ -807,87 +704,43 @@ def _fallback_risk_levels(
     support,
     resistance,
 ):
-    """
-    Creates a wide swing setup.
-
-    Rules:
-    - Minimum 3.5% SL distance (MIN_SL_PCT).
-    - Maximum 6% SL distance (MAX_SL_PCT) — this is the fix: without a
-      ceiling, a distant/bad support or resistance value could blow the
-      stop out to 20-30%+, which also drags the 2R take-profit just as
-      far away, making both unrealistic to ever reach cleanly.
-    - 1:2 RR exactly, measured off the (now-capped) risk distance.
-    - No ATR.
-    """
-
-    MIN_SL_PCT = 0.035
-    DEFAULT_SL_PCT = 0.04
-    MAX_SL_PCT = 0.06
-
-    if entry_low is None:
+    minimum = 0.035
+    default = 0.04
+    maximum = 0.06
+    try:
+        low = float(entry_low)
+        high = float(entry_high if entry_high is not None else entry_low)
+    except (TypeError, ValueError):
         return None, None
-
-    if entry_high is None:
-        entry_high = entry_low
-
-    entry_low = float(entry_low)
-    entry_high = float(entry_high)
-
-    if entry_low <= 0:
+    if low <= 0 or high <= 0:
         return None, None
-
-    support = _safe_float(support)
-    resistance = _safe_float(resistance)
-
+    low, high = sorted((low, high))
+    entry = (low + high) / 2.0
     if direction == "LONG":
-
-        reference = entry_low
-
-        if (
-            support is not None
-            and support > 0
-            and support < reference
-        ):
-            stop_loss = support * 0.995
-        else:
-            stop_loss = reference * (1 - DEFAULT_SL_PCT)
-
-        # Clamp into the [MIN_SL_PCT, MAX_SL_PCT] band.
-        min_sl = reference * (1 - MAX_SL_PCT)
-        max_sl = reference * (1 - MIN_SL_PCT)
-        stop_loss = max(min_sl, min(stop_loss, max_sl))
-
-        risk = reference - stop_loss
-        take_profit = reference + risk * 2.0
-
+        stop = entry * (1 - default)
+        if support is not None:
+            candidate = _safe_float(support)
+            if candidate is not None and 0 < candidate < entry:
+                candidate *= 0.995
+                distance = (entry - candidate) / entry
+                if minimum <= distance <= maximum:
+                    stop = candidate
+        stop = max(entry * (1 - maximum), min(stop, entry * (1 - minimum)))
+        target = entry + ((entry - stop) * 2.0)
     else:
-
-        reference = entry_high
-
-        if (
-            resistance is not None
-            and resistance > reference
-        ):
-            stop_loss = resistance * 1.005
-        else:
-            stop_loss = reference * (1 + DEFAULT_SL_PCT)
-
-        min_sl = reference * (1 + MIN_SL_PCT)
-        max_sl = reference * (1 + MAX_SL_PCT)
-        stop_loss = max(min_sl, min(stop_loss, max_sl))
-
-        risk = stop_loss - reference
-        take_profit = reference - risk * 2.0
-
-    return (
-        round(stop_loss, 8),
-        round(take_profit, 8),
-    )
-
-
-# =========================================================
-# FALLBACK: TECHNICAL TEXT
-# =========================================================
+        stop = entry * (1 + default)
+        if resistance is not None:
+            candidate = _safe_float(resistance)
+            if candidate is not None and candidate > entry:
+                candidate *= 1.005
+                distance = (candidate - entry) / entry
+                if minimum <= distance <= maximum:
+                    stop = candidate
+        stop = max(entry * (1 + minimum), min(stop, entry * (1 + maximum)))
+        target = entry - ((stop - entry) * 2.0)
+    if target <= 0:
+        return None, None
+    return round(stop, 8), round(target, 8)
 
 def _fallback_technical_text(
     coin,
@@ -1119,115 +972,43 @@ def _python_fallback_setup(
     market_context=None,
     advanced_market_data=None,
 ):
-    coin = _coin_name(
-        symbol
-    )
-
+    coin = _coin_name(symbol)
     indicators = indicators or {}
-
-    advanced_market_data = (
-        advanced_market_data or {}
+    advanced_market_data = advanced_market_data or {}
+    direction = _fallback_direction(indicators, advanced_market_data)
+    if direction is None:
+        raise RuntimeError(f"Technical structure is unclear for ${coin}; setup rejected.")
+    levels = _select_major_levels(indicators, advanced_market_data)
+    entry_low, entry_high = _fallback_entry(indicators, levels, direction)
+    if entry_low is None or entry_high is None:
+        raise RuntimeError(f"Could not create a valid entry for ${coin}.")
+    stop_loss, take_profit = _fallback_risk_levels(
+        entry_low, entry_high, direction,
+        levels.get("support"), levels.get("resistance"),
     )
-
-    major_levels = _select_major_levels(
-        indicators,
-        advanced_market_data,
-    )
-
-    direction = _fallback_direction(
-        indicators,
-        advanced_market_data,
-    )
-
-    entry_low, entry_high = (
-        _fallback_entry(
-            indicators,
-            major_levels,
-            direction,
-        )
-    )
-
-    stop_loss, take_profit = (
-        _fallback_risk_levels(
-            entry_low,
-            entry_high,
-            direction,
-            major_levels.get(
-                "support"
-            ),
-            major_levels.get(
-                "resistance"
-            ),
-        )
-    )
-
-    technical = _fallback_technical_text(
-        coin,
-        indicators,
-        direction,
-    )
-
-    news_line = _fallback_news_line(
-        news
-    )
-
-    btc_context = _fallback_market_context(
-        advanced_market_data
-    )
-
-    if market_context:
-
-        if isinstance(
-            market_context,
-            str,
-        ):
-
-            extra_context = _clean_text(
-                market_context,
-                250,
-            )
-
-            if extra_context:
-                btc_context = (
-                    f"{btc_context} "
-                    f"{extra_context}"
-                ).strip()
-
-    setup = {
+    if stop_loss is None or take_profit is None:
+        raise RuntimeError(f"Could not create valid risk levels for ${coin}.")
+    btc_context = _fallback_market_context(advanced_market_data)
+    if isinstance(market_context, str):
+        extra = _clean_text(market_context, 250)
+        if extra:
+            btc_context = f"{btc_context} {extra}".strip()
+    return {
         "symbol": symbol,
         "direction": direction,
-        "title": _select_title(
-            direction,
-            coin,
-        ),
+        "title": _select_title(direction, coin),
         "entry_low": entry_low,
         "entry_high": entry_high,
         "stop_loss": stop_loss,
         "take_profit": take_profit,
-        "support": major_levels.get(
-            "support"
-        ),
-        "resistance": major_levels.get(
-            "resistance"
-        ),
-        "news_line": news_line,
-        "technical_analysis": technical,
+        "support": levels.get("support"),
+        "resistance": levels.get("resistance"),
+        "news_line": _fallback_news_line(news),
+        "technical_analysis": _fallback_technical_text(coin, indicators, direction),
         "market_context": btc_context,
         "rr": 2,
         "hashtags": [],
     }
-
-    print(
-        f"[setup_generator] "
-        f"Using Python fallback for ${coin}."
-    )
-
-    return setup
-
-
-# =========================================================
-# VALIDATE AI OUTPUT
-# =========================================================
 
 def _parse_ai_response(content):
 
@@ -1482,6 +1263,15 @@ Return JSON only:
             advanced_market_data,
         )
 
+    if direction is None:
+        return _python_fallback_setup(
+            symbol=symbol,
+            indicators=indicators,
+            news=news,
+            market_context=market_context,
+            advanced_market_data=advanced_market_data,
+        )
+
     setup["direction"] = direction
 
     entry_low = _safe_float(
@@ -1565,12 +1355,17 @@ Return JSON only:
 
     if entry_low is not None and entry_low > 0:
 
+        if entry_high is None or entry_high <= 0:
+            entry_high = entry_low
+
+        reference_entry = (entry_low + entry_high) / 2.0
+
         MIN_SL_PCT = 0.035
         MAX_SL_PCT = 0.06
         DEFAULT_SL_PCT = 0.04
 
         if ai_stop is not None:
-            distance = abs(entry_low - ai_stop) / entry_low
+            distance = abs(reference_entry - ai_stop) / reference_entry
 
             if distance < MIN_SL_PCT:
                 # Too tight — fall through to the default below.
@@ -1583,25 +1378,25 @@ Return JSON only:
                 # a suggested stop of $0.0665 (35% away!) sailed straight
                 # through the old "minimum only" check.
                 if direction == "LONG":
-                    ai_stop = round(entry_low * (1 - MAX_SL_PCT), 8)
+                    ai_stop = round(reference_entry * (1 - MAX_SL_PCT), 8)
                 else:
-                    ai_stop = round(entry_low * (1 + MAX_SL_PCT), 8)
+                    ai_stop = round(reference_entry * (1 + MAX_SL_PCT), 8)
 
         if ai_stop is None:
 
             if direction == "LONG":
-                ai_stop = round(entry_low * (1 - DEFAULT_SL_PCT), 8)
+                ai_stop = round(reference_entry * (1 - DEFAULT_SL_PCT), 8)
             else:
-                ai_stop = round(entry_low * (1 + DEFAULT_SL_PCT), 8)
+                ai_stop = round(reference_entry * (1 + DEFAULT_SL_PCT), 8)
 
         sl_distance = abs(
-            entry_low - ai_stop
+            reference_entry - ai_stop
         )
 
         if direction == "LONG":
 
             ai_target = round(
-                entry_low
+                reference_entry
                 + (sl_distance * 2.0),
                 8,
             )
@@ -1609,7 +1404,7 @@ Return JSON only:
         else:
 
             ai_target = round(
-                entry_low
+                reference_entry
                 - (sl_distance * 2.0),
                 8,
             )
