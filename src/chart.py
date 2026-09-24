@@ -7,6 +7,7 @@ from zoneinfo import ZoneInfo
 import matplotlib.pyplot as plt
 import mplfinance as mpf
 import pandas as pd
+from matplotlib.patches import Rectangle
 
 
 CHART_OUTPUT_DIR = os.environ.get(
@@ -174,19 +175,8 @@ def render_chart_image(
     """
     Generate Binance-style 1H market chart.
 
-    Includes:
-    - 1H candlesticks
-    - EMA 21
-    - SMA 50
-    - Current price
-    - Asia/Dhaka timezone
-
-    Does NOT include:
-    - Support
-    - Resistance
-    - Entry
-    - Stop loss
-    - Take profit
+    Includes the signal levels supplied in ``setup`` and leaves a
+    right-side gap for a TradingView-style risk/reward box.
     """
 
     os.makedirs(
@@ -223,6 +213,15 @@ def render_chart_image(
         .mean()
     )
 
+    df["EMA200"] = (
+        df["Close"]
+        .ewm(
+            span=200,
+            adjust=False,
+        )
+        .mean()
+    )
+
     # ---------------------------------------------------------
     # Current price
     # ---------------------------------------------------------
@@ -243,6 +242,12 @@ def render_chart_image(
             color="#5b8def",
             width=1.2,
             label="SMA 50",
+        ),
+        mpf.make_addplot(
+            df["EMA200"],
+            color="#c084fc",
+            width=1.2,
+            label="EMA 200",
         ),
     ]
 
@@ -275,6 +280,126 @@ def render_chart_image(
     # Main price axis
     # ---------------------------------------------------------
     ax = axes[0]
+
+    direction = str((setup or {}).get("direction", "")).upper()
+    entry_low = (setup or {}).get("entry_low")
+    entry_high = (setup or {}).get("entry_high")
+    stop_loss = (setup or {}).get("stop_loss")
+    take_profit = (setup or {}).get("take_profit")
+
+    def _number(value):
+        try:
+            value = float(value)
+            return value if value > 0 else None
+        except (TypeError, ValueError):
+            return None
+
+    entry_low = _number(entry_low)
+    entry_high = _number(entry_high)
+    stop_loss = _number(stop_loss)
+    take_profit = _number(take_profit)
+
+    if entry_low is not None and entry_high is not None:
+        entry_low, entry_high = sorted((entry_low, entry_high))
+        entry_mid = (entry_low + entry_high) / 2
+        levels = [entry_low, entry_high]
+        if stop_loss is not None:
+            levels.append(stop_loss)
+        if take_profit is not None:
+            levels.append(take_profit)
+        pad = max((max(levels) - min(levels)) * 0.12, entry_mid * 0.01)
+        ax.set_ylim(min(levels) - pad, max(levels) + pad)
+
+        last_x = len(df) - 1
+        box_x = last_x + 4
+        box_width = 10
+        ax.set_xlim(-1, box_x + box_width + 3)
+
+        if direction == "LONG":
+            reward_color = "#0ecb81"
+            risk_color = "#f6465d"
+        else:
+            reward_color = "#f6465d"
+            risk_color = "#0ecb81"
+
+        if take_profit is not None:
+            reward_low = min(entry_mid, take_profit)
+            reward_high = max(entry_mid, take_profit)
+            ax.add_patch(
+                Rectangle(
+                    (box_x, reward_low),
+                    box_width,
+                    reward_high - reward_low,
+                    facecolor=reward_color,
+                    edgecolor=reward_color,
+                    alpha=0.28,
+                    linewidth=1.0,
+                )
+            )
+
+        if stop_loss is not None:
+            risk_low = min(entry_mid, stop_loss)
+            risk_high = max(entry_mid, stop_loss)
+            ax.add_patch(
+                Rectangle(
+                    (box_x, risk_low),
+                    box_width,
+                    max(risk_high - risk_low, 1e-12),
+                    facecolor=risk_color,
+                    edgecolor=risk_color,
+                    alpha=0.28,
+                    linewidth=1.0,
+                )
+            )
+
+        ax.axhspan(
+            entry_low,
+            entry_high,
+            xmin=0.0,
+            xmax=1.0,
+            facecolor="#5b8def",
+            alpha=0.08,
+        )
+
+        for label, value, color in (
+            ("ENTRY", entry_mid, "#5b8def"),
+            ("SL", stop_loss, "#f6465d"),
+            ("TP", take_profit, "#0ecb81"),
+        ):
+            if value is None:
+                continue
+            ax.axhline(
+                value,
+                color=color,
+                linewidth=1.0,
+                linestyle="--",
+                alpha=0.9,
+            )
+            ax.text(
+                box_x + box_width + 0.5,
+                value,
+                f"{label} {value:g}",
+                va="center",
+                ha="left",
+                fontsize=8,
+                color=color,
+                bbox=dict(
+                    boxstyle="round,pad=0.2",
+                    facecolor="#0b0f14",
+                    edgecolor=color,
+                ),
+            )
+
+        ax.text(
+            box_x + box_width / 2,
+            max(levels) + pad * 0.35,
+            f"{direction or 'SETUP'}  1:2 RR",
+            ha="center",
+            va="bottom",
+            fontsize=9,
+            color="#eaecef",
+            fontweight="bold",
+        )
 
     # Current price line
     ax.axhline(
