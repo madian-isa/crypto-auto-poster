@@ -22685,6 +22685,23 @@
       "technical_analysis": "Price has broken above the 1H resistance (0.01905) while staying above EMA21 (0.01863) and EMA50 (0.01809). EMA9 is slightly higher (0.01921) indicating short‑term upward pressure. MACD histogram is positive and MACD line sits above its signal, confirming bullish momentum. ADX at 37 shows a strong trend. Order‑book imbalance (≈40% more bid value) adds buying bias. RSI near 60 and stochastic around 57/62 suggest room for further upside.",
       "market_context": "BTC remains in a bullish trend on both 4H and 1D frames, and the broader market is broadly positive (82% green). This supportive backdrop reinforces the bullish outlook for TSTUSDT.",
       "result": "PENDING"
+    },
+    {
+      "id": 1335,
+      "created_at": "2026-09-24T18:45:50.133662+00:00",
+      "symbol": "ARKUSDT",
+      "direction": "LONG",
+      "title": "$ARK Reclaims Key Resistance Level: Flip to Support Complete",
+      "entry_low": 0.1785,
+      "entry_high": 0.1795,
+      "stop_loss": 0.1702,
+      "take_profit": 0.1966,
+      "support": 0.1702,
+      "resistance": 0.1834,
+      "news_line": "",
+      "technical_analysis": "Price (0.1795) is comfortably above the EMA9 (0.1766), EMA21 (0.1717), EMA50 (0.1655) and EMA200 (0.1541), confirming a bullish 4‑hour structure. MACD line (0.00495) sits above its signal (0.00412) with a positive histogram (+0.00083), adding further upside bias. RSI at 65 and Stochastic K/D at 79/91 indicate strong momentum, though approaching overbought levels. ADX at 36.4 reflects a robust trend. The 1‑hour swing range is bounded by support 0.1702 and resistance 0.1834; the current price is near the lower half of this range, offering a clean entry window. Order‑book shows a modest ask‑side ",
+      "market_context": "Bitcoin remains bullish on both 4‑hour (price ~84,434, EMA20 above EMA50) and daily charts, up 0.23% in 24 h. Overall market breadth is broadly positive with 82 % of assets green, supporting a favorable environment for risk assets like ARK.",
+      "result": "PENDING"
     }
   ]
 }
