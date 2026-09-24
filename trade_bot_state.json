@@ -1,6 +1,6 @@
 {
   "date": "2026-09-24",
-  "count": 37,
+  "count": 38,
   "posted_symbols_today": [
     "PYTHUSDT",
     "XLMUSDT",
@@ -38,6 +38,7 @@
     "SPKUSDT",
     "XRPUSDT",
     "ZAMAUSDT",
-    "FOGOUSDT"
+    "FOGOUSDT",
+    "METUSDT"
   ]
 }

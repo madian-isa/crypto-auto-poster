@@ -22022,6 +22022,23 @@
       "technical_analysis": "Price is just above the 1‑hour support (0.00637) and sits near the EMA9 (0.00649) while still below EMA21. The MACD line trades above its signal with a positive histogram, suggesting short‑term bullish momentum. Stochastic K is overbought (~84) but RSI remains neutral (~44). ADX is strong (~36), confirming an active trend. Order‑book shows a slight bid‑side imbalance (+4.9%).",
       "market_context": "BTC is down about 2.7% on the day and the broader market is broadly negative, with roughly 92% of assets in red.",
       "result": "PENDING"
+    },
+    {
+      "id": 1296,
+      "created_at": "2026-09-24T08:45:51.624434+00:00",
+      "symbol": "METUSDT",
+      "direction": "LONG",
+      "title": "Spot Inflows Surge for $MET as Futures Open Interest Rises",
+      "entry_low": 0.3396,
+      "entry_high": 0.345,
+      "stop_loss": 0.327,
+      "take_profit": 0.3729,
+      "support": 0.3396,
+      "resistance": 0.354,
+      "news_line": "",
+      "technical_analysis": "Price sits above EMA9, EMA21 and EMA50, confirming a bullish backdrop. EMA200 remains far below, adding long‑term support. Stochastic %K at 68% is above %D, indicating short‑term upward pressure, while RSI is neutral at 55. MACD histogram is negative, hinting at a possible near‑term pullback. Order‑book shows a 14.5% bid imbalance, suggesting buying interest. The 1H/4H swing range is bounded by 0.3396 support and 0.354 resistance; a long entry near the lower bound targets the next swing high.",
+      "market_context": "BTC is in a bearish 4H frame and the broader market is broadly negative (92.9% red). Despite the down‑trend in BTC, METUSDT’s internal strength (EMA alignment, order‑book bias) supports a contrarian long setup.",
+      "result": "PENDING"
     }
   ]
 }
