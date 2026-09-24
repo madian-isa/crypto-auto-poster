@@ -22668,6 +22668,23 @@
       "technical_analysis": "Price sits above the EMA9 (4.522), EMA21 (4.447), EMA50 (4.396) and EMA200 (3.860), confirming a bullish EMA hierarchy. MACD is positive (0.053) with a healthy histogram (+0.046) and RSI at 64.7, indicating momentum still on the upside. Stochastic K/D are in the high 80s, showing overbought conditions but no immediate divergence. Bollinger Upper band (4.682) is just touched, suggesting a short‑term pull‑back to the nearby intraday support at 4.648. Order‑book shows a 10.6% bid‑side imbalance, adding weight to buying pressure.",
       "market_context": "BTC remains in a bullish daily trend and the overall crypto market is broadly positive (79% green). This supportive backdrop aligns with the bullish bias for NEAR.",
       "result": "PENDING"
+    },
+    {
+      "id": 1334,
+      "created_at": "2026-09-24T18:31:43.992248+00:00",
+      "symbol": "TSTUSDT",
+      "direction": "LONG",
+      "title": "$TST Breakout Confirmation: Bulls Target Next Supply Zone",
+      "entry_low": 0.01905,
+      "entry_high": 0.0191,
+      "stop_loss": 0.01838,
+      "take_profit": 0.020465,
+      "support": 0.01864,
+      "resistance": 0.01905,
+      "news_line": "",
+      "technical_analysis": "Price has broken above the 1H resistance (0.01905) while staying above EMA21 (0.01863) and EMA50 (0.01809). EMA9 is slightly higher (0.01921) indicating short‑term upward pressure. MACD histogram is positive and MACD line sits above its signal, confirming bullish momentum. ADX at 37 shows a strong trend. Order‑book imbalance (≈40% more bid value) adds buying bias. RSI near 60 and stochastic around 57/62 suggest room for further upside.",
+      "market_context": "BTC remains in a bullish trend on both 4H and 1D frames, and the broader market is broadly positive (82% green). This supportive backdrop reinforces the bullish outlook for TSTUSDT.",
+      "result": "PENDING"
     }
   ]
 }
