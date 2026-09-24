@@ -22175,6 +22175,23 @@
       "technical_analysis": "Price sits just below the short‑term EMAs (EMA9 0.003505, EMA21 0.003569, EMA50 0.003636) while remaining above EMA200 (0.003416), indicating a short‑term bearish bias within a longer‑term uptrend. RSI at 37.8 is near the lower half of the scale, and the stochastic oscillators are flat around 46‑48, showing no strong momentum. MACD line (-7.48e-05) is marginally above its signal (-8.07e-05), giving a slight bullish hint, but the high ADX (42) confirms a strong prevailing trend, supporting the short bias. Volume has dropped sharply (-56.6%), suggesting weakening buying pressure. The tight 1H/4H",
       "market_context": "BTC is in a 24‑hour bearish move (‑3.0%) and the broader market is broadly negative (92.7% red). This down‑trend environment adds weight to a short outlook for IOTXUSDT.",
       "result": "PENDING"
+    },
+    {
+      "id": 1305,
+      "created_at": "2026-09-24T11:00:59.231192+00:00",
+      "symbol": "PNUTUSDT",
+      "direction": "SHORT",
+      "title": "Bears Retake Control as $PNUT Fails to Hold Moving Averages",
+      "entry_low": 0.0526,
+      "entry_high": 0.0528,
+      "stop_loss": 0.0547,
+      "take_profit": 0.0487,
+      "support": 0.0524,
+      "resistance": 0.0531,
+      "news_line": "",
+      "technical_analysis": "Price sits below EMA9 (0.0534), EMA21 (0.0539) and EMA50 (0.0548), indicating short‑term bearish bias. RSI at 38.9 and Stochastic K/D around 28/36 suggest the asset is approaching oversold territory, while MACD line is marginally above its signal, giving a modest bullish histogram but not enough to offset the EMA picture. Volume has surged (+93%), yet order‑book shows a sell‑side imbalance (-11%). The 1‑hour swing range is bounded by 0.0524 support and 0.0531 resistance.",
+      "market_context": "The broader market is broadly negative (92.9% red) and BTC is in a bearish 4‑hour trend, adding pressure to altcoins like PNUT.",
+      "result": "PENDING"
     }
   ]
 }
