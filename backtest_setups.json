@@ -21444,6 +21444,23 @@
       "technical_analysis": "$BTC technical structure shows RSI is 38.0, price is below the 21 EMA, with volume change is -79.7%.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 1262,
+      "created_at": "2026-09-24T00:30:55.939836+00:00",
+      "symbol": "SUSDT",
+      "direction": "SHORT",
+      "title": "Overbought Indicators Signal Impending Correction for $S",
+      "entry_low": 0.04015,
+      "entry_high": 0.04025,
+      "stop_loss": 0.0417,
+      "take_profit": 0.0372,
+      "support": 0.03967,
+      "resistance": 0.04032,
+      "news_line": "",
+      "technical_analysis": "Price sits below EMA9 (0.04043) and EMA21 (0.04124), with a negative MACD histogram (-0.00019) confirming short‑term bearish momentum. RSI is at 38.4 and Stochastic K/D are around 24/23, indicating the pair is still in oversold territory but momentum remains weak. Volume has dropped 67%, and the order‑book shows a slight ask‑side imbalance (-3.32%). The 1H swing range is bounded by 0.03967 support and 0.04032 resistance; a break below the lower bound supports a move toward the next lower Bollinger band (≈0.0385).",
+      "market_context": "BTC is in a bearish 24h move (-2.49%) and the broader market is broadly negative (90% red). This adds downward pressure to risk assets like SUSDT.",
+      "result": "PENDING"
     }
   ]
 }
