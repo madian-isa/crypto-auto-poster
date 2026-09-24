@@ -21478,6 +21478,23 @@
       "technical_analysis": "Price sits below EMA9/21/50/200, confirming a downtrend. RSI (27.6) and Stochastic K (5.4) are deep in oversold territory, while ADX (42.7) shows a strong trend. MACD histogram remains negative. Order‑book shows a modest bid‑side imbalance. The 1H swing high at 0.2008 and swing low at 0.1991 define the short entry window.",
       "market_context": "BTC is in a bearish 4H trend and the broader market is broadly negative, supporting downside bias for SYRUPUSDT.",
       "result": "PENDING"
+    },
+    {
+      "id": 1264,
+      "created_at": "2026-09-24T01:00:58.261437+00:00",
+      "symbol": "CRVUSDT",
+      "direction": "SHORT",
+      "title": "Panic Selling Risk Increases as $CRV Tests Critical Floor",
+      "entry_low": 0.3305,
+      "entry_high": 0.331,
+      "stop_loss": 0.343,
+      "take_profit": 0.30625,
+      "support": 0.3216,
+      "resistance": 0.362,
+      "news_line": "",
+      "technical_analysis": "Price sits just below the 1‑hour resistance (0.3307) while remaining under EMA21 (0.3376) and EMA50 (0.3464). EMA9 is still below EMA21, indicating a bearish short‑term slope. MACD line is under its signal with a negative histogram, and RSI at 35 suggests limited upside momentum. Stochastic K/D are in the low‑20s, reinforcing the down‑trend bias. ADX above 30 (33.2) shows the trend has moderate strength, and 24‑hour volume is down ~50%, hinting at weakening buying pressure.",
+      "market_context": "BTC is in a 24‑hour bearish phase (‑2.48%) and the broader market is largely red (89.2% down). This negative backdrop supports a cautious short bias on CRVUSDT.",
+      "result": "PENDING"
     }
   ]
 }
