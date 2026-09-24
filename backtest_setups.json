@@ -22328,6 +22328,23 @@
       "technical_analysis": "$COTI technical structure shows RSI is 42.3, price is below the 21 EMA, with MACD is below its signal line.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 1314,
+      "created_at": "2026-09-24T14:04:29.849464+00:00",
+      "symbol": "牛来USDT",
+      "direction": "SHORT",
+      "title": "$牛来 Lower High Pattern Confirmed: Short Target in View",
+      "entry_low": 0.10328115,
+      "entry_high": 0.10379885,
+      "stop_loss": 0.1076816,
+      "take_profit": 0.0952568,
+      "support": 0.103,
+      "resistance": 0.10547,
+      "news_line": "",
+      "technical_analysis": "$牛来 technical structure shows RSI is 41.5, price is below the 21 EMA, with MACD is below its signal line.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
