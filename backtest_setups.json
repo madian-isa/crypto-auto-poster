@@ -22209,6 +22209,23 @@
       "technical_analysis": "Price sits below EMA9 (0.956), EMA21 (0.967) and EMA50 (0.978), indicating a short‑term downtrend. ADX is above 30 (30.25), confirming a strong trend. Stochastic K/D are in the 25/24 range, showing oversold conditions that often precede further downside. MACD line is marginally above its signal, but the histogram is tiny, so bullish momentum is weak. Order‑book shows a -10.6% imbalance (more asks) and volume has dropped 15%, adding bearish pressure. The 1‑hour swing structure places price near the lower bound of the 0.9456‑0.9722 range, supporting a short bias.",
       "market_context": "BTC is in a 2.3% 24‑hour decline and the broader market is broadly negative (90.4% red). This backdrop aligns with the bearish setup for SUI.",
       "result": "PENDING"
+    },
+    {
+      "id": 1307,
+      "created_at": "2026-09-24T12:00:59.023024+00:00",
+      "symbol": "ENAUSDT",
+      "direction": "SHORT",
+      "title": "Technical Signals Turn Negative as $ENA Selling Pressure Rises",
+      "entry_low": 0.2048,
+      "entry_high": 0.2052,
+      "stop_loss": 0.2124,
+      "take_profit": 0.1902,
+      "support": 0.2036,
+      "resistance": 0.2104,
+      "news_line": "",
+      "technical_analysis": "Price sits below EMA9 (0.2047), EMA21 (0.2064) and EMA50 (0.2084), indicating short‑term bearish pressure while remaining above EMA200 (0.1936). MACD is negative (‑0.00176) with the histogram also below zero, and RSI is neutral at 45.3. Stochastic K/D are 38/24, suggesting momentum still to the downside. Order‑book shows a modest ask‑side imbalance (‑7.1%). The 1‑hour swing range is bounded by support 0.2036 and resistance 0.2104, with price near the upper half of that range, supporting a short entry around 0.2050.",
+      "market_context": "BTC is in a bearish 24‑hour move (‑2.57%) and the broader market is broadly negative (90.6% red). This adds downside bias to the ENAUSDT setup.",
+      "result": "PENDING"
     }
   ]
 }
