@@ -21648,6 +21648,23 @@
       "technical_analysis": "Price sits below EMA9 (0.009098) and EMA21 (0.009300), with EMA200 still underneath, indicating a short‑term down bias. MACD is negative (‑0.000179) and below its signal line, reinforcing bearish momentum. RSI at 38.5 and Stochastic K at 17.6 suggest the pair is approaching oversold levels but the strong ADX (39) confirms a prevailing trend. Order‑book shows a slight sell imbalance (‑5.35%). These three signals – EMA cross, MACD divergence, and high ADX – point to a short setup.",
       "market_context": "BTC is in a 2.5% 24‑hour decline and the broader market is broadly negative (≈90% red). This backdrop supports a cautious short bias on MOVEUSDT.",
       "result": "PENDING"
+    },
+    {
+      "id": 1274,
+      "created_at": "2026-09-24T03:30:54.074108+00:00",
+      "symbol": "LPTUSDT",
+      "direction": "LONG",
+      "title": "$LPT Holds Moving Average Support: High Probability Long Setup",
+      "entry_low": 1.625,
+      "entry_high": 1.633,
+      "stop_loss": 1.56,
+      "take_profit": 1.767,
+      "support": 1.601,
+      "resistance": 1.655,
+      "news_line": "",
+      "technical_analysis": "RSI at 34.4 and Stochastic K/D around 16/8 suggest the asset is oversold. The order‑book shows a 21% bid‑side imbalance, indicating buying pressure near the current price. Price sits just above the EMA200 (1.601) while remaining below short‑term EMAs (EMA9/21), hinting at a potential bounce from the 1.625 support zone. MACD is still negative, so momentum isn’t fully reversed yet, but the confluence of oversold indicators and order‑book bias supports a cautious long bias.",
+      "market_context": "Bitcoin is down ~3% in the last 24 h and the broader market is broadly negative (≈90% red). Despite that, LPTUSDT shows localized bullish signals around its key support levels.",
+      "result": "PENDING"
     }
   ]
 }
