@@ -21784,6 +21784,23 @@
       "technical_analysis": "$RAY technical structure shows RSI is 60.5, price is above the 21 EMA, with volume change is -35.2%.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 1282,
+      "created_at": "2026-09-24T05:15:51.950067+00:00",
+      "symbol": "APTUSDT",
+      "direction": "SHORT",
+      "title": "Major Support Breakdown Confirmed on $APT Higher Timeframes",
+      "entry_low": 0.777,
+      "entry_high": 0.7785,
+      "stop_loss": 0.805,
+      "take_profit": 0.72325,
+      "support": 0.753,
+      "resistance": 0.808,
+      "news_line": "",
+      "technical_analysis": "APT is trading just below the 1H/4H resistance zone (0.808) at 0.7775. The price sits above the EMA9 (0.7666) and EMA21 (0.7764) but below the EMA50 (0.7808), indicating short‑term bullish bias yet approaching a short‑term ceiling. Stochastic K is high at 85, suggesting overbought conditions, while RSI is neutral at 49. MACD shows a tiny negative histogram and ADX at 32 confirms a strong trend. Order‑book data reveals a 7.9% bid‑side imbalance, but the best bid/ask cluster is above the current price, hinting at possible rejection. These mixed signals favor a short swing trade near the resistan",
+      "market_context": "Bitcoin is down 3.1% over 24 h and the overall market breadth is broadly negative (≈90% red). This bearish backdrop adds pressure to altcoins like APT.",
+      "result": "PENDING"
     }
   ]
 }
