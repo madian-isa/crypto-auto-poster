@@ -307,22 +307,23 @@ def render_chart_image(
             levels.append(stop_loss)
         if take_profit is not None:
             levels.append(take_profit)
-            
-data_low = float(df["Low"].min())
-data_high = float(df["High"].max())
+        # Keep the complete candle range visible; the setup box is an
+        # overlay and must not crop the historical candles.
+        data_low = float(df["Low"].min())
+        data_high = float(df["High"].max())
 
-chart_low = min(data_low, min(levels))
-chart_high = max(data_high, max(levels))
+        chart_low = min(data_low, min(levels))
+        chart_high = max(data_high, max(levels))
 
-pad = max(
-    (chart_high - chart_low) * 0.06,
-    entry_mid * 0.005,
-)
+        pad = max(
+            (chart_high - chart_low) * 0.06,
+            entry_mid * 0.005,
+        )
 
-ax.set_ylim(
-    chart_low - pad,
-    chart_high + pad,
-)
+        ax.set_ylim(
+            chart_low - pad,
+            chart_high + pad,
+        )
 
         last_x = len(df) - 1
         # Start at the right edge of the latest candle with no visible gap.
