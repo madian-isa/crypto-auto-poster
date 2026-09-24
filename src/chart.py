@@ -316,12 +316,10 @@ def render_chart_image(
         box_width = 7
         ax.set_xlim(-1, box_x + box_width + 2.5)
 
-        if direction == "LONG":
-            reward_color = "#0ecb81"
-            risk_color = "#f6465d"
-        else:
-            reward_color = "#f6465d"
-            risk_color = "#0ecb81"
+        # Profit is always green and risk is always red. The vertical
+        # position changes with direction, not the meaning of the colors.
+        reward_color = "#0ecb81"
+        risk_color = "#f6465d"
 
         if take_profit is not None:
             reward_low = min(entry_mid, take_profit)
