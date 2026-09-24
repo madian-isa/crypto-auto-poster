@@ -21852,6 +21852,23 @@
       "technical_analysis": "Price sits just above the 1‑hour resistance (0.009968) and is trading above all key EMAs (9, 21, 50, 200), indicating a bullish EMA hierarchy. RSI at 54 shows no over‑extension, while Stochastic K at 72 suggests upward momentum. MACD is near the zero line with a tiny negative histogram, reflecting a neutral to slightly bearish short‑term tilt. ADX around 18 points to a weak trend, so the bias relies mainly on the EMA alignment and order‑book imbalance (25% bid‑side pressure).",
       "market_context": "BTC is down ~2.9% and the broader market is broadly negative (≈90% red). This downside backdrop adds caution, but the pair’s internal bullish structure supports a long bias.",
       "result": "PENDING"
+    },
+    {
+      "id": 1286,
+      "created_at": "2026-09-24T06:15:46.507843+00:00",
+      "symbol": "SUSHIUSDT",
+      "direction": "LONG",
+      "title": "Smart Money Flow Increases into $SUSHI Ahead of Catalysts",
+      "entry_low": 0.2518,
+      "entry_high": 0.2522,
+      "stop_loss": 0.242,
+      "take_profit": 0.272,
+      "support": 0.2514,
+      "resistance": 0.2557,
+      "news_line": "",
+      "technical_analysis": "Price sits just above the 9‑EMA (0.2504) while still under the 21‑EMA (0.2536) and 50‑EMA (0.2564), indicating a short‑term pull‑back within an overall uptrend confirmed by the 200‑EMA (0.2461) beneath price. MACD line is above its signal (+0.0003 histogram), providing bullish momentum. Stochastic K (66) is above D (49), also pointing upward. ADX at 33 signals a strong trend. Order‑book shows a 34% bid imbalance and the best bid sits at 0.2531, suggesting buying pressure. These factors together support a cautious long bias near the 1H support of 0.2514 and below the 1H resistance of 0.2557.",
+      "market_context": "The broader market is broadly negative with BTC down 2.86% on the day and a bearish 4H trend, which adds caution. However, SUSHI's own technicals remain relatively strong, allowing a targeted long setup with defined risk.",
+      "result": "PENDING"
     }
   ]
 }
