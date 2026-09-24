@@ -21750,6 +21750,23 @@
       "technical_analysis": "$APE technical structure shows RSI is 39.8, price is below the 21 EMA, with volume change is -68.1%.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 1280,
+      "created_at": "2026-09-24T05:01:01.199151+00:00",
+      "symbol": "POLUSDT",
+      "direction": "LONG",
+      "title": "Strong Accumulation Detected: $POL Prepares for Next Wave Up",
+      "entry_low": 0.1015,
+      "entry_high": 0.1025,
+      "stop_loss": 0.098,
+      "take_profit": 0.11,
+      "support": 0.10013,
+      "resistance": 0.10283,
+      "news_line": "",
+      "technical_analysis": "Price sits just below the 1‑hour resistance (0.10283) and above the 9‑EMA (0.10185) while still under the 21‑EMA (0.10329), indicating short‑term bullish pressure within a broader downtrend. MACD shows a positive histogram (+0.00021) with the MACD line above its signal, supporting a near‑term upside bias. Stochastic %K is high at 85, suggesting the market may be overbought and could pull back toward the 1‑hour support (0.10013). ADX at 34.9 confirms a strong trend environment. Order‑book imbalance (+16.8% bids) adds buying pressure. The setup targets a bounce from the 1‑hour support toward the",
+      "market_context": "BTC is in a bearish 24‑hour move (‑3.47%) and the overall market breadth is largely negative (91.2% red). This broader risk‑off sentiment reinforces the need for a tight risk profile on POLU.",
+      "result": "PENDING"
     }
   ]
 }
