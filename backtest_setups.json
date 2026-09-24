@@ -22107,6 +22107,23 @@
       "technical_analysis": "Price sits below EMA9 (0.005736) and EMA21 (0.005782), confirming a short‑term downtrend. MACD line is negative and below its signal, with a small positive histogram, while Stochastic K (50) is under its D line (70.8), indicating bearish momentum. ADX at 26.9 shows a strong trend. Order‑book shows a 17.9% bid‑side imbalance, but the price remains under key EMAs, suggesting sellers may still dominate.",
       "market_context": "BTC is in a bearish 4‑hour frame and the broader market is broadly negative (93.3% red). This adds downward pressure to altcoins like GUSDT.",
       "result": "PENDING"
+    },
+    {
+      "id": 1301,
+      "created_at": "2026-09-24T10:01:01.435299+00:00",
+      "symbol": "WIFUSDT",
+      "direction": "LONG",
+      "title": "Spot Inflows Surge for $WIF as Futures Open Interest Rises",
+      "entry_low": 0.2317,
+      "entry_high": 0.232,
+      "stop_loss": 0.2235,
+      "take_profit": 0.24855,
+      "support": 0.2317,
+      "resistance": 0.2376,
+      "news_line": "",
+      "technical_analysis": "WIF is testing the 1H/4H swing low around 0.2317. The price sits just above this support while the short‑term EMAs (9, 21, 50) are still above the market, indicating a recent pull‑back. MACD shows a bullish crossover (line > signal, positive histogram) and the stochastic oscillator is deep in oversold territory (K≈15, D≈31), suggesting upward momentum may resume. RSI at 42.8 is neutral, and ADX at 24.8 points to a weak but potentially forming trend. Order‑book data shows a bid‑side imbalance of ~52 % with a tight spread, adding mild buying pressure.",
+      "market_context": "The broader crypto market is bearish, with BTC down about 3 % over 24 h and overall market breadth strongly negative (≈93 % red). This backdrop supports a risk‑off bias, making a bounce from a clear support level a more reliable swing‑long opportunity.",
+      "result": "PENDING"
     }
   ]
 }
