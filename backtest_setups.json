@@ -21920,6 +21920,23 @@
       "technical_analysis": "Price sits above the 9, 21 and 50 EMA, with the EMA hierarchy still bullish (EMA9 < EMA21 < EMA50 < EMA200). MACD line is marginally above its signal, producing a small positive histogram. Stochastic %K is in the high 80s, confirming upward momentum. RSI is neutral at 53.8. Order‑book shows a bid‑ask imbalance of ~12% toward bids, indicating buying pressure near the current price.",
       "market_context": "BTC is in a bearish 4‑hour frame and the broader crypto market is broadly negative, with only 7.8% of assets green. Despite the overall down‑trend, VETUSDT shows localized bullish structure.",
       "result": "PENDING"
+    },
+    {
+      "id": 1290,
+      "created_at": "2026-09-24T07:15:51.669117+00:00",
+      "symbol": "ONEUSDT",
+      "direction": "SHORT",
+      "title": "$ONE Prepares for Breakdown: Downside Risk Escalates",
+      "entry_low": 0.00253,
+      "entry_high": 0.00255,
+      "stop_loss": 0.00264,
+      "take_profit": 0.00234,
+      "support": 0.00227,
+      "resistance": 0.003082,
+      "news_line": "",
+      "technical_analysis": "Price sits below EMA21 (0.002744) and EMA50 (0.003079), indicating bearish bias. RSI at 37.9 and Stochastic K/D around 34/29 suggest lingering weakness. MACD line (-0.000218) is under its signal (-0.000212), reinforcing downside momentum. Order‑book shows a bid‑side imbalance (≈54%) with best bid/ask around 0.002411/0.002413, yet price is trading near the short‑term resistance zone (≈0.00255). These factors line up for a short swing trade.",
+      "market_context": "BTC is down 2.69% on the day, with a mixed 4h trend but overall bearish sentiment. The broader market is broadly negative (91.6% red), limiting upside bias for altcoins.",
+      "result": "PENDING"
     }
   ]
 }
