@@ -22651,6 +22651,23 @@
       "technical_analysis": "AI is trading at 0.0215, comfortably above EMA9 (0.02019), EMA21 (0.01977), EMA50 (0.01927) and EMA200 (0.01841), confirming a bullish alignment. MACD histogram is positive (+0.00010) with the MACD line above its signal, while ADX at 53 signals a strong trend. Volume has more than doubled (101% rise), adding conviction. RSI sits at 64.6 and Stochastic K is at 90, suggesting short‑term overbought pressure but not yet a reversal. On the 1‑hour chart the swing low is around 0.0191 and the swing high near 0.0218, defining the current range.",
       "market_context": "Bitcoin is marginally bearish on the 4‑hour timeframe (down 0.25% in 24 h), yet the broader crypto market remains broadly positive, with 77% of assets in green.",
       "result": "PENDING"
+    },
+    {
+      "id": 1333,
+      "created_at": "2026-09-24T18:16:16.923122+00:00",
+      "symbol": "NEARUSDT",
+      "direction": "LONG",
+      "title": "On-Chain Metrics Confirm Strong Whale Accumulation on $NEAR",
+      "entry_low": 4.648,
+      "entry_high": 4.663,
+      "stop_loss": 4.48,
+      "take_profit": 5.0065,
+      "support": 4.369,
+      "resistance": 4.663,
+      "news_line": "",
+      "technical_analysis": "Price sits above the EMA9 (4.522), EMA21 (4.447), EMA50 (4.396) and EMA200 (3.860), confirming a bullish EMA hierarchy. MACD is positive (0.053) with a healthy histogram (+0.046) and RSI at 64.7, indicating momentum still on the upside. Stochastic K/D are in the high 80s, showing overbought conditions but no immediate divergence. Bollinger Upper band (4.682) is just touched, suggesting a short‑term pull‑back to the nearby intraday support at 4.648. Order‑book shows a 10.6% bid‑side imbalance, adding weight to buying pressure.",
+      "market_context": "BTC remains in a bullish daily trend and the overall crypto market is broadly positive (79% green). This supportive backdrop aligns with the bullish bias for NEAR.",
+      "result": "PENDING"
     }
   ]
 }
