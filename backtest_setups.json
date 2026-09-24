@@ -22532,6 +22532,23 @@
       "technical_analysis": "Price sits above the EMA9 (3.58e‑06), EMA21 (3.57e‑06), EMA50 (3.56e‑06) and EMA200 (3.25e‑06), indicating a bullish bias. RSI is near 58, while Stochastic %K is at 80 (with %D ~75), suggesting upward momentum but approaching overbought levels. MACD histogram is slightly positive and the MACD line is marginally above the signal, reinforcing the bullish tilt. ADX at 16.6 shows a weak but present trend. Order‑book imbalance (+0.66) hints at more buying pressure. The 1H/4H swing structure places support at 3.60e‑06 and resistance at 3.74e‑06, framing a clean swing‑high setup.",
       "market_context": "BTC is in a bullish trend on both 4H and 1D frames, and overall market breadth is broadly positive (≈75% green). This broader bullish backdrop supports the long bias on BONK.",
       "result": "PENDING"
+    },
+    {
+      "id": 1326,
+      "created_at": "2026-09-24T16:31:27.687124+00:00",
+      "symbol": "MINAUSDT",
+      "direction": "LONG",
+      "title": "Buyers Defend Key Demand Zone: $MINA Ready for Extension",
+      "entry_low": 0.1508,
+      "entry_high": 0.1512,
+      "stop_loss": 0.1455,
+      "take_profit": 0.162,
+      "support": 0.1519,
+      "resistance": 0.1553,
+      "news_line": "",
+      "technical_analysis": "Price is comfortably above EMA9 (0.1487), EMA21 (0.1474), EMA50 (0.1447) and EMA200 (0.1238), indicating a bullish bias. MACD line (0.00117) sits above its signal (0.00060) with a positive histogram, confirming upward momentum. RSI at 57.6 is neutral‑to‑bullish, while Stochastic %K is high (82) with %D at 72, suggesting strength but approaching overbought. ADX is modest (17), so the trend is not yet strong but aligns with the bullish structure. Order‑book shows a 9.9% bid imbalance and best bid/ask around 0.1527‑0.1528, reinforcing buying pressure. The 1H/4H swing structure places the next sup",
+      "market_context": "BTC remains in a bullish trend on both 4H and 1D timeframes, and the overall market breadth is broadly positive (≈80% green). This supportive macro backdrop adds confidence to the bullish outlook for MINA.",
+      "result": "PENDING"
     }
   ]
 }
