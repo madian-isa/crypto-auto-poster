@@ -311,9 +311,10 @@ def render_chart_image(
         ax.set_ylim(min(levels) - pad, max(levels) + pad)
 
         last_x = len(df) - 1
-        box_x = last_x + 4
-        box_width = 10
-        ax.set_xlim(-1, box_x + box_width + 3)
+        # Start at the right edge of the latest candle with no visible gap.
+        box_x = last_x + 0.5
+        box_width = 7
+        ax.set_xlim(-1, box_x + box_width + 2.5)
 
         if direction == "LONG":
             reward_color = "#0ecb81"
