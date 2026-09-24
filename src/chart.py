@@ -307,8 +307,22 @@ def render_chart_image(
             levels.append(stop_loss)
         if take_profit is not None:
             levels.append(take_profit)
-        pad = max((max(levels) - min(levels)) * 0.12, entry_mid * 0.01)
-        ax.set_ylim(min(levels) - pad, max(levels) + pad)
+            
+data_low = float(df["Low"].min())
+data_high = float(df["High"].max())
+
+chart_low = min(data_low, min(levels))
+chart_high = max(data_high, max(levels))
+
+pad = max(
+    (chart_high - chart_low) * 0.06,
+    entry_mid * 0.005,
+)
+
+ax.set_ylim(
+    chart_low - pad,
+    chart_high + pad,
+)
 
         last_x = len(df) - 1
         # Start at the right edge of the latest candle with no visible gap.
