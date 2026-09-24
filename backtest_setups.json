@@ -21427,6 +21427,23 @@
       "technical_analysis": "Price sits below EMA9, EMA21 and EMA50, confirming short‑term down pressure. MACD line (-0.0037) is under its signal (-0.0027) with a negative histogram, reinforcing bearish momentum. ADX at 38 signals a strong trend, while RSI (31.4) and Stochastic K/D (13.4/12.2) indicate oversold conditions but not enough to offset the EMA/MACD bias. Order‑book shows a 35.6% bid imbalance, suggesting more buying interest at current levels, yet the price remains under key moving averages.",
       "market_context": "Overall market is broadly negative (90.4% red) and BTC is in a bearish 24h direction, providing a backdrop that favors short‑biased setups on altcoins like XLM.",
       "result": "PENDING"
+    },
+    {
+      "id": 1261,
+      "created_at": "2026-09-24T00:17:44.659381+00:00",
+      "symbol": "BTCUSDT",
+      "direction": "SHORT",
+      "title": "$BTC Fakeout Confirmed: Bulls Trapped at Local Highs",
+      "entry_low": 84186.606,
+      "entry_high": 84608.594,
+      "stop_loss": 87773.504,
+      "take_profit": 77645.792,
+      "support": 84212.68,
+      "resistance": 84670.01,
+      "news_line": "",
+      "technical_analysis": "$BTC technical structure shows RSI is 38.0, price is below the 21 EMA, with volume change is -79.7%.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
