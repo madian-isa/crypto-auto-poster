@@ -1,12 +1,13 @@
 {
   "date": "2026-09-24",
-  "count": 6,
+  "count": 7,
   "posted_symbols_today": [
     "PYTHUSDT",
     "XLMUSDT",
     "BTCUSDT",
     "SUSDT",
     "SYRUPUSDT",
-    "CRVUSDT"
+    "CRVUSDT",
+    "NOMUSDT"
   ]
 }
