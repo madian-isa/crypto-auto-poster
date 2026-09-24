@@ -1,6 +1,6 @@
 {
   "date": "2026-09-24",
-  "count": 24,
+  "count": 25,
   "posted_symbols_today": [
     "PYTHUSDT",
     "XLMUSDT",
@@ -25,6 +25,7 @@
     "APEUSDT",
     "POLUSDT",
     "RAYUSDT",
-    "APTUSDT"
+    "APTUSDT",
+    "MARSCOINUSDT"
   ]
 }

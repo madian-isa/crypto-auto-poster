@@ -21801,6 +21801,23 @@
       "technical_analysis": "APT is trading just below the 1H/4H resistance zone (0.808) at 0.7775. The price sits above the EMA9 (0.7666) and EMA21 (0.7764) but below the EMA50 (0.7808), indicating short‑term bullish bias yet approaching a short‑term ceiling. Stochastic K is high at 85, suggesting overbought conditions, while RSI is neutral at 49. MACD shows a tiny negative histogram and ADX at 32 confirms a strong trend. Order‑book data reveals a 7.9% bid‑side imbalance, but the best bid/ask cluster is above the current price, hinting at possible rejection. These mixed signals favor a short swing trade near the resistan",
       "market_context": "Bitcoin is down 3.1% over 24 h and the overall market breadth is broadly negative (≈90% red). This bearish backdrop adds pressure to altcoins like APT.",
       "result": "PENDING"
+    },
+    {
+      "id": 1283,
+      "created_at": "2026-09-24T05:30:52.412005+00:00",
+      "symbol": "MARSCOINUSDT",
+      "direction": "LONG",
+      "title": "Critical Resistance Test: $MARSCOIN Preparing to Surge Higher",
+      "entry_low": 0.124,
+      "entry_high": 0.1248,
+      "stop_loss": 0.1196,
+      "take_profit": 0.134,
+      "support": 0.124,
+      "resistance": 0.1331,
+      "news_line": "",
+      "technical_analysis": "MARSCOIN is holding just above the 1H swing low (0.1240) and below the 1H resistance (0.1331). Price sits under the EMA9 (0.1303), EMA21 (0.1317) and EMA50 (0.1271), indicating short‑term bearish pressure, while remaining above the EMA200 (0.1152) for longer‑term bias. MACD is negative (‑0.00017) with the histogram below zero, confirming bearish momentum. RSI is neutral at 41.5, but the stochastic oscillator is deep in oversold territory (K ≈ 8.7, D ≈ 22.9), suggesting a possible short‑term rebound. ADX is low (≈19.7), so the trend is weak. Order‑book data shows a strong bid‑side imbalance (≈5",
+      "market_context": "The broader market is bearish, with BTC down 2.97% over 24 h and overall market breadth showing 90 % red assets. This negative backdrop adds risk to any upside move, so risk management is essential.",
+      "result": "PENDING"
     }
   ]
 }
