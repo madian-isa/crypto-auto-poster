@@ -1,6 +1,6 @@
 {
   "date": "2026-09-24",
-  "count": 44,
+  "count": 45,
   "posted_symbols_today": [
     "PYTHUSDT",
     "XLMUSDT",
@@ -45,6 +45,7 @@
     "AEROUSDT",
     "GUSDT",
     "WIFUSDT",
-    "FLOWUSDT"
+    "FLOWUSDT",
+    "ZKUSDT"
   ]
 }

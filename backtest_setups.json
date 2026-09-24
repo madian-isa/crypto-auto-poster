@@ -22141,6 +22141,23 @@
       "technical_analysis": "$FLOW technical structure shows RSI is 35.1, price is below the 21 EMA, with volume change is 59.4%.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 1303,
+      "created_at": "2026-09-24T10:15:49.027833+00:00",
+      "symbol": "ZKUSDT",
+      "direction": "LONG",
+      "title": "$ZK Holds Moving Average Support: High Probability Long Setup",
+      "entry_low": 0.01109,
+      "entry_high": 0.0112,
+      "stop_loss": 0.0107,
+      "take_profit": 0.012035,
+      "support": 0.01109,
+      "resistance": 0.01134,
+      "news_line": "",
+      "technical_analysis": "Price sits near the 1‑hour support at 0.01109 and is trading below the short‑term EMAs (9, 21, 50) but above the 200‑EMA, indicating a potential bounce from longer‑term bias. MACD line (+0.000114) is above its signal, producing a modest bullish histogram. Stochastic K is deep in oversold territory (~19) while RSI is around 38, both hinting at upside potential. Order‑book shows a 22.7% bid‑side imbalance, adding buying pressure. The confluence of bullish MACD, oversold stochastic, and supportive order‑book suggests a tentative long bias.",
+      "market_context": "Overall market remains broadly negative (92.6% red) and BTC is in a 24‑hour bearish move (‑2.97%). Despite the down‑trend in Bitcoin, ZK displays relative strength and could benefit from a short‑term reversal.",
+      "result": "PENDING"
     }
   ]
 }
