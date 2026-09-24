@@ -22396,6 +22396,23 @@
       "technical_analysis": "$TUT technical structure shows RSI is 61.8, price is above the 21 EMA, with MACD is above its signal line.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 1318,
+      "created_at": "2026-09-24T14:45:49.344456+00:00",
+      "symbol": "CAKEUSDT",
+      "direction": "LONG",
+      "title": "$CAKE Breakout Confirmation: Bulls Target Next Supply Zone",
+      "entry_low": 2.669,
+      "entry_high": 2.673,
+      "stop_loss": 2.575,
+      "take_profit": 2.863,
+      "support": 2.584,
+      "resistance": 2.726,
+      "news_line": "",
+      "technical_analysis": "Price sits above the 9, 21, 50 and 200 EMA, confirming a bullish hierarchy. MACD line (0.0208) is above its signal (0.0145) with a positive histogram, indicating upward momentum. RSI is at 59.8, still in the neutral‑to‑bullish zone. Stochastic %K is high at 86.9, suggesting the market is near overbought but the strong order‑book imbalance (+27% bids) supports further upside. Volume is up ~22%, reinforcing the move.",
+      "market_context": "BTC is in a bullish trend on both 4H and 1D timeframes and the broader market is broadly positive (66.5% green). This backdrop adds to the bullish bias for CAKEUSDT.",
+      "result": "PENDING"
     }
   ]
 }
