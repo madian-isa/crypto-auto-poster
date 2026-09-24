@@ -633,6 +633,50 @@ def _get_stochastic_k(indicators):
     return _safe_float(stochastic)
 
 
+def _signal_quality_ok(indicators, direction):
+    """Reject setups when the primary indicators disagree."""
+    direction = str(direction or "").upper()
+    if direction not in ("LONG", "SHORT"):
+        return False
+
+    price = _get_current_price(indicators)
+    rsi = _indicator_number(indicators, "rsi", "rsi14")
+    ema21 = _indicator_number(indicators, "ema21")
+    ema50 = _indicator_number(indicators, "ema50")
+    ema200 = _indicator_number(indicators, "ema200")
+    macd_line, macd_signal = _get_macd_values(indicators)
+    stochastic_k = _get_stochastic_k(indicators)
+
+    required = (price, rsi, ema21, ema50, macd_line, macd_signal)
+    if any(value is None for value in required):
+        return False
+
+    if direction == "LONG":
+        if not (52 <= rsi <= 72):
+            return False
+        if not (price > ema21 > ema50):
+            return False
+        if ema200 is not None and price <= ema200:
+            return False
+        if macd_line <= macd_signal:
+            return False
+        if stochastic_k is not None and stochastic_k < 55:
+            return False
+        return True
+
+    if not (28 <= rsi <= 48):
+        return False
+    if not (price < ema21 < ema50):
+        return False
+    if ema200 is not None and price >= ema200:
+        return False
+    if macd_line >= macd_signal:
+        return False
+    if stochastic_k is not None and stochastic_k > 45:
+        return False
+    return True
+
+
 def _fallback_direction(
     indicators,
     advanced_market_data,
@@ -675,12 +719,12 @@ def _fallback_direction(
     if funding is not None:
         score += -1 if funding > 0.01 else 1 if funding < -0.01 else 0
 
-    if evidence < 3:
+    if evidence < 5:
         return None
     if score >= 3:
-        return "LONG"
+        return "LONG" if _signal_quality_ok(indicators, "LONG") else None
     if score <= -3:
-        return "SHORT"
+        return "SHORT" if _signal_quality_ok(indicators, "SHORT") else None
     return None
 
 def _fallback_entry(
@@ -782,13 +826,7 @@ def _fallback_technical_text(
                 "price is below the 21 EMA"
             )
 
-    macd = _safe_float(
-        indicators.get("macd")
-    )
-
-    macd_signal = _safe_float(
-        indicators.get("macd_signal")
-    )
+    macd, macd_signal = _get_macd_values(indicators)
 
     if (
         macd is not None
@@ -1264,6 +1302,19 @@ Return JSON only:
         )
 
     if direction is None:
+        return _python_fallback_setup(
+            symbol=symbol,
+            indicators=indicators,
+            news=news,
+            market_context=market_context,
+            advanced_market_data=advanced_market_data,
+        )
+
+    if not _signal_quality_ok(indicators, direction):
+        print(
+            f"[setup_generator] "
+            f"Rejected conflicting {direction} setup for ${coin}."
+        )
         return _python_fallback_setup(
             symbol=symbol,
             indicators=indicators,
