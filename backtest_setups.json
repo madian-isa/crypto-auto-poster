@@ -22719,6 +22719,23 @@
       "technical_analysis": "Price sits above the EMA9, EMA21, EMA50 and EMA200, confirming a bullish hierarchy. MACD line (0.0045) is above its signal (0.0030) with a positive histogram, adding momentum to the upside. ADX at 25.6 signals moderate trend strength. RSI (69) and Stochastic K/D (83/81) are in overbought territory, suggesting a possible short‑term pull‑back. Volume has dropped sharply (-66%), and the order‑book shows a modest ask‑side imbalance (-16.9%). Overall, the bullish EMA alignment and MACD outweigh the overbought warnings, supporting a long bias toward the 0.338 ÷ 0.338 resistance.",
       "market_context": "The broader market is broadly positive (84.3% green) and Bitcoin is in a bullish trend on both 4‑hour and daily frames, providing supportive backdrop for risk‑on assets like MTL.",
       "result": "PENDING"
+    },
+    {
+      "id": 1337,
+      "created_at": "2026-09-24T19:15:52.963562+00:00",
+      "symbol": "1000CATUSDT",
+      "direction": "LONG",
+      "title": "$1000CAT Buying Pressure Rises as Bulls Test Key Resistance",
+      "entry_low": 0.002302,
+      "entry_high": 0.002312,
+      "stop_loss": 0.002221,
+      "take_profit": 0.002479,
+      "support": 0.002302,
+      "resistance": 0.002325,
+      "news_line": "",
+      "technical_analysis": "Price sits just above the 9‑, 21‑, 50‑ and 200‑period EMAs, confirming a bullish alignment across timeframes. The MACD histogram remains positive (≈1.6e‑5) with the MACD line above its signal, indicating upward momentum. RSI at 63.9 shows strength without being over‑extended, while ADX at 33 signals a solid trend. Stochastic K/D are in the upper‑mid range, supporting the current bias. Together these indicators suggest the market is poised to test the nearby resistance at 0.002325.",
+      "market_context": "BTC continues its bullish 4H and 1D trends, and the broader crypto market is broadly positive (≈83% green). This supportive backdrop reinforces the long bias for 1000CATUSDT.",
+      "result": "PENDING"
     }
   ]
 }
