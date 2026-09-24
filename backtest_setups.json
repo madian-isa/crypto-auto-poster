@@ -22056,6 +22056,23 @@
       "technical_analysis": "Price sits near the 1H support (0.1476) and below the short‑term EMAs (EMA9 0.1498, EMA21 0.1506, EMA50 0.1514), suggesting short‑term downside pressure. However, the MACD line is above its signal (+0.0004 histogram) indicating a nascent bullish bias, and the order‑book shows a 15.5% bid‑side imbalance with the best bid at 0.1489. RSI is neutral at 42, while the stochastic K (32.9) is below its D line (64.4), hinting at lingering bearish momentum. ADX at 32 confirms a moderate trend strength. The tight 1H range (0.1476‑0.1513) provides a clear entry window.",
       "market_context": "BTC is down 2.6% over 24 h and the overall market is broadly negative (91.9% red). Despite the bearish backdrop, the order‑book imbalance and MACD hint at a possible short‑term bounce for IOU.",
       "result": "PENDING"
+    },
+    {
+      "id": 1298,
+      "created_at": "2026-09-24T09:15:52.130020+00:00",
+      "symbol": "GRTUSDT",
+      "direction": "LONG",
+      "title": "Key Support Holds Firm: $GRT Bullish Continuation Setup Active",
+      "entry_low": 0.02507,
+      "entry_high": 0.02525,
+      "stop_loss": 0.0241536,
+      "take_profit": 0.0271728,
+      "support": 0.02474,
+      "resistance": 0.02643,
+      "news_line": "",
+      "technical_analysis": "Price sits just above the 1‑hour support (0.02474) and below the 1‑hour resistance (0.02643). Short‑term EMAs (9‑ and 21‑period) sit above the market, suggesting a near‑term pullback, while the price remains above EMA50 (0.02519) and EMA200 (0.02240), indicating a higher‑timeframe bias. MACD shows a bullish crossover (line above signal, positive histogram) and RSI is neutral at 46.5. Stochastic K is low (31.8) with D near 67, hinting at possible upside momentum. Order‑book imbalance is modestly bid‑heavy (+2.6%). Combined, these signals favor a controlled long swing.",
+      "market_context": "The broader market is broadly negative (92.8% red) and BTC is in a bearish 24‑hour frame, which adds downside pressure to risk assets. However, GRT's own technicals show a modest bullish edge within the current 1‑hour range.",
+      "result": "PENDING"
     }
   ]
 }
