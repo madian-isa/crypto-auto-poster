@@ -22090,6 +22090,23 @@
       "technical_analysis": "Price sits under EMA9 (0.6765), EMA21 (0.6806) and EMA50 (0.6849), indicating a short‑term down bias. RSI at 42.3 is neutral‑to‑bearish, while Stochastic K (22) is well below its D line (53), signaling bearish momentum. MACD line is slightly above the signal, giving a modest bullish hint, but the histogram remains small. ADX ~26 shows a moderate trend. Order‑book shows a bid‑side imbalance (+8.3%), yet the best bid/ask are far below current price, suggesting limited immediate buying pressure. The 1H swing range sits between 0.6463 support and 0.6842 resistance; current price (0.6679) is nearer",
       "market_context": "BTC is in a bearish 24‑hour frame (‑3.08%) and the broader market is broadly negative (93.5% red). This downside backdrop supports a cautious short bias on AERO.",
       "result": "PENDING"
+    },
+    {
+      "id": 1300,
+      "created_at": "2026-09-24T09:45:52.674707+00:00",
+      "symbol": "GUSDT",
+      "direction": "SHORT",
+      "title": "$G Loses Key Demand Zone: Next Support Level Unprotected",
+      "entry_low": 0.00572,
+      "entry_high": 0.00576,
+      "stop_loss": 0.006,
+      "take_profit": 0.00522,
+      "support": 0.00552,
+      "resistance": 0.00576,
+      "news_line": "",
+      "technical_analysis": "Price sits below EMA9 (0.005736) and EMA21 (0.005782), confirming a short‑term downtrend. MACD line is negative and below its signal, with a small positive histogram, while Stochastic K (50) is under its D line (70.8), indicating bearish momentum. ADX at 26.9 shows a strong trend. Order‑book shows a 17.9% bid‑side imbalance, but the price remains under key EMAs, suggesting sellers may still dominate.",
+      "market_context": "BTC is in a bearish 4‑hour frame and the broader market is broadly negative (93.3% red). This adds downward pressure to altcoins like GUSDT.",
+      "result": "PENDING"
     }
   ]
 }
