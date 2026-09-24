@@ -21818,6 +21818,23 @@
       "technical_analysis": "MARSCOIN is holding just above the 1H swing low (0.1240) and below the 1H resistance (0.1331). Price sits under the EMA9 (0.1303), EMA21 (0.1317) and EMA50 (0.1271), indicating short‑term bearish pressure, while remaining above the EMA200 (0.1152) for longer‑term bias. MACD is negative (‑0.00017) with the histogram below zero, confirming bearish momentum. RSI is neutral at 41.5, but the stochastic oscillator is deep in oversold territory (K ≈ 8.7, D ≈ 22.9), suggesting a possible short‑term rebound. ADX is low (≈19.7), so the trend is weak. Order‑book data shows a strong bid‑side imbalance (≈5",
       "market_context": "The broader market is bearish, with BTC down 2.97% over 24 h and overall market breadth showing 90 % red assets. This negative backdrop adds risk to any upside move, so risk management is essential.",
       "result": "PENDING"
+    },
+    {
+      "id": 1284,
+      "created_at": "2026-09-24T05:45:49.212862+00:00",
+      "symbol": "FLOKIUSDT",
+      "direction": "LONG",
+      "title": "Bullish Momentum Accelerates as $FLOKI Liquidity Sweep Completes",
+      "entry_low": 2.755e-05,
+      "entry_high": 2.77e-05,
+      "stop_loss": 2.662e-05,
+      "take_profit": 2.964e-05,
+      "support": 2.695e-05,
+      "resistance": 2.923e-05,
+      "news_line": "",
+      "technical_analysis": "Price is trading just above the 1‑hour EMA9 (2.736e‑05) and EMA200 (2.697e‑05) while staying below EMA21/50, indicating a near‑term pull‑back zone. MACD line sits above its signal with a small positive histogram, and the stochastic %K (62) is above %D (33), suggesting upward momentum. ADX at 38 confirms a strong trend. Order‑book shows a 28 % bid imbalance, supporting bullish pressure. A breakout above the current resistance around 2.755e‑05 aligns with these signals, making a long swing trade plausible.",
+      "market_context": "BTC is down about 2.9 % over 24 h and the overall market is broadly negative, with 91 % of assets in red.",
+      "result": "PENDING"
     }
   ]
 }
