@@ -22073,6 +22073,23 @@
       "technical_analysis": "Price sits just above the 1‑hour support (0.02474) and below the 1‑hour resistance (0.02643). Short‑term EMAs (9‑ and 21‑period) sit above the market, suggesting a near‑term pullback, while the price remains above EMA50 (0.02519) and EMA200 (0.02240), indicating a higher‑timeframe bias. MACD shows a bullish crossover (line above signal, positive histogram) and RSI is neutral at 46.5. Stochastic K is low (31.8) with D near 67, hinting at possible upside momentum. Order‑book imbalance is modestly bid‑heavy (+2.6%). Combined, these signals favor a controlled long swing.",
       "market_context": "The broader market is broadly negative (92.8% red) and BTC is in a bearish 24‑hour frame, which adds downside pressure to risk assets. However, GRT's own technicals show a modest bullish edge within the current 1‑hour range.",
       "result": "PENDING"
+    },
+    {
+      "id": 1299,
+      "created_at": "2026-09-24T09:30:46.899237+00:00",
+      "symbol": "AEROUSDT",
+      "direction": "SHORT",
+      "title": "Moving Average Death Cross Signals Downward Trend for $AERO",
+      "entry_low": 0.666,
+      "entry_high": 0.6685,
+      "stop_loss": 0.69394,
+      "take_profit": 0.61387,
+      "support": 0.6463,
+      "resistance": 0.6842,
+      "news_line": "",
+      "technical_analysis": "Price sits under EMA9 (0.6765), EMA21 (0.6806) and EMA50 (0.6849), indicating a short‑term down bias. RSI at 42.3 is neutral‑to‑bearish, while Stochastic K (22) is well below its D line (53), signaling bearish momentum. MACD line is slightly above the signal, giving a modest bullish hint, but the histogram remains small. ADX ~26 shows a moderate trend. Order‑book shows a bid‑side imbalance (+8.3%), yet the best bid/ask are far below current price, suggesting limited immediate buying pressure. The 1H swing range sits between 0.6463 support and 0.6842 resistance; current price (0.6679) is nearer",
+      "market_context": "BTC is in a bearish 24‑hour frame (‑3.08%) and the broader market is broadly negative (93.5% red). This downside backdrop supports a cautious short bias on AERO.",
+      "result": "PENDING"
     }
   ]
 }
