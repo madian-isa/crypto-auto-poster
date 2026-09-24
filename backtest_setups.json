@@ -22124,6 +22124,23 @@
       "technical_analysis": "WIF is testing the 1H/4H swing low around 0.2317. The price sits just above this support while the short‑term EMAs (9, 21, 50) are still above the market, indicating a recent pull‑back. MACD shows a bullish crossover (line > signal, positive histogram) and the stochastic oscillator is deep in oversold territory (K≈15, D≈31), suggesting upward momentum may resume. RSI at 42.8 is neutral, and ADX at 24.8 points to a weak but potentially forming trend. Order‑book data shows a bid‑side imbalance of ~52 % with a tight spread, adding mild buying pressure.",
       "market_context": "The broader crypto market is bearish, with BTC down about 3 % over 24 h and overall market breadth strongly negative (≈93 % red). This backdrop supports a risk‑off bias, making a bounce from a clear support level a more reliable swing‑long opportunity.",
       "result": "PENDING"
+    },
+    {
+      "id": 1302,
+      "created_at": "2026-09-24T10:10:35.931237+00:00",
+      "symbol": "FLOWUSDT",
+      "direction": "SHORT",
+      "title": "Technical Signals Turn Negative as $FLOW Selling Pressure Rises",
+      "entry_low": 0.03073298,
+      "entry_high": 0.03088702,
+      "stop_loss": 0.03198915,
+      "take_profit": 0.0284517,
+      "support": 0.03039,
+      "resistance": 0.03183,
+      "news_line": "",
+      "technical_analysis": "$FLOW technical structure shows RSI is 35.1, price is below the 21 EMA, with volume change is 59.4%.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
