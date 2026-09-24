@@ -193,63 +193,9 @@ def render_chart_image(
     df = df.tail(80).copy()
 
     # ---------------------------------------------------------
-    # Indicators
-    # ---------------------------------------------------------
-    df["EMA21"] = (
-        df["Close"]
-        .ewm(
-            span=21,
-            adjust=False,
-        )
-        .mean()
-    )
-
-    df["SMA50"] = (
-        df["Close"]
-        .rolling(
-            window=50,
-            min_periods=1,
-        )
-        .mean()
-    )
-
-    df["EMA200"] = (
-        df["Close"]
-        .ewm(
-            span=200,
-            adjust=False,
-        )
-        .mean()
-    )
-
-    # ---------------------------------------------------------
     # Current price
     # ---------------------------------------------------------
     current_price = float(df["Close"].iloc[-1])
-
-    # ---------------------------------------------------------
-    # Add plots
-    # ---------------------------------------------------------
-    add_plots = [
-        mpf.make_addplot(
-            df["EMA21"],
-            color="#f0b90b",
-            width=1.2,
-            label="EMA 21",
-        ),
-        mpf.make_addplot(
-            df["SMA50"],
-            color="#5b8def",
-            width=1.2,
-            label="SMA 50",
-        ),
-        mpf.make_addplot(
-            df["EMA200"],
-            color="#c084fc",
-            width=1.2,
-            label="EMA 200",
-        ),
-    ]
 
     # ---------------------------------------------------------
     # Create chart
@@ -265,7 +211,6 @@ def render_chart_image(
         ],
         type="candle",
         style=_CHART_STYLE,
-        addplot=add_plots,
         figsize=(16, 8),
         volume=False,
         returnfig=True,
@@ -477,15 +422,6 @@ def render_chart_image(
         ha="center",
         color="#848e9c",
         fontsize=8,
-    )
-
-    # ---------------------------------------------------------
-    # Legend
-    # ---------------------------------------------------------
-    ax.legend(
-        loc="upper left",
-        fontsize=8,
-        frameon=False,
     )
 
     # ---------------------------------------------------------
