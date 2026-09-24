@@ -21461,6 +21461,23 @@
       "technical_analysis": "Price sits below EMA9 (0.04043) and EMA21 (0.04124), with a negative MACD histogram (-0.00019) confirming short‑term bearish momentum. RSI is at 38.4 and Stochastic K/D are around 24/23, indicating the pair is still in oversold territory but momentum remains weak. Volume has dropped 67%, and the order‑book shows a slight ask‑side imbalance (-3.32%). The 1H swing range is bounded by 0.03967 support and 0.04032 resistance; a break below the lower bound supports a move toward the next lower Bollinger band (≈0.0385).",
       "market_context": "BTC is in a bearish 24h move (-2.49%) and the broader market is broadly negative (90% red). This adds downward pressure to risk assets like SUSDT.",
       "result": "PENDING"
+    },
+    {
+      "id": 1263,
+      "created_at": "2026-09-24T00:45:47.517661+00:00",
+      "symbol": "SYRUPUSDT",
+      "direction": "SHORT",
+      "title": "$SYRUP Lower High Pattern Confirmed: Short Target in View",
+      "entry_low": 0.2005,
+      "entry_high": 0.2008,
+      "stop_loss": 0.208,
+      "take_profit": 0.18595,
+      "support": 0.1991,
+      "resistance": 0.2193,
+      "news_line": "",
+      "technical_analysis": "Price sits below EMA9/21/50/200, confirming a downtrend. RSI (27.6) and Stochastic K (5.4) are deep in oversold territory, while ADX (42.7) shows a strong trend. MACD histogram remains negative. Order‑book shows a modest bid‑side imbalance. The 1H swing high at 0.2008 and swing low at 0.1991 define the short entry window.",
+      "market_context": "BTC is in a bearish 4H trend and the broader market is broadly negative, supporting downside bias for SYRUPUSDT.",
+      "result": "PENDING"
     }
   ]
 }
