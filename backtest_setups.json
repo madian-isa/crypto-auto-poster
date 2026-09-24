@@ -21665,6 +21665,23 @@
       "technical_analysis": "RSI at 34.4 and Stochastic K/D around 16/8 suggest the asset is oversold. The order‑book shows a 21% bid‑side imbalance, indicating buying pressure near the current price. Price sits just above the EMA200 (1.601) while remaining below short‑term EMAs (EMA9/21), hinting at a potential bounce from the 1.625 support zone. MACD is still negative, so momentum isn’t fully reversed yet, but the confluence of oversold indicators and order‑book bias supports a cautious long bias.",
       "market_context": "Bitcoin is down ~3% in the last 24 h and the broader market is broadly negative (≈90% red). Despite that, LPTUSDT shows localized bullish signals around its key support levels.",
       "result": "PENDING"
+    },
+    {
+      "id": 1275,
+      "created_at": "2026-09-24T03:45:46.797813+00:00",
+      "symbol": "SANDUSDT",
+      "direction": "SHORT",
+      "title": "$SAND Lower High Pattern Confirmed: Short Target in View",
+      "entry_low": 0.04035885,
+      "entry_high": 0.04056115,
+      "stop_loss": 0.0420784,
+      "take_profit": 0.0372232,
+      "support": 0.03994,
+      "resistance": 0.04085,
+      "news_line": "",
+      "technical_analysis": "$SAND technical structure shows RSI is 37.4, price is below the 21 EMA, with volume change is -63.4%.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
