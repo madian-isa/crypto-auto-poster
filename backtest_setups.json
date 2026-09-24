@@ -22617,6 +22617,23 @@
       "technical_analysis": "Price (2.853) sits above EMA9 (2.78), EMA21 (2.71), EMA50 (2.66) and EMA200 (2.55), indicating a clear uptrend. MACD line (0.0608) is above its signal (0.0399) with a positive histogram, reinforcing bullish momentum. RSI at 69.5 and Stochastic K/D (75/72) show near‑overbought conditions but still trending higher. ADX at 31 signals a strong trend. Bollinger upper band (2.894) is close to price, suggesting limited upside before a pull‑back. Order‑book shows a slight bid‑side imbalance (2.57% more bids), supporting the long bias.",
       "market_context": "BTC is in a bullish stance on the 1‑day timeframe, and the overall crypto market is broadly positive with 81.9% of assets in green. This favorable backdrop adds confidence to the long setup on MORPHOUSDT.",
       "result": "PENDING"
+    },
+    {
+      "id": 1331,
+      "created_at": "2026-09-24T17:45:50.553798+00:00",
+      "symbol": "OPNUSDT",
+      "direction": "LONG",
+      "title": "Key Support Holds Firm: $OPN Bullish Continuation Setup Active",
+      "entry_low": 0.0525,
+      "entry_high": 0.0529,
+      "stop_loss": 0.0506,
+      "take_profit": 0.0569,
+      "support": 0.052,
+      "resistance": 0.0529,
+      "news_line": "",
+      "technical_analysis": "Price sits above EMA9, EMA21, EMA50 and EMA200, confirming a bullish alignment. MACD histogram is positive (+0.000490) while the signal line is slightly negative, indicating upward momentum. ADX at 24 suggests a moderate trend strength. RSI (67.7) and Stochastic K (90) are in overbought territory, so a pull‑back to the 1H/4H support zone (≈0.052) is expected before any further upside. Order‑book shows a modest ask‑side dominance (imbalance -17.3%). The setup targets a swing move from the current support‑resistance band.",
+      "market_context": "BTC is in a short‑term bearish phase (-0.15% 24h) while the broader crypto market remains broadly positive (75% green). This backdrop supports a risk‑managed long swing on OPNUSDT.",
+      "result": "PENDING"
     }
   ]
 }
