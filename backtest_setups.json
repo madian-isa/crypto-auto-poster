@@ -22158,6 +22158,23 @@
       "technical_analysis": "Price sits near the 1‑hour support at 0.01109 and is trading below the short‑term EMAs (9, 21, 50) but above the 200‑EMA, indicating a potential bounce from longer‑term bias. MACD line (+0.000114) is above its signal, producing a modest bullish histogram. Stochastic K is deep in oversold territory (~19) while RSI is around 38, both hinting at upside potential. Order‑book shows a 22.7% bid‑side imbalance, adding buying pressure. The confluence of bullish MACD, oversold stochastic, and supportive order‑book suggests a tentative long bias.",
       "market_context": "Overall market remains broadly negative (92.6% red) and BTC is in a 24‑hour bearish move (‑2.97%). Despite the down‑trend in Bitcoin, ZK displays relative strength and could benefit from a short‑term reversal.",
       "result": "PENDING"
+    },
+    {
+      "id": 1304,
+      "created_at": "2026-09-24T10:30:58.240016+00:00",
+      "symbol": "IOTXUSDT",
+      "direction": "SHORT",
+      "title": "Strong Rejection at Trendline Resistance: $IOTX Short Entry",
+      "entry_low": 0.003463,
+      "entry_high": 0.003477,
+      "stop_loss": 0.0036088,
+      "take_profit": 0.0031924,
+      "support": 0.003415,
+      "resistance": 0.003578,
+      "news_line": "",
+      "technical_analysis": "Price sits just below the short‑term EMAs (EMA9 0.003505, EMA21 0.003569, EMA50 0.003636) while remaining above EMA200 (0.003416), indicating a short‑term bearish bias within a longer‑term uptrend. RSI at 37.8 is near the lower half of the scale, and the stochastic oscillators are flat around 46‑48, showing no strong momentum. MACD line (-7.48e-05) is marginally above its signal (-8.07e-05), giving a slight bullish hint, but the high ADX (42) confirms a strong prevailing trend, supporting the short bias. Volume has dropped sharply (-56.6%), suggesting weakening buying pressure. The tight 1H/4H",
+      "market_context": "BTC is in a 24‑hour bearish move (‑3.0%) and the broader market is broadly negative (92.7% red). This down‑trend environment adds weight to a short outlook for IOTXUSDT.",
+      "result": "PENDING"
     }
   ]
 }
