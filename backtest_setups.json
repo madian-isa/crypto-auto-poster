@@ -21903,6 +21903,23 @@
       "technical_analysis": "Price sits just above the 1‑hour support (0.001038) and below the 1‑hour resistance (0.001085). EMA9 (0.001028) is beneath price, while EMA21 (0.001040) and EMA50 (0.001051) sit above, suggesting a possible bounce from support. MACD histogram is positive, indicating slight bullish momentum, but Stochastic K at 74.5% is in overbought territory, hinting at a potential pull‑back. ADX above 30 (30.9) confirms a strong trend environment.",
       "market_context": "BTC is in a bearish 24‑hour move (‑2.74%) and the broader market shows a strongly negative breadth (92.2% red). This adds downside pressure to risk assets, making a cautious long near support more appropriate.",
       "result": "PENDING"
+    },
+    {
+      "id": 1289,
+      "created_at": "2026-09-24T07:00:57.409522+00:00",
+      "symbol": "VETUSDT",
+      "direction": "LONG",
+      "title": "Trend Reversal Confirmed for $VET as Volume Spikes Upward",
+      "entry_low": 0.009,
+      "entry_high": 0.0091,
+      "stop_loss": 0.00868,
+      "take_profit": 0.00979,
+      "support": 0.00892,
+      "resistance": 0.009161,
+      "news_line": "",
+      "technical_analysis": "Price sits above the 9, 21 and 50 EMA, with the EMA hierarchy still bullish (EMA9 < EMA21 < EMA50 < EMA200). MACD line is marginally above its signal, producing a small positive histogram. Stochastic %K is in the high 80s, confirming upward momentum. RSI is neutral at 53.8. Order‑book shows a bid‑ask imbalance of ~12% toward bids, indicating buying pressure near the current price.",
+      "market_context": "BTC is in a bearish 4‑hour frame and the broader crypto market is broadly negative, with only 7.8% of assets green. Despite the overall down‑trend, VETUSDT shows localized bullish structure.",
+      "result": "PENDING"
     }
   ]
 }
