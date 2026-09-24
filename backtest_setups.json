@@ -21971,6 +21971,23 @@
       "technical_analysis": "Price sits near the lower half of the 1‑hour range (0.020264‑0.020675). RSI at 42.7 shows room to rise, while Stochastic %K at 73 signals bullish momentum. MACD line (-0.000295) is above its signal (-0.000343) and the histogram is positive, confirming a mild bullish tilt. ADX at 41.7 indicates a strong trend. EMA9 (0.020435) is below price, but EMA21 (0.020673) sits above, suggesting the next hurdle is the 21‑period EMA. Volume has dropped sharply, and the order‑book shows a 22 % ask‑side imbalance, adding caution. Overall, the confluence of MACD, ADX and Stochastic favors a long bias, with th",
       "market_context": "BTC is in a 24‑hour bearish phase (-1.996%) and the broader market is broadly negative (90.2% red). Only about 9.8% of the market is green, reinforcing a cautious outlook for risk assets.",
       "result": "PENDING"
+    },
+    {
+      "id": 1293,
+      "created_at": "2026-09-24T08:00:59.240384+00:00",
+      "symbol": "XRPUSDT",
+      "direction": "LONG",
+      "title": "Golden Cross Formation Confirmed on $XRP 4-Hour Timeframe",
+      "entry_low": 1.5035,
+      "entry_high": 1.5055,
+      "stop_loss": 1.44432,
+      "take_profit": 1.62486,
+      "support": 1.5035,
+      "resistance": 1.5117,
+      "news_line": "",
+      "technical_analysis": "XRP is trading just above the 9‑EMA (1.5030) while still under the 21‑EMA (1.5156) and 50‑EMA (1.5248), indicating short‑term bullish momentum but longer‑term resistance. The MACD line sits above its signal (+0.00186 histogram), confirming a bullish crossover. RSI sits at 43.6, neutral, and the stochastic %K is near 68, suggesting upward bias without being overbought. ADX at 27 shows a moderately strong trend. Order‑book data shows a slight bid‑side imbalance (8.75 % more bids) and a tight spread, adding mild buying pressure. Volume has contracted sharply, so price moves may be more sensitive ",
+      "market_context": "Bitcoin is down ~1.95 % on the 24 h and the overall market breadth is broadly negative (≈90 % red). Despite the bearish backdrop, XRP is holding near key 1‑hour support (1.5035) with a clear bullish signal set, suggesting relative strength versus the broader market.",
+      "result": "PENDING"
     }
   ]
 }
