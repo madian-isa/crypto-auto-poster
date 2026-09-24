@@ -22277,6 +22277,23 @@
       "technical_analysis": "Price sits just above the immediate support (0.0576) and below all short‑term EMAs (EMA9 = 0.05783, EMA21 = 0.05880), indicating bearish pressure. However, the MACD histogram is positive (+0.00017) with the MACD line above its signal, suggesting a short‑term bullish tilt. ADX is high (43.5), confirming a strong trend, while the order‑book shows a bid‑ask imbalance of ~34% favoring bids, adding bullish bias. RSI at 38.3 is neutral‑to‑oversold, and Stochastic K/D are near 55/48, supporting a potential bounce.",
       "market_context": "BTC is in a 24h bearish swing (‑1.93%) and the overall market breadth is broadly negative (89.1% red). This adds caution but does not directly affect the RONINUSDT setup.",
       "result": "PENDING"
+    },
+    {
+      "id": 1311,
+      "created_at": "2026-09-24T13:12:41.930845+00:00",
+      "symbol": "UNIUSDT",
+      "direction": "SHORT",
+      "title": "$UNI Resistance Test Fails: Bearish Momentum Building Fast",
+      "entry_low": 9.0064275,
+      "entry_high": 9.0515725,
+      "stop_loss": 9.39016,
+      "take_profit": 8.30668,
+      "support": 9.05,
+      "resistance": 9.064,
+      "news_line": "",
+      "technical_analysis": "$UNI technical structure shows RSI is 40.1, price is below the 21 EMA, with volume change is -31.5%.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
