@@ -28703,6 +28703,23 @@
       "technical_analysis": "Price is marginally above EMA9 (2.570) and comfortably over EMA21, EMA50 and EMA200, signalling a bullish bias. MACD line (0.036) stays above its signal (0.033) with a positive histogram, confirming upward momentum. RSI at 57 and Stochastic K/D around 71/74 show strong but not yet exhausted buying pressure. Volume has fallen sharply (-82%), suggesting reduced participation. Order‑book shows a tight spread (0.001) with a slight sell‑side imbalance.",
       "market_context": "The broader market is broadly positive (79.5% green). BTC is modestly bullish on the 24‑hour chart (+0.28%), offering a supportive backdrop for risk assets.",
       "result": "PENDING"
+    },
+    {
+      "id": 1689,
+      "created_at": "2026-09-25T04:30:49.771758+00:00",
+      "symbol": "LINKUSDT",
+      "direction": "LONG",
+      "title": "$LINK Outperformance Signal: Buying Momentum Beats Broader Market",
+      "entry_low": 13.3,
+      "entry_high": 13.35,
+      "stop_loss": 12.792,
+      "take_profit": 14.391,
+      "support": 13.195,
+      "resistance": 13.495,
+      "news_line": "",
+      "technical_analysis": "Price sits above the 9‑, 21‑, 50‑ and 200‑EMA, confirming a strong uptrend. MACD line (0.234) is above its signal (0.188) with a positive histogram, while RSI at 65.5 shows solid momentum without being over‑extended. Stochastic %K (89.6) is high but still rising, and ADX above 45 signals a vigorous trend. Order‑book imbalance (+26% bid side) adds buying pressure. These factors align for a bullish bias.",
+      "market_context": "BTC is marginally higher (+0.3%) and in a bullish stance on daily, while the broader market is broadly positive with 78% of assets in green. This backdrop supports a long outlook for LINK.",
+      "result": "PENDING"
     }
   ]
 }
