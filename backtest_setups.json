@@ -29621,6 +29621,23 @@
       "technical_analysis": "$RESOLV fallback technical analysis: RSI is 67.3, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is contracting by 60.8%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 1743,
+      "created_at": "2026-09-25T19:55:02.314876+00:00",
+      "symbol": "ARBUSDT",
+      "direction": "LONG",
+      "title": "Trend Reversal Confirmed for $ARB as Volume Spikes Upward",
+      "entry_low": 0.22433775,
+      "entry_high": 0.22546225,
+      "stop_loss": 0.215716,
+      "take_profit": 0.243268,
+      "support": 0.2168,
+      "resistance": 0.2238,
+      "news_line": "",
+      "technical_analysis": "$ARB fallback technical analysis: RSI is 58.2, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is contracting by 1.0%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
