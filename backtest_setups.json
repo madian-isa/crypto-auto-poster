@@ -28397,6 +28397,23 @@
       "technical_analysis": "$ALICE technical structure shows RSI is 64.3, price is above the 21 EMA, with MACD is above its signal line.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 1671,
+      "created_at": "2026-09-25T00:15:53.821019+00:00",
+      "symbol": "JUPUSDT",
+      "direction": "LONG",
+      "title": "$JUP Holds Moving Average Support: High Probability Long Setup",
+      "entry_low": 0.3005,
+      "entry_high": 0.3015,
+      "stop_loss": 0.289,
+      "take_profit": 0.325,
+      "support": 0.299,
+      "resistance": 0.3052,
+      "news_line": "",
+      "technical_analysis": "Price sits above EMA9 (0.3014), EMA21 (0.2979) and EMA50 (0.2953), confirming an up‑trend. MACD histogram is positive (0.00071) and the line is above the signal, adding bullish momentum. RSI at 55.6 is neutral‑bullish, while Stochastic K at 66% shows some overbought pressure but not extreme. ADX around 24 indicates a moderate trend. Order‑book shows a slight bid‑side imbalance (3.86%). Volume has contracted sharply, suggesting a pause, but the confluence of EMA alignment, MACD, and order‑book bias supports a long bias.",
+      "market_context": "BTC is in a bullish phase on both 4H and 1D charts, and the broader crypto market is broadly positive (83% green). This backdrop reinforces the bullish outlook for JUPUSDT.",
+      "result": "PENDING"
     }
   ]
 }
