@@ -794,15 +794,26 @@ def _fallback_technical_text(
     indicators = indicators or {}
 
     parts = []
+    direction = str(direction or "").upper().strip()
 
-    rsi = _safe_float(
-        indicators.get("rsi")
+    rsi = _indicator_number(
+        indicators,
+        "rsi",
+        "rsi14",
     )
 
     if rsi is not None:
-        parts.append(
-            f"RSI is {rsi:.1f}"
-        )
+        if direction == "LONG":
+            rsi_read = (
+                "RSI is {:.1f}, showing bullish momentum without "
+                "being deeply overbought"
+            ).format(rsi)
+        else:
+            rsi_read = (
+                "RSI is {:.1f}, showing weakening momentum without "
+                "being deeply oversold"
+            ).format(rsi)
+        parts.append(rsi_read)
 
     price = _get_current_price(
         indicators
@@ -817,13 +828,21 @@ def _fallback_technical_text(
         and ema21 is not None
     ):
 
-        if price > ema21:
+        if direction == "LONG" and price > ema21:
             parts.append(
-                "price is above the 21 EMA"
+                "price is holding above the 21 EMA, supporting the bullish bias"
+            )
+        elif direction == "SHORT" and price < ema21:
+            parts.append(
+                "price is trading below the 21 EMA, supporting the bearish bias"
+            )
+        elif price > ema21:
+            parts.append(
+                "price is above the 21 EMA, but this needs confirmation"
             )
         else:
             parts.append(
-                "price is below the 21 EMA"
+                "price is below the 21 EMA, so recovery strength remains limited"
             )
 
     macd, macd_signal = _get_macd_values(indicators)
@@ -833,14 +852,21 @@ def _fallback_technical_text(
         and macd_signal is not None
     ):
 
-        if macd > macd_signal:
+        if direction == "LONG" and macd > macd_signal:
             parts.append(
-                "MACD is above its signal line"
+                "MACD is above its signal line, confirming positive momentum"
             )
-
+        elif direction == "SHORT" and macd < macd_signal:
+            parts.append(
+                "MACD is below its signal line, confirming negative momentum"
+            )
+        elif macd > macd_signal:
+            parts.append(
+                "MACD is above its signal line, although the move still needs follow-through"
+            )
         elif macd < macd_signal:
             parts.append(
-                "MACD is below its signal line"
+                "MACD is below its signal line, so upside recovery remains weak"
             )
 
     volume_change = _safe_float(
@@ -851,30 +877,68 @@ def _fallback_technical_text(
 
     if volume_change is not None:
 
+        volume_word = "expanding" if volume_change > 0 else "contracting"
         parts.append(
-            f"volume change is {volume_change:.1f}%"
+            f"volume is {volume_word} by {abs(volume_change):.1f}%"
         )
+
+    ema50 = _safe_float(indicators.get("ema50"))
+    ema200 = _safe_float(indicators.get("ema200"))
+    if price is not None and ema50 is not None:
+        if direction == "LONG" and price > ema50:
+            parts.append("price is above the 50 EMA, keeping the short-term structure constructive")
+        elif direction == "SHORT" and price < ema50:
+            parts.append("price is below the 50 EMA, keeping the short-term structure weak")
+    if price is not None and ema200 is not None:
+        if direction == "LONG" and price > ema200:
+            parts.append("price is above the 200 EMA, supporting the broader bullish trend")
+        elif direction == "SHORT" and price < ema200:
+            parts.append("price is below the 200 EMA, supporting the broader bearish trend")
+
+    adx = _safe_float(indicators.get("adx"))
+    if adx is not None:
+        parts.append(
+            f"ADX is {adx:.1f}, indicating "
+            + ("a developing trend" if adx >= 20 else "limited trend strength")
+        )
+
+    stochastic = _get_stochastic_k(indicators)
+    if stochastic is not None:
+        if direction == "LONG":
+            parts.append(f"Stochastic is {stochastic:.1f}, leaving room for upside continuation")
+        else:
+            parts.append(f"Stochastic is {stochastic:.1f}, leaving room for further downside")
 
     if not parts:
 
         return (
-            f"${coin} is being evaluated from "
-            f"the available market structure."
+            f"${coin} fallback analysis uses the available price structure, "
+            f"but the indicator set is limited. The {direction.lower()} bias "
+            f"should be treated as conditional and requires confirmation near the entry zone."
         )
 
-    if len(parts) == 1:
+    selected = parts[:5]
+    if len(selected) == 1:
+        evidence = selected[0]
+    elif len(selected) == 2:
+        evidence = f"{selected[0]}, while {selected[1]}"
+    else:
+        evidence = ", ".join(selected[:-1]) + f", and {selected[-1]}"
 
-        return (
-            f"${coin} technical structure shows "
-            f"{parts[0]}."
+    if direction == "LONG":
+        conclusion = (
+            "Together, these signals support a conditional LONG continuation setup. "
+            "Buyers still need to defend the entry zone and follow through toward resistance."
         )
-
-    selected = parts[:3]
+    else:
+        conclusion = (
+            "Together, these signals support a conditional SHORT continuation setup. "
+            "Sellers still need to hold the entry zone and push price toward lower support."
+        )
 
     return (
-        f"${coin} technical structure shows "
-        + ", ".join(selected[:-1])
-        + f", with {selected[-1]}."
+        f"${coin} fallback technical analysis: {evidence}. "
+        f"{conclusion}"
     )
 
 
@@ -1295,19 +1359,13 @@ Return JSON only:
         "LONG",
         "SHORT",
     ):
-
-        direction = _fallback_direction(
-            indicators,
-            advanced_market_data,
+        raise RuntimeError(
+            f"Groq returned an invalid direction for ${coin}; setup rejected."
         )
 
     if direction is None:
-        return _python_fallback_setup(
-            symbol=symbol,
-            indicators=indicators,
-            news=news,
-            market_context=market_context,
-            advanced_market_data=advanced_market_data,
+        raise RuntimeError(
+            f"Groq did not provide a direction for ${coin}; setup rejected."
         )
 
     if not _signal_quality_ok(indicators, direction):
@@ -1315,12 +1373,9 @@ Return JSON only:
             f"[setup_generator] "
             f"Rejected conflicting {direction} setup for ${coin}."
         )
-        return _python_fallback_setup(
-            symbol=symbol,
-            indicators=indicators,
-            news=news,
-            market_context=market_context,
-            advanced_market_data=advanced_market_data,
+        raise RuntimeError(
+            f"Groq {direction} setup conflicts with technical indicators "
+            f"for ${coin}; no fallback after successful AI response."
         )
 
     setup["direction"] = direction
@@ -1461,13 +1516,9 @@ Return JSON only:
             )
 
     else:
-
-        return _python_fallback_setup(
-            symbol=symbol,
-            indicators=indicators,
-            news=news,
-            market_context=market_context,
-            advanced_market_data=advanced_market_data,
+        raise RuntimeError(
+            f"Groq returned no valid entry for ${coin}; "
+            "no fallback after successful AI response."
         )
 
     setup["stop_loss"] = ai_stop
