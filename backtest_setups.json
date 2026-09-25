@@ -29774,6 +29774,23 @@
       "technical_analysis": "$PUMP fallback technical analysis: RSI is 55.9, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is contracting by 40.5%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 1752,
+      "created_at": "2026-09-25T22:01:05.168880+00:00",
+      "symbol": "CUSDT",
+      "direction": "LONG",
+      "title": "Buyers Defend Key Demand Zone: $C Ready for Extension",
+      "entry_low": 0.08628375,
+      "entry_high": 0.08671625,
+      "stop_loss": 0.0816895,
+      "take_profit": 0.096121,
+      "support": 0.0821,
+      "resistance": 0.087,
+      "news_line": "",
+      "technical_analysis": "$C fallback technical analysis: RSI is 70.9, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is contracting by 4.6%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
