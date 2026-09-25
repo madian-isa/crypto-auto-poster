@@ -29281,6 +29281,23 @@
       "technical_analysis": "$APT fallback technical analysis: RSI is 68.5, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is expanding by 45.3%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 1723,
+      "created_at": "2026-09-25T15:15:59.767856+00:00",
+      "symbol": "AXSUSDT",
+      "direction": "LONG",
+      "title": "Key Support Holds Firm: $AXS Bullish Continuation Setup Active",
+      "entry_low": 1.179045,
+      "entry_high": 1.184955,
+      "stop_loss": 1.13472,
+      "take_profit": 1.27656,
+      "support": 1.149,
+      "resistance": 1.201,
+      "news_line": "",
+      "technical_analysis": "$AXS fallback technical analysis: RSI is 63.1, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is expanding by 62.9%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
