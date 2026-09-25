@@ -29298,6 +29298,23 @@
       "technical_analysis": "$AXS fallback technical analysis: RSI is 63.1, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is expanding by 62.9%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 1724,
+      "created_at": "2026-09-25T15:30:55.939529+00:00",
+      "symbol": "REZUSDT",
+      "direction": "LONG",
+      "title": "$REZ Breaks Out of Falling Wedge Pattern: Targets Set Higher",
+      "entry_low": 0.004117,
+      "entry_high": 0.004148,
+      "stop_loss": 0.003939,
+      "take_profit": 0.0045195,
+      "support": 0.003939,
+      "resistance": 0.004222,
+      "news_line": "",
+      "technical_analysis": "Price sits above the 9, 21, 50 and 200 EMA, confirming a bullish hierarchy. MACD line (7.35e-05) is above its signal (4.68e-05) with a positive histogram, indicating upward momentum. Order‑book shows a 14.5% bid imbalance, supporting buying pressure. RSI at 71.6 and Stochastic K/D in the 80s signal overbought conditions, so a pull‑back toward the 0.004117 support is plausible before a move toward the next swing high.",
+      "market_context": "BTC is in a short‑term bearish stance (‑0.47% 24h), yet the broader market remains broadly positive with ~80% green assets. This mixed backdrop does not materially affect REZ's bullish micro‑structure.",
+      "result": "PENDING"
     }
   ]
 }
