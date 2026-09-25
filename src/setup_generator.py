@@ -1302,12 +1302,9 @@ Return JSON only:
         )
 
     if direction is None:
-        return _python_fallback_setup(
-            symbol=symbol,
-            indicators=indicators,
-            news=news,
-            market_context=market_context,
-            advanced_market_data=advanced_market_data,
+        raise RuntimeError(
+            f"AI returned no valid direction for ${coin}; "
+            "setup rejected."
         )
 
     if not _signal_quality_ok(indicators, direction):
@@ -1315,12 +1312,9 @@ Return JSON only:
             f"[setup_generator] "
             f"Rejected conflicting {direction} setup for ${coin}."
         )
-        return _python_fallback_setup(
-            symbol=symbol,
-            indicators=indicators,
-            news=news,
-            market_context=market_context,
-            advanced_market_data=advanced_market_data,
+        raise RuntimeError(
+            f"AI setup failed technical validation for ${coin}; "
+            "setup rejected."
         )
 
     setup["direction"] = direction
@@ -1461,13 +1455,9 @@ Return JSON only:
             )
 
     else:
-
-        return _python_fallback_setup(
-            symbol=symbol,
-            indicators=indicators,
-            news=news,
-            market_context=market_context,
-            advanced_market_data=advanced_market_data,
+        raise RuntimeError(
+            f"AI returned invalid entry data for ${coin}; "
+            "setup rejected."
         )
 
     setup["stop_loss"] = ai_stop
