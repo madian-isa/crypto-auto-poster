@@ -29553,6 +29553,23 @@
       "technical_analysis": "$WIF fallback technical analysis: RSI is 54.0, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is contracting by 11.6%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 1739,
+      "created_at": "2026-09-25T19:01:30.312400+00:00",
+      "symbol": "USD1USDT",
+      "direction": "LONG",
+      "title": "Major Breakout Signals Emerge on $USD1 Higher Timeframes",
+      "entry_low": 0.99723068,
+      "entry_high": 1.00222933,
+      "stop_loss": 0.9597408,
+      "take_profit": 1.07970841,
+      "support": 0.99963,
+      "resistance": 0.9999,
+      "news_line": "",
+      "technical_analysis": "$USD1 fallback technical analysis: RSI is 58.9, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is contracting by 20.3%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }

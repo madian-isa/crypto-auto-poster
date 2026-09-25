@@ -1,6 +1,6 @@
 {
   "date": "2026-09-25",
-  "count": 69,
+  "count": 70,
   "posted_symbols_today": [
     "ALICEUSDT",
     "JUPUSDT",
@@ -70,6 +70,7 @@
     "IOUSDT",
     "VTHOUSDT",
     "GRTUSDT",
-    "WIFUSDT"
+    "WIFUSDT",
+    "USD1USDT"
   ]
 }
