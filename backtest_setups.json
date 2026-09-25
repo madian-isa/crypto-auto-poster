@@ -29587,6 +29587,23 @@
       "technical_analysis": "$STG fallback technical analysis: RSI is 68.5, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is expanding by 148.0%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 1741,
+      "created_at": "2026-09-25T19:31:00.514010+00:00",
+      "symbol": "ASTERUSDT",
+      "direction": "LONG",
+      "title": "$ASTER Buying Pressure Rises as Bulls Test Key Resistance",
+      "entry_low": 0.7351575,
+      "entry_high": 0.7388425,
+      "stop_loss": 0.70752,
+      "take_profit": 0.79596,
+      "support": 0.7171,
+      "resistance": 0.7387,
+      "news_line": "",
+      "technical_analysis": "$ASTER fallback technical analysis: RSI is 65.1, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is contracting by 34.5%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
