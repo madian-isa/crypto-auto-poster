@@ -28992,6 +28992,23 @@
       "technical_analysis": "Price at 0.06518 sits above EMA9 (0.06342), EMA21 (0.06229), EMA50 (0.06102) and EMA200 (0.05559), confirming a solid uptrend. MACD line (0.00110) is above its signal (0.00087) with a positive histogram (0.00023). ADX is strong at 40, indicating a robust trend. RSI is 69.2, near overbought but not yet extreme. Stochastic K (69.8) is below D (84.1), hinting at a possible short‑term pause while momentum stays bullish. Price has broken the Bollinger upper band (0.06487), adding upward bias. Orderbook shows a modest buy‑side imbalance (5.2%).",
       "market_context": "BTC remains bullish on both 4H and 1D timeframes, trading around $84.7k with EMA20 above EMA50. Overall market breadth is strongly positive (92.9% green), supporting a risk‑on environment for altcoins like SEI.",
       "result": "PENDING"
+    },
+    {
+      "id": 1706,
+      "created_at": "2026-09-25T10:02:41.425481+00:00",
+      "symbol": "CFGUSDT",
+      "direction": "LONG",
+      "title": "$CFG Buying Pressure Rises as Bulls Test Key Resistance",
+      "entry_low": 0.152,
+      "entry_high": 0.154,
+      "stop_loss": 0.1467,
+      "take_profit": 0.1656,
+      "support": 0.151,
+      "resistance": 0.1564,
+      "news_line": "",
+      "technical_analysis": "Price sits above the EMA9 (0.1536), EMA21 (0.1511) and EMA50 (0.1469), confirming an up‑trend. The MACD line (0.00271) is above its signal (0.00257) with a positive histogram, while ADX (31.8) shows a strong trend. RSI at 66 and Stochastic K/D in the low‑80s indicate bullish momentum, though they hint at overbought conditions. Order‑book imbalance (+7.6% bids) adds buying pressure. The 1H swing range is 0.151 – 0.1564, with the price near the upper side, suggesting a continuation bias.",
+      "market_context": "BTC remains in a bullish phase on both 4H and 1D timeframes, and the broader crypto market is broadly positive (≈94% green). This backdrop supports a cautious long bias on CFGUSDT.",
+      "result": "PENDING"
     }
   ]
 }
