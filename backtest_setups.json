@@ -28414,6 +28414,23 @@
       "technical_analysis": "Price sits above EMA9 (0.3014), EMA21 (0.2979) and EMA50 (0.2953), confirming an up‑trend. MACD histogram is positive (0.00071) and the line is above the signal, adding bullish momentum. RSI at 55.6 is neutral‑bullish, while Stochastic K at 66% shows some overbought pressure but not extreme. ADX around 24 indicates a moderate trend. Order‑book shows a slight bid‑side imbalance (3.86%). Volume has contracted sharply, suggesting a pause, but the confluence of EMA alignment, MACD, and order‑book bias supports a long bias.",
       "market_context": "BTC is in a bullish phase on both 4H and 1D charts, and the broader crypto market is broadly positive (83% green). This backdrop reinforces the bullish outlook for JUPUSDT.",
       "result": "PENDING"
+    },
+    {
+      "id": 1672,
+      "created_at": "2026-09-25T00:30:56.425379+00:00",
+      "symbol": "AUSDT",
+      "direction": "LONG",
+      "title": "Bullish Divergence Flashed on $A Daily Chart Structure",
+      "entry_low": 0.099,
+      "entry_high": 0.0994,
+      "stop_loss": 0.095232,
+      "take_profit": 0.107136,
+      "support": 0.0968,
+      "resistance": 0.0997,
+      "news_line": "",
+      "technical_analysis": "Price sits above EMA9 (0.09838), EMA21 (0.09684), EMA50 (0.09547) and EMA200 (0.09043), indicating a bullish bias. MACD histogram is positive (0.00037) with the MACD line above its signal, reinforcing upward momentum. RSI at 66.8 and Stochastic K/D in the high 80s show strength but suggest the pair is approaching overbought territory. ADX of 34 confirms a strong trend. Volume has surged (+124%), supporting the move. Order‑book shows a modest ask‑side pressure (‑9% imbalance) and a tight spread, hinting limited immediate downside.",
+      "market_context": "BTC is in a bullish phase on both 4H and 1D frames, and the overall crypto market is broadly positive (82% green). This broader strength adds context to the bullish setup for AUSDT.",
+      "result": "PENDING"
     }
   ]
 }
