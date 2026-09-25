@@ -28975,6 +28975,23 @@
       "technical_analysis": "Price (0.4474) sits above EMA9, EMA21, EMA50 and EMA200, confirming an uptrend. ADX at 30.3 signals a strong trend. MACD histogram is positive and RSI at 63 shows momentum without being over‑extended. Volume is up ~35%, adding conviction. Bollinger upper band (0.4495) is near current price, leaving limited upside before the 1‑hour resistance at 0.4575. Order‑book shows a modest ask‑side imbalance, but the overall structure remains bullish.",
       "market_context": "BTC is in a bullish phase on both 4H and 1D timeframes, and the broader market is broadly positive (90% green). This supportive backdrop aligns with the long bias for WLDUSDT.",
       "result": "PENDING"
+    },
+    {
+      "id": 1705,
+      "created_at": "2026-09-25T09:32:27.559477+00:00",
+      "symbol": "SEIUSDT",
+      "direction": "LONG",
+      "title": "$SEI Breakout Confirmation: Bulls Target Next Supply Zone",
+      "entry_low": 0.0645,
+      "entry_high": 0.065,
+      "stop_loss": 0.0622,
+      "take_profit": 0.06985,
+      "support": 0.06231,
+      "resistance": 0.06709,
+      "news_line": "",
+      "technical_analysis": "Price at 0.06518 sits above EMA9 (0.06342), EMA21 (0.06229), EMA50 (0.06102) and EMA200 (0.05559), confirming a solid uptrend. MACD line (0.00110) is above its signal (0.00087) with a positive histogram (0.00023). ADX is strong at 40, indicating a robust trend. RSI is 69.2, near overbought but not yet extreme. Stochastic K (69.8) is below D (84.1), hinting at a possible short‑term pause while momentum stays bullish. Price has broken the Bollinger upper band (0.06487), adding upward bias. Orderbook shows a modest buy‑side imbalance (5.2%).",
+      "market_context": "BTC remains bullish on both 4H and 1D timeframes, trading around $84.7k with EMA20 above EMA50. Overall market breadth is strongly positive (92.9% green), supporting a risk‑on environment for altcoins like SEI.",
+      "result": "PENDING"
     }
   ]
 }
