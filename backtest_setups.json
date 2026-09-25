@@ -29400,6 +29400,23 @@
       "technical_analysis": "Price sits above EMA9, EMA21, EMA50 and EMA200, confirming a bullish trend. MACD line (0.021) is above its signal (0.012) with a positive histogram, adding momentum. ADX at 28.9 shows moderate trend strength. Volume has surged ~63%, indicating strong participation. RSI at 63.8 and Stochastic K/D in the mid‑80s suggest the market is near overbought but still holding higher.",
       "market_context": "BTC is down 0.78% over 24 h, yet the broader market remains broadly positive (67.4% green). The order book shows a slight ask imbalance (-7.18%), but the breakout above the 1‑hour resistance (1.559) supports the bullish outlook.",
       "result": "PENDING"
+    },
+    {
+      "id": 1730,
+      "created_at": "2026-09-25T16:45:51.208281+00:00",
+      "symbol": "ZKUSDT",
+      "direction": "LONG",
+      "title": "Bullish Divergence Flashed on $ZK Daily Chart Structure",
+      "entry_low": 0.01275802,
+      "entry_high": 0.01282197,
+      "stop_loss": 0.01214895,
+      "take_profit": 0.01407208,
+      "support": 0.01221,
+      "resistance": 0.0132,
+      "news_line": "",
+      "technical_analysis": "$ZK fallback technical analysis: RSI is 71.3, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is expanding by 320.9%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
