@@ -28890,6 +28890,23 @@
       "technical_analysis": "$ONG technical structure shows RSI is 63.7, price is above the 21 EMA, with MACD is above its signal line.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 1700,
+      "created_at": "2026-09-25T08:21:05.198464+00:00",
+      "symbol": "VELODROMEUSDT",
+      "direction": "LONG",
+      "title": "Major Breakout Signals Emerge on $VELODROME Higher Timeframes",
+      "entry_low": 0.03095242,
+      "entry_high": 0.03110757,
+      "stop_loss": 0.0298102,
+      "take_profit": 0.03346958,
+      "support": 0.02996,
+      "resistance": 0.03167,
+      "news_line": "",
+      "technical_analysis": "$VELODROME technical structure shows RSI is 66.4, price is above the 21 EMA, with MACD is above its signal line.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
