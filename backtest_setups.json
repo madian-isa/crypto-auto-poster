@@ -29383,6 +29383,23 @@
       "technical_analysis": "$DOGE fallback technical analysis: RSI is 58.8, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is expanding by 93.4%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 1729,
+      "created_at": "2026-09-25T16:30:54.331807+00:00",
+      "symbol": "ZROUSDT",
+      "direction": "LONG",
+      "title": "High R-Multiple Long Trade Setup Forming on $ZRO",
+      "entry_low": 1.559,
+      "entry_high": 1.574,
+      "stop_loss": 1.497,
+      "take_profit": 1.7055,
+      "support": 1.497,
+      "resistance": 1.559,
+      "news_line": "",
+      "technical_analysis": "Price sits above EMA9, EMA21, EMA50 and EMA200, confirming a bullish trend. MACD line (0.021) is above its signal (0.012) with a positive histogram, adding momentum. ADX at 28.9 shows moderate trend strength. Volume has surged ~63%, indicating strong participation. RSI at 63.8 and Stochastic K/D in the mid‑80s suggest the market is near overbought but still holding higher.",
+      "market_context": "BTC is down 0.78% over 24 h, yet the broader market remains broadly positive (67.4% green). The order book shows a slight ask imbalance (-7.18%), but the breakout above the 1‑hour resistance (1.559) supports the bullish outlook.",
+      "result": "PENDING"
     }
   ]
 }
