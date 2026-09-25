@@ -1,6 +1,6 @@
 {
   "date": "2026-09-25",
-  "count": 65,
+  "count": 66,
   "posted_symbols_today": [
     "ALICEUSDT",
     "JUPUSDT",
@@ -66,6 +66,7 @@
     "SYNUSDT",
     "ETHFIUSDT",
     "CHIPUSDT",
-    "LSKUSDT"
+    "LSKUSDT",
+    "IOUSDT"
   ]
 }
