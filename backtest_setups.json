@@ -29009,6 +29009,23 @@
       "technical_analysis": "Price sits above the EMA9 (0.1536), EMA21 (0.1511) and EMA50 (0.1469), confirming an up‑trend. The MACD line (0.00271) is above its signal (0.00257) with a positive histogram, while ADX (31.8) shows a strong trend. RSI at 66 and Stochastic K/D in the low‑80s indicate bullish momentum, though they hint at overbought conditions. Order‑book imbalance (+7.6% bids) adds buying pressure. The 1H swing range is 0.151 – 0.1564, with the price near the upper side, suggesting a continuation bias.",
       "market_context": "BTC remains in a bullish phase on both 4H and 1D timeframes, and the broader crypto market is broadly positive (≈94% green). This backdrop supports a cautious long bias on CFGUSDT.",
       "result": "PENDING"
+    },
+    {
+      "id": 1707,
+      "created_at": "2026-09-25T10:30:56.408029+00:00",
+      "symbol": "MANAUSDT",
+      "direction": "LONG",
+      "title": "Major Breakout Signals Emerge on $MANA Higher Timeframes",
+      "entry_low": 0.0889,
+      "entry_high": 0.0893,
+      "stop_loss": 0.0855,
+      "take_profit": 0.0963,
+      "support": 0.0887,
+      "resistance": 0.0923,
+      "news_line": "",
+      "technical_analysis": "Price sits at 0.091, comfortably above EMA9 (0.0902), EMA21 (0.0887), EMA50 (0.0871) and EMA200 (0.0832), indicating a clear uptrend. MACD line (0.0015) is above its signal (0.00128) with a positive histogram, confirming bullish momentum. RSI is at 68.4 and Stochastic K/D are in the low‑70s, showing strength but approaching overbought territory. ADX at 48.9 signals a strong trend. Order‑book shows a modest ask‑side imbalance (-6.8%), but the overall market bias remains bullish.",
+      "market_context": "BTC is in a bullish stance on both 4H and 1D frames, and the broader crypto market is 94% green, supporting risk‑on sentiment for altcoins like MANA.",
+      "result": "PENDING"
     }
   ]
 }
