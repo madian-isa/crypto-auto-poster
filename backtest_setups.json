@@ -28788,6 +28788,23 @@
       "technical_analysis": "$ALGO technical structure shows RSI is 60.8, price is above the 21 EMA, with MACD is above its signal line.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 1694,
+      "created_at": "2026-09-25T06:30:51.508131+00:00",
+      "symbol": "PHAUSDT",
+      "direction": "LONG",
+      "title": "Buyers Defend Key Demand Zone: $PHA Ready for Extension",
+      "entry_low": 0.0505,
+      "entry_high": 0.0515,
+      "stop_loss": 0.049,
+      "take_profit": 0.055,
+      "support": 0.0494,
+      "resistance": 0.0584,
+      "news_line": "",
+      "technical_analysis": "Price sits at 0.0534, comfortably above EMA9 (0.05086), EMA21 (0.05006), EMA50 (0.04888) and EMA200 (0.04217), indicating a clear uptrend. RSI is 69.9 and Stochastic K is 75.8, showing bullish momentum but approaching overbought zones. MACD line (0.00084) is above its signal (0.00074) with a positive histogram, confirming bullish bias. ADX at 29.9 signals a strong trend. Bollinger upper band sits at 0.05257, price is slightly above it, suggesting a short‑term stretch but still within a higher‑level range. Order‑book shows a 10.4% bid imbalance and best bid/ask around 0.056, adding buying press",
+      "market_context": "BTC is marginally bearish on the 24‑hour chart (‑0.12%), yet the broader crypto market remains broadly positive with 75.6% of assets in green. The overall sentiment supports risk‑on positioning for assets showing strong internal momentum like PHA.",
+      "result": "PENDING"
     }
   ]
 }
