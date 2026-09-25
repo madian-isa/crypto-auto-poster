@@ -28839,6 +28839,23 @@
       "technical_analysis": "$TRX technical structure shows RSI is 38.7, price is below the 21 EMA, with MACD is below its signal line.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 1697,
+      "created_at": "2026-09-25T07:17:20.635341+00:00",
+      "symbol": "FETUSDT",
+      "direction": "LONG",
+      "title": "$FET Volume Expansion Signals High Conviction Upward Move",
+      "entry_low": 0.22912575,
+      "entry_high": 0.23027425,
+      "stop_loss": 0.2197955,
+      "take_profit": 0.249509,
+      "support": 0.2209,
+      "resistance": 0.2299,
+      "news_line": "",
+      "technical_analysis": "$FET technical structure shows RSI is 68.0, price is above the 21 EMA, with MACD is above its signal line.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
