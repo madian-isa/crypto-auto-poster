@@ -28567,6 +28567,23 @@
       "technical_analysis": "Price is just above the 1‑hour support (0.01631) and below the 0.01664 resistance. The EMA stack is bullish (price > EMA21 > EMA50 > EMA200) with EMA9 marginally higher, indicating short‑term strength. MACD line sits above its signal and the histogram is positive, while RSI at 54 is neutral. Stochastic shows K at 70% and D at 78%, hinting at overbought conditions but still holding. ADX around 21 points to a weak trend. Order‑book shows a modest 7% bid‑side imbalance, supporting the upside bias.",
       "market_context": "BTC is in a bullish trend on both 4‑hour and daily charts, and the broader crypto market is broadly positive with 84.6% of assets in green.",
       "result": "PENDING"
+    },
+    {
+      "id": 1681,
+      "created_at": "2026-09-25T02:31:03.852529+00:00",
+      "symbol": "ARKMUSDT",
+      "direction": "LONG",
+      "title": "Golden Cross Formation Confirmed on $ARKM 4-Hour Timeframe",
+      "entry_low": 0.1286775,
+      "entry_high": 0.1293225,
+      "stop_loss": 0.12384,
+      "take_profit": 0.13932,
+      "support": 0.1282,
+      "resistance": 0.1312,
+      "news_line": "",
+      "technical_analysis": "$ARKM technical structure shows RSI is 56.9, price is above the 21 EMA, with MACD is above its signal line.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
