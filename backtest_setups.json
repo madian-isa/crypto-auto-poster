@@ -28618,6 +28618,23 @@
       "technical_analysis": "$INIT technical structure shows RSI is 62.2, price is above the 21 EMA, with MACD is above its signal line.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 1684,
+      "created_at": "2026-09-25T03:15:58.966502+00:00",
+      "symbol": "FFUSDT",
+      "direction": "LONG",
+      "title": "Bullish Divergence Flashed on $FF Daily Chart Structure",
+      "entry_low": 0.1370166,
+      "entry_high": 0.1377034,
+      "stop_loss": 0.1318656,
+      "take_profit": 0.1483488,
+      "support": 0.12909,
+      "resistance": 0.13739,
+      "news_line": "",
+      "technical_analysis": "$FF technical structure shows RSI is 64.5, price is above the 21 EMA, with MACD is above its signal line.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
