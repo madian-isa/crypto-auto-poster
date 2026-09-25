@@ -28482,6 +28482,23 @@
       "technical_analysis": "$NEAR technical structure shows RSI is 55.3, price is above the 21 EMA, with MACD is above its signal line.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 1676,
+      "created_at": "2026-09-25T01:15:48.725376+00:00",
+      "symbol": "SUIUSDT",
+      "direction": "LONG",
+      "title": "$SUI Breaks Out of Falling Wedge Pattern: Targets Set Higher",
+      "entry_low": 1.05266175,
+      "entry_high": 1.05793825,
+      "stop_loss": 1.0104225,
+      "take_profit": 1.145055,
+      "support": 1.0155,
+      "resistance": 1.0598,
+      "news_line": "",
+      "technical_analysis": "$SUI technical structure shows RSI is 70.0, price is above the 21 EMA, with MACD is above its signal line.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
