@@ -29468,6 +29468,23 @@
       "technical_analysis": "$CHIP fallback technical analysis: RSI is 61.5, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is contracting by 23.6%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 1734,
+      "created_at": "2026-09-25T17:45:50.654694+00:00",
+      "symbol": "LSKUSDT",
+      "direction": "SHORT",
+      "title": "Panic Selling Risk Increases as $LSK Tests Critical Floor",
+      "entry_low": 0.3445,
+      "entry_high": 0.3465,
+      "stop_loss": 0.35932,
+      "take_profit": 0.31786,
+      "support": 0.3413,
+      "resistance": 0.357,
+      "news_line": "",
+      "technical_analysis": "Price (0.3429) sits below EMA9 (0.3497), EMA21 (0.3605), EMA50 (0.3643) and EMA200 (0.3806), confirming a bearish medium‑term structure. MACD is negative and below its signal line, while the histogram remains bearish. RSI at 38.8 and Stochastic K/D around 26/23 suggest the market is not yet oversold but lacks buying momentum. ADX ~21 indicates a weak trend. Order‑book shows a bid‑side imbalance (45% more bid value), yet the price is trading near the 1H/4H support level (0.3413) and well under the nearest resistance (0.357).",
+      "market_context": "BTC is down 0.4% over 24 h, adding a bearish backdrop, but overall market breadth remains broadly positive (≈76% green).",
+      "result": "PENDING"
     }
   ]
 }
