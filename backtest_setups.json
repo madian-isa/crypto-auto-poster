@@ -28533,6 +28533,23 @@
       "technical_analysis": "$TIA technical structure shows RSI is 56.5, price is above the 21 EMA, with MACD is above its signal line.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 1679,
+      "created_at": "2026-09-25T02:00:56.636234+00:00",
+      "symbol": "ENAUSDT",
+      "direction": "LONG",
+      "title": "$ENA Liquidation Squeeze: Bears Trapped Near Critical Resistance",
+      "entry_low": 0.2225,
+      "entry_high": 0.2245,
+      "stop_loss": 0.2145,
+      "take_profit": 0.2415,
+      "support": 0.2133,
+      "resistance": 0.2375,
+      "news_line": "",
+      "technical_analysis": "Price sits above EMA9 (0.2242), EMA21 (0.2185) and EMA50 (0.2141), showing a clean bullish EMA hierarchy. MACD line (0.0052) is above its signal (0.0035) with a positive histogram, confirming upward momentum. ADX at 35.6 indicates a strong trend. RSI at 61.8 is comfortably above 50, while Stochastic K (70.5) is near overbought but D (86.8) suggests the momentum may soon temper, supporting a controlled long approach. Volume surged 66% on the 24‑h chart, adding conviction.",
+      "market_context": "BTC is in a bullish phase on both 4H and 1D frames, and the broader market is broadly positive (≈84% green). This backdrop reinforces the upside bias for ENA.",
+      "result": "PENDING"
     }
   ]
 }
