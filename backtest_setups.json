@@ -29196,6 +29196,23 @@
       "technical_analysis": "Price sits above the 9, 21 and 50 EMA, with EMA9 still leading EMA21, indicating bullish short‑term momentum. MACD line is above its signal and the histogram is positive, reinforcing the uptrend. RSI at 65 and Stochastic K/D in the high‑80s suggest strength, while ADX above 30 confirms a solid trend. Volume has surged >100%, and the order book shows a slight sell‑side imbalance, but buying pressure remains evident. The pair is testing the 1‑hour resistance around 0.2192 and holds just below the upper Bollinger band.",
       "market_context": "BTC is in a bullish stance on the 1‑day frame and the broader market shows a high green‑asset ratio (≈87%). This overall positive sentiment supports the bullish bias for SYRUPUSDT.",
       "result": "PENDING"
+    },
+    {
+      "id": 1718,
+      "created_at": "2026-09-25T14:01:14.940918+00:00",
+      "symbol": "UNIUSDT",
+      "direction": "LONG",
+      "title": "Key Support Holds Firm: $UNI Bullish Continuation Setup Active",
+      "entry_low": 9.6747525,
+      "entry_high": 9.7232475,
+      "stop_loss": 9.31104,
+      "take_profit": 10.47492,
+      "support": 9.572,
+      "resistance": 10.942,
+      "news_line": "",
+      "technical_analysis": "$UNI fallback technical analysis: RSI is 65.8, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is expanding by 96.1%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
