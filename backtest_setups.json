@@ -30828,6 +30828,23 @@
       "technical_analysis": "Price sits below EMA9 (0.03371), EMA21 (0.03518) and EMA50 (0.03808), confirming a bearish bias on the 1H/4H charts. MACD is negative (-0.00168) with a bearish histogram, while RSI is near 39, indicating no strong over‑bought pressure. Stochastic is deep in oversold territory (K≈5, D≈7), suggesting a possible short‑term bounce but not enough to overturn the downtrend. ADX is low (≈9), showing a weak trend. Order‑book shows a modest bid‑side imbalance (+9%). The 1H/4H swing structure places the current price near the lower swing low (0.03174) with the next major resistance at 0.03522, supportin",
       "market_context": "BTC is in a bullish daily trend and the overall market is broadly positive (76.5% green), but SAGAUSDT remains under pressure from its own bearish technical setup.",
       "result": "PENDING"
+    },
+    {
+      "id": 1814,
+      "created_at": "2026-09-26T18:00:59.926203+00:00",
+      "symbol": "WLFIUSDT",
+      "direction": "LONG",
+      "title": "Bullish Momentum Is Building: Can $WLFI Continue Its Breakout?",
+      "entry_low": 0.058653,
+      "entry_high": 0.058947,
+      "stop_loss": 0.056448,
+      "take_profit": 0.063504,
+      "support": 0.0581,
+      "resistance": 0.0596,
+      "news_line": "",
+      "technical_analysis": "$WLFI fallback technical analysis: RSI is 63.5, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is expanding by 32.0%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
