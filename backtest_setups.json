@@ -30930,6 +30930,23 @@
       "technical_analysis": "$AEVO fallback technical analysis: RSI is 65.0, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is expanding by 6.5%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 1820,
+      "created_at": "2026-09-26T19:31:14.834908+00:00",
+      "symbol": "SPKUSDT",
+      "direction": "LONG",
+      "title": "$SPK Holds Moving Average Support: High Probability Long Setup",
+      "entry_low": 0.02576543,
+      "entry_high": 0.02589457,
+      "stop_loss": 0.0247968,
+      "take_profit": 0.0278964,
+      "support": 0.024084,
+      "resistance": 0.02619,
+      "news_line": "",
+      "technical_analysis": "$SPK fallback technical analysis: RSI is 69.8, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is contracting by 29.9%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
