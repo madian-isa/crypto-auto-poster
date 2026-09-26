@@ -30284,6 +30284,23 @@
       "technical_analysis": "$JASMY fallback technical analysis: RSI is 67.5, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is contracting by 48.0%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 1782,
+      "created_at": "2026-09-26T08:31:04.187989+00:00",
+      "symbol": "EIGENUSDT",
+      "direction": "LONG",
+      "title": "Key Support Holds Firm: $EIGEN Bullish Continuation Setup Active",
+      "entry_low": 0.26264175,
+      "entry_high": 0.26395825,
+      "stop_loss": 0.252768,
+      "take_profit": 0.284364,
+      "support": 0.2575,
+      "resistance": 0.2657,
+      "news_line": "",
+      "technical_analysis": "$EIGEN fallback technical analysis: RSI is 61.1, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is contracting by 40.3%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
