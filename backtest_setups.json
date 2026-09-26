@@ -30471,6 +30471,23 @@
       "technical_analysis": "$LUMIA fallback technical analysis: RSI is 72.0, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is expanding by 17.8%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 1793,
+      "created_at": "2026-09-26T12:45:57.357615+00:00",
+      "symbol": "ONEUSDT",
+      "direction": "SHORT",
+      "title": "$ONE Open Interest Drops Rapidly: Long Squeeze Underway",
+      "entry_low": 0.00234812,
+      "entry_high": 0.00235988,
+      "stop_loss": 0.00244816,
+      "take_profit": 0.00216568,
+      "support": 0.002319,
+      "resistance": 0.002413,
+      "news_line": "",
+      "technical_analysis": "$ONE fallback technical analysis: RSI is 41.4, showing weakening momentum without being deeply oversold, price is trading below the 21 EMA, supporting the bearish bias, MACD is below its signal line, confirming negative momentum, volume is contracting by 66.0%, and price is below the 50 EMA, keeping the short-term structure weak. Together, these signals support a conditional SHORT continuation setup. Sellers still need to hold the entry zone and push price toward lower support.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
