@@ -31134,6 +31134,23 @@
       "technical_analysis": "$WLD fallback technical analysis: RSI is 68.1, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is contracting by 63.3%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 1832,
+      "created_at": "2026-09-26T22:46:52.322289+00:00",
+      "symbol": "RAYUSDT",
+      "direction": "LONG",
+      "title": "$RAY Liquidation Squeeze: Bears Trapped Near Critical Resistance",
+      "entry_low": 2.08128375,
+      "entry_high": 2.09171625,
+      "stop_loss": 2.00304,
+      "take_profit": 2.25342,
+      "support": 2.0454,
+      "resistance": 2.083,
+      "news_line": "",
+      "technical_analysis": "$RAY fallback technical analysis: RSI is 59.3, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is expanding by 42.3%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
