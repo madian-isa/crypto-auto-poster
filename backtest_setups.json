@@ -30692,6 +30692,23 @@
       "technical_analysis": "Price sits above EMA9 (0.02068), EMA21 (0.02010), EMA50 (0.01937) and EMA200 (0.01831), confirming a clear uptrend. MACD line (0.00059) is above its signal (0.00051) with a positive histogram, while ADX at 62 shows a strong trend. RSI at 65 and Stochastic K/D around 73/68 indicate bullish momentum but not yet overbought. Order‑book shows a slight bid‑side imbalance (0.43%). The 1H/4H swing structure places the next resistance at 0.02149 and support at 0.02027, offering a clean swing‑trade zone.",
       "market_context": "BTC remains bullish (up ~0.74% in 24h) and the broader market is broadly positive (88% green). This supportive backdrop adds confidence to the RESOL long bias.",
       "result": "PENDING"
+    },
+    {
+      "id": 1806,
+      "created_at": "2026-09-26T16:00:49.612463+00:00",
+      "symbol": "ICPUSDT",
+      "direction": "LONG",
+      "title": "$ICP Reclaims Key Resistance Level: Flip to Support Complete",
+      "entry_low": 3.2,
+      "entry_high": 3.23,
+      "stop_loss": 3.09,
+      "take_profit": 3.465,
+      "support": 3.148,
+      "resistance": 3.33,
+      "news_line": "",
+      "technical_analysis": "Price sits above the 9‑, 21‑, 50‑ and 200‑EMA, indicating a clear uptrend. MACD line (0.030) is above its signal (0.022) with a positive histogram, reinforcing bullish momentum. RSI at 68.6 and Stochastic K/D in the mid‑80s show the market is approaching overbought levels but not yet exhausted. Bollinger bands are slightly breached to the upside, suggesting a short‑term pull‑back could be healthy. ADX around 21 points moderate trend strength. Order‑book shows a modest ask‑side imbalance, hinting at some downside pressure near the current price.",
+      "market_context": "BTC is marginally higher (+0.376%) and the overall market breadth is broadly positive (85% green). This supportive backdrop adds confidence to a swing‑long setup on ICPUSDT.",
+      "result": "PENDING"
     }
   ]
 }
