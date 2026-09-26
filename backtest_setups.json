@@ -30063,6 +30063,23 @@
       "technical_analysis": "Price sits just above EMA9 (0.24798), EMA21 (0.24499) and EMA50 (0.24199), indicating bullish bias. MACD histogram is positive (0.00049) and the MACD line remains above its signal, supporting upside momentum. RSI at 57 and ADX at 34 confirm a still‑strong, but not overbought, trend. Stochastic is near the middle (K 55, D 62) showing room for further rise. The order book shows a modest ask‑side imbalance (-14.6%), suggesting some short pressure, but the overall structure favors a long swing.",
       "market_context": "BTC is down 0.26% on the 24‑hour chart, while the broader crypto market remains broadly positive (82% green). The prevailing sentiment does not appear to hinder a potential upside move in WIFUSDT.",
       "result": "PENDING"
+    },
+    {
+      "id": 1769,
+      "created_at": "2026-09-26T03:16:05.391203+00:00",
+      "symbol": "RUNEUSDT",
+      "direction": "LONG",
+      "title": "Bullish Divergence Flashed on $RUNE Daily Chart Structure",
+      "entry_low": 0.6613425,
+      "entry_high": 0.6646575,
+      "stop_loss": 0.635805,
+      "take_profit": 0.71739,
+      "support": 0.639,
+      "resistance": 0.667,
+      "news_line": "",
+      "technical_analysis": "$RUNE fallback technical analysis: RSI is 69.3, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is expanding by 163.3%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
