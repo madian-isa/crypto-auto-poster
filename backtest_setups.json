@@ -30777,6 +30777,23 @@
       "technical_analysis": "Price sits above EMA9 (327.5), EMA21 (320.0), EMA50 (311.0) and EMA200 (288.8), confirming a strong uptrend. MACD line (7.38) is above its signal (5.68) with a positive histogram, while ADX at 42.4 signals a robust trend. RSI at 68.5 and Stochastic K/D in the high‑70s suggest momentum but not yet overbought. Order‑book shows a 24.7% bid imbalance, supporting the bullish bias.",
       "market_context": "BTC is in a bullish stance on the daily chart and the broader crypto market is broadly positive (81.5% green). This favorable backdrop adds support to the long outlook for TAO.",
       "result": "PENDING"
+    },
+    {
+      "id": 1811,
+      "created_at": "2026-09-26T17:16:01.488664+00:00",
+      "symbol": "SPELLUSDT",
+      "direction": "LONG",
+      "title": "Major Breakout Signals Emerge on $SPELL Higher Timeframes",
+      "entry_low": 0.0001089,
+      "entry_high": 0.0001095,
+      "stop_loss": 0.000105,
+      "take_profit": 0.0001176,
+      "support": 9.57e-05,
+      "resistance": 0.0001111,
+      "news_line": "",
+      "technical_analysis": "Price sits just above the 1‑hour support (0.0000957) and below the 1‑hour resistance (0.0001111). EMA9 (0.00011026) is marginally above price while EMA21 (0.00010533) stays below, indicating a short‑term bullish bias. MACD line is above its signal with a positive histogram, and RSI at 62 shows continued momentum without being overbought. ADX above 60 confirms a strong trend. Order‑book shows a modest ask‑side pressure (‑14.66% imbalance). The confluence of EMA, MACD, RSI and ADX supports a long stance.",
+      "market_context": "BTC is in a bullish daily trend and the broader market is broadly positive (76% green). This supportive backdrop adds confidence to the long setup on SPELLUSDT.",
+      "result": "PENDING"
     }
   ]
 }
