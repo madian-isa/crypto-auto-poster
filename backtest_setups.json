@@ -30760,6 +30760,23 @@
       "technical_analysis": "Price sits above EMA9, EMA21, EMA50 and EMA200, indicating bullish momentum. RSI at 58.7 and MACD histogram positive support the upside, while ADX above 30 (34) confirms a strong trend. Stochastic K (62.9) is below its D line (80.9), suggesting room for further rise. Bollinger bands show price near the upper band but still inside range. Order‑book shows a modest ask‑side imbalance, but the overall structure leans higher.",
       "market_context": "BTC is in a bullish stance on the daily chart and the broader market shows a 78.5% green breadth, providing a favorable backdrop for long positions on BBUSDT.",
       "result": "PENDING"
+    },
+    {
+      "id": 1810,
+      "created_at": "2026-09-26T17:00:57.719081+00:00",
+      "symbol": "TAOUSDT",
+      "direction": "LONG",
+      "title": "Spot Inflows Surge for $TAO as Futures Open Interest Rises",
+      "entry_low": 327.0,
+      "entry_high": 331.0,
+      "stop_loss": 315.6,
+      "take_profit": 355.8,
+      "support": 324.3,
+      "resistance": 337.9,
+      "news_line": "",
+      "technical_analysis": "Price sits above EMA9 (327.5), EMA21 (320.0), EMA50 (311.0) and EMA200 (288.8), confirming a strong uptrend. MACD line (7.38) is above its signal (5.68) with a positive histogram, while ADX at 42.4 signals a robust trend. RSI at 68.5 and Stochastic K/D in the high‑70s suggest momentum but not yet overbought. Order‑book shows a 24.7% bid imbalance, supporting the bullish bias.",
+      "market_context": "BTC is in a bullish stance on the daily chart and the broader crypto market is broadly positive (81.5% green). This favorable backdrop adds support to the long outlook for TAO.",
+      "result": "PENDING"
     }
   ]
 }
