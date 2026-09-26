@@ -30369,6 +30369,23 @@
       "technical_analysis": "Price sits above EMA9, EMA21, EMA50 and EMA200, confirming a strong uptrend. RSI at 63 and a bullish MACD histogram (+0.00024) add momentum, while ADX 35 signals a firm trend. Volume is up 58% and the order‑book shows a 26.8% bid‑side imbalance, reinforcing buying pressure.",
       "market_context": "Bitcoin is slightly bearish (-0.73% 24h), yet the overall market breadth is broadly positive with 73% of assets in green. This backdrop supports a cautious long bias on XPLUSDT.",
       "result": "PENDING"
+    },
+    {
+      "id": 1787,
+      "created_at": "2026-09-26T11:00:57.691448+00:00",
+      "symbol": "STOUSDT",
+      "direction": "LONG",
+      "title": "Bullish Momentum Accelerates as $STO Liquidity Sweep Completes",
+      "entry_low": 0.0455,
+      "entry_high": 0.046,
+      "stop_loss": 0.0439,
+      "take_profit": 0.04945,
+      "support": 0.0441,
+      "resistance": 0.047,
+      "news_line": "",
+      "technical_analysis": "STO is trading above all key EMAs (price > EMA9 > EMA21 > EMA50 > EMA200), confirming a bullish hierarchy. MACD is positive (0.0003162) and above its signal line, with a small but growing histogram, indicating upward momentum. RSI sits at 67.6, high but still below typical overbought extremes. Volume has surged 73% on the day, adding conviction. The price sits just above the upper Bollinger band, suggesting short‑term overextension but not a clear reversal, while the 1‑hour order book shows a modest sell‑side imbalance. These combined signals favor a long bias toward the nearby 1‑hour resistan",
+      "market_context": "Bitcoin is marginally bearish, down 0.62% over 24 h, yet the broader crypto market remains broadly positive with 73.8% of assets in green territory. The overall market tone supports bullish setups on altcoins like STO.",
+      "result": "PENDING"
     }
   ]
 }
