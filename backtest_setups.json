@@ -31151,6 +31151,23 @@
       "technical_analysis": "$RAY fallback technical analysis: RSI is 59.3, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is expanding by 42.3%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 1833,
+      "created_at": "2026-09-26T23:01:30.195707+00:00",
+      "symbol": "CUSDT",
+      "direction": "LONG",
+      "title": "On-Chain Metrics Confirm Strong Whale Accumulation on $C",
+      "entry_low": 0.0911715,
+      "entry_high": 0.0916285,
+      "stop_loss": 0.087958,
+      "take_profit": 0.098284,
+      "support": 0.0884,
+      "resistance": 0.0916,
+      "news_line": "",
+      "technical_analysis": "$C fallback technical analysis: RSI is 68.0, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is expanding by 2.4%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
