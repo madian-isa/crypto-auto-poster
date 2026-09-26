@@ -30165,6 +30165,23 @@
       "technical_analysis": "$CELO fallback technical analysis: RSI is 71.3, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is expanding by 24.6%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 1775,
+      "created_at": "2026-09-26T05:30:55.627526+00:00",
+      "symbol": "ROSEUSDT",
+      "direction": "LONG",
+      "title": "$ROSE Holds Moving Average Support: High Probability Long Setup",
+      "entry_low": 0.008,
+      "entry_high": 0.00815,
+      "stop_loss": 0.0077,
+      "take_profit": 0.008825,
+      "support": 0.00792,
+      "resistance": 0.00881,
+      "news_line": "",
+      "technical_analysis": "Price sits above EMA9 (0.00852), EMA21 (0.00836), EMA50 (0.00815) and EMA200 (0.00770), confirming an uptrend. MACD line (0.0001645) is above its signal (0.0001553) with a small positive histogram, while RSI at 63.5 shows momentum but no overbought condition. ADX at 37.6 signals a strong trend. The 1‑hour swing range is bounded by support 0.00792 and resistance 0.00881, with current price near the lower half, offering a clean entry window.",
+      "market_context": "BTC is in a short‑term bearish dip (‑0.27% 24h) while the broader crypto market remains broadly positive, with 79% of assets green. The ROSE order book is balanced, showing only a slight sell‑side imbalance.",
+      "result": "PENDING"
     }
   ]
 }
