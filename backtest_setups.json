@@ -30845,6 +30845,23 @@
       "technical_analysis": "$WLFI fallback technical analysis: RSI is 63.5, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is expanding by 32.0%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 1815,
+      "created_at": "2026-09-26T18:15:57.101904+00:00",
+      "symbol": "USD1USDT",
+      "direction": "LONG",
+      "title": "Key Support Holds Firm: $USD1 Bullish Continuation Setup Active",
+      "entry_low": 0.99727058,
+      "entry_high": 1.00226942,
+      "stop_loss": 0.9597792,
+      "take_profit": 1.0797516,
+      "support": 0.99966,
+      "resistance": 0.99979,
+      "news_line": "",
+      "technical_analysis": "$USD1 fallback technical analysis: RSI is 62.1, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is expanding by 3.0%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
