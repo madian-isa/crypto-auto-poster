@@ -29944,6 +29944,23 @@
       "technical_analysis": "Price sits above EMA9, EMA21, EMA50 and EMA200, confirming an uptrend. MACD line is above its signal with a positive histogram, while RSI at 62.5 shows momentum without extreme overbought conditions. Stochastic K (73.7) is high but still below its D line, suggesting room for upside. ADX around 26 indicates a moderately strong trend. Order‑book shows a 9.5% bid imbalance and higher bid value than ask, adding buying pressure. Bollinger upper band (0.13749) is just above current price, leaving slight upside potential.",
       "market_context": "BTC is bearish on the 24h chart, yet the broader market breadth is broadly positive (78.5% green). The mixed 4h BTC trend and bullish daily BTC trend provide neutral to mildly supportive backdrop for ARKM.",
       "result": "PENDING"
+    },
+    {
+      "id": 1762,
+      "created_at": "2026-09-26T01:40:23.648809+00:00",
+      "symbol": "APTUSDT",
+      "direction": "LONG",
+      "title": "$APT Prepares for Parabolic Phase: Key Technical Trigger Met",
+      "entry_low": 0.85785,
+      "entry_high": 0.86215,
+      "stop_loss": 0.8256,
+      "take_profit": 0.9288,
+      "support": 0.8462,
+      "resistance": 0.8796,
+      "news_line": "",
+      "technical_analysis": "$APT fallback technical analysis: RSI is 61.0, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is contracting by 48.6%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
