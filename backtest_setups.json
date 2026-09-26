@@ -30556,6 +30556,23 @@
       "technical_analysis": "$NIGHT fallback technical analysis: RSI is 68.6, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is contracting by 35.3%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 1798,
+      "created_at": "2026-09-26T14:01:00.311242+00:00",
+      "symbol": "ACEUSDT",
+      "direction": "LONG",
+      "title": "$ACE Outperformance Signal: Buying Momentum Beats Broader Market",
+      "entry_low": 0.21137025,
+      "entry_high": 0.21242975,
+      "stop_loss": 0.203424,
+      "take_profit": 0.228852,
+      "support": 0.1896,
+      "resistance": 0.2249,
+      "news_line": "",
+      "technical_analysis": "$ACE fallback technical analysis: RSI is 59.7, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is expanding by 25.9%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
