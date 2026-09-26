@@ -29842,6 +29842,23 @@
       "technical_analysis": "Price sits above the EMA9 (0.02945), EMA21 (0.02885) and EMA50 (0.02805), confirming bullish momentum. MACD histogram is positive (0.00010176) and the MACD line is above its signal, adding further upside bias. RSI at 63.9 shows strength without being overbought, while Stochastic K at 87 and D at 73 indicate continued upward pressure. ADX at 31.5 signals a solid trend. Order‑book shows a modest ask‑side imbalance, but best bid/ask are tightly clustered around the current price.",
       "market_context": "Bitcoin is down 0.37% on the day, giving a bearish backdrop, yet the broader market remains broadly positive with 84.8% of assets in green territory.",
       "result": "PENDING"
+    },
+    {
+      "id": 1756,
+      "created_at": "2026-09-26T00:15:47.788309+00:00",
+      "symbol": "DOTUSDT",
+      "direction": "LONG",
+      "title": "Bullish Momentum Is Building: Can $DOT Continue Its Breakout?",
+      "entry_low": 1.2,
+      "entry_high": 1.21,
+      "stop_loss": 1.1568,
+      "take_profit": 1.3014,
+      "support": 1.184,
+      "resistance": 1.223,
+      "news_line": "",
+      "technical_analysis": "DOT trades at 1.213, well above EMA9 (1.196), EMA21 (1.182), EMA50 (1.166) and EMA200 (1.135), indicating bullish bias. MACD line (0.0139) is above its signal (0.0114) with a positive histogram, while RSI sits at 66 and Stochastic K/D are 84/76, showing strong momentum despite near‑overbought levels. ADX at 35 confirms a solid trend. Order‑book imbalance is -41 % (more asks), but the 1H/4H swing structure with support at 1.184 and resistance at 1.223 favors a long setup.",
+      "market_context": "Bitcoin is down 0.66 % over 24 h, yet 82 % of altcoins are green, creating a broadly positive market environment for DOT.",
+      "result": "PENDING"
     }
   ]
 }
