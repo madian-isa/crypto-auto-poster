@@ -30386,6 +30386,23 @@
       "technical_analysis": "STO is trading above all key EMAs (price > EMA9 > EMA21 > EMA50 > EMA200), confirming a bullish hierarchy. MACD is positive (0.0003162) and above its signal line, with a small but growing histogram, indicating upward momentum. RSI sits at 67.6, high but still below typical overbought extremes. Volume has surged 73% on the day, adding conviction. The price sits just above the upper Bollinger band, suggesting short‑term overextension but not a clear reversal, while the 1‑hour order book shows a modest sell‑side imbalance. These combined signals favor a long bias toward the nearby 1‑hour resistan",
       "market_context": "Bitcoin is marginally bearish, down 0.62% over 24 h, yet the broader crypto market remains broadly positive with 73.8% of assets in green territory. The overall market tone supports bullish setups on altcoins like STO.",
       "result": "PENDING"
+    },
+    {
+      "id": 1788,
+      "created_at": "2026-09-26T11:31:10.910585+00:00",
+      "symbol": "TLMUSDT",
+      "direction": "LONG",
+      "title": "Trend Reversal Confirmed for $TLM as Volume Spikes Upward",
+      "entry_low": 0.00163191,
+      "entry_high": 0.00164009,
+      "stop_loss": 0.00157056,
+      "take_profit": 0.00176688,
+      "support": 0.001616,
+      "resistance": 0.001736,
+      "news_line": "",
+      "technical_analysis": "$TLM fallback technical analysis: RSI is 69.2, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is contracting by 38.1%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
