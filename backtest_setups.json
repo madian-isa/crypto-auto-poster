@@ -30590,6 +30590,23 @@
       "technical_analysis": "$SOMI fallback technical analysis: RSI is 71.3, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is contracting by 28.9%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 1800,
+      "created_at": "2026-09-26T14:31:15.100239+00:00",
+      "symbol": "PYTHUSDT",
+      "direction": "LONG",
+      "title": "High R-Multiple Long Trade Setup Forming on $PYTH",
+      "entry_low": 0.07666785,
+      "entry_high": 0.07705215,
+      "stop_loss": 0.0737856,
+      "take_profit": 0.0830088,
+      "support": 0.07258,
+      "resistance": 0.07951,
+      "news_line": "",
+      "technical_analysis": "$PYTH fallback technical analysis: RSI is 67.3, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is expanding by 204.4%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
