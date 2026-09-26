@@ -1,6 +1,6 @@
 {
   "date": "2026-09-26",
-  "count": 70,
+  "count": 71,
   "posted_symbols_today": [
     "CETUSUSDT",
     "DOTUSDT",
@@ -71,6 +71,7 @@
     "CFGUSDT",
     "ESPUSDT",
     "HEIUSDT",
-    "\u725b\u6765USDT"
+    "\u725b\u6765USDT",
+    "DASHUSDT"
   ]
 }
