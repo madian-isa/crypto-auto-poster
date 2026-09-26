@@ -30080,6 +30080,23 @@
       "technical_analysis": "$RUNE fallback technical analysis: RSI is 69.3, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is expanding by 163.3%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 1770,
+      "created_at": "2026-09-26T03:30:57.093564+00:00",
+      "symbol": "ENJUSDT",
+      "direction": "LONG",
+      "title": "Bullish Momentum Accelerates as $ENJ Liquidity Sweep Completes",
+      "entry_low": 0.02931652,
+      "entry_high": 0.02946347,
+      "stop_loss": 0.0282144,
+      "take_profit": 0.03174119,
+      "support": 0.0292,
+      "resistance": 0.02981,
+      "news_line": "",
+      "technical_analysis": "$ENJ fallback technical analysis: RSI is 59.0, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is contracting by 56.3%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
