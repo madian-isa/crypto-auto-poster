@@ -31695,6 +31695,23 @@
       "technical_analysis": "Price sits above the 9, 21, 50 and 200 EMA, indicating a clear uptrend. MACD histogram is positive (+0.0001247) and the MACD line sits above the signal, supporting bullish momentum. RSI at 62.4 shows strength without being overbought. ADX around 24 suggests a moderate trend. Order‑book shows a 30% bid‑side imbalance, reinforcing buying pressure.",
       "market_context": "BTC is in a bullish phase on both 4H and 1D charts, and the overall crypto market is broadly positive with 74% of assets green.",
       "result": "PENDING"
+    },
+    {
+      "id": 1865,
+      "created_at": "2026-09-27T09:00:52.950026+00:00",
+      "symbol": "TRUMPUSDT",
+      "direction": "LONG",
+      "title": "Major Breakout Signals Emerge on $TRUMP Higher Timeframes",
+      "entry_low": 2.138,
+      "entry_high": 2.14,
+      "stop_loss": 2.06,
+      "take_profit": 2.297,
+      "support": 2.125,
+      "resistance": 2.14,
+      "news_line": "",
+      "technical_analysis": "Price is trading above the 9, 21, 50 and 200 EMA, confirming a bullish bias. MACD shows a positive histogram (0.0024) with the line above the signal, while RSI sits at 56, indicating room for upside. Stochastic %K is at 82, suggesting momentum but still above %D. Volume surged 56% on the 24h candle, and the order book shows a modest bid‑side imbalance (2.57%). These factors together support a long setup near the 1‑hour resistance at 2.14.",
+      "market_context": "The broader market is broadly positive (69.3% green) and Bitcoin is in a bullish trend on both 4‑hour and daily timeframes, providing additional upside bias for risk assets like TRUMPUSDT.",
+      "result": "PENDING"
     }
   ]
 }
