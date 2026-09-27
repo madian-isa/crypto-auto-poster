@@ -32579,6 +32579,23 @@
       "technical_analysis": "Price is above the EMA hierarchy (EMA9 2.7958, EMA21 2.7850, EMA50 2.7676, EMA200 2.6420), confirming an uptrend. RSI sits at 62 and Stochastic K (59) is above its D line (40), indicating bullish momentum. MACD line (0.0109) exceeds its signal (0.0093) with a positive histogram (0.0017). ADX at 27 shows a moderate trend strength. Volume has risen 13.7% and the order‑book shows a modest ask‑side imbalance (‑18.9%).",
       "market_context": "BTC is marginally bearish on the 24‑hour chart (‑0.14%) while overall market breadth is mixed, with 45.1% of assets green and 54.9% red.",
       "result": "PENDING"
+    },
+    {
+      "id": 1917,
+      "created_at": "2026-09-27T23:01:02.736672+00:00",
+      "symbol": "RAREUSDT",
+      "direction": "LONG",
+      "title": "$RARE Breakout Confirmation: Bulls Target Next Supply Zone",
+      "entry_low": 0.02237392,
+      "entry_high": 0.02248607,
+      "stop_loss": 0.0215328,
+      "take_profit": 0.02422439,
+      "support": 0.02246,
+      "resistance": 0.023,
+      "news_line": "",
+      "technical_analysis": "$RARE fallback technical analysis: RSI is 64.5, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is expanding by 57.4%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
