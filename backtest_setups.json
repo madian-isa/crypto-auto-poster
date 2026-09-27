@@ -31389,6 +31389,23 @@
       "technical_analysis": "$ETH fallback technical analysis: RSI is 60.1, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is expanding by 134.6%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 1847,
+      "created_at": "2026-09-27T02:45:50.015455+00:00",
+      "symbol": "LSKUSDT",
+      "direction": "SHORT",
+      "title": "Technical Signals Turn Negative as $LSK Selling Pressure Rises",
+      "entry_low": 0.351,
+      "entry_high": 0.353,
+      "stop_loss": 0.3645,
+      "take_profit": 0.327,
+      "support": 0.3351,
+      "resistance": 0.3545,
+      "news_line": "",
+      "technical_analysis": "Price is trading below EMA9 (0.3459), EMA21 (0.3468), EMA50 (0.3504) and EMA200 (0.3705), signalling a bearish bias. MACD histogram is negative and the MACD line sits under its signal, confirming downside momentum. RSI at 43.8 and Stochastic K around 28 point to neutral‑to‑oversold conditions without a clear reversal signal. Order‑book shows a bid‑side imbalance (~56% bids) near 0.337, suggesting buying pressure may be limited as price tests lower support.",
+      "market_context": "BTC is in a bullish trend on both 4H and 1D timeframes, up 0.56% in the last 24 h, while overall market breadth is broadly positive (60.7% green).",
+      "result": "PENDING"
     }
   ]
 }
