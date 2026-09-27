@@ -32069,6 +32069,23 @@
       "technical_analysis": "$SUI fallback technical analysis: RSI is 62.7, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is expanding by 16.8%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 1887,
+      "created_at": "2026-09-27T16:01:11.866885+00:00",
+      "symbol": "NEIROUSDT",
+      "direction": "SHORT",
+      "title": "$NEIRO Breaks Ascending Support Line: Bearish Momentum Surge",
+      "entry_low": 9.083e-05,
+      "entry_high": 9.129e-05,
+      "stop_loss": 9.47e-05,
+      "take_profit": 8.378e-05,
+      "support": 9.086e-05,
+      "resistance": 9.292e-05,
+      "news_line": "",
+      "technical_analysis": "$NEIRO fallback technical analysis: RSI is 39.0, showing weakening momentum without being deeply oversold, price is trading below the 21 EMA, supporting the bearish bias, MACD is below its signal line, confirming negative momentum, volume is expanding by 159.3%, and price is below the 50 EMA, keeping the short-term structure weak. Together, these signals support a conditional SHORT continuation setup. Sellers still need to hold the entry zone and push price toward lower support.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
