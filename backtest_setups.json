@@ -31831,6 +31831,23 @@
       "technical_analysis": "$XAI fallback technical analysis: RSI is 59.5, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is expanding by 53.4%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 1873,
+      "created_at": "2026-09-27T12:30:50.654084+00:00",
+      "symbol": "牛来USDT",
+      "direction": "LONG",
+      "title": "$牛来 Reclaims Key Resistance Level: Flip to Support Complete",
+      "entry_low": 0.11,
+      "entry_high": 0.111,
+      "stop_loss": 0.1055,
+      "take_profit": 0.1205,
+      "support": 0.10367,
+      "resistance": 0.11432,
+      "news_line": "",
+      "technical_analysis": "Price sits above EMA9, EMA21, EMA50 and EMA200, confirming an uptrend on the 1‑hour chart. MACD histogram is positive and MACD line remains above the signal line, adding bullish momentum. RSI is at 70.2 and Stochastic K at 85.6, indicating overbought conditions but not yet a clear reversal. Volume surged ~290%, and order‑book imbalance shows stronger buying pressure (bid value > ask value). The nearest 1‑hour resistance is 0.11432, with support at 0.10367.",
+      "market_context": "BTC is in a bullish trend on both 4‑hour and daily frames, up ~1% in 24 h, and the broader market is broadly positive (≈64% green). This backdrop supports a bullish bias for 牛来USDT.",
+      "result": "PENDING"
     }
   ]
 }
