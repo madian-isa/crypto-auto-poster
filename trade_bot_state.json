@@ -1,6 +1,6 @@
 {
   "date": "2026-09-27",
-  "count": 41,
+  "count": 42,
   "posted_symbols_today": [
     "ZECUSDT",
     "AVAUSDT",
@@ -42,6 +42,7 @@
     "PENGUUSDT",
     "VIRTUALUSDT",
     "SEIUSDT",
-    "ONDOUSDT"
+    "ONDOUSDT",
+    "LQTYUSDT"
   ]
 }
