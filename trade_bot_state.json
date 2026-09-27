@@ -1,6 +1,6 @@
 {
   "date": "2026-09-27",
-  "count": 71,
+  "count": 72,
   "posted_symbols_today": [
     "ZECUSDT",
     "AVAUSDT",
@@ -72,6 +72,7 @@
     "IMXUSDT",
     "DOTUSDT",
     "SKYUSDT",
-    "OPUSDT"
+    "OPUSDT",
+    "APEUSDT"
   ]
 }

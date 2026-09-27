@@ -32426,6 +32426,23 @@
       "technical_analysis": "$OP fallback technical analysis: RSI is 55.2, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is expanding by 1.8%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 1908,
+      "created_at": "2026-09-27T21:00:58.934118+00:00",
+      "symbol": "APEUSDT",
+      "direction": "LONG",
+      "title": "$APE Breaks Out of Falling Wedge Pattern: Targets Set Higher",
+      "entry_low": 0.16468725,
+      "entry_high": 0.16551275,
+      "stop_loss": 0.158496,
+      "take_profit": 0.178308,
+      "support": 0.1624,
+      "resistance": 0.1728,
+      "news_line": "",
+      "technical_analysis": "$APE fallback technical analysis: RSI is 67.6, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is expanding by 129.1%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
