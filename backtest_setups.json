@@ -31253,6 +31253,23 @@
       "technical_analysis": "$IOST fallback technical analysis: RSI is 63.8, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is contracting by 9.5%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 1839,
+      "created_at": "2026-09-27T00:46:03.014900+00:00",
+      "symbol": "KITEUSDT",
+      "direction": "LONG",
+      "title": "Critical Resistance Test: $KITE Preparing to Surge Higher",
+      "entry_low": 0.1522185,
+      "entry_high": 0.1529815,
+      "stop_loss": 0.146496,
+      "take_profit": 0.164808,
+      "support": 0.1351,
+      "resistance": 0.1541,
+      "news_line": "",
+      "technical_analysis": "$KITE fallback technical analysis: RSI is 69.8, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is expanding by 41.0%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
