@@ -32392,6 +32392,23 @@
       "technical_analysis": "$DOT fallback technical analysis: RSI is 60.8, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is expanding by 1.1%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 1906,
+      "created_at": "2026-09-27T20:31:32.986050+00:00",
+      "symbol": "SKYUSDT",
+      "direction": "LONG",
+      "title": "Golden Cross Formation Confirmed on $SKY 4-Hour Timeframe",
+      "entry_low": 0.07799452,
+      "entry_high": 0.07838547,
+      "stop_loss": 0.0750624,
+      "take_profit": 0.08444519,
+      "support": 0.07709,
+      "resistance": 0.08132,
+      "news_line": "",
+      "technical_analysis": "$SKY fallback technical analysis: RSI is 61.1, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is expanding by 130.2%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
