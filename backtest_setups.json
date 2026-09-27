@@ -31491,6 +31491,23 @@
       "technical_analysis": "$SOLV fallback technical analysis: RSI is 66.0, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is contracting by 47.2%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 1853,
+      "created_at": "2026-09-27T04:45:47.138749+00:00",
+      "symbol": "QIUSDT",
+      "direction": "LONG",
+      "title": "Technical Signals Turn Positive as Market Momentum Builds",
+      "entry_low": 0.00296,
+      "entry_high": 0.003,
+      "stop_loss": 0.00285,
+      "take_profit": 0.00324,
+      "support": 0.00285,
+      "resistance": 0.00308,
+      "news_line": "",
+      "technical_analysis": "Price sits above the 9, 21 and 50 EMA, with the EMA hierarchy intact and the EMA200 well below, indicating bullish structure on both 1H and 4H. MACD line is above its signal and the histogram is positive, confirming upward momentum. RSI is neutral at 53, while Stochastic %K is near 77, suggesting continued strength. Order‑book shows a 13% bid imbalance, adding buying pressure. The price is approaching the upper Bollinger band and the 1H resistance at 0.00308, making the 0.00296‑0.00300 zone a logical entry near the swing low.",
+      "market_context": "BTC remains in a bullish trend on 4H and daily timeframes, supporting risk‑on sentiment. Overall market breadth is mixed with a slight edge to green (51.6% up).",
+      "result": "PENDING"
     }
   ]
 }
