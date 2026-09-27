@@ -32460,6 +32460,23 @@
       "technical_analysis": "$KERNEL fallback technical analysis: RSI is 66.9, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is contracting by 21.5%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 1910,
+      "created_at": "2026-09-27T21:30:55.154637+00:00",
+      "symbol": "FETUSDT",
+      "direction": "LONG",
+      "title": "$FET Breakout Confirmation: Bulls Target Next Supply Zone",
+      "entry_low": 0.242,
+      "entry_high": 0.2445,
+      "stop_loss": 0.2347,
+      "take_profit": 0.26035,
+      "support": 0.2413,
+      "resistance": 0.2477,
+      "news_line": "",
+      "technical_analysis": "Price sits above the EMA9 (0.2443), EMA21 (0.2437) and EMA50 (0.2409), keeping a clean bullish alignment. MACD is positive (0.00054) with a rising histogram, while RSI is neutral‑slightly bullish at 53.13. Stochastic shows K (63) below D (72), hinting at a possible short‑term pull‑back, but the overall structure on the 1H/4H charts points to a swing low around 0.2413 and a swing high near 0.2477, supporting a long bias.",
+      "market_context": "BTC is in a bullish trend on both 4H and 1D timeframes, and the broader market shows a 66.6% green breadth, adding supportive backdrop for risk‑on assets like FET.",
+      "result": "PENDING"
     }
   ]
 }
