@@ -31338,6 +31338,23 @@
       "technical_analysis": "$CFG fallback technical analysis: RSI is 66.0, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is expanding by 33.3%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 1844,
+      "created_at": "2026-09-27T02:01:16.822795+00:00",
+      "symbol": "KAIAUSDT",
+      "direction": "LONG",
+      "title": "$KAIA Prepares for Parabolic Phase: Key Technical Trigger Met",
+      "entry_low": 0.0365085,
+      "entry_high": 0.0366915,
+      "stop_loss": 0.0345265,
+      "take_profit": 0.040747,
+      "support": 0.0347,
+      "resistance": 0.0369,
+      "news_line": "",
+      "technical_analysis": "$KAIA fallback technical analysis: RSI is 69.4, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is expanding by 43.9%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
