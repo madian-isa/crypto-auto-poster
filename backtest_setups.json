@@ -31542,6 +31542,23 @@
       "technical_analysis": "FOGO is trading below all key EMAs (9, 21, 50, 200) indicating bearish momentum. RSI at 36 and Stochastic K/D around 21/15 suggest the price is in the lower‑mid range, not yet oversold. MACD line and histogram are negative, reinforcing downside bias. ADX ~36 signals a strong trend. The 1‑hour orderbook shows a modest bid‑side imbalance (≈6.8%), but the price remains under pressure near the 1H resistance of 0.00608.",
       "market_context": "The broader market is bullish, with BTC up ~0.57% and overall market breadth at 67.5% green. Despite the positive macro backdrop, FOGO's internal indicators point to a short‑term pullback.",
       "result": "PENDING"
+    },
+    {
+      "id": 1856,
+      "created_at": "2026-09-27T05:44:16.692181+00:00",
+      "symbol": "BTCUSDT",
+      "direction": "LONG",
+      "title": "$BTC Higher Low Structure Confirmed: Long Entry Level Reached",
+      "entry_low": 84118.776,
+      "entry_high": 84540.424,
+      "stop_loss": 80956.416,
+      "take_profit": 91075.968,
+      "support": 83948.43,
+      "resistance": 84571.13,
+      "news_line": "",
+      "technical_analysis": "$BTC fallback technical analysis: RSI is 54.9, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is contracting by 35.8%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
