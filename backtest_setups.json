@@ -32341,6 +32341,23 @@
       "technical_analysis": "$FIDA fallback technical analysis: RSI is 63.9, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is expanding by 191.7%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 1903,
+      "created_at": "2026-09-27T19:45:51.669324+00:00",
+      "symbol": "NIGHTUSDT",
+      "direction": "LONG",
+      "title": "$NIGHT Prepares for Parabolic Phase: Key Technical Trigger Met",
+      "entry_low": 0.02747115,
+      "entry_high": 0.02760885,
+      "stop_loss": 0.0261685,
+      "take_profit": 0.030283,
+      "support": 0.0263,
+      "resistance": 0.0276,
+      "news_line": "",
+      "technical_analysis": "$NIGHT fallback technical analysis: RSI is 71.7, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is expanding by 72.2%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
