@@ -1,6 +1,6 @@
 {
   "date": "2026-09-27",
-  "count": 59,
+  "count": 60,
   "posted_symbols_today": [
     "ZECUSDT",
     "AVAUSDT",
@@ -60,6 +60,7 @@
     "ENAUSDT",
     "SYNUSDT",
     "GRAMUSDT",
-    "ZAMAUSDT"
+    "ZAMAUSDT",
+    "USUALUSDT"
   ]
 }

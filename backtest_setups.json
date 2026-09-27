@@ -32222,6 +32222,23 @@
       "technical_analysis": "$ZAMA fallback technical analysis: RSI is 33.9, showing weakening momentum without being deeply oversold, price is trading below the 21 EMA, supporting the bearish bias, MACD is below its signal line, confirming negative momentum, volume is contracting by 28.9%, and price is below the 50 EMA, keeping the short-term structure weak. Together, these signals support a conditional SHORT continuation setup. Sellers still need to hold the entry zone and push price toward lower support.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 1896,
+      "created_at": "2026-09-27T18:16:16.899607+00:00",
+      "symbol": "USUALUSDT",
+      "direction": "LONG",
+      "title": "$USUAL Reclaims Key Resistance Level: Flip to Support Complete",
+      "entry_low": 0.0153216,
+      "entry_high": 0.0153984,
+      "stop_loss": 0.0147456,
+      "take_profit": 0.0165888,
+      "support": 0.01501,
+      "resistance": 0.0155,
+      "news_line": "",
+      "technical_analysis": "$USUAL fallback technical analysis: RSI is 63.5, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is expanding by 10.6%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
