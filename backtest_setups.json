@@ -31678,6 +31678,23 @@
       "technical_analysis": "$APT fallback technical analysis: RSI is 61.6, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is expanding by 28.4%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 1864,
+      "created_at": "2026-09-27T08:30:45.509897+00:00",
+      "symbol": "SCRUSDT",
+      "direction": "LONG",
+      "title": "Strong Accumulation Detected: $SCR Prepares for Next Wave Up",
+      "entry_low": 0.0259,
+      "entry_high": 0.0261,
+      "stop_loss": 0.0248,
+      "take_profit": 0.0284,
+      "support": 0.02476,
+      "resistance": 0.02708,
+      "news_line": "",
+      "technical_analysis": "Price sits above the 9, 21, 50 and 200 EMA, indicating a clear uptrend. MACD histogram is positive (+0.0001247) and the MACD line sits above the signal, supporting bullish momentum. RSI at 62.4 shows strength without being overbought. ADX around 24 suggests a moderate trend. Order‑book shows a 30% bid‑side imbalance, reinforcing buying pressure.",
+      "market_context": "BTC is in a bullish phase on both 4H and 1D charts, and the overall crypto market is broadly positive with 74% of assets green.",
+      "result": "PENDING"
     }
   ]
 }
