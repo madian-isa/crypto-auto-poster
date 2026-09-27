@@ -31763,6 +31763,23 @@
       "technical_analysis": "Price sits above EMA9, EMA21, EMA50 and EMA200, confirming a bullish trend. MACD line (0.0139) is above its signal (0.0110) with a positive histogram, adding momentum. RSI at 59.9 shows room for upside without being overbought. ADX around 25 indicates a moderate trend strength. Order‑book shows a 25.9% bid‑side imbalance, supporting the long bias. Stochastic K (63.6) is below its D (71.2) but still in the upper half, suggesting continued buying pressure.",
       "market_context": "BTC is in a bullish phase on both 4H and 1D frames, and the broader crypto market is broadly positive (63% green). This backdrop reinforces the long outlook for ATOM.",
       "result": "PENDING"
+    },
+    {
+      "id": 1869,
+      "created_at": "2026-09-27T11:01:09.343676+00:00",
+      "symbol": "NEARUSDT",
+      "direction": "LONG",
+      "title": "$NEAR Reclaims Key Resistance Level: Flip to Support Complete",
+      "entry_low": 5.19498,
+      "entry_high": 5.22102,
+      "stop_loss": 4.98097,
+      "take_profit": 5.66206,
+      "support": 5.006,
+      "resistance": 5.211,
+      "news_line": "",
+      "technical_analysis": "$NEAR fallback technical analysis: RSI is 57.9, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is contracting by 36.7%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
