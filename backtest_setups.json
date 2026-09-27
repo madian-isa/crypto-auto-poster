@@ -32324,6 +32324,23 @@
       "technical_analysis": "$MET fallback technical analysis: RSI is 64.6, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is contracting by 10.7%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 1902,
+      "created_at": "2026-09-27T19:37:45.292208+00:00",
+      "symbol": "FIDAUSDT",
+      "direction": "LONG",
+      "title": "Critical Resistance Test: $FIDA Preparing to Surge Higher",
+      "entry_low": 0.02280285,
+      "entry_high": 0.02291715,
+      "stop_loss": 0.02201935,
+      "take_profit": 0.0245413,
+      "support": 0.02213,
+      "resistance": 0.02307,
+      "news_line": "",
+      "technical_analysis": "$FIDA fallback technical analysis: RSI is 63.9, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is expanding by 191.7%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
