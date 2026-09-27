@@ -1,6 +1,6 @@
 {
   "date": "2026-09-27",
-  "count": 20,
+  "count": 21,
   "posted_symbols_today": [
     "ZECUSDT",
     "AVAUSDT",
@@ -21,6 +21,7 @@
     "WUSDT",
     "SOLVUSDT",
     "QIUSDT",
-    "RAYUSDT"
+    "RAYUSDT",
+    "FOGOUSDT"
   ]
 }
