@@ -31746,6 +31746,23 @@
       "technical_analysis": "$1000SATS fallback technical analysis: RSI is 63.0, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is contracting by 59.8%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 1868,
+      "created_at": "2026-09-27T10:30:51.162688+00:00",
+      "symbol": "ATOMUSDT",
+      "direction": "LONG",
+      "title": "Bullish Momentum Is Building: Can $ATOM Continue Its Breakout?",
+      "entry_low": 1.883,
+      "entry_high": 1.888,
+      "stop_loss": 1.819,
+      "take_profit": 2.0185,
+      "support": 1.821,
+      "resistance": 1.927,
+      "news_line": "",
+      "technical_analysis": "Price sits above EMA9, EMA21, EMA50 and EMA200, confirming a bullish trend. MACD line (0.0139) is above its signal (0.0110) with a positive histogram, adding momentum. RSI at 59.9 shows room for upside without being overbought. ADX around 25 indicates a moderate trend strength. Order‑book shows a 25.9% bid‑side imbalance, supporting the long bias. Stochastic K (63.6) is below its D (71.2) but still in the upper half, suggesting continued buying pressure.",
+      "market_context": "BTC is in a bullish phase on both 4H and 1D frames, and the broader crypto market is broadly positive (63% green). This backdrop reinforces the long outlook for ATOM.",
+      "result": "PENDING"
     }
   ]
 }
