@@ -31967,6 +31967,23 @@
       "technical_analysis": "$DOGE fallback technical analysis: RSI is 54.6, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is expanding by 81.4%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 1881,
+      "created_at": "2026-09-27T14:45:56.224963+00:00",
+      "symbol": "CHRUSDT",
+      "direction": "LONG",
+      "title": "$CHR Volume Expansion Signals High Conviction Upward Move",
+      "entry_low": 0.0231819,
+      "entry_high": 0.0232981,
+      "stop_loss": 0.0223104,
+      "take_profit": 0.0250992,
+      "support": 0.02153,
+      "resistance": 0.02362,
+      "news_line": "",
+      "technical_analysis": "$CHR fallback technical analysis: RSI is 70.0, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is expanding by 12.8%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
