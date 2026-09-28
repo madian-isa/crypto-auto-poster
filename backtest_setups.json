@@ -32783,6 +32783,23 @@
       "technical_analysis": "$JASMY fallback technical analysis: RSI is 68.2, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is contracting by 13.9%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 1929,
+      "created_at": "2026-09-28T01:45:42.958212+00:00",
+      "symbol": "WOOUSDT",
+      "direction": "LONG",
+      "title": "$WOO Volume Expansion Signals High Conviction Upward Move",
+      "entry_low": 0.01405,
+      "entry_high": 0.01418,
+      "stop_loss": 0.0136,
+      "take_profit": 0.015145,
+      "support": 0.01334,
+      "resistance": 0.01453,
+      "news_line": "",
+      "technical_analysis": "Price sits above EMA9, EMA21, EMA50 and EMA200, confirming bullish momentum. MACD line (0.000204) is above its signal (0.000124) with a positive histogram, adding further upside bias. RSI at 66.4 indicates strength without being extreme, while Stochastic K (~74) and D (~83) suggest the market is near overbought but still trending up. ADX around 24 points a moderate trend. Volume is up 41%, and the order‑book shows a bid‑side imbalance of 8.35%, supporting the long bias.",
+      "market_context": "BTC is slightly bearish on the 24‑hour chart (‑0.665%) and the broader market shows a predominantly red sentiment (63.5% down). Despite the overall negative backdrop, WOOUSDT exhibits clear bullish technicals.",
+      "result": "PENDING"
     }
   ]
 }
