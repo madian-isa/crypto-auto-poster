@@ -32715,6 +32715,23 @@
       "technical_analysis": "$MET fallback technical analysis: RSI is 67.0, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is expanding by 25.4%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 1925,
+      "created_at": "2026-09-28T01:01:13.902790+00:00",
+      "symbol": "WINUSDT",
+      "direction": "LONG",
+      "title": "$WIN Breaks Out of Falling Wedge Pattern: Targets Set Higher",
+      "entry_low": 4.663e-05,
+      "entry_high": 4.687e-05,
+      "stop_loss": 4.488e-05,
+      "take_profit": 5.049e-05,
+      "support": 4.556e-05,
+      "resistance": 4.685e-05,
+      "news_line": "",
+      "technical_analysis": "$WIN fallback technical analysis: RSI is 70.2, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is contracting by 42.8%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
