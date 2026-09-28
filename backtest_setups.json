@@ -34075,6 +34075,23 @@
       "technical_analysis": "$HBAR fallback technical analysis: RSI is 67.8, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is contracting by 7.3%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 2005,
+      "created_at": "2026-09-28T20:46:00.553636+00:00",
+      "symbol": "EIGENUSDT",
+      "direction": "SHORT",
+      "title": "Bearish Divergence Spotted on $EIGEN: Downside Targets Ahead",
+      "entry_low": 0.24747975,
+      "entry_high": 0.24872025,
+      "stop_loss": 0.258024,
+      "take_profit": 0.228252,
+      "support": 0.244,
+      "resistance": 0.2552,
+      "news_line": "",
+      "technical_analysis": "$EIGEN fallback technical analysis: RSI is 35.5, showing weakening momentum without being deeply oversold, price is trading below the 21 EMA, supporting the bearish bias, MACD is below its signal line, confirming negative momentum, volume is contracting by 26.4%, and price is below the 50 EMA, keeping the short-term structure weak. Together, these signals support a conditional SHORT continuation setup. Sellers still need to hold the entry zone and push price toward lower support.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
