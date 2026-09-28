@@ -240,7 +240,7 @@ def _coin_name(symbol):
     return symbol
 
 
-def _daily_topic_tags(direction, current_date=None):
+def _daily_topic_tags(coin, direction, current_date=None):
     topic_tags = {
         "LONG": (
             "Binance",
@@ -279,8 +279,12 @@ def _daily_topic_tags(direction, current_date=None):
     daily_tags = topic_tags[
         "LONG" if str(direction or "").upper() == "LONG" else "SHORT"
     ]
+    coin_seed = sum(
+        (index + 1) * ord(char)
+        for index, char in enumerate(str(coin).upper())
+    )
     daily_start = (
-        today.toordinal() * 2
+        coin_seed + today.toordinal() * 2
     ) % len(daily_tags)
     return (
         daily_tags[daily_start],
@@ -303,7 +307,10 @@ def _post_hashtags(symbol, direction):
         if direction == "LONG"
         else "ShortSetup"
     )
-    rotating_tags = _daily_topic_tags(direction)
+    rotating_tags = _daily_topic_tags(
+        coin,
+        direction,
+    )
 
     return [
         f"#{coin}",
