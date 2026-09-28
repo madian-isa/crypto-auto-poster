@@ -33429,6 +33429,23 @@
       "technical_analysis": "$AVA fallback technical analysis: RSI is 29.6, showing weakening momentum without being deeply oversold, price is trading below the 21 EMA, supporting the bearish bias, MACD is below its signal line, confirming negative momentum, volume is contracting by 39.0%, and price is below the 50 EMA, keeping the short-term structure weak. Together, these signals support a conditional SHORT continuation setup. Sellers still need to hold the entry zone and push price toward lower support.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 1967,
+      "created_at": "2026-09-28T13:16:02.212134+00:00",
+      "symbol": "牛来USDT",
+      "direction": "LONG",
+      "title": "Bullish Momentum Accelerates as $牛来 Liquidity Sweep Completes",
+      "entry_low": 0.11448308,
+      "entry_high": 0.11505692,
+      "stop_loss": 0.1101792,
+      "take_profit": 0.1239516,
+      "support": 0.10581,
+      "resistance": 0.1158,
+      "news_line": "",
+      "technical_analysis": "$牛来 fallback technical analysis: RSI is 63.6, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is expanding by 33.9%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
