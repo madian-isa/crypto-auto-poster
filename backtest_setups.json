@@ -32936,6 +32936,23 @@
       "technical_analysis": "$XRP fallback technical analysis: RSI is 35.4, showing weakening momentum without being deeply oversold, price is trading below the 21 EMA, supporting the bearish bias, MACD is below its signal line, confirming negative momentum, volume is expanding by 58.8%, and price is below the 50 EMA, keeping the short-term structure weak. Together, these signals support a conditional SHORT continuation setup. Sellers still need to hold the entry zone and push price toward lower support.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 1938,
+      "created_at": "2026-09-28T04:01:00.562676+00:00",
+      "symbol": "FOGOUSDT",
+      "direction": "SHORT",
+      "title": "$FOGO Open Interest Drops Rapidly: Long Squeeze Underway",
+      "entry_low": 0.0056658,
+      "entry_high": 0.0056942,
+      "stop_loss": 0.00593955,
+      "take_profit": 0.0051609,
+      "support": 0.0056,
+      "resistance": 0.00591,
+      "news_line": "",
+      "technical_analysis": "$FOGO fallback technical analysis: RSI is 31.4, showing weakening momentum without being deeply oversold, price is trading below the 21 EMA, supporting the bearish bias, MACD is below its signal line, confirming negative momentum, volume is expanding by 11.9%, and price is below the 50 EMA, keeping the short-term structure weak. Together, these signals support a conditional SHORT continuation setup. Sellers still need to hold the entry zone and push price toward lower support.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
