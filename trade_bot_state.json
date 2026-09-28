@@ -1,6 +1,6 @@
 {
   "date": "2026-09-28",
-  "count": 38,
+  "count": 39,
   "posted_symbols_today": [
     "LSKUSDT",
     "LAYERUSDT",
@@ -39,6 +39,7 @@
     "NILUSDT",
     "ALGOUSDT",
     "ATOMUSDT",
-    "TIAUSDT"
+    "TIAUSDT",
+    "SIGNUSDT"
   ]
 }
