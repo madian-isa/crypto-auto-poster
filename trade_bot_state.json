@@ -1,6 +1,6 @@
 {
   "date": "2026-09-28",
-  "count": 42,
+  "count": 43,
   "posted_symbols_today": [
     "LSKUSDT",
     "LAYERUSDT",
@@ -43,6 +43,7 @@
     "SIGNUSDT",
     "ARBUSDT",
     "REUSDT",
-    "UNIUSDT"
+    "UNIUSDT",
+    "OPNUSDT"
   ]
 }
