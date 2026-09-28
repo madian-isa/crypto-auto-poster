@@ -1,6 +1,6 @@
 {
   "date": "2026-09-28",
-  "count": 74,
+  "count": 75,
   "posted_symbols_today": [
     "LSKUSDT",
     "LAYERUSDT",
@@ -75,6 +75,7 @@
     "PENDLEUSDT",
     "XPLUSDT",
     "LINKUSDT",
-    "BBUSDT"
+    "BBUSDT",
+    "RAYUSDT"
   ]
 }
