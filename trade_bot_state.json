@@ -1,6 +1,6 @@
 {
   "date": "2026-09-28",
-  "count": 14,
+  "count": 15,
   "posted_symbols_today": [
     "LSKUSDT",
     "LAYERUSDT",
@@ -15,6 +15,7 @@
     "CETUSUSDT",
     "SKYUSDT",
     "MEGAUSDT",
-    "ONDOUSDT"
+    "ONDOUSDT",
+    "GPSUSDT"
   ]
 }
