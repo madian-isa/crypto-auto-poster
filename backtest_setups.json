@@ -33786,6 +33786,23 @@
       "technical_analysis": "Price sits above EMA9, EMA21, EMA50 and EMA200, confirming a bullish trend. MACD histogram is positive (+0.00030) and RSI at 64 shows momentum still intact. Stochastic is high (K 86, D 76) hinting at possible short‑term overbought pressure, while the order‑book shows a -36.9% imbalance (more asks), adding a modest bearish bias. Overall EMA and MACD signals dominate, supporting a long bias near the 1H/4H support at 0.0522.",
       "market_context": "BTC is down 0.53% on the 24h, with the broader market broadly negative (88.3% red). The bearish BTC backdrop adds caution, but IOTA's own technicals remain bullish.",
       "result": "PENDING"
+    },
+    {
+      "id": 1988,
+      "created_at": "2026-09-28T17:46:33.012900+00:00",
+      "symbol": "QIUSDT",
+      "direction": "LONG",
+      "title": "Bullish Momentum Is Building: Can $QI Continue Its Breakout?",
+      "entry_low": 0.003203,
+      "entry_high": 0.003208,
+      "stop_loss": 0.00309,
+      "take_profit": 0.0034365,
+      "support": 0.003203,
+      "resistance": 0.003433,
+      "news_line": "",
+      "technical_analysis": "Price sits just above the 1‑hour support (0.003203) and is trading above all key EMAs (9, 21, 50) and the EMA200, indicating bullish bias. MACD line is above the signal with a positive histogram, while Stochastic %K (60) is above %D (44), adding momentum. RSI is neutral‑slightly bullish at 52. These three signals align for a potential upside move toward the 1‑hour resistance at 0.003433.",
+      "market_context": "BTC is in a short‑term bearish phase (‑0.55% 24h) and the broader market is broadly negative (88.4% red). Despite that, QI shows internal bullish technical alignment.",
+      "result": "PENDING"
     }
   ]
 }
