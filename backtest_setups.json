@@ -33803,6 +33803,23 @@
       "technical_analysis": "Price sits just above the 1‑hour support (0.003203) and is trading above all key EMAs (9, 21, 50) and the EMA200, indicating bullish bias. MACD line is above the signal with a positive histogram, while Stochastic %K (60) is above %D (44), adding momentum. RSI is neutral‑slightly bullish at 52. These three signals align for a potential upside move toward the 1‑hour resistance at 0.003433.",
       "market_context": "BTC is in a short‑term bearish phase (‑0.55% 24h) and the broader market is broadly negative (88.4% red). Despite that, QI shows internal bullish technical alignment.",
       "result": "PENDING"
+    },
+    {
+      "id": 1989,
+      "created_at": "2026-09-28T17:50:00.013122+00:00",
+      "symbol": "VTHOUSDT",
+      "direction": "SHORT",
+      "title": "$VTHO Volume Decreases on Rally: Weak Buyers Exposed",
+      "entry_low": 0.000706,
+      "entry_high": 0.000708,
+      "stop_loss": 0.000732,
+      "take_profit": 0.000657,
+      "support": 0.000709,
+      "resistance": 0.000778,
+      "news_line": "",
+      "technical_analysis": "Price sits below EMA9, EMA21, EMA50 and EMA200, confirming a bearish market structure on both 1H and 4H. ADX is near 50, indicating a strong trend. RSI at 28.7 and Stochastic K at 25 show oversold conditions but in a downtrend they often precede further weakness. MACD histogram is negative and the line is below the signal, adding bearish momentum. Order‑book imbalance is -27.6%, meaning sell pressure outweighs buy interest. These three‑to‑five strongest signals point to a short bias.",
+      "market_context": "BTC is in a 24‑hour bearish phase (‑0.68%) and the broader market is broadly negative (88.2% red). This backdrop supports the downside outlook for VTHOUSDT.",
+      "result": "PENDING"
     }
   ]
 }
