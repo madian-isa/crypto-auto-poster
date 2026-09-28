@@ -33820,6 +33820,23 @@
       "technical_analysis": "Price sits below EMA9, EMA21, EMA50 and EMA200, confirming a bearish market structure on both 1H and 4H. ADX is near 50, indicating a strong trend. RSI at 28.7 and Stochastic K at 25 show oversold conditions but in a downtrend they often precede further weakness. MACD histogram is negative and the line is below the signal, adding bearish momentum. Order‑book imbalance is -27.6%, meaning sell pressure outweighs buy interest. These three‑to‑five strongest signals point to a short bias.",
       "market_context": "BTC is in a 24‑hour bearish phase (‑0.68%) and the broader market is broadly negative (88.2% red). This backdrop supports the downside outlook for VTHOUSDT.",
       "result": "PENDING"
+    },
+    {
+      "id": 1990,
+      "created_at": "2026-09-28T18:00:59.432065+00:00",
+      "symbol": "BROCCOLI714USDT",
+      "direction": "SHORT",
+      "title": "Strong Rejection at Trendline Resistance: $BROCCOLI714 Short Entry",
+      "entry_low": 0.02578,
+      "entry_high": 0.02589,
+      "stop_loss": 0.02678,
+      "take_profit": 0.023945,
+      "support": 0.02481,
+      "resistance": 0.02705,
+      "news_line": "",
+      "technical_analysis": "Price sits below EMA9, EMA21, EMA50 and EMA200, confirming a bearish alignment. MACD line is under its signal with a negative histogram, while ADX ~33 signals a strong trend. RSI at 33 and Stochastic K/D in the low‑30s suggest oversold conditions but do not outweigh the downtrend bias. The 1H/4H structure shows recent swing lows near 0.02481 and swing highs near 0.02705, keeping the market in a descending channel.",
+      "market_context": "BTC is trading lower (‑0.85% 24h) and the broader market is broadly negative (89% red). This reinforces the bearish bias for BROCCOLI714USDT.",
+      "result": "PENDING"
     }
   ]
 }
