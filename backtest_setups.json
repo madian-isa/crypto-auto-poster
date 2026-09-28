@@ -33684,6 +33684,23 @@
       "technical_analysis": "$NIGHT fallback technical analysis: RSI is 61.8, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is expanding by 91.3%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 1982,
+      "created_at": "2026-09-28T16:45:47.435903+00:00",
+      "symbol": "BERAUSDT",
+      "direction": "SHORT",
+      "title": "$BERA Resistance Test Fails: Bearish Momentum Building Fast",
+      "entry_low": 0.221,
+      "entry_high": 0.223,
+      "stop_loss": 0.2315,
+      "take_profit": 0.203,
+      "support": 0.2172,
+      "resistance": 0.2239,
+      "news_line": "",
+      "technical_analysis": "Price sits below EMA9 (0.2202), EMA21 (0.2250), EMA50 (0.2298) and EMA200 (0.2252), indicating a bearish bias. MACD line (-0.0048) is under its signal (-0.0040) with a negative histogram, confirming down momentum. ADX is strong at 41, showing the trend is significant. RSI at 32 and Stochastic K/D around 16/14 signal oversold conditions but still within a downtrend. Order‑book shows a bid‑ask imbalance of ~35% favoring bids, yet best bid (0.2182) is above the current price, suggesting sellers are defending the level. The 1H swing structure places resistance at 0.2239 and support at 0.2172; pric",
+      "market_context": "BTC is in a bearish 4H mixed trend and a bullish 1D trend, but overall market breadth is broadly negative with 90% of assets red. This reinforces caution for BERAUSDT and supports a short outlook.",
+      "result": "PENDING"
     }
   ]
 }
