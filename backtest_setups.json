@@ -33004,6 +33004,23 @@
       "technical_analysis": "$DOGE fallback technical analysis: RSI is 33.8, showing weakening momentum without being deeply oversold, price is trading below the 21 EMA, supporting the bearish bias, MACD is below its signal line, confirming negative momentum, volume is expanding by 72.6%, and price is below the 50 EMA, keeping the short-term structure weak. Together, these signals support a conditional SHORT continuation setup. Sellers still need to hold the entry zone and push price toward lower support.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 1942,
+      "created_at": "2026-09-28T05:00:51.116982+00:00",
+      "symbol": "PLUMEUSDT",
+      "direction": "LONG",
+      "title": "Bullish Divergence Flashed on $PLUME Daily Chart Structure",
+      "entry_low": 0.01868317,
+      "entry_high": 0.01877683,
+      "stop_loss": 0.0179808,
+      "take_profit": 0.0202284,
+      "support": 0.01865,
+      "resistance": 0.01899,
+      "news_line": "",
+      "technical_analysis": "$PLUME fallback technical analysis: RSI is 56.4, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is expanding by 84.5%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
