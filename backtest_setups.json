@@ -33956,6 +33956,23 @@
       "technical_analysis": "$FF fallback technical analysis: RSI is 30.2, showing weakening momentum without being deeply oversold, price is trading below the 21 EMA, supporting the bearish bias, MACD is below its signal line, confirming negative momentum, volume is expanding by 38.0%, and price is below the 50 EMA, keeping the short-term structure weak. Together, these signals support a conditional SHORT continuation setup. Sellers still need to hold the entry zone and push price toward lower support.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 1998,
+      "created_at": "2026-09-28T19:02:29.156273+00:00",
+      "symbol": "SOPHUSDT",
+      "direction": "SHORT",
+      "title": "High Volume Selling Sweep Breaks $SOPH Market Structure",
+      "entry_low": 0.00348,
+      "entry_high": 0.0035,
+      "stop_loss": 0.0036296,
+      "take_profit": 0.0032108,
+      "support": 0.00345,
+      "resistance": 0.00355,
+      "news_line": "",
+      "technical_analysis": "Price sits below all key EMAs (9‑200) and the MACD histogram remains negative, confirming a prevailing downtrend. ADX is above 60, indicating a strong trend. RSI at 32.9 and Stochastic K/D in the low‑20s suggest oversold conditions but do not outweigh the bearish EMA and MACD alignment. Order‑book imbalance is -24.5%, showing more sell pressure. The 1H swing range is bounded by 0.00345 support and 0.00355 resistance; a short entry near the current price (0.00348‑0.00350) respects this structure.",
+      "market_context": "BTC is marginally bearish (‑0.93% 24h) and the broader market is broadly negative, with only ~11% of assets in green. This backdrop supports a cautious short bias for SOPHUSDT.",
+      "result": "PENDING"
     }
   ]
 }
