@@ -1,6 +1,6 @@
 {
   "date": "2026-09-28",
-  "count": 27,
+  "count": 28,
   "posted_symbols_today": [
     "LSKUSDT",
     "LAYERUSDT",
@@ -28,6 +28,7 @@
     "LAUSDT",
     "TUTUSDT",
     "PUMPUSDT",
-    "XLMUSDT"
+    "XLMUSDT",
+    "MOVEUSDT"
   ]
 }
