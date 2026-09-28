@@ -240,35 +240,6 @@ def _coin_name(symbol):
     return symbol
 
 
-def _daily_topic_tags(current_date=None):
-    topic_tags = (
-        "Binance",
-        "Crypto",
-        "Altcoins",
-        "Web3",
-        "DeFi",
-        "Trading",
-        "CryptoNews",
-        "MarketUpdate",
-        "TechnicalAnalysis",
-        "PriceAction",
-        "MarketAnalysis",
-        "RiskManagement",
-        "Blockchain",
-        "CryptoCommunity",
-    )
-    today = current_date or (
-        datetime.now(timezone.utc) + timedelta(hours=6)
-    ).date()
-    daily_start = (
-        today.toordinal() * 2
-    ) % len(topic_tags)
-    return (
-        topic_tags[daily_start],
-        topic_tags[(daily_start + 1) % len(topic_tags)],
-    )
-
-
 def _post_hashtags(symbol, direction):
     coin = re.sub(
         r"[^A-Z0-9]",
@@ -278,21 +249,60 @@ def _post_hashtags(symbol, direction):
     if not coin:
         coin = "Crypto"
 
+    project_tags = {
+        "ADA": "Cardano",
+        "AVAX": "Avalanche",
+        "BTC": "Bitcoin",
+        "DOGE": "Dogecoin",
+        "DOT": "Polkadot",
+        "ETH": "Ethereum",
+        "LINK": "Chainlink",
+        "LTC": "Litecoin",
+        "NEAR": "NEARProtocol",
+        "ONDO": "OndoFinance",
+        "SHIB": "ShibaInu",
+        "SOL": "Solana",
+        "SNX": "Synthetix",
+        "SUI": "Sui",
+        "TON": "Toncoin",
+        "TRX": "TRON",
+        "UNI": "Uniswap",
+        "XRP": "XRP",
+    }
+
     direction = str(direction or "").upper()
     direction_tag = (
         "LongSetup"
         if direction == "LONG"
         else "ShortSetup"
     )
-    rotating_tags = _daily_topic_tags(
-        current_date=None,
+    topic_tags = (
+        "TechnicalAnalysis",
+        "MarketStructure",
+        "CryptoTrading",
+        "AltcoinAnalysis",
+        "CryptoMarket",
+        "TradingSetup",
+        "MarketMomentum",
+        "ChartAnalysis",
     )
 
-    return [
-        f"#{coin}",
-        f"#{direction_tag}",
-        *[f"#{tag}" for tag in rotating_tags],
-    ]
+    time_bucket = datetime.now(
+        timezone.utc
+    ).strftime("%Y-%m-%d-%H")
+    seed_text = f"{coin}-{direction}-{time_bucket}"
+    seed_value = sum(ord(char) for char in seed_text)
+    topic_tag = topic_tags[seed_value % len(topic_tags)]
+    project_tag = project_tags.get(coin)
+
+    tags = [f"#{coin}"]
+    if project_tag and project_tag.upper() != coin:
+        tags.append(f"#{project_tag}")
+    else:
+        tags.append(f"#{direction_tag}")
+    tags.append(f"#{topic_tag}")
+
+    return tags
 
 
 def _replace_coin_placeholder(title, coin):
@@ -1870,7 +1880,7 @@ def format_post_text(setup):
             existing.lower() for existing in clean_hashtags
         }:
             clean_hashtags.append(tag)
-        if len(clean_hashtags) == 4:
+        if len(clean_hashtags) == 3:
             break
 
     if not clean_hashtags:
