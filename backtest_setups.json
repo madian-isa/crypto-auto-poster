@@ -33769,6 +33769,23 @@
       "technical_analysis": "Price sits below EMA9 (30.14), EMA21 (31.22), EMA50 (32.40) and EMA200 (31.78), confirming a downtrend on multiple timeframes. MACD line (-1.09) is under its signal (-0.91) with a negative histogram, indicating bearish momentum. ADX at 43 shows a strong trend. RSI (29.7) and Stochastic K/D (14.7/9.1) are in oversold territory, but the order‑book imbalance of -21.3% and a best‑ask above best‑bid suggest selling pressure. The 1H swing high is around 31.24 and swing low near 28.63, providing clear levels for entry and risk management.",
       "market_context": "BTC is marginally bearish (-0.47% 24h) while the broader market is broadly negative (89.1% red). This backdrop supports a cautious short bias for INTWBUSDT.",
       "result": "PENDING"
+    },
+    {
+      "id": 1987,
+      "created_at": "2026-09-28T17:32:41.219861+00:00",
+      "symbol": "IOTAUSDT",
+      "direction": "LONG",
+      "title": "Spot Inflows Surge for $IOTA as Futures Open Interest Rises",
+      "entry_low": 0.0522,
+      "entry_high": 0.0525,
+      "stop_loss": 0.0503,
+      "take_profit": 0.05645,
+      "support": 0.0522,
+      "resistance": 0.0556,
+      "news_line": "",
+      "technical_analysis": "Price sits above EMA9, EMA21, EMA50 and EMA200, confirming a bullish trend. MACD histogram is positive (+0.00030) and RSI at 64 shows momentum still intact. Stochastic is high (K 86, D 76) hinting at possible short‑term overbought pressure, while the order‑book shows a -36.9% imbalance (more asks), adding a modest bearish bias. Overall EMA and MACD signals dominate, supporting a long bias near the 1H/4H support at 0.0522.",
+      "market_context": "BTC is down 0.53% on the 24h, with the broader market broadly negative (88.3% red). The bearish BTC backdrop adds caution, but IOTA's own technicals remain bullish.",
+      "result": "PENDING"
     }
   ]
 }
