@@ -33599,6 +33599,23 @@
       "technical_analysis": "Price is trading below all key EMAs (EMA9 0.0855, EMA21 0.0872, EMA50 0.0886, EMA200 0.0852), signaling bearish bias. MACD line (-0.00171) sits under its signal (-0.00148) with a negative histogram, reinforcing the downtrend. ADX at 37.4 indicates a strong trend. RSI at 33.4 and Stochastic K at 16 point to oversold conditions but no clear reversal yet. Order‑book shows a modest bid‑side imbalance (+12.3%).",
       "market_context": "BTC is down 1.9% over the past 24 h and market breadth is 91% red, reflecting a broadly negative crypto environment.",
       "result": "PENDING"
+    },
+    {
+      "id": 1977,
+      "created_at": "2026-09-28T15:37:24.183067+00:00",
+      "symbol": "XVGUSDT",
+      "direction": "SHORT",
+      "title": "Strong Rejection at Trendline Resistance: $XVG Short Entry",
+      "entry_low": 0.00312716,
+      "entry_high": 0.00314284,
+      "stop_loss": 0.0032604,
+      "take_profit": 0.0028842,
+      "support": 0.003161,
+      "resistance": 0.003212,
+      "news_line": "",
+      "technical_analysis": "$XVG fallback technical analysis: RSI is 35.9, showing weakening momentum without being deeply oversold, price is trading below the 21 EMA, supporting the bearish bias, MACD is below its signal line, confirming negative momentum, volume is expanding by 31.9%, and price is below the 50 EMA, keeping the short-term structure weak. Together, these signals support a conditional SHORT continuation setup. Sellers still need to hold the entry zone and push price toward lower support.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
