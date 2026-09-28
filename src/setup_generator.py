@@ -1840,12 +1840,6 @@ def format_post_text(setup):
             f"Market Context: {market}"
         )
 
-    lines.append("")
-
-    lines.append(
-        final_line
-    )
-
     text = "\n".join(
         lines
     ).strip()
@@ -1893,11 +1887,12 @@ def format_post_text(setup):
         clean_hashtags = _post_hashtags(symbol, direction)
 
     hashtag_line = " ".join(clean_hashtags)
+    footer = f"{hashtag_line}\n\n{final_line}"
     available_body_length = max(
         0,
-        cfg.CHAR_LIMIT - len(hashtag_line) - 1,
+        cfg.CHAR_LIMIT - len(footer) - 2,
     )
-    if len(text) + len(hashtag_line) + 1 > cfg.CHAR_LIMIT:
+    if len(text) + len(footer) + 2 > cfg.CHAR_LIMIT:
         text = text[:available_body_length].rstrip()
         text = text.rstrip("#").rstrip()
-    return f"{text}\n{hashtag_line}".strip()
+    return f"{text}\n\n{footer}".strip()
