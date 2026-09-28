@@ -1,6 +1,6 @@
 {
   "date": "2026-09-28",
-  "count": 60,
+  "count": 61,
   "posted_symbols_today": [
     "LSKUSDT",
     "LAYERUSDT",
@@ -61,6 +61,7 @@
     "XVGUSDT",
     "KAITOUSDT",
     "SNXUSDT",
-    "BONKUSDT"
+    "BONKUSDT",
+    "NIGHTUSDT"
   ]
 }
