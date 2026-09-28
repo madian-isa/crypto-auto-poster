@@ -14,6 +14,7 @@ Features:
 - 25 LONG title templates
 - 25 SHORT title templates
 - Deterministic title rotation
+- Coin- and direction-specific rotating hashtags
 - No emojis
 - Exactly 3 $COIN mentions in the final post
 - Strict 1:2 RR
@@ -113,7 +114,7 @@ IMPORTANT RULES:
 - Keep the technical analysis.
 - Keep relevant supplied news when available.
 - Keep useful BTC/broader-market context when available.
-- Do NOT generate hashtags.
+- Do NOT generate hashtags; code adds relevant tags after generation.
 - Do NOT use emojis.
 - Do NOT use NFA or DYOR.
 - Do not use guaranteed-profit language.
@@ -237,6 +238,71 @@ def _coin_name(symbol):
         return symbol[:-4]
 
     return symbol
+
+
+def _post_hashtags(symbol, direction):
+    coin = re.sub(
+        r"[^A-Z0-9]",
+        "",
+        _coin_name(symbol),
+    )
+    if not coin:
+        coin = "Crypto"
+
+    project_tags = {
+        "ADA": "Cardano",
+        "AVAX": "Avalanche",
+        "BTC": "Bitcoin",
+        "DOGE": "Dogecoin",
+        "DOT": "Polkadot",
+        "ETH": "Ethereum",
+        "LINK": "Chainlink",
+        "LTC": "Litecoin",
+        "NEAR": "NEARProtocol",
+        "ONDO": "OndoFinance",
+        "SHIB": "ShibaInu",
+        "SOL": "Solana",
+        "SNX": "Synthetix",
+        "SUI": "Sui",
+        "TON": "Toncoin",
+        "TRX": "TRON",
+        "UNI": "Uniswap",
+        "XRP": "XRP",
+    }
+
+    direction = str(direction or "").upper()
+    direction_tag = (
+        "LongSetup"
+        if direction == "LONG"
+        else "ShortSetup"
+    )
+    topic_tags = (
+        "TechnicalAnalysis",
+        "MarketStructure",
+        "CryptoTrading",
+        "AltcoinAnalysis",
+        "CryptoMarket",
+        "TradingSetup",
+        "MarketMomentum",
+        "ChartAnalysis",
+    )
+
+    time_bucket = datetime.now(
+        timezone.utc
+    ).strftime("%Y-%m-%d-%H")
+    seed_text = f"{coin}-{direction}-{time_bucket}"
+    seed_value = sum(ord(char) for char in seed_text)
+    topic_tag = topic_tags[seed_value % len(topic_tags)]
+    project_tag = project_tags.get(coin)
+
+    tags = [f"#{coin}"]
+    if project_tag and project_tag.upper() != coin:
+        tags.append(f"#{project_tag}")
+    else:
+        tags.append(f"#{direction_tag}")
+    tags.append(f"#{topic_tag}")
+
+    return tags
 
 
 def _replace_coin_placeholder(title, coin):
@@ -1109,7 +1175,7 @@ def _python_fallback_setup(
         "technical_analysis": _fallback_technical_text(coin, indicators, direction),
         "market_context": btc_context,
         "rr": 2,
-        "hashtags": [],
+        "hashtags": _post_hashtags(symbol, direction),
     }
 
 def _parse_ai_response(content):
@@ -1555,7 +1621,7 @@ Return JSON only:
         400,
     )
 
-    setup["hashtags"] = []
+    setup["hashtags"] = _post_hashtags(symbol, direction)
 
     print(
         f"[setup_generator] "
@@ -1785,12 +1851,6 @@ def format_post_text(setup):
     ).strip()
 
     text = re.sub(
-        r"#\w+",
-        "",
-        text,
-    )
-
-    text = re.sub(
         r"[^\x00-\x7F]+",
         "",
         text,
@@ -1808,10 +1868,36 @@ def format_post_text(setup):
         text,
     ).strip()
 
-    if len(text) > cfg.CHAR_LIMIT:
+    hashtags = setup.get(
+        "hashtags"
+    ) or _post_hashtags(
+        symbol,
+        direction,
+    )
+    if isinstance(hashtags, str):
+        hashtags = hashtags.split()
+    clean_hashtags = []
+    for tag in hashtags:
+        tag = str(tag).strip()
+        tag = re.sub(r"[^#A-Za-z0-9_]", "", tag)
+        if tag and not tag.startswith("#"):
+            tag = f"#{tag}"
+        if tag and tag.lower() not in {
+            existing.lower() for existing in clean_hashtags
+        }:
+            clean_hashtags.append(tag)
+        if len(clean_hashtags) == 3:
+            break
 
-        text = text[
-            :cfg.CHAR_LIMIT
-        ].rstrip()
+    if not clean_hashtags:
+        clean_hashtags = _post_hashtags(symbol, direction)
 
-    return text
+    hashtag_line = " ".join(clean_hashtags)
+    available_body_length = max(
+        0,
+        cfg.CHAR_LIMIT - len(hashtag_line) - 1,
+    )
+    if len(text) + len(hashtag_line) + 1 > cfg.CHAR_LIMIT:
+        text = text[:available_body_length].rstrip()
+        text = text.rstrip("#").rstrip()
+    return f"{text}\n{hashtag_line}".strip()
