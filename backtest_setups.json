@@ -33123,6 +33123,23 @@
       "technical_analysis": "$MOVE fallback technical analysis: RSI is 30.0, showing weakening momentum without being deeply oversold, price is trading below the 21 EMA, supporting the bearish bias, MACD is below its signal line, confirming negative momentum, volume is contracting by 7.4%, and price is below the 50 EMA, keeping the short-term structure weak. Together, these signals support a conditional SHORT continuation setup. Sellers still need to hold the entry zone and push price toward lower support.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 1949,
+      "created_at": "2026-09-28T06:45:41.859247+00:00",
+      "symbol": "TRUMPUSDT",
+      "direction": "SHORT",
+      "title": "Technical Signals Turn Negative as $TRUMP Selling Pressure Rises",
+      "entry_low": 2.06,
+      "entry_high": 2.065,
+      "stop_loss": 2.135,
+      "take_profit": 1.9175,
+      "support": 2.01,
+      "resistance": 2.118,
+      "news_line": "",
+      "technical_analysis": "Price sits below EMA9, EMA21, EMA50 and EMA200, confirming a bearish bias. MACD is negative with a bearish histogram, while RSI (36.3) and Stochastic (K≈22, D≈24) are in oversold territory, suggesting downward momentum may continue. Order‑book shows a 43% bid‑side imbalance, adding slight pressure to the downside. The 1H/4H swing structure places the recent high around 2.118 and the low near 2.01, framing the short setup.",
+      "market_context": "BTC is in a bearish 4H and bullish‑on‑daily environment, while the overall market is broadly negative (90% red). This broader weakness supports a short bias on TRUMPUSDT.",
+      "result": "PENDING"
     }
   ]
 }
