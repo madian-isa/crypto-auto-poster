@@ -1,6 +1,6 @@
 {
   "date": "2026-09-28",
-  "count": 63,
+  "count": 64,
   "posted_symbols_today": [
     "LSKUSDT",
     "LAYERUSDT",
@@ -64,6 +64,7 @@
     "BONKUSDT",
     "NIGHTUSDT",
     "BERAUSDT",
-    "FLOWUSDT"
+    "FLOWUSDT",
+    "CAKEUSDT"
   ]
 }
