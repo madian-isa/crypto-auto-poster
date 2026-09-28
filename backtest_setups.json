@@ -32766,6 +32766,23 @@
       "technical_analysis": "Price sits below the 9‑, 21‑, 50‑ and 200‑EMA, indicating a bearish structure on both 1H and 4H charts. MACD is negative with a bearish histogram, while RSI (33) and Stochastic (K13/D19) are in oversold territory but still point to downside momentum. The nearest 1H resistance is 0.00643 and the 4H swing high aligns with the same level, giving a clear short‑bias target.",
       "market_context": "BTC is marginally bearish (‑0.56% on 24h) and the broader market shows a slight red bias (56.5% down). Order‑book imbalance (+7.9% bid side) is modest, supporting a short bias for HEMIUSDT.",
       "result": "PENDING"
+    },
+    {
+      "id": 1928,
+      "created_at": "2026-09-28T01:30:54.853439+00:00",
+      "symbol": "JASMYUSDT",
+      "direction": "LONG",
+      "title": "$JASMY Breaks Out of Falling Wedge Pattern: Targets Set Higher",
+      "entry_low": 0.00536655,
+      "entry_high": 0.00539345,
+      "stop_loss": 0.00506455,
+      "take_profit": 0.0060109,
+      "support": 0.00509,
+      "resistance": 0.00539,
+      "news_line": "",
+      "technical_analysis": "$JASMY fallback technical analysis: RSI is 68.2, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is contracting by 13.9%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
