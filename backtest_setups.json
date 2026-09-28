@@ -33446,6 +33446,23 @@
       "technical_analysis": "$牛来 fallback technical analysis: RSI is 63.6, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is expanding by 33.9%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 1968,
+      "created_at": "2026-09-28T13:30:51.947556+00:00",
+      "symbol": "TSTUSDT",
+      "direction": "SHORT",
+      "title": "$TST Distribution Phase Ends: Downside Target Zone Set",
+      "entry_low": 0.01752607,
+      "entry_high": 0.01761392,
+      "stop_loss": 0.01840155,
+      "take_profit": 0.01590689,
+      "support": 0.01735,
+      "resistance": 0.01831,
+      "news_line": "",
+      "technical_analysis": "$TST fallback technical analysis: RSI is 29.3, showing weakening momentum without being deeply oversold, price is trading below the 21 EMA, supporting the bearish bias, MACD is below its signal line, confirming negative momentum, volume is expanding by 151.5%, and price is below the 50 EMA, keeping the short-term structure weak. Together, these signals support a conditional SHORT continuation setup. Sellers still need to hold the entry zone and push price toward lower support.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
