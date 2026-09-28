@@ -32800,6 +32800,23 @@
       "technical_analysis": "Price sits above EMA9, EMA21, EMA50 and EMA200, confirming bullish momentum. MACD line (0.000204) is above its signal (0.000124) with a positive histogram, adding further upside bias. RSI at 66.4 indicates strength without being extreme, while Stochastic K (~74) and D (~83) suggest the market is near overbought but still trending up. ADX around 24 points a moderate trend. Volume is up 41%, and the order‑book shows a bid‑side imbalance of 8.35%, supporting the long bias.",
       "market_context": "BTC is slightly bearish on the 24‑hour chart (‑0.665%) and the broader market shows a predominantly red sentiment (63.5% down). Despite the overall negative backdrop, WOOUSDT exhibits clear bullish technicals.",
       "result": "PENDING"
+    },
+    {
+      "id": 1930,
+      "created_at": "2026-09-28T02:00:58.651272+00:00",
+      "symbol": "SYNUSDT",
+      "direction": "SHORT",
+      "title": "Major Support Breakdown Confirmed on $SYN Higher Timeframes",
+      "entry_low": 0.177156,
+      "entry_high": 0.178044,
+      "stop_loss": 0.184704,
+      "take_profit": 0.163392,
+      "support": 0.17586,
+      "resistance": 0.19242,
+      "news_line": "",
+      "technical_analysis": "$SYN fallback technical analysis: RSI is 30.4, showing weakening momentum without being deeply oversold, price is trading below the 21 EMA, supporting the bearish bias, MACD is below its signal line, confirming negative momentum, volume is expanding by 66.1%, and price is below the 50 EMA, keeping the short-term structure weak. Together, these signals support a conditional SHORT continuation setup. Sellers still need to hold the entry zone and push price toward lower support.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
