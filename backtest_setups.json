@@ -33191,6 +33191,23 @@
       "technical_analysis": "$ICP fallback technical analysis: RSI is 34.8, showing weakening momentum without being deeply oversold, price is trading below the 21 EMA, supporting the bearish bias, MACD is below its signal line, confirming negative momentum, volume is contracting by 47.7%, and price is below the 50 EMA, keeping the short-term structure weak. Together, these signals support a conditional SHORT continuation setup. Sellers still need to hold the entry zone and push price toward lower support.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 1953,
+      "created_at": "2026-09-28T08:01:18.811512+00:00",
+      "symbol": "SCRUSDT",
+      "direction": "SHORT",
+      "title": "$SCR Resistance Test Fails: Bearish Momentum Building Fast",
+      "entry_low": 0.0236607,
+      "entry_high": 0.0237793,
+      "stop_loss": 0.02505465,
+      "take_profit": 0.0210507,
+      "support": 0.02356,
+      "resistance": 0.02493,
+      "news_line": "",
+      "technical_analysis": "$SCR fallback technical analysis: RSI is 29.4, showing weakening momentum without being deeply oversold, price is trading below the 21 EMA, supporting the bearish bias, MACD is below its signal line, confirming negative momentum, volume is contracting by 8.7%, and price is below the 50 EMA, keeping the short-term structure weak. Together, these signals support a conditional SHORT continuation setup. Sellers still need to hold the entry zone and push price toward lower support.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
