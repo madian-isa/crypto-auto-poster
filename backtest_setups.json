@@ -33616,6 +33616,23 @@
       "technical_analysis": "$XVG fallback technical analysis: RSI is 35.9, showing weakening momentum without being deeply oversold, price is trading below the 21 EMA, supporting the bearish bias, MACD is below its signal line, confirming negative momentum, volume is expanding by 31.9%, and price is below the 50 EMA, keeping the short-term structure weak. Together, these signals support a conditional SHORT continuation setup. Sellers still need to hold the entry zone and push price toward lower support.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 1978,
+      "created_at": "2026-09-28T15:45:51.211232+00:00",
+      "symbol": "KAITOUSDT",
+      "direction": "SHORT",
+      "title": "$KAITO Distribution Phase Ends: Downside Target Zone Set",
+      "entry_low": 0.3335,
+      "entry_high": 0.3345,
+      "stop_loss": 0.346,
+      "take_profit": 0.31,
+      "support": 0.3268,
+      "resistance": 0.342,
+      "news_line": "",
+      "technical_analysis": "KAITO is trading at 0.3294, well below EMA9 (0.3365), EMA21 (0.3428), EMA50 (0.3494) and EMA200 (0.3452), indicating a clear downtrend. MACD line (-0.0065) sits beneath its signal (-0.0058) with a negative histogram, confirming bearish momentum. RSI at 32.6 and Stochastic K at 9.7 (D 26.7) show oversold conditions but the strong ADX (34) signals the trend remains robust. Volume is up 165%, suggesting active participation. The 1‑hour swing shows resistance around 0.342 and support near 0.3268, aligning with the short bias.",
+      "market_context": "The broader market is broadly negative (91.5% red). BTC is down 1.4% on the 24‑hour chart, adding bearish pressure to altcoins like KAITO.",
+      "result": "PENDING"
     }
   ]
 }
