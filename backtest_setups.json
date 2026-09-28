@@ -33871,6 +33871,23 @@
       "technical_analysis": "Price sits below all key EMAs (9, 21, 50, 200), reinforcing bearish bias. MACD line is under its signal with a negative histogram, while RSI at 38.9 and Stochastic K/D around 40/29 indicate continued downside momentum. ADX above 30 (31.7) confirms a strong trend. The 1‑hour swing high at ~0.10308 and swing low near 0.09949 define a clear short‑bias range. Order‑book shows a modest bid‑side imbalance, but the technical picture remains dominant.",
       "market_context": "BTC is in a mixed 4‑hour trend and down 0.7% over 24 h, while the broader market is broadly negative (88.6% red). This backdrop supports a cautious stance on risk‑on assets.",
       "result": "PENDING"
+    },
+    {
+      "id": 1993,
+      "created_at": "2026-09-28T18:15:56.476967+00:00",
+      "symbol": "LINKUSDT",
+      "direction": "LONG",
+      "title": "$LINK Prepares for Parabolic Phase: Key Technical Trigger Met",
+      "entry_low": 15.07,
+      "entry_high": 15.14,
+      "stop_loss": 14.55,
+      "take_profit": 16.215,
+      "support": 14.246,
+      "resistance": 15.489,
+      "news_line": "",
+      "technical_analysis": "Price sits above EMA9, EMA21, EMA50 and EMA200, confirming a bullish hierarchy. MACD line (0.207) is well above its signal (0.066) with a positive histogram, indicating upward momentum. RSI at 66 and Stochastic K/D in the low 80s show the instrument is in an overbought zone but still trending higher. Bollinger upper band (15.101) is just below current price, suggesting a slight stretch but not a hard breakout. The 1H/4H swing structure shows support at 14.246 and resistance at 15.489, with price comfortably above the recent swing low.",
+      "market_context": "BTC is in a mixed 4‑hour trend but bullish on the daily chart, while the broader crypto market is broadly negative (89% red). LINKUSDT’s bullish internal signals contrast with the overall market sentiment, so risk management is essential.",
+      "result": "PENDING"
     }
   ]
 }
