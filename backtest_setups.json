@@ -33378,6 +33378,23 @@
       "technical_analysis": "OPN is trading below all key EMAs (9, 21, 50, 200), confirming a bearish structure on both the 1H and 4H charts. The MACD line sits under its signal with a negative histogram, while RSI at 32.4 and Stochastic K/D in the low teens signal limited buying pressure. ADX at 37 indicates a strong prevailing trend. Order‑book data shows a -18.9% imbalance toward asks, reinforcing downside bias. The price has slipped beneath the 1H support level of 0.0507, making the next resistance at 0.0518 a logical target for a short entry.",
       "market_context": "The broader market is broadly negative (90.7% red). BTC is down 1.99% over 24 h, with a mixed 4H trend and a bullish 1D outlook, but overall risk sentiment remains bearish, supporting short bias on altcoins.",
       "result": "PENDING"
+    },
+    {
+      "id": 1964,
+      "created_at": "2026-09-28T12:31:21.142679+00:00",
+      "symbol": "QUICKUSDT",
+      "direction": "SHORT",
+      "title": "Panic Selling Risk Increases as $QUICK Tests Critical Floor",
+      "entry_low": 0.0098952,
+      "entry_high": 0.0099448,
+      "stop_loss": 0.0103168,
+      "take_profit": 0.0091264,
+      "support": 0.01,
+      "resistance": 0.01106,
+      "news_line": "",
+      "technical_analysis": "$QUICK fallback technical analysis: RSI is 29.5, showing weakening momentum without being deeply oversold, price is trading below the 21 EMA, supporting the bearish bias, MACD is below its signal line, confirming negative momentum, volume is contracting by 61.0%, and price is below the 50 EMA, keeping the short-term structure weak. Together, these signals support a conditional SHORT continuation setup. Sellers still need to hold the entry zone and push price toward lower support.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
