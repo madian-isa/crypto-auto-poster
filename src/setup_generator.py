@@ -14,7 +14,7 @@ Features:
 - 25 LONG title templates
 - 25 SHORT title templates
 - Deterministic title rotation
-- Coin- and direction-specific rotating hashtags
+- Coin/direction hashtags plus globally rotating daily topic hashtags
 - No emojis
 - Exactly 3 $COIN mentions in the final post
 - Strict 1:2 RR
@@ -25,7 +25,7 @@ Features:
 
 import json
 import re
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 
 from groq import Groq
 
@@ -240,55 +240,32 @@ def _coin_name(symbol):
     return symbol
 
 
-def _daily_topic_tags(coin, direction, current_date=None):
-    topic_tags = {
-        "LONG": (
-            "Binance",
-            "Crypto",
-            "Altcoins",
-            "Bullish",
-            "Web3",
-            "DeFi",
-            "Trading",
-            "CryptoNews",
-            "MarketUpdate",
-            "TechnicalAnalysis",
-            "PriceAction",
-            "MarketAnalysis",
-            "Breakout",
-            "CryptoCommunity",
-        ),
-        "SHORT": (
-            "Binance",
-            "Crypto",
-            "Altcoins",
-            "Bearish",
-            "Web3",
-            "DeFi",
-            "Trading",
-            "CryptoNews",
-            "MarketUpdate",
-            "TechnicalAnalysis",
-            "PriceAction",
-            "MarketAnalysis",
-            "RiskManagement",
-            "CryptoCommunity",
-        ),
-    }
-    today = current_date or datetime.now(timezone.utc).date()
-    daily_tags = topic_tags[
-        "LONG" if str(direction or "").upper() == "LONG" else "SHORT"
-    ]
-    coin_seed = sum(
-        (index + 1) * ord(char)
-        for index, char in enumerate(str(coin).upper())
+def _daily_topic_tags(current_date=None):
+    topic_tags = (
+        "Binance",
+        "Crypto",
+        "Altcoins",
+        "Web3",
+        "DeFi",
+        "Trading",
+        "CryptoNews",
+        "MarketUpdate",
+        "TechnicalAnalysis",
+        "PriceAction",
+        "MarketAnalysis",
+        "RiskManagement",
+        "Blockchain",
+        "CryptoCommunity",
     )
+    today = current_date or (
+        datetime.now(timezone.utc) + timedelta(hours=6)
+    ).date()
     daily_start = (
-        coin_seed + today.toordinal() * 2
-    ) % len(daily_tags)
+        today.toordinal() * 2
+    ) % len(topic_tags)
     return (
-        daily_tags[daily_start],
-        daily_tags[(daily_start + 1) % len(daily_tags)],
+        topic_tags[daily_start],
+        topic_tags[(daily_start + 1) % len(topic_tags)],
     )
 
 
@@ -308,8 +285,7 @@ def _post_hashtags(symbol, direction):
         else "ShortSetup"
     )
     rotating_tags = _daily_topic_tags(
-        coin,
-        direction,
+        current_date=None,
     )
 
     return [
