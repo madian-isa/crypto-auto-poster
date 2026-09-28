@@ -33140,6 +33140,23 @@
       "technical_analysis": "Price sits below EMA9, EMA21, EMA50 and EMA200, confirming a bearish bias. MACD is negative with a bearish histogram, while RSI (36.3) and Stochastic (K≈22, D≈24) are in oversold territory, suggesting downward momentum may continue. Order‑book shows a 43% bid‑side imbalance, adding slight pressure to the downside. The 1H/4H swing structure places the recent high around 2.118 and the low near 2.01, framing the short setup.",
       "market_context": "BTC is in a bearish 4H and bullish‑on‑daily environment, while the overall market is broadly negative (90% red). This broader weakness supports a short bias on TRUMPUSDT.",
       "result": "PENDING"
+    },
+    {
+      "id": 1950,
+      "created_at": "2026-09-28T07:01:01.873423+00:00",
+      "symbol": "WIFUSDT",
+      "direction": "SHORT",
+      "title": "$WIF Breaks Ascending Support Line: Bearish Momentum Surge",
+      "entry_low": 0.23171925,
+      "entry_high": 0.23288075,
+      "stop_loss": 0.241592,
+      "take_profit": 0.213716,
+      "support": 0.2317,
+      "resistance": 0.2456,
+      "news_line": "",
+      "technical_analysis": "$WIF fallback technical analysis: RSI is 31.8, showing weakening momentum without being deeply oversold, price is trading below the 21 EMA, supporting the bearish bias, MACD is below its signal line, confirming negative momentum, volume is contracting by 8.4%, and price is below the 50 EMA, keeping the short-term structure weak. Together, these signals support a conditional SHORT continuation setup. Sellers still need to hold the entry zone and push price toward lower support.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
