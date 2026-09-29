@@ -35418,6 +35418,23 @@
       "technical_analysis": "$STG fallback technical analysis: RSI is 59.7, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is expanding by 11.3%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 2084,
+      "created_at": "2026-09-29T23:16:27.193331+00:00",
+      "symbol": "QNTUSDT",
+      "direction": "LONG",
+      "title": "Bullish Momentum Accelerates as $QNT Liquidity Sweep Completes",
+      "entry_low": 259.84875,
+      "entry_high": 261.15125,
+      "stop_loss": 250.08,
+      "take_profit": 281.34,
+      "support": 243.0,
+      "resistance": 275.93,
+      "news_line": "",
+      "technical_analysis": "$QNT fallback technical analysis: RSI is 55.4, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is contracting by 27.2%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
