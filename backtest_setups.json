@@ -34789,6 +34789,23 @@
       "technical_analysis": "FLUX is trading above all key EMAs (EMA9 0.07209, EMA21 0.07070, EMA50 0.07068, EMA200 0.06822), confirming a bullish alignment. MACD line (0.00096) sits well above the signal (0.00017) with a solid positive histogram (0.00079). RSI at 63.6 and Stochastic K/D in the high 80s show momentum still strong despite overbought levels. ADX at 33.6 signals a strong trend. Volume is 1.52% higher than prior period, adding conviction. Order‑book shows a slight ask‑side imbalance (‑7.35%) but the spread is tight, and price sits just below the 1‑hour resistance zone (0.0746).",
       "market_context": "BTC is in a bullish daily trend, up 0.689% with a broadly positive market breadth (74% green). This broader optimism supports risk‑on sentiment for altcoins like FLUX.",
       "result": "PENDING"
+    },
+    {
+      "id": 2047,
+      "created_at": "2026-09-29T14:31:17.143551+00:00",
+      "symbol": "ETHUSDT",
+      "direction": "LONG",
+      "title": "Spot Inflows Surge for $ETH as Futures Open Interest Rises",
+      "entry_low": 2721.42,
+      "entry_high": 2726.83,
+      "stop_loss": 2628.0,
+      "take_profit": 2916.375,
+      "support": 2691.01,
+      "resistance": 2721.42,
+      "news_line": "",
+      "technical_analysis": "ETH is trading above the 1‑hour resistance (2721.42) with price at 2726.83. All EMAs are stacked bullish (EMA9 ≈ 2715, EMA21 ≈ 2700, EMA50 ≈ 2690, EMA200 ≈ 2673). MACD histogram is positive (+5.46) and the MACD line sits well above the signal line, confirming upward momentum. RSI at 62.7 shows strength without being overbought. Stochastic is high (K 77, D 86) but not yet in overbought territory. The 3‑hour order book shows a slight ask‑side imbalance, but the overall technical picture favors a continuation higher.",
+      "market_context": "BTC remains in a bullish trend on both 4‑hour and daily frames, supporting a risk‑on environment. The broader market breadth is strongly positive (≈84% green).",
+      "result": "PENDING"
     }
   ]
 }
