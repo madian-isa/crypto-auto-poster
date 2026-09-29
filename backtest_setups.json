@@ -34211,6 +34211,23 @@
       "technical_analysis": "$ARB fallback technical analysis: RSI is 35.7, showing weakening momentum without being deeply oversold, price is trading below the 21 EMA, supporting the bearish bias, MACD is below its signal line, confirming negative momentum, volume is contracting by 61.8%, and price is below the 50 EMA, keeping the short-term structure weak. Together, these signals support a conditional SHORT continuation setup. Sellers still need to hold the entry zone and push price toward lower support.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 2013,
+      "created_at": "2026-09-29T01:45:39.936387+00:00",
+      "symbol": "ALGOUSDT",
+      "direction": "LONG",
+      "title": "Smart Money Flow Increases into $ALGO Ahead of Catalysts",
+      "entry_low": 0.1350615,
+      "entry_high": 0.1357385,
+      "stop_loss": 0.129748,
+      "take_profit": 0.146704,
+      "support": 0.1304,
+      "resistance": 0.1368,
+      "news_line": "",
+      "technical_analysis": "$ALGO fallback technical analysis: RSI is 61.0, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is contracting by 51.1%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
