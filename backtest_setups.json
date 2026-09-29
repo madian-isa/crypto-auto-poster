@@ -34568,6 +34568,23 @@
       "technical_analysis": "ICP is trading at 3.308, comfortably above the EMA9 (3.264), EMA21 (3.179), EMA50 (3.139) and EMA200 (3.062), indicating a strong uptrend. MACD is positive (0.071) with the line above its signal (0.040) and a rising histogram, reinforcing bullish momentum. RSI sits at 65.8, still in the upward zone but not yet overbought. Stochastic %K is 75 and %D 84, hinting at near‑overbought conditions but the trend remains intact. ADX at 32 confirms a solid trend. Order‑book shows a modest ask‑side imbalance (-20.9%), but the price action and EMA hierarchy dominate the bias.",
       "market_context": "Bitcoin is in a bullish phase on both 4‑hour and daily charts, and the broader market is broadly positive (72% green). This supportive macro backdrop aligns with the bullish setup on ICP.",
       "result": "PENDING"
+    },
+    {
+      "id": 2034,
+      "created_at": "2026-09-29T11:01:19.128223+00:00",
+      "symbol": "AGLDUSDT",
+      "direction": "LONG",
+      "title": "Strong Accumulation Detected: $AGLD Prepares for Next Wave Up",
+      "entry_low": 0.22334025,
+      "entry_high": 0.22445975,
+      "stop_loss": 0.214944,
+      "take_profit": 0.241812,
+      "support": 0.2196,
+      "resistance": 0.2238,
+      "news_line": "",
+      "technical_analysis": "$AGLD fallback technical analysis: RSI is 61.6, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is expanding by 66.5%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
