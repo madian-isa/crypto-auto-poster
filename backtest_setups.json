@@ -34908,6 +34908,23 @@
       "technical_analysis": "Price sits below EMA9 (0.01944), EMA21 (0.01984), EMA50 (0.02041) and EMA200 (0.02071), indicating a clear downtrend. MACD is negative (-0.00041) and below its signal line, reinforcing bearish momentum. ADX at 38 shows a strong trend. RSI at 33.7 and Stochastic K/D around 21/20 suggest oversold conditions but do not offset the prevailing bearish bias. Volume has dropped 31%, and the 1‑hour order‑book shows a modest bid‑side imbalance (18%). The 1‑hour swing range is bounded by support 0.01886 and resistance 0.02009, with the current price near the upper edge, making a short entry near 0.02000 ",
       "market_context": "BTC is in a short‑term bearish phase (down 0.27% on 24h), while the broader crypto market remains broadly positive (≈69% green). This mixed backdrop adds slight caution but does not change the bearish setup for HAEDALUSDT.",
       "result": "PENDING"
+    },
+    {
+      "id": 2054,
+      "created_at": "2026-09-29T16:16:55.299251+00:00",
+      "symbol": "REUSDT",
+      "direction": "LONG",
+      "title": "$RE Prepares for Parabolic Phase: Key Technical Trigger Met",
+      "entry_low": 0.487,
+      "entry_high": 0.4885,
+      "stop_loss": 0.47,
+      "take_profit": 0.52325,
+      "support": 0.4565,
+      "resistance": 0.4945,
+      "news_line": "",
+      "technical_analysis": "Price sits above EMA9, EMA21, EMA50 and EMA200, confirming a bullish hierarchy. MACD line (0.0063) is above its signal (0.0025) with a positive histogram, adding momentum. RSI at 62.7 shows strength without being overbought. ADX at 29 indicates a solid trend, and volume is up ~104%, reinforcing the move. Order‑book shows a slight bid‑side imbalance (+2.5%). Together these suggest the market is primed for a continuation toward the 1‑hour resistance at 0.4945.",
+      "market_context": "BTC is slightly bearish on the 24h chart (‑0.45%), but overall market breadth remains broadly positive (68.7% green). The broader sentiment does not appear to hinder REU's upward bias.",
+      "result": "PENDING"
     }
   ]
 }
