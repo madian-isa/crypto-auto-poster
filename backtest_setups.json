@@ -34500,6 +34500,23 @@
       "technical_analysis": "Price sits below EMA9, EMA21, EMA50 and EMA200, confirming a bearish hierarchy. RSI at 30.1 and Stochastic K/D in the low single digits signal oversold conditions but the negative MACD line (-0.00031) and histogram (-6.8e-05) keep the down‑trend momentum alive. ADX above 30 (30.13) shows the trend is strong. Order‑book shows a 33% bid‑side imbalance, indicating more buying interest at current levels, yet the overall structure remains bearish.",
       "market_context": "BTC is in a bullish 4H and 1D trend with prices above their EMAs, and the broader crypto market is broadly positive (65% green). This suggests the short bias for GPSUSDT is driven by its own weakness rather than a market‑wide sell‑off.",
       "result": "PENDING"
+    },
+    {
+      "id": 2030,
+      "created_at": "2026-09-29T09:01:06.336600+00:00",
+      "symbol": "ONEUSDT",
+      "direction": "SHORT",
+      "title": "High Conviction Short Opportunity as $ONE Tests Supply Wall",
+      "entry_low": 0.002336,
+      "entry_high": 0.002338,
+      "stop_loss": 0.002421,
+      "take_profit": 0.002169,
+      "support": 0.002254,
+      "resistance": 0.00234,
+      "news_line": "",
+      "technical_analysis": "ONE is trading below all key EMAs (9, 21, 50, 200), indicating bearish momentum. MACD is negative and its histogram is shrinking, while RSI sits at ~43, showing no overbought pressure. Stochastic %K is deep in oversold territory (~19) with %D even lower, suggesting limited upside. ADX around 22 points to a weak trend. The price sits just below the 1‑hour resistance (0.00234) and order‑book shows a slight bid‑side imbalance, reinforcing a short bias.",
+      "market_context": "Bitcoin remains in a bullish trend on both 4‑hour and daily frames, and the broader market is broadly positive (≈65% green). Despite the favorable macro backdrop, ONE's technical picture leans bearish, supporting a short swing trade.",
+      "result": "PENDING"
     }
   ]
 }
