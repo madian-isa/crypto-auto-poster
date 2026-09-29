@@ -34755,6 +34755,23 @@
       "technical_analysis": "Price (0.7275) is above EMA9 (0.7218), EMA21 (0.7158), EMA50 (0.7157) and EMA200 (0.7217), indicating a bullish alignment. MACD histogram is positive (+0.0028) and the MACD line sits above its signal, reinforcing upward momentum. RSI at 63.9 and Stochastic K/D around 87 show strong but not yet overbought conditions. ADX at 26 confirms a moderate trend. Volume is up 8.2% on the 24h timeframe. Order‑book shows a slight ask imbalance (-6.44%). The pair trades between the 1H support (0.7203) and resistance (0.7316).",
       "market_context": "BTC is in a bullish phase on both 4H and 1D charts, up ~0.9% in the last 24h, while overall market breadth is broadly positive (73% green). This risk‑on environment supports the bullish outlook for ASTER.",
       "result": "PENDING"
+    },
+    {
+      "id": 2045,
+      "created_at": "2026-09-29T14:10:08.565470+00:00",
+      "symbol": "LISTAUSDT",
+      "direction": "LONG",
+      "title": "Major Breakout Signals Emerge on $LISTA Higher Timeframes",
+      "entry_low": 0.0892,
+      "entry_high": 0.0896,
+      "stop_loss": 0.0862,
+      "take_profit": 0.0958,
+      "support": 0.0881,
+      "resistance": 0.0899,
+      "news_line": "",
+      "technical_analysis": "Price sits above EMA9 (0.08866), EMA21 (0.08669), EMA50 (0.08595) and EMA200 (0.08424), confirming an uptrend. MACD line (0.00156) is above its signal (0.00070) with a positive histogram, indicating bullish momentum. ADX at 31.9 shows a strong trend. RSI is 67.5 and Stochastic K/D are in the high 80s, suggesting the market is near overbought but still trending higher. Volume has risen 34% on the day, supporting the move. Order‑book shows a modest ask‑side imbalance, but the price remains above key 1‑hour/4‑hour support (0.0881) and below immediate resistance (0.0899).",
+      "market_context": "BTC is in a bullish 4H and 1D trend, and the broader crypto market is broadly positive with 68.8% of assets green. This supportive backdrop aligns with the bullish setup on LISTAUSDT.",
+      "result": "PENDING"
     }
   ]
 }
