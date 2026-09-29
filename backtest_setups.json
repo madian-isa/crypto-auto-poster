@@ -34381,6 +34381,23 @@
       "technical_analysis": "$RUNE fallback technical analysis: RSI is 57.0, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is contracting by 47.0%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 2023,
+      "created_at": "2026-09-29T05:30:51.308424+00:00",
+      "symbol": "PENGUUSDT",
+      "direction": "SHORT",
+      "title": "$PENGU Rejection at Key Supply Zone: Short Setup Activated",
+      "entry_low": 0.00918,
+      "entry_high": 0.00922,
+      "stop_loss": 0.00955,
+      "take_profit": 0.0085,
+      "support": 0.009274,
+      "resistance": 0.009506,
+      "news_line": "",
+      "technical_analysis": "Price sits below EMA9 (0.009265), EMA21 (0.009443) and EMA50 (0.009672), indicating bearish bias. MACD line (-0.000186) is under its signal (-0.000164) with a negative histogram, confirming down‑momentum. RSI at 40.2 is neutral‑to‑bearish, while Stochastic K (23.6) / D (15.7) suggests oversold conditions but no clear reversal. Volume has dropped 65% on the 24h, and the order‑book shows a slight sell‑side imbalance (‑2.9%). These three strongest signals point to a short‑side setup.",
+      "market_context": "BTC is in a bullish daily trend, yet the broader crypto market is broadly negative (80% red). The prevailing market sentiment does not offset the bearish technical picture on PENGU.",
+      "result": "PENDING"
     }
   ]
 }
