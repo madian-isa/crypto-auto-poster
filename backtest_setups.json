@@ -34619,6 +34619,23 @@
       "technical_analysis": "$PUMP fallback technical analysis: RSI is 69.5, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is expanding by 139.6%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 2037,
+      "created_at": "2026-09-29T12:31:23.814812+00:00",
+      "symbol": "USD1USDT",
+      "direction": "LONG",
+      "title": "$USD1 Holds Moving Average Support: High Probability Long Setup",
+      "entry_low": 0.99731048,
+      "entry_high": 1.00230952,
+      "stop_loss": 0.9598176,
+      "take_profit": 1.0797948,
+      "support": 0.99968,
+      "resistance": 0.99985,
+      "news_line": "",
+      "technical_analysis": "$USD1 fallback technical analysis: RSI is 53.9, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is contracting by 5.1%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
