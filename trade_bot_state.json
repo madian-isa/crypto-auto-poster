@@ -1,6 +1,6 @@
 {
   "date": "2026-09-29",
-  "count": 50,
+  "count": 51,
   "posted_symbols_today": [
     "DUSKUSDT",
     "LINKUSDT",
@@ -51,6 +51,7 @@
     "1INCHUSDT",
     "HAEDALUSDT",
     "REUSDT",
-    "STRKUSDT"
+    "STRKUSDT",
+    "PROVEUSDT"
   ]
 }

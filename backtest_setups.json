@@ -34942,6 +34942,23 @@
       "technical_analysis": "Price is holding just above the 1‑hour support (0.04066) and below the 1‑hour resistance (0.04449). The medium‑term EMAs (21, 50, 200) sit beneath the current price, while the 9‑period EMA is slightly higher, indicating a potential bounce from support. MACD is bullish (line above signal, positive histogram) and RSI sits at 56, showing modest upward bias. Stochastic K (66) is below its D line (75), suggesting some short‑term weakening, but the overall picture leans toward a short‑term upside move toward the 0.04449 resistance.",
       "market_context": "BTC is down 1.1% over 24 h and the broader market shows a slight bearish tilt (55.9% red). This backdrop adds caution, but STRKUSDT’s internal momentum remains more favorable for a modest long swing.",
       "result": "PENDING"
+    },
+    {
+      "id": 2056,
+      "created_at": "2026-09-29T16:46:34.377418+00:00",
+      "symbol": "PROVEUSDT",
+      "direction": "LONG",
+      "title": "$PROVE Breakout Confirmation: Bulls Target Next Supply Zone",
+      "entry_low": 0.24169425,
+      "entry_high": 0.24290575,
+      "stop_loss": 0.2317355,
+      "take_profit": 0.263429,
+      "support": 0.2329,
+      "resistance": 0.2474,
+      "news_line": "",
+      "technical_analysis": "$PROVE fallback technical analysis: RSI is 68.4, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is expanding by 22.6%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
