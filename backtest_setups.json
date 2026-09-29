@@ -34874,6 +34874,23 @@
       "technical_analysis": "Price sits above EMA9, EMA21, EMA50 and EMA200, confirming a bullish bias. MACD line (7e‑08) is above its signal (2e‑08) with a positive histogram, while RSI at 68.6 and Stochastic K/D in the high‑70s suggest upward momentum but approaching overbought levels. ADX at 28.6 indicates a moderate trend strength. Bollinger upper band (3.83e‑06) is just above the current price, hinting at limited upside before a pull‑back. Order‑book shows a slight bid‑side imbalance (+6.4%), supporting the long case.",
       "market_context": "BTC is in a bullish daily trend and the broader market is broadly positive (77.6% green). This overall sentiment aligns with the bullish setup on BONKUSDT.",
       "result": "PENDING"
+    },
+    {
+      "id": 2052,
+      "created_at": "2026-09-29T15:46:46.863614+00:00",
+      "symbol": "1INCHUSDT",
+      "direction": "LONG",
+      "title": "On-Chain Metrics Confirm Strong Whale Accumulation on $1INCH",
+      "entry_low": 0.1035,
+      "entry_high": 0.1042,
+      "stop_loss": 0.0995,
+      "take_profit": 0.11255,
+      "support": 0.103,
+      "resistance": 0.1043,
+      "news_line": "",
+      "technical_analysis": "Price sits above the 9, 21, 50 and 200 EMA, confirming bullish bias. MACD line (0.00126) is above its signal (0.00080) with a positive histogram, while RSI is at 66.5 and Stochastic K/D are in the high 80s, indicating strong upward momentum. ADX at 26.8 suggests a firm trend, and volume is up ~36%, supporting the move. Order‑book shows a modest bid‑side imbalance (+8.7%) and a tight spread, reinforcing buying pressure. The 1H/4H swing structure shows support around 0.103 and resistance near 0.1043; a break above the recent high (0.1057) could target the Bollinger upper band (0.1064).",
+      "market_context": "BTC is slightly bearish (‑0.04%) on the 24h, yet the overall crypto market remains broadly positive, with 75.8% of assets in green. This backdrop supports a continued risk‑on environment for altcoins like 1INCH.",
+      "result": "PENDING"
     }
   ]
 }
