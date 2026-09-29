@@ -35078,6 +35078,23 @@
       "technical_analysis": "$AAVE fallback technical analysis: RSI is 59.9, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is contracting by 34.3%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 2064,
+      "created_at": "2026-09-29T18:46:05.488618+00:00",
+      "symbol": "CELRUSDT",
+      "direction": "LONG",
+      "title": "$CELR Volume Expansion Signals High Conviction Upward Move",
+      "entry_low": 0.00308128,
+      "entry_high": 0.00309672,
+      "stop_loss": 0.00296544,
+      "take_profit": 0.00333612,
+      "support": 0.003056,
+      "resistance": 0.003141,
+      "news_line": "",
+      "technical_analysis": "$CELR fallback technical analysis: RSI is 56.9, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is contracting by 68.3%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
