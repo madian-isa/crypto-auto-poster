@@ -34857,6 +34857,23 @@
       "technical_analysis": "Price sits above all key EMAs (9, 21, 50, 200) and the MACD histogram is positive, indicating bullish momentum. RSI at 66 supports an upward bias while the stochastic is overbought (K≈82, D≈86), suggesting caution near the top. Bollinger upper band (1.309e-05) is close, and the 1H/4H swing high sits at 1.31e-05. Order‑book shows a modest sell‑side imbalance but the best bid/ask are tight, keeping pressure neutral. Overall the confluence of EMA alignment, MACD, and RSI points to a potential continuation above the recent 1H support at 1.276e-05.",
       "market_context": "BTC is in a bullish trend on the daily timeframe, and the broader market shows a strong green bias (84.4% of assets up). This supportive environment adds confidence to a long bias on 1000SATSUSDT.",
       "result": "PENDING"
+    },
+    {
+      "id": 2051,
+      "created_at": "2026-09-29T15:30:58.046819+00:00",
+      "symbol": "BONKUSDT",
+      "direction": "LONG",
+      "title": "$BONK Outperformance Signal: Buying Momentum Beats Broader Market",
+      "entry_low": 3.68e-06,
+      "entry_high": 3.72e-06,
+      "stop_loss": 3.55e-06,
+      "take_profit": 4e-06,
+      "support": 3.68e-06,
+      "resistance": 3.76e-06,
+      "news_line": "",
+      "technical_analysis": "Price sits above EMA9, EMA21, EMA50 and EMA200, confirming a bullish bias. MACD line (7e‑08) is above its signal (2e‑08) with a positive histogram, while RSI at 68.6 and Stochastic K/D in the high‑70s suggest upward momentum but approaching overbought levels. ADX at 28.6 indicates a moderate trend strength. Bollinger upper band (3.83e‑06) is just above the current price, hinting at limited upside before a pull‑back. Order‑book shows a slight bid‑side imbalance (+6.4%), supporting the long case.",
+      "market_context": "BTC is in a bullish daily trend and the broader market is broadly positive (77.6% green). This overall sentiment aligns with the bullish setup on BONKUSDT.",
+      "result": "PENDING"
     }
   ]
 }
