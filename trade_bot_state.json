@@ -1,6 +1,6 @@
 {
   "date": "2026-09-29",
-  "count": 52,
+  "count": 53,
   "posted_symbols_today": [
     "DUSKUSDT",
     "LINKUSDT",
@@ -53,6 +53,7 @@
     "REUSDT",
     "STRKUSDT",
     "PROVEUSDT",
-    "API3USDT"
+    "API3USDT",
+    "ALICEUSDT"
   ]
 }
