@@ -35112,6 +35112,23 @@
       "technical_analysis": "$YB fallback technical analysis: RSI is 56.3, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is expanding by 139.0%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 2066,
+      "created_at": "2026-09-29T19:15:48.130067+00:00",
+      "symbol": "ARKUSDT",
+      "direction": "LONG",
+      "title": "High R-Multiple Long Trade Setup Forming on $ARK",
+      "entry_low": 0.2455,
+      "entry_high": 0.2475,
+      "stop_loss": 0.2378,
+      "take_profit": 0.2639,
+      "support": 0.2436,
+      "resistance": 0.2653,
+      "news_line": "",
+      "technical_analysis": "Price is trading above the 9‑, 21‑ and 50‑period EMAs (0.24598, 0.24406, 0.24321) and well above the 200‑EMA, indicating bullish momentum. MACD histogram is positive (0.0005) with the MACD line above its signal, reinforcing the uptrend. RSI sits at 58.4, offering room before overbought territory. Stochastic %K is high at 81.6, suggesting short‑term strength but also a possible pull‑back. Volume has surged ~49% on the day, supporting the move. The 1‑hour swing low at 0.2436 and swing high at 0.2653 frame a clear upward channel.",
+      "market_context": "BTC shows a slight 24‑hour bearish move (-0.14%), yet the broader crypto market is broadly positive with 65.7% of assets in green. This backdrop adds a mild bias toward risk‑on assets like ARK.",
+      "result": "PENDING"
     }
   ]
 }
