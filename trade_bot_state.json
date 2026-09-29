@@ -1,6 +1,6 @@
 {
   "date": "2026-09-29",
-  "count": 75,
+  "count": 76,
   "posted_symbols_today": [
     "DUSKUSDT",
     "LINKUSDT",
@@ -76,6 +76,7 @@
     "SNXUSDT",
     "XRPUSDT",
     "\u725b\u6765USDT",
-    "GRAMUSDT"
+    "GRAMUSDT",
+    "PHAUSDT"
   ]
 }
