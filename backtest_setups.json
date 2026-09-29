@@ -35129,6 +35129,23 @@
       "technical_analysis": "Price is trading above the 9‑, 21‑ and 50‑period EMAs (0.24598, 0.24406, 0.24321) and well above the 200‑EMA, indicating bullish momentum. MACD histogram is positive (0.0005) with the MACD line above its signal, reinforcing the uptrend. RSI sits at 58.4, offering room before overbought territory. Stochastic %K is high at 81.6, suggesting short‑term strength but also a possible pull‑back. Volume has surged ~49% on the day, supporting the move. The 1‑hour swing low at 0.2436 and swing high at 0.2653 frame a clear upward channel.",
       "market_context": "BTC shows a slight 24‑hour bearish move (-0.14%), yet the broader crypto market is broadly positive with 65.7% of assets in green. This backdrop adds a mild bias toward risk‑on assets like ARK.",
       "result": "PENDING"
+    },
+    {
+      "id": 2067,
+      "created_at": "2026-09-29T19:28:39.182367+00:00",
+      "symbol": "SPKUSDT",
+      "direction": "LONG",
+      "title": "Buyers Defend Key Demand Zone: $SPK Ready for Extension",
+      "entry_low": 0.02358,
+      "entry_high": 0.0236,
+      "stop_loss": 0.02275,
+      "take_profit": 0.02527,
+      "support": 0.023259,
+      "resistance": 0.024438,
+      "news_line": "",
+      "technical_analysis": "Price is holding just above the 9‑EMA (0.023574) while the EMA hierarchy remains bullish (EMA9 > EMA21 > EMA50 > EMA200). The MACD line (0.000245) sits above its signal (0.000169) with a positive histogram, confirming upward momentum. RSI at 55 shows no overbought pressure, and ADX around 27 indicates a moderately strong trend. Stochastic K/D are near the upper mid‑range (~64), suggesting continued buying interest. Volume has contracted, but the order‑book shows a modest ask‑side imbalance (-34.9%). Overall the confluence points to a short‑term upside bias toward the 1‑hour resistance at 0.024",
+      "market_context": "BTC is slightly bearish on the 24‑hour chart (‑0.13%), while the broader crypto market remains broadly positive with 65.7% of assets in green. The mixed BTC trend on the 4‑hour frame does not appear to dominate SPKUSDT's current bullish setup.",
+      "result": "PENDING"
     }
   ]
 }
