@@ -35282,6 +35282,23 @@
       "technical_analysis": "$REZ fallback technical analysis: RSI is 58.1, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is contracting by 54.8%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 2076,
+      "created_at": "2026-09-29T21:30:47.989165+00:00",
+      "symbol": "DYDXUSDT",
+      "direction": "LONG",
+      "title": "Buyers Defend Key Demand Zone: $DYDX Ready for Extension",
+      "entry_low": 0.13983953,
+      "entry_high": 0.14054047,
+      "stop_loss": 0.1345824,
+      "take_profit": 0.1514052,
+      "support": 0.13914,
+      "resistance": 0.1416,
+      "news_line": "",
+      "technical_analysis": "$DYDX fallback technical analysis: RSI is 57.9, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is contracting by 53.2%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
