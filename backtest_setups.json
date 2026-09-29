@@ -34398,6 +34398,23 @@
       "technical_analysis": "Price sits below EMA9 (0.009265), EMA21 (0.009443) and EMA50 (0.009672), indicating bearish bias. MACD line (-0.000186) is under its signal (-0.000164) with a negative histogram, confirming down‑momentum. RSI at 40.2 is neutral‑to‑bearish, while Stochastic K (23.6) / D (15.7) suggests oversold conditions but no clear reversal. Volume has dropped 65% on the 24h, and the order‑book shows a slight sell‑side imbalance (‑2.9%). These three strongest signals point to a short‑side setup.",
       "market_context": "BTC is in a bullish daily trend, yet the broader crypto market is broadly negative (80% red). The prevailing market sentiment does not offset the bearish technical picture on PENGU.",
       "result": "PENDING"
+    },
+    {
+      "id": 2024,
+      "created_at": "2026-09-29T06:01:24.055819+00:00",
+      "symbol": "MORPHOUSDT",
+      "direction": "SHORT",
+      "title": "Strong Rejection at Trendline Resistance: $MORPHO Short Entry",
+      "entry_low": 2.4468675,
+      "entry_high": 2.4591325,
+      "stop_loss": 2.55069,
+      "take_profit": 2.25762,
+      "support": 2.414,
+      "resistance": 2.538,
+      "news_line": "",
+      "technical_analysis": "$MORPHO fallback technical analysis: RSI is 35.5, showing weakening momentum without being deeply oversold, price is trading below the 21 EMA, supporting the bearish bias, MACD is below its signal line, confirming negative momentum, volume is contracting by 44.0%, and price is below the 50 EMA, keeping the short-term structure weak. Together, these signals support a conditional SHORT continuation setup. Sellers still need to hold the entry zone and push price toward lower support.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
