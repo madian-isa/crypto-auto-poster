@@ -34636,6 +34636,23 @@
       "technical_analysis": "$USD1 fallback technical analysis: RSI is 53.9, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is contracting by 5.1%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 2038,
+      "created_at": "2026-09-29T12:45:54.665659+00:00",
+      "symbol": "OPNUSDT",
+      "direction": "LONG",
+      "title": "$OPN Breaks Out of Falling Wedge Pattern: Targets Set Higher",
+      "entry_low": 0.05436375,
+      "entry_high": 0.05463625,
+      "stop_loss": 0.051939,
+      "take_profit": 0.059622,
+      "support": 0.0522,
+      "resistance": 0.0564,
+      "news_line": "",
+      "technical_analysis": "$OPN fallback technical analysis: RSI is 62.0, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is expanding by 113.5%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
