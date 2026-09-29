@@ -1,6 +1,6 @@
 {
   "date": "2026-09-29",
-  "count": 27,
+  "count": 28,
   "posted_symbols_today": [
     "DUSKUSDT",
     "LINKUSDT",
@@ -28,6 +28,7 @@
     "GPSUSDT",
     "ONEUSDT",
     "PEOPLEUSDT",
-    "ETHFIUSDT"
+    "ETHFIUSDT",
+    "ICPUSDT"
   ]
 }
