@@ -34432,6 +34432,23 @@
       "technical_analysis": "$NMR fallback technical analysis: RSI is 61.3, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is contracting by 9.3%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 2026,
+      "created_at": "2026-09-29T07:01:27.539062+00:00",
+      "symbol": "ZECUSDT",
+      "direction": "SHORT",
+      "title": "High Conviction Short Opportunity as $ZEC Tests Supply Wall",
+      "entry_low": 1407.422625,
+      "entry_high": 1414.477375,
+      "stop_loss": 1467.388,
+      "take_profit": 1298.074,
+      "support": 1356.0,
+      "resistance": 1489.14,
+      "news_line": "",
+      "technical_analysis": "$ZEC fallback technical analysis: RSI is 35.0, showing weakening momentum without being deeply oversold, price is trading below the 21 EMA, supporting the bearish bias, MACD is below its signal line, confirming negative momentum, volume is contracting by 21.1%, and price is below the 50 EMA, keeping the short-term structure weak. Together, these signals support a conditional SHORT continuation setup. Sellers still need to hold the entry zone and push price toward lower support.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
