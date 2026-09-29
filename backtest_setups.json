@@ -34653,6 +34653,23 @@
       "technical_analysis": "$OPN fallback technical analysis: RSI is 62.0, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is expanding by 113.5%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 2039,
+      "created_at": "2026-09-29T12:51:31.416043+00:00",
+      "symbol": "VIRTUALUSDT",
+      "direction": "LONG",
+      "title": "$VIRTUAL Prepares for Parabolic Phase: Key Technical Trigger Met",
+      "entry_low": 0.828,
+      "entry_high": 0.831,
+      "stop_loss": 0.799,
+      "take_profit": 0.8905,
+      "support": 0.8041,
+      "resistance": 0.8246,
+      "news_line": "",
+      "technical_analysis": "Price is trading above the EMA9 (0.818), EMA21 (0.813) and EMA50 (0.807), indicating a bullish short‑term trend. MACD line (0.0041) sits above its signal (0.0020) with a positive histogram, confirming upward momentum. RSI at 57.5 is neutral, while Stochastic %K is over 95, showing strong buying pressure. Volume has surged 80% on the 24h timeframe, and the order‑book shows a modest bid imbalance (+8.7%). These three strongest signals—EMA alignment, positive MACD, and volume surge—support a long bias.",
+      "market_context": "BTC remains in a bullish 4H and 1D trend, with the broader market showing a slight green bias (58% green). This supportive macro backdrop aligns with the bullish setup on VIRTUALUSDT.",
+      "result": "PENDING"
     }
   ]
 }

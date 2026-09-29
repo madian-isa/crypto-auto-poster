@@ -1,6 +1,6 @@
 {
   "date": "2026-09-29",
-  "count": 33,
+  "count": 34,
   "posted_symbols_today": [
     "DUSKUSDT",
     "LINKUSDT",
@@ -34,6 +34,7 @@
     "VELODROMEUSDT",
     "PUMPUSDT",
     "USD1USDT",
-    "OPNUSDT"
+    "OPNUSDT",
+    "VIRTUALUSDT"
   ]
 }
