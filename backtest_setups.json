@@ -34602,6 +34602,23 @@
       "technical_analysis": "$VELODROME fallback technical analysis: RSI is 54.6, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is contracting by 18.0%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 2036,
+      "created_at": "2026-09-29T12:01:05.186388+00:00",
+      "symbol": "PUMPUSDT",
+      "direction": "LONG",
+      "title": "High R-Multiple Long Trade Setup Forming on $PUMP",
+      "entry_low": 0.00559398,
+      "entry_high": 0.00562202,
+      "stop_loss": 0.00538368,
+      "take_profit": 0.00605664,
+      "support": 0.005015,
+      "resistance": 0.005679,
+      "news_line": "",
+      "technical_analysis": "$PUMP fallback technical analysis: RSI is 69.5, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is expanding by 139.6%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
