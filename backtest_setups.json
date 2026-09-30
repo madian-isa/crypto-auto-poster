@@ -35792,6 +35792,23 @@
       "technical_analysis": "Price sits below EMA9, EMA21, EMA50 and EMA200, indicating bearish bias. RSI at 43.9 and Stochastic K at 31% suggest momentum is still on the downside. MACD histogram is negative and ADX is low (≈12), pointing to a weak, non‑trending market. Volume has dropped ~38%, reinforcing the lack of buying pressure. The 1‑hour swing shows support at 0.99967 and resistance at 0.99974, with price testing the upper bound.",
       "market_context": "BTC is in a bullish daily trend while the broader crypto market is broadly positive (≈80% green). The stablecoin pair, however, shows bearish technical signs despite the overall market optimism.",
       "result": "PENDING"
+    },
+    {
+      "id": 2106,
+      "created_at": "2026-09-30T05:31:43.378829+00:00",
+      "symbol": "BONKUSDT",
+      "direction": "LONG",
+      "title": "$BONK Higher Low Structure Confirmed: Long Entry Level Reached",
+      "entry_low": 3.74e-06,
+      "entry_high": 3.75e-06,
+      "stop_loss": 3.6e-06,
+      "take_profit": 4.04e-06,
+      "support": 3.66e-06,
+      "resistance": 3.77e-06,
+      "news_line": "",
+      "technical_analysis": "Price sits above the 9, 21, 50 and 200 EMA, confirming bullish momentum. RSI at 59.7 signals room for upside without being overbought. Stochastic %K is 70 and %D 63, indicating bullish pressure but approaching overbought levels. MACD line (5e-08) is above its signal (4e-08) with a small positive histogram, supporting a continuation. ADX at 30.7 reflects a strong trend. Order‑book shows a slight bid‑side imbalance (1.44%); best bid 3.75e‑06 vs best ask 3.76e‑06, suggesting modest buying pressure.",
+      "market_context": "BTC is in a bullish daily trend and the broader market is broadly positive (82.4% green). This backdrop adds supportive sentiment for risk‑on assets like BONK.",
+      "result": "PENDING"
     }
   ]
 }
