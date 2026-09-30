@@ -35656,6 +35656,23 @@
       "technical_analysis": "$BTC fallback technical analysis: RSI is 46.9, showing weakening momentum without being deeply oversold, price is trading below the 21 EMA, supporting the bearish bias, MACD is below its signal line, confirming negative momentum, volume is contracting by 29.1%, and price is below the 50 EMA, keeping the short-term structure weak. Together, these signals support a conditional SHORT continuation setup. Sellers still need to hold the entry zone and push price toward lower support.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 2098,
+      "created_at": "2026-09-30T02:30:53.283130+00:00",
+      "symbol": "AXSUSDT",
+      "direction": "LONG",
+      "title": "Bullish Momentum Is Building: Can $AXS Continue Its Breakout?",
+      "entry_low": 1.1521125,
+      "entry_high": 1.1578875,
+      "stop_loss": 1.1088,
+      "take_profit": 1.2474,
+      "support": 1.137,
+      "resistance": 1.152,
+      "news_line": "",
+      "technical_analysis": "$AXS fallback technical analysis: RSI is 59.6, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is contracting by 21.1%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
