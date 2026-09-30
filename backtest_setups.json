@@ -36829,6 +36829,23 @@
       "technical_analysis": "Price sits below EMA9, EMA21, EMA50 and EMA200, confirming a bearish market structure on both 1H and 4H charts. MACD line is under the signal line with a negative histogram, reinforcing downside momentum. RSI at 30.3 and Stochastic K/D around 12/8 signal oversold conditions, suggesting a potential short‑term bounce but not enough to offset the prevailing downtrend. Bollinger lower band (0.2846) is just above the current price, indicating the pair is trading near the lower volatility envelope. Order‑book shows a slight sell‑side imbalance. The combination of these indicators points to a short b",
       "market_context": "BTC is marginally bullish (+0.09%) and the broader market is broadly positive (64.7% green). Despite the overall market tone, LSKUSDT remains in a downtrend against the stronger BTC backdrop.",
       "result": "PENDING"
+    },
+    {
+      "id": 2167,
+      "created_at": "2026-09-30T23:15:51.175026+00:00",
+      "symbol": "REZUSDT",
+      "direction": "LONG",
+      "title": "$REZ Liquidation Squeeze: Bears Trapped Near Critical Resistance",
+      "entry_low": 0.00476007,
+      "entry_high": 0.00478393,
+      "stop_loss": 0.00456606,
+      "take_profit": 0.00518389,
+      "support": 0.004589,
+      "resistance": 0.004834,
+      "news_line": "",
+      "technical_analysis": "$REZ fallback technical analysis: RSI is 64.5, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is contracting by 75.6%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
