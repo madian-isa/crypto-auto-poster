@@ -36030,6 +36030,23 @@
       "technical_analysis": "XLM is trading above its EMA9 (0.2246), EMA21 (0.2243), EMA50 (0.2234) and EMA200 (0.2157), confirming an uptrend on both 1‑hour and 4‑hour charts. The MACD histogram is positive (0.00054) while the MACD line sits above the signal line, adding bullish momentum. RSI sits at 56.7, indicating room for upside without being over‑bought, while Stochastic %K is 79 and %D 82.8, suggesting the pair is near the top of its recent range but still holding strength. Volume is healthy (+6% 24‑h) and the order‑book shows a modest bid‑side imbalance (+7.6%). Bollinger upper band (0.22727) is just above price, ",
       "market_context": "BTC shows a slight 24‑hour decline (‑0.32%) and a bearish short‑term trend, while the overall crypto market is mixed (≈50% green, 50% red). XLM’s bullish setup is therefore more driven by its own price action rather than broader market direction.",
       "result": "PENDING"
+    },
+    {
+      "id": 2120,
+      "created_at": "2026-09-30T12:01:37.703300+00:00",
+      "symbol": "CFGUSDT",
+      "direction": "SHORT",
+      "title": "$CFG Distribution Phase Ends: Downside Target Zone Set",
+      "entry_low": 0.15092175,
+      "entry_high": 0.15167825,
+      "stop_loss": 0.157352,
+      "take_profit": 0.139196,
+      "support": 0.1512,
+      "resistance": 0.1549,
+      "news_line": "",
+      "technical_analysis": "$CFG fallback technical analysis: RSI is 41.8, showing weakening momentum without being deeply oversold, price is trading below the 21 EMA, supporting the bearish bias, MACD is below its signal line, confirming negative momentum, volume is expanding by 39.3%, and price is below the 50 EMA, keeping the short-term structure weak. Together, these signals support a conditional SHORT continuation setup. Sellers still need to hold the entry zone and push price toward lower support.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
