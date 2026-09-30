@@ -36251,6 +36251,23 @@
       "technical_analysis": "Price is anchored at the 1‑hour support of 0.0563 and sits below all EMA levels (EMA9 ≈ 0.05656, EMA21 ≈ 0.05668, EMA50 ≈ 0.05689, EMA200 ≈ 0.05719). MACD is negative with a shrinking histogram, while Stochastic K at 18.75 signals oversold conditions. RSI at 43.1 shows modest downside pressure and ADX at 18.3 indicates a weak trend. Order‑book data shows a slight ask‑side imbalance.",
       "market_context": "Bitcoin is in a bullish trend on both 4‑hour and daily timeframes, yet the overall crypto market is mixed, with 40.6 % of assets green and 59.4 % red.",
       "result": "PENDING"
+    },
+    {
+      "id": 2133,
+      "created_at": "2026-09-30T15:18:16.749641+00:00",
+      "symbol": "SOMIUSDT",
+      "direction": "LONG",
+      "title": "$SOMI Buying Pressure Rises as Bulls Test Key Resistance",
+      "entry_low": 0.2275,
+      "entry_high": 0.2285,
+      "stop_loss": 0.2195,
+      "take_profit": 0.245,
+      "support": 0.2028,
+      "resistance": 0.25,
+      "news_line": "",
+      "technical_analysis": "Price sits comfortably above the 9, 21, 50 and 200 EMA, confirming a strong uptrend. MACD is bullish (line 0.0075 > signal 0.0046) with a positive histogram. ADX at 44 signals a robust trend, while RSI at 64 suggests momentum remains intact without being overbought. Volume surged 83% and the order‑book shows a modest bid imbalance (+7.8%), adding support to the bullish bias.",
+      "market_context": "BTC is in a bullish phase on both 4H and 1D timeframes, reinforcing a positive risk‑on environment. The broader crypto market shows mixed breadth, with slightly more red than green assets.",
+      "result": "PENDING"
     }
   ]
 }
