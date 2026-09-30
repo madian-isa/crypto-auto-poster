@@ -36489,6 +36489,23 @@
       "technical_analysis": "$PLUME fallback technical analysis: RSI is 59.6, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is expanding by 30.2%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 2147,
+      "created_at": "2026-09-30T18:30:57.371634+00:00",
+      "symbol": "REDUSDT",
+      "direction": "LONG",
+      "title": "Bullish Divergence Flashed on $RED Daily Chart Structure",
+      "entry_low": 0.178353,
+      "entry_high": 0.179247,
+      "stop_loss": 0.171648,
+      "take_profit": 0.193104,
+      "support": 0.1748,
+      "resistance": 0.1895,
+      "news_line": "",
+      "technical_analysis": "$RED fallback technical analysis: RSI is 66.5, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is expanding by 13.3%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
