@@ -35877,6 +35877,23 @@
       "technical_analysis": "Price sits above the EMA9 (0.06312), EMA21 (0.06257), EMA50 (0.06252) and EMA200 (0.06214), indicating bullish bias. MACD histogram is positive (0.000212) and the MACD line sits above its signal, reinforcing upward momentum. RSI at 61 and Stochastic K at 69 suggest the market is not yet overbought. ADX around 20 shows a modest trend strength. The 1‑hour swing range is bounded by support 0.0612 and resistance 0.0647, with current price near the upper half, offering a potential long entry near 0.0634‑0.0636.",
       "market_context": "BTC shows a slight 24‑hour decline (‑0.85%) and a mixed trend on higher timeframes, while overall crypto market breadth is slightly bearish (54% red). This broader backdrop does not contradict the bullish micro‑structure observed for RONIN.",
       "result": "PENDING"
+    },
+    {
+      "id": 2111,
+      "created_at": "2026-09-30T08:03:16.408099+00:00",
+      "symbol": "ATOMUSDT",
+      "direction": "SHORT",
+      "title": "Bears Retake Control as $ATOM Fails to Hold Moving Averages",
+      "entry_low": 1.71171,
+      "entry_high": 1.72029,
+      "stop_loss": 1.78464,
+      "take_profit": 1.57872,
+      "support": 1.711,
+      "resistance": 1.726,
+      "news_line": "",
+      "technical_analysis": "$ATOM fallback technical analysis: RSI is 45.0, showing weakening momentum without being deeply oversold, price is trading below the 21 EMA, supporting the bearish bias, MACD is below its signal line, confirming negative momentum, volume is expanding by 25.9%, and price is below the 50 EMA, keeping the short-term structure weak. Together, these signals support a conditional SHORT continuation setup. Sellers still need to hold the entry zone and push price toward lower support.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
