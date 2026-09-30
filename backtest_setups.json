@@ -35537,6 +35537,23 @@
       "technical_analysis": "$PENGU fallback technical analysis: RSI is 57.4, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is contracting by 35.1%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 2091,
+      "created_at": "2026-09-30T01:00:58.660608+00:00",
+      "symbol": "RLUSDUSDT",
+      "direction": "LONG",
+      "title": "Bullish Divergence Flashed on $RLUSD Daily Chart Structure",
+      "entry_low": 1.0004,
+      "entry_high": 1.00045,
+      "stop_loss": 0.965386,
+      "take_profit": 1.070503,
+      "support": 1.0004,
+      "resistance": 1.0006,
+      "news_line": "",
+      "technical_analysis": "Price sits just above the key 1H/4H support (1.0004) and is trading above all short‑term EMAs (EMA9 = 1.000458, EMA21 = 1.000432, EMA50 = 1.000404, EMA200 = 1.000340), indicating a bullish alignment. MACD shows a small positive histogram (+1.52e‑05) with the line above the signal, supporting upward momentum. RSI is neutral at 56.4, while Stochastic %K/%D are at 75, suggesting the market is nearing overbought but still has room to run. ADX is modest (22), pointing to a weak trend, yet the order‑book shows a 9.44% bid imbalance and a tighter best‑bid (1.0004) versus best‑ask (1.0005), hinting at",
+      "market_context": "BTC is in a bullish stance on the daily chart, and overall market breadth is positive (59.1% green). This broader sentiment adds a slight supportive backdrop for a long bias on RLUSDUSDT.",
+      "result": "PENDING"
     }
   ]
 }
