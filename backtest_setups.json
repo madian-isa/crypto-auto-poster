@@ -36336,6 +36336,23 @@
       "technical_analysis": "Price sits above the EMA9 (1.229), EMA21 (1.218), EMA50 (1.209) and EMA200 (1.189), indicating a bullish hierarchy. MACD is positive (0.011 vs signal 0.009) with a rising histogram, while RSI is at 57 and Stochastic K/D are both ~61, supporting upward momentum. ADX at 25 confirms a moderate trend. Order‑book shows a slight ask‑side imbalance (-20.6%), but the overall structure remains bullish.",
       "market_context": "BTC remains in a bullish trend on both 4H and 1D frames, and the broader crypto market is broadly positive with 71.6% of assets green. This backdrop adds confidence to a long swing on DOT.",
       "result": "PENDING"
+    },
+    {
+      "id": 2138,
+      "created_at": "2026-09-30T16:16:34.092202+00:00",
+      "symbol": "BLURUSDT",
+      "direction": "LONG",
+      "title": "$BLUR Prepares for Parabolic Phase: Key Technical Trigger Met",
+      "entry_low": 0.0213,
+      "entry_high": 0.0215,
+      "stop_loss": 0.020544,
+      "take_profit": 0.023112,
+      "support": 0.02048,
+      "resistance": 0.023,
+      "news_line": "",
+      "technical_analysis": "BLUR is trading above its EMA9 (0.02117), EMA21 (0.02063), EMA50 (0.02033) and EMA200 (0.02008), indicating a clear bullish bias. MACD is positive (0.00046) with the histogram still expanding (+0.00019), reinforcing upward momentum. ADX at 32 confirms a strong trend, while RSI at 68.9 shows the asset is near overbought but not yet exhausted. The price sits just below the upper Bollinger Band (0.02192), suggesting limited upside before a potential pull‑back to the nearby support at 0.02129.",
+      "market_context": "BTC remains in a bullish 4‑hour and daily trend, supporting overall market optimism. The broader market is broadly positive with 74.6% of assets in green, providing a favorable backdrop for long‑biased altcoins like BLUR.",
+      "result": "PENDING"
     }
   ]
 }
