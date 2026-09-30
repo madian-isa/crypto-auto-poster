@@ -35945,6 +35945,23 @@
       "technical_analysis": "$SYN fallback technical analysis: RSI is 35.2, showing weakening momentum without being deeply oversold, price is trading below the 21 EMA, supporting the bearish bias, MACD is below its signal line, confirming negative momentum, volume is contracting by 6.9%, and price is below the 50 EMA, keeping the short-term structure weak. Together, these signals support a conditional SHORT continuation setup. Sellers still need to hold the entry zone and push price toward lower support.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 2115,
+      "created_at": "2026-09-30T09:30:52.778697+00:00",
+      "symbol": "FETUSDT",
+      "direction": "SHORT",
+      "title": "Moving Average Death Cross Signals Downward Trend for $FET",
+      "entry_low": 0.219,
+      "entry_high": 0.2192,
+      "stop_loss": 0.2275,
+      "take_profit": 0.2023,
+      "support": 0.2189,
+      "resistance": 0.2256,
+      "news_line": "",
+      "technical_analysis": "Price is trading below EMA9 (0.21994), EMA21 (0.22234), EMA50 (0.22623) and EMA200 (0.22137), signalling bearish bias. MACD histogram is negative and RSI sits at 40.5, indicating weakening momentum. Stochastic K/D are under 50 (38.6/23.7). Order‑book shows a -24% imbalance (more sell pressure) with best ask at 0.22. The 1‑hour support at 0.2189 has been breached, reinforcing a short outlook.",
+      "market_context": "BTC is down 0.4% on the 24‑h chart, while overall market breadth remains broadly positive (65% green).",
+      "result": "PENDING"
     }
   ]
 }
