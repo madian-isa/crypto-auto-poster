@@ -35843,6 +35843,23 @@
       "technical_analysis": "Price (0.2543) sits above EMA9 (0.2454), EMA21 (0.2373), EMA50 (0.2308) and EMA200 (0.2258), confirming bullish bias. MACD line (0.00778) is above its signal (0.00610) with a positive histogram, while ADX at 38.7 signals a strong trend. Volume surged 85% and order‑book shows a 29% bid‑side imbalance, adding buying pressure. RSI is 68.5 and Stochastic K/D are above 80, indicating near‑overbought conditions but not yet a clear reversal.",
       "market_context": "BTC is down 0.92% on the 24h, showing bearish pressure, while the broader market is mixed with 59.2% green assets. The bullish setup for BERAUSDT stands despite the overall crypto dip.",
       "result": "PENDING"
+    },
+    {
+      "id": 2109,
+      "created_at": "2026-09-30T07:04:10.143907+00:00",
+      "symbol": "ZROUSDT",
+      "direction": "LONG",
+      "title": "Bullish Momentum Accelerates as $ZRO Liquidity Sweep Completes",
+      "entry_low": 1.793,
+      "entry_high": 1.809,
+      "stop_loss": 1.73,
+      "take_profit": 1.943,
+      "support": 1.609,
+      "resistance": 1.885,
+      "news_line": "",
+      "technical_analysis": "Price sits above the 9, 21, 50 and 200 EMA, confirming bullish bias. MACD histogram is positive (0.019) and MACD line (0.0645) is above its signal (0.0453). RSI at 64.5 shows momentum still on the upside, while ADX above 30 (30.0) indicates a strong trend. Order‑book shows a 56% bid imbalance, reinforcing buying pressure. Stochastic is in the high‑80s, suggesting the market is nearing overbought but not yet exhausted.",
+      "market_context": "Overall market breadth is mixed (46.9% green, 53.1% red) and BTC is in a 24‑hour bearish dip (-1.14%). The broader environment does not negate the bullish setup for ZROUSDT.",
+      "result": "PENDING"
     }
   ]
 }
