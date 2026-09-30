@@ -36200,6 +36200,23 @@
       "technical_analysis": "Price sits above the EMA9 (0.13548), EMA21 (0.13357), EMA50 (0.13319) and EMA200 (0.13048), confirming a bullish alignment. MACD is positive (0.0015) with a clear histogram (+0.00086) and the signal line below the MACD line, indicating upward momentum. RSI at 59.3 and Stochastic K around 60 suggest the asset is not yet overbought. Volume has surged over 270%, adding conviction. The 1‑hour swing range places support at 0.1313 and resistance at 0.1368, with the current price near the upper edge, offering a tight entry band.",
       "market_context": "BTC is in a bullish trend on both 4‑hour and daily charts, supporting overall market optimism. The broader market shows a slight green bias (56.5% green vs 43.5% red).",
       "result": "PENDING"
+    },
+    {
+      "id": 2130,
+      "created_at": "2026-09-30T14:31:03.446324+00:00",
+      "symbol": "VTHOUSDT",
+      "direction": "SHORT",
+      "title": "High Volume Selling Sweep Breaks $VTHO Market Structure",
+      "entry_low": 0.00066234,
+      "entry_high": 0.00066566,
+      "stop_loss": 0.00069546,
+      "take_profit": 0.00060108,
+      "support": 0.000652,
+      "resistance": 0.000692,
+      "news_line": "",
+      "technical_analysis": "$VTHO fallback technical analysis: RSI is 32.9, showing weakening momentum without being deeply oversold, price is trading below the 21 EMA, supporting the bearish bias, MACD is below its signal line, confirming negative momentum, volume is expanding by 117.7%, and price is below the 50 EMA, keeping the short-term structure weak. Together, these signals support a conditional SHORT continuation setup. Sellers still need to hold the entry zone and push price toward lower support.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
