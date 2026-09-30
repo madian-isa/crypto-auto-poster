@@ -1,6 +1,6 @@
 {
   "date": "2026-09-30",
-  "count": 41,
+  "count": 42,
   "posted_symbols_today": [
     "PHAUSDT",
     "DOGEUSDT",
@@ -42,6 +42,7 @@
     "TOWNSUSDT",
     "BICOUSDT",
     "DYDXUSDT",
-    "MUBARAKUSDT"
+    "MUBARAKUSDT",
+    "STRKUSDT"
   ]
 }

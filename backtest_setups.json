@@ -36166,6 +36166,23 @@
       "technical_analysis": "$MUBARAK fallback technical analysis: RSI is 56.9, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is expanding by 42.7%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 2128,
+      "created_at": "2026-09-30T14:01:01.079561+00:00",
+      "symbol": "STRKUSDT",
+      "direction": "LONG",
+      "title": "Smart Money Flow Increases into $STRK Ahead of Catalysts",
+      "entry_low": 0.04251345,
+      "entry_high": 0.04272655,
+      "stop_loss": 0.0409152,
+      "take_profit": 0.0460296,
+      "support": 0.04174,
+      "resistance": 0.0426,
+      "news_line": "",
+      "technical_analysis": "$STRK fallback technical analysis: RSI is 53.9, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is expanding by 94.7%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
