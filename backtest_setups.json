@@ -35707,6 +35707,23 @@
       "technical_analysis": "Price sits above EMA9 (0.02970), EMA21 (0.02937) and EMA50 (0.02886), indicating an uptrend. MACD line (0.000368) is above its signal (0.000356) with a small positive histogram, confirming bullish momentum. RSI at 60.7 and Stochastic K/D at 78/89 show the pair is in the upper range but not yet overbought. ADX of 26.3 suggests a moderately strong trend. The order‑book shows a slight bid‑side imbalance (0.72%), supporting the upside bias.",
       "market_context": "BTC is in a bullish daily trend and the broader market is broadly positive (82.9% green). This backdrop adds supportive sentiment for upside moves in HUMA.",
       "result": "PENDING"
+    },
+    {
+      "id": 2101,
+      "created_at": "2026-09-30T03:16:06.530103+00:00",
+      "symbol": "QNTUSDT",
+      "direction": "LONG",
+      "title": "$QNT Holds Moving Average Support: High Probability Long Setup",
+      "entry_low": 278.0,
+      "entry_high": 283.0,
+      "stop_loss": 268.3,
+      "take_profit": 304.9,
+      "support": 253.26,
+      "resistance": 373.0,
+      "news_line": "",
+      "technical_analysis": "Price sits above the EMA9 (270.2), EMA21 (260.6), EMA50 (242.1) and EMA200 (164.1), confirming a clear uptrend. MACD is positive (9.65) and above its signal line (7.58) with a rising histogram, while RSI is at 64.5, indicating momentum but not overbought. ADX at 27.8 shows moderate trend strength. Order‑book imbalance is +29.6% on the bid side, adding bullish pressure.",
+      "market_context": "BTC is in a bullish daily trend and the overall crypto market is broadly positive (82% green).",
+      "result": "PENDING"
     }
   ]
 }
