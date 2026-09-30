@@ -36302,6 +36302,23 @@
       "technical_analysis": "Price sits above EMA9, EMA21, EMA50 and EMA200, confirming a bullish short‑term bias. MACD histogram is positive and the MACD line sits well above its signal, while RSI at 65 suggests upward momentum without being extreme. Stochastic K is high but below D, indicating a possible pull‑back soon. The pair is near the upper Bollinger band and the 1H/4H resistance at 0.0926, with order‑book imbalance showing more sell pressure, so a cautious long entry around the recent support zone (0.0883‑0.0890) is preferred.",
       "market_context": "BTC is in a bullish trend on both 4H and 1D frames, and the broader crypto market shows a 66% green breadth, supporting a generally optimistic environment for risk assets.",
       "result": "PENDING"
+    },
+    {
+      "id": 2136,
+      "created_at": "2026-09-30T15:46:47.946031+00:00",
+      "symbol": "NILUSDT",
+      "direction": "LONG",
+      "title": "$NIL Volume Expansion Signals High Conviction Upward Move",
+      "entry_low": 0.0892,
+      "entry_high": 0.0895,
+      "stop_loss": 0.085776,
+      "take_profit": 0.096498,
+      "support": 0.09056,
+      "resistance": 0.09576,
+      "news_line": "",
+      "technical_analysis": "Price is trading above EMA9 (0.09046), EMA21 (0.08698), EMA50 (0.08679) and EMA200 (0.08960), showing a clear bullish alignment. MACD line (0.00282) sits above its signal (0.00145) with a positive histogram, confirming upward momentum. RSI at 62.8 and Stochastic K/D (68/73) indicate strength without extreme overbought pressure. ADX at 32.6 signals a strong trend, while 24‑hour volume jumped ~80%, supporting the move. Order‑book shows a modest bid‑side imbalance (+3.4%).",
+      "market_context": "BTC is in a bullish 4‑hour and daily trend, up 1.13% with a broadly positive market breadth (64% green). This overall risk‑on environment backs the bullish outlook for NILU.",
+      "result": "PENDING"
     }
   ]
 }
