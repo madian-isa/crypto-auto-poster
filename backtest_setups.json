@@ -36676,6 +36676,23 @@
       "technical_analysis": "$EIGEN fallback technical analysis: RSI is 38.8, showing weakening momentum without being deeply oversold, price is trading below the 21 EMA, supporting the bearish bias, MACD is below its signal line, confirming negative momentum, volume is expanding by 401.3%, and price is below the 50 EMA, keeping the short-term structure weak. Together, these signals support a conditional SHORT continuation setup. Sellers still need to hold the entry zone and push price toward lower support.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 2158,
+      "created_at": "2026-09-30T21:00:58.540481+00:00",
+      "symbol": "CGPTUSDT",
+      "direction": "LONG",
+      "title": "$CGPT Volume Expansion Signals High Conviction Upward Move",
+      "entry_low": 0.02257,
+      "entry_high": 0.02262,
+      "stop_loss": 0.0212393,
+      "take_profit": 0.0253064,
+      "support": 0.02241,
+      "resistance": 0.02323,
+      "news_line": "",
+      "technical_analysis": "Price sits just above EMA9 (0.02257) and EMA21 (0.02224), with a clean bullish EMA ladder up to EMA200. MACD line (0.000335) is above its signal (0.000291) and the histogram is positive, confirming upward momentum. ADX at 33 shows a strong trend. RSI at 65 and Stochastic K/D in the high 60s suggest the market is approaching overbought levels but still has room to run. Volume slipped 16% but order‑book imbalance is slight, indicating no immediate pressure.",
+      "market_context": "BTC is in a bullish daily trend while the 4‑hour picture is mixed, keeping overall market sentiment mildly positive (51% green). This broader bias supports a cautious long bias on CGPTUSDT.",
+      "result": "PENDING"
     }
   ]
 }
