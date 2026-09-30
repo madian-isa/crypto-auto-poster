@@ -36863,6 +36863,23 @@
       "technical_analysis": "Price is trading below the 9‑, 21‑, 50‑ and 200‑EMA, confirming a bearish bias. MACD is negative with a bearish histogram, while RSI sits near 42, indicating no overbought pressure. Stochastic K/D are deep in oversold territory (~18/11), suggesting limited upside. Volume has dropped ~30%, and the recent break below the 1‑hour support at 0.04334 points to a down‑swing. Order‑book shows a modest bid imbalance, but the price action dominates. The confluence of EMA alignment, MACD, and support break supports a short setup.",
       "market_context": "BTC is in a short‑term bearish phase (‑0.56% 24h) while the broader crypto market remains broadly positive (63% green). The BTC trend offers limited directional influence on CHIPUSDT, keeping the focus on the token’s own structure.",
       "result": "PENDING"
+    },
+    {
+      "id": 2169,
+      "created_at": "2026-09-30T23:46:23.834428+00:00",
+      "symbol": "APTUSDT",
+      "direction": "SHORT",
+      "title": "$APT Prepares for Breakdown: Downside Risk Escalates",
+      "entry_low": 0.77036925,
+      "entry_high": 0.77423075,
+      "stop_loss": 0.803799,
+      "take_profit": 0.709302,
+      "support": 0.757,
+      "resistance": 0.7998,
+      "news_line": "",
+      "technical_analysis": "$APT fallback technical analysis: RSI is 39.2, showing weakening momentum without being deeply oversold, price is trading below the 21 EMA, supporting the bearish bias, MACD is below its signal line, confirming negative momentum, volume is contracting by 22.4%, and price is below the 50 EMA, keeping the short-term structure weak. Together, these signals support a conditional SHORT continuation setup. Sellers still need to hold the entry zone and push price toward lower support.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
