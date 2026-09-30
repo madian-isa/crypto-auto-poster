@@ -36234,6 +36234,23 @@
       "technical_analysis": "$BEAMX fallback technical analysis: RSI is 42.5, showing weakening momentum without being deeply oversold, price is trading below the 21 EMA, supporting the bearish bias, MACD is below its signal line, confirming negative momentum, volume is expanding by 64.7%, and price is below the 50 EMA, keeping the short-term structure weak. Together, these signals support a conditional SHORT continuation setup. Sellers still need to hold the entry zone and push price toward lower support.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 2132,
+      "created_at": "2026-09-30T15:02:06.888176+00:00",
+      "symbol": "WLFIUSDT",
+      "direction": "SHORT",
+      "title": "$WLFI Open Interest Drops Rapidly: Long Squeeze Underway",
+      "entry_low": 0.0563,
+      "entry_high": 0.0564,
+      "stop_loss": 0.05838,
+      "take_profit": 0.05229,
+      "support": 0.0563,
+      "resistance": 0.057,
+      "news_line": "",
+      "technical_analysis": "Price is anchored at the 1‑hour support of 0.0563 and sits below all EMA levels (EMA9 ≈ 0.05656, EMA21 ≈ 0.05668, EMA50 ≈ 0.05689, EMA200 ≈ 0.05719). MACD is negative with a shrinking histogram, while Stochastic K at 18.75 signals oversold conditions. RSI at 43.1 shows modest downside pressure and ADX at 18.3 indicates a weak trend. Order‑book data shows a slight ask‑side imbalance.",
+      "market_context": "Bitcoin is in a bullish trend on both 4‑hour and daily timeframes, yet the overall crypto market is mixed, with 40.6 % of assets green and 59.4 % red.",
+      "result": "PENDING"
     }
   ]
 }
