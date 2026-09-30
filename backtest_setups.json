@@ -35503,6 +35503,23 @@
       "technical_analysis": "$DOGE fallback technical analysis: RSI is 47.0, showing weakening momentum without being deeply oversold, price is trading below the 21 EMA, supporting the bearish bias, MACD is below its signal line, confirming negative momentum, volume is contracting by 64.8%, and price is below the 50 EMA, keeping the short-term structure weak. Together, these signals support a conditional SHORT continuation setup. Sellers still need to hold the entry zone and push price toward lower support.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 2089,
+      "created_at": "2026-09-30T00:31:24.321428+00:00",
+      "symbol": "XRPUSDT",
+      "direction": "SHORT",
+      "title": "Bearish Continuation Pattern Confirmed on $XRP Chart Structure",
+      "entry_low": 1.4868735,
+      "entry_high": 1.4943265,
+      "stop_loss": 1.550224,
+      "take_profit": 1.371352,
+      "support": 1.4767,
+      "resistance": 1.5038,
+      "news_line": "",
+      "technical_analysis": "$XRP fallback technical analysis: RSI is 44.9, showing weakening momentum without being deeply oversold, price is trading below the 21 EMA, supporting the bearish bias, MACD is below its signal line, confirming negative momentum, volume is contracting by 47.8%, and price is below the 50 EMA, keeping the short-term structure weak. Together, these signals support a conditional SHORT continuation setup. Sellers still need to hold the entry zone and push price toward lower support.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
