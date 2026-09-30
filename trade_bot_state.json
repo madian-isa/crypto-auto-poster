@@ -1,6 +1,6 @@
 {
   "date": "2026-09-30",
-  "count": 68,
+  "count": 69,
   "posted_symbols_today": [
     "PHAUSDT",
     "DOGEUSDT",
@@ -69,6 +69,7 @@
     "WUSDT",
     "ONDOUSDT",
     "POLUSDT",
-    "JSTUSDT"
+    "JSTUSDT",
+    "ETHUSDT"
   ]
 }

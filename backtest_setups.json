@@ -36625,6 +36625,23 @@
       "technical_analysis": "$JST fallback technical analysis: RSI is 70.5, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is contracting by 28.0%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 2155,
+      "created_at": "2026-09-30T20:30:59.591121+00:00",
+      "symbol": "ETHUSDT",
+      "direction": "SHORT",
+      "title": "Bearish Continuation Pattern Confirmed on $ETH Chart Structure",
+      "entry_low": 2662.935975,
+      "entry_high": 2676.284025,
+      "stop_loss": 2776.3944,
+      "take_profit": 2456.0412,
+      "support": 2668.4,
+      "resistance": 2680.62,
+      "news_line": "",
+      "technical_analysis": "$ETH fallback technical analysis: RSI is 44.3, showing weakening momentum without being deeply oversold, price is trading below the 21 EMA, supporting the bearish bias, MACD is below its signal line, confirming negative momentum, volume is contracting by 42.9%, and price is below the 50 EMA, keeping the short-term structure weak. Together, these signals support a conditional SHORT continuation setup. Sellers still need to hold the entry zone and push price toward lower support.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
