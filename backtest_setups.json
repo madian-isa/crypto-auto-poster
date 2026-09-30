@@ -36744,6 +36744,23 @@
       "technical_analysis": "$G fallback technical analysis: RSI is 31.3, showing weakening momentum without being deeply oversold, price is trading below the 21 EMA, supporting the bearish bias, MACD is below its signal line, confirming negative momentum, volume is expanding by 105.9%, and price is below the 50 EMA, keeping the short-term structure weak. Together, these signals support a conditional SHORT continuation setup. Sellers still need to hold the entry zone and push price toward lower support.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 2162,
+      "created_at": "2026-09-30T22:00:59.003765+00:00",
+      "symbol": "XPLUSDT",
+      "direction": "SHORT",
+      "title": "Smart Money Distribution Visible on $XPL On-Chain Data",
+      "entry_low": 0.09383483,
+      "entry_high": 0.09430517,
+      "stop_loss": 0.0983493,
+      "take_profit": 0.0855114,
+      "support": 0.09404,
+      "resistance": 0.09786,
+      "news_line": "",
+      "technical_analysis": "$XPL fallback technical analysis: RSI is 43.8, showing weakening momentum without being deeply oversold, price is trading below the 21 EMA, supporting the bearish bias, MACD is below its signal line, confirming negative momentum, volume is contracting by 60.5%, and price is below the 50 EMA, keeping the short-term structure weak. Together, these signals support a conditional SHORT continuation setup. Sellers still need to hold the entry zone and push price toward lower support.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
