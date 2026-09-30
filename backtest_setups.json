@@ -35911,6 +35911,23 @@
       "technical_analysis": "$ARK fallback technical analysis: RSI is 66.5, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is expanding by 548.0%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 2113,
+      "created_at": "2026-09-30T08:42:14.435109+00:00",
+      "symbol": "BABYUSDT",
+      "direction": "LONG",
+      "title": "Bullish Momentum Is Building: Can $BABY Continue Its Breakout?",
+      "entry_low": 0.0139,
+      "entry_high": 0.0141,
+      "stop_loss": 0.0135,
+      "take_profit": 0.015,
+      "support": 0.01388,
+      "resistance": 0.01427,
+      "news_line": "",
+      "technical_analysis": "Price sits above EMA9, EMA21, EMA50 and EMA200, confirming bullish bias. RSI at 60.7 and Stochastic K/D (67.7/56.3) stay in the upper half, while MACD line (+0.000168) is above its signal (+0.000160) with a positive histogram. Bollinger upper band (0.014407) is near current price, indicating limited upside room but still room to run. Order‑book shows a 21.9% bid‑side imbalance, supporting the long side.",
+      "market_context": "BTC is marginally bearish (-0.98% 24h) and the broader market is mixed, yet BABYUSDT exhibits stronger relative momentum.",
+      "result": "PENDING"
     }
   ]
 }
