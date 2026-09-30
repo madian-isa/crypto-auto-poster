@@ -35809,6 +35809,23 @@
       "technical_analysis": "Price sits above the 9, 21, 50 and 200 EMA, confirming bullish momentum. RSI at 59.7 signals room for upside without being overbought. Stochastic %K is 70 and %D 63, indicating bullish pressure but approaching overbought levels. MACD line (5e-08) is above its signal (4e-08) with a small positive histogram, supporting a continuation. ADX at 30.7 reflects a strong trend. Order‑book shows a slight bid‑side imbalance (1.44%); best bid 3.75e‑06 vs best ask 3.76e‑06, suggesting modest buying pressure.",
       "market_context": "BTC is in a bullish daily trend and the broader market is broadly positive (82.4% green). This backdrop adds supportive sentiment for risk‑on assets like BONK.",
       "result": "PENDING"
+    },
+    {
+      "id": 2107,
+      "created_at": "2026-09-30T06:01:24.283850+00:00",
+      "symbol": "NOMUSDT",
+      "direction": "LONG",
+      "title": "$NOM Prepares for Parabolic Phase: Key Technical Trigger Met",
+      "entry_low": 0.002106,
+      "entry_high": 0.002112,
+      "stop_loss": 0.002032,
+      "take_profit": 0.002263,
+      "support": 0.002102,
+      "resistance": 0.002139,
+      "news_line": "",
+      "technical_analysis": "Price sits just below the 4H resistance (0.002139) but remains above all key EMAs (9, 21, 50, 200), indicating bullish bias. MACD line is above its signal with a positive histogram, while RSI is neutral at 56.4. ADX around 20 suggests a weak but present trend. Order‑book shows a 10.7% bid‑side imbalance, supporting upside pressure. The 1H swing structure places support at 0.002102 and resistance at 0.002139, making a pull‑back toward the 0.002106‑0.002112 zone a logical entry.",
+      "market_context": "BTC is in a short‑term bearish move (‑0.55% over 24 h) while the broader crypto market is broadly positive, with 78.9% of assets trading green. The overall environment remains supportive for upside moves in altcoins like NOM.",
+      "result": "PENDING"
     }
   ]
 }
