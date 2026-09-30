@@ -1,6 +1,6 @@
 {
   "date": "2026-09-30",
-  "count": 56,
+  "count": 57,
   "posted_symbols_today": [
     "PHAUSDT",
     "DOGEUSDT",
@@ -57,6 +57,7 @@
     "COOKIEUSDT",
     "PUNDIXUSDT",
     "PARTIUSDT",
-    "KAITOUSDT"
+    "KAITOUSDT",
+    "ASTERUSDT"
   ]
 }
