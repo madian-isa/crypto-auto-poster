@@ -37186,6 +37186,23 @@
       "technical_analysis": "$GALA fallback technical analysis: RSI is 57.2, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is contracting by 48.9%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 2188,
+      "created_at": "2026-10-01T04:16:39.994256+00:00",
+      "symbol": "SCRUSDT",
+      "direction": "LONG",
+      "title": "On-Chain Metrics Confirm Strong Whale Accumulation on $SCR",
+      "entry_low": 0.02507715,
+      "entry_high": 0.02520285,
+      "stop_loss": 0.0241344,
+      "take_profit": 0.0271512,
+      "support": 0.02448,
+      "resistance": 0.02502,
+      "news_line": "",
+      "technical_analysis": "$SCR fallback technical analysis: RSI is 62.2, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is expanding by 0.3%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
