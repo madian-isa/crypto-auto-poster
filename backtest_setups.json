@@ -38257,6 +38257,23 @@
       "technical_analysis": "$DASH fallback technical analysis: RSI is 43.7, showing weakening momentum without being deeply oversold, price is trading below the 21 EMA, supporting the bearish bias, MACD is below its signal line, confirming negative momentum, volume is expanding by 20.0%, and price is below the 50 EMA, keeping the short-term structure weak. Together, these signals support a conditional SHORT continuation setup.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 2251,
+      "created_at": "2026-10-01T18:47:18.582799+00:00",
+      "symbol": "MSTRBUSDT",
+      "direction": "LONG",
+      "title": "Critical Resistance Test: $MSTRB Preparing to Surge Higher",
+      "entry_low": 158.911725,
+      "entry_high": 159.708275,
+      "stop_loss": 152.9376,
+      "take_profit": 172.0548,
+      "support": 158.52,
+      "resistance": 161.83,
+      "news_line": "",
+      "technical_analysis": "$MSTRB fallback technical analysis: RSI is 65.8, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is expanding by 155.6%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
