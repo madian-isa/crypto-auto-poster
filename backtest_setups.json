@@ -37271,6 +37271,23 @@
       "technical_analysis": "$2Z fallback technical analysis: RSI is 28.4, showing weakening momentum without being deeply oversold, price is trading below the 21 EMA, supporting the bearish bias, MACD is below its signal line, confirming negative momentum, volume is expanding by 3.5%, and price is below the 50 EMA, keeping the short-term structure weak. Together, these signals support a conditional SHORT continuation setup. Sellers still need to hold the entry zone and push price toward lower support.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 2193,
+      "created_at": "2026-10-01T05:30:53.045036+00:00",
+      "symbol": "DOTUSDT",
+      "direction": "LONG",
+      "title": "Buyers Defend Key Demand Zone: $DOT Ready for Extension",
+      "entry_low": 1.2418875,
+      "entry_high": 1.2481125,
+      "stop_loss": 1.1952,
+      "take_profit": 1.3446,
+      "support": 1.219,
+      "resistance": 1.251,
+      "news_line": "",
+      "technical_analysis": "$DOT fallback technical analysis: RSI is 58.2, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is contracting by 40.3%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
