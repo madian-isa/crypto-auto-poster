@@ -1,6 +1,6 @@
 {
   "date": "2026-10-01",
-  "count": 70,
+  "count": 71,
   "posted_symbols_today": [
     "HUMAUSDT",
     "KAITOUSDT",
@@ -71,6 +71,7 @@
     "ZECUSDT",
     "AAVEUSDT",
     "PENGUUSDT",
-    "BTCUSDT"
+    "BTCUSDT",
+    "JASMYUSDT"
   ]
 }
