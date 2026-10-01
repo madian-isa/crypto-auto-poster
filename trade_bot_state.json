@@ -1,12 +1,13 @@
 {
   "date": "2026-10-01",
-  "count": 6,
+  "count": 7,
   "posted_symbols_today": [
     "HUMAUSDT",
     "KAITOUSDT",
     "JSTUSDT",
     "ESPUSDT",
     "WLFIUSDT",
-    "RLUSDUSDT"
+    "RLUSDUSDT",
+    "CGPTUSDT"
   ]
 }
