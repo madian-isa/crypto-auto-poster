@@ -38206,6 +38206,23 @@
       "technical_analysis": "$DOGE fallback technical analysis: RSI is 41.2, showing weakening momentum without being deeply oversold, price is trading below the 21 EMA, supporting the bearish bias, MACD is below its signal line, confirming negative momentum, volume is expanding by 0.5%, and price is below the 50 EMA, keeping the short-term structure weak. Together, these signals support a conditional SHORT continuation setup.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 2248,
+      "created_at": "2026-10-01T18:01:15.609751+00:00",
+      "symbol": "ZROUSDT",
+      "direction": "LONG",
+      "title": "$ZRO Liquidation Squeeze: Bears Trapped Near Critical Resistance",
+      "entry_low": 1.781535,
+      "entry_high": 1.790465,
+      "stop_loss": 1.71456,
+      "take_profit": 1.92888,
+      "support": 1.74,
+      "resistance": 1.796,
+      "news_line": "",
+      "technical_analysis": "$ZRO fallback technical analysis: RSI is 63.2, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is expanding by 45.1%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
