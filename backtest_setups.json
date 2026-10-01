@@ -38138,6 +38138,23 @@
       "technical_analysis": "$MARSCOIN fallback technical analysis: RSI is 35.1, showing weakening momentum without being deeply oversold, price is trading below the 21 EMA, supporting the bearish bias, MACD is below its signal line, confirming negative momentum, volume is expanding by 194.1%, and price is below the 50 EMA, keeping the short-term structure weak. Together, these signals support a conditional SHORT continuation setup.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 2244,
+      "created_at": "2026-10-01T17:01:00.958502+00:00",
+      "symbol": "NEARUSDT",
+      "direction": "SHORT",
+      "title": "High Conviction Short Opportunity as $NEAR Tests Supply Wall",
+      "entry_low": 4.81593,
+      "entry_high": 4.84007,
+      "stop_loss": 5.076255,
+      "take_profit": 4.33149,
+      "support": 4.831,
+      "resistance": 5.051,
+      "news_line": "",
+      "technical_analysis": "$NEAR fallback technical analysis: RSI is 31.7, showing weakening momentum without being deeply oversold, price is trading below the 21 EMA, supporting the bearish bias, MACD is below its signal line, confirming negative momentum, volume is expanding by 40.9%, and price is below the 50 EMA, keeping the short-term structure weak. Together, these signals support a conditional SHORT continuation setup.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
