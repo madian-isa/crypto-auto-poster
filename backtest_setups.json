@@ -37934,6 +37934,23 @@
       "technical_analysis": "Price sits above EMA9, EMA21 and EMA50, with MACD still bullish and ADX at 48 confirming a strong uptrend. RSI and Stochastic are overbought, flagging a short‑term reversal risk. Order‑book shows a 36% bid imbalance. Watch the 2.92 level; a break above supports the long case. This is a conditional technical scenario, not a verified trade or a promise of",
       "market_context": "BTC is down 0.6% on the day, and the broader market is broadly negative, but MOVR shows relative strength.",
       "result": "PENDING"
+    },
+    {
+      "id": 2232,
+      "created_at": "2026-10-01T14:04:33.428925+00:00",
+      "symbol": "AUDIOUSDT",
+      "direction": "LONG",
+      "title": "Technical Signals Turn Positive as Market Momentum Builds",
+      "entry_low": 0.0175,
+      "entry_high": 0.018,
+      "stop_loss": 0.0168,
+      "take_profit": 0.01965,
+      "support": 0.01625,
+      "resistance": 0.01951,
+      "news_line": "",
+      "technical_analysis": "Price sits above EMA9/21/50/200, confirming a bullish bias. RSI at 66 and ADX near 39 show strong momentum. Stochastic K is high, hinting at possible short‑term overbought pressure, and the orderbook shows a sell‑side imbalance. A pullback to the 0.0175 support could offer a clean entry; watch for a break above 0.0195 for the next upside target.",
+      "market_context": "BTC is down 0.8% on the day, and the broader market is broadly negative, which could weigh on risk assets like AUDIO.",
+      "result": "PENDING"
     }
   ]
 }
