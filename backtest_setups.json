@@ -37883,6 +37883,23 @@
       "technical_analysis": "Price sits under EMA9/21/50/200, confirming a downtrend. MACD is negative and histogram expanding, while RSI at 40.5 shows modest weakness. Stochastic K at 10 suggests oversold conditions, offering a possible short‑term bounce but not enough to offset bearish bias. Watch a break above 0.4439 for risk; a fall toward 0.424 confirms the trade.",
       "market_context": "BTC is down 2% on the 24h chart and the broader market is broadly negative, with 82.7% of assets in red. This",
       "result": "PENDING"
+    },
+    {
+      "id": 2229,
+      "created_at": "2026-10-01T13:37:23.538792+00:00",
+      "symbol": "FILUSDT",
+      "direction": "SHORT",
+      "title": "High Conviction Short Opportunity as $FIL Tests Supply Wall",
+      "entry_low": 1.0125,
+      "entry_high": 1.0145,
+      "stop_loss": 1.049,
+      "take_profit": 0.9425,
+      "support": 1.0057,
+      "resistance": 1.0647,
+      "news_line": "",
+      "technical_analysis": "Price sits below EMA9/21/50, MACD histogram negative, RSI 34 and Stoch K 13 indicate bearish momentum. Bollinger lower band just touched, suggesting limited upside. Weak ADX shows trend not strong. Risk: low RSI could spark a short‑term bounce. Watch for break below 1.0094 support; a close above 1.045 would invalidate.",
+      "market_context": "BTC down 1.2% in 24h, overall market breadth negative (20.6% green vs 79.4% red).",
+      "result": "PENDING"
     }
   ]
 }
