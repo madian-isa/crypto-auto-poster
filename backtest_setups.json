@@ -37475,6 +37475,23 @@
       "technical_analysis": "$DIA fallback technical analysis: RSI is 67.9, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is expanding by 429.4%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 2205,
+      "created_at": "2026-10-01T08:15:58.686699+00:00",
+      "symbol": "EURUSDT",
+      "direction": "SHORT",
+      "title": "$EUR Derivative Data Shows Heavy Long Liquidations Incoming",
+      "entry_low": 1.128372,
+      "entry_high": 1.134028,
+      "stop_loss": 1.176448,
+      "take_profit": 1.040704,
+      "support": 1.1301,
+      "resistance": 1.1338,
+      "news_line": "",
+      "technical_analysis": "$EUR fallback technical analysis: RSI is 29.4, showing weakening momentum without being deeply oversold, price is trading below the 21 EMA, supporting the bearish bias, MACD is below its signal line, confirming negative momentum, volume is expanding by 145.2%, and price is below the 50 EMA, keeping the short-term structure weak. Together, these signals support a conditional SHORT continuation setup. Sellers still need to hold the entry zone and push price toward lower support.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
