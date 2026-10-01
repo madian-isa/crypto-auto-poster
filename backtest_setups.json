@@ -37713,6 +37713,23 @@
       "technical_analysis": "$BROCCOLI714 fallback technical analysis: RSI is 65.2, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is expanding by 87.6%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 2219,
+      "created_at": "2026-10-01T11:45:49.213177+00:00",
+      "symbol": "ARBUSDT",
+      "direction": "SHORT",
+      "title": "$ARB Volume Decreases on Rally: Weak Buyers Exposed",
+      "entry_low": 0.1996,
+      "entry_high": 0.2,
+      "stop_loss": 0.207,
+      "take_profit": 0.1854,
+      "support": 0.1996,
+      "resistance": 0.2055,
+      "news_line": "",
+      "technical_analysis": "Price sits below EMA9, EMA21, EMA50 and EMA200, confirming a downtrend. MACD histogram is negative and widening, while RSI at 40.8 shows lack of bullish momentum. Stochastic K/D are near oversold territory (22.5/20.6). ADX at 12.5 indicates a weak trend. Order‑book imbalance is slightly negative, adding modest sell pressure.",
+      "market_context": "BTC is in a bullish stance, yet the broader crypto market shows a negative breadth (66.7% red). ARB’s bearish micro‑structure aligns with the overall market weakness.",
+      "result": "PENDING"
     }
   ]
 }

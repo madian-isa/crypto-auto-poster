@@ -1,6 +1,6 @@
 {
   "date": "2026-10-01",
-  "count": 49,
+  "count": 50,
   "posted_symbols_today": [
     "HUMAUSDT",
     "KAITOUSDT",
@@ -50,6 +50,7 @@
     "GTCUSDT",
     "EIGENUSDT",
     "MTLUSDT",
-    "BROCCOLI714USDT"
+    "BROCCOLI714USDT",
+    "ARBUSDT"
   ]
 }
