@@ -14,6 +14,7 @@ Features:
 - 25 LONG title templates
 - 25 SHORT title templates
 - Deterministic title rotation
+- Coin/direction hashtags plus globally rotating daily topic hashtags
 - No emojis
 - Exactly 3 $COIN mentions in the final post
 - Strict 1:2 RR
@@ -24,7 +25,7 @@ Features:
 
 import json
 import re
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 
 from groq import Groq
 
@@ -113,7 +114,7 @@ IMPORTANT RULES:
 - Keep the technical analysis.
 - Keep relevant supplied news when available.
 - Keep useful BTC/broader-market context when available.
-- Do NOT generate hashtags.
+- Do NOT generate hashtags; code adds relevant tags after generation.
 - Do NOT use emojis.
 - Do NOT use NFA or DYOR.
 - Do not use guaranteed-profit language.
@@ -137,10 +138,17 @@ TECHNICAL ANALYSIS:
 Use the strongest available technical information.
 Mention EMA, SMA, MACD, RSI, Stochastic, volume,
 orderbook or advanced data only when supplied.
+Write an original, easy-to-follow take of 50-60 words.
+Explain the strongest supporting signals, one relevant
+counter-signal or risk when available, and what level or
+confirmation would matter next. Use short sentences and
+plain language. Never claim the bot entered a real trade.
 
 MARKET CONTEXT:
 BTC and broader market information should be used only
 as context and only when supplied.
+Keep the complete post readable in about 30 seconds:
+avoid repetition, long lists, and unnecessary jargon.
 
 Return JSON only.
 """
@@ -220,6 +228,29 @@ def _clean_text(value, max_length=500):
     return text[:max_length]
 
 
+def _limit_words(value, max_words):
+    text = _clean_text(value, max_length=2000)
+    words = text.split()
+    if len(words) <= max_words:
+        return text
+    return " ".join(words[:max_words]).rstrip(" ,;:-")
+
+
+def _ensure_analysis_length(value):
+    text = _limit_words(value, 60)
+    supplements = (
+        "This is a conditional technical scenario, not a verified trade or a promise of direction.",
+        "Price confirmation near the listed levels would strengthen the view; failure to confirm weakens it.",
+        "Monitor the opposing level too, since a reversal can invalidate the setup.",
+        "Manage risk carefully and reassess when new price action changes the market structure.",
+    )
+    for sentence in supplements:
+        if len(text.split()) >= 50:
+            break
+        text = f"{text} {sentence}".strip()
+    return _limit_words(text, 60)
+
+
 # =========================================================
 # COIN HELPERS
 # =========================================================
@@ -237,6 +268,71 @@ def _coin_name(symbol):
         return symbol[:-4]
 
     return symbol
+
+
+def _post_hashtags(symbol, direction):
+    coin = re.sub(
+        r"[^A-Z0-9]",
+        "",
+        _coin_name(symbol),
+    )
+    if not coin:
+        coin = "Crypto"
+
+    project_tags = {
+        "ADA": "Cardano",
+        "AVAX": "Avalanche",
+        "BTC": "Bitcoin",
+        "DOGE": "Dogecoin",
+        "DOT": "Polkadot",
+        "ETH": "Ethereum",
+        "LINK": "Chainlink",
+        "LTC": "Litecoin",
+        "NEAR": "NEARProtocol",
+        "ONDO": "OndoFinance",
+        "SHIB": "ShibaInu",
+        "SOL": "Solana",
+        "SNX": "Synthetix",
+        "SUI": "Sui",
+        "TON": "Toncoin",
+        "TRX": "TRON",
+        "UNI": "Uniswap",
+        "XRP": "XRP",
+    }
+
+    direction = str(direction or "").upper()
+    direction_tag = (
+        "LongSetup"
+        if direction == "LONG"
+        else "ShortSetup"
+    )
+    topic_tags = (
+        "TechnicalAnalysis",
+        "MarketStructure",
+        "CryptoTrading",
+        "AltcoinAnalysis",
+        "CryptoMarket",
+        "TradingSetup",
+        "MarketMomentum",
+        "ChartAnalysis",
+    )
+
+    time_bucket = datetime.now(
+        timezone.utc
+    ).strftime("%Y-%m-%d-%H")
+    seed_text = f"{coin}-{direction}-{time_bucket}"
+    seed_value = sum(ord(char) for char in seed_text)
+    topic_tag = topic_tags[seed_value % len(topic_tags)]
+    project_tag = project_tags.get(coin)
+
+    tags = [f"#{coin}"]
+    if project_tag and project_tag.upper() != coin:
+        tags.append(f"#{project_tag}")
+    else:
+        tags.append(f"#{direction_tag}")
+    tags.append(f"#{topic_tag}")
+
+    return tags
 
 
 def _replace_coin_placeholder(title, coin):
@@ -910,12 +1006,17 @@ def _fallback_technical_text(
             parts.append(f"Stochastic is {stochastic:.1f}, leaving room for further downside")
 
     if not parts:
-
-        return (
+        analysis = (
             f"${coin} fallback analysis uses the available price structure, "
             f"but the indicator set is limited. The {direction.lower()} bias "
             f"should be treated as conditional and requires confirmation near the entry zone."
         )
+        analysis += (
+            " This is a market setup, not a record of an executed trade. "
+            "Watch the listed support and resistance, and reassess if price "
+            "moves against the stated direction."
+        )
+        return _limit_words(analysis, 60)
 
     selected = parts[:5]
     if len(selected) == 1:
@@ -936,10 +1037,17 @@ def _fallback_technical_text(
             "Sellers still need to hold the entry zone and push price toward lower support."
         )
 
-    return (
+    analysis = (
         f"${coin} fallback technical analysis: {evidence}. "
         f"{conclusion}"
     )
+    if len(analysis.split()) < 50:
+        analysis += (
+            " This remains a conditional setup rather than a prediction or "
+            "a record of an executed trade. Watch the listed levels for "
+            "confirmation, and reassess if price moves against this direction."
+        )
+    return _limit_words(analysis, 60)
 
 
 # =========================================================
@@ -1109,7 +1217,7 @@ def _python_fallback_setup(
         "technical_analysis": _fallback_technical_text(coin, indicators, direction),
         "market_context": btc_context,
         "rr": 2,
-        "hashtags": [],
+        "hashtags": _post_hashtags(symbol, direction),
     }
 
 def _parse_ai_response(content):
@@ -1269,7 +1377,13 @@ TASK:
 
 9. Do not invent a title. A title will be replaced by code.
 
-10. Keep the content concise.
+10. Write technical_analysis as a clear 50-60 word original
+    take. Include the key reasons for the direction, a
+    counter-signal/risk if supplied, and what to watch next.
+11. Keep the entire post short enough to read in about
+    30 seconds. Use plain language and avoid repetition.
+12. Do not claim a real position was opened; this is an
+    analysis/setup, not a verified trade.
 
 Return JSON only:
 
@@ -1531,31 +1645,30 @@ Return JSON only:
         coin,
     )
 
-    setup["news_line"] = _clean_text(
+    setup["news_line"] = _limit_words(
         setup.get(
             "news_line",
             "",
         ),
-        300,
+        18,
     )
 
-    setup["technical_analysis"] = _clean_text(
+    setup["technical_analysis"] = _ensure_analysis_length(
         setup.get(
             "technical_analysis",
             "",
         ),
-        600,
     )
 
-    setup["market_context"] = _clean_text(
+    setup["market_context"] = _limit_words(
         setup.get(
             "market_context",
             "",
         ),
-        400,
+        22,
     )
 
-    setup["hashtags"] = []
+    setup["hashtags"] = _post_hashtags(symbol, direction)
 
     print(
         f"[setup_generator] "
@@ -1631,20 +1744,31 @@ def format_post_text(setup):
         )
     )
 
-    technical = setup.get(
+    technical = _ensure_analysis_length(setup.get(
         "technical_analysis",
         "",
-    ).strip()
+    ))
 
-    news_line = setup.get(
+    news_line = _limit_words(setup.get(
         "news_line",
         "",
-    ).strip()
+    ), 18)
 
-    market = setup.get(
+    market = _limit_words(setup.get(
         "market_context",
         "",
-    ).strip()
+    ), 22)
+
+    if direction == "LONG":
+        call_to_action = (
+            f"Can ${coin} hold support and challenge resistance? "
+            "Follow for more data-led market setups."
+        )
+    else:
+        call_to_action = (
+            f"Will resistance cap a bounce, or can buyers reclaim it? "
+            "Follow for more data-led market setups."
+        )
 
     title = setup.get(
         "title",
@@ -1676,6 +1800,7 @@ def format_post_text(setup):
         title,
         flags=re.IGNORECASE,
     ).strip()
+    title = _limit_words(title, 12)
 
     if not title:
         title = "MARKET MOMENTUM UNDER REVIEW?"
@@ -1775,20 +1900,11 @@ def format_post_text(setup):
         )
 
     lines.append("")
-
-    lines.append(
-        final_line
-    )
+    lines.append(call_to_action)
 
     text = "\n".join(
         lines
     ).strip()
-
-    text = re.sub(
-        r"#\w+",
-        "",
-        text,
-    )
 
     text = re.sub(
         r"[^\x00-\x7F]+",
@@ -1808,10 +1924,37 @@ def format_post_text(setup):
         text,
     ).strip()
 
-    if len(text) > cfg.CHAR_LIMIT:
+    hashtags = setup.get(
+        "hashtags"
+    ) or _post_hashtags(
+        symbol,
+        direction,
+    )
+    if isinstance(hashtags, str):
+        hashtags = hashtags.split()
+    clean_hashtags = []
+    for tag in hashtags:
+        tag = str(tag).strip()
+        tag = re.sub(r"[^#A-Za-z0-9_]", "", tag)
+        if tag and not tag.startswith("#"):
+            tag = f"#{tag}"
+        if tag and tag.lower() not in {
+            existing.lower() for existing in clean_hashtags
+        }:
+            clean_hashtags.append(tag)
+        if len(clean_hashtags) == 3:
+            break
 
-        text = text[
-            :cfg.CHAR_LIMIT
-        ].rstrip()
+    if not clean_hashtags:
+        clean_hashtags = _post_hashtags(symbol, direction)
 
-    return text
+    hashtag_line = " ".join(clean_hashtags)
+    footer = f"{hashtag_line}\n\n{final_line}"
+    available_body_length = max(
+        0,
+        cfg.CHAR_LIMIT - len(footer) - 2,
+    )
+    if len(text) + len(footer) + 2 > cfg.CHAR_LIMIT:
+        text = text[:available_body_length].rstrip()
+        text = text.rstrip("#").rstrip()
+    return f"{text}\n\n{footer}".strip()
