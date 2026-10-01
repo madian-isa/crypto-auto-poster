@@ -37730,6 +37730,23 @@
       "technical_analysis": "Price sits below EMA9, EMA21, EMA50 and EMA200, confirming a downtrend. MACD histogram is negative and widening, while RSI at 40.8 shows lack of bullish momentum. Stochastic K/D are near oversold territory (22.5/20.6). ADX at 12.5 indicates a weak trend. Order‑book imbalance is slightly negative, adding modest sell pressure.",
       "market_context": "BTC is in a bullish stance, yet the broader crypto market shows a negative breadth (66.7% red). ARB’s bearish micro‑structure aligns with the overall market weakness.",
       "result": "PENDING"
+    },
+    {
+      "id": 2220,
+      "created_at": "2026-10-01T12:00:55.946284+00:00",
+      "symbol": "POLUSDT",
+      "direction": "SHORT",
+      "title": "Bearish Continuation Pattern Confirmed on $POL Chart Structure",
+      "entry_low": 0.1113,
+      "entry_high": 0.1115,
+      "stop_loss": 0.1155,
+      "take_profit": 0.1032,
+      "support": 0.11087,
+      "resistance": 0.11446,
+      "news_line": "",
+      "technical_analysis": "Price sits below EMA9, EMA21, EMA50 and EMA200, indicating bearish momentum. MACD line is under its signal with a negative histogram, while RSI is at 36 and Stochastic K/D are below 40, suggesting limited upside. ADX is low (12.5), showing a weak trend, but the confluence of sub‑EMA price, bearish MACD and momentum oscillators supports a short bias. Order‑book shows a modest bid‑side imbalance, reinforcing short pressure near the 1‑hour resistance.",
+      "market_context": "BTC remains in a bullish trend on higher timeframes, yet the broader crypto market is broadly negative (64.3% red). The mixed macro backdrop adds caution, aligning with the short setup on POLU.",
+      "result": "PENDING"
     }
   ]
 }
