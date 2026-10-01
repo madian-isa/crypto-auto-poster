@@ -1,6 +1,6 @@
 {
   "date": "2026-10-01",
-  "count": 31,
+  "count": 32,
   "posted_symbols_today": [
     "HUMAUSDT",
     "KAITOUSDT",
@@ -32,6 +32,7 @@
     "IOTAUSDT",
     "VELODROMEUSDT",
     "CELOUSDT",
-    "ALGOUSDT"
+    "ALGOUSDT",
+    "ALICEUSDT"
   ]
 }
