@@ -37968,6 +37968,23 @@
       "technical_analysis": "ETC is trading under EMA9 (8.91), EMA21 (8.94) and EMA50 (9.02), confirming a downtrend. MACD is negative and RSI sits at 42, while stochastic K at 25 shows oversold pressure. A break below the 1‑hour resistance around 9.08 could trigger a short. Risk is a bounce off the low stochastic; watch the 9.18 high for a potential reversal.",
       "market_context": "BTC showed a 0.5% decline over 24 h and is bearish in the short term, while its 4‑hour and daily charts remain",
       "result": "PENDING"
+    },
+    {
+      "id": 2234,
+      "created_at": "2026-10-01T14:31:20.830232+00:00",
+      "symbol": "UUSDT",
+      "direction": "SHORT",
+      "title": "Bearish Continuation Pattern Confirmed on $U Chart Structure",
+      "entry_low": 0.99985,
+      "entry_high": 0.9999,
+      "stop_loss": 1.0349,
+      "take_profit": 0.929825,
+      "support": 0.9996,
+      "resistance": 0.9999,
+      "news_line": "",
+      "technical_analysis": "Price sits below EMA9, EMA21, EMA50 and EMA200, confirming bearish bias. MACD histogram is negative and ADX 34.9 shows a strong trend. Stochastic K at 25 reinforces downside pressure, while order‑book imbalance (-8.8%) favors sellers. Counter: RSI near 43 suggests room for a bounce. Watch for a break below 0.9996 or a reversal above 0.9999.",
+      "market_context": "BTC remains bullish on higher timeframes, but the broader crypto market is broadly negative with 71.9% of assets in red. This backdrop",
+      "result": "PENDING"
     }
   ]
 }
