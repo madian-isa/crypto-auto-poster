@@ -37084,6 +37084,23 @@
       "technical_analysis": "$SUPER fallback technical analysis: RSI is 63.6, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is expanding by 0.3%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 2182,
+      "created_at": "2026-10-01T02:45:47.515869+00:00",
+      "symbol": "JTOUSDT",
+      "direction": "SHORT",
+      "title": "Strong Rejection at Trendline Resistance: $JTO Short Entry",
+      "entry_low": 0.530271,
+      "entry_high": 0.532929,
+      "stop_loss": 0.552864,
+      "take_profit": 0.489072,
+      "support": 0.5361,
+      "resistance": 0.5438,
+      "news_line": "",
+      "technical_analysis": "$JTO fallback technical analysis: RSI is 40.9, showing weakening momentum without being deeply oversold, price is trading below the 21 EMA, supporting the bearish bias, MACD is below its signal line, confirming negative momentum, volume is contracting by 31.7%, and price is below the 50 EMA, keeping the short-term structure weak. Together, these signals support a conditional SHORT continuation setup. Sellers still need to hold the entry zone and push price toward lower support.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }

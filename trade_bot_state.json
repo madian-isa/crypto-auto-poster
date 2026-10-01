@@ -1,6 +1,6 @@
 {
   "date": "2026-10-01",
-  "count": 12,
+  "count": 13,
   "posted_symbols_today": [
     "HUMAUSDT",
     "KAITOUSDT",
@@ -13,6 +13,7 @@
     "XRPUSDT",
     "MOVEUSDT",
     "KITEUSDT",
-    "SUPERUSDT"
+    "SUPERUSDT",
+    "JTOUSDT"
   ]
 }
