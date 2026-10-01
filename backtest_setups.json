@@ -38002,6 +38002,23 @@
       "technical_analysis": "$HEI fallback technical analysis: RSI is 71.0, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is expanding by 135.8%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 2236,
+      "created_at": "2026-10-01T15:01:33.584877+00:00",
+      "symbol": "ZECUSDT",
+      "direction": "SHORT",
+      "title": "$ZEC Rejection at Key Supply Zone: Short Setup Activated",
+      "entry_low": 1378.215825,
+      "entry_high": 1385.124175,
+      "stop_loss": 1436.9368,
+      "take_profit": 1271.1364,
+      "support": 1376.39,
+      "resistance": 1413.93,
+      "news_line": "",
+      "technical_analysis": "$ZEC fallback technical analysis: RSI is 38.0, showing weakening momentum without being deeply oversold, price is trading below the 21 EMA, supporting the bearish bias, MACD is below its signal line, confirming negative momentum, volume is expanding by 60.4%, and price is below the 50 EMA, keeping the short-term structure weak. Together, these signals support a conditional SHORT continuation setup.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
