@@ -37917,6 +37917,23 @@
       "technical_analysis": "Price sits above EMA9/21/50 and MACD histogram is positive, indicating bullish momentum. RSI at 58.8 and Stochastic K/D around 68/62 support upside. Volume surged 177% and order‑book shows a 5.85% bid imbalance. Counter: price is near the upper Bollinger band, risking a short‑term pullback. Watch for a break above 0.1900 to confirm the move.",
       "market_context": "BTC is down 0.38% on a bearish 4‑hour trend, while the broader market is broadly negative. ACE’s strength contrasts the overall sentiment",
       "result": "PENDING"
+    },
+    {
+      "id": 2231,
+      "created_at": "2026-10-01T13:50:15.943732+00:00",
+      "symbol": "MOVRUSDT",
+      "direction": "LONG",
+      "title": "Major Breakout Signals Emerge on $MOVR Higher Timeframes",
+      "entry_low": 2.84,
+      "entry_high": 2.86,
+      "stop_loss": 2.74,
+      "take_profit": 3.07,
+      "support": 2.837,
+      "resistance": 2.92,
+      "news_line": "",
+      "technical_analysis": "Price sits above EMA9, EMA21 and EMA50, with MACD still bullish and ADX at 48 confirming a strong uptrend. RSI and Stochastic are overbought, flagging a short‑term reversal risk. Order‑book shows a 36% bid imbalance. Watch the 2.92 level; a break above supports the long case. This is a conditional technical scenario, not a verified trade or a promise of",
+      "market_context": "BTC is down 0.6% on the day, and the broader market is broadly negative, but MOVR shows relative strength.",
+      "result": "PENDING"
     }
   ]
 }
