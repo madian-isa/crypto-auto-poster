@@ -1,6 +1,6 @@
 {
   "date": "2026-10-01",
-  "count": 15,
+  "count": 16,
   "posted_symbols_today": [
     "HUMAUSDT",
     "KAITOUSDT",
@@ -16,6 +16,7 @@
     "SUPERUSDT",
     "JTOUSDT",
     "XLMUSDT",
-    "GNSUSDT"
+    "GNSUSDT",
+    "SAGAUSDT"
   ]
 }
