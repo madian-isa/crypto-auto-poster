@@ -1,6 +1,6 @@
 {
   "date": "2026-10-01",
-  "count": 33,
+  "count": 34,
   "posted_symbols_today": [
     "HUMAUSDT",
     "KAITOUSDT",
@@ -34,6 +34,7 @@
     "CELOUSDT",
     "ALGOUSDT",
     "ALICEUSDT",
-    "ADAUSDT"
+    "ADAUSDT",
+    "PEPEUSDT"
   ]
 }
