@@ -37339,6 +37339,23 @@
       "technical_analysis": "$FET fallback technical analysis: RSI is 70.6, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is expanding by 74.2%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 2197,
+      "created_at": "2026-10-01T06:15:52.989358+00:00",
+      "symbol": "IOTAUSDT",
+      "direction": "LONG",
+      "title": "$IOTA Liquidation Squeeze: Bears Trapped Near Critical Resistance",
+      "entry_low": 0.055461,
+      "entry_high": 0.055739,
+      "stop_loss": 0.053376,
+      "take_profit": 0.060048,
+      "support": 0.0548,
+      "resistance": 0.0557,
+      "news_line": "",
+      "technical_analysis": "$IOTA fallback technical analysis: RSI is 65.4, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is expanding by 17.3%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
