@@ -37832,6 +37832,23 @@
       "technical_analysis": "Price sits below EMA9, EMA21, EMA50 and EMA200, indicating a bearish bias. MACD histogram is negative and the MACD line is under the signal line, reinforcing downside momentum. RSI at 43.3 and Stochastic K/D around 38/40 suggest the pair is not oversold yet but trending lower. Order‑book shows a -7.8% imbalance (more sell pressure) with best bid at 0.1298 and ask at 0.1299. ADX is low (13), signalling a weak trend, so the short setup relies on the confluence of moving‑average alignment, MACD, and order‑book pressure.",
       "market_context": "BTC is in a bearish 24‑hour move (-1.85%) and the broader market is broadly negative (80.7% red). This downside backdrop adds pressure to altcoins like ARKM.",
       "result": "PENDING"
+    },
+    {
+      "id": 2226,
+      "created_at": "2026-10-01T13:15:53.845850+00:00",
+      "symbol": "ONDOUSDT",
+      "direction": "SHORT",
+      "title": "Smart Money Distribution Visible on $ONDO On-Chain Data",
+      "entry_low": 0.4982,
+      "entry_high": 0.4985,
+      "stop_loss": 0.518284,
+      "take_profit": 0.458482,
+      "support": 0.4932,
+      "resistance": 0.5085,
+      "news_line": "",
+      "technical_analysis": "Price sits below EMA9 (0.5019), EMA21 (0.5028) and EMA200 (0.4997), indicating bearish bias. MACD histogram is negative and the MACD line is under its signal, confirming down‑momentum. RSI is neutral‑to‑bearish at 44.9 and Stochastic K is low at 25.9, suggesting limited upside. Order‑book shows a sell‑side imbalance of -12.55%, reinforcing the short outlook.",
+      "market_context": "BTC is in a 2.3% bearish 24h move and the broader market is broadly negative (84% red). This adds downward pressure to risk assets like ONDO.",
+      "result": "PENDING"
     }
   ]
 }
