@@ -37764,6 +37764,23 @@
       "technical_analysis": "$NIL fallback technical analysis: RSI is 43.3, showing weakening momentum without being deeply oversold, price is trading below the 21 EMA, supporting the bearish bias, MACD is below its signal line, confirming negative momentum, volume is contracting by 69.2%, and price is below the 50 EMA, keeping the short-term structure weak. Together, these signals support a conditional SHORT continuation setup. Sellers still need to hold the entry zone and push price toward lower support.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 2222,
+      "created_at": "2026-10-01T12:31:17.381683+00:00",
+      "symbol": "HEMIUSDT",
+      "direction": "LONG",
+      "title": "$HEMI Outperformance Signal: Buying Momentum Beats Broader Market",
+      "entry_low": 0.00647378,
+      "entry_high": 0.00650623,
+      "stop_loss": 0.0062304,
+      "take_profit": 0.00700921,
+      "support": 0.0063,
+      "resistance": 0.00664,
+      "news_line": "",
+      "technical_analysis": "$HEMI fallback technical analysis: RSI is 62.8, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is expanding by 323.3%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
