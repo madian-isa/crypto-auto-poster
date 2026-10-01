@@ -37288,6 +37288,23 @@
       "technical_analysis": "$DOT fallback technical analysis: RSI is 58.2, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is contracting by 40.3%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 2194,
+      "created_at": "2026-10-01T05:46:02.549813+00:00",
+      "symbol": "ETHUSDT",
+      "direction": "LONG",
+      "title": "Key Support Holds Firm: $ETH Bullish Continuation Setup Active",
+      "entry_low": 2700.801075,
+      "entry_high": 2714.338925,
+      "stop_loss": 2599.2672,
+      "take_profit": 2924.1756,
+      "support": 2668.4,
+      "resistance": 2735.0,
+      "news_line": "",
+      "technical_analysis": "$ETH fallback technical analysis: RSI is 59.0, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is contracting by 29.4%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
