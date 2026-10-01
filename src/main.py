@@ -18,7 +18,6 @@ through a deterministic Python fallback.
 """
 
 import os
-import random
 import time
 import traceback
 
@@ -107,9 +106,17 @@ def run_once():
 
         return
 
-    pool = fresh.copy()
+    # Keep the screener's popularity ranking: highest-ranked fresh
+    # candidate is analyzed first, then lower-ranked candidates on failure.
+    pool = fresh
 
-    random.shuffle(pool)
+    print(
+        "[run_once] candidates in screener rank order: "
+        + ", ".join(
+            item.get("symbol", "")
+            for item in pool[:10]
+        )
+    )
 
     # -----------------------------------------------------
     # Try candidates one by one
