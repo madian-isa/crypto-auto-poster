@@ -37594,6 +37594,23 @@
       "technical_analysis": "$CHIP fallback technical analysis: RSI is 42.1, showing weakening momentum without being deeply oversold, price is trading below the 21 EMA, supporting the bearish bias, MACD is below its signal line, confirming negative momentum, volume is contracting by 28.7%, and price is below the 50 EMA, keeping the short-term structure weak. Together, these signals support a conditional SHORT continuation setup. Sellers still need to hold the entry zone and push price toward lower support.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 2212,
+      "created_at": "2026-10-01T10:00:54.792768+00:00",
+      "symbol": "KAIAUSDT",
+      "direction": "LONG",
+      "title": "$KAIA Holds Moving Average Support: High Probability Long Setup",
+      "entry_low": 0.0363,
+      "entry_high": 0.0366,
+      "stop_loss": 0.0348,
+      "take_profit": 0.03975,
+      "support": 0.0363,
+      "resistance": 0.0379,
+      "news_line": "",
+      "technical_analysis": "Price is holding above EMA21, EMA50 and EMA200 while sitting just under EMA9, indicating a short‑term pull‑back to a strong support zone (0.0363‑0.0366). MACD line remains above signal (+0.000149 histogram) and ADX is high (38.5), confirming a firm trend. RSI at 59.8 shows room before overbought, and stochastic K (55) is slightly below D (62), suggesting modest upward bias. Order‑book shows a modest sell‑side imbalance but the bid‑ask spread is tight. Together these factors support a bullish swing trade targeting the next resistance.",
+      "market_context": "BTC is in a short‑term bearish tick (‑0.02% 24h) while broader market breadth is negative (68.6% red). However, BTC’s 4H and 1D trends remain bullish, providing a neutral backdrop for the KAIA long setup.",
+      "result": "PENDING"
     }
   ]
 }
