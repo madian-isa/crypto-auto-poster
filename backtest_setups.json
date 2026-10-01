@@ -37985,6 +37985,23 @@
       "technical_analysis": "Price sits below EMA9, EMA21, EMA50 and EMA200, confirming bearish bias. MACD histogram is negative and ADX 34.9 shows a strong trend. Stochastic K at 25 reinforces downside pressure, while order‑book imbalance (-8.8%) favors sellers. Counter: RSI near 43 suggests room for a bounce. Watch for a break below 0.9996 or a reversal above 0.9999.",
       "market_context": "BTC remains bullish on higher timeframes, but the broader crypto market is broadly negative with 71.9% of assets in red. This backdrop",
       "result": "PENDING"
+    },
+    {
+      "id": 2235,
+      "created_at": "2026-10-01T14:46:28.509649+00:00",
+      "symbol": "HEIUSDT",
+      "direction": "LONG",
+      "title": "$HEI Breakout Confirmation: Bulls Target Next Supply Zone",
+      "entry_low": 0.1542135,
+      "entry_high": 0.1549865,
+      "stop_loss": 0.148416,
+      "take_profit": 0.166968,
+      "support": 0.1373,
+      "resistance": 0.1627,
+      "news_line": "",
+      "technical_analysis": "$HEI fallback technical analysis: RSI is 71.0, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is expanding by 135.8%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
