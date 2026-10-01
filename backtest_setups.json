@@ -36999,6 +36999,23 @@
       "technical_analysis": "$CGPT fallback technical analysis: RSI is 68.7, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is expanding by 15.0%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 2177,
+      "created_at": "2026-10-01T01:30:53.455260+00:00",
+      "symbol": "DUSKUSDT",
+      "direction": "LONG",
+      "title": "Bullish Momentum Accelerates as $DUSK Liquidity Sweep Completes",
+      "entry_low": 0.089775,
+      "entry_high": 0.090225,
+      "stop_loss": 0.0864,
+      "take_profit": 0.0972,
+      "support": 0.0876,
+      "resistance": 0.0911,
+      "news_line": "",
+      "technical_analysis": "$DUSK fallback technical analysis: RSI is 60.1, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is contracting by 39.4%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
