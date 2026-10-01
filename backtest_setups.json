@@ -37951,6 +37951,23 @@
       "technical_analysis": "Price sits above EMA9/21/50/200, confirming a bullish bias. RSI at 66 and ADX near 39 show strong momentum. Stochastic K is high, hinting at possible short‑term overbought pressure, and the orderbook shows a sell‑side imbalance. A pullback to the 0.0175 support could offer a clean entry; watch for a break above 0.0195 for the next upside target.",
       "market_context": "BTC is down 0.8% on the day, and the broader market is broadly negative, which could weigh on risk assets like AUDIO.",
       "result": "PENDING"
+    },
+    {
+      "id": 2233,
+      "created_at": "2026-10-01T14:17:35.253592+00:00",
+      "symbol": "ETCUSDT",
+      "direction": "SHORT",
+      "title": "$ETC Fails Resistance Retest: Bearish Extension Imminent",
+      "entry_low": 9.04,
+      "entry_high": 9.08,
+      "stop_loss": 9.45,
+      "take_profit": 8.28,
+      "support": 8.8,
+      "resistance": 9.08,
+      "news_line": "",
+      "technical_analysis": "ETC is trading under EMA9 (8.91), EMA21 (8.94) and EMA50 (9.02), confirming a downtrend. MACD is negative and RSI sits at 42, while stochastic K at 25 shows oversold pressure. A break below the 1‑hour resistance around 9.08 could trigger a short. Risk is a bounce off the low stochastic; watch the 9.18 high for a potential reversal.",
+      "market_context": "BTC showed a 0.5% decline over 24 h and is bearish in the short term, while its 4‑hour and daily charts remain",
+      "result": "PENDING"
     }
   ]
 }
