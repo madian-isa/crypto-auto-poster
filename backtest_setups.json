@@ -37900,6 +37900,23 @@
       "technical_analysis": "Price sits below EMA9/21/50, MACD histogram negative, RSI 34 and Stoch K 13 indicate bearish momentum. Bollinger lower band just touched, suggesting limited upside. Weak ADX shows trend not strong. Risk: low RSI could spark a short‑term bounce. Watch for break below 1.0094 support; a close above 1.045 would invalidate.",
       "market_context": "BTC down 1.2% in 24h, overall market breadth negative (20.6% green vs 79.4% red).",
       "result": "PENDING"
+    },
+    {
+      "id": 2230,
+      "created_at": "2026-10-01T13:42:10.038975+00:00",
+      "symbol": "ACEUSDT",
+      "direction": "LONG",
+      "title": "$ACE Liquidation Squeeze: Bears Trapped Near Critical Resistance",
+      "entry_low": 0.1868,
+      "entry_high": 0.187,
+      "stop_loss": 0.18,
+      "take_profit": 0.2007,
+      "support": 0.1847,
+      "resistance": 0.1875,
+      "news_line": "",
+      "technical_analysis": "Price sits above EMA9/21/50 and MACD histogram is positive, indicating bullish momentum. RSI at 58.8 and Stochastic K/D around 68/62 support upside. Volume surged 177% and order‑book shows a 5.85% bid imbalance. Counter: price is near the upper Bollinger band, risking a short‑term pullback. Watch for a break above 0.1900 to confirm the move.",
+      "market_context": "BTC is down 0.38% on a bearish 4‑hour trend, while the broader market is broadly negative. ACE’s strength contrasts the overall sentiment",
+      "result": "PENDING"
     }
   ]
 }
