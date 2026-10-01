@@ -37050,6 +37050,23 @@
       "technical_analysis": "$MOVE fallback technical analysis: RSI is 65.7, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is expanding by 251.9%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 2180,
+      "created_at": "2026-10-01T02:15:55.890830+00:00",
+      "symbol": "KITEUSDT",
+      "direction": "LONG",
+      "title": "$KITE Liquidation Squeeze: Bears Trapped Near Critical Resistance",
+      "entry_low": 0.14533575,
+      "entry_high": 0.14606425,
+      "stop_loss": 0.138305,
+      "take_profit": 0.16049,
+      "support": 0.139,
+      "resistance": 0.147,
+      "news_line": "",
+      "technical_analysis": "$KITE fallback technical analysis: RSI is 66.1, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is expanding by 9.9%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup. Buyers still need to defend the entry zone and follow through toward resistance.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
