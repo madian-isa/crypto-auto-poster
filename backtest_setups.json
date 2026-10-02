@@ -38495,6 +38495,23 @@
       "technical_analysis": "$ETH fallback technical analysis: RSI is 60.0, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is contracting by 49.1%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 2265,
+      "created_at": "2026-10-02T02:20:08.170467+00:00",
+      "symbol": "SUIUSDT",
+      "direction": "LONG",
+      "title": "Critical Resistance Test: $SUI Preparing to Surge Higher",
+      "entry_low": 1.17974325,
+      "entry_high": 1.18565675,
+      "stop_loss": 1.135392,
+      "take_profit": 1.277316,
+      "support": 1.1662,
+      "resistance": 1.1911,
+      "news_line": "",
+      "technical_analysis": "$SUI fallback technical analysis: RSI is 55.0, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is contracting by 38.1%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
