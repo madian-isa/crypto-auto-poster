@@ -39328,6 +39328,23 @@
       "technical_analysis": "$XLM fallback technical analysis: RSI is 35.5, showing weakening momentum without being deeply oversold, price is trading below the 21 EMA, supporting the bearish bias, MACD is below its signal line, confirming negative momentum, volume is contracting by 70.3%, and price is below the 50 EMA, keeping the short-term structure weak. Together, these signals support a conditional SHORT continuation setup.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 2314,
+      "created_at": "2026-10-02T23:31:29.327905+00:00",
+      "symbol": "ARBUSDT",
+      "direction": "SHORT",
+      "title": "$ARB Prepares for Breakdown: Downside Risk Escalates",
+      "entry_low": 0.193116,
+      "entry_high": 0.194084,
+      "stop_loss": 0.203211,
+      "take_profit": 0.174378,
+      "support": 0.1884,
+      "resistance": 0.2022,
+      "news_line": "",
+      "technical_analysis": "$ARB fallback technical analysis: RSI is 36.0, showing weakening momentum without being deeply oversold, price is trading below the 21 EMA, supporting the bearish bias, MACD is below its signal line, confirming negative momentum, volume is contracting by 62.8%, and price is below the 50 EMA, keeping the short-term structure weak. Together, these signals support a conditional SHORT continuation setup.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
