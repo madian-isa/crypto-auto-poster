@@ -38852,6 +38852,23 @@
       "technical_analysis": "$APT fallback technical analysis: RSI is 67.7, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is expanding by 11.8%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 2286,
+      "created_at": "2026-10-02T08:01:23.959468+00:00",
+      "symbol": "ARKUSDT",
+      "direction": "SHORT",
+      "title": "Panic Selling Risk Increases as $ARK Tests Critical Floor",
+      "entry_low": 0.22214325,
+      "entry_high": 0.22325675,
+      "stop_loss": 0.231608,
+      "take_profit": 0.204884,
+      "support": 0.2072,
+      "resistance": 0.2533,
+      "news_line": "",
+      "technical_analysis": "$ARK fallback technical analysis: RSI is 35.0, showing weakening momentum without being deeply oversold, price is trading below the 21 EMA, supporting the bearish bias, MACD is below its signal line, confirming negative momentum, volume is contracting by 24.1%, and price is below the 50 EMA, keeping the short-term structure weak. Together, these signals support a conditional SHORT continuation setup.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
