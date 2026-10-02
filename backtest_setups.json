@@ -39345,6 +39345,23 @@
       "technical_analysis": "$ARB fallback technical analysis: RSI is 36.0, showing weakening momentum without being deeply oversold, price is trading below the 21 EMA, supporting the bearish bias, MACD is below its signal line, confirming negative momentum, volume is contracting by 62.8%, and price is below the 50 EMA, keeping the short-term structure weak. Together, these signals support a conditional SHORT continuation setup.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 2315,
+      "created_at": "2026-10-02T23:52:15.349705+00:00",
+      "symbol": "HYPEUSDT",
+      "direction": "SHORT",
+      "title": "$HYPE Derivative Data Shows Heavy Long Liquidations Incoming",
+      "entry_low": 87.76005,
+      "entry_high": 88.19995,
+      "stop_loss": 91.4992,
+      "take_profit": 80.9416,
+      "support": 88.46,
+      "resistance": 89.88,
+      "news_line": "",
+      "technical_analysis": "$HYPE fallback technical analysis: RSI is 45.2, showing weakening momentum without being deeply oversold, price is trading below the 21 EMA, supporting the bearish bias, MACD is below its signal line, confirming negative momentum, volume is contracting by 36.6%, and price is below the 50 EMA, keeping the short-term structure weak. Together, these signals support a conditional SHORT continuation setup.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
