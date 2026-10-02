@@ -38818,6 +38818,23 @@
       "technical_analysis": "$MSTRB fallback technical analysis: RSI is 67.0, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is expanding by 42.9%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 2284,
+      "created_at": "2026-10-02T07:01:12.614065+00:00",
+      "symbol": "SUPERUSDT",
+      "direction": "LONG",
+      "title": "Key Support Holds Firm: $SUPER Bullish Continuation Setup Active",
+      "entry_low": 0.227031,
+      "entry_high": 0.228169,
+      "stop_loss": 0.218496,
+      "take_profit": 0.245808,
+      "support": 0.1956,
+      "resistance": 0.2298,
+      "news_line": "",
+      "technical_analysis": "$SUPER fallback technical analysis: RSI is 65.9, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is contracting by 40.0%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
