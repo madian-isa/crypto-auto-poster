@@ -39090,6 +39090,23 @@
       "technical_analysis": "$DOT fallback technical analysis: RSI is 52.6, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is expanding by 5.9%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 2300,
+      "created_at": "2026-10-02T17:01:25.897873+00:00",
+      "symbol": "SPKUSDT",
+      "direction": "LONG",
+      "title": "$SPK Breakout Confirmation: Bulls Target Next Supply Zone",
+      "entry_low": 0.02665519,
+      "entry_high": 0.0267888,
+      "stop_loss": 0.02565312,
+      "take_profit": 0.02885975,
+      "support": 0.024486,
+      "resistance": 0.028346,
+      "news_line": "",
+      "technical_analysis": "$SPK fallback technical analysis: RSI is 65.7, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is expanding by 276.7%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
