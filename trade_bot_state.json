@@ -1,6 +1,6 @@
 {
   "date": "2026-10-02",
-  "count": 37,
+  "count": 38,
   "posted_symbols_today": [
     "NEARUSDT",
     "ZECUSDT",
@@ -38,6 +38,7 @@
     "DEXEUSDT",
     "AVAXUSDT",
     "TIAUSDT",
-    "NIGHTUSDT"
+    "NIGHTUSDT",
+    "MANAUSDT"
   ]
 }
