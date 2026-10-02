@@ -39107,6 +39107,23 @@
       "technical_analysis": "$SPK fallback technical analysis: RSI is 65.7, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is expanding by 276.7%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 2301,
+      "created_at": "2026-10-02T17:32:24.287363+00:00",
+      "symbol": "XAUTUSDT",
+      "direction": "SHORT",
+      "title": "Panic Selling Risk Increases as $XAUT Tests Critical Floor",
+      "entry_low": 4132.7223,
+      "entry_high": 4153.4377,
+      "stop_loss": 4308.8032,
+      "take_profit": 3811.6336,
+      "support": 4137.23,
+      "resistance": 4166.2,
+      "news_line": "",
+      "technical_analysis": "$XAUT fallback technical analysis: RSI is 39.3, showing weakening momentum without being deeply oversold, price is trading below the 21 EMA, supporting the bearish bias, MACD is below its signal line, confirming negative momentum, volume is expanding by 43.8%, and price is below the 50 EMA, keeping the short-term structure weak. Together, these signals support a conditional SHORT continuation setup.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
