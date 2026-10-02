@@ -1,11 +1,12 @@
 {
   "date": "2026-10-02",
-  "count": 5,
+  "count": 6,
   "posted_symbols_today": [
     "NEARUSDT",
     "ZECUSDT",
     "ENAUSDT",
     "AAVEUSDT",
-    "ALICEUSDT"
+    "ALICEUSDT",
+    "MEGAUSDT"
   ]
 }
