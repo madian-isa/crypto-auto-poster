@@ -1,6 +1,6 @@
 {
   "date": "2026-10-02",
-  "count": 26,
+  "count": 27,
   "posted_symbols_today": [
     "NEARUSDT",
     "ZECUSDT",
@@ -27,6 +27,7 @@
     "XRPUSDT",
     "DOGEUSDT",
     "USD1USDT",
-    "TRUMPUSDT"
+    "TRUMPUSDT",
+    "ARUSDT"
   ]
 }
