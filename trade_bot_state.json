@@ -1,6 +1,6 @@
 {
   "date": "2026-10-02",
-  "count": 53,
+  "count": 54,
   "posted_symbols_today": [
     "NEARUSDT",
     "ZECUSDT",
@@ -54,6 +54,7 @@
     "HBARUSDT",
     "CRCLBUSDT",
     "GTCUSDT",
-    "XPLUSDT"
+    "XPLUSDT",
+    "ASTERUSDT"
   ]
 }
