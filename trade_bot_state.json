@@ -1,6 +1,6 @@
 {
   "date": "2026-10-02",
-  "count": 49,
+  "count": 50,
   "posted_symbols_today": [
     "NEARUSDT",
     "ZECUSDT",
@@ -50,6 +50,7 @@
     "SPKUSDT",
     "XAUTUSDT",
     "\u725b\u6765USDT",
-    "ETHFIUSDT"
+    "ETHFIUSDT",
+    "HBARUSDT"
   ]
 }
