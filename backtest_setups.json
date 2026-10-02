@@ -39073,6 +39073,23 @@
       "technical_analysis": "$ONDO fallback technical analysis: RSI is 56.1, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is expanding by 37.0%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 2299,
+      "created_at": "2026-10-02T16:31:33.071817+00:00",
+      "symbol": "DOTUSDT",
+      "direction": "LONG",
+      "title": "On-Chain Metrics Confirm Strong Whale Accumulation on $DOT",
+      "entry_low": 1.2119625,
+      "entry_high": 1.2180375,
+      "stop_loss": 1.1664,
+      "take_profit": 1.3122,
+      "support": 1.216,
+      "resistance": 1.234,
+      "news_line": "",
+      "technical_analysis": "$DOT fallback technical analysis: RSI is 52.6, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is expanding by 5.9%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
