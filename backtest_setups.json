@@ -38393,6 +38393,23 @@
       "technical_analysis": "$AAVE fallback technical analysis: RSI is 61.8, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is contracting by 19.5%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 2259,
+      "created_at": "2026-10-02T01:01:00.533611+00:00",
+      "symbol": "ALICEUSDT",
+      "direction": "LONG",
+      "title": "$ALICE Liquidation Squeeze: Bears Trapped Near Critical Resistance",
+      "entry_low": 0.21675675,
+      "entry_high": 0.21784325,
+      "stop_loss": 0.20497,
+      "take_profit": 0.24196,
+      "support": 0.206,
+      "resistance": 0.2406,
+      "news_line": "",
+      "technical_analysis": "$ALICE fallback technical analysis: RSI is 69.1, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is contracting by 35.0%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }

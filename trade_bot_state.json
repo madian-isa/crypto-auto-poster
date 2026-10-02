@@ -1,10 +1,11 @@
 {
   "date": "2026-10-02",
-  "count": 4,
+  "count": 5,
   "posted_symbols_today": [
     "NEARUSDT",
     "ZECUSDT",
     "ENAUSDT",
-    "AAVEUSDT"
+    "AAVEUSDT",
+    "ALICEUSDT"
   ]
 }
