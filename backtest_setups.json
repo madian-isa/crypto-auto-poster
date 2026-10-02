@@ -38801,6 +38801,23 @@
       "technical_analysis": "$TAO fallback technical analysis: RSI is 55.6, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is expanding by 10.2%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 2283,
+      "created_at": "2026-10-02T06:47:02.221141+00:00",
+      "symbol": "MSTRBUSDT",
+      "direction": "LONG",
+      "title": "Spot Inflows Surge for $MSTRB as Futures Open Interest Rises",
+      "entry_low": 163.380525,
+      "entry_high": 164.199475,
+      "stop_loss": 157.2384,
+      "take_profit": 176.8932,
+      "support": 160.12,
+      "resistance": 167.04,
+      "news_line": "",
+      "technical_analysis": "$MSTRB fallback technical analysis: RSI is 67.0, showing bullish momentum without being deeply overbought, price is holding above the 21 EMA, supporting the bullish bias, MACD is above its signal line, confirming positive momentum, volume is expanding by 42.9%, and price is above the 50 EMA, keeping the short-term structure constructive. Together, these signals support a conditional LONG continuation setup.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
