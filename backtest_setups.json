@@ -40178,6 +40178,23 @@
       "technical_analysis": "INJ trades above EMA9 (7.625), EMA21 and EMA50, with RSI 58 and Stoch 59/52 indicating bullish momentum. MACD histogram is positive and the orderbook shows a modest bid imbalance. Swing low sits at 7.562 and resistance near 7.688. Weak ADX (11) and falling volume add uncertainty; watch a break above 7.688 or a drop below 7.35 for confirmation.",
       "market_context": "BTC is down 0.8% in 24h and shows a bearish short‑term move, while broader market breadth is largely negative (73% red). Higher‑timeframe",
       "result": "PENDING"
+    },
+    {
+      "id": 2364,
+      "created_at": "2026-10-03T15:30:44.576982+00:00",
+      "symbol": "USD1USDT",
+      "direction": "LONG",
+      "title": "$USD1 Volume Expansion Signals High Conviction Upward Move",
+      "entry_low": 0.99958,
+      "entry_high": 0.9996,
+      "stop_loss": 0.9646,
+      "take_profit": 1.06957,
+      "support": 0.99958,
+      "resistance": 0.9996,
+      "news_line": "",
+      "technical_analysis": "Price sits at the upper edge of its 0.99958‑0.99960 range, just above the 9‑EMA and near the stochastic’s 66% level. MACD histogram is positive and order‑book shows a 23% bid imbalance, supporting upside. However, the price is still below the 21‑, 50‑ and 200‑EMA, a bearish bias. Watch for a break below 0.99958 as a risk.",
+      "market_context": "BTC is in a short‑term bearish 4‑hour trend, down 0.8% on the day, while overall market breadth is negative (71.8% red).",
+      "result": "PENDING"
     }
   ]
 }
