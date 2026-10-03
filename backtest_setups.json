@@ -40433,6 +40433,23 @@
       "technical_analysis": "Price sits above EMA9, EMA21, EMA50 and EMA200, showing clear bullish bias. MACD histogram is positive and RSI at 62 supports upside. Stochastic near 80 and price touching the upper Bollinger band suggest overbought pressure, a possible pull‑back risk. Watch the 0.04986 resistance break for confirmation; failure may push back to 0.04726 support.",
       "market_context": "BTC remains in a bullish 4‑hour and daily trend, with price above its 20‑ and 50‑EMA, and the broader market is 78%",
       "result": "PENDING"
+    },
+    {
+      "id": 2379,
+      "created_at": "2026-10-03T19:50:49.527496+00:00",
+      "symbol": "OPUSDT",
+      "direction": "LONG",
+      "title": "Bullish Momentum Accelerates as $OP Liquidity Sweep Completes",
+      "entry_low": 0.1338,
+      "entry_high": 0.134,
+      "stop_loss": 0.129,
+      "take_profit": 0.1437,
+      "support": 0.1312,
+      "resistance": 0.1349,
+      "news_line": "",
+      "technical_analysis": "OP is trading just below the 9‑EMA but above the 21‑, 50‑ and 200‑EMA, showing a higher‑time uptrend. MACD histogram is positive and the order book has an 18% bid imbalance, adding bullish pressure. RSI at 56 is neutral. A break below 1H support 0.1312 could flip bias. Watch for a clear close above 0.1349.",
+      "market_context": "BTC remains bullish on the 4H and 1D charts, with market breadth broadly positive (79% green).",
+      "result": "PENDING"
     }
   ]
 }
