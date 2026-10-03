@@ -180,11 +180,19 @@ def _chat_with_fallback(client, messages, temperature):
     last_err = None
     for model in models:
         try:
-            return client.chat.completions.create(
+            response = client.chat.completions.create(
                 model=model,
                 messages=messages,
                 temperature=temperature,
             )
+            text_out = ""
+            if response.choices:
+                text_out = (response.choices[0].message.content or "").strip()
+            if not text_out:
+                print(f"[setup_generator] {model} returned an empty response; trying next model...")
+                last_err = RuntimeError("AI returned an empty response.")
+                continue
+            return response
         except Exception as err:
             last_err = err
             text = str(err).lower()
