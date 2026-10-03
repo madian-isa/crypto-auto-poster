@@ -165,41 +165,95 @@ def _get_client():
     return Groq(api_key=cfg.GROQ_API_KEY)
 
 
-# Backup models used when the main model hits its daily token limit (429).
-# Each Groq model has its own separate limit.
+# Backup models used when the main model hits its limit (429), returns
+# an empty/invalid answer, or does not exist on this account.
+# The bot checks which models your Groq account really has and only
+# tries those, in this order (then any other available text model).
 GROQ_BACKUP_MODELS = [
+    "qwen/qwen3.8-27b",
     "openai/gpt-oss-20b",
-    "llama-3.1-8b-instant",
 ]
+
+_NON_CHAT_MARKERS = (
+    "whisper", "guard", "tts", "orpheus", "playai",
+    "compound", "safeguard", "embed",
+)
+
+
+def _available_backup_models(client, primary):
+    try:
+        ids = [m.id for m in client.models.list().data]
+    except Exception as err:
+        print(f"[setup_generator] could not list Groq models: {str(err)[:80]}")
+        return [m for m in GROQ_BACKUP_MODELS if m != primary]
+    chat_ids = [
+        i for i in ids
+        if i != primary and not any(k in i.lower() for k in _NON_CHAT_MARKERS)
+    ]
+    preferred = [m for m in GROQ_BACKUP_MODELS if m in chat_ids]
+    others = [m for m in chat_ids if m not in preferred]
+    return (preferred + others)[:5]
+
+
+def _usable_response(response):
+    """Return True when the response holds non-empty, parseable JSON."""
+    if not response.choices:
+        return False
+    message = response.choices[0].message
+    text = (message.content or "")
+    if "</think>" in text:
+        text = text.split("</think>", 1)[1]
+        try:
+            message.content = text
+        except Exception:
+            pass
+    text = text.strip()
+    if not text:
+        return False
+    try:
+        _parse_ai_response(text)
+        return True
+    except Exception:
+        return False
 
 
 def _chat_with_fallback(client, messages, temperature):
-    models = [cfg.GROQ_MODEL] + [
-        m for m in GROQ_BACKUP_MODELS if m != cfg.GROQ_MODEL
-    ]
-    last_err = None
-    for model in models:
+    primary = cfg.GROQ_MODEL
+    models = [primary]
+    backups_loaded = False
+    last_err = RuntimeError("AI returned an empty response.")
+    index = 0
+    while index < len(models):
+        model = models[index]
+        index += 1
         try:
-            response = client.chat.completions.create(
-                model=model,
-                messages=messages,
-                temperature=temperature,
-            )
-            text_out = ""
-            if response.choices:
-                text_out = (response.choices[0].message.content or "").strip()
-            if not text_out:
-                print(f"[setup_generator] {model} returned an empty response; trying next model...")
-                last_err = RuntimeError("AI returned an empty response.")
-                continue
-            return response
+            kwargs = {
+                "model": model,
+                "messages": messages,
+                "temperature": temperature,
+            }
+            if model != primary:
+                # Reasoning models can spend every token on "thinking" and
+                # return an empty answer. Keep reasoning minimal and leave
+                # enough room for the final JSON.
+                kwargs["max_completion_tokens"] = 2000
+                if "qwen" in model.lower():
+                    kwargs["extra_body"] = {"reasoning_effort": "none"}
+                elif "gpt-oss" in model.lower():
+                    kwargs["extra_body"] = {"reasoning_effort": "low"}
+            response = client.chat.completions.create(**kwargs)
+            if _usable_response(response):
+                if model != primary:
+                    print(f"[setup_generator] using backup model {model}")
+                return response
+            print(f"[setup_generator] {model} gave empty/invalid output; trying next model...")
+            last_err = RuntimeError("AI returned an empty response.")
         except Exception as err:
             last_err = err
-            text = str(err).lower()
-            if "429" in text or "rate limit" in text or "decommission" in text or "model_not_found" in text:
-                print(f"[setup_generator] {model} unavailable ({str(err)[:80]}); trying next model...")
-                continue
-            raise
+            print(f"[setup_generator] {model} unavailable ({str(err)[:60]}); trying next model...")
+        if not backups_loaded and index >= len(models):
+            backups_loaded = True
+            models.extend(_available_backup_models(client, primary))
     raise last_err
 
 
