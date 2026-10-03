@@ -31,7 +31,7 @@ jobs:
 
           now = datetime.now(timezone.utc)
           rng = random.Random(now.strftime("%Y%m%d%H"))
-          n = rng.randint(1, 6)
+          n = rng.randint(1, 5)
           slots = rng.sample(range(6), n)
           slot = now.minute // 10
           go = os.environ.get("FORCE") == "true" or slot in slots
