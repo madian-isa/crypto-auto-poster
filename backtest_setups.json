@@ -39940,6 +39940,23 @@
       "technical_analysis": "ADA trades below key EMAs with negative MACD, signaling bearish momentum. RSI at 44 suggests room for downside. Volume drop increases risk of weak moves. Watch for rejection at 0.2487 resistance. A break below 0.2369 support could trigger further decline. Orderbook shows mild buy pressure but insufficient to reverse trend.",
       "market_context": "BTC is broadly negative with 76.8% market red, creating headwinds for altcoins like ADA.",
       "result": "PENDING"
+    },
+    {
+      "id": 2350,
+      "created_at": "2026-10-03T10:50:45.705769+00:00",
+      "symbol": "ZROUSDT",
+      "direction": "LONG",
+      "title": "$ZRO Holds Moving Average Support: High Probability Long Setup",
+      "entry_low": 1.854,
+      "entry_high": 1.861,
+      "stop_loss": 1.788,
+      "take_profit": 1.9965,
+      "support": 1.835,
+      "resistance": 2.003,
+      "news_line": "",
+      "technical_analysis": "Price sits above the 9‑, 21‑ and 50‑EMA, with MACD line crossing above its signal and a positive histogram, supporting a bullish bias. RSI is mid‑50s and Stochastic is near 80, hinting at overbought pressure. A break above the 1.854 support could target the 2.003 resistance; a slip below 1.788 invalidates the view.",
+      "market_context": "BTC shows short‑term bullish momentum on 4h and daily charts but is down 1.9% over 24h, while overall market breadth remains broadly",
+      "result": "PENDING"
     }
   ]
 }
