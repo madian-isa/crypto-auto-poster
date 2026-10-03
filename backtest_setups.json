@@ -40127,6 +40127,23 @@
       "technical_analysis": "Price sits just under the 1‑hour resistance at 69.93, near EMA9/21 (~69.46) and above EMA200. MACD line is below its signal with a negative histogram, and Stochastic K is under 50, indicating downside pressure. ADX is low (14.8) and volume dropped 45%. Risk: a bounce if BTC regains bullish strength; watch a break below 69.43 support.",
       "market_context": "BTC is down 1.95% on the 24‑hour chart, while the overall market breadth is broadly negative (81.6% red). The bearish crypto environment",
       "result": "PENDING"
+    },
+    {
+      "id": 2361,
+      "created_at": "2026-10-03T14:30:53.475832+00:00",
+      "symbol": "AAVEUSDT",
+      "direction": "LONG",
+      "title": "$AAVE Volume Expansion Signals High Conviction Upward Move",
+      "entry_low": 179.2,
+      "entry_high": 180.0,
+      "stop_loss": 173.0,
+      "take_profit": 192.8,
+      "support": 179.21,
+      "resistance": 182.77,
+      "news_line": "",
+      "technical_analysis": "Price sits just above EMA9 and EMA21, keeping it in bullish territory. EMA50 and EMA200 are also well‑below, supporting an upside bias. RSI is neutral, but MACD histogram is negative and Stochastic K is under its D line, hinting at short‑term pullback risk. Watch the 182.77 resistance for confirmation; a break could fuel the long setup.",
+      "market_context": "BTC is in a broader bearish swing, with market breadth largely negative, but AAVE shows relative strength against the downtrend.",
+      "result": "PENDING"
     }
   ]
 }
