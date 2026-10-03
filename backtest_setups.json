@@ -40280,6 +40280,23 @@
       "technical_analysis": "Price sits near the 1H/4H support zone while all EMAs (9‑200) sit above, indicating short‑term pressure but room to bounce. RSI is neutral and stochastic is deep oversold, hinting at a possible reversal. A break above the 0.0199 resistance would invalidate the setup; watch volume for confirmation. This is a conditional technical scenario, not a verified trade or a promise",
       "market_context": "BTC is in a 24h bearish dip and the broader market shows a negative bias, which could limit upside momentum for altcoins.",
       "result": "PENDING"
+    },
+    {
+      "id": 2370,
+      "created_at": "2026-10-03T17:20:49.182930+00:00",
+      "symbol": "TIAUSDT",
+      "direction": "LONG",
+      "title": "Major Breakout Signals Emerge on $TIA Higher Timeframes",
+      "entry_low": 0.469,
+      "entry_high": 0.472,
+      "stop_loss": 0.45168,
+      "take_profit": 0.50814,
+      "support": 0.459,
+      "resistance": 0.4814,
+      "news_line": "",
+      "technical_analysis": "Price sits just below the 1‑hour resistance at 0.4727, staying above EMA9, EMA21 and EMA50 with a positive MACD. RSI 62 and a 22% volume rise back the upside. Stochastic is overbought, a possible pull‑back risk. Look for a break above 0.4814 to confirm a long; a drop below 0.459 flips bias.",
+      "market_context": "BTC is bullish on 4H and 1D timeframes, up 2.4% in the last 24 hours, while overall market breadth is mixed.",
+      "result": "PENDING"
     }
   ]
 }
