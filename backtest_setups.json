@@ -39447,6 +39447,23 @@
       "technical_analysis": "$NEAR fallback technical analysis: RSI is 38.6, showing weakening momentum without being deeply oversold, price is trading below the 21 EMA, supporting the bearish bias, MACD is below its signal line, confirming negative momentum, volume is contracting by 52.7%, and price is below the 50 EMA, keeping the short-term structure weak. Together, these signals support a conditional SHORT continuation setup.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 2321,
+      "created_at": "2026-10-03T02:31:28.757121+00:00",
+      "symbol": "ETHUSDT",
+      "direction": "SHORT",
+      "title": "Bearish Divergence Spotted on $ETH: Downside Targets Ahead",
+      "entry_low": 2673.0606,
+      "entry_high": 2686.4594,
+      "stop_loss": 2786.9504,
+      "take_profit": 2465.3792,
+      "support": 2673.42,
+      "resistance": 2694.33,
+      "news_line": "",
+      "technical_analysis": "$ETH fallback technical analysis: RSI is 42.5, showing weakening momentum without being deeply oversold, price is trading below the 21 EMA, supporting the bearish bias, MACD is below its signal line, confirming negative momentum, volume is contracting by 73.8%, and price is below the 50 EMA, keeping the short-term structure weak. Together, these signals support a conditional SHORT continuation setup.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
