@@ -40501,6 +40501,23 @@
       "technical_analysis": "Price sits above EMA9/21/50/200, with MACD histogram still positive and order‑book showing a 38 % bid‑side imbalance. RSI 68 and Stochastic K 82 suggest overbought pressure, so a pull‑back to the 0.1654‑0.1660 zone is possible. A clean break above 0.1715 would confirm the long bias. Volume has dropped sharply, so watch for any resurgence as a catalyst.",
       "market_context": "BTC remains in a bullish 4 h and daily trend, supporting risk‑on sentiment across the market.",
       "result": "PENDING"
+    },
+    {
+      "id": 2383,
+      "created_at": "2026-10-03T20:40:45.862747+00:00",
+      "symbol": "AEROUSDT",
+      "direction": "LONG",
+      "title": "$AERO Buying Pressure Rises as Bulls Test Key Resistance",
+      "entry_low": 0.81,
+      "entry_high": 0.82,
+      "stop_loss": 0.777,
+      "take_profit": 0.891,
+      "support": 0.7915,
+      "resistance": 0.8388,
+      "news_line": "",
+      "technical_analysis": "AERO holds above the 50 EMA at 0.810, supported by a positive MACD histogram. The broader market is bullish, with 82% of assets green. However, RSI at 73 and Stochastic K above 97 signal overbought conditions. Watch for a pullback to the 0.810-0.820 zone to enter, targeting a breakout above 0.8388 resistance.",
+      "market_context": "BTC is bullish on 4H and 1D timeframes, trading near $84,867. Most of the market (82%) is positive, creating a supportive environment",
+      "result": "PENDING"
     }
   ]
 }
