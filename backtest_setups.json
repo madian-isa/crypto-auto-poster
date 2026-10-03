@@ -39634,6 +39634,23 @@
       "technical_analysis": "Price is above EMA9, EMA21, EMA50 and EMA200, while MACD histogram is positive and ADX is above 50, indicating strong bullish momentum. RSI (71.7) and Stochastic (K 76.8/D 84.8) are overbought, warning of a possible pullback. A break above the 0.0805 resistance with volume could push price toward the 0.0831 target. Risk if price drops below the 0.0750 stop.",
       "market_context": "BTC is in a 24‑hour bearish phase and the broader market is broadly negative, yet SAND shows internal bullish signs.",
       "result": "PENDING"
+    },
+    {
+      "id": 2332,
+      "created_at": "2026-10-03T07:31:40.529018+00:00",
+      "symbol": "BNBUSDT",
+      "direction": "SHORT",
+      "title": "Strong Rejection at Trendline Resistance: $BNB Short Entry",
+      "entry_low": 764.234625,
+      "entry_high": 768.065375,
+      "stop_loss": 796.796,
+      "take_profit": 704.858,
+      "support": 765.18,
+      "resistance": 769.94,
+      "news_line": "",
+      "technical_analysis": "$BNB fallback technical analysis: RSI is 40.3, showing weakening momentum without being deeply oversold, price is trading below the 21 EMA, supporting the bearish bias, MACD is below its signal line, confirming negative momentum, volume is contracting by 51.4%, and price is below the 50 EMA, keeping the short-term structure weak. Together, these signals support a conditional SHORT continuation setup.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
