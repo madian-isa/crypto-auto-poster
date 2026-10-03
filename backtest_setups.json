@@ -39889,6 +39889,23 @@
       "technical_analysis": "BTC is testing the 84.6k resistance zone while the 1H structure remains under pressure. The MACD is negative, and RSI is neutral at 44, suggesting limited upward momentum. Volume has dropped significantly, indicating a lack of conviction in the current bounce. Watch for a rejection at 84.7k to confirm a short setup targeting the 83.9k support.",
       "market_context": "The broader market is broadly negative with 77.9% of assets in the red. BTC is down 2% in 24h, though the 4H",
       "result": "PENDING"
+    },
+    {
+      "id": 2347,
+      "created_at": "2026-10-03T09:36:55.143983+00:00",
+      "symbol": "SOLUSDT",
+      "direction": "SHORT",
+      "title": "Bears Retake Control as $SOL Fails to Hold Moving Averages",
+      "entry_low": 119.2,
+      "entry_high": 119.6,
+      "stop_loss": 124.2,
+      "take_profit": 109.8,
+      "support": 118.82,
+      "resistance": 119.63,
+      "news_line": "",
+      "technical_analysis": "SOL faces immediate resistance at 119.63, where price is currently stalling. The MACD histogram is positive but the main line remains negative, suggesting weak momentum. Stochastics are nearing overbought levels, indicating a potential pullback. Key risk is the 118.82 support; a break below invalidates the short. Watch for rejection at 119.63 to confirm bearish continuation.",
+      "market_context": "Bitcoin is showing a bearish 24h trend, while the broader market is predominantly red. SOL is trading near its 200 EMA, which",
+      "result": "PENDING"
     }
   ]
 }
