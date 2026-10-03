@@ -1,6 +1,6 @@
 {
   "date": "2026-10-03",
-  "count": 22,
+  "count": 23,
   "posted_symbols_today": [
     "NIGHTUSDT",
     "\u725b\u6765USDT",
@@ -23,6 +23,7 @@
     "ASTERUSDT",
     "UNIUSDT",
     "VIRTUALUSDT",
-    "2ZUSDT"
+    "2ZUSDT",
+    "QNTUSDT"
   ]
 }
