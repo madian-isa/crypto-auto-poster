@@ -40569,6 +40569,23 @@
       "technical_analysis": "Price sits just above the 9‑EMA and 21‑EMA while MACD histogram stays positive. Order‑book shows a 17% bid imbalance, supporting upside. RSI is neutral and stochastic is low, hinting at a possible bounce. Risk comes from price still under the 50‑EMA and falling volume. Watch a break above 0.2258 for confirmation; failure could drop toward 0.2228.",
       "market_context": "BTC is on a bullish trend on both 4H and 1D charts, and overall market breadth is broadly positive.",
       "result": "PENDING"
+    },
+    {
+      "id": 2387,
+      "created_at": "2026-10-03T21:58:02.333267+00:00",
+      "symbol": "HYPEUSDT",
+      "direction": "LONG",
+      "title": "$HYPE Volume Expansion Signals High Conviction Upward Move",
+      "entry_low": 89.2,
+      "entry_high": 89.3,
+      "stop_loss": 86.0,
+      "take_profit": 95.75,
+      "support": 87.96,
+      "resistance": 90.06,
+      "news_line": "",
+      "technical_analysis": "Price is above EMA9 (88.91) and EMA21 (88.69) and just over EMA200 (89.25), while MACD histogram stays positive at 0.138. RSI at 58 and stochastic K at 88 show momentum, but falling volume (‑32%) and ADX 17 point to a weakening trend. A break above 90.06 resistance would confirm the long bias; watch the 87.96 support level for downside risk.",
+      "market_context": "BTC is in a bullish trend on both 4‑hour and daily charts, underpinning the broader market’s positive sentiment.",
+      "result": "PENDING"
     }
   ]
 }
