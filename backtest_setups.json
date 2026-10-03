@@ -40467,6 +40467,23 @@
       "technical_analysis": "DOT sits near its 1H support of 1.166 and 4H resistance at 1.192. EMA9 (1.193) sits above EMA200, and MACD histogram is positive, supporting a bullish tilt. Stochastic shows K under D and volume fell 64%, a downside risk. A clear break above 1.196 would confirm entry; watch for a drop below 1.166.",
       "market_context": "BTC remains bullish on higher timeframes, with price above its 20‑ and 50‑EMA, and the overall market is broadly positive (78% green).",
       "result": "PENDING"
+    },
+    {
+      "id": 2381,
+      "created_at": "2026-10-03T20:10:46.111254+00:00",
+      "symbol": "ARBUSDT",
+      "direction": "LONG",
+      "title": "High R-Multiple Long Trade Setup Forming on $ARB",
+      "entry_low": 0.2002,
+      "entry_high": 0.2008,
+      "stop_loss": 0.1923,
+      "take_profit": 0.2169,
+      "support": 0.2002,
+      "resistance": 0.2022,
+      "news_line": "",
+      "technical_analysis": "ARB holds above the 0.2002 support with a bullish MACD crossover. Price is testing the 0.2008 resistance, backed by a positive 4H BTC trend. However, low volume and negative orderbook imbalance suggest caution. A clean break above 0.2022 confirms the move, targeting the next major swing high. Watch for rejection if price stalls at resistance.",
+      "market_context": "BTC is bullish on 4H and 1D, with 79.8% of the market green.",
+      "result": "PENDING"
     }
   ]
 }
