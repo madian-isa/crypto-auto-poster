@@ -39464,6 +39464,23 @@
       "technical_analysis": "$ETH fallback technical analysis: RSI is 42.5, showing weakening momentum without being deeply oversold, price is trading below the 21 EMA, supporting the bearish bias, MACD is below its signal line, confirming negative momentum, volume is contracting by 73.8%, and price is below the 50 EMA, keeping the short-term structure weak. Together, these signals support a conditional SHORT continuation setup.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 2322,
+      "created_at": "2026-10-03T03:01:32.012220+00:00",
+      "symbol": "PENGUUSDT",
+      "direction": "SHORT",
+      "title": "Bearish Continuation Pattern Confirmed on $PENGU Chart Structure",
+      "entry_low": 0.00891665,
+      "entry_high": 0.00896135,
+      "stop_loss": 0.00929656,
+      "take_profit": 0.00822388,
+      "support": 0.008644,
+      "resistance": 0.009111,
+      "news_line": "",
+      "technical_analysis": "$PENGU fallback technical analysis: RSI is 35.6, showing weakening momentum without being deeply oversold, price is trading below the 21 EMA, supporting the bearish bias, MACD is below its signal line, confirming negative momentum, volume is contracting by 73.9%, and price is below the 50 EMA, keeping the short-term structure weak. Together, these signals support a conditional SHORT continuation setup.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
