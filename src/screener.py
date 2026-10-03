@@ -147,10 +147,6 @@ def get_screener_shortlist(limit=None):
         ),
         reverse=True,
     )
-    # Trending / most-searched coins first, then everything else.
-    trending_symbols = _fetch_trending_symbols()
-    scored = _apply_trending_boost(scored, trending_symbols)
-
     result = scored[:limit]
 
     print(f"[screener] shortlist size: {len(result)}")
@@ -342,61 +338,3 @@ def _percentile_rank(value, sorted_values):
 if __name__ == "__main__":
     for row in get_screener_shortlist():
         print(row)
-
-
-# =========================================================
-# TRENDING COINS (CoinGecko "most searched in the last 24h")
-# =========================================================
-
-TRENDING_URL = "https://api.coingecko.com/api/v3/search/trending"
-
-
-def _fetch_trending_symbols():
-    """Return a set of trending base-asset symbols (e.g. {"PEPE", "SUI"}).
-
-    Free CoinGecko endpoint, no API key. Any failure returns an empty set
-    so the normal ranking still works.
-    """
-    try:
-        response = requests.get(
-            TRENDING_URL,
-            headers={"accept": "application/json"},
-            timeout=10,
-        )
-        response.raise_for_status()
-        data = response.json()
-        symbols = set()
-        for entry in data.get("coins", []) or []:
-            item = entry.get("item", entry) or {}
-            symbol = str(item.get("symbol", "")).strip().upper()
-            if symbol:
-                symbols.add(symbol)
-        print(f"[screener] trending coins fetched: {len(symbols)}")
-        return symbols
-    except Exception as err:
-        print(f"[screener] trending fetch failed: {str(err)[:80]}")
-        return set()
-
-
-def _base_asset(symbol):
-    symbol = str(symbol or "").upper()
-    for quote in ("USDT", "USDC", "BUSD"):
-        if symbol.endswith(quote):
-            return symbol[: -len(quote)]
-    return symbol
-
-
-def _apply_trending_boost(scored, trending_symbols):
-    """Move trending coins to the front; keep the original order inside
-    each group (sort is stable)."""
-    if not trending_symbols:
-        return scored
-    for row in scored:
-        row["trending"] = _base_asset(row.get("symbol")) in trending_symbols
-    boosted = sorted(scored, key=lambda row: 0 if row["trending"] else 1)
-    matched = [row["symbol"] for row in boosted if row["trending"]]
-    print(
-        f"[screener] trending coins available on Binance: {len(matched)}"
-        + (f" -> {', '.join(matched[:10])}" if matched else "")
-    )
-    return boosted
