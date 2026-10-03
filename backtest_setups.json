@@ -40654,6 +40654,23 @@
       "technical_analysis": "Price sits above EMA9/21/50, holding the 0.18428 support while testing the 0.18474 resistance. RSI at 54 and bullish EMAs point to upside, but MACD histogram is slightly negative and stochastic K is below D, hinting at short‑term pull. Watch for a break above 0.1868 to confirm long, and keep an eye on a drop through 0.1833 as risk.",
       "market_context": "BTC is in a bullish 4H and 1D trend, up 0.2% today, and the overall market is 71% green, supporting risk‑on sentiment.",
       "result": "PENDING"
+    },
+    {
+      "id": 2392,
+      "created_at": "2026-10-03T23:50:45.962357+00:00",
+      "symbol": "BCHUSDT",
+      "direction": "LONG",
+      "title": "On-Chain Metrics Confirm Strong Whale Accumulation on $BCH",
+      "entry_low": 316.1,
+      "entry_high": 317.0,
+      "stop_loss": 303.888,
+      "take_profit": 341.874,
+      "support": 310.6,
+      "resistance": 322.7,
+      "news_line": "",
+      "technical_analysis": "Price sits above EMA9/21/50/200, MACD line stays over signal with positive histogram, and RSI at 65 supports upside. Stochastic near 95 signals overbought, a possible pullback. A break above the 322.7 resistance confirms the long bias; failure may retest the 310.6 support. Watch volume and order‑book imbalance for clues today.",
+      "market_context": "BTC is bullish on 4h and 1d, up 0.22% today. Market breadth is broadly positive with 66.5% green candles.",
+      "result": "PENDING"
     }
   ]
 }
