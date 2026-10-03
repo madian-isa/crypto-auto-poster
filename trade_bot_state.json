@@ -1,6 +1,6 @@
 {
   "date": "2026-10-03",
-  "count": 59,
+  "count": 60,
   "posted_symbols_today": [
     "NIGHTUSDT",
     "\u725b\u6765USDT",
@@ -60,6 +60,7 @@
     "ARUSDT",
     "FILUSDT",
     "JTOUSDT",
-    "HBARUSDT"
+    "HBARUSDT",
+    "AIUSDT"
   ]
 }
