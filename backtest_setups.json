@@ -39617,6 +39617,23 @@
       "technical_analysis": "$XPL fallback technical analysis: RSI is 40.5, showing weakening momentum without being deeply oversold, price is trading below the 21 EMA, supporting the bearish bias, MACD is below its signal line, confirming negative momentum, volume is contracting by 82.8%, and price is below the 50 EMA, keeping the short-term structure weak. Together, these signals support a conditional SHORT continuation setup.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 2331,
+      "created_at": "2026-10-03T07:00:45.686291+00:00",
+      "symbol": "SANDUSDT",
+      "direction": "LONG",
+      "title": "Bullish Momentum Is Building: Can $SAND Continue Its Breakout?",
+      "entry_low": 0.07771,
+      "entry_high": 0.0783,
+      "stop_loss": 0.075,
+      "take_profit": 0.084015,
+      "support": 0.05939,
+      "resistance": 0.08396,
+      "news_line": "",
+      "technical_analysis": "Price is above EMA9, EMA21, EMA50 and EMA200, while MACD histogram is positive and ADX is above 50, indicating strong bullish momentum. RSI (71.7) and Stochastic (K 76.8/D 84.8) are overbought, warning of a possible pullback. A break above the 0.0805 resistance with volume could push price toward the 0.0831 target. Risk if price drops below the 0.0750 stop.",
+      "market_context": "BTC is in a 24‑hour bearish phase and the broader market is broadly negative, yet SAND shows internal bullish signs.",
+      "result": "PENDING"
     }
   ]
 }
