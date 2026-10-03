@@ -1,6 +1,6 @@
 {
   "date": "2026-10-03",
-  "count": 49,
+  "count": 50,
   "posted_symbols_today": [
     "NIGHTUSDT",
     "\u725b\u6765USDT",
@@ -50,6 +50,7 @@
     "AAVEUSDT",
     "OPENUSDT",
     "INJUSDT",
-    "USD1USDT"
+    "USD1USDT",
+    "STRKUSDT"
   ]
 }
