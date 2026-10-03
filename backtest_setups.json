@@ -39872,6 +39872,23 @@
       "technical_analysis": "Price sits below EMA9/21/50, indicating bearish bias. RSI at 41 and ADX 26 show weak momentum, while MACD line is marginally above signal, a slight bullish hint. Orderbook shows a 13% ask‑side imbalance. Risk: a bounce to the 4.27 µ level could reverse. Watch for a break below 4.22 µ for confirmation.",
       "market_context": "BTC is down 1.8% on the day, keeping the broader market broadly negative.",
       "result": "PENDING"
+    },
+    {
+      "id": 2346,
+      "created_at": "2026-10-03T09:32:47.862526+00:00",
+      "symbol": "BTCUSDT",
+      "direction": "SHORT",
+      "title": "High Conviction Short Opportunity as $BTC Tests Supply Wall",
+      "entry_low": 84400.0,
+      "entry_high": 84600.0,
+      "stop_loss": 87900.0,
+      "take_profit": 77700.0,
+      "support": 83888.0,
+      "resistance": 87220.0,
+      "news_line": "",
+      "technical_analysis": "BTC is testing the 84.6k resistance zone while the 1H structure remains under pressure. The MACD is negative, and RSI is neutral at 44, suggesting limited upward momentum. Volume has dropped significantly, indicating a lack of conviction in the current bounce. Watch for a rejection at 84.7k to confirm a short setup targeting the 83.9k support.",
+      "market_context": "The broader market is broadly negative with 77.9% of assets in the red. BTC is down 2% in 24h, though the 4H",
+      "result": "PENDING"
     }
   ]
 }
