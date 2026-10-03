@@ -39906,6 +39906,23 @@
       "technical_analysis": "SOL faces immediate resistance at 119.63, where price is currently stalling. The MACD histogram is positive but the main line remains negative, suggesting weak momentum. Stochastics are nearing overbought levels, indicating a potential pullback. Key risk is the 118.82 support; a break below invalidates the short. Watch for rejection at 119.63 to confirm bearish continuation.",
       "market_context": "Bitcoin is showing a bearish 24h trend, while the broader market is predominantly red. SOL is trading near its 200 EMA, which",
       "result": "PENDING"
+    },
+    {
+      "id": 2348,
+      "created_at": "2026-10-03T09:50:46.156384+00:00",
+      "symbol": "SCRUSDT",
+      "direction": "LONG",
+      "title": "Smart Money Flow Increases into $SCR Ahead of Catalysts",
+      "entry_low": 0.02631,
+      "entry_high": 0.02651,
+      "stop_loss": 0.02538,
+      "take_profit": 0.02847,
+      "support": 0.02631,
+      "resistance": 0.02695,
+      "news_line": "",
+      "technical_analysis": "Stochastic is deep oversold (K≈10) while price sits on the 1‑hour support at 0.02631, suggesting a bounce. EMA200 (0.02563) sits below price, giving long‑term bias. Counter‑signals include MACD still negative and price under EMA9/21, so downside risk remains. A break above 0.02695 would confirm the upside; failure could push toward the stop.",
+      "market_context": "BTC slipped 2 % in 24 h, keeping the overall market broadly negative, but SCRU’s setup relies on its own price action.",
+      "result": "PENDING"
     }
   ]
 }
