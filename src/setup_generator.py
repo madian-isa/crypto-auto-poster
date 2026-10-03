@@ -165,6 +165,36 @@ def _get_client():
     return Groq(api_key=cfg.GROQ_API_KEY)
 
 
+# Backup models used when the main model hits its daily token limit (429).
+# Each Groq model has its own separate limit.
+GROQ_BACKUP_MODELS = [
+    "openai/gpt-oss-20b",
+    "llama-3.1-8b-instant",
+]
+
+
+def _chat_with_fallback(client, messages, temperature):
+    models = [cfg.GROQ_MODEL] + [
+        m for m in GROQ_BACKUP_MODELS if m != cfg.GROQ_MODEL
+    ]
+    last_err = None
+    for model in models:
+        try:
+            return client.chat.completions.create(
+                model=model,
+                messages=messages,
+                temperature=temperature,
+            )
+        except Exception as err:
+            last_err = err
+            text = str(err).lower()
+            if "429" in text or "rate limit" in text or "decommission" in text or "model_not_found" in text:
+                print(f"[setup_generator] {model} unavailable ({str(err)[:80]}); trying next model...")
+                continue
+            raise
+    raise last_err
+
+
 # =========================================================
 # NUMBER HELPERS
 # =========================================================
@@ -750,12 +780,19 @@ def _fallback_direction(
     if funding is not None:
         score += -1 if funding > 0.01 else 1 if funding < -0.01 else 0
 
-    if evidence < 5:
+    # Relaxed: when AI is unavailable, always pick the side the
+    # indicators lean toward instead of rejecting the setup.
+    if evidence < 3:
         return None
-    if score >= 3:
-        return "LONG" if _signal_quality_ok(indicators, "LONG") else None
-    if score <= -3:
-        return "SHORT" if _signal_quality_ok(indicators, "SHORT") else None
+    if score > 0:
+        return "LONG"
+    if score < 0:
+        return "SHORT"
+    # Tie-break: MACD first, then price vs EMA21.
+    if macd_line is not None and macd_signal is not None and macd_line != macd_signal:
+        return "LONG" if macd_line > macd_signal else "SHORT"
+    if price is not None and ema21 is not None and price != ema21:
+        return "LONG" if price > ema21 else "SHORT"
     return None
 
 def _fallback_entry(
@@ -1351,9 +1388,9 @@ Return JSON only:
 
         client = _get_client()
 
-        response = client.chat.completions.create(
-            model=cfg.GROQ_MODEL,
-            messages=[
+        response = _chat_with_fallback(
+            client,
+            [
                 {
                     "role": "system",
                     "content": SYSTEM_PROMPT,
@@ -1363,7 +1400,7 @@ Return JSON only:
                     "content": user_prompt,
                 },
             ],
-            temperature=0.75,
+            0.75,
         )
 
         if not response.choices:
@@ -1419,12 +1456,10 @@ Return JSON only:
     if not _signal_quality_ok(indicators, direction):
         print(
             f"[setup_generator] "
-            f"Rejected conflicting {direction} setup for ${coin}."
+            f"{direction} setup for ${coin} conflicts with indicators; "
+            f"posting AI signal anyway."
         )
-        raise RuntimeError(
-            f"Groq {direction} setup conflicts with technical indicators "
-            f"for ${coin}; no fallback after successful AI response."
-        )
+        setup["indicator_conflict"] = True
 
     setup["direction"] = direction
 
