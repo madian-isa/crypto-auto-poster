@@ -40025,6 +40025,23 @@
       "technical_analysis": "Price sits above EMA9/21/50, confirming bullish bias. MACD line is above its signal and histogram stays positive, while ADX above 40 shows a strong trend. RSI and Stochastic are overbought, warning of a short‑term pullback. Watch for a break above the 0.2614 resistance to validate the upside. This is a conditional technical scenario, not a verified trade or a promise",
       "market_context": "BTC is down 2.1% on the day and the broader market is broadly negative, which adds slight downside pressure but does not",
       "result": "PENDING"
+    },
+    {
+      "id": 2355,
+      "created_at": "2026-10-03T12:01:01.036865+00:00",
+      "symbol": "SUIUSDT",
+      "direction": "SHORT",
+      "title": "$SUI Distribution Phase Ends: Downside Target Zone Set",
+      "entry_low": 1.1865,
+      "entry_high": 1.1915,
+      "stop_loss": 1.23656,
+      "take_profit": 1.09388,
+      "support": 1.1764,
+      "resistance": 1.1915,
+      "news_line": "",
+      "technical_analysis": "Price sits just below the 1H resistance at 1.1915, while the stochastic is deep in overbought territory (≈85). MACD remains positive but the signal line is negative, hinting at weakening momentum. A short entry between 1.1865‑1.1915 targets the 1.1764 support, with SL above 1.2276. Watch for a break below 1.1764 as confirmation; a sudden bullish reversal would invalidate the setup.",
+      "market_context": "BTC is down 2% on the day and the broader market is broadly negative, adding pressure to risk assets like SUI.",
+      "result": "PENDING"
     }
   ]
 }
