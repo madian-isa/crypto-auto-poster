@@ -41232,6 +41232,23 @@
       "technical_analysis": "FET trades at 0.2342, above the 9, 21 and 50 EMA, and MACD histogram stays positive, backing a bullish bias. RSI 67 and Stochastic over 80 show overbought pressure, while price sits just beyond the upper Bollinger band, suggesting a possible pull‑back. A break above the 1‑hour resistance 0.2389 confirms the long; watch 0.2266 support for downside risk.",
       "market_context": "BTC remains in a bullish 4‑hour and daily trend, up 0.49% over 24 h, and the overall market is broadly positive (78%",
       "result": "PENDING"
+    },
+    {
+      "id": 2426,
+      "created_at": "2026-10-04T12:40:47.964114+00:00",
+      "symbol": "IOTAUSDT",
+      "direction": "LONG",
+      "title": "Bullish Divergence Flashed on $IOTA Daily Chart Structure",
+      "entry_low": 0.058,
+      "entry_high": 0.059,
+      "stop_loss": 0.0555,
+      "take_profit": 0.0645,
+      "support": 0.0569,
+      "resistance": 0.0621,
+      "news_line": "",
+      "technical_analysis": "Price sits above EMA9/21/50, confirming a strong uptrend. MACD histogram is positive and ADX at 47 shows momentum. RSI and Stochastic are overbought, flagging a short‑term pullback risk. Watch the 0.0621 resistance; a break could validate the long setup. This is a conditional technical scenario, not a verified trade or a promise of direction.",
+      "market_context": "BTC is in a bullish phase and the overall market is broadly positive, supporting risk‑on sentiment.",
+      "result": "PENDING"
     }
   ]
 }
