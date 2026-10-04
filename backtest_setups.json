@@ -41487,6 +41487,23 @@
       "technical_analysis": "Price sits below the 1‑hour support (0.12618) and under the EMA9 (0.12176), hinting at downside pressure. MACD histogram is positive, but Stochastic K is under D, and RSI hovers at 51, offering mixed signals. A short entry near the 0.1229 resistance, with SL above 0.1262 and TP around 0.1134, aligns with the swing structure. Watch for a bounce off 0.1209",
       "market_context": "BTC remains bullish on 4h and daily charts, with market breadth showing 59.5% green assets.",
       "result": "PENDING"
+    },
+    {
+      "id": 2441,
+      "created_at": "2026-10-04T16:50:41.434503+00:00",
+      "symbol": "SENTUSDT",
+      "direction": "LONG",
+      "title": "Critical Resistance Test: $SENT Preparing to Surge Higher",
+      "entry_low": 0.0238,
+      "entry_high": 0.0242,
+      "stop_loss": 0.02256,
+      "take_profit": 0.02688,
+      "support": 0.0222,
+      "resistance": 0.025,
+      "news_line": "",
+      "technical_analysis": "Sent price sits at 0.0245, above EMA9/21/50 and MACD histogram stays positive, indicating overall bullish momentum. RSI 83 and stochastic 89 flag overbought conditions, a possible reversal risk. Order‑book shows 18% bid imbalance supporting upside. Watch for a break above 0.025 resistance; a drop below 0.0222 would invalidate the setup.",
+      "market_context": "BTC remains bullish on 4h and 1d timeframes, price around $85,400, and market breadth is broadly positive with 61.2% green.",
+      "result": "PENDING"
     }
   ]
 }
