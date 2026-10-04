@@ -40858,6 +40858,23 @@
       "technical_analysis": "Price sits just above the 1‑hour support at 0.07284, while EMA50 and EMA200 lie far below, confirming a higher‑time uptrend. EMA9 remains above price and MACD histogram is negative, hinting at short‑term downside. Stochastic K at 21 shows oversold pressure. A break above 0.0735 could push toward the 4‑hour resistance near 0.0771; a drop below 0.0708 would cancel the setup.",
       "market_context": "BTC remains bullish on the 4‑hour and daily charts, supporting risk‑on sentiment, while the overall market shows mixed breadth.",
       "result": "PENDING"
+    },
+    {
+      "id": 2404,
+      "created_at": "2026-10-04T04:00:56.569276+00:00",
+      "symbol": "WLDUSDT",
+      "direction": "SHORT",
+      "title": "$WLD Loses Key Demand Zone: Next Support Level Unprotected",
+      "entry_low": 0.5898,
+      "entry_high": 0.5901,
+      "stop_loss": 0.6106,
+      "take_profit": 0.54865,
+      "support": 0.5881,
+      "resistance": 0.5901,
+      "news_line": "",
+      "technical_analysis": "Price sits under the 9‑EMA (0.5936) and 21‑EMA (0.5890) while the MACD line remains under its signal, giving a bearish tilt. ADX at 30 confirms a strong trend. Stochastic K is deep in oversold (12) – a possible short‑term bounce risk. A break above 0.610 would invalidate; a hold below 0.588 keeps the short case.",
+      "market_context": "BTC remains in a bullish 4‑h and daily trend near $84.8k, while overall spot market breadth is mixed (52.5% green).",
+      "result": "PENDING"
     }
   ]
 }
