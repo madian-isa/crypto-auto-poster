@@ -1,6 +1,6 @@
 {
   "date": "2026-10-04",
-  "count": 34,
+  "count": 35,
   "posted_symbols_today": [
     "ONEUSDT",
     "STRKUSDT",
@@ -35,6 +35,7 @@
     "MUBARAKUSDT",
     "BATUSDT",
     "FETUSDT",
-    "IOTAUSDT"
+    "IOTAUSDT",
+    "XRPUSDT"
   ]
 }
