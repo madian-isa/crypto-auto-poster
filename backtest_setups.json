@@ -40756,6 +40756,23 @@
       "technical_analysis": "QNT trades above EMA9 (259), EMA21 (256) and EMA50 (255), while MACD histogram stays positive, signaling bullish pressure. RSI at 57.8 and a 3.9% bid‑side order‑book imbalance add support. Stochastic K near 72 hints at short‑term overbought risk. Watch a clear break above 264.85 and a pull‑back below 254 for confirmation.",
       "market_context": "BTC remains bullish on 4H and 1D timeframes, with the market showing a slight green bias (57.9% up).",
       "result": "PENDING"
+    },
+    {
+      "id": 2398,
+      "created_at": "2026-10-04T02:40:46.808609+00:00",
+      "symbol": "PUMPUSDT",
+      "direction": "LONG",
+      "title": "Key Support Holds Firm: $PUMP Bullish Continuation Setup Active",
+      "entry_low": 0.00624,
+      "entry_high": 0.0063,
+      "stop_loss": 0.00602299,
+      "take_profit": 0.00676402,
+      "support": 0.006235,
+      "resistance": 0.006423,
+      "news_line": "",
+      "technical_analysis": "Price sits above EMA9, EMA21, EMA50 and EMA200, confirming an uptrend. MACD line is positive over its signal and the histogram stays green, while ADX above 30 (35.9) shows a strong trend. RSI at 64 and Stochastic near 77 support momentum. Volume has dropped 35 %, a caution flag. Watch the 0.006423 resistance for confirmation.",
+      "market_context": "BTC remains bullish on higher timeframes, with price around $84,808 and EMA20 above EMA50. Overall market shows 59.8 % green assets, indicating",
+      "result": "PENDING"
     }
   ]
 }
