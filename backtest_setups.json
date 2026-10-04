@@ -40892,6 +40892,23 @@
       "technical_analysis": "The price is below EMA9 and 21 but approaching the 4H support of 0.1141, suggesting a bounce. RSI at 31 indicates room for upside, and the MACD is just above its signal, hinting at a shift. The risk is a break below 0.1139, so watch for a pullback before entry.",
       "market_context": "BTC is in a bullish 4H trend, supporting broader upside pressure.",
       "result": "PENDING"
+    },
+    {
+      "id": 2406,
+      "created_at": "2026-10-04T05:40:47.306120+00:00",
+      "symbol": "RESOLVUSDT",
+      "direction": "SHORT",
+      "title": "$RESOLV Breaks Below Critical Support: Further Drop Expected",
+      "entry_low": 0.01941,
+      "entry_high": 0.01944,
+      "stop_loss": 0.020202,
+      "take_profit": 0.017871,
+      "support": 0.01927,
+      "resistance": 0.0199,
+      "news_line": "",
+      "technical_analysis": "Price sits just below EMA9 and EMA200, with MACD histogram negative and RSI near 44, suggesting bearish bias. Stochastic around 26 shows still room down. Order‑book imbalance is -19 % and volume fell 69 %, adding pressure. A break below the 0.01942 resistance could trigger a short toward the 0.01927 support; watch for a bounce at EMA9 (0.0195) as a",
+      "market_context": "BTC is in a bullish 4‑hour and daily trend, and the broader market is broadly positive, but RESOL shows its own downside",
+      "result": "PENDING"
     }
   ]
 }
