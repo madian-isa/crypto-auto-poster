@@ -41572,6 +41572,23 @@
       "technical_analysis": "Price sits above EMA9/21 and RSI is at 58, showing bullish bias. Stochastic K at 74 supports upward momentum. MACD is slightly bearish, a caution flag. Watch the 1.836 support hold; a break would invalidate the setup. A move above 1.844 confirms the next leg. This is a conditional technical scenario, not a verified trade or a promise of direction.",
       "market_context": "BTC is in a bullish trend and the broader market is broadly positive, adding upside bias to ORCA.",
       "result": "PENDING"
+    },
+    {
+      "id": 2446,
+      "created_at": "2026-10-04T18:40:48.881609+00:00",
+      "symbol": "TSTUSDT",
+      "direction": "SHORT",
+      "title": "Smart Money Distribution Visible on $TST On-Chain Data",
+      "entry_low": 0.01905,
+      "entry_high": 0.01915,
+      "stop_loss": 0.0198,
+      "take_profit": 0.0177,
+      "support": 0.01732,
+      "resistance": 0.0196,
+      "news_line": "",
+      "technical_analysis": "Price sits just below the 0.0196 resistance, with EMA9‑21‑50 stacked below the market, confirming bullish bias. MACD histogram is positive, but RSI at 84 and a –57 % order‑book imbalance signal overbought pressure. A short near 0.0191 targets 0.0177, risking 0.0007; watch for a break above 0.0196 as a reversal risk.",
+      "market_context": "BTC remains bullish on higher timeframes and the overall market is broadly positive, supporting risk‑on sentiment.",
+      "result": "PENDING"
     }
   ]
 }
