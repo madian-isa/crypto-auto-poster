@@ -1,6 +1,6 @@
 {
   "date": "2026-10-04",
-  "count": 7,
+  "count": 8,
   "posted_symbols_today": [
     "ONEUSDT",
     "STRKUSDT",
@@ -8,6 +8,7 @@
     "ZROUSDT",
     "QNTUSDT",
     "PUMPUSDT",
-    "ZAMAUSDT"
+    "ZAMAUSDT",
+    "QIUSDT"
   ]
 }
