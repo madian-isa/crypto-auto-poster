@@ -41062,6 +41062,23 @@
       "technical_analysis": "Price sits above all EMAs, MACD histogram positive and ADX 42 indicates strong uptrend. RSI and Stochastic are overbought, flagging a short‑term pull‑back risk. Look for a pull‑back toward the 1H/4H support around 0.00214‑0.00230; a break above confirms the long entry. Watch for RSI falling below 70 as a warning.",
       "market_context": "BTC remains bullish on 4H and 1D timeframes, supporting overall market optimism.",
       "result": "PENDING"
+    },
+    {
+      "id": 2416,
+      "created_at": "2026-10-04T08:40:46.506803+00:00",
+      "symbol": "NEARUSDT",
+      "direction": "LONG",
+      "title": "$NEAR Buying Pressure Rises as Bulls Test Key Resistance",
+      "entry_low": 4.78,
+      "entry_high": 4.795,
+      "stop_loss": 4.61,
+      "take_profit": 5.1425,
+      "support": 4.78,
+      "resistance": 4.819,
+      "news_line": "",
+      "technical_analysis": "NEAR sits just above EMA21 and EMA50, with MACD histogram still positive and ADX near 30, indicating a strong uptrend. RSI at 56 and order‑book imbalance favoring bids support bullish bias. A counter‑signal is the price hugging the 4.819 resistance and volume down 29%. Watch a break above 4.819 for confirmation; a drop below 4.78 would invalidate the setup.",
+      "market_context": "BTC remains bullish on 4‑hour and daily charts, with price above EMA20/50, and overall market breadth is broadly positive (85% green).",
+      "result": "PENDING"
     }
   ]
 }

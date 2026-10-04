@@ -1,6 +1,6 @@
 {
   "date": "2026-10-04",
-  "count": 23,
+  "count": 24,
   "posted_symbols_today": [
     "ONEUSDT",
     "STRKUSDT",
@@ -24,6 +24,7 @@
     "TAOUSDT",
     "SUIUSDT",
     "ZECUSDT",
-    "BEAMXUSDT"
+    "BEAMXUSDT",
+    "NEARUSDT"
   ]
 }
