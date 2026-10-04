@@ -41045,6 +41045,23 @@
       "technical_analysis": "ZEC trades above EMA9, EMA21 and EMA50, and the MACD histogram is positive, indicating short‑term bullish pressure. Stochastic is high (≈78) and price sits just over the upper Bollinger band, a classic overbought warning. Watch the 1‑hour support at 1317; a break below would invalidate the long bias. A clear close above 1344 would confirm the upside move.",
       "market_context": "BTC remains in a bullish trend on both 4‑hour and daily frames, and the broader crypto market is broadly positive with 81.4%",
       "result": "PENDING"
+    },
+    {
+      "id": 2415,
+      "created_at": "2026-10-04T08:20:43.771401+00:00",
+      "symbol": "BEAMXUSDT",
+      "direction": "LONG",
+      "title": "Spot Inflows Surge for $BEAMX as Futures Open Interest Rises",
+      "entry_low": 0.0023,
+      "entry_high": 0.00235,
+      "stop_loss": 0.00222,
+      "take_profit": 0.002535,
+      "support": 0.002143,
+      "resistance": 0.002856,
+      "news_line": "",
+      "technical_analysis": "Price sits above all EMAs, MACD histogram positive and ADX 42 indicates strong uptrend. RSI and Stochastic are overbought, flagging a short‑term pull‑back risk. Look for a pull‑back toward the 1H/4H support around 0.00214‑0.00230; a break above confirms the long entry. Watch for RSI falling below 70 as a warning.",
+      "market_context": "BTC remains bullish on 4H and 1D timeframes, supporting overall market optimism.",
+      "result": "PENDING"
     }
   ]
 }
