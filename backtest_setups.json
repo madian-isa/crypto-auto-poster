@@ -40909,6 +40909,23 @@
       "technical_analysis": "Price sits just below EMA9 and EMA200, with MACD histogram negative and RSI near 44, suggesting bearish bias. Stochastic around 26 shows still room down. Order‑book imbalance is -19 % and volume fell 69 %, adding pressure. A break below the 0.01942 resistance could trigger a short toward the 0.01927 support; watch for a bounce at EMA9 (0.0195) as a",
       "market_context": "BTC is in a bullish 4‑hour and daily trend, and the broader market is broadly positive, but RESOL shows its own downside",
       "result": "PENDING"
+    },
+    {
+      "id": 2407,
+      "created_at": "2026-10-04T06:20:41.087492+00:00",
+      "symbol": "AXSUSDT",
+      "direction": "LONG",
+      "title": "$AXS Breakout Confirmation: Bulls Target Next Supply Zone",
+      "entry_low": 1.34,
+      "entry_high": 1.36,
+      "stop_loss": 1.285,
+      "take_profit": 1.48,
+      "support": 1.193,
+      "resistance": 1.43,
+      "news_line": "",
+      "technical_analysis": "AXS sits above its EMA9‑EMA200 cluster and MACD histogram is positive, showing bullish momentum. RSI and Stochastic are overbought, flagging a pullback risk. ADX around 38 confirms a strong trend. A swing‑high near 1.38 caps upside; a break above with volume could trigger a long entry around 1.34‑1.36. Watch for a drop below EMA9 (≈1.29) as a risk.",
+      "market_context": "BTC stays bullish on higher timeframes, with 4H and 1D EMA20 above EMA50, supporting overall market optimism.",
+      "result": "PENDING"
     }
   ]
 }
