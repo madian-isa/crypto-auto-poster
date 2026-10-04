@@ -41691,6 +41691,23 @@
       "technical_analysis": "Price sits near the lower Bollinger band at 179, with stochastic K at 19 indicating oversold conditions and order‑book showing a 13 % bid imbalance. EMA9‑21 sit above price and MACD histogram is negative, warning of downside pressure. A break above 181.5 would support a long swing; watch for MACD divergence as risk.",
       "market_context": "BTC stays in a bullish 4‑hour and daily trend, up 1.5 % with a broadly positive market breadth (61 % green).",
       "result": "PENDING"
+    },
+    {
+      "id": 2453,
+      "created_at": "2026-10-04T22:00:53.171183+00:00",
+      "symbol": "PORTALUSDT",
+      "direction": "SHORT",
+      "title": "High Conviction Short Opportunity as $PORTAL Tests Supply Wall",
+      "entry_low": 0.02135,
+      "entry_high": 0.02145,
+      "stop_loss": 0.022256,
+      "take_profit": 0.019688,
+      "support": 0.01783,
+      "resistance": 0.02151,
+      "news_line": "",
+      "technical_analysis": "Price sits near the 0.02151 resistance with RSI at 90 and Stochastic K at 97, indicating strong overbought pressure. Order‑book shows a 32% ask‑side imbalance, adding bearish bias. MACD remains positive but the momentum is waning. Watch for a break below 0.0210 as confirmation; support at 0.01783 could limit downside.",
+      "market_context": "BTC is in a bullish trend on both 4H and 1D, and the broader market is slightly green (57.8% up). Despite that",
+      "result": "PENDING"
     }
   ]
 }
