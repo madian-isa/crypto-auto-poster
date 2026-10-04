@@ -40671,6 +40671,23 @@
       "technical_analysis": "Price sits above EMA9/21/50/200, MACD line stays over signal with positive histogram, and RSI at 65 supports upside. Stochastic near 95 signals overbought, a possible pullback. A break above the 322.7 resistance confirms the long bias; failure may retest the 310.6 support. Watch volume and order‑book imbalance for clues today.",
       "market_context": "BTC is bullish on 4h and 1d, up 0.22% today. Market breadth is broadly positive with 66.5% green candles.",
       "result": "PENDING"
+    },
+    {
+      "id": 2393,
+      "created_at": "2026-10-04T00:20:53.478143+00:00",
+      "symbol": "ONEUSDT",
+      "direction": "LONG",
+      "title": "Bullish Divergence Flashed on $ONE Daily Chart Structure",
+      "entry_low": 0.002575,
+      "entry_high": 0.002586,
+      "stop_loss": 0.00248,
+      "take_profit": 0.0027815,
+      "support": 0.002441,
+      "resistance": 0.002717,
+      "news_line": "",
+      "technical_analysis": "Price sits just above the EMA9 (0.002574) and EMA21 (0.002501), keeping it in bullish territory. RSI at 58.8 and ADX 35.8 confirm a strong uptrend. MACD histogram is slightly negative and order‑book shows a modest ask‑side imbalance, flagging a short‑term pull‑back risk. Watch for a break above the 1‑hour resistance 0.002717 to validate the long bias.",
+      "market_context": "BTC remains bullish on 4h and daily charts, reinforcing a broadly positive market backdrop.",
+      "result": "PENDING"
     }
   ]
 }
