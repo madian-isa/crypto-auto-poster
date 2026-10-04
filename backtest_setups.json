@@ -41402,6 +41402,23 @@
       "technical_analysis": "Price sits above EMA9/21/50 and MACD histogram is positive, indicating bullish momentum. RSI at 60 and stochastic K over 80 support upside. Order‑book shows a 13.9% bid imbalance. Counter‑signal: stochastic is near overbought and ADX below 25, suggesting weak trend. Watch for a break above the 14.235 resistance for confirmation.",
       "market_context": "BTC remains on a bullish trend on both 4‑hour and daily frames, and the overall market is broadly positive, supporting risk‑on sentiment.",
       "result": "PENDING"
+    },
+    {
+      "id": 2436,
+      "created_at": "2026-10-04T15:32:00.336468+00:00",
+      "symbol": "USD1USDT",
+      "direction": "SHORT",
+      "title": "$USD1 Volume Decreases on Rally: Weak Buyers Exposed",
+      "entry_low": 0.9996,
+      "entry_high": 0.99963,
+      "stop_loss": 1.03462,
+      "take_profit": 0.929605,
+      "support": 0.99958,
+      "resistance": 0.99963,
+      "news_line": "",
+      "technical_analysis": "Price sits just below the 9‑,21‑ and 50‑EMA, with MACD and histogram in negative territory and RSI at 41. Stochastic is also under 40, indicating bearish momentum. ADX above 30 confirms a strong trend. Order‑book shows a 26 % bid imbalance, but the key risk is a sudden bounce off the 0.99958 support.",
+      "market_context": "BTC remains bullish on 4h and daily charts, up 0.6 % with EMA20 above EMA50. Overall market breadth is broadly positive, 72",
+      "result": "PENDING"
     }
   ]
 }
