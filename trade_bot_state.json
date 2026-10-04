@@ -1,6 +1,6 @@
 {
   "date": "2026-10-04",
-  "count": 27,
+  "count": 28,
   "posted_symbols_today": [
     "ONEUSDT",
     "STRKUSDT",
@@ -28,6 +28,7 @@
     "NEARUSDT",
     "BTCUSDT",
     "NOMUSDT",
-    "AEROUSDT"
+    "AEROUSDT",
+    "SOLUSDT"
   ]
 }
