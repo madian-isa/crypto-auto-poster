@@ -41606,6 +41606,23 @@
       "technical_analysis": "Price is under EMA9, EMA21 and EMA50 and MACD histogram stays negative, pointing to short‑term weakness. RSI sits at 40 and stochastic is deep oversold, offering a modest bounce chance, but the order‑book shows a 16% ask‑side imbalance. A break below the 1‑hour resistance around 0.1521 would support a short entry, while a clear hold above it would be a",
       "market_context": "BTC is in a bullish trend and the overall market is broadly positive, with 69.9% of assets green.",
       "result": "PENDING"
+    },
+    {
+      "id": 2448,
+      "created_at": "2026-10-04T19:50:54.826154+00:00",
+      "symbol": "SKYUSDT",
+      "direction": "LONG",
+      "title": "Key Support Holds Firm: $SKY Bullish Continuation Setup Active",
+      "entry_low": 0.092,
+      "entry_high": 0.094,
+      "stop_loss": 0.0897,
+      "take_profit": 0.0996,
+      "support": 0.09155,
+      "resistance": 0.09811,
+      "news_line": "",
+      "technical_analysis": "Price sits above EMA9/21/50, RSI 65, Stoch K above D, and long‑short ratio >1, all pointing bullish. EMA hierarchy confirms uptrend. Small MACD histogram negative is a mild counter‑signal. Watch the 0.09811 resistance; a break with volume would confirm. Stop below 0.0897, TP near 0.0996. This is a conditional technical scenario, not a verified trade or a promise of direction.",
+      "market_context": "BTC is in a bullish trend on both 4‑hour and daily charts, keeping overall market sentiment broadly positive.",
+      "result": "PENDING"
     }
   ]
 }
