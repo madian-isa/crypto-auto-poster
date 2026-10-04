@@ -40739,6 +40739,23 @@
       "technical_analysis": "Price sits just below the 2.003 resistance while under the 9‑EMA (2.015) and MACD histogram is negative, pointing to downside pressure. RSI at 57 and ADX above 45 confirm a strong trend. Stochastic is low, suggesting room to fall. Watch the 1.992 swing low; a break above 2.075 would invalidate the short.",
       "market_context": "BTC stays bullish on 4h and daily frames, up 0.15% with EMA20 above EMA50, reinforcing overall risk‑on sentiment.",
       "result": "PENDING"
+    },
+    {
+      "id": 2397,
+      "created_at": "2026-10-04T01:40:46.465011+00:00",
+      "symbol": "QNTUSDT",
+      "direction": "LONG",
+      "title": "Bullish Momentum Is Building: Can $QNT Continue Its Breakout?",
+      "entry_low": 262.78,
+      "entry_high": 264.85,
+      "stop_loss": 254.0,
+      "take_profit": 283.445,
+      "support": 246.77,
+      "resistance": 274.68,
+      "news_line": "",
+      "technical_analysis": "QNT trades above EMA9 (259), EMA21 (256) and EMA50 (255), while MACD histogram stays positive, signaling bullish pressure. RSI at 57.8 and a 3.9% bid‑side order‑book imbalance add support. Stochastic K near 72 hints at short‑term overbought risk. Watch a clear break above 264.85 and a pull‑back below 254 for confirmation.",
+      "market_context": "BTC remains bullish on 4H and 1D timeframes, with the market showing a slight green bias (57.9% up).",
+      "result": "PENDING"
     }
   ]
 }

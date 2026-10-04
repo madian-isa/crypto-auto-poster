@@ -1,10 +1,11 @@
 {
   "date": "2026-10-04",
-  "count": 4,
+  "count": 5,
   "posted_symbols_today": [
     "ONEUSDT",
     "STRKUSDT",
     "GLMRUSDT",
-    "ZROUSDT"
+    "ZROUSDT",
+    "QNTUSDT"
   ]
 }
