@@ -1,6 +1,6 @@
 {
   "date": "2026-10-04",
-  "count": 63,
+  "count": 64,
   "posted_symbols_today": [
     "ONEUSDT",
     "STRKUSDT",
@@ -64,6 +64,7 @@
     "AAVEUSDT",
     "PORTALUSDT",
     "PENGUUSDT",
-    "UNIUSDT"
+    "UNIUSDT",
+    "MARSCOINUSDT"
   ]
 }
