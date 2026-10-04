@@ -40841,6 +40841,23 @@
       "technical_analysis": "Price sits below the 9‑EMA (0.2594) and MACD line is under its signal, signaling short pressure. ADX at 64 shows a strong trend, while order‑book imbalance (-15.6%) favors sellers. Stochastic K at 12 suggests oversold conditions as a potential bounce. Watch a break below the 1H support 0.2573 for confirmation.",
       "market_context": "BTC remains bullish on higher‑time frames, and overall market sentiment is slightly positive (59% green). This broader strength does not offset the",
       "result": "PENDING"
+    },
+    {
+      "id": 2403,
+      "created_at": "2026-10-04T03:50:49.168154+00:00",
+      "symbol": "SANDUSDT",
+      "direction": "LONG",
+      "title": "$SAND Buying Pressure Rises as Bulls Test Key Resistance",
+      "entry_low": 0.0729,
+      "entry_high": 0.0734,
+      "stop_loss": 0.070224,
+      "take_profit": 0.079002,
+      "support": 0.07284,
+      "resistance": 0.07709,
+      "news_line": "",
+      "technical_analysis": "Price sits just above the 1‑hour support at 0.07284, while EMA50 and EMA200 lie far below, confirming a higher‑time uptrend. EMA9 remains above price and MACD histogram is negative, hinting at short‑term downside. Stochastic K at 21 shows oversold pressure. A break above 0.0735 could push toward the 4‑hour resistance near 0.0771; a drop below 0.0708 would cancel the setup.",
+      "market_context": "BTC remains bullish on the 4‑hour and daily charts, supporting risk‑on sentiment, while the overall market shows mixed breadth.",
+      "result": "PENDING"
     }
   ]
 }
