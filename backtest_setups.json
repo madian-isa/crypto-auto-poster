@@ -43000,6 +43000,23 @@
       "technical_analysis": "Price sits just below the 1H/4H resistance at 0.1295, while EMA50 and EMA200 remain higher, indicating longer‑term bearish pressure. MACD shows a modest bullish histogram, a counter‑signal, but order‑book imbalance (-8.27%) and falling volume support a short bias. Watch for a break below 0.1278 for confirmation. This is a conditional technical scenario, not a verified trade or a promise of",
       "market_context": "BTC is in a bullish trend on both 4H and 1D frames, with a modest 0.28% rise, keeping overall market sentiment mixed",
       "result": "PENDING"
+    },
+    {
+      "id": 2530,
+      "created_at": "2026-10-05T19:21:24.630797+00:00",
+      "symbol": "INJUSDT",
+      "direction": "LONG",
+      "title": "Bullish Divergence Flashed on $INJ Daily Chart Structure",
+      "entry_low": 7.58,
+      "entry_high": 7.6,
+      "stop_loss": 7.32,
+      "take_profit": 8.13,
+      "support": 7.562,
+      "resistance": 7.749,
+      "news_line": "",
+      "technical_analysis": "Price sits above the EMA cluster (9‑200) and the MACD histogram is positive, indicating bullish momentum. Stochastic K at 67 supports upside, while the order‑book shows a 60% bid imbalance. ADX is low and volume fell 31%, warning of a weak trend. A break above 7.749 would confirm the long bias.",
+      "market_context": "BTC remains in a bullish 4‑hour and daily trend, and overall market breadth is slightly positive (56% green). This broader strength adds",
+      "result": "PENDING"
     }
   ]
 }
