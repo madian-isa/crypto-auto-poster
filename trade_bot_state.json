@@ -1,6 +1,6 @@
 {
   "date": "2026-10-05",
-  "count": 59,
+  "count": 60,
   "posted_symbols_today": [
     "BEAMXUSDT",
     "GTCUSDT",
@@ -60,6 +60,7 @@
     "OGNUSDT",
     "SAGAUSDT",
     "PARTIUSDT",
-    "RADUSDT"
+    "RADUSDT",
+    "HBARUSDT"
   ]
 }
