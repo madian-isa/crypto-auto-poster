@@ -43153,6 +43153,23 @@
       "technical_analysis": "Price sits below the EMA9 and MACD line is under its signal, indicating bearish pressure. Stochastic K is under D and RSI is neutral, while ADX shows a moderate trend. A short entry near the 0.3365 resistance aligns with these signals. Risk: a sudden bounce above resistance could reverse the move. Watch a break above 0.3365 for a potential shift.",
       "market_context": "BTC is slightly bearish on the 24‑hour chart, but overall market breadth is mixed, providing a neutral backdrop for TRXUSDT.",
       "result": "PENDING"
+    },
+    {
+      "id": 2539,
+      "created_at": "2026-10-05T23:50:48.726748+00:00",
+      "symbol": "DASHUSDT",
+      "direction": "SHORT",
+      "title": "Major Support Breakdown Confirmed on $DASH Higher Timeframes",
+      "entry_low": 58.55,
+      "entry_high": 58.63,
+      "stop_loss": 60.9336,
+      "take_profit": 53.9028,
+      "support": 57.71,
+      "resistance": 58.89,
+      "news_line": "",
+      "technical_analysis": "Price sits below EMA9, EMA21, EMA50 and EMA200, confirming bearish momentum. MACD histogram is negative and Stochastic K (25) is under its D line, adding downside pressure. RSI at 39.8 hints at slight oversold but not a reversal. Order‑book shows a bid‑side imbalance, a modest bullish counter‑signal. Watch for a break below the 1H/4H support at 57.71 to validate the",
+      "market_context": "BTC is marginally bearish on the 24h chart (-0.9%). Overall market breadth is mixed, with 54.5% of assets green and 45.5% red.",
+      "result": "PENDING"
     }
   ]
 }
