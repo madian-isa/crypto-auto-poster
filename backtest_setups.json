@@ -42167,6 +42167,23 @@
       "technical_analysis": "Price sits just above the 4‑hour EMA200 but under EMA9, MACD histogram is negative and RSI is neutral. Stochastic K is in oversold territory, hinting at a possible bounce. Order‑book shows a 19% ask imbalance, adding downside pressure. A clear break above the 4.864‑4.874 zone could push price toward the 5.025 resistance; a fall below 4.81 would invalidate the setup.",
       "market_context": "BTC remains in a bullish trend on higher‑timeframes, while the broader market shows mixed breadth with roughly equal green and red movers.",
       "result": "PENDING"
+    },
+    {
+      "id": 2481,
+      "created_at": "2026-10-05T05:20:44.148670+00:00",
+      "symbol": "MOVRUSDT",
+      "direction": "SHORT",
+      "title": "$MOVR Breaks Below Critical Support: Further Drop Expected",
+      "entry_low": 1.7,
+      "entry_high": 1.702,
+      "stop_loss": 1.761,
+      "take_profit": 1.581,
+      "support": 1.751,
+      "resistance": 1.881,
+      "news_line": "",
+      "technical_analysis": "Price sits below EMA9, EMA21 and EMA200, with RSI at 35 and Stochastic under 30, indicating bearish momentum. The 1H support at 1.751 has been broken, opening a short bias. MACD histogram is slightly positive, a modest bullish hint. Watch for a bounce off the 1.69 level; a hold above 1.751 could flip bias.",
+      "market_context": "BTC remains bullish on 4H and 1D frames, while overall market breadth is mixed with slightly more red than green assets.",
+      "result": "PENDING"
     }
   ]
 }
