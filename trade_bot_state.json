@@ -1,6 +1,6 @@
 {
   "date": "2026-10-05",
-  "count": 7,
+  "count": 8,
   "posted_symbols_today": [
     "BEAMXUSDT",
     "GTCUSDT",
@@ -8,6 +8,7 @@
     "ORCAUSDT",
     "ADAUSDT",
     "STRKUSDT",
-    "QNTUSDT"
+    "QNTUSDT",
+    "NILUSDT"
   ]
 }
