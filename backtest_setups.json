@@ -41861,6 +41861,23 @@
       "technical_analysis": "FET is holding above the 0.2423 swing low, supported by bullish EMA alignment and a positive MACD histogram. The 4H structure suggests momentum is intact, aiming for the 0.2599 resistance. Risk exists if price loses the 0.2423 level, invalidating the short-term uptrend. Watch for volume confirmation as it approaches the upper Bollinger Band.",
       "market_context": "BTC is bullish with a 1.71% 24h gain, and broad market sentiment is positive at 70.1% green.",
       "result": "PENDING"
+    },
+    {
+      "id": 2463,
+      "created_at": "2026-10-05T00:40:43.396167+00:00",
+      "symbol": "ORCAUSDT",
+      "direction": "LONG",
+      "title": "$ORCA Buying Pressure Rises as Bulls Test Key Resistance",
+      "entry_low": 2.025,
+      "entry_high": 2.035,
+      "stop_loss": 1.945,
+      "take_profit": 2.2,
+      "support": 1.83,
+      "resistance": 2.219,
+      "news_line": "",
+      "technical_analysis": "Price is testing the 4‑hour resistance near 2.016, with EMA9 and EMA21 above their 50‑EMA, indicating upward momentum. RSI is 66, still below over‑bought, and MACD shows a bullish crossover with a positive histogram. The 2‑hour swing high is around 2.02, so a break above this level would confirm a long move. Risk comes if the price fails to stay",
+      "market_context": "BTC is in a bullish 4‑hour trend, adding breadth to the positive market mood.",
+      "result": "PENDING"
     }
   ]
 }
