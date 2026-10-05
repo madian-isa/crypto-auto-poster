@@ -41946,6 +41946,23 @@
       "technical_analysis": "Price sits above the 9‑, 21‑ and 50‑EMA, confirming bullish bias. MACD line stays above its signal with a positive histogram, and ADX at 42 shows a strong trend. RSI at 65 and Stochastic K near 95 flag overbought conditions, pullback risk. Watch for a break above 0.0945 to keep the trade alive; a fall through 0.0863 would invalidate it.",
       "market_context": "BTC remains in a bullish 4‑hour and daily trend, trading above its 20‑EMA. Overall market breadth is broadly positive with 81.8% green",
       "result": "PENDING"
+    },
+    {
+      "id": 2468,
+      "created_at": "2026-10-05T02:20:44.007127+00:00",
+      "symbol": "SUIUSDT",
+      "direction": "LONG",
+      "title": "Technical Signals Turn Positive as Market Momentum Builds",
+      "entry_low": 1.225,
+      "entry_high": 1.23,
+      "stop_loss": 1.182,
+      "take_profit": 1.3185,
+      "support": 1.2232,
+      "resistance": 1.2363,
+      "news_line": "",
+      "technical_analysis": "Price sits above the 9‑, 21‑ and 50‑EMA, with EMA200 also below, confirming a bullish trend. RSI at 62 and Stochastic K/D around 62/51 support upward momentum. MACD histogram stays positive. A counter‑signal is the slight 3% volume decline. Watch the 1.2363 resistance; a break could trigger the next leg in the short term.",
+      "market_context": "BTC is up 2.1% on bullish 4h and daily trends, and 86% of the market is green, indicating overall positive sentiment.",
+      "result": "PENDING"
     }
   ]
 }
