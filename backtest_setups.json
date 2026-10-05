@@ -41827,6 +41827,23 @@
       "technical_analysis": "Price sits above EMA21/50/200 but below EMA9, indicating a pull‑back in an overall uptrend. Stochastic is deep oversold (≈9) and order‑book shows a 32% bid bias, supporting a bullish case. MACD is still negative, a downside risk. Watch the 0.002626 resistance for confirmation. This is a conditional technical scenario, not a verified trade or a promise of direction.",
       "market_context": "BTC is in a bullish 4H and 1D trend, and the broader market is broadly positive, which can help sustain upward momentum",
       "result": "PENDING"
+    },
+    {
+      "id": 2461,
+      "created_at": "2026-10-05T00:20:44.885997+00:00",
+      "symbol": "GTCUSDT",
+      "direction": "LONG",
+      "title": "$GTC Liquidation Squeeze: Bears Trapped Near Critical Resistance",
+      "entry_low": 0.172,
+      "entry_high": 0.174,
+      "stop_loss": 0.166,
+      "take_profit": 0.187,
+      "support": 0.15303,
+      "resistance": 0.22404,
+      "news_line": "",
+      "technical_analysis": "Price sits above EMA9‑200 and MACD histogram remains positive, confirming a strong uptrend. RSI and Stoch are in overbought territory, flagging a short‑term pull‑back risk and caution. A break above the 0.172‑0.174 entry zone could target the 0.187 TP, while a drop below 0.166 would invalidate the setup. Traders should also watch the 0.181 resistance for early profit signs.",
+      "market_context": "BTC remains bullish on 4H and 1D timeframes, and the broader market is broadly positive with 72% of assets green, reinforcing risk‑on",
+      "result": "PENDING"
     }
   ]
 }
