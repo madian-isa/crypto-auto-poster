@@ -42269,6 +42269,23 @@
       "technical_analysis": "Price is above the 1‑hour resistance at 0.1885, confirming a bullish swing. The EMA9/21/50 are all above the current price, and the MACD histogram is positive, indicating upward momentum. RSI is 68, near overbought, so a pullback to the 1‑hour support around 0.1868 is a risk to watch. If price stays above 0.1885 and the MACD stays positive, a move",
       "market_context": "BTC is in a bullish 4‑hour trend, which supports a broader upward bias for ACEUSDT.",
       "result": "PENDING"
+    },
+    {
+      "id": 2487,
+      "created_at": "2026-10-05T06:50:51.563155+00:00",
+      "symbol": "TSTUSDT",
+      "direction": "LONG",
+      "title": "$TST Breaks Out of Falling Wedge Pattern: Targets Set Higher",
+      "entry_low": 0.01878,
+      "entry_high": 0.01885,
+      "stop_loss": 0.0181,
+      "take_profit": 0.020245,
+      "support": 0.01841,
+      "resistance": 0.01944,
+      "news_line": "",
+      "technical_analysis": "Price sits just above EMA9 (0.01868) and EMA21 (0.01837), with RSI 64 and Stoch ~67 showing momentum. ADX ~49 confirms a strong uptrend. MACD line is slightly under the signal, a minor bearish hint. Order‑book imbalance favors asks. A pull‑back to the 0.01878‑0.01841 support zone looks reasonable; watch a break above 0.01944 for confirmation.",
+      "market_context": "BTC up 1.33% on a bullish trend; overall market 57% green, 43% red, mixed breadth.",
+      "result": "PENDING"
     }
   ]
 }
