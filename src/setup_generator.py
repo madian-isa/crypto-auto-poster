@@ -1788,17 +1788,6 @@ def format_post_text(setup):
         "",
     ), 22)
 
-    if direction == "LONG":
-        call_to_action = (
-            f"Can ${coin} hold support and challenge resistance? "
-            "Follow for more data-led market setups."
-        )
-    else:
-        call_to_action = (
-            f"Will resistance cap a bounce, or can buyers reclaim it? "
-            "Follow for more data-led market setups."
-        )
-
     title = setup.get(
         "title",
         "",
@@ -1927,9 +1916,6 @@ def format_post_text(setup):
         lines.append(
             f"Market Context: {market}"
         )
-
-    lines.append("")
-    lines.append(call_to_action)
 
     text = "\n".join(
         lines
