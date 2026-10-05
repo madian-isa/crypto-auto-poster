@@ -41878,6 +41878,23 @@
       "technical_analysis": "Price is testing the 4‑hour resistance near 2.016, with EMA9 and EMA21 above their 50‑EMA, indicating upward momentum. RSI is 66, still below over‑bought, and MACD shows a bullish crossover with a positive histogram. The 2‑hour swing high is around 2.02, so a break above this level would confirm a long move. Risk comes if the price fails to stay",
       "market_context": "BTC is in a bullish 4‑hour trend, adding breadth to the positive market mood.",
       "result": "PENDING"
+    },
+    {
+      "id": 2464,
+      "created_at": "2026-10-05T00:50:46.875780+00:00",
+      "symbol": "ADAUSDT",
+      "direction": "LONG",
+      "title": "Trend Reversal Confirmed for $ADA as Volume Spikes Upward",
+      "entry_low": 0.2589,
+      "entry_high": 0.2597,
+      "stop_loss": 0.25,
+      "take_profit": 0.2779,
+      "support": 0.2449,
+      "resistance": 0.2685,
+      "news_line": "",
+      "technical_analysis": "ADA sits above its EMA lines and MACD is bullish, showing strong upward momentum (ADX 36). RSI at 75 and stochastic K below D hint at overbought pressure, while the order book leans slightly bearish. A long entry around 0.259 – 0.2597, stop near 0.250, targets ~0.277 if price breaks the 0.2685 resistance.",
+      "market_context": "BTC is in a bullish 4‑hour and daily trend, up about 2 % and the overall market is broadly positive (77 %",
+      "result": "PENDING"
     }
   ]
 }
