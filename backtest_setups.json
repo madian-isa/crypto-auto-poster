@@ -42065,6 +42065,23 @@
       "technical_analysis": "Price sits just above the 1‑hour support 0.0708 and under the 9‑EMA (0.0746), showing short‑term pressure. Yet it’s above the 50‑EMA and stochastic K is deep oversold (~3), hinting at a bounce. MACD stays bearish, so a break below 0.0708 would kill the trade. Watch a retest of 0.0708 for entry.",
       "market_context": "BTC is up 1.66% on a bullish trend and the broader market is 66.7% green, providing a supportive backdrop for risk assets.",
       "result": "PENDING"
+    },
+    {
+      "id": 2475,
+      "created_at": "2026-10-05T04:01:19.675169+00:00",
+      "symbol": "BTCUSDT",
+      "direction": "LONG",
+      "title": "Bullish Momentum Is Building: Can $BTC Continue Its Breakout?",
+      "entry_low": 86019.5,
+      "entry_high": 86100.0,
+      "stop_loss": 83000.0,
+      "take_profit": 92179.25,
+      "support": 85094.0,
+      "resistance": 86999.11,
+      "news_line": "",
+      "technical_analysis": "Price sits near 86,100, above EMA21/50/200 and MACD histogram stays positive, showing bullish momentum on higher timeframes. EMA9 still sits above spot and Stochastic K below D hint at short‑term pressure. ADX above 40 confirms a strong trend. Watch for a break above 86,999 resistance; a dip toward 83,000 would trigger the stop.",
+      "market_context": "BTC is up 1.4% over 24h, with a broadly positive market breadth.",
+      "result": "PENDING"
     }
   ]
 }
