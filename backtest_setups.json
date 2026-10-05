@@ -42881,6 +42881,23 @@
       "technical_analysis": "Price sits below EMA9, EMA21 and EMA50, indicating bearish momentum. MACD is negative and RSI at 43 reinforces downside bias. Stochastic around 30 suggests still room to fall. Order‑book shows a modest bid imbalance, but a bounce off the 0.0945‑0.0946 resistance could trigger a short. Watch for a break above 0.0946 or a fall through 0.0935 for next confirmation.",
       "market_context": "BTC is down 0.11% on the 24‑hour chart, keeping a bearish tone while overall market breadth is mixed.",
       "result": "PENDING"
+    },
+    {
+      "id": 2523,
+      "created_at": "2026-10-05T17:10:51.481836+00:00",
+      "symbol": "MSTRBUSDT",
+      "direction": "SHORT",
+      "title": "Overbought Indicators Signal Impending Correction for $MSTRB",
+      "entry_low": 162.0,
+      "entry_high": 162.3,
+      "stop_loss": 167.9,
+      "take_profit": 150.65,
+      "support": 160.17,
+      "resistance": 162.32,
+      "news_line": "",
+      "technical_analysis": "Price sits below EMA9/21/50 and MACD is negative, showing bearish momentum. RSI and Stochastic are oversold, hinting at a possible bounce, but the order‑book shows a 28% bid imbalance favoring sellers. Watch for a break below the 1H support at 160.17; a clear low under that would confirm the short bias.",
+      "market_context": "BTC is in a bearish 24‑hour move and overall market breadth is broadly negative, adding pressure to risk assets like MSTR.",
+      "result": "PENDING"
     }
   ]
 }
