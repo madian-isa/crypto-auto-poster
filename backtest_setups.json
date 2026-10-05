@@ -42099,6 +42099,23 @@
       "technical_analysis": "PENGU is trading above key EMAs with bullish MACD momentum and strong volume. RSI at 67 suggests upward pressure but nears overbought zones. The main risk is the negative orderbook imbalance, indicating selling pressure at higher levels. Watch for a retest of the 21 EMA; holding above this level confirms the path toward the major resistance.",
       "market_context": "BTC remains bullish on 4H and 1D timeframes, providing supportive macro context. Market breadth is mixed, with 58.6% of assets green.",
       "result": "PENDING"
+    },
+    {
+      "id": 2477,
+      "created_at": "2026-10-05T04:20:51.507793+00:00",
+      "symbol": "NIGHTUSDT",
+      "direction": "LONG",
+      "title": "On-Chain Metrics Confirm Strong Whale Accumulation on $NIGHT",
+      "entry_low": 0.0451,
+      "entry_high": 0.0452,
+      "stop_loss": 0.0434,
+      "take_profit": 0.04865,
+      "support": 0.04346,
+      "resistance": 0.04973,
+      "news_line": "",
+      "technical_analysis": "Price is near the 1‑hour support at 0.04516, with an 11% bid‑side orderbook imbalance indicating buying pressure. Stochastic at 28 and RSI 37.6 show room for upside, while price stays above the EMA200. A downside risk remains as MACD is negative and price is under EMA9/21. Hold above 0.04502 for a long entry around 0.04510‑0.04520, SL 0.04340, TP 0.04868.",
+      "market_context": "BTC remains bullish on 4H and 1D timeframes, trading above its EMA20/50. Overall market breadth is mixed, with 52.6% green and 47.4%",
+      "result": "PENDING"
     }
   ]
 }
