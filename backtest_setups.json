@@ -42694,6 +42694,23 @@
       "technical_analysis": "SKY is trading above its EMA9, EMA21 and EMA50, confirming an uptrend. RSI at 67 and ADX near 28 support momentum, while the price sits just above the upper Bollinger band. A bearish MACD histogram and a -10.3% order‑book imbalance act as a warning. Watch for a break below 0.0958 or a hold above 0.1020 for the next move.",
       "market_context": "BTC stays bullish on 4‑h and daily charts, price around $86,100 with EMA20 above EMA50, and the broader market shows 62% green",
       "result": "PENDING"
+    },
+    {
+      "id": 2512,
+      "created_at": "2026-10-05T13:50:51.503946+00:00",
+      "symbol": "RVNUSDT",
+      "direction": "LONG",
+      "title": "Key Support Holds Firm: $RVN Bullish Continuation Setup Active",
+      "entry_low": 0.00251,
+      "entry_high": 0.00255,
+      "stop_loss": 0.00242,
+      "take_profit": 0.00275,
+      "support": 0.002354,
+      "resistance": 0.00287,
+      "news_line": "",
+      "technical_analysis": "RVN trades above EMA9, EMA21 and EMA50, and MACD histogram is positive, supporting a bullish bias. RSI is at 84 and Stochastic near 73/81, flagging overbought conditions that could trigger a pullback. Watch the 0.002574 24‑hour high as a ceiling and the 0.002354 support for confirmation. This is a conditional technical scenario, not a verified trade or a promise of",
+      "market_context": "BTC is in a bullish trend on both 4H and 1D frames, and overall market breadth is slightly green (57.6% up).",
+      "result": "PENDING"
     }
   ]
 }
