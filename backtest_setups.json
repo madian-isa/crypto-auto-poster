@@ -42252,6 +42252,23 @@
       "technical_analysis": "AXS stays above its 50‑ and 200‑EMA, preserving the longer‑term bullish bias. A short‑term pullback is evident as price sits under the 9‑ and 21‑EMA and the MACD histogram is negative, while stochastic K is deep oversold (~17). ADX ≈ 41 shows a strong trend. Watch for a bounce from 1.311 support; a break above 1.385 confirms upside. Risk if",
       "market_context": "BTC is in a bullish 4H and 1D trend, up ~1.15% today, with market breadth mixed (52% green). Overall crypto market shows",
       "result": "PENDING"
+    },
+    {
+      "id": 2486,
+      "created_at": "2026-10-05T06:40:41.576704+00:00",
+      "symbol": "ACEUSDT",
+      "direction": "LONG",
+      "title": "$ACE Breaks Out of Falling Wedge Pattern: Targets Set Higher",
+      "entry_low": 0.19,
+      "entry_high": 0.193,
+      "stop_loss": 0.184,
+      "take_profit": 0.2065,
+      "support": 0.1868,
+      "resistance": 0.1885,
+      "news_line": "",
+      "technical_analysis": "Price is above the 1‑hour resistance at 0.1885, confirming a bullish swing. The EMA9/21/50 are all above the current price, and the MACD histogram is positive, indicating upward momentum. RSI is 68, near overbought, so a pullback to the 1‑hour support around 0.1868 is a risk to watch. If price stays above 0.1885 and the MACD stays positive, a move",
+      "market_context": "BTC is in a bullish 4‑hour trend, which supports a broader upward bias for ACEUSDT.",
+      "result": "PENDING"
     }
   ]
 }
