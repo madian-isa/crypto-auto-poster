@@ -42864,6 +42864,23 @@
       "technical_analysis": "Price sits above EMA9/21/50, confirming uptrend. RSI 73 and Stoch 71 show overbought pressure, a caution flag. MACD histogram positive and ADX 53 indicate strong momentum. A pull‑back to the 0.0579‑0.0582 zone offers a long entry; watch for break below 0.0558 as a stop, and aim near potential target 0.0622.",
       "market_context": "BTC down 0.18% on the 24‑hour chart, mixed on 4‑hour, but bullish on daily, adding a modest risk‑off backdrop.",
       "result": "PENDING"
+    },
+    {
+      "id": 2522,
+      "created_at": "2026-10-05T17:01:02.261180+00:00",
+      "symbol": "XPLUSDT",
+      "direction": "SHORT",
+      "title": "Panic Selling Risk Increases as $XPL Tests Critical Floor",
+      "entry_low": 0.0945,
+      "entry_high": 0.0946,
+      "stop_loss": 0.0979,
+      "take_profit": 0.08785,
+      "support": 0.09351,
+      "resistance": 0.09606,
+      "news_line": "",
+      "technical_analysis": "Price sits below EMA9, EMA21 and EMA50, indicating bearish momentum. MACD is negative and RSI at 43 reinforces downside bias. Stochastic around 30 suggests still room to fall. Order‑book shows a modest bid imbalance, but a bounce off the 0.0945‑0.0946 resistance could trigger a short. Watch for a break above 0.0946 or a fall through 0.0935 for next confirmation.",
+      "market_context": "BTC is down 0.11% on the 24‑hour chart, keeping a bearish tone while overall market breadth is mixed.",
+      "result": "PENDING"
     }
   ]
 }
