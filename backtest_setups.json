@@ -41980,6 +41980,23 @@
       "technical_analysis": "SCRU is trading above all key EMAs, with a strong MACD histogram and ADX above 40, indicating bullish momentum. RSI and Stochastic are in overbought territory, and the order‑book shows a 20% ask‑side imbalance, a short‑term risk. Watch for a pull‑back to the 0.0275‑0.0278 support zone; a break above 0.02975 would confirm continuation.",
       "market_context": "BTC remains bullish on the 4‑hour and daily charts, up 2.2% with broad market positivity, supporting risk‑on sentiment.",
       "result": "PENDING"
+    },
+    {
+      "id": 2470,
+      "created_at": "2026-10-05T03:01:00.954871+00:00",
+      "symbol": "VIRTUALUSDT",
+      "direction": "SHORT",
+      "title": "$VIRTUAL Fakeout Confirmed: Bulls Trapped at Local Highs",
+      "entry_low": 0.8595,
+      "entry_high": 0.861,
+      "stop_loss": 0.8911,
+      "take_profit": 0.79855,
+      "support": 0.8328,
+      "resistance": 0.8744,
+      "news_line": "",
+      "technical_analysis": "Price sits just below the 1‑hour resistance at 0.8744, with EMA9‑21‑50 stacked below the market, confirming an uptrend. However RSI 74 and Stoch 83 signal overbought conditions, while the order‑book shows a modest ask‑side imbalance. A short entry around 0.860 ± 0.0015 targets a pull‑back to 0.802, with SL at 0.891. Watch for a break above 0.8744 as a reversal",
+      "market_context": "BTC remains bullish on 4‑h and daily charts, trading above its 20‑ and 50‑EMA, while 80.9% of the market is green, supporting",
+      "result": "PENDING"
     }
   ]
 }
