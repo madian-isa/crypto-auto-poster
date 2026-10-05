@@ -42524,6 +42524,23 @@
       "technical_analysis": "SEI trades above key EMAs with a bullish MACD cross, indicating upward momentum. ADX at 40 confirms a strong trend, while RSI at 56 offers room for growth. The main risk is volume contraction; watch for a break above 0.0756 to confirm the next leg up. This is a conditional technical scenario, not a verified trade or a promise of",
       "market_context": "BTC remains bullish on 4H and 1D timeframes, providing supportive macro conditions. Market breadth is mixed, but the strong orderbook imbalance in",
       "result": "PENDING"
+    },
+    {
+      "id": 2502,
+      "created_at": "2026-10-05T09:50:43.008213+00:00",
+      "symbol": "UNIUSDT",
+      "direction": "SHORT",
+      "title": "Bears Retake Control as $UNI Fails to Hold Moving Averages",
+      "entry_low": 9.024,
+      "entry_high": 9.029,
+      "stop_loss": 9.345,
+      "take_profit": 8.3895,
+      "support": 9.006,
+      "resistance": 9.069,
+      "news_line": "",
+      "technical_analysis": "EMAs (9, 21, 50, 200) sit above price and MACD histogram is negative, indicating bearish momentum. Order‑book shows a 16% ask‑side imbalance, adding pressure. Stochastic K at 24 hints at oversold conditions, a possible rebound risk. Confirmation comes if price breaks below the 1H support at 9.006; a hold above 9.069 would invalidate the short.",
+      "market_context": "BTC remains in a bullish trend on both 4H and daily frames, while overall market breadth is mixed (54.8% green). UNIUSDT’s downside",
+      "result": "PENDING"
     }
   ]
 }
