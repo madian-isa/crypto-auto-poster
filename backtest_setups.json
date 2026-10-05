@@ -43119,6 +43119,23 @@
       "technical_analysis": "Price sits below EMA9, EMA21 and EMA50, confirming bearish momentum. MACD is deep negative and histogram declines, adding pressure. RSI at 39 hints at oversold conditions, a possible short‑term bounce risk. Order‑book shows a 16.9% bid imbalance, suggesting buying interest may temper moves. Watch for a break below 1715‑1717; a close under 1681.9 would strengthen the short case.",
       "market_context": "BTC is in a short‑term bearish dip (‑0.35%) despite bullish 4‑hour and daily trends. Overall market breadth is broadly positive (67% green).",
       "result": "PENDING"
+    },
+    {
+      "id": 2537,
+      "created_at": "2026-10-05T23:00:57.176614+00:00",
+      "symbol": "RAYUSDT",
+      "direction": "SHORT",
+      "title": "Bears Retake Control as $RAY Fails to Hold Moving Averages",
+      "entry_low": 2.235,
+      "entry_high": 2.2425,
+      "stop_loss": 2.3283,
+      "take_profit": 2.05965,
+      "support": 2.0873,
+      "resistance": 2.2425,
+      "news_line": "",
+      "technical_analysis": "RAY is perched at the 4‑hour resistance near 2.23 USDT. RSI ≈ 75 and Stochastic ≈ 96 indicate strong overbought pressure, while MACD stays modestly bullish. The order‑book is bid‑heavy, but a pull‑back below the 2.20 support zone would validate a short swing. A decisive break under 2.20 strengthens the downside case. Targeting a 2R profit around 2.08 USDT.",
+      "market_context": "BTC is slightly down 0.6 % on the 24 h chart, while overall market breadth remains broadly positive.",
+      "result": "PENDING"
     }
   ]
 }
