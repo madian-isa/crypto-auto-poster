@@ -41810,6 +41810,23 @@
       "technical_analysis": "XLM is trading just above the 0.2172 1‑hour support, with price above EMA9/21/50 and a positive MACD histogram, indicating bullish momentum. RSI 75 and Stochastic 88 signal overbought conditions, a possible short‑term pull‑back. A break above the 0.2271 resistance would confirm the upside. Watch for a drop below 0.2172 as a risk.",
       "market_context": "BTC remains in a bullish trend on higher timeframes and the overall market is broadly positive, supporting risk‑on sentiment for altcoins like",
       "result": "PENDING"
+    },
+    {
+      "id": 2460,
+      "created_at": "2026-10-05T00:00:55.703854+00:00",
+      "symbol": "BEAMXUSDT",
+      "direction": "LONG",
+      "title": "$BEAMX Prepares for Parabolic Phase: Key Technical Trigger Met",
+      "entry_low": 0.002508,
+      "entry_high": 0.002525,
+      "stop_loss": 0.00242,
+      "take_profit": 0.0027095,
+      "support": 0.002508,
+      "resistance": 0.002626,
+      "news_line": "",
+      "technical_analysis": "Price sits above EMA21/50/200 but below EMA9, indicating a pull‑back in an overall uptrend. Stochastic is deep oversold (≈9) and order‑book shows a 32% bid bias, supporting a bullish case. MACD is still negative, a downside risk. Watch the 0.002626 resistance for confirmation. This is a conditional technical scenario, not a verified trade or a promise of direction.",
+      "market_context": "BTC is in a bullish 4H and 1D trend, and the broader market is broadly positive, which can help sustain upward momentum",
+      "result": "PENDING"
     }
   ]
 }
