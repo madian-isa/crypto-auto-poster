@@ -42728,6 +42728,23 @@
       "technical_analysis": "FIL is sitting at $1.108, above its Bollinger upper band and with RSI 76 and Stoch K 91 indicating strong overbought pressure. While MACD stays bullish, the extreme momentum suggests a pull‑back. A short entry around $1.106‑$1.108 targets the $1.020 level, with SL at $1.150. Watch a break below $1.090 for confirmation today.",
       "market_context": "BTC remains bullish on higher timeframes, up 1.24% in 24 h, and the overall market is 56.6% green, giving a supportive backdrop",
       "result": "PENDING"
+    },
+    {
+      "id": 2514,
+      "created_at": "2026-10-05T14:19:55.152271+00:00",
+      "symbol": "SPCXBUSDT",
+      "direction": "SHORT",
+      "title": "$SPCXB Volume Decreases on Rally: Weak Buyers Exposed",
+      "entry_low": 164.8,
+      "entry_high": 165.5,
+      "stop_loss": 171.3,
+      "take_profit": 152.85,
+      "support": 159.86,
+      "resistance": 165.95,
+      "news_line": "",
+      "technical_analysis": "Price sits near the 24‑hour high with RSI 78.5 and Stochastic K 97, indicating overbought conditions. MACD remains bullish and ADX 46 confirms a strong trend, but order‑book imbalance shows more sell pressure. A break below the 1H/4H support at 159.86 would validate the short. Watch for a reversal if price re‑captures the 165.95 resistance.",
+      "market_context": "BTC is in a bullish trend on both 4H and 1D frames, and the broader market is broadly positive.",
+      "result": "PENDING"
     }
   ]
 }
