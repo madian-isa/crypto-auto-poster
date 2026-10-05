@@ -42677,6 +42677,23 @@
       "technical_analysis": "Price sits at the 4‑hour swing high around 0.731, touching the Bollinger upper band. RSI 72 and Stochastic 100 signal overbought conditions, while MACD remains bullish. The lack of a 1‑hour resistance and a clear 1‑hour support at 0.7103 suggest a potential pull‑back. Watch for a break below 0.7267 to confirm the short bias; a bounce above 0.735 could invalidate",
       "market_context": "BTC remains bullish on both 4‑hour and daily frames, keeping overall market sentiment broadly positive, though ASTER may face a corrective move",
       "result": "PENDING"
+    },
+    {
+      "id": 2511,
+      "created_at": "2026-10-05T12:10:49.530408+00:00",
+      "symbol": "SKYUSDT",
+      "direction": "LONG",
+      "title": "$SKY Liquidation Squeeze: Bears Trapped Near Critical Resistance",
+      "entry_low": 0.099,
+      "entry_high": 0.0995,
+      "stop_loss": 0.09528,
+      "take_profit": 0.10719,
+      "support": 0.09331,
+      "resistance": 0.10208,
+      "news_line": "",
+      "technical_analysis": "SKY is trading above its EMA9, EMA21 and EMA50, confirming an uptrend. RSI at 67 and ADX near 28 support momentum, while the price sits just above the upper Bollinger band. A bearish MACD histogram and a -10.3% order‑book imbalance act as a warning. Watch for a break below 0.0958 or a hold above 0.1020 for the next move.",
+      "market_context": "BTC stays bullish on 4‑h and daily charts, price around $86,100 with EMA20 above EMA50, and the broader market shows 62% green",
+      "result": "PENDING"
     }
   ]
 }
