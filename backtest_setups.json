@@ -42320,6 +42320,23 @@
       "technical_analysis": "Price sits just above the 9‑EMA and 21‑EMA but remains under the 200‑EMA, while MACD is negative and the orderbook shows a 12 % ask‑side imbalance. RSI is neutral. These suggest downside pressure. A break above the 0.2443 resistance could invalidate the short bias. Watch the 0.2385 support for confirmation in.",
       "market_context": "BTC is in a bullish 4‑hour and daily trend, up about 1.6 % today, and the overall market is broadly positive with",
       "result": "PENDING"
+    },
+    {
+      "id": 2490,
+      "created_at": "2026-10-05T07:30:53.169372+00:00",
+      "symbol": "ZECUSDT",
+      "direction": "LONG",
+      "title": "$ZEC Breaks Out of Falling Wedge Pattern: Targets Set Higher",
+      "entry_low": 1330.4,
+      "entry_high": 1331.2,
+      "stop_loss": 1277.568,
+      "take_profit": 1437.264,
+      "support": 1317.5,
+      "resistance": 1321.69,
+      "news_line": "",
+      "technical_analysis": "Price sits just above EMA9 (1330.99) and EMA21 (1331.30), indicating short‑term bullish bias. RSI is neutral at 50.5 and volume fell 12%, while MACD is bearish (line below signal). Order‑book shows slight bid pressure. Watch for a clear break above 1331.7 and hold above EMA9 to confirm; a drop below 1330.2 would challenge the setup.",
+      "market_context": "BTC remains bullish on higher timeframes, supporting a risk‑on environment. Overall market breadth is broadly positive with 61% of assets green.",
+      "result": "PENDING"
     }
   ]
 }
