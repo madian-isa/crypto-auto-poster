@@ -42337,6 +42337,23 @@
       "technical_analysis": "Price sits just above EMA9 (1330.99) and EMA21 (1331.30), indicating short‑term bullish bias. RSI is neutral at 50.5 and volume fell 12%, while MACD is bearish (line below signal). Order‑book shows slight bid pressure. Watch for a clear break above 1331.7 and hold above EMA9 to confirm; a drop below 1330.2 would challenge the setup.",
       "market_context": "BTC remains bullish on higher timeframes, supporting a risk‑on environment. Overall market breadth is broadly positive with 61% of assets green.",
       "result": "PENDING"
+    },
+    {
+      "id": 2491,
+      "created_at": "2026-10-05T07:40:45.431621+00:00",
+      "symbol": "NOMUSDT",
+      "direction": "LONG",
+      "title": "Golden Cross Formation Confirmed on $NOM 4-Hour Timeframe",
+      "entry_low": 0.002436,
+      "entry_high": 0.002444,
+      "stop_loss": 0.00233,
+      "take_profit": 0.00266,
+      "support": 0.002429,
+      "resistance": 0.002466,
+      "news_line": "",
+      "technical_analysis": "NOM is testing key support near 0.002436 with Stochastic K at 6.8, signaling oversold conditions. While MACD remains negative, the broad market breadth is positive. A confirmed bounce above the 0.002466 resistance would validate the long thesis. Risk remains if price breaks below the 0.002429 swing low. This is a conditional technical scenario, not a verified trade or a promise",
+      "market_context": "Bitcoin is bullish on 4H and 1D timeframes, with 66% of the market showing green candles.",
+      "result": "PENDING"
     }
   ]
 }
