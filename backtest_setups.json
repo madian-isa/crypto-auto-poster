@@ -43034,6 +43034,23 @@
       "technical_analysis": "ARBUSDT trades above its EMA9‑21‑50 stack, with price 0.2073 above the 0.2055 EMA9. MACD histogram is positive and Stochastic sits near 72, showing momentum. Order‑book shows a 10 % bid imbalance. Resistance sits at 0.2082; a pullback toward the 0.2036 support could trigger a long entry. Watch for a reversal if price breaks below the 0.1995 low.",
       "market_context": "BTC remains bullish on higher timeframes, trading above its 20‑ and 50‑EMA, while overall market breadth is mixed with 55.9 % green.",
       "result": "PENDING"
+    },
+    {
+      "id": 2532,
+      "created_at": "2026-10-05T20:19:24.311313+00:00",
+      "symbol": "XAUTUSDT",
+      "direction": "SHORT",
+      "title": "$XAUT Rejection at Key Supply Zone: Short Setup Activated",
+      "entry_low": 4141.8,
+      "entry_high": 4141.9,
+      "stop_loss": 4307.524,
+      "take_profit": 3810.502,
+      "support": 4140.76,
+      "resistance": 4141.97,
+      "news_line": "",
+      "technical_analysis": "Price is under EMA9, EMA21, EMA50 and EMA200, with MACD histogram negative and RSI at 47. Stochastic around 32 suggests limited upside. Order‑book imbalance favors asks. These factors support a short bias, but low ADX and neutral RSI add downside risk. Watch for a break below 4140.76 support; a retest of 4168.48 would challenge the trade.",
+      "market_context": "BTC is in a bullish trend on 4H and 1D timeframes, and overall market shows a 59.3% green bias, providing broader positive",
+      "result": "PENDING"
     }
   ]
 }

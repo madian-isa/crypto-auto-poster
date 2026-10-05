@@ -1,6 +1,6 @@
 {
   "date": "2026-10-05",
-  "count": 72,
+  "count": 73,
   "posted_symbols_today": [
     "BEAMXUSDT",
     "GTCUSDT",
@@ -73,6 +73,7 @@
     "APTUSDT",
     "ATUSDT",
     "INJUSDT",
-    "ARBUSDT"
+    "ARBUSDT",
+    "XAUTUSDT"
   ]
 }
