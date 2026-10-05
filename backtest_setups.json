@@ -43136,6 +43136,23 @@
       "technical_analysis": "RAY is perched at the 4‑hour resistance near 2.23 USDT. RSI ≈ 75 and Stochastic ≈ 96 indicate strong overbought pressure, while MACD stays modestly bullish. The order‑book is bid‑heavy, but a pull‑back below the 2.20 support zone would validate a short swing. A decisive break under 2.20 strengthens the downside case. Targeting a 2R profit around 2.08 USDT.",
       "market_context": "BTC is slightly down 0.6 % on the 24 h chart, while overall market breadth remains broadly positive.",
       "result": "PENDING"
+    },
+    {
+      "id": 2538,
+      "created_at": "2026-10-05T23:30:53.462961+00:00",
+      "symbol": "TRXUSDT",
+      "direction": "SHORT",
+      "title": "Moving Average Death Cross Signals Downward Trend for $TRX",
+      "entry_low": 0.3362,
+      "entry_high": 0.3364,
+      "stop_loss": 0.3482,
+      "take_profit": 0.3125,
+      "support": 0.3361,
+      "resistance": 0.3365,
+      "news_line": "",
+      "technical_analysis": "Price sits below the EMA9 and MACD line is under its signal, indicating bearish pressure. Stochastic K is under D and RSI is neutral, while ADX shows a moderate trend. A short entry near the 0.3365 resistance aligns with these signals. Risk: a sudden bounce above resistance could reverse the move. Watch a break above 0.3365 for a potential shift.",
+      "market_context": "BTC is slightly bearish on the 24‑hour chart, but overall market breadth is mixed, providing a neutral backdrop for TRXUSDT.",
+      "result": "PENDING"
     }
   ]
 }
