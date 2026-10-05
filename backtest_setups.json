@@ -42847,6 +42847,23 @@
       "technical_analysis": "Price sits below EMA9/21/50/200 and MACD is negative, signaling bearish bias. Stochastic K is near 4 and order‑book shows a 35% bid imbalance, suggesting oversold reversal potential near the 1H support of 0.1011. Risk is a break below 0.1000; watch for a clear close above 0.1106 for confirmation. This is a conditional technical scenario, not a verified trade or a",
       "market_context": "BTC is down 0.1% on the 24h, with mixed broader market breadth.",
       "result": "PENDING"
+    },
+    {
+      "id": 2521,
+      "created_at": "2026-10-05T16:50:59.975615+00:00",
+      "symbol": "EDUUSDT",
+      "direction": "LONG",
+      "title": "$EDU Liquidation Squeeze: Bears Trapped Near Critical Resistance",
+      "entry_low": 0.0578,
+      "entry_high": 0.0582,
+      "stop_loss": 0.0558,
+      "take_profit": 0.0624,
+      "support": 0.0522,
+      "resistance": 0.0611,
+      "news_line": "",
+      "technical_analysis": "Price sits above EMA9/21/50, confirming uptrend. RSI 73 and Stoch 71 show overbought pressure, a caution flag. MACD histogram positive and ADX 53 indicate strong momentum. A pull‑back to the 0.0579‑0.0582 zone offers a long entry; watch for break below 0.0558 as a stop, and aim near potential target 0.0622.",
+      "market_context": "BTC down 0.18% on the 24‑hour chart, mixed on 4‑hour, but bullish on daily, adding a modest risk‑off backdrop.",
+      "result": "PENDING"
     }
   ]
 }
