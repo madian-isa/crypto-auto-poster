@@ -41963,6 +41963,23 @@
       "technical_analysis": "Price sits above the 9‑, 21‑ and 50‑EMA, with EMA200 also below, confirming a bullish trend. RSI at 62 and Stochastic K/D around 62/51 support upward momentum. MACD histogram stays positive. A counter‑signal is the slight 3% volume decline. Watch the 1.2363 resistance; a break could trigger the next leg in the short term.",
       "market_context": "BTC is up 2.1% on bullish 4h and daily trends, and 86% of the market is green, indicating overall positive sentiment.",
       "result": "PENDING"
+    },
+    {
+      "id": 2469,
+      "created_at": "2026-10-05T02:40:48.294203+00:00",
+      "symbol": "SCRUSDT",
+      "direction": "LONG",
+      "title": "Bullish Momentum Accelerates as $SCR Liquidity Sweep Completes",
+      "entry_low": 0.0276,
+      "entry_high": 0.0278,
+      "stop_loss": 0.02673,
+      "take_profit": 0.02964,
+      "support": 0.02754,
+      "resistance": 0.02975,
+      "news_line": "",
+      "technical_analysis": "SCRU is trading above all key EMAs, with a strong MACD histogram and ADX above 40, indicating bullish momentum. RSI and Stochastic are in overbought territory, and the order‑book shows a 20% ask‑side imbalance, a short‑term risk. Watch for a pull‑back to the 0.0275‑0.0278 support zone; a break above 0.02975 would confirm continuation.",
+      "market_context": "BTC remains bullish on the 4‑hour and daily charts, up 2.2% with broad market positivity, supporting risk‑on sentiment.",
+      "result": "PENDING"
     }
   ]
 }
