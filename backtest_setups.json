@@ -42796,6 +42796,23 @@
       "technical_analysis": "Price sits above EMA9, EMA21 and EMA50, while RSI is at 64 and MACD histogram stays positive, indicating bullish momentum. ADX above 35 confirms a strong trend. Stochastic is near overbought, a mild caution. Watch the 0.032 resistance; a break could validate the long setup. This is a conditional technical scenario, not a verified trade or a promise of direction.",
       "market_context": "BTC shows bullish daily momentum, offering broader upside bias for risk assets.",
       "result": "PENDING"
+    },
+    {
+      "id": 2518,
+      "created_at": "2026-10-05T16:10:46.361101+00:00",
+      "symbol": "RADUSDT",
+      "direction": "LONG",
+      "title": "$RAD Prepares for Parabolic Phase: Key Technical Trigger Met",
+      "entry_low": 0.283,
+      "entry_high": 0.286,
+      "stop_loss": 0.26743,
+      "take_profit": 0.31864,
+      "support": 0.263,
+      "resistance": 0.326,
+      "news_line": "",
+      "technical_analysis": "Price sits above EMA9/21/50/200 and MACD histogram is positive, confirming bullish momentum. ADX above 30 shows a strong trend. RSI 77 and Stochastic K 89 signal overbought conditions, while the orderbook shows a sell‑side imbalance. Watch for a pullback to the 0.284‑0.286 zone; a break below 0.263 invalidates the setup.",
+      "market_context": "BTC is in a bullish daily trend, while overall market breadth is mixed. This broader strength supports a potential upside move for",
+      "result": "PENDING"
     }
   ]
 }
