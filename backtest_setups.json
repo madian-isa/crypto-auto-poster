@@ -42473,6 +42473,23 @@
       "technical_analysis": "ZKP shows bullish momentum with price above all key EMAs and a positive MACD histogram. ADX at 47 confirms a strong trend. The main risk is volume dropping 57%, suggesting potential exhaustion. Watch for a pullback to the 0.052 support level to confirm the structure holds before attempting a long entry.",
       "market_context": "Bitcoin remains bullish with price above its 4H EMAs, providing a supportive backdrop. However, broader market breadth is mixed, so altcoins like",
       "result": "PENDING"
+    },
+    {
+      "id": 2499,
+      "created_at": "2026-10-05T09:20:48.589124+00:00",
+      "symbol": "ONDOUSDT",
+      "direction": "LONG",
+      "title": "$ONDO Higher Low Structure Confirmed: Long Entry Level Reached",
+      "entry_low": 0.502,
+      "entry_high": 0.505,
+      "stop_loss": 0.485,
+      "take_profit": 0.5405,
+      "support": 0.4932,
+      "resistance": 0.508,
+      "news_line": "",
+      "technical_analysis": "ONDO is trading just above its EMA cluster (9,21,50) and MACD histogram stays positive, indicating bullish momentum. Order‑book shows a 14 % bid imbalance supporting upside. Stochastic is overbought (K 65, D 78) and ADX is weak, warning of a possible pullback. Watch for a clear break above 0.508 resistance; a fall back through 0.500‑0.501 would test support.",
+      "market_context": "BTC remains in a bullish 4H and 1D trend, up 0.84% today, while overall market is mixed with 53.7% green assets. The",
+      "result": "PENDING"
     }
   ]
 }

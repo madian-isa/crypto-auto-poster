@@ -1,6 +1,6 @@
 {
   "date": "2026-10-05",
-  "count": 39,
+  "count": 40,
   "posted_symbols_today": [
     "BEAMXUSDT",
     "GTCUSDT",
@@ -40,6 +40,7 @@
     "USD1USDT",
     "AAVEUSDT",
     "AVAXUSDT",
-    "ZKPUSDT"
+    "ZKPUSDT",
+    "ONDOUSDT"
   ]
 }
