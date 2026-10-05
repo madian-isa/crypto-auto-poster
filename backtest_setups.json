@@ -42779,6 +42779,23 @@
       "technical_analysis": "Price is above EMA9, EMA21 and EMA50 while still under EMA200, indicating short‑term bullishness. RSI at 63 and Stochastic K at 71 support momentum, and MACD histogram is positive. ADX 32 confirms a strong trend. A counter‑signal is the overbought RSI and proximity to the 0.02499 resistance. Watch for a clear break above 0.0250 to validate the upside.",
       "market_context": "BTC is in a bullish trend on both 4‑hour and daily charts, reinforcing overall market risk‑on sentiment.",
       "result": "PENDING"
+    },
+    {
+      "id": 2517,
+      "created_at": "2026-10-05T16:00:59.038484+00:00",
+      "symbol": "PARTIUSDT",
+      "direction": "LONG",
+      "title": "Golden Cross Formation Confirmed on $PARTI 4-Hour Timeframe",
+      "entry_low": 0.0302,
+      "entry_high": 0.0305,
+      "stop_loss": 0.0291,
+      "take_profit": 0.03285,
+      "support": 0.0302,
+      "resistance": 0.032,
+      "news_line": "",
+      "technical_analysis": "Price sits above EMA9, EMA21 and EMA50, while RSI is at 64 and MACD histogram stays positive, indicating bullish momentum. ADX above 35 confirms a strong trend. Stochastic is near overbought, a mild caution. Watch the 0.032 resistance; a break could validate the long setup. This is a conditional technical scenario, not a verified trade or a promise of direction.",
+      "market_context": "BTC shows bullish daily momentum, offering broader upside bias for risk assets.",
+      "result": "PENDING"
     }
   ]
 }
