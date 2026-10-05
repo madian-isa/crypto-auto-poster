@@ -42235,6 +42235,23 @@
       "technical_analysis": "BNB holds above the 200 EMA, signaling underlying strength. While the MACD histogram is negative, the Stochastic %K at 24 suggests room for a bounce. Price sits near key support at 788. Watch for a break above 793 for confirmation. BTC remains bullish, supporting broader alt performance. This is a conditional technical scenario, not a verified trade or a promise",
       "market_context": "Bitcoin is bullish on 4H and 1D timeframes. Market breadth is mixed, with 51.2% of coins in the green.",
       "result": "PENDING"
+    },
+    {
+      "id": 2485,
+      "created_at": "2026-10-05T06:30:51.103455+00:00",
+      "symbol": "AXSUSDT",
+      "direction": "LONG",
+      "title": "High R-Multiple Long Trade Setup Forming on $AXS",
+      "entry_low": 1.311,
+      "entry_high": 1.315,
+      "stop_loss": 1.266,
+      "take_profit": 1.407,
+      "support": 1.299,
+      "resistance": 1.385,
+      "news_line": "",
+      "technical_analysis": "AXS stays above its 50‑ and 200‑EMA, preserving the longer‑term bullish bias. A short‑term pullback is evident as price sits under the 9‑ and 21‑EMA and the MACD histogram is negative, while stochastic K is deep oversold (~17). ADX ≈ 41 shows a strong trend. Watch for a bounce from 1.311 support; a break above 1.385 confirms upside. Risk if",
+      "market_context": "BTC is in a bullish 4H and 1D trend, up ~1.15% today, with market breadth mixed (52% green). Overall crypto market shows",
+      "result": "PENDING"
     }
   ]
 }
