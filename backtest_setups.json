@@ -42150,6 +42150,23 @@
       "technical_analysis": "Price sits below EMA9/21/50 and MACD histogram is negative, indicating bearish short‑term momentum. RSI at 34 and Stochastic near 5 suggest oversold conditions, but the order‑book shows an 18% bid imbalance supporting downside. Watch the 2.015 resistance; a break above it invalidates the short. A move below 1.734 would strengthen the case.",
       "market_context": "BTC is bullish on 4H and 1D timeframes, while overall market breadth is mixed with 40% green and 60% red.",
       "result": "PENDING"
+    },
+    {
+      "id": 2480,
+      "created_at": "2026-10-05T05:10:47.545731+00:00",
+      "symbol": "NEARUSDT",
+      "direction": "LONG",
+      "title": "Strong Accumulation Detected: $NEAR Prepares for Next Wave Up",
+      "entry_low": 4.864,
+      "entry_high": 4.874,
+      "stop_loss": 4.67424,
+      "take_profit": 5.25852,
+      "support": 4.81,
+      "resistance": 5.025,
+      "news_line": "",
+      "technical_analysis": "Price sits just above the 4‑hour EMA200 but under EMA9, MACD histogram is negative and RSI is neutral. Stochastic K is in oversold territory, hinting at a possible bounce. Order‑book shows a 19% ask imbalance, adding downside pressure. A clear break above the 4.864‑4.874 zone could push price toward the 5.025 resistance; a fall below 4.81 would invalidate the setup.",
+      "market_context": "BTC remains in a bullish trend on higher‑timeframes, while the broader market shows mixed breadth with roughly equal green and red movers.",
+      "result": "PENDING"
     }
   ]
 }
