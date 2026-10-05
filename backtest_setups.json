@@ -41997,6 +41997,23 @@
       "technical_analysis": "Price sits just below the 1‑hour resistance at 0.8744, with EMA9‑21‑50 stacked below the market, confirming an uptrend. However RSI 74 and Stoch 83 signal overbought conditions, while the order‑book shows a modest ask‑side imbalance. A short entry around 0.860 ± 0.0015 targets a pull‑back to 0.802, with SL at 0.891. Watch for a break above 0.8744 as a reversal",
       "market_context": "BTC remains bullish on 4‑h and daily charts, trading above its 20‑ and 50‑EMA, while 80.9% of the market is green, supporting",
       "result": "PENDING"
+    },
+    {
+      "id": 2471,
+      "created_at": "2026-10-05T03:10:45.877840+00:00",
+      "symbol": "MUBARAKUSDT",
+      "direction": "LONG",
+      "title": "$MUBARAK Prepares for Parabolic Phase: Key Technical Trigger Met",
+      "entry_low": 0.0685,
+      "entry_high": 0.0695,
+      "stop_loss": 0.0665,
+      "take_profit": 0.074,
+      "support": 0.065,
+      "resistance": 0.07924,
+      "news_line": "",
+      "technical_analysis": "MUBARAK holds above the EMA50, with a bullish RSI at 56.35. Orderbook shows strong bid support, favoring upside. However, the MACD histogram is negative, signaling potential weakness. Watch for a break above 0.0696 to confirm momentum. A pullback to 0.0685 remains the ideal entry zone. This is a conditional technical scenario, not a verified trade or a promise of direction.",
+      "market_context": "The broader market is broadly positive with 77% green coins. Bitcoin continues its bullish trend, providing supportive macro conditions for altcoin moves.",
+      "result": "PENDING"
     }
   ]
 }
