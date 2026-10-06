@@ -44275,6 +44275,23 @@
       "technical_analysis": "Price sits above EMA9, EMA21, EMA50 and EMA200, while MACD histogram stays positive, confirming a bullish trend. ADX above 30 shows strength. RSI 83.5 and Stochastic 93% signal overbought conditions, a reversal risk. Order‑book imbalance is bearish. Watch the 0.022 resistance level for a break or pull‑back. This is a conditional technical scenario, not a verified trade or a promise",
       "market_context": "BTC is in a short‑term bearish dip, and the broader market is broadly negative, with more red than green assets.",
       "result": "PENDING"
+    },
+    {
+      "id": 2605,
+      "created_at": "2026-10-06T19:40:49.820637+00:00",
+      "symbol": "SNDKBUSDT",
+      "direction": "SHORT",
+      "title": "Technical Signals Turn Negative as $SNDKB Selling Pressure Rises",
+      "entry_low": 1665.0,
+      "entry_high": 1672.0,
+      "stop_loss": 1740.0,
+      "take_profit": 1525.5,
+      "support": 1650.5,
+      "resistance": 1700.97,
+      "news_line": "",
+      "technical_analysis": "SNDK trades below key EMAs with RSI at 32, signaling bearish momentum. MACD histogram is negative, confirming downward pressure. Price sits near the lower Bollinger Band, suggesting potential capitulation. A break below 1650 support would confirm the short thesis. Watch for rejection at 1700 resistance as a re-entry point if price rebounds.",
+      "market_context": "BTC is bullish on higher timeframes but down 0.23% in 24h. Market breadth is broadly negative with 64.9% of coins red. Orderbook",
+      "result": "PENDING"
     }
   ]
 }
