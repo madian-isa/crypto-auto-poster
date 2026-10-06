@@ -43391,6 +43391,23 @@
       "technical_analysis": "Price sits above EMA9, EMA21 and EMA50, confirming bullish momentum. RSI at 58 and Stochastic 62/57 support upside, while MACD histogram stays positive. ADX near 28 shows a solid trend. A slight ask‑side orderbook imbalance hints at buying pressure. Risk: approaching the 0.05265 resistance could trigger a pullback; watch a break above it for confirmation.",
       "market_context": "BTC slipped 0.3% over 24h and overall market breadth is negative, but NIGHTUSDT displays relative strength against the broader sentiment.",
       "result": "PENDING"
+    },
+    {
+      "id": 2553,
+      "created_at": "2026-10-06T04:40:49.121313+00:00",
+      "symbol": "SANDUSDT",
+      "direction": "LONG",
+      "title": "Major Breakout Signals Emerge on $SAND Higher Timeframes",
+      "entry_low": 0.06666,
+      "entry_high": 0.06679,
+      "stop_loss": 0.064,
+      "take_profit": 0.072175,
+      "support": 0.06629,
+      "resistance": 0.07046,
+      "news_line": "",
+      "technical_analysis": "Sand price sits at 0.0668, hugging the 0.06666 support. RSI 34 and Stochastic K≈9 point to oversold conditions, while the order book shows a modest bid bias. However, price remains under EMA9/21 and MACD is negative, hinting at lingering downside. Watch for a break below 0.0640 or a clear hold above 0.0705 to confirm the move.",
+      "market_context": "BTC remains on a bullish trend on higher timeframes, while overall market breadth is near split, providing neutral pressure to altcoins.",
+      "result": "PENDING"
     }
   ]
 }
