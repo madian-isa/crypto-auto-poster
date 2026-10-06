@@ -44377,6 +44377,23 @@
       "technical_analysis": "Price sits below EMA9, EMA21, EMA50 and EMA200, confirming a downtrend. MACD is negative with a widening histogram, and ADX at 40 signals a strong trend. RSI and Stochastic are deep oversold, offering a possible bounce but the order‑book shows buying pressure. A break above 57.77 resistance would challenge the short bias; a hold above 56.12 support could trigger a",
       "market_context": "BTC shows bullish 4h and 1d EMAs while the broader market is broadly negative, with a 66.9% red asset ratio and a",
       "result": "PENDING"
+    },
+    {
+      "id": 2611,
+      "created_at": "2026-10-06T21:30:56.683855+00:00",
+      "symbol": "HBARUSDT",
+      "direction": "SHORT",
+      "title": "Bears Retake Control as $HBAR Fails to Hold Moving Averages",
+      "entry_low": 0.10031,
+      "entry_high": 0.10042,
+      "stop_loss": 0.10394,
+      "take_profit": 0.093215,
+      "support": 0.0999,
+      "resistance": 0.10114,
+      "news_line": "",
+      "technical_analysis": "Price sits below EMA9/21/50, confirming a down bias. RSI at 43 and Stochastic K at 31 show neutral‑to‑oversold conditions. MACD line is marginally above its signal, a faint bullish hint, while ADX 15 signals a weak trend. Order‑book shows a bid imbalance, adding a modest upside risk. Watch the 0.0999 support; a break could validate the short.",
+      "market_context": "BTC is in a bearish 4H and 1D trend, and the overall market is broadly negative, reinforcing downside pressure on altcoins.",
+      "result": "PENDING"
     }
   ]
 }
