@@ -43459,6 +43459,23 @@
       "technical_analysis": "Price sits near the 4‑hour resistance at 172.13, with EMA9‑21‑50‑200 below, confirming an uptrend. Yet RSI 79 and Stochastic 90 show overbought, volume dropped 75% and the order book has a 15% ask‑side imbalance. Short between 171.77‑172.13, SL ~178, TP ~160 targets a break below 1‑hour support 171.27. Watch for a bounce above 172.13 as risk.",
       "market_context": "BTC is bullish on 4h and daily charts, while overall market breadth is mixed (45% green, 55% red).",
       "result": "PENDING"
+    },
+    {
+      "id": 2557,
+      "created_at": "2026-10-06T05:30:55.032186+00:00",
+      "symbol": "UMAUSDT",
+      "direction": "LONG",
+      "title": "On-Chain Metrics Confirm Strong Whale Accumulation on $UMA",
+      "entry_low": 0.426,
+      "entry_high": 0.428,
+      "stop_loss": 0.411,
+      "take_profit": 0.459,
+      "support": 0.418,
+      "resistance": 0.493,
+      "news_line": "",
+      "technical_analysis": "UMA is trading above its 9‑, 21‑ and 200‑EMA, confirming a bullish bias. ADX at 54 shows a strong trend, while RSI 58 and Stochastic 74 suggest upward momentum. The MACD histogram is slightly negative, hinting at possible short‑term weakness. A break above the 0.433 resistance would reinforce the long case; a fall back through 0.418 would challenge it.",
+      "market_context": "BTC remains bullish on higher timeframes, supporting risk‑on sentiment.",
+      "result": "PENDING"
     }
   ]
 }
