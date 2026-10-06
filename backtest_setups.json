@@ -44139,6 +44139,23 @@
       "technical_analysis": "INJ is holding just above the 9‑EMA and the 21‑EMA, with price near the 7.784 swing low. MACD histogram is positive and volume surged 89%, while the orderbook shows a 17% bid imbalance. RSI is neutral. Watch the 7.796 resistance; a break could target 8.34. A drop below 7.52 invalidates the setup.",
       "market_context": "BTC remains in a bullish 4H and 1D trend, trading around $85.6k, supporting a broadly positive market backdrop.",
       "result": "PENDING"
+    },
+    {
+      "id": 2597,
+      "created_at": "2026-10-06T17:50:49.219861+00:00",
+      "symbol": "LINKUSDT",
+      "direction": "SHORT",
+      "title": "$LINK Lower High Pattern Confirmed: Short Target in View",
+      "entry_low": 13.95,
+      "entry_high": 13.97,
+      "stop_loss": 14.45,
+      "take_profit": 12.98,
+      "support": 13.757,
+      "resistance": 13.975,
+      "news_line": "",
+      "technical_analysis": "Price sits below EMA9, EMA21 and EMA50, indicating short‑term weakness. RSI at 43 and Stochastic K 36 below D 63 reinforce bearish pressure. MACD line is just above its signal, a mild bullish hint, while order‑book shows a 9.7% bid bias. A break under 13.975 could trigger a move toward 13.757. Watch for a MACD bounce as a risk.",
+      "market_context": "BTC remains bullish on higher timeframes, while the broader market is mixed with 52.8% of assets green.",
+      "result": "PENDING"
     }
   ]
 }
