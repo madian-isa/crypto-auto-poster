@@ -44122,6 +44122,23 @@
       "technical_analysis": "Price sits just below the 1‑hour resistance at 0.05272, with EMA9 above EMA21 and EMA50, indicating an underlying uptrend. However MACD histogram is negative and the order‑book shows a 13.9 % sell imbalance, while Stochastic is deep in oversold territory (K ≈ 29). The bearish bias dominates, making a short near 0.0521‑0.0522 reasonable. Watch for a break above 0.0545 to",
       "market_context": "BTC remains bullish on 4‑hour and daily charts, trading around $85,600, supporting overall market optimism.",
       "result": "PENDING"
+    },
+    {
+      "id": 2596,
+      "created_at": "2026-10-06T17:40:51.746012+00:00",
+      "symbol": "INJUSDT",
+      "direction": "LONG",
+      "title": "$INJ Breaks Out of Falling Wedge Pattern: Targets Set Higher",
+      "entry_low": 7.784,
+      "entry_high": 7.796,
+      "stop_loss": 7.4784,
+      "take_profit": 8.4132,
+      "support": 7.536,
+      "resistance": 7.983,
+      "news_line": "",
+      "technical_analysis": "INJ is holding just above the 9‑EMA and the 21‑EMA, with price near the 7.784 swing low. MACD histogram is positive and volume surged 89%, while the orderbook shows a 17% bid imbalance. RSI is neutral. Watch the 7.796 resistance; a break could target 8.34. A drop below 7.52 invalidates the setup.",
+      "market_context": "BTC remains in a bullish 4H and 1D trend, trading around $85.6k, supporting a broadly positive market backdrop.",
+      "result": "PENDING"
     }
   ]
 }
