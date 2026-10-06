@@ -44309,6 +44309,23 @@
       "technical_analysis": "ETHFI trades above EMA9‑200, with MACD line over signal and a positive histogram, confirming bullish momentum. RSI at 63 and ADX 25 support a steady uptrend. Price is near the upper Bollinger band and stochastic K≈79, indicating overbought pressure, and the orderbook shows slight sell imbalance. Watch for a break above 0.8014; a drop below 0.7535 invalidates the setup.",
       "market_context": "BTC slipped 0.15% in 24h, turning bearish while its 4h and 1d trends remain bullish; overall market breadth is broadly negative.",
       "result": "PENDING"
+    },
+    {
+      "id": 2607,
+      "created_at": "2026-10-06T20:10:49.051982+00:00",
+      "symbol": "PEPEUSDT",
+      "direction": "LONG",
+      "title": "$PEPE Holds Moving Average Support: High Probability Long Setup",
+      "entry_low": 4.26e-06,
+      "entry_high": 4.28e-06,
+      "stop_loss": 4.1e-06,
+      "take_profit": 4.61e-06,
+      "support": 4.26e-06,
+      "resistance": 4.32e-06,
+      "news_line": "",
+      "technical_analysis": "PEPE is testing support at 4.26 with RSI at 35 and negative MACD. A bounce above the 9-EMA (4.31) confirms strength. Watch for rejection from resistance at 4.32 if momentum stalls. Volume spike suggests accumulation, but ADX at 21 indicates weak trend strength. This is a conditional technical scenario, not a verified trade or a promise of direction.",
+      "market_context": "BTC is bullish on 4H/1D but slightly down 24h. Market breadth is broadly negative, increasing risk for altcoins like PEPE.",
+      "result": "PENDING"
     }
   ]
 }
