@@ -44054,6 +44054,23 @@
       "technical_analysis": "Price sits at the 1‑hour support (0.99967) with RSI 35 and Stochastic K 3, suggesting oversold conditions. Order‑book shows a 16% bid imbalance, adding buying pressure. However, MACD is negative and price is below all EMAs and the lower Bollinger band, a bearish bias. Watch for a break above 0.99971 to confirm the upside.",
       "market_context": "BTC remains bullish on 4‑hour and daily frames, and the broader market is broadly positive.",
       "result": "PENDING"
+    },
+    {
+      "id": 2592,
+      "created_at": "2026-10-06T16:40:50.111357+00:00",
+      "symbol": "METUSDT",
+      "direction": "LONG",
+      "title": "$MET Reclaims Key Resistance Level: Flip to Support Complete",
+      "entry_low": 0.328,
+      "entry_high": 0.33,
+      "stop_loss": 0.317,
+      "take_profit": 0.353,
+      "support": 0.3086,
+      "resistance": 0.338,
+      "news_line": "",
+      "technical_analysis": "Price sits above EMA9, EMA21, EMA50 and EMA200, and MACD histogram is positive, confirming bullish momentum. ADX above 35 shows a strong trend. However, RSI 75.5, Stochastic 86 and price above the Bollinger upper band signal overbought conditions, a possible pull‑back risk. Watch for a break below the 0.3086 swing low as a warning.",
+      "market_context": "BTC is in a bullish trend on 4H and 1D timeframes, and the broader market is 59.7% green, adding supportive backdrop for",
+      "result": "PENDING"
     }
   ]
 }
