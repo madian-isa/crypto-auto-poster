@@ -44003,6 +44003,23 @@
       "technical_analysis": "Price sits near the 4‑hour resistance at 22.77, above all EMAs and the Bollinger upper band. RSI 78.6 and stochastic 95.7 signal overbought, while MACD histogram stays positive, showing lingering bullish momentum. Risk is a pull‑back to the 21.58‑20.0 support zone. A break below 22.5 with volume could confirm a short; watch for a move under 22.0 as entry.",
       "market_context": "BTC is in a bullish trend on both 4H and 1D frames, and the overall market breadth is broadly positive, supporting risk‑on",
       "result": "PENDING"
+    },
+    {
+      "id": 2589,
+      "created_at": "2026-10-06T15:40:45.472107+00:00",
+      "symbol": "TAOUSDT",
+      "direction": "LONG",
+      "title": "$TAO Higher Low Structure Confirmed: Long Entry Level Reached",
+      "entry_low": 303.5,
+      "entry_high": 304.5,
+      "stop_loss": 293.3,
+      "take_profit": 325.4,
+      "support": 301.6,
+      "resistance": 307.8,
+      "news_line": "",
+      "technical_analysis": "Price sits above the 9‑, 21‑ and 50‑EMA, MACD line is positive and above its signal, and RSI is neutral‑positive. These bullish signs support a long bias. Stochastic is overbought and order‑book shows ask pressure, flagging a short‑term risk. Watch the 307.8 resistance break for confirmation. This is a conditional technical scenario, not a verified trade or a promise of",
+      "market_context": "BTC remains in a bullish trend on both 4H and 1D, with market breadth broadly positive and 70% of assets green.",
+      "result": "PENDING"
     }
   ]
 }
