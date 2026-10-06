@@ -43680,6 +43680,23 @@
       "technical_analysis": "Price sits above EMA50/200, giving a longer‑term bullish bias. RSI is neutral at 48 and stochastic is low, hinting at upside potential. MACD is still bearish and volume dropped 40%, which could curb the move. Watch for a break above 0.2531 and EMA9 crossing for confirmation. This is a conditional technical scenario, not a verified trade or a promise of",
       "market_context": "BTC is slightly down 0.7% on 24h, while the broader market shows mixed breadth (41% green, 59% red).",
       "result": "PENDING"
+    },
+    {
+      "id": 2570,
+      "created_at": "2026-10-06T08:40:47.894045+00:00",
+      "symbol": "MUBARAKUSDT",
+      "direction": "SHORT",
+      "title": "$MUBARAK Fails Resistance Retest: Bearish Extension Imminent",
+      "entry_low": 0.06908,
+      "entry_high": 0.07194,
+      "stop_loss": 0.0745,
+      "take_profit": 0.06253,
+      "support": 0.065,
+      "resistance": 0.06908,
+      "news_line": "",
+      "technical_analysis": "MUBARAKUSDT sits below key EMAs with RSI at 43, signaling weak momentum. MACD histogram is negative, and stochastic is near oversold but not yet reversing. Resistance at 0.06908 is the immediate ceiling. A break below 0.065 opens the path to 0.0636. Watch for volume expansion on any drop to confirm the move.",
+      "market_context": "BTC is slightly bearish on the 24h chart but remains bullish on higher timeframes, providing a mixed backdrop for altcoins.",
+      "result": "PENDING"
     }
   ]
 }
