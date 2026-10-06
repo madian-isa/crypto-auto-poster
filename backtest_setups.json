@@ -43510,6 +43510,23 @@
       "technical_analysis": "SUI is trading below its 9, 21, and 50 EMAs, with a negative MACD histogram and RSI at 43.89, indicating bearish momentum. The 4H structure shows rejection from resistance. Risk rises if price reclaims the 50 EMA at 1.204. Watch for a break below 1.185 support to confirm the downside move.",
       "market_context": "Bitcoin is in a bullish 4H trend but mixed 24h, with 55.5% of the market red. SUI remains underperforming relative to the",
       "result": "PENDING"
+    },
+    {
+      "id": 2560,
+      "created_at": "2026-10-06T06:20:49.456095+00:00",
+      "symbol": "OGNUSDT",
+      "direction": "LONG",
+      "title": "$OGN Higher Low Structure Confirmed: Long Entry Level Reached",
+      "entry_low": 0.0218,
+      "entry_high": 0.0221,
+      "stop_loss": 0.021,
+      "take_profit": 0.02385,
+      "support": 0.02159,
+      "resistance": 0.024,
+      "news_line": "",
+      "technical_analysis": "Price sits above EMA9/21/50 and ADX shows a strong trend, supporting a bullish bias. EMA alignment and price breaking the 0.02218 support suggest upside toward the 0.024 1‑hour resistance. Counter‑signals are a bearish MACD histogram and Stochastic under 40, plus order‑book sell pressure. Watch a clear break above 0.0233 for confirmation; a drop below 0.0215 would invalidate the setup.",
+      "market_context": "BTC is down 0.8% on the day, with a mixed 4‑hour trend and overall market breadth still negative (38% green, 62% red).",
+      "result": "PENDING"
     }
   ]
 }
