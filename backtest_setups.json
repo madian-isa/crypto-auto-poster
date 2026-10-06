@@ -44360,6 +44360,23 @@
       "technical_analysis": "Price sits near the 1H/4H support at 0.2036 while the EMA200 is above the price, indicating a downtrend. The MACD histogram is positive but the line is negative, and Stochastic D is above K, hinting at a pull‑back. A short entry around 0.2045 targets the 2R level at 0.1901, with the SL set 3.5% above at 0.2117.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 2610,
+      "created_at": "2026-10-06T20:40:55.388969+00:00",
+      "symbol": "DASHUSDT",
+      "direction": "SHORT",
+      "title": "$DASH Distribution Phase Ends: Downside Target Zone Set",
+      "entry_low": 56.3,
+      "entry_high": 56.45,
+      "stop_loss": 58.35,
+      "take_profit": 52.425,
+      "support": 55.87,
+      "resistance": 57.77,
+      "news_line": "",
+      "technical_analysis": "Price sits below EMA9, EMA21, EMA50 and EMA200, confirming a downtrend. MACD is negative with a widening histogram, and ADX at 40 signals a strong trend. RSI and Stochastic are deep oversold, offering a possible bounce but the order‑book shows buying pressure. A break above 57.77 resistance would challenge the short bias; a hold above 56.12 support could trigger a",
+      "market_context": "BTC shows bullish 4h and 1d EMAs while the broader market is broadly negative, with a 66.9% red asset ratio and a",
+      "result": "PENDING"
     }
   ]
 }
