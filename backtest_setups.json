@@ -43918,6 +43918,23 @@
       "technical_analysis": "Price sits above the EMA9‑21‑50 cluster and the EMA200, indicating bullish bias. Order‑book shows a 14% bid‑side imbalance, supporting upside. RSI at 54 is neutral, while MACD remains below its signal, a bearish warning. Watch for a break above the 1‑hour resistance 184.6 to confirm; a drop below 181.3 could flip the trade.",
       "market_context": "BTC is in a bullish 4‑hour and daily trend, trading around $86.3k, while overall market breadth is mixed (51.6% green). AAVE’s move",
       "result": "PENDING"
+    },
+    {
+      "id": 2584,
+      "created_at": "2026-10-06T13:50:44.672169+00:00",
+      "symbol": "PUMPUSDT",
+      "direction": "SHORT",
+      "title": "Bearish Divergence Spotted on $PUMP: Downside Targets Ahead",
+      "entry_low": 0.00644,
+      "entry_high": 0.00646,
+      "stop_loss": 0.00668,
+      "take_profit": 0.00599,
+      "support": 0.006173,
+      "resistance": 0.006465,
+      "news_line": "",
+      "technical_analysis": "Price is just below the 1‑hour resistance of 0.006465. EMA9 (0.006357) and EMA21 (0.006367) sit above the market, MACD histogram is negative and stochastic K is under 40, indicating short‑term downside. Order‑book shows a 16% bid imbalance supporting the bias. A break under 0.00645 confirms the short; a bounce above 0.00648 risks reversal.",
+      "market_context": "BTC remains bullish on 4‑hour and daily timeframes, up 0.145% today, while overall market breadth is mixed with 55.4% of assets green.",
+      "result": "PENDING"
     }
   ]
 }
