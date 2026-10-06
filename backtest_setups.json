@@ -44071,6 +44071,23 @@
       "technical_analysis": "Price sits above EMA9, EMA21, EMA50 and EMA200, and MACD histogram is positive, confirming bullish momentum. ADX above 35 shows a strong trend. However, RSI 75.5, Stochastic 86 and price above the Bollinger upper band signal overbought conditions, a possible pull‑back risk. Watch for a break below the 0.3086 swing low as a warning.",
       "market_context": "BTC is in a bullish trend on 4H and 1D timeframes, and the broader market is 59.7% green, adding supportive backdrop for",
       "result": "PENDING"
+    },
+    {
+      "id": 2593,
+      "created_at": "2026-10-06T16:50:50.835588+00:00",
+      "symbol": "ACEUSDT",
+      "direction": "LONG",
+      "title": "Buyers Defend Key Demand Zone: $ACE Ready for Extension",
+      "entry_low": 0.196,
+      "entry_high": 0.197,
+      "stop_loss": 0.1895,
+      "take_profit": 0.2105,
+      "support": 0.1931,
+      "resistance": 0.198,
+      "news_line": "",
+      "technical_analysis": "Price sits just below the 1‑hour resistance at 0.198, holding above the EMA9/21/50 cluster and a bullish MACD histogram. RSI at 66 and ADX 34 confirm upward momentum, while the stochastic at 87 signals overbought conditions. A break above 0.198 could trigger a swing long; watch for a pull‑back below 0.1931 as a risk.",
+      "market_context": "BTC remains in a bullish 4‑hour and daily trend, trading above its EMA20/50, supporting risk‑on sentiment. The broader market shows 58.8% green",
+      "result": "PENDING"
     }
   ]
 }
