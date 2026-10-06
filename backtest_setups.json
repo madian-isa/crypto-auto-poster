@@ -44445,6 +44445,23 @@
       "technical_analysis": "Price sits below EMA9, EMA21, EMA50 and EMA200, confirming a downtrend. MACD is negative and RSI at 27 shows oversold conditions, while Stochastic K is under 10. A bid‑side order‑book imbalance hints at minor buying pressure, but a break above EMA200 (0.809) would challenge the short bias. Watch for a retest of the 0.804 resistance as entry confirmation.",
       "market_context": "BTC shows mixed signals: 4h and 1d trends are bullish, yet 24h price is down and overall market breadth is broadly negative.",
       "result": "PENDING"
+    },
+    {
+      "id": 2615,
+      "created_at": "2026-10-06T23:10:52.474301+00:00",
+      "symbol": "XAUTUSDT",
+      "direction": "SHORT",
+      "title": "Bearish Divergence Spotted on $XAUT: Downside Targets Ahead",
+      "entry_low": 4164.5,
+      "entry_high": 4165.5,
+      "stop_loss": 4331.6,
+      "take_profit": 3831.8,
+      "support": 4144.6,
+      "resistance": 4168.48,
+      "news_line": "",
+      "technical_analysis": "Price sits just below the 1‑hour resistance (4168.48) while staying above the short‑term EMAs (9,21,50) and the MACD histogram remains positive. The order‑book shows a 10 % bid imbalance, supporting a near‑term downside bias. Weak ADX and falling volume warn of a fragile move. Watch a break below 4164 for confirmation; a clear bounce above 4168 would flip the bias.",
+      "market_context": "BTC is in a mixed 4‑hour trend but overall bearish on the day, with a 0.6 % drop and broadly negative market",
+      "result": "PENDING"
     }
   ]
 }
