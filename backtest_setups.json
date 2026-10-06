@@ -44241,6 +44241,23 @@
       "technical_analysis": "Price sits above EMA9, EMA21 and EMA50, confirming an uptrend. ADX 33 signals a strong trend and the order book shows a 6% bid imbalance, adding buying pressure. RSI 58 and Stoch near 50 keep momentum neutral. A negative MACD histogram and sharply falling volume are risks. Watch the 0.02599 resistance; a break supports a long entry around 0.02555‑0.02570.",
       "market_context": "BTC is bullish on 4H and 1D charts, but the overall market shows mixed breadth with 52.7% red assets and a 0.1%",
       "result": "PENDING"
+    },
+    {
+      "id": 2603,
+      "created_at": "2026-10-06T19:20:52.153137+00:00",
+      "symbol": "PENGUUSDT",
+      "direction": "SHORT",
+      "title": "$PENGU Volume Decreases on Rally: Weak Buyers Exposed",
+      "entry_low": 0.00938,
+      "entry_high": 0.0094,
+      "stop_loss": 0.00973,
+      "take_profit": 0.00871,
+      "support": 0.009322,
+      "resistance": 0.009381,
+      "news_line": "",
+      "technical_analysis": "Price sits just above the 1‑hour resistance of 0.009381 while under all EMA lines (9, 21, 50, 200). RSI at 42 and a negative MACD histogram keep pressure bearish. Stochastic is deep oversold, hinting at a possible bounce, but the order‑book shows modest buying. A retest and break below 0.009381 would confirm a short.",
+      "market_context": "BTC is mixed on the 4‑hour chart and bearish on the daily, down 0.3% with market breadth broadly negative (62.7% red).",
+      "result": "PENDING"
     }
   ]
 }
