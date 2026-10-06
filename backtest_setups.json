@@ -43425,6 +43425,23 @@
       "technical_analysis": "Price sits below EMA9, EMA21, EMA50 and EMA200, confirming a bearish structure. MACD is negative and ADX at 33 shows a strong trend. RSI at 16 is oversold, a possible short‑term bounce risk. Watch the 0.1336 support; a break confirms the target. This is a conditional technical scenario, not a verified trade or a promise of direction.",
       "market_context": "BTC is in a bullish trend on 4H and daily charts, while the overall market breadth is mixed. This broader strength does",
       "result": "PENDING"
+    },
+    {
+      "id": 2555,
+      "created_at": "2026-10-06T05:00:58.675963+00:00",
+      "symbol": "EDUUSDT",
+      "direction": "LONG",
+      "title": "Trend Reversal Confirmed for $EDU as Volume Spikes Upward",
+      "entry_low": 0.061,
+      "entry_high": 0.0615,
+      "stop_loss": 0.0587,
+      "take_profit": 0.06635,
+      "support": 0.0587,
+      "resistance": 0.0633,
+      "news_line": "",
+      "technical_analysis": "EDU is trading above EMA9, EMA21 and EMA50, with RSI at 61 and Stochastic K (66) above D, indicating bullish momentum. ADX at 47 confirms a strong trend. MACD histogram is negative, warning of possible pull‑back near the 0.0633 resistance. Watch for a break above 0.0633 to validate the long bias.",
+      "market_context": "BTC remains bullish on higher timeframes, supporting risk‑on sentiment, but overall market breadth is mixed.",
+      "result": "PENDING"
     }
   ]
 }
