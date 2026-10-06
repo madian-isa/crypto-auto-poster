@@ -43170,6 +43170,23 @@
       "technical_analysis": "Price sits below EMA9, EMA21, EMA50 and EMA200, confirming bearish momentum. MACD histogram is negative and Stochastic K (25) is under its D line, adding downside pressure. RSI at 39.8 hints at slight oversold but not a reversal. Order‑book shows a bid‑side imbalance, a modest bullish counter‑signal. Watch for a break below the 1H/4H support at 57.71 to validate the",
       "market_context": "BTC is marginally bearish on the 24h chart (-0.9%). Overall market breadth is mixed, with 54.5% of assets green and 45.5% red.",
       "result": "PENDING"
+    },
+    {
+      "id": 2540,
+      "created_at": "2026-10-06T00:00:55.750755+00:00",
+      "symbol": "RLCUSDT",
+      "direction": "LONG",
+      "title": "$RLC Breaks Out of Falling Wedge Pattern: Targets Set Higher",
+      "entry_low": 0.724,
+      "entry_high": 0.727,
+      "stop_loss": 0.6926,
+      "take_profit": 0.7913,
+      "support": 0.6337,
+      "resistance": 0.7396,
+      "news_line": "",
+      "technical_analysis": "Price sits near the 4‑hour resistance at 0.73. EMA hierarchy is intact and MACD histogram stays positive, confirming bullish momentum. RSI and Stoch are deep in overbought territory, warning of a possible pullback. A break above 0.73 with volume holding could validate a long swing; watch the 0.7396 ceiling and a drop back under 0.6926 as risk.",
+      "market_context": "BTC is bullish on 4‑hour and daily charts, though 24‑hour price is slightly down. Overall market breadth is mixed with a slight",
+      "result": "PENDING"
     }
   ]
 }
