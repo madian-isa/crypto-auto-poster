@@ -43799,6 +43799,23 @@
       "technical_analysis": "Price sits just above EMA9 and EMA200, with EMA21/50 hugging the level, indicating upward bias. MACD histogram turned positive and Stochastic is above 50, supporting a bounce toward the 1.5095 resistance. ADX is low, showing weak trend, and orderbook shows ask pressure – a risk of rejection. Watch 1.5095; a break above could target the next swing high.",
       "market_context": "BTC slipped 0.2% in 24h, keeping a bearish tone while the overall market shows mixed breadth.",
       "result": "PENDING"
+    },
+    {
+      "id": 2577,
+      "created_at": "2026-10-06T10:30:54.866058+00:00",
+      "symbol": "DOGEUSDT",
+      "direction": "SHORT",
+      "title": "Major Support Breakdown Confirmed on $DOGE Higher Timeframes",
+      "entry_low": 0.0959,
+      "entry_high": 0.0961,
+      "stop_loss": 0.09936,
+      "take_profit": 0.08928,
+      "support": 0.09475,
+      "resistance": 0.09611,
+      "news_line": "",
+      "technical_analysis": "Price sits just below the 4H resistance at 0.09611. EMA9 is under price while EMA21 sits above, a bearish divergence. MACD is negative and the stochastic K/D are below 50, confirming downside pressure. RSI is neutral and ADX is low, so the trend is weak. Watch for a break below the 1H support 0.09475 for confirmation.",
+      "market_context": "BTC remains in a bullish 4H and daily trend, but overall market breadth is mixed. DOGE's order book shows a 9.8% ask‑side",
+      "result": "PENDING"
     }
   ]
 }
