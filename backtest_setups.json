@@ -44037,6 +44037,23 @@
       "technical_analysis": "Price is below all EMAs and MACD histogram is negative, showing bearish momentum. Stochastic K near zero and price under the lower Bollinger band suggest oversold conditions that may bounce to the 4‑hour resistance near 6.12. Order‑book shows strong bids, but a break above 6.12 would invalidate the short. Watch for a retest of 6.05‑6.07 entry and a stop around",
       "market_context": "BTC remains bullish on higher timeframes and the broader market is broadly positive, supporting risk appetite.",
       "result": "PENDING"
+    },
+    {
+      "id": 2591,
+      "created_at": "2026-10-06T16:01:02.527891+00:00",
+      "symbol": "USD1USDT",
+      "direction": "LONG",
+      "title": "High R-Multiple Long Trade Setup Forming on $USD1",
+      "entry_low": 0.99967,
+      "entry_high": 0.99968,
+      "stop_loss": 0.96468,
+      "take_profit": 1.069665,
+      "support": 0.99967,
+      "resistance": 0.99971,
+      "news_line": "",
+      "technical_analysis": "Price sits at the 1‑hour support (0.99967) with RSI 35 and Stochastic K 3, suggesting oversold conditions. Order‑book shows a 16% bid imbalance, adding buying pressure. However, MACD is negative and price is below all EMAs and the lower Bollinger band, a bearish bias. Watch for a break above 0.99971 to confirm the upside.",
+      "market_context": "BTC remains bullish on 4‑hour and daily frames, and the broader market is broadly positive.",
+      "result": "PENDING"
     }
   ]
 }
