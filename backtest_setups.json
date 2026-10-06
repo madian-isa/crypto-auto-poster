@@ -43867,6 +43867,23 @@
       "technical_analysis": "SKYUSDT sits just below its 1‑hour resistance at 0.08886. EMA9 is under EMA21 and EMA50, indicating short‑term down pressure. Stochastic K is near 78 while RSI is sub‑50, adding overbought warning. MACD histogram is modestly positive, a mild bullish counter. Watch a break below 0.08930 for entry; a bounce above 0.0924 would stop the trade.",
       "market_context": "BTC is in a bullish trend on both 4‑hour and daily charts, supporting risk‑on sentiment, while overall market breadth is mixed (51.6%",
       "result": "PENDING"
+    },
+    {
+      "id": 2581,
+      "created_at": "2026-10-06T11:50:47.860337+00:00",
+      "symbol": "NMRUSDT",
+      "direction": "SHORT",
+      "title": "Major Support Breakdown Confirmed on $NMR Higher Timeframes",
+      "entry_low": 11.94,
+      "entry_high": 11.96,
+      "stop_loss": 12.38,
+      "take_profit": 11.09,
+      "support": 11.86,
+      "resistance": 18.99,
+      "news_line": "",
+      "technical_analysis": "Price sits just below EMA9 (11.95) and EMA21 (11.94), while MACD histogram is negative, indicating bearish momentum. RSI is neutral at 51 and stochastic shows K above D, offering a mild upside bias. The main risk is a bounce off the tight 11.93‑11.96 range; a break below 11.86 would confirm the short.",
+      "market_context": "BTC remains in a bullish trend on higher timeframes, while overall market breadth is mixed. This broader strength does not offset the",
+      "result": "PENDING"
     }
   ]
 }
