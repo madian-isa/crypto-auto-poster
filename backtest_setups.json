@@ -43476,6 +43476,23 @@
       "technical_analysis": "UMA is trading above its 9‑, 21‑ and 200‑EMA, confirming a bullish bias. ADX at 54 shows a strong trend, while RSI 58 and Stochastic 74 suggest upward momentum. The MACD histogram is slightly negative, hinting at possible short‑term weakness. A break above the 0.433 resistance would reinforce the long case; a fall back through 0.418 would challenge it.",
       "market_context": "BTC remains bullish on higher timeframes, supporting risk‑on sentiment.",
       "result": "PENDING"
+    },
+    {
+      "id": 2558,
+      "created_at": "2026-10-06T05:40:43.192203+00:00",
+      "symbol": "API3USDT",
+      "direction": "LONG",
+      "title": "Major Breakout Signals Emerge on $API3 Higher Timeframes",
+      "entry_low": 0.312,
+      "entry_high": 0.315,
+      "stop_loss": 0.301,
+      "take_profit": 0.3385,
+      "support": 0.3031,
+      "resistance": 0.3334,
+      "news_line": "",
+      "technical_analysis": "Price at 0.3161 sits above EMA9 (0.3114), EMA21 (0.3063) and EMA50 (0.3001), confirming an uptrend. MACD histogram is positive, RSI near 60 and ADX at 53 show strong momentum; Stochastic K exceeds D. Risk: volume fell 76% and order‑book imbalance is sell‑heavy. Watch a break below 0.3031 for downside or a clear move above 0.3334 for upside.",
+      "market_context": "BTC is down 0.17% over 24 h, showing a bearish tilt while the overall market is mixed (46.8% green, 53.2% red).",
+      "result": "PENDING"
     }
   ]
 }

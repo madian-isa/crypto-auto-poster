@@ -1,6 +1,6 @@
 {
   "date": "2026-10-06",
-  "count": 18,
+  "count": 19,
   "posted_symbols_today": [
     "RLCUSDT",
     "MOVRUSDT",
@@ -19,6 +19,7 @@
     "MINAUSDT",
     "EDUUSDT",
     "SPCXBUSDT",
-    "UMAUSDT"
+    "UMAUSDT",
+    "API3USDT"
   ]
 }
