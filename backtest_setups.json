@@ -44088,6 +44088,23 @@
       "technical_analysis": "Price sits just below the 1‑hour resistance at 0.198, holding above the EMA9/21/50 cluster and a bullish MACD histogram. RSI at 66 and ADX 34 confirm upward momentum, while the stochastic at 87 signals overbought conditions. A break above 0.198 could trigger a swing long; watch for a pull‑back below 0.1931 as a risk.",
       "market_context": "BTC remains in a bullish 4‑hour and daily trend, trading above its EMA20/50, supporting risk‑on sentiment. The broader market shows 58.8% green",
       "result": "PENDING"
+    },
+    {
+      "id": 2594,
+      "created_at": "2026-10-06T17:00:59.464248+00:00",
+      "symbol": "HYPEUSDT",
+      "direction": "LONG",
+      "title": "High R-Multiple Long Trade Setup Forming on $HYPE",
+      "entry_low": 91.65,
+      "entry_high": 91.75,
+      "stop_loss": 88.3,
+      "take_profit": 98.5,
+      "support": 90.12,
+      "resistance": 93.62,
+      "news_line": "",
+      "technical_analysis": "Price sits just below the lower Bollinger band and the 200‑EMA, while stochastic K is deep oversold (~4). Order‑book shows a modest bid bias. These suggest a potential bounce toward the 1H/4H resistance at 93.62. Bearish MACD and EMA9 above price are risks. Watch for a break above 92.5 to confirm upside.",
+      "market_context": "BTC remains bullish on higher timeframes, supporting a generally positive market tone.",
+      "result": "PENDING"
     }
   ]
 }
