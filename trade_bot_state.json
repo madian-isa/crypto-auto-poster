@@ -1,6 +1,6 @@
 {
   "date": "2026-10-06",
-  "count": 26,
+  "count": 27,
   "posted_symbols_today": [
     "RLCUSDT",
     "MOVRUSDT",
@@ -27,6 +27,7 @@
     "AVAXUSDT",
     "VTHOUSDT",
     "\u725b\u6765USDT",
-    "ETHUSDT"
+    "ETHUSDT",
+    "BNBUSDT"
   ]
 }
