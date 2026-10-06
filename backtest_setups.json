@@ -43986,6 +43986,23 @@
       "technical_analysis": "Price sits above EMA9/21/50 and EMA200, with MACD line above signal and a positive histogram. RSI at 58 and ADX 28 confirm an ongoing uptrend. Stochastic nearing overbought and tight 2.1829‑2.1971 range act as short‑term ceiling. Watch for a break above 2.2388 for confirmation; a drop below 2.106 may flip bias.",
       "market_context": "BTC holds a bullish 4‑hour trend, up 1.2% today, and the overall market is broadly positive with about 68% green assets.",
       "result": "PENDING"
+    },
+    {
+      "id": 2588,
+      "created_at": "2026-10-06T15:20:58.101255+00:00",
+      "symbol": "TRBUSDT",
+      "direction": "SHORT",
+      "title": "Strong Rejection at Trendline Resistance: $TRB Short Entry",
+      "entry_low": 22.45,
+      "entry_high": 22.55,
+      "stop_loss": 23.3,
+      "take_profit": 20.9,
+      "support": 20.0,
+      "resistance": 22.77,
+      "news_line": "",
+      "technical_analysis": "Price sits near the 4‑hour resistance at 22.77, above all EMAs and the Bollinger upper band. RSI 78.6 and stochastic 95.7 signal overbought, while MACD histogram stays positive, showing lingering bullish momentum. Risk is a pull‑back to the 21.58‑20.0 support zone. A break below 22.5 with volume could confirm a short; watch for a move under 22.0 as entry.",
+      "market_context": "BTC is in a bullish trend on both 4H and 1D frames, and the overall market breadth is broadly positive, supporting risk‑on",
+      "result": "PENDING"
     }
   ]
 }
