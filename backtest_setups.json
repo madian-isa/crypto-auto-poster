@@ -43748,6 +43748,23 @@
       "technical_analysis": "SOL trades just above EMA9 and EMA200, with EMA hierarchy mostly upward. Stochastic K sits above D at 54, indicating mild buying pressure, and order‑book shows a 32% bid imbalance. MACD is slightly negative and RSI is neutral, warning of limited upside. Watch a clear break above 121.28 for confirmation; a drop below 118.93 would invalidate the trade.",
       "market_context": "BTC is down 0.07% over 24h and the overall market breadth is broadly negative, but SOL remains above key EMAs, showing relative",
       "result": "PENDING"
+    },
+    {
+      "id": 2574,
+      "created_at": "2026-10-06T09:40:51.686744+00:00",
+      "symbol": "WLDUSDT",
+      "direction": "SHORT",
+      "title": "$WLD Derivative Data Shows Heavy Long Liquidations Incoming",
+      "entry_low": 0.562,
+      "entry_high": 0.564,
+      "stop_loss": 0.585,
+      "take_profit": 0.519,
+      "support": 0.5581,
+      "resistance": 0.5826,
+      "news_line": "",
+      "technical_analysis": "WLD is trading below key EMAs with negative MACD momentum, signaling downward pressure. Volume is drying up, suggesting weak upside conviction. While the 200 EMA offers long-term support, the immediate structure favors a drop. Watch for a break below 0.5581 to confirm the short move, as a bounce above 0.5826 would invalidate this setup.",
+      "market_context": "Bitcoin is showing mixed signals with a bullish 4H trend but bearish 24h momentum. The broader market is balanced with similar green",
+      "result": "PENDING"
     }
   ]
 }
