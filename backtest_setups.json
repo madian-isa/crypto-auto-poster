@@ -43255,6 +43255,23 @@
       "technical_analysis": "Price sits just below the 4‑hour resistance at 0.381. EMA9‑21‑50‑200 sit under price, confirming an uptrend, while RSI 73 and Stoch 92 signal overbought. MACD histogram remains positive but order‑book shows slight ask pressure. A break under 0.370 may trigger a short to 0.344, SL near 0.389 as a risk management target.",
       "market_context": "BTC down 1.2% on the day, market breadth broadly negative with 67% red assets.",
       "result": "PENDING"
+    },
+    {
+      "id": 2545,
+      "created_at": "2026-10-06T02:10:49.708920+00:00",
+      "symbol": "ORCAUSDT",
+      "direction": "LONG",
+      "title": "Strong Accumulation Detected: $ORCA Prepares for Next Wave Up",
+      "entry_low": 2.33,
+      "entry_high": 2.35,
+      "stop_loss": 2.25,
+      "take_profit": 2.52,
+      "support": 1.969,
+      "resistance": 2.507,
+      "news_line": "",
+      "technical_analysis": "ORCA trades above EMA9, EMA21, EMA50 and EMA200, showing clear upward bias. MACD line sits above its signal with a positive histogram, and ADX above 50 confirms a strong trend. RSI and Stochastic are overbought, flagging a reversal risk. Watch for a break above the Bollinger upper (2.426) for confirmation, or a slip below 2.33 as a warning.",
+      "market_context": "BTC is in a short‑term bearish phase and overall market breadth is negative, but ORCA’s internal momentum remains bullish.",
+      "result": "PENDING"
     }
   ]
 }
