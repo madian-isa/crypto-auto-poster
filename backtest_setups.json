@@ -44394,6 +44394,23 @@
       "technical_analysis": "Price sits below EMA9/21/50, confirming a down bias. RSI at 43 and Stochastic K at 31 show neutral‑to‑oversold conditions. MACD line is marginally above its signal, a faint bullish hint, while ADX 15 signals a weak trend. Order‑book shows a bid imbalance, adding a modest upside risk. Watch the 0.0999 support; a break could validate the short.",
       "market_context": "BTC is in a bearish 4H and 1D trend, and the overall market is broadly negative, reinforcing downside pressure on altcoins.",
       "result": "PENDING"
+    },
+    {
+      "id": 2612,
+      "created_at": "2026-10-06T21:50:49.735112+00:00",
+      "symbol": "ICPUSDT",
+      "direction": "SHORT",
+      "title": "Technical Signals Turn Negative as $ICP Selling Pressure Rises",
+      "entry_low": 3.425,
+      "entry_high": 3.436,
+      "stop_loss": 3.56,
+      "take_profit": 3.1715,
+      "support": 3.355,
+      "resistance": 3.436,
+      "news_line": "",
+      "technical_analysis": "Price sits below the 9‑EMA (3.428) and 21‑EMA (3.445). MACD is negative and RSI 41, pointing to short‑term bearish pressure. Stochastic is deep oversold (K 16) and ADX 31 signals a strong trend. Order‑book shows a bid bias, a possible bounce risk. A break below 1H/4H support at 3.355 confirms the short bias; a move above 3.436 would flip the",
+      "market_context": "BTC is bullish on 4H and 1D timeframes, but the broader market is broadly negative, with BTC down 0.4% and 68% of",
+      "result": "PENDING"
     }
   ]
 }
