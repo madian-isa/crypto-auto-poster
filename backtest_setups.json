@@ -43629,6 +43629,23 @@
       "technical_analysis": "BNB sits near the 1‑hour resistance at ~783. Price is under EMA9, EMA21 and EMA50, while MACD remains bearish and the histogram is negative. RSI (31) and Stochastic (≈9) point to oversold conditions, offering a possible short‑term rebound. A break above 783 would confirm a short setup; watch for a move below 778 as a risk.",
       "market_context": "BTC is down 1.1% on the 24‑hour chart, with a mixed 4‑hour trend and a bullish daily trend, while overall market breadth",
       "result": "PENDING"
+    },
+    {
+      "id": 2567,
+      "created_at": "2026-10-06T08:01:02.123205+00:00",
+      "symbol": "ZECUSDT",
+      "direction": "SHORT",
+      "title": "High Volume Selling Sweep Breaks $ZEC Market Structure",
+      "entry_low": 1335.6,
+      "entry_high": 1337.5,
+      "stop_loss": 1390.012,
+      "take_profit": 1229.626,
+      "support": 1333.97,
+      "resistance": 1341.59,
+      "news_line": "",
+      "technical_analysis": "Price sits near the 9‑EMA and the upper Bollinger band, while MACD is below its signal, indicating a potential pullback. The best ask at 1337.36 suggests short‑side pressure. A short entry around 1336 with SL near 1360 (3.5% above) and TP at 1287 (2R) aligns with the 1H swing structure. Watch for a bounce above 1341.59 as a risk.",
+      "market_context": "BTC is in a bullish 4H trend but the broader market remains negative, which could support a short move in ZEC.",
+      "result": "PENDING"
     }
   ]
 }
