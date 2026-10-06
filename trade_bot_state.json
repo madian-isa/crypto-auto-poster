@@ -1,6 +1,6 @@
 {
   "date": "2026-10-06",
-  "count": 39,
+  "count": 40,
   "posted_symbols_today": [
     "RLCUSDT",
     "MOVRUSDT",
@@ -40,6 +40,7 @@
     "SCRUSDT",
     "XRPUSDT",
     "DOGEUSDT",
-    "UNIUSDT"
+    "UNIUSDT",
+    "C98USDT"
   ]
 }
