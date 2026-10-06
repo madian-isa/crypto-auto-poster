@@ -44105,6 +44105,23 @@
       "technical_analysis": "Price sits just below the lower Bollinger band and the 200‑EMA, while stochastic K is deep oversold (~4). Order‑book shows a modest bid bias. These suggest a potential bounce toward the 1H/4H resistance at 93.62. Bearish MACD and EMA9 above price are risks. Watch for a break above 92.5 to confirm upside.",
       "market_context": "BTC remains bullish on higher timeframes, supporting a generally positive market tone.",
       "result": "PENDING"
+    },
+    {
+      "id": 2595,
+      "created_at": "2026-10-06T17:10:48.619607+00:00",
+      "symbol": "CHIPUSDT",
+      "direction": "SHORT",
+      "title": "$CHIP Breaks Ascending Support Line: Bearish Momentum Surge",
+      "entry_low": 0.0521,
+      "entry_high": 0.0522,
+      "stop_loss": 0.0545,
+      "take_profit": 0.04745,
+      "support": 0.05065,
+      "resistance": 0.05272,
+      "news_line": "",
+      "technical_analysis": "Price sits just below the 1‑hour resistance at 0.05272, with EMA9 above EMA21 and EMA50, indicating an underlying uptrend. However MACD histogram is negative and the order‑book shows a 13.9 % sell imbalance, while Stochastic is deep in oversold territory (K ≈ 29). The bearish bias dominates, making a short near 0.0521‑0.0522 reasonable. Watch for a break above 0.0545 to",
+      "market_context": "BTC remains bullish on 4‑hour and daily charts, trading around $85,600, supporting overall market optimism.",
+      "result": "PENDING"
     }
   ]
 }
