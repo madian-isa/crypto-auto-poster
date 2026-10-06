@@ -44258,6 +44258,23 @@
       "technical_analysis": "Price sits just above the 1‑hour resistance of 0.009381 while under all EMA lines (9, 21, 50, 200). RSI at 42 and a negative MACD histogram keep pressure bearish. Stochastic is deep oversold, hinting at a possible bounce, but the order‑book shows modest buying. A retest and break below 0.009381 would confirm a short.",
       "market_context": "BTC is mixed on the 4‑hour chart and bearish on the daily, down 0.3% with market breadth broadly negative (62.7% red).",
       "result": "PENDING"
+    },
+    {
+      "id": 2604,
+      "created_at": "2026-10-06T19:30:51.509896+00:00",
+      "symbol": "RESOLVUSDT",
+      "direction": "LONG",
+      "title": "$RESOLV Breaks Out of Falling Wedge Pattern: Targets Set Higher",
+      "entry_low": 0.02099,
+      "entry_high": 0.0212,
+      "stop_loss": 0.02025,
+      "take_profit": 0.022785,
+      "support": 0.01911,
+      "resistance": 0.022,
+      "news_line": "",
+      "technical_analysis": "Price sits above EMA9, EMA21, EMA50 and EMA200, while MACD histogram stays positive, confirming a bullish trend. ADX above 30 shows strength. RSI 83.5 and Stochastic 93% signal overbought conditions, a reversal risk. Order‑book imbalance is bearish. Watch the 0.022 resistance level for a break or pull‑back. This is a conditional technical scenario, not a verified trade or a promise",
+      "market_context": "BTC is in a short‑term bearish dip, and the broader market is broadly negative, with more red than green assets.",
+      "result": "PENDING"
     }
   ]
 }
