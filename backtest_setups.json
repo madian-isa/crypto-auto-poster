@@ -43935,6 +43935,23 @@
       "technical_analysis": "Price is just below the 1‑hour resistance of 0.006465. EMA9 (0.006357) and EMA21 (0.006367) sit above the market, MACD histogram is negative and stochastic K is under 40, indicating short‑term downside. Order‑book shows a 16% bid imbalance supporting the bias. A break under 0.00645 confirms the short; a bounce above 0.00648 risks reversal.",
       "market_context": "BTC remains bullish on 4‑hour and daily timeframes, up 0.145% today, while overall market breadth is mixed with 55.4% of assets green.",
       "result": "PENDING"
+    },
+    {
+      "id": 2585,
+      "created_at": "2026-10-06T14:01:07.086759+00:00",
+      "symbol": "RVNUSDT",
+      "direction": "SHORT",
+      "title": "$RVN Rejection at Key Supply Zone: Short Setup Activated",
+      "entry_low": 0.002394,
+      "entry_high": 0.002396,
+      "stop_loss": 0.00248,
+      "take_profit": 0.002225,
+      "support": 0.002366,
+      "resistance": 0.002466,
+      "news_line": "",
+      "technical_analysis": "RVN is trading below its EMA9 (0.002414) and EMA21 (0.002423), while the MACD line sits under the signal, pointing to short pressure. RSI sits at 45 and Stochastic is deep oversold (~22), offering a modest upside counter‑signal. ADX at 33 confirms a strong trend. A break above the 1H resistance 0.002466 would invalidate the short case.",
+      "market_context": "BTC holds a bullish trend on 4H and daily charts, while overall market shows a modest green bias (57% up).",
+      "result": "PENDING"
     }
   ]
 }
