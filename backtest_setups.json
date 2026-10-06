@@ -43442,6 +43442,23 @@
       "technical_analysis": "EDU is trading above EMA9, EMA21 and EMA50, with RSI at 61 and Stochastic K (66) above D, indicating bullish momentum. ADX at 47 confirms a strong trend. MACD histogram is negative, warning of possible pull‑back near the 0.0633 resistance. Watch for a break above 0.0633 to validate the long bias.",
       "market_context": "BTC remains bullish on higher timeframes, supporting risk‑on sentiment, but overall market breadth is mixed.",
       "result": "PENDING"
+    },
+    {
+      "id": 2556,
+      "created_at": "2026-10-06T05:10:42.608132+00:00",
+      "symbol": "SPCXBUSDT",
+      "direction": "SHORT",
+      "title": "$SPCXB Prepares for Breakdown: Downside Risk Escalates",
+      "entry_low": 171.77,
+      "entry_high": 172.13,
+      "stop_loss": 178.0,
+      "take_profit": 159.85,
+      "support": 171.27,
+      "resistance": 172.13,
+      "news_line": "",
+      "technical_analysis": "Price sits near the 4‑hour resistance at 172.13, with EMA9‑21‑50‑200 below, confirming an uptrend. Yet RSI 79 and Stochastic 90 show overbought, volume dropped 75% and the order book has a 15% ask‑side imbalance. Short between 171.77‑172.13, SL ~178, TP ~160 targets a break below 1‑hour support 171.27. Watch for a bounce above 172.13 as risk.",
+      "market_context": "BTC is bullish on 4h and daily charts, while overall market breadth is mixed (45% green, 55% red).",
+      "result": "PENDING"
     }
   ]
 }
