@@ -45754,6 +45754,23 @@
       "technical_analysis": "Price sits just under the 1‑hour resistance at 0.04971, below EMA21 (0.04964) and EMA50 (0.05081). RSI at 40 and Stochastic around 32 signal bearish momentum. ADX 34 shows a firm trend. MACD is marginally bullish and order‑book a slight bid bias, but volume fell 69%. A break below 0.04825 confirms the short bias; hold above 0.04971 could flip sentiment.",
       "market_context": "BTC down 2.5% in 24 h, market breadth 84.5% red, reinforcing bearish pressure on altcoins.",
       "result": "PENDING"
+    },
+    {
+      "id": 2692,
+      "created_at": "2026-10-07T23:50:48.156210+00:00",
+      "symbol": "GRAMUSDT",
+      "direction": "SHORT",
+      "title": "$GRAM Rejection at Key Supply Zone: Short Setup Activated",
+      "entry_low": 1.442,
+      "entry_high": 1.445,
+      "stop_loss": 1.495,
+      "take_profit": 1.3405,
+      "support": 1.434,
+      "resistance": 1.445,
+      "news_line": "",
+      "technical_analysis": "GRAM is testing the 1.445 h resistance while sitting under the 21‑, 50‑and 200‑EMA, indicating a bearish bias. ADX 53 confirms a strong trend. MACD histogram is slightly positive, offering a short‑term bounce risk. A break below the 1.434 support would validate a short entry around 1.442‑1.445, with SL near 1.495 and TP at 1.342.",
+      "market_context": "BTC is in a bearish 4‑hour trend and the broader market is broadly negative, with 85 % red assets.",
+      "result": "PENDING"
     }
   ]
 }
