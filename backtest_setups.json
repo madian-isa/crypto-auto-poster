@@ -44513,6 +44513,23 @@
       "technical_analysis": "TRUMP is trading below its 9‑EMA, 21‑EMA and 50‑EMA, with a negative MACD and RSI under 40, confirming a bearish bias. The price sits near the 4‑hour resistance at 2.01 and the 1‑hour swing resistance at 2.028. A short entry near 2.009 is advised, with a stop 3.5% below the entry. Watch for a rebound near 2.00; if the price",
       "market_context": "BTC is trending bearish with a 4‑hour mixed trend and a 1‑day bullish trend, but overall market breadth is negative. This broader",
       "result": "PENDING"
+    },
+    {
+      "id": 2619,
+      "created_at": "2026-10-07T00:00:59.651127+00:00",
+      "symbol": "ORCAUSDT",
+      "direction": "SHORT",
+      "title": "$ORCA Resistance Test Fails: Bearish Momentum Building Fast",
+      "entry_low": 3.2,
+      "entry_high": 3.21,
+      "stop_loss": 3.32,
+      "take_profit": 2.975,
+      "support": 2.779,
+      "resistance": 3.233,
+      "news_line": "",
+      "technical_analysis": "ORCA is trading above all EMAs and MACD stays bullish, but RSI at 72 and Stochastic above 85 signal overbought conditions near the 1‑hour resistance of 3.233. A short pull‑back looks plausible in the overall trend. Watch for a break below the 3.20 entry zone; a close under 3.10 would confirm the downside.",
+      "market_context": "BTC is in a bearish 4‑hour trend, down 0.28% over 24 h, while market breadth is broadly negative (66% red). The broader",
+      "result": "PENDING"
     }
   ]
 }
