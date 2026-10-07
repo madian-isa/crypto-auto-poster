@@ -44547,6 +44547,23 @@
       "technical_analysis": "Price sits above all EMA lines, with RSI at 61 and ADX above 50, indicating a strong uptrend. Order‑book shows a modest bid‑side imbalance, supporting buying pressure. MACD histogram is slightly negative, a mild bearish hint. Watch the 16.89 resistance; a break could confirm the move, while a drop below 15.25 invalidates it.",
       "market_context": "BTC remains in a bullish 4‑hour trend, yet the overall market shows a broadly negative breadth with 67.5% red assets and a",
       "result": "PENDING"
+    },
+    {
+      "id": 2621,
+      "created_at": "2026-10-07T00:20:39.027692+00:00",
+      "symbol": "MINAUSDT",
+      "direction": "SHORT",
+      "title": "$MINA Resistance Test Fails: Bearish Momentum Building Fast",
+      "entry_low": 0.1135,
+      "entry_high": 0.1145,
+      "stop_loss": 0.1187,
+      "take_profit": 0.1046,
+      "support": 0.1103,
+      "resistance": 0.1252,
+      "news_line": "",
+      "technical_analysis": "Strong bearish momentum with RSI at 14.6 and price below all key EMAs. MACD remains negative, confirming downside pressure. Volume is declining, suggesting weak buying interest. Watch for a break below 0.1103 support to confirm further drops. Risk of a sharp bounce exists given the extreme oversold readings. This is a conditional technical scenario, not a verified trade or a",
+      "market_context": "BTC is bullish on 4H and 1D, but MINA is underperforming significantly. The broader market is broadly negative, which may cap recovery",
+      "result": "PENDING"
     }
   ]
 }
