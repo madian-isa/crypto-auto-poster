@@ -45125,6 +45125,23 @@
       "technical_analysis": "Price sits just above the 0.1877 support while all EMAs (9‑200) sit higher, showing a bearish backdrop. RSI at 31.8 and Stochastic around 30 hint at oversold conditions, and the order‑book shows a 41% bid imbalance supporting a bounce. MACD remains negative, so a break below 0.1810 would invalidate the setup. Watch for a retest of the 0.1888 resistance as",
       "market_context": "BTC is down 2.2% on a broadly negative market, but ARB shows localized buying pressure despite the bearish crypto backdrop.",
       "result": "PENDING"
+    },
+    {
+      "id": 2655,
+      "created_at": "2026-10-07T08:50:44.681089+00:00",
+      "symbol": "AVAXUSDT",
+      "direction": "LONG",
+      "title": "$AVAX Reclaims Key Resistance Level: Flip to Support Complete",
+      "entry_low": 11.32,
+      "entry_high": 11.34,
+      "stop_loss": 10.93,
+      "take_profit": 12.13,
+      "support": 10.942,
+      "resistance": 11.3,
+      "news_line": "",
+      "technical_analysis": "Price sits just above the 1‑hour support (10.94) and is trading above the 9‑ and 21‑EMA, indicating short‑term bullish bias. RSI is neutral and Stochastic is rising, but MACD is still below signal and volume has dropped 38%, a bearish warning. A clear break above 11.30 strengthens the long case; a slip under 10.94 would invalidate it.",
+      "market_context": "BTC is down 2.3% on the day and the broader market is broadly negative, which adds pressure on risk assets.",
+      "result": "PENDING"
     }
   ]
 }
