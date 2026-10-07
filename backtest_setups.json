@@ -44581,6 +44581,23 @@
       "technical_analysis": "Price sits below EMA9, EMA21, EMA50 and EMA200, confirming a downtrend. MACD is negative with a widening histogram and ADX above 40 shows strong momentum. RSI and Stochastic are oversold, offering a possible bounce but the bearish EMA stack dominates. Risk: a firm hold above EMA9 could stall the move. Watch for a break above 5.12 for a possible reversal.",
       "market_context": "BTC is down 0.45% on the 24‑hour chart and the overall market is broadly negative, supporting downside pressure on altcoins.",
       "result": "PENDING"
+    },
+    {
+      "id": 2623,
+      "created_at": "2026-10-07T00:40:47.467624+00:00",
+      "symbol": "GTCUSDT",
+      "direction": "SHORT",
+      "title": "$GTC Breaks Below Critical Support: Further Drop Expected",
+      "entry_low": 0.1502,
+      "entry_high": 0.1506,
+      "stop_loss": 0.145,
+      "take_profit": 0.1396,
+      "support": 0.14795,
+      "resistance": 0.1506,
+      "news_line": "",
+      "technical_analysis": "RSI sits in the lower 30s and MACD is below its signal line, both pointing to bearish pressure. The price is below the 9‑ and 21‑EMA, yet sits near the 200‑EMA, creating a weak counter‑signal. A short entry around 0.1506 is sensible, with a stop at 0.145 to stay 3.5% away. A 2R target of 0.1612 would need the price",
+      "market_context": "BTC is in a mixed 4‑hour trend and bearish 24‑hour movement, reflecting a broadly negative market environment.",
+      "result": "PENDING"
     }
   ]
 }
