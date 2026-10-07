@@ -45176,6 +45176,23 @@
       "technical_analysis": "Price sits near the 0.0135 resistance while RSI (78) and Stochastic (91) signal overbought conditions. Order‑book shows a strong sell imbalance. Although MACD remains bullish, the bearish pressure suggests a short bias. Risk: a fresh bullish push could keep price above the EMAs. Watch for a break below 0.0130 or a bounce near 0.0125.",
       "market_context": "BTC is down 2.6% on the day and market breadth is 88% red, reinforcing a broadly negative environment.",
       "result": "PENDING"
+    },
+    {
+      "id": 2658,
+      "created_at": "2026-10-07T10:10:45.663858+00:00",
+      "symbol": "INJUSDT",
+      "direction": "SHORT",
+      "title": "High Volume Selling Sweep Breaks $INJ Market Structure",
+      "entry_low": 7.33,
+      "entry_high": 7.35,
+      "stop_loss": 7.6,
+      "take_profit": 6.82,
+      "support": 7.333,
+      "resistance": 7.637,
+      "news_line": "",
+      "technical_analysis": "Price sits under EMA9, EMA21 and EMA50, confirming a bearish structure. RSI at 34 and stochastic K below 5 signal oversold momentum, while MACD remains negative. Order‑book shows a 32% bid imbalance, a possible short‑term bounce. Watch for a decisive break below the 7.33 support; a clear close above 7.64 would challenge the short bias.",
+      "market_context": "BTC is in a bearish 4‑hour frame and the broader market is broadly negative, reinforcing downside pressure on altcoins like INJ.",
+      "result": "PENDING"
     }
   ]
 }
