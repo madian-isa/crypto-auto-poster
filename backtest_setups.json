@@ -45244,6 +45244,23 @@
       "technical_analysis": "HBAR is deeply oversold with RSI at 18.6, signaling a potential bounce. Price sits just above major support at 0.09413, where a 10.4% bid imbalance suggests buying interest. The short-term risk is the strong downtrend, as price remains below the 9, 21, and 50 EMAs. A move above 0.09529 resistance would confirm strength, targeting the major swing high at 0.10114",
       "market_context": "Bitcoin is down 2.76% in 24 hours with broadly negative market breadth, adding headwind to altcoins.",
       "result": "PENDING"
+    },
+    {
+      "id": 2662,
+      "created_at": "2026-10-07T11:10:49.354846+00:00",
+      "symbol": "TAOUSDT",
+      "direction": "SHORT",
+      "title": "$TAO Loses Key Demand Zone: Next Support Level Unprotected",
+      "entry_low": 294.0,
+      "entry_high": 294.6,
+      "stop_loss": 305.0,
+      "take_profit": 272.9,
+      "support": 287.6,
+      "resistance": 303.5,
+      "news_line": "",
+      "technical_analysis": "TAO is trading below its 9‑, 21‑ and 50‑EMA, with MACD at –1.9 below the signal line and RSI at 37, indicating bearish momentum. Stochastic K around 24 supports the down bias. Order‑book shows a 34% bid imbalance, a modest upside risk. Watch for a break above the 303.5 R level; that would invalidate the short.",
+      "market_context": "BTC is down 2.6% on the 24h, with a mixed 4h trend and overall market breadth strongly negative.",
+      "result": "PENDING"
     }
   ]
 }
