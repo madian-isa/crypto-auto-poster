@@ -45635,6 +45635,23 @@
       "technical_analysis": "Price sits below EMA9, EMA21, EMA50 and EMA200, confirming a bearish structure. MACD is negative with a widening histogram and ADX shows a strong trend. RSI is near oversold, offering a mild counter‑signal. Watch for a break above the 1H resistance 4126.72; holding below it supports the short bias. This is a conditional technical scenario, not a verified trade or",
       "market_context": "BTC is down 2.6% on the 24h and the broader market is largely negative, reinforcing downside pressure on XAUTUSDT.",
       "result": "PENDING"
+    },
+    {
+      "id": 2685,
+      "created_at": "2026-10-07T21:01:02.436898+00:00",
+      "symbol": "SKYUSDT",
+      "direction": "SHORT",
+      "title": "$SKY Breaks Below Critical Support: Further Drop Expected",
+      "entry_low": 0.0796,
+      "entry_high": 0.0798,
+      "stop_loss": 0.0825,
+      "take_profit": 0.0741,
+      "support": 0.07863,
+      "resistance": 0.08047,
+      "news_line": "",
+      "technical_analysis": "SKY is trading below all short‑term EMAs and under a strong downtrend (ADX 38). RSI 25 and Stoch K 6 show oversold conditions, but the price sits near the 1H/4H resistance at 0.08047. A break above that level could trigger a short entry around 0.0796‑0.0798. Watch for a bounce above the EMAs as a risk. Confirmation would be a close",
+      "market_context": "BTC is in a bearish 4‑hour trend, down 2.55% on the day, and the broader market is broadly negative (87% red).",
+      "result": "PENDING"
     }
   ]
 }
