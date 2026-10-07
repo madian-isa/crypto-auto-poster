@@ -44887,6 +44887,23 @@
       "technical_analysis": "Price sits just below 0.7076 resistance, hugging the 0.6996 support zone. EMA9/21 sit above, while EMA50 is under price, hinting at a bounce. Stochastic K at 12 shows oversold conditions and order‑book shows a 14% bid imbalance. MACD histogram stays negative, a bearish counter‑signal. Watch for a break above 0.71; a drop through 0.68 would invalidate.",
       "market_context": "BTC is down 1.7% on the day, with a mixed 4‑hour trend and bullish daily bias, while overall market breadth remains broadly",
       "result": "PENDING"
+    },
+    {
+      "id": 2641,
+      "created_at": "2026-10-07T05:00:55.765131+00:00",
+      "symbol": "FILUSDT",
+      "direction": "LONG",
+      "title": "Key Support Holds Firm: $FIL Bullish Continuation Setup Active",
+      "entry_low": 1.086,
+      "entry_high": 1.087,
+      "stop_loss": 1.048,
+      "take_profit": 1.1635,
+      "support": 1.0763,
+      "resistance": 1.1189,
+      "news_line": "",
+      "technical_analysis": "The price sits below all short‑term EMAs yet is near the 1H support at 1.0763, showing a potential bounce. RSI at 30 and Stochastic K at 9.7 signal oversold conditions. The MACD line is just below the signal, hinting at a pending reversal. Watch for a break above the 1.1189 resistance to confirm the move.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }

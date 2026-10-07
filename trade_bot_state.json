@@ -1,6 +1,6 @@
 {
   "date": "2026-10-07",
-  "count": 22,
+  "count": 23,
   "posted_symbols_today": [
     "ORCAUSDT",
     "NMRUSDT",
@@ -23,6 +23,7 @@
     "EDUUSDT",
     "XRPUSDT",
     "BTCUSDT",
-    "RLCUSDT"
+    "RLCUSDT",
+    "FILUSDT"
   ]
 }
