@@ -45261,6 +45261,23 @@
       "technical_analysis": "TAO is trading below its 9‑, 21‑ and 50‑EMA, with MACD at –1.9 below the signal line and RSI at 37, indicating bearish momentum. Stochastic K around 24 supports the down bias. Order‑book shows a 34% bid imbalance, a modest upside risk. Watch for a break above the 303.5 R level; that would invalidate the short.",
       "market_context": "BTC is down 2.6% on the 24h, with a mixed 4h trend and overall market breadth strongly negative.",
       "result": "PENDING"
+    },
+    {
+      "id": 2663,
+      "created_at": "2026-10-07T11:50:45.862777+00:00",
+      "symbol": "LAZIOUSDT",
+      "direction": "LONG",
+      "title": "$LAZIO Breakout Confirmation: Bulls Target Next Supply Zone",
+      "entry_low": 0.424,
+      "entry_high": 0.438,
+      "stop_loss": 0.41,
+      "take_profit": 0.473,
+      "support": 0.388,
+      "resistance": 0.515,
+      "news_line": "",
+      "technical_analysis": "Price sits above EMA9/21/50, with MACD histogram positive and ADX 57 showing strong trend. RSI at 57 supports mild bullish bias. Stochastic K below D hints at short‑term pullback risk. Watch the 0.388 swing low; a break below could flip bias. Confirmation near 0.44 strengthens the long case overall as a confirming signal.",
+      "market_context": "BTC is down 3.1% and market breadth is heavily red, indicating broader bearish sentiment, while LAZIO shows internal bullish momentum.",
+      "result": "PENDING"
     }
   ]
 }
