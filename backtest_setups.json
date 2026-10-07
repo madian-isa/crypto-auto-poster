@@ -44938,6 +44938,23 @@
       "technical_analysis": "DOT is deeply oversold with RSI at 19.5, but price remains below key EMAs. The MACD histogram is negative, confirming bearish momentum. While the orderbook shows bid support, the broader market is broadly negative. Watch for a break below the 1.10 swing low to confirm continuation, as resistance at 1.221 caps upside.",
       "market_context": "Bitcoin is trading below its 4H EMAs with a mixed trend, while the overall market breadth is broadly negative at 83.1% red.",
       "result": "PENDING"
+    },
+    {
+      "id": 2644,
+      "created_at": "2026-10-07T05:40:49.459341+00:00",
+      "symbol": "SOLUSDT",
+      "direction": "SHORT",
+      "title": "High Conviction Short Opportunity as $SOL Tests Supply Wall",
+      "entry_low": 118.04,
+      "entry_high": 118.38,
+      "stop_loss": 122.9384,
+      "take_profit": 108.7532,
+      "support": 117.02,
+      "resistance": 120.81,
+      "news_line": "",
+      "technical_analysis": "Price sits under EMA9/21/50/200, confirming bearish bias. MACD line is below signal with negative histogram, adding momentum downside. RSI at 29 signals oversold, a possible bounce risk. Orderbook shows modest bid imbalance. A short entry between 118.04‑118.38, stop at ~122.20, TP near 110.20. Watch for a break above 118.38 as a reversal signal.",
+      "market_context": "BTC is in a bearish 1‑day trend and the broader market shows 82.9% red, adding pressure to risk assets.",
+      "result": "PENDING"
     }
   ]
 }
