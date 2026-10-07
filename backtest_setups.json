@@ -45550,6 +45550,23 @@
       "technical_analysis": "ETHFI is trading below EMA9 (0.716) and all longer EMAs, confirming bearish bias. Yet RSI sits at 36.9 and Stochastic K at 15 indicate oversold conditions, hinting at a possible bounce toward the 1H resistance 0.7257. Risk: MACD remains negative and volume dropped 55%, while BTC is in a 2%‑plus downtrend. Watch for price holding above 0.702 support.",
       "market_context": "BTC is down 2.36% on the 24h chart, with mixed 4h and 1d trends and a negative market breadth (88.7% red). The",
       "result": "PENDING"
+    },
+    {
+      "id": 2680,
+      "created_at": "2026-10-07T20:00:54.678639+00:00",
+      "symbol": "HYPEUSDT",
+      "direction": "SHORT",
+      "title": "$HYPE Open Interest Drops Rapidly: Long Squeeze Underway",
+      "entry_low": 87.3,
+      "entry_high": 87.4,
+      "stop_loss": 90.41,
+      "take_profit": 81.23,
+      "support": 87.17,
+      "resistance": 91.34,
+      "news_line": "",
+      "technical_analysis": "Price sits below EMA9‑200 and MACD stays negative, confirming a bearish trend. RSI at 26.5 and stochastic under 5 suggest oversold conditions but the strong ADX (~52) signals the move is still firm. Risk comes if price rebounds toward the 87.17 support. Watch for a break above 88.3 as a reversal cue.",
+      "market_context": "BTC is in a bearish 4‑hour trend, down 2.5% on the day, with market breadth broadly negative.",
+      "result": "PENDING"
     }
   ]
 }
