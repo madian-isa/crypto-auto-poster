@@ -45584,6 +45584,23 @@
       "technical_analysis": "Price sits under EMA9/21/50/200 and MACD is negative, confirming a downtrend. ADX 33 shows solid trend strength. RSI at 37 and Stochastic below 30 hint at slight oversold conditions, but falling volume and a bearish order‑book imbalance keep pressure downward. Watch for a break below 0.07423; a move under 0.07355 would validate the short.",
       "market_context": "BTC is down 2.4% on the 24h chart and shows bearish momentum on the 4‑hour timeframe, while the broader market is broadly",
       "result": "PENDING"
+    },
+    {
+      "id": 2682,
+      "created_at": "2026-10-07T20:30:52.033037+00:00",
+      "symbol": "BCHUSDT",
+      "direction": "SHORT",
+      "title": "$BCH Derivative Data Shows Heavy Long Liquidations Incoming",
+      "entry_low": 300.2,
+      "entry_high": 300.6,
+      "stop_loss": 311.0,
+      "take_profit": 279.2,
+      "support": 300.8,
+      "resistance": 303.7,
+      "news_line": "",
+      "technical_analysis": "Price sits below EMA9, EMA21, EMA50 and EMA200, confirming a strong downtrend. RSI at 27 and Stochastic K under 20 signal oversold conditions, but MACD histogram remains negative and ADX at 58 shows a firm bearish trend. Order‑book shows a 20% bid‑side imbalance, a risk for shorts. Watch for a break below the 300.8 1H support as confirmation.",
+      "market_context": "BTC is in a bearish 4‑hour trend and the broader market is broadly negative, reinforcing downside pressure on BCH.",
+      "result": "PENDING"
     }
   ]
 }

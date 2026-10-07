@@ -1,6 +1,6 @@
 {
   "date": "2026-10-07",
-  "count": 63,
+  "count": 64,
   "posted_symbols_today": [
     "ORCAUSDT",
     "NMRUSDT",
@@ -64,6 +64,7 @@
     "XLMUSDT",
     "ETHFIUSDT",
     "HYPEUSDT",
-    "\u725b\u6765USDT"
+    "\u725b\u6765USDT",
+    "BCHUSDT"
   ]
 }
