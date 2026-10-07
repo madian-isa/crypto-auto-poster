@@ -1,12 +1,13 @@
 {
   "date": "2026-10-07",
-  "count": 6,
+  "count": 7,
   "posted_symbols_today": [
     "ORCAUSDT",
     "NMRUSDT",
     "MINAUSDT",
     "PROMUSDT",
     "GTCUSDT",
-    "API3USDT"
+    "API3USDT",
+    "RESOLVUSDT"
   ]
 }
