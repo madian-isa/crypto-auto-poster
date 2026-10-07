@@ -45074,6 +45074,23 @@
       "technical_analysis": "Price sits under EMA9/21/50, confirming a downtrend. MACD histogram is negative and ADX above 30 shows strong momentum. RSI near 32 and Stochastic K at 15 hint at oversold conditions, but the bearish bias remains. Watch for a break below 0.1828 as a further downside trigger. This is a conditional technical scenario, not a verified trade or a promise of",
       "market_context": "BTC is down 1.36% on the 24h, with a mixed 4h trend and overall market breadth heavily red (84%). The broader environment",
       "result": "PENDING"
+    },
+    {
+      "id": 2652,
+      "created_at": "2026-10-07T08:00:57.526119+00:00",
+      "symbol": "ZECUSDT",
+      "direction": "SHORT",
+      "title": "$ZEC Lower High Pattern Confirmed: Short Target in View",
+      "entry_low": 1324.0,
+      "entry_high": 1324.6,
+      "stop_loss": 1372.2,
+      "take_profit": 1228.5,
+      "support": 1314.85,
+      "resistance": 1329.99,
+      "news_line": "",
+      "technical_analysis": "Price sits below EMA9‑200 and MACD is deep negative, indicating bearish momentum. RSI 43 and Stochastic ~33 add pressure. Order‑book shows a modest bid tilt, but the 1H/4H swing puts resistance at 1329.99 and support at 1314.85. A break below the 1324‑1325 range could target the next support near 1228, with a stop above 1372 (EMA200).",
+      "market_context": "BTC is bearish with a 1.76% 24h decline and the overall market breadth is broadly negative.",
+      "result": "PENDING"
     }
   ]
 }
