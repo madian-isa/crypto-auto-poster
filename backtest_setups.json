@@ -44649,6 +44649,23 @@
       "technical_analysis": "Price sits above EMA9, EMA21 and EMA50, with MACD still bullish and ADX confirming a strong trend. RSI at 66 supports upside, while the orderbook shows a 28% ask‑side imbalance and stochastic D above K, hinting at short‑term pressure. Watch a break above 22.85 for confirmation; a dip below 22.27 invalidates the setup.",
       "market_context": "BTC down 0.6% in 24h, market breadth broadly negative with 65.5% red assets.",
       "result": "PENDING"
+    },
+    {
+      "id": 2627,
+      "created_at": "2026-10-07T01:50:44.155758+00:00",
+      "symbol": "UNIUSDT",
+      "direction": "SHORT",
+      "title": "Major Support Breakdown Confirmed on $UNI Higher Timeframes",
+      "entry_low": 8.5,
+      "entry_high": 8.55,
+      "stop_loss": 8.2,
+      "take_profit": 7.875,
+      "support": 8.27,
+      "resistance": 8.93,
+      "news_line": "",
+      "technical_analysis": "UNI is trapped below rising EMAs with RSI at 22.89, signaling deep weakness. MACD remains negative, and price is pinned near the lower Bollinger Band. The main risk is a quick bounce to 8.56 resistance. Watch for a break below 8.27 support to confirm the downtrend resumes toward the next major swing low.",
+      "market_context": "BTC trends mixed on 4H and bullish on 1D, but broader market breadth is negative with 67% of assets red.",
+      "result": "PENDING"
     }
   ]
 }
