@@ -45363,6 +45363,23 @@
       "technical_analysis": "RSI at 31.6 and Stochastic K/D below 15 signal oversold conditions, while order‑book shows a 30% bid imbalance. Price sits just above the 1H support (171.06), suggesting a potential bounce. Bearish EMA chain and negative MACD act as a counter‑signal. Watch for a break above 177.36 to confirm the upside.",
       "market_context": "BTC is in a bearish 24‑hour swing, and the overall market breadth is strongly negative, adding pressure to risk assets.",
       "result": "PENDING"
+    },
+    {
+      "id": 2669,
+      "created_at": "2026-10-07T15:20:54.734518+00:00",
+      "symbol": "LINKUSDT",
+      "direction": "LONG",
+      "title": "$LINK Higher Low Structure Confirmed: Long Entry Level Reached",
+      "entry_low": 13.3,
+      "entry_high": 13.35,
+      "stop_loss": 12.792,
+      "take_profit": 14.391,
+      "support": 13.285,
+      "resistance": 13.815,
+      "news_line": "",
+      "technical_analysis": "RSI at 32.6 and Stochastic K/D around 17 signal oversold conditions, suggesting a potential bounce. Price sits just above the 1‑hour support 13.285 and below the tight resistance 13.406. MACD remains negative, warning the downtrend could resume. Watch for a clear break above 13.406 to confirm upside; a fall through 13.285 would invalidate the long.",
+      "market_context": "BTC is down 4 % on the day, with a mixed 4‑hour trend and broadly negative market breadth, indicating overall bearish sentiment.",
+      "result": "PENDING"
     }
   ]
 }
