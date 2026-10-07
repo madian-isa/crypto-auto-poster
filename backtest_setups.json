@@ -45040,6 +45040,23 @@
       "technical_analysis": "Price sits below EMA9/21/50, confirming a downtrend. MACD histogram is negative and ADX above 30 shows strong momentum. RSI at 33 hints oversold conditions, a possible bounce risk. A break above the 4H resistance 780.73 would invalidate the short. Watch for a close below 758.57 to confirm the move. This is a conditional technical scenario, not a verified trade or",
       "market_context": "BTC is bearish and the overall market is broadly negative, with 82.5% of assets in red. This adds pressure on risk assets",
       "result": "PENDING"
+    },
+    {
+      "id": 2650,
+      "created_at": "2026-10-07T06:41:35.797900+00:00",
+      "symbol": "PUMPUSDT",
+      "direction": "LONG",
+      "title": "$PUMP Holds Moving Average Support: High Probability Long Setup",
+      "entry_low": 0.006349,
+      "entry_high": 0.006463,
+      "stop_loss": 0.00615,
+      "take_profit": 0.006918,
+      "support": 0.006349,
+      "resistance": 0.006519,
+      "news_line": "",
+      "technical_analysis": "Price sits above EMA9, EMA21, EMA50 and EMA200, confirming a bullish bias. MACD histogram is positive and the line sits above its signal, adding momentum. Order‑book shows a 21% bid‑side imbalance. Stochastic is overbought (94) – a reversal risk. Watch for a hold above 0.00635 and a break of 0.00652 for confirmation.",
+      "market_context": "BTC fell 1.2% in the last 24 h and the overall market breadth is broadly negative, with 82.7% of assets down.",
+      "result": "PENDING"
     }
   ]
 }
