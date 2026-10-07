@@ -45091,6 +45091,23 @@
       "technical_analysis": "Price sits below EMA9‑200 and MACD is deep negative, indicating bearish momentum. RSI 43 and Stochastic ~33 add pressure. Order‑book shows a modest bid tilt, but the 1H/4H swing puts resistance at 1329.99 and support at 1314.85. A break below the 1324‑1325 range could target the next support near 1228, with a stop above 1372 (EMA200).",
       "market_context": "BTC is bearish with a 1.76% 24h decline and the overall market breadth is broadly negative.",
       "result": "PENDING"
+    },
+    {
+      "id": 2653,
+      "created_at": "2026-10-07T08:10:50.998516+00:00",
+      "symbol": "MUBARAKUSDT",
+      "direction": "LONG",
+      "title": "Bullish Momentum Is Building: Can $MUBARAK Continue Its Breakout?",
+      "entry_low": 0.076,
+      "entry_high": 0.0765,
+      "stop_loss": 0.0733,
+      "take_profit": 0.08215,
+      "support": 0.07523,
+      "resistance": 0.07732,
+      "news_line": "",
+      "technical_analysis": "Price sits above EMA9, EMA21 and EMA50, showing a clear uptrend. Order‑book shows a 31.9% bid imbalance, supporting upside. RSI is neutral at 57, but MACD is below signal and stochastic is over 80, warning of a short‑term pullback. Watch for a break above 0.07732 resistance for confirmation; a drop back through 0.07523 would invalidate the setup.",
+      "market_context": "BTC is down 2% on the day and the broader market is broadly negative, which could add pressure to risk assets.",
+      "result": "PENDING"
     }
   ]
 }
