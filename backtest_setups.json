@@ -45618,6 +45618,23 @@
       "technical_analysis": "POLU is trading below EMA9/21/50, confirming a downtrend. ADX at 42 signals a strong trend. RSI 34 and Stochastic ~27 show oversold conditions, a reversal risk. MACD remains negative with only a tiny bullish histogram. Order‑book imbalance is slightly bearish. Watch a break under 0.10127 support; a retest of 0.10331 resistance would challenge the short bias.",
       "market_context": "BTC fell 2.7% on the 24h, 4‑hour trend bears, and 88% of the market is red, reinforcing a negative backdrop for altcoins.",
       "result": "PENDING"
+    },
+    {
+      "id": 2684,
+      "created_at": "2026-10-07T20:50:48.456755+00:00",
+      "symbol": "XAUTUSDT",
+      "direction": "SHORT",
+      "title": "$XAUT Breaks Below Critical Support: Further Drop Expected",
+      "entry_low": 4103.5,
+      "entry_high": 4104.0,
+      "stop_loss": 4247.6,
+      "take_profit": 3816.05,
+      "support": 4110.67,
+      "resistance": 4126.72,
+      "news_line": "",
+      "technical_analysis": "Price sits below EMA9, EMA21, EMA50 and EMA200, confirming a bearish structure. MACD is negative with a widening histogram and ADX shows a strong trend. RSI is near oversold, offering a mild counter‑signal. Watch for a break above the 1H resistance 4126.72; holding below it supports the short bias. This is a conditional technical scenario, not a verified trade or",
+      "market_context": "BTC is down 2.6% on the 24h and the broader market is largely negative, reinforcing downside pressure on XAUTUSDT.",
+      "result": "PENDING"
     }
   ]
 }
