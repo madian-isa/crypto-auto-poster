@@ -45601,6 +45601,23 @@
       "technical_analysis": "Price sits below EMA9, EMA21, EMA50 and EMA200, confirming a strong downtrend. RSI at 27 and Stochastic K under 20 signal oversold conditions, but MACD histogram remains negative and ADX at 58 shows a firm bearish trend. Order‑book shows a 20% bid‑side imbalance, a risk for shorts. Watch for a break below the 300.8 1H support as confirmation.",
       "market_context": "BTC is in a bearish 4‑hour trend and the broader market is broadly negative, reinforcing downside pressure on BCH.",
       "result": "PENDING"
+    },
+    {
+      "id": 2683,
+      "created_at": "2026-10-07T20:40:48.448859+00:00",
+      "symbol": "POLUSDT",
+      "direction": "SHORT",
+      "title": "$POL Open Interest Drops Rapidly: Long Squeeze Underway",
+      "entry_low": 0.1013,
+      "entry_high": 0.1016,
+      "stop_loss": 0.1051,
+      "take_profit": 0.09415,
+      "support": 0.10191,
+      "resistance": 0.10331,
+      "news_line": "",
+      "technical_analysis": "POLU is trading below EMA9/21/50, confirming a downtrend. ADX at 42 signals a strong trend. RSI 34 and Stochastic ~27 show oversold conditions, a reversal risk. MACD remains negative with only a tiny bullish histogram. Order‑book imbalance is slightly bearish. Watch a break under 0.10127 support; a retest of 0.10331 resistance would challenge the short bias.",
+      "market_context": "BTC fell 2.7% on the 24h, 4‑hour trend bears, and 88% of the market is red, reinforcing a negative backdrop for altcoins.",
+      "result": "PENDING"
     }
   ]
 }
