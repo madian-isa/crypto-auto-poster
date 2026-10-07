@@ -45652,6 +45652,23 @@
       "technical_analysis": "SKY is trading below all short‑term EMAs and under a strong downtrend (ADX 38). RSI 25 and Stoch K 6 show oversold conditions, but the price sits near the 1H/4H resistance at 0.08047. A break above that level could trigger a short entry around 0.0796‑0.0798. Watch for a bounce above the EMAs as a risk. Confirmation would be a close",
       "market_context": "BTC is in a bearish 4‑hour trend, down 2.55% on the day, and the broader market is broadly negative (87% red).",
       "result": "PENDING"
+    },
+    {
+      "id": 2686,
+      "created_at": "2026-10-07T21:40:44.258192+00:00",
+      "symbol": "ICPUSDT",
+      "direction": "SHORT",
+      "title": "$ICP Rejection at Key Supply Zone: Short Setup Activated",
+      "entry_low": 3.183,
+      "entry_high": 3.202,
+      "stop_loss": 3.358,
+      "take_profit": 2.8615,
+      "support": 3.141,
+      "resistance": 3.183,
+      "news_line": "",
+      "technical_analysis": "ICP is testing the 1‑hour resistance zone around 3.18‑3.20. Price sits below EMA21, EMA50 and EMA200, and MACD remains negative, supporting a downtrend. ADX at 57 shows the trend is strong. Counter‑signal: order‑book shows a 13.5 % bid bias and stochastic near 65, hinting at buying pressure. Watch for a break below 3.14 to confirm.",
+      "market_context": "BTC is down 2.8 % in 24 h, and the broader market is broadly negative, with 88.6 % red.",
+      "result": "PENDING"
     }
   ]
 }
