@@ -44666,6 +44666,23 @@
       "technical_analysis": "UNI is trapped below rising EMAs with RSI at 22.89, signaling deep weakness. MACD remains negative, and price is pinned near the lower Bollinger Band. The main risk is a quick bounce to 8.56 resistance. Watch for a break below 8.27 support to confirm the downtrend resumes toward the next major swing low.",
       "market_context": "BTC trends mixed on 4H and bullish on 1D, but broader market breadth is negative with 67% of assets red.",
       "result": "PENDING"
+    },
+    {
+      "id": 2628,
+      "created_at": "2026-10-07T02:11:48.384942+00:00",
+      "symbol": "RADUSDT",
+      "direction": "SHORT",
+      "title": "Overbought Indicators Signal Impending Correction for $RAD",
+      "entry_low": 0.319,
+      "entry_high": 0.321,
+      "stop_loss": 0.335,
+      "take_profit": 0.29,
+      "support": 0.309,
+      "resistance": 0.321,
+      "news_line": "",
+      "technical_analysis": "Price sits below EMA9, EMA21 and EMA50, and MACD is under its signal, confirming a downtrend. ADX above 30 shows strong trend momentum. Stochastic is deep oversold, a minor bullish hint, while order‑book imbalance favors bids. A break below 0.309 would solidify the short case. This is a conditional technical scenario, not a verified trade or a promise of direction.",
+      "market_context": "BTC is down 1.8% on the day, with a mixed 4‑hour trend and overall market breadth strongly negative (80.6% red).",
+      "result": "PENDING"
     }
   ]
 }
