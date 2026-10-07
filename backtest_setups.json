@@ -45465,6 +45465,23 @@
       "technical_analysis": "PEPE trades below all EMAs and MACD is under its signal, confirming a downtrend. ADX at 48 shows a strong trend. RSI 32 and stochastic K > D suggest a brief rebound, but sell‑side order‑book imbalance and the tight 4.03 – 4.16 range keep bias bearish. A break below 4.03 reinforces shorts; hold above 4.16 could flip sentiment.",
       "market_context": "BTC is down 2.5% and the broader market is broadly negative, with 90% of assets in the red.",
       "result": "PENDING"
+    },
+    {
+      "id": 2675,
+      "created_at": "2026-10-07T16:50:49.623008+00:00",
+      "symbol": "TIAUSDT",
+      "direction": "SHORT",
+      "title": "$TIA Breaks Below Critical Support: Further Drop Expected",
+      "entry_low": 0.452,
+      "entry_high": 0.4525,
+      "stop_loss": 0.47034,
+      "take_profit": 0.41607,
+      "support": 0.4373,
+      "resistance": 0.4523,
+      "news_line": "",
+      "technical_analysis": "Price sits under EMA9/21/50, with MACD histogram still negative, confirming a downtrend. RSI at 36 and Stochastic around 20 hint at slight oversold conditions, offering a modest upside bounce risk. Order‑book shows a bid‑side imbalance, a potential counter‑signal. Watch a break below the 0.4523 resistance for entry and a move above 0.468 to invalidate.",
+      "market_context": "BTC is in a bearish 4H/1D mixed trend and down 2.6% over 24h. Overall market breadth is broadly negative, with 90.6% of",
+      "result": "PENDING"
     }
   ]
 }
