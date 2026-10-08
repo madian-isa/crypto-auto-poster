@@ -46927,6 +46927,23 @@
       "technical_analysis": "ICP trades below key EMAs, with RSI at 32 and negative MACD confirming bearish momentum. The 24h low at 2.861 acts as critical support. A reclaim of 3.00 would invalidate the short bias. Targeting a move toward 2.62 puts the setup at 2R, provided price holds below the 3.148 swing high resistance.",
       "market_context": "BTC is bearish on the 4H chart, with 80.2% of the market red, creating a risk-off environment that supports downside moves in",
       "result": "PENDING"
+    },
+    {
+      "id": 2761,
+      "created_at": "2026-10-08T21:31:00.639645+00:00",
+      "symbol": "RENDERUSDT",
+      "direction": "SHORT",
+      "title": "$RENDER Fakeout Confirmed: Bulls Trapped at Local Highs",
+      "entry_low": 1.855,
+      "entry_high": 1.866,
+      "stop_loss": 1.93,
+      "take_profit": 1.7215,
+      "support": 1.76,
+      "resistance": 2.006,
+      "news_line": "",
+      "technical_analysis": "EMA9, EMA21, EMA50, and EMA200 all lie above the current price, confirming a bearish bias. RSI sits near 37 and MACD is negative with a falling histogram, reinforcing the downtrend. The next key support is 1.76; a break below would invalidate the short case. SHORT bias targets continuation toward support, with resistance as the invalidation level.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
