@@ -46689,6 +46689,23 @@
       "technical_analysis": "Price is under EMA9 (0.2254), EMA21 (0.2282) and EMA50, confirming a downtrend. RSI 32.2 and Stochastic K 10 show oversold momentum but MACD histogram stays negative. The 1‑hour resistance at 0.218 provides a short entry. Risk is EMA9 around 0.225; a break above 0.226 invalidates the trade. Target is near 0.202.",
       "market_context": "BTC is down 3.1% on the day, and the broader market is broadly negative, reinforcing bearish bias for altcoins.",
       "result": "PENDING"
+    },
+    {
+      "id": 2747,
+      "created_at": "2026-10-08T18:10:48.690883+00:00",
+      "symbol": "AMPUSDT",
+      "direction": "LONG",
+      "title": "Bullish Divergence Flashed on $AMP Daily Chart Structure",
+      "entry_low": 0.00067,
+      "entry_high": 0.000685,
+      "stop_loss": 0.00063685,
+      "take_profit": 0.0007588,
+      "support": 0.000633,
+      "resistance": 0.00073,
+      "news_line": "",
+      "technical_analysis": "Price sits above EMA9 (0.000650) and EMA21, with MACD histogram positive and ADX 36 confirming a strong uptrend. RSI at 64 adds momentum while the Bollinger upper band caps near 0.000721, suggesting limited upside. A break below 0.000633 invalidates the bias. LONG bias targets continuation toward resistance, with support as the invalidation level.",
+      "market_context": "BTC is in a bearish 4‑hour trend and down 3.3% on the day, while the overall market is broadly negative with 88.6%",
+      "result": "PENDING"
     }
   ]
 }
