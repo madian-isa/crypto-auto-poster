@@ -46672,6 +46672,23 @@
       "technical_analysis": "Price sits below EMA9, EMA21 and EMA200, while MACD is negative and ADX shows a strong 41 trend. RSI 19 and Stoch 5 indicate oversold but order‑book imbalance (-17 %) and bearish BTC context keep pressure down. Target is 3.735 µ, stop at 4.20 µ; a break above 4.05 µ invalidates the short as a.",
       "market_context": "BTC is in a bearish 4‑hour trend and 24‑hour price is down 2.8 %. Overall market breadth is broadly negative with 87",
       "result": "PENDING"
+    },
+    {
+      "id": 2746,
+      "created_at": "2026-10-08T17:50:42.626030+00:00",
+      "symbol": "FETUSDT",
+      "direction": "SHORT",
+      "title": "$FET Fakeout Confirmed: Bulls Trapped at Local Highs",
+      "entry_low": 0.2175,
+      "entry_high": 0.2185,
+      "stop_loss": 0.226,
+      "take_profit": 0.202,
+      "support": 0.2038,
+      "resistance": 0.2289,
+      "news_line": "",
+      "technical_analysis": "Price is under EMA9 (0.2254), EMA21 (0.2282) and EMA50, confirming a downtrend. RSI 32.2 and Stochastic K 10 show oversold momentum but MACD histogram stays negative. The 1‑hour resistance at 0.218 provides a short entry. Risk is EMA9 around 0.225; a break above 0.226 invalidates the trade. Target is near 0.202.",
+      "market_context": "BTC is down 3.1% on the day, and the broader market is broadly negative, reinforcing bearish bias for altcoins.",
+      "result": "PENDING"
     }
   ]
 }
