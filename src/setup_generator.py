@@ -328,19 +328,63 @@ def _limit_words(value, max_words):
     return " ".join(words[:max_words]).rstrip(" ,;:-")
 
 
-def _ensure_analysis_length(value):
-    text = _limit_words(value, 60)
-    supplements = (
-        "This is a conditional technical scenario, not a verified trade or a promise of direction.",
-        "Price confirmation near the listed levels would strengthen the view; failure to confirm weakens it.",
-        "Monitor the opposing level too, since a reversal can invalidate the setup.",
-        "Manage risk carefully and reassess when new price action changes the market structure.",
-    )
+def _strip_opposite_direction_claims(text, direction):
+    text = _clean_text(text, max_length=2000)
+    if not text:
+        return ""
+
+    direction = str(direction or "").upper().strip()
+    if direction == "LONG":
+        opposite_pattern = r"(?i)\b(?:short(?:-term)?|shorts|sell(?:ing|s)?|seller(?:s)?|bearish|downside|weak buyers|fading buyers|buying pressure)\b"
+        fallback = "Risk remains limited while buyers hold the key support zone."
+    elif direction == "SHORT":
+        opposite_pattern = r"(?i)\b(?:long(?:-term)?|longs|buy(?:ing|s)?|buyer(?:s)?|bullish|upside|strong buyers|buying pressure|support is holding)\b"
+        fallback = "Risk remains limited while sellers hold the key resistance zone."
+    else:
+        return text
+
+    sentences = re.split(r"(?<=[.!?])\s+", text)
+    kept = []
+    for sentence in sentences:
+        if re.search(opposite_pattern, sentence):
+            continue
+        kept.append(sentence.strip())
+
+    filtered = " ".join(part for part in kept if part)
+    if not filtered:
+        return fallback
+
+    return _clean_text(filtered, max_length=2000)
+
+
+def _ensure_analysis_length(value, direction=None):
+    text = _strip_opposite_direction_claims(_limit_words(value, 60), direction)
+    if direction == "LONG":
+        supplements = (
+            "This is a conditional technical scenario, not a verified trade or a promise of direction.",
+            "Price confirmation near the listed support zone would strengthen the view; failure to confirm weakens it.",
+            "A clean break below support would invalidate the setup and demand a reassessment.",
+            "Manage risk carefully and reassess when new price action changes the market structure.",
+        )
+    elif direction == "SHORT":
+        supplements = (
+            "This is a conditional technical scenario, not a verified trade or a promise of direction.",
+            "Price confirmation near the listed resistance zone would strengthen the view; failure to confirm weakens it.",
+            "A clean break above resistance would invalidate the setup and demand a reassessment.",
+            "Manage risk carefully and reassess when new price action changes the market structure.",
+        )
+    else:
+        supplements = (
+            "This is a conditional technical scenario, not a verified trade or a promise of direction.",
+            "Price confirmation near the listed levels would strengthen the view; failure to confirm weakens it.",
+            "A clean break at the key level would invalidate the setup and demand a reassessment.",
+            "Manage risk carefully and reassess when new price action changes the market structure.",
+        )
     for sentence in supplements:
         if len(text.split()) >= 50:
             break
         text = f"{text} {sentence}".strip()
-    return _limit_words(text, 60)
+    return _limit_words(_strip_opposite_direction_claims(text, direction), 60)
 
 
 # =========================================================
@@ -1689,6 +1733,11 @@ Return JSON only:
             "technical_analysis",
             "",
         ),
+        direction,
+    )
+    setup["technical_analysis"] = _strip_opposite_direction_claims(
+        setup["technical_analysis"],
+        direction,
     )
 
     setup["market_context"] = _limit_words(
@@ -1773,10 +1822,14 @@ def format_post_text(setup):
         )
     )
 
-    technical = _ensure_analysis_length(setup.get(
-        "technical_analysis",
-        "",
-    ))
+    technical = _ensure_analysis_length(
+        setup.get(
+            "technical_analysis",
+            "",
+        ),
+        direction,
+    )
+    technical = _strip_opposite_direction_claims(technical, direction)
 
     news_line = _limit_words(setup.get(
         "news_line",
