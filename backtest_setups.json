@@ -46383,6 +46383,23 @@
       "technical_analysis": "Price sits below EMA9/21/50, confirming a downtrend, but RSI at 28.9 and Stochastic K under 5 signal deep oversold conditions. ADX 38.5 shows a strong trend, while the orderbook shows a 27% bid imbalance supporting buying pressure. Risk: the prevailing downtrend could persist. Watch for a break above 0.096 for confirmation.",
       "market_context": "BTC is bearish on 4H and mixed on daily, with a 1.3% 24h decline. Overall market breadth is split, providing a neutral",
       "result": "PENDING"
+    },
+    {
+      "id": 2729,
+      "created_at": "2026-10-08T12:50:56.170902+00:00",
+      "symbol": "ZROUSDT",
+      "direction": "LONG",
+      "title": "$ZRO Higher Low Structure Confirmed: Long Entry Level Reached",
+      "entry_low": 2.008,
+      "entry_high": 2.012,
+      "stop_loss": 1.9296,
+      "take_profit": 2.1708,
+      "support": 2.001,
+      "resistance": 2.161,
+      "news_line": "",
+      "technical_analysis": "Price sits just above the 1‑hour support (2.001) while RSI (30.8) and Stochastic (K ≈ 3) signal oversold conditions. Order‑book shows a 28% bid imbalance, suggesting buying pressure. MACD remains negative and price is under EMA9/21, a bearish bias. Watch for a break above 2.05 as confirmation; a drop below 2.001 would invalidate the setup.",
+      "market_context": "BTC is in a bearish 4‑hour trend, with the broader market slightly tilted red (53%). ZRO’s move occurs amid mixed market breadth.",
+      "result": "PENDING"
     }
   ]
 }
