@@ -46587,6 +46587,23 @@
       "technical_analysis": "Price sits below EMA9/21/50, confirming a bearish bias. MACD histogram stays negative and RSI near 40, while Stochastic is below 30, all pointing down. Immediate resistance at 0.5151 holds, offering a short entry around 0.513‑0.515. Risk is the 0.532 level; target 0.478 near major support. Overall, watch 0.5228 for potential invalidation.",
       "market_context": "BTC down 2.2% on 4h bearish trend, market breadth remains broadly negative, with 82% red tickers.",
       "result": "PENDING"
+    },
+    {
+      "id": 2741,
+      "created_at": "2026-10-08T16:00:58.600633+00:00",
+      "symbol": "LINKUSDT",
+      "direction": "SHORT",
+      "title": "$LINK Loses Key Demand Zone: Next Support Level Unprotected",
+      "entry_low": 12.6,
+      "entry_high": 12.65,
+      "stop_loss": 13.1,
+      "take_profit": 11.675,
+      "support": 12.313,
+      "resistance": 13.039,
+      "news_line": "",
+      "technical_analysis": "Price sits below EMA9, EMA21 and EMA50, confirming a strong downtrend. RSI at 15.7 and Stochastic K under 5 show extreme oversold conditions, while MACD remains negative and ADX 48 signals a firm trend. A short entry around 12.60‑12.65, stop at 13.10, targets 11.68 (2R). Watch EMA9 (12.90) as a potential invalidation level.",
+      "market_context": "BTC is in a bearish 4‑hour trend, down 2.8% on the day, and the overall market breadth is broadly negative (86% red).",
+      "result": "PENDING"
     }
   ]
 }
