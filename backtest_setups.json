@@ -46553,6 +46553,23 @@
       "technical_analysis": "Short bias dominates ADA. Price sits below EMA9‑200 and MACD is negative, confirming down momentum. ADX above 30 signals a strong trend. A break above 0.255 invalidates the short; watch 0.2448 as next support potential price support. SHORT bias targets continuation toward support, with resistance as the invalidation level. The stop loss defines the risk level for this setup.",
       "market_context": "BTC is in a bearish 24‑hour trend, down 0.68%, while the 4‑hour chart shows a bearish bias. Overall market breadth is mixed",
       "result": "PENDING"
+    },
+    {
+      "id": 2739,
+      "created_at": "2026-10-08T15:20:50.854859+00:00",
+      "symbol": "TAOUSDT",
+      "direction": "SHORT",
+      "title": "Bearish Continuation Pattern Confirmed on $TAO Chart Structure",
+      "entry_low": 280.0,
+      "entry_high": 283.0,
+      "stop_loss": 294.5,
+      "take_profit": 255.5,
+      "support": 269.0,
+      "resistance": 288.0,
+      "news_line": "",
+      "technical_analysis": "Price is trapped below the 21 and 50 EMAs, with MACD negative and RSI at 38.6, confirming bearish momentum. The 1H structure favors a retest of the 269.0 support. Watch for a rejection at the 288.0 resistance or EMA50 zone to confirm the downtrend. A break above 294.5 would invalidate this short setup.",
+      "market_context": "Bitcoin remains bearish on the 4H chart, with 71.8% of the market trading red, creating a negative backdrop for altcoins like TAO.",
+      "result": "PENDING"
     }
   ]
 }
