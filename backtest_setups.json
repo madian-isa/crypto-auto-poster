@@ -45890,6 +45890,23 @@
       "technical_analysis": "Price sits below EMA9 while staying above EMA21/50, MACD histogram is negative and the orderbook shows a strong ask imbalance. RSI is neutral and stochastic is low, hinting at a possible bounce but the bearish momentum dominates. Watch the 0.0125 resistance break; a close below it confirms the short. This is a conditional technical scenario, not a verified trade or",
       "market_context": "BTC is in a bearish 4‑hour trend and the overall market breadth is broadly negative, adding pressure to risk assets like GLMR.",
       "result": "PENDING"
+    },
+    {
+      "id": 2700,
+      "created_at": "2026-10-08T03:41:01.192965+00:00",
+      "symbol": "HEMIUSDT",
+      "direction": "LONG",
+      "title": "Strong Accumulation Detected: $HEMI Prepares for Next Wave Up",
+      "entry_low": 0.00638,
+      "entry_high": 0.0064,
+      "stop_loss": 0.00615,
+      "take_profit": 0.00687,
+      "support": 0.00588,
+      "resistance": 0.00693,
+      "news_line": "",
+      "technical_analysis": "Price sits near the lower edge of the 0.00638‑0.00648 range. MACD histogram is positive, ADX shows a strong trend, and order‑book imbalance favors bids, supporting a bullish bias. Counter‑signals include price below the EMA9 and a 69% drop in volume, which could limit upside. Watch for a break above 0.00648 to confirm the move.",
+      "market_context": "BTC is down 1.5% on the 4‑hour chart, keeping the broader market in a bearish tone.",
+      "result": "PENDING"
     }
   ]
 }
