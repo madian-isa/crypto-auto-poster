@@ -46774,6 +46774,23 @@
       "technical_analysis": "Short bias dominates: price sits below EMA9‑200, MACD is under its signal, and ADX 50 confirms a strong downtrend. RSI and Stochastic are near oversold, but the bearish structure remains intact. Target is 77.6 USDT (2R) with SL at 86.8 USDT. Watch 86.4 USDT resistance; a break above invalidates the short overall position.",
       "market_context": "BTC shows a bearish 4‑hour trend while the daily picture is mixed; overall market breadth is broadly negative with 85.6 % red",
       "result": "PENDING"
+    },
+    {
+      "id": 2752,
+      "created_at": "2026-10-08T19:30:56.351807+00:00",
+      "symbol": "ARBUSDT",
+      "direction": "SHORT",
+      "title": "$ARB Fails Resistance Retest: Bearish Extension Imminent",
+      "entry_low": 0.1685,
+      "entry_high": 0.1692,
+      "stop_loss": 0.1755,
+      "take_profit": 0.15555,
+      "support": 0.1621,
+      "resistance": 0.1845,
+      "news_line": "",
+      "technical_analysis": "Price sits below EMA9/21/50/200 and MACD histogram is negative, confirming a downtrend. Target is near 0.1550, risk at 0.1755; break above 0.1845 invalidates. SHORT bias targets continuation toward support, with resistance as the invalidation level. The stop loss defines the risk level for this setup. The listed entry and target provide the trade plan.",
+      "market_context": "BTC is bearish on the 4‑hour chart and mixed on daily, with overall market breadth broadly negative.",
+      "result": "PENDING"
     }
   ]
 }
