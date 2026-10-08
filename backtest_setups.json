@@ -46451,6 +46451,23 @@
       "technical_analysis": "Price sits just above the 1‑hour support at 0.4901, hugging the EMA200 (0.4887) and trading above the 9‑ and 21‑EMA, confirming bullish bias. MACD histogram is positive and rising. RSI and Stochastic are near overbought, a caution flag. A break above 0.501 would validate the upside; watch for a dip below 0.490 as a risk.",
       "market_context": "BTC is in a bearish 4‑hour trend, while the overall market breadth is broadly positive (63 % green).",
       "result": "PENDING"
+    },
+    {
+      "id": 2733,
+      "created_at": "2026-10-08T14:20:57.797576+00:00",
+      "symbol": "PYTHUSDT",
+      "direction": "LONG",
+      "title": "On-Chain Metrics Confirm Strong Whale Accumulation on $PYTH",
+      "entry_low": 0.0753,
+      "entry_high": 0.0765,
+      "stop_loss": 0.0722,
+      "take_profit": 0.0833,
+      "support": 0.07681,
+      "resistance": 0.08603,
+      "news_line": "",
+      "technical_analysis": "PYTH is trading above key EMAs with a positive MACD histogram, signaling upward momentum. RSI at 61 supports the bullish bias, though stochastic overbought readings suggest caution. Volume increased by 31%, confirming interest. Watch for a hold above the 0.0753 EMA support to confirm continuation toward the 0.0824 target. This is a conditional technical scenario, not a verified trade or",
+      "market_context": "Bitcoin is bearish on the 4H chart, but the broader market shows positive breadth with 66.3% of assets green. PYTH is outperforming",
+      "result": "PENDING"
     }
   ]
 }
