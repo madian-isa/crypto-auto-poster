@@ -45805,6 +45805,23 @@
       "technical_analysis": "Price sits just below the 1‑hour resistance and above EMA21, EMA50 and EMA200, showing bullish bias, but MACD has turned negative and the order‑book shows a slight sell imbalance. ADX 40 signals a strong trend. A break below the 0.07719 support could confirm the short, while a bounce off 0.0785 resistance would risk a reversal.",
       "market_context": "BTC is in a 2.7% bearish swing and the broader market is broadly negative, adding pressure to altcoins like SAND.",
       "result": "PENDING"
+    },
+    {
+      "id": 2695,
+      "created_at": "2026-10-08T01:50:47.213014+00:00",
+      "symbol": "GTCUSDT",
+      "direction": "LONG",
+      "title": "Bullish Divergence Flashed on $GTC Daily Chart Structure",
+      "entry_low": 0.1855,
+      "entry_high": 0.1865,
+      "stop_loss": 0.17856,
+      "take_profit": 0.20088,
+      "support": 0.18386,
+      "resistance": 0.20367,
+      "news_line": "",
+      "technical_analysis": "Price sits above EMA9, EMA21 and EMA50, showing bullish bias. MACD line is positive with a 0.0007 histogram, while RSI at 57 and Stochastic K at 63 confirm momentum. ADX 28 signals a strong trend. Order‑book imbalance favors buyers. Resistance near 0.1884 may cap upside; watch for a break above. A pullback to 0.1855‑0.1865 offers a cleaner entry.",
+      "market_context": "BTC is down 2.4% on the 4‑hour chart, keeping the broader market broadly negative (82% red). GTC’s upside comes despite the bearish",
+      "result": "PENDING"
     }
   ]
 }
