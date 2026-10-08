@@ -46009,6 +46009,23 @@
       "technical_analysis": "Price sits below the 9‑EMA and 21‑EMA while above the 200‑EMA, indicating short‑term weakness. MACD is negative and histogram declining, reinforcing bearish bias. RSI at 40 and low ADX show weak momentum. Stochastic is oversold, a possible bounce risk. Watch the 0.00637 resistance; a break above could invalidate the short.",
       "market_context": "BTC is in a bearish 4‑hour trend and mixed daily, with a 1.96% 24‑h drop, keeping overall market broadly negative.",
       "result": "PENDING"
+    },
+    {
+      "id": 2707,
+      "created_at": "2026-10-08T06:50:50.349219+00:00",
+      "symbol": "ENAUSDT",
+      "direction": "SHORT",
+      "title": "High Conviction Short Opportunity as $ENA Tests Supply Wall",
+      "entry_low": 0.2229,
+      "entry_high": 0.2235,
+      "stop_loss": 0.2315,
+      "take_profit": 0.2066,
+      "support": 0.215,
+      "resistance": 0.2281,
+      "news_line": "",
+      "technical_analysis": "Price sits below EMA9‑200, MACD histogram stays negative and RSI at 33, all pointing to downside. Stochastic K at 25 reinforces pressure. A short near the 0.223 – 0.224 resistance zone targets the 0.215 swing low. Risk is the 0.2315 stop; TP at 0.2065. Watch for a bounce above EMA9 as a counter‑signal.",
+      "market_context": "BTC down 1.77% on 4‑hour bearish EMA cross; overall market breadth 73% red, indicating pressure on risk assets.",
+      "result": "PENDING"
     }
   ]
 }
