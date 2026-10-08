@@ -46145,6 +46145,23 @@
       "technical_analysis": "Price trades above the 9‑EMA (0.1867) and all longer EMAs, showing bullish bias. MACD histogram is positive and Stochastic K/D sit in the mid‑60s, while RSI at 57 leaves upside room. Volume fell 15 %, and the pair nears the 0.1929 resistance. A clear break above 0.1930 confirms the long; a fall through 0.1884 invalidates it.",
       "market_context": "BTC is in a bearish 4‑hour trend and the broader market is broadly negative, with 72 % red assets. This adds pressure",
       "result": "PENDING"
+    },
+    {
+      "id": 2715,
+      "created_at": "2026-10-08T08:50:47.687608+00:00",
+      "symbol": "AVAXUSDT",
+      "direction": "SHORT",
+      "title": "$AVAX Derivative Data Shows Heavy Long Liquidations Incoming",
+      "entry_low": 10.85,
+      "entry_high": 10.9,
+      "stop_loss": 11.3,
+      "take_profit": 10.025,
+      "support": 10.669,
+      "resistance": 11.2,
+      "news_line": "",
+      "technical_analysis": "AVAX is trading below EMA9, EMA21 and EMA50, confirming bearish bias. MACD is negative and widening, while Stochastic K/D sit in the low 20s. RSI at 38 shows room to fall. Resistance sits near 11.2; a break down toward 10.67 is likely. Risk: a bounce off support could stall the move.",
+      "market_context": "BTC is in a bearish 4‑hour trend and the broader market is broadly negative, adding pressure to altcoins like AVAX.",
+      "result": "PENDING"
     }
   ]
 }
