@@ -1,6 +1,6 @@
 {
   "date": "2026-10-08",
-  "count": 16,
+  "count": 17,
   "posted_symbols_today": [
     "METUSDT",
     "SANDUSDT",
@@ -17,6 +17,7 @@
     "ZECUSDT",
     "PUMPUSDT",
     "ENAUSDT",
-    "XRPUSDT"
+    "XRPUSDT",
+    "PROMUSDT"
   ]
 }
