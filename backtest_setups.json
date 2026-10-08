@@ -45873,6 +45873,23 @@
       "technical_analysis": "Price sits below EMA9 (15.01) and EMA21 (15.22), confirming a short bias. MACD is negative and RSI at 43 shows limited upside. Stochastic K is deep oversold, a possible bounce risk near the 14.78 resistance. A break above 15.14 would challenge this setup. This is a conditional technical scenario, not a verified trade or a promise of direction.",
       "market_context": "BTC is in a bearish 4‑hour trend and the broader market is broadly negative, adding pressure to risk assets like NMR.",
       "result": "PENDING"
+    },
+    {
+      "id": 2699,
+      "created_at": "2026-10-08T03:30:50.671477+00:00",
+      "symbol": "GLMRUSDT",
+      "direction": "SHORT",
+      "title": "$GLMR Volume Decreases on Rally: Weak Buyers Exposed",
+      "entry_low": 0.01215,
+      "entry_high": 0.0122,
+      "stop_loss": 0.01265,
+      "take_profit": 0.011225,
+      "support": 0.011484,
+      "resistance": 0.0125,
+      "news_line": "",
+      "technical_analysis": "Price sits below EMA9 while staying above EMA21/50, MACD histogram is negative and the orderbook shows a strong ask imbalance. RSI is neutral and stochastic is low, hinting at a possible bounce but the bearish momentum dominates. Watch the 0.0125 resistance break; a close below it confirms the short. This is a conditional technical scenario, not a verified trade or",
+      "market_context": "BTC is in a bearish 4‑hour trend and the overall market breadth is broadly negative, adding pressure to risk assets like GLMR.",
+      "result": "PENDING"
     }
   ]
 }
