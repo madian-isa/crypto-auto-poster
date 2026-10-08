@@ -46400,6 +46400,23 @@
       "technical_analysis": "Price sits just above the 1‑hour support (2.001) while RSI (30.8) and Stochastic (K ≈ 3) signal oversold conditions. Order‑book shows a 28% bid imbalance, suggesting buying pressure. MACD remains negative and price is under EMA9/21, a bearish bias. Watch for a break above 2.05 as confirmation; a drop below 2.001 would invalidate the setup.",
       "market_context": "BTC is in a bearish 4‑hour trend, with the broader market slightly tilted red (53%). ZRO’s move occurs amid mixed market breadth.",
       "result": "PENDING"
+    },
+    {
+      "id": 2730,
+      "created_at": "2026-10-08T13:50:50.240229+00:00",
+      "symbol": "CTSIUSDT",
+      "direction": "LONG",
+      "title": "$CTSI Breakout Confirmation: Bulls Target Next Supply Zone",
+      "entry_low": 0.0325,
+      "entry_high": 0.0335,
+      "stop_loss": 0.0318,
+      "take_profit": 0.0354,
+      "support": 0.03084,
+      "resistance": 0.04277,
+      "news_line": "",
+      "technical_analysis": "Price sits above EMA9/21/50, MACD histogram positive, volume surge, and orderbook shows strong buying imbalance. RSI overbought at 82 suggests caution; a pull‑back to the 0.03084‑0.03203 support zone could offer a cleaner entry. Watch for a break above 0.0341 resistance as confirmation. If price holds above the 0.0330 level, the next target lies near 0.0360.",
+      "market_context": "BTC is bearish on the 4h chart, down 1.13% in 24h. Overall market is 57.9% green, 42.1% red, showing mixed breadth.",
+      "result": "PENDING"
     }
   ]
 }

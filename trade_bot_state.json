@@ -1,6 +1,6 @@
 {
   "date": "2026-10-08",
-  "count": 37,
+  "count": 38,
   "posted_symbols_today": [
     "METUSDT",
     "SANDUSDT",
@@ -38,6 +38,7 @@
     "TIAUSDT",
     "DOGEUSDT",
     "MARSCOINUSDT",
-    "ZROUSDT"
+    "ZROUSDT",
+    "CTSIUSDT"
   ]
 }
