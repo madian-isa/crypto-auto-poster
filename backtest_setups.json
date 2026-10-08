@@ -45907,6 +45907,23 @@
       "technical_analysis": "Price sits near the lower edge of the 0.00638‑0.00648 range. MACD histogram is positive, ADX shows a strong trend, and order‑book imbalance favors bids, supporting a bullish bias. Counter‑signals include price below the EMA9 and a 69% drop in volume, which could limit upside. Watch for a break above 0.00648 to confirm the move.",
       "market_context": "BTC is down 1.5% on the 4‑hour chart, keeping the broader market in a bearish tone.",
       "result": "PENDING"
+    },
+    {
+      "id": 2701,
+      "created_at": "2026-10-08T04:01:17.610431+00:00",
+      "symbol": "NEARUSDT",
+      "direction": "SHORT",
+      "title": "$NEAR Rejection at Key Supply Zone: Short Setup Activated",
+      "entry_low": 5.3,
+      "entry_high": 5.33,
+      "stop_loss": 5.52,
+      "take_profit": 4.905,
+      "support": 5.225,
+      "resistance": 5.37,
+      "news_line": "",
+      "technical_analysis": "NEAR is trading near the 1‑hour resistance of 5.37. EMA9, EMA21, EMA50 and EMA200 sit below price, and MACD stays positive, suggesting bullish bias. Yet stochastic is above 70 and ADX is low, hinting at possible exhaustion. A break and close below the 5.30 swing low would trigger the short entry.",
+      "market_context": "BTC shows a bearish 4‑hour trend and a mixed daily picture, down 1.7% in the last 24 h. Market breadth is broadly",
+      "result": "PENDING"
     }
   ]
 }
