@@ -335,10 +335,27 @@ def _strip_opposite_direction_claims(text, direction):
 
     direction = str(direction or "").upper().strip()
     if direction == "LONG":
-        opposite_pattern = r"(?i)\b(?:short(?:-term)?|shorts|sell(?:ing|s)?|seller(?:s)?|bearish|downside|weak buyers|fading buyers|buying pressure)\b"
+        opposite_pattern = (
+            r"(?i)\b(?:short(?:-term)?|shorts|sell(?:ing|s)?|seller(?:s)?|"
+            r"bearish|downtrend|downside|weakness|negative momentum|"
+            r"selling pressure|lower lows|lower highs)\b|"
+            r"\b(?:RSI|stochastic(?:\s+K)?|MACD(?:\s+histogram)?)\b"
+            r".{0,35}\b(?:below|under|negative|bearish)\b|"
+            r"\b(?:below|under|break(?:s|ing)? below)\s+(?:the\s+)?"
+            r"(?:EMA\d{1,3}|support|key support)\b"
+        )
         fallback = "Risk remains limited while buyers hold the key support zone."
     elif direction == "SHORT":
-        opposite_pattern = r"(?i)\b(?:long(?:-term)?|longs|buy(?:ing|s)?|buyer(?:s)?|bullish|upside|strong buyers|buying pressure|support is holding)\b"
+        opposite_pattern = (
+            r"(?i)\b(?:long(?:-term)?|longs|buy(?:ing|s)?|buyer(?:s)?|"
+            r"bullish|uptrend|upside|positive momentum|buying pressure|"
+            r"strong buyers|bounce|rebound|recovery|reversal|"
+            r"higher highs|higher lows)\b|"
+            r"\b(?:RSI|stochastic(?:\s+K)?|MACD(?:\s+histogram)?)\b"
+            r".{0,35}\b(?:above|over|positive|bullish)\b|"
+            r"\b(?:above|over|break(?:s|ing)? above|hold(?:s|ing)? above)\s+"
+            r"(?:the\s+)?(?:EMA\d{1,3}|resistance|key resistance)\b"
+        )
         fallback = "Risk remains limited while sellers hold the key resistance zone."
     else:
         return text
