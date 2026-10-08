@@ -46077,6 +46077,23 @@
       "technical_analysis": "ORCA broke above the 1‑hour resistance at 2.75, finding buying pressure in an 18% order‑book imbalance. Stochastic is in oversold territory (K≈20) suggesting a bounce, while ADX shows a strong trend. MACD remains bearish and price sits below EMA9/21, a downside risk. Watch the 2.75 level for confirmation; a break back below 2.66 would invalidate the setup.",
       "market_context": "BTC is in a bearish 4‑hour trend, down 1.3% on the day, and the broader market is broadly negative.",
       "result": "PENDING"
+    },
+    {
+      "id": 2711,
+      "created_at": "2026-10-08T07:41:32.257666+00:00",
+      "symbol": "UNIUSDT",
+      "direction": "LONG",
+      "title": "Spot Inflows Surge for $UNI as Futures Open Interest Rises",
+      "entry_low": 7.77,
+      "entry_high": 7.79,
+      "stop_loss": 7.4688,
+      "take_profit": 8.4024,
+      "support": 7.768,
+      "resistance": 8.029,
+      "news_line": "",
+      "technical_analysis": "UNI is sitting at the 7‑hour support around 7.77, below all EMAs (9‑21‑50‑200). MACD line sits above its signal and the histogram is positive, while stochastic K/D are deep oversold. ADX at 49 shows a strong trend. A bounce could lift price toward the 8.03 resistance. Watch for a break below 7.50 as a risk.",
+      "market_context": "BTC is down 1.34% on the 4‑hour chart, with bearish EMA alignment and a broadly negative market breadth (71.8% red). The overall",
+      "result": "PENDING"
     }
   ]
 }
