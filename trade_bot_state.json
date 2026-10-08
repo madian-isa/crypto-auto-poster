@@ -1,6 +1,6 @@
 {
   "date": "2026-10-08",
-  "count": 31,
+  "count": 32,
   "posted_symbols_today": [
     "METUSDT",
     "SANDUSDT",
@@ -32,6 +32,7 @@
     "BTCUSDT",
     "LTCUSDT",
     "ERAUSDT",
-    "WINUSDT"
+    "WINUSDT",
+    "ETHUSDT"
   ]
 }
