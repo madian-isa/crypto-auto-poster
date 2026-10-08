@@ -378,24 +378,22 @@ def _ensure_analysis_length(value, direction=None):
     text = _strip_opposite_direction_claims(_limit_words(value, 60), direction)
     if direction == "LONG":
         supplements = (
-            "This is a conditional technical scenario, not a verified trade or a promise of direction.",
-            "Price confirmation near the listed support zone would strengthen the view; failure to confirm weakens it.",
-            "A clean break below support would invalidate the setup and demand a reassessment.",
-            "Manage risk carefully and reassess when new price action changes the market structure.",
+            "LONG bias targets continuation toward resistance, with support as the invalidation level.",
+            "The stop loss defines the risk level for this setup.",
+            "The listed entry and target provide the trade plan.",
         )
     elif direction == "SHORT":
         supplements = (
-            "This is a conditional technical scenario, not a verified trade or a promise of direction.",
-            "Price confirmation near the listed resistance zone would strengthen the view; failure to confirm weakens it.",
-            "A clean break above resistance would invalidate the setup and demand a reassessment.",
-            "Manage risk carefully and reassess when new price action changes the market structure.",
+            "SHORT bias targets continuation toward support, with resistance as the invalidation level.",
+            "The stop loss defines the risk level for this setup.",
+            "The listed entry and target provide the trade plan.",
         )
     else:
         supplements = (
-            "This is a conditional technical scenario, not a verified trade or a promise of direction.",
-            "Price confirmation near the listed levels would strengthen the view; failure to confirm weakens it.",
-            "A clean break at the key level would invalidate the setup and demand a reassessment.",
-            "Manage risk carefully and reassess when new price action changes the market structure.",
+            "The supplied signals favor the selected direction toward the stated target.",
+            "The key level invalidates the setup; the stop loss defines the risk level.",
+            "Watch the listed support and resistance for the next price milestone.",
+            "The listed entry and target provide the trade plan.",
         )
     for sentence in supplements:
         if len(text.split()) >= 50:
@@ -1102,14 +1100,10 @@ def _fallback_technical_text(
 
     if not parts:
         analysis = (
-            f"${coin} fallback analysis uses the available price structure, "
-            f"but the indicator set is limited. The {direction.lower()} bias "
-            f"should be treated as conditional and requires confirmation near the entry zone."
-        )
-        analysis += (
-            " This is a market setup, not a record of an executed trade. "
-            "Watch the listed support and resistance, and reassess if price "
-            "moves against the stated direction."
+            f"${coin} available price structure favors the {direction.lower()} "
+            f"setup. The listed target is the objective, while the stop loss "
+            "defines the risk and the level that invalidates this view. "
+            "Watch support and resistance for the next price milestone."
         )
         return _limit_words(analysis, 60)
 
@@ -1123,13 +1117,13 @@ def _fallback_technical_text(
 
     if direction == "LONG":
         conclusion = (
-            "Together, these signals support a conditional LONG continuation setup. "
-            "Buyers still need to defend the entry zone and follow through toward resistance."
+            "Together, these signals favor LONG continuation toward the stated target. "
+            "Support is the key level; a break below it invalidates this view."
         )
     else:
         conclusion = (
-            "Together, these signals support a conditional SHORT continuation setup. "
-            "Sellers still need to hold the entry zone and push price toward lower support."
+            "Together, these signals favor SHORT continuation toward the stated target. "
+            "Resistance is the key level; a break above it invalidates this view."
         )
 
     analysis = (
@@ -1138,9 +1132,9 @@ def _fallback_technical_text(
     )
     if len(analysis.split()) < 50:
         analysis += (
-            " This remains a conditional setup rather than a prediction or "
-            "a record of an executed trade. Watch the listed levels for "
-            "confirmation, and reassess if price moves against this direction."
+            " The listed entry and target provide the trade plan. "
+            "The stop loss defines the risk level and the point that invalidates "
+            "the directional view."
         )
     return _limit_words(analysis, 60)
 
@@ -1472,12 +1466,16 @@ TASK:
 9. Do not invent a title. A title will be replaced by code.
 
 10. Write technical_analysis as a clear 50-60 word original
-    take. Include the key reasons for the direction, a
-    counter-signal/risk if supplied, and what to watch next.
+    take. State clearly which direction the supplied signals
+    favor and the expected path toward the listed target.
+    Include the key reasons, the main risk/invalidation level,
+    and what price level to watch next. Use direct, confident
+    wording; avoid vague disclaimer phrases such as "not a
+    verified trade" or "promise of direction". Never guarantee
+    profit or claim the target is certain.
 11. Keep the entire post short enough to read in about
     30 seconds. Use plain language and avoid repetition.
-12. Do not claim a real position was opened; this is an
-    analysis/setup, not a verified trade.
+12. Do not claim that a real position was opened or filled.
 
 Return JSON only:
 
