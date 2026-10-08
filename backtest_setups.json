@@ -46094,6 +46094,23 @@
       "technical_analysis": "UNI is sitting at the 7‑hour support around 7.77, below all EMAs (9‑21‑50‑200). MACD line sits above its signal and the histogram is positive, while stochastic K/D are deep oversold. ADX at 49 shows a strong trend. A bounce could lift price toward the 8.03 resistance. Watch for a break below 7.50 as a risk.",
       "market_context": "BTC is down 1.34% on the 4‑hour chart, with bearish EMA alignment and a broadly negative market breadth (71.8% red). The overall",
       "result": "PENDING"
+    },
+    {
+      "id": 2712,
+      "created_at": "2026-10-08T08:10:55.487010+00:00",
+      "symbol": "SOLUSDT",
+      "direction": "LONG",
+      "title": "Technical Signals Turn Positive as Market Momentum Builds",
+      "entry_low": 114.9,
+      "entry_high": 115.0,
+      "stop_loss": 110.9,
+      "take_profit": 123.05,
+      "support": 114.22,
+      "resistance": 116.81,
+      "news_line": "",
+      "technical_analysis": "Price sits just above the 1‑hour lower Bollinger band and 114.22 support, while EMAs stay higher, keeping bias bearish. RSI 34 and Stochastic ~26 show oversold conditions, and MACD line is above its signal, adding a bullish nudge. Order‑book shows a 10% bid imbalance. Risk: break below EMA9 (115.5) toward 114.22. Watch for a close above 115.6 to confirm upside.",
+      "market_context": "BTC is in a bearish 4‑hour trend and the broader market is broadly negative, with 73.8% of assets red.",
+      "result": "PENDING"
     }
   ]
 }
