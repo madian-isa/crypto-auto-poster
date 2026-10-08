@@ -46349,6 +46349,23 @@
       "technical_analysis": "Price is above EMA9, EMA21, EMA50 and EMA200, with a positive MACD histogram and RSI around 63, supporting a bullish bias. Stochastic is overbought (~97), a possible short‑term counter‑signal. Watch for a break above the 0.4864 resistance; a close above 0.494 would confirm the move. This is a conditional technical scenario, not a verified trade or a promise of direction.",
       "market_context": "BTC is in a bearish 4‑hour trend and down 1.2% on the day, while the broader market shows mixed breadth (56% green).",
       "result": "PENDING"
+    },
+    {
+      "id": 2727,
+      "created_at": "2026-10-08T12:20:55.788819+00:00",
+      "symbol": "DOGEUSDT",
+      "direction": "SHORT",
+      "title": "High Conviction Short Opportunity as $DOGE Tests Supply Wall",
+      "entry_low": 0.08713,
+      "entry_high": 0.08756,
+      "stop_loss": 0.091,
+      "take_profit": 0.080035,
+      "support": 0.08518,
+      "resistance": 0.08845,
+      "news_line": "",
+      "technical_analysis": "Price sits below EMA9/21/50, confirming bearish bias. ADX at 53 shows a strong trend, while RSI at 34.6 hints at oversold conditions. MACD histogram is slightly positive, a modest counter‑signal. Watch the 0.08845 resistance break for entry and the 0.08518 support for risk. This is a conditional technical scenario, not a verified trade or a promise of direction.",
+      "market_context": "BTC is in a bearish 4‑hour trend and down 1.3% on the day, adding pressure to risk assets. Overall market breadth is",
+      "result": "PENDING"
     }
   ]
 }
