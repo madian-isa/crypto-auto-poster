@@ -46366,6 +46366,23 @@
       "technical_analysis": "Price sits below EMA9/21/50, confirming bearish bias. ADX at 53 shows a strong trend, while RSI at 34.6 hints at oversold conditions. MACD histogram is slightly positive, a modest counter‑signal. Watch the 0.08845 resistance break for entry and the 0.08518 support for risk. This is a conditional technical scenario, not a verified trade or a promise of direction.",
       "market_context": "BTC is in a bearish 4‑hour trend and down 1.3% on the day, adding pressure to risk assets. Overall market breadth is",
       "result": "PENDING"
+    },
+    {
+      "id": 2728,
+      "created_at": "2026-10-08T12:30:53.564412+00:00",
+      "symbol": "MARSCOINUSDT",
+      "direction": "LONG",
+      "title": "Bullish Momentum Accelerates as $MARSCOIN Liquidity Sweep Completes",
+      "entry_low": 0.0893,
+      "entry_high": 0.0896,
+      "stop_loss": 0.0863,
+      "take_profit": 0.09575,
+      "support": 0.0893,
+      "resistance": 0.096,
+      "news_line": "",
+      "technical_analysis": "Price sits below EMA9/21/50, confirming a downtrend, but RSI at 28.9 and Stochastic K under 5 signal deep oversold conditions. ADX 38.5 shows a strong trend, while the orderbook shows a 27% bid imbalance supporting buying pressure. Risk: the prevailing downtrend could persist. Watch for a break above 0.096 for confirmation.",
+      "market_context": "BTC is bearish on 4H and mixed on daily, with a 1.3% 24h decline. Overall market breadth is split, providing a neutral",
+      "result": "PENDING"
     }
   ]
 }
