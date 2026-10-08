@@ -45856,6 +45856,23 @@
       "technical_analysis": "RSI at 82.7 and Stochastic K near 97 show extreme overbought conditions, while price sits above the Bollinger upper band. ADX above 30 confirms a strong trend. MACD remains bullish, a possible counter‑signal that could sustain upside. A break below EMA9 (0.01616) would strengthen the short case. This is a conditional technical scenario, not a verified trade or a promise",
       "market_context": "BTC is in a bearish 4‑hour trend and the broader market is broadly negative, adding pressure to risk assets like WUSDT.",
       "result": "PENDING"
+    },
+    {
+      "id": 2698,
+      "created_at": "2026-10-08T03:21:11.847644+00:00",
+      "symbol": "NMRUSDT",
+      "direction": "SHORT",
+      "title": "High Conviction Short Opportunity as $NMR Tests Supply Wall",
+      "entry_low": 14.55,
+      "entry_high": 14.78,
+      "stop_loss": 15.2,
+      "take_profit": 13.595,
+      "support": 11.86,
+      "resistance": 15.14,
+      "news_line": "",
+      "technical_analysis": "Price sits below EMA9 (15.01) and EMA21 (15.22), confirming a short bias. MACD is negative and RSI at 43 shows limited upside. Stochastic K is deep oversold, a possible bounce risk near the 14.78 resistance. A break above 15.14 would challenge this setup. This is a conditional technical scenario, not a verified trade or a promise of direction.",
+      "market_context": "BTC is in a bearish 4‑hour trend and the broader market is broadly negative, adding pressure to risk assets like NMR.",
+      "result": "PENDING"
     }
   ]
 }
