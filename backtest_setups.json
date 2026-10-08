@@ -46213,6 +46213,23 @@
       "technical_analysis": "Price sits above EMA9/21/50/200, and MACD histogram is positive, indicating bullish momentum. ADX above 40 confirms a strong trend. RSI 77 and Stochastic 91 suggest overbought conditions, so a pull‑back to the 0.1255 support zone is key. Watch for a break above the EMA200 for confirmation; a breach below support could trigger a correction.",
       "market_context": "BTC is bearish on the 4‑hour chart while mixed on daily, and overall market breadth is slightly bullish (57% green). This broader",
       "result": "PENDING"
+    },
+    {
+      "id": 2719,
+      "created_at": "2026-10-08T09:50:50.122239+00:00",
+      "symbol": "STRKUSDT",
+      "direction": "LONG",
+      "title": "Buyers Defend Key Demand Zone: $STRK Ready for Extension",
+      "entry_low": 0.0515,
+      "entry_high": 0.0518,
+      "stop_loss": 0.0498,
+      "take_profit": 0.05535,
+      "support": 0.05151,
+      "resistance": 0.05547,
+      "news_line": "",
+      "technical_analysis": "Price sits above EMA9‑200, with MACD line crossing above signal and a 29.7 ADX confirming a strong uptrend. RSI 67 and Stochastic 80 show near‑overbought conditions, a cautionary note. Entry around 0.0515‑0.0518, stop near 0.0498, TP at 0.0555. Watch for a break below EMA50 or support 0.05144. If price holds above the 1‑hour support 0.05151, the setup remains valid.",
+      "market_context": "BTC is in a bearish 4‑hour trend, down 0.9% today, while overall market shows mixed breadth (55.6% green). The broader downside adds",
+      "result": "PENDING"
     }
   ]
 }

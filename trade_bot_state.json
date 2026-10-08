@@ -1,6 +1,6 @@
 {
   "date": "2026-10-08",
-  "count": 26,
+  "count": 27,
   "posted_symbols_today": [
     "METUSDT",
     "SANDUSDT",
@@ -27,6 +27,7 @@
     "AVAXUSDT",
     "\u5e01\u5b89\u4eba\u751fUSDT",
     "CRVUSDT",
-    "ALGOUSDT"
+    "ALGOUSDT",
+    "STRKUSDT"
   ]
 }
