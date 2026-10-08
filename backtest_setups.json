@@ -46910,6 +46910,23 @@
       "technical_analysis": "Price sits below EMA9/21 and EMA200, while MACD and histogram stay negative. RSI at 36.6 and Stochastic K/D under 40 show weakening momentum. Order‑book imbalance leans bearish. A break below the 1H resistance 167.85 could trigger a short entry around 163.0, targeting 151.6. Watch 160.38 as the invalidation level. SHORT bias targets continuation toward support, with resistance as the invalidation",
       "market_context": "BTC is in a 4H bearish trend and down 2% today, with overall market breadth strongly negative. This broader pressure supports a",
       "result": "PENDING"
+    },
+    {
+      "id": 2760,
+      "created_at": "2026-10-08T21:20:42.133372+00:00",
+      "symbol": "ICPUSDT",
+      "direction": "SHORT",
+      "title": "Bearish Divergence Spotted on $ICP: Downside Targets Ahead",
+      "entry_low": 2.94,
+      "entry_high": 2.98,
+      "stop_loss": 3.1376,
+      "take_profit": 2.6048,
+      "support": 2.861,
+      "resistance": 3.148,
+      "news_line": "",
+      "technical_analysis": "ICP trades below key EMAs, with RSI at 32 and negative MACD confirming bearish momentum. The 24h low at 2.861 acts as critical support. A reclaim of 3.00 would invalidate the short bias. Targeting a move toward 2.62 puts the setup at 2R, provided price holds below the 3.148 swing high resistance.",
+      "market_context": "BTC is bearish on the 4H chart, with 80.2% of the market red, creating a risk-off environment that supports downside moves in",
+      "result": "PENDING"
     }
   ]
 }
