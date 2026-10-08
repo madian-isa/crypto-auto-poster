@@ -46706,6 +46706,23 @@
       "technical_analysis": "Price sits above EMA9 (0.000650) and EMA21, with MACD histogram positive and ADX 36 confirming a strong uptrend. RSI at 64 adds momentum while the Bollinger upper band caps near 0.000721, suggesting limited upside. A break below 0.000633 invalidates the bias. LONG bias targets continuation toward resistance, with support as the invalidation level.",
       "market_context": "BTC is in a bearish 4‑hour trend and down 3.3% on the day, while the overall market is broadly negative with 88.6%",
       "result": "PENDING"
+    },
+    {
+      "id": 2748,
+      "created_at": "2026-10-08T18:20:52.830522+00:00",
+      "symbol": "ETHFIUSDT",
+      "direction": "LONG",
+      "title": "Key Support Holds Firm: $ETHFI Bullish Continuation Setup Active",
+      "entry_low": 0.639,
+      "entry_high": 0.641,
+      "stop_loss": 0.617,
+      "take_profit": 0.686,
+      "support": 0.6284,
+      "resistance": 0.7214,
+      "news_line": "",
+      "technical_analysis": "Yet RSI 26 and Stochastic ~5 show deep oversold conditions, while the orderbook shows a modest bid imbalance. A break above 0.641 could push toward EMA9 (0.686) as target. Watch 0.617; a clear move below invalidates the setup. LONG bias targets continuation toward resistance, with support as the invalidation level.",
+      "market_context": "BTC is bearish on the 4‑hour chart and mixed on daily, with overall market breadth broadly negative. This adds pressure but does",
+      "result": "PENDING"
     }
   ]
 }
