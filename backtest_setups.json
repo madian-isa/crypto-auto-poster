@@ -48185,6 +48185,23 @@
       "technical_analysis": "Price sits below EMA9, EMA21 and EMA50, with EMA200 barely higher, signaling a downtrend. MACD is negative, RSI at 39 and Stochastic K below 30 show weakening momentum. Order‑book imbalance favors sellers. SHORT bias targets continuation toward support, with resistance as the invalidation level. The stop loss defines the risk level for this setup.",
       "market_context": "BTC is marginally bullish on the 24h chart, but SPCX shows bearish pressure despite a broadly positive market breadth.",
       "result": "PENDING"
+    },
+    {
+      "id": 2835,
+      "created_at": "2026-10-09T20:20:47.213153+00:00",
+      "symbol": "XAUTUSDT",
+      "direction": "LONG",
+      "title": "$XAUT Breaks Out of Falling Wedge Pattern: Targets Set Higher",
+      "entry_low": 4169.5,
+      "entry_high": 4175.0,
+      "stop_loss": 4025.0,
+      "take_profit": 4466.75,
+      "support": 4169.38,
+      "resistance": 4193.66,
+      "news_line": "",
+      "technical_analysis": "Price sits above EMA9, EMA21, EMA50 and EMA200, showing a clear bullish structure. ADX at 34 confirms strong trend momentum. Watch the 4193.66 resistance; a break could drive price toward the 2R target around 4467. A move below 4169.38 invalidates the setup. LONG bias targets continuation toward resistance, with support as the invalidation level.",
+      "market_context": "BTC is up 0.76% on the day, while 76.4% of the market is green, indicating broadly positive sentiment.",
+      "result": "PENDING"
     }
   ]
 }
