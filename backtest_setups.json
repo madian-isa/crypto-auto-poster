@@ -47624,6 +47624,23 @@
       "technical_analysis": "RSI 37 and Stochastic K 25 show oversold conditions. A bounce toward the 5.29e‑05 resistance is plausible; break below 5.05e‑05 invalidates the setup. LONG bias targets continuation toward resistance, with support as the invalidation level. The stop loss defines the risk level for this setup. The listed entry and target provide the trade plan.",
       "market_context": "BTC is in a bearish 4‑hour trend and the broader market is broadly negative, adding pressure to risk assets.",
       "result": "PENDING"
+    },
+    {
+      "id": 2802,
+      "created_at": "2026-10-09T08:50:45.870225+00:00",
+      "symbol": "ALGOUSDT",
+      "direction": "LONG",
+      "title": "Major Breakout Signals Emerge on $ALGO Higher Timeframes",
+      "entry_low": 0.1185,
+      "entry_high": 0.12,
+      "stop_loss": 0.114,
+      "take_profit": 0.12975,
+      "support": 0.1183,
+      "resistance": 0.1235,
+      "news_line": "",
+      "technical_analysis": "RSI at 50.9 and positive MACD histogram suggest early momentum shift. Stochastic is overbought at 90, so a pullback to 0.1195 is ideal. A break below 0.1183 invalidates the structure. Watch for price to reclaim 0.1208 resistance to target 0.1275. LONG bias targets continuation toward resistance, with support as the invalidation level.",
+      "market_context": "BTC is bearish on the 4H, with 67% of the market red. However, ALGO shows relative strength with positive orderbook imbalance.",
+      "result": "PENDING"
     }
   ]
 }
