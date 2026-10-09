@@ -47828,6 +47828,23 @@
       "technical_analysis": "Price is above EMA9, EMA21, EMA50 and EMA200, showing clear bullish alignment. MACD line sits just over its signal and RSI is near 60, adding momentum to the upside. Watch the 1.00007 resistance; a break could push toward the 2R target. Risk if price drops below the 0.99989 support, where the stop sits at 0.9649.",
       "market_context": "BTC is slightly higher (+0.68%) while overall market breadth is negative, indicating limited upside for risk assets.",
       "result": "PENDING"
+    },
+    {
+      "id": 2814,
+      "created_at": "2026-10-09T13:50:49.740249+00:00",
+      "symbol": "INJUSDT",
+      "direction": "SHORT",
+      "title": "Moving Average Death Cross Signals Downward Trend for $INJ",
+      "entry_low": 7.09,
+      "entry_high": 7.12,
+      "stop_loss": 7.3892,
+      "take_profit": 6.5366,
+      "support": 6.746,
+      "resistance": 7.203,
+      "news_line": "",
+      "technical_analysis": "Price sits below EMA9, EMA21, EMA50 and EMA200, confirming a downtrend. RSI at 47.9 and Stochastic K (58) below D (63) add bearish pressure. Watch the 7.203 resistance; a break invalidates the short. Target moves toward the 6.746 support. SHORT bias targets continuation toward support, with resistance as the invalidation level.",
+      "market_context": "BTC is marginally bullish (+0.6%) while the broader market is broadly negative, with 73.8% of assets in red. The overall sentiment does",
+      "result": "PENDING"
     }
   ]
 }
