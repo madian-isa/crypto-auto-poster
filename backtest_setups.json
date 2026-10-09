@@ -47879,6 +47879,23 @@
       "technical_analysis": "Price sits above EMA9/21/50/200, MACD histogram positive and MACD line above signal, indicating bullish momentum. RSI 71 and Stochastic 94 show overbought condition, warning of a pullback. A break above the 1H support at 0.325 supports a long bias toward the 0.412 resistance. Watch 0.319 for stop and 0.351 TP.",
       "market_context": "BTC is up 0.6% in 24h, showing bullish bias, while overall market breadth is broadly negative.",
       "result": "PENDING"
+    },
+    {
+      "id": 2817,
+      "created_at": "2026-10-09T14:40:48.936867+00:00",
+      "symbol": "CRCLBUSDT",
+      "direction": "LONG",
+      "title": "$CRCLB Outperformance Signal: Buying Momentum Beats Broader Market",
+      "entry_low": 82.1,
+      "entry_high": 82.2,
+      "stop_loss": 79.2,
+      "take_profit": 88.05,
+      "support": 81.08,
+      "resistance": 87.59,
+      "news_line": "",
+      "technical_analysis": "MACD shows bullish momentum (positive histogram) and price sits above EMA21 and SMA50, supporting a modest upside. RSI at 57 is neutral. Watch 82.52 as the next resistance; a break below 81.08 invalidates the long. LONG bias targets continuation toward resistance, with support as the invalidation level. The stop loss defines the risk level for this setup.",
+      "market_context": "BTC is up 0.57% today, but the broader market is broadly negative. CRCLB trades in a mixed environment, with short‑term strength hinted",
+      "result": "PENDING"
     }
   ]
 }
