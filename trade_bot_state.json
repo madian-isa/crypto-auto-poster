@@ -1,6 +1,6 @@
 {
   "date": "2026-10-09",
-  "count": 70,
+  "count": 71,
   "posted_symbols_today": [
     "OGNUSDT",
     "RLCUSDT",
@@ -71,6 +71,7 @@
     "XAUTUSDT",
     "POLUSDT",
     "OPUSDT",
-    "ARBUSDT"
+    "ARBUSDT",
+    "LTCUSDT"
   ]
 }
