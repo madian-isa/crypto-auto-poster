@@ -47692,6 +47692,23 @@
       "technical_analysis": "Price is just under the 1‑hour support at 2.394. MACD line sits above its signal, giving bullish momentum, and the order‑book shows a 13.6 % bid imbalance. EMA200 provides a floor while shorter EMAs sit above price. A clear break above 2.394 could drive the pair toward the 2‑hour resistance at 2.461. Watch 2.394 for invalidation; a drop below 2.31",
       "market_context": "BTC is in a bearish 4‑hour trend and the broader market is broadly negative, with 70.9% of assets red. The overall crypto",
       "result": "PENDING"
+    },
+    {
+      "id": 2806,
+      "created_at": "2026-10-09T10:20:56.969961+00:00",
+      "symbol": "SANDUSDT",
+      "direction": "LONG",
+      "title": "Trend Reversal Confirmed for $SAND as Volume Spikes Upward",
+      "entry_low": 0.069,
+      "entry_high": 0.0692,
+      "stop_loss": 0.0665,
+      "take_profit": 0.0743,
+      "support": 0.06755,
+      "resistance": 0.0726,
+      "news_line": "",
+      "technical_analysis": "MACD line is above its signal and the histogram is positive, supporting a bounce. Stochastic near 60 adds mild upside. Risk if price falls through 0.06755; next watch point is the 0.0726 ceiling. LONG bias targets continuation toward resistance, with support as the invalidation level. The stop loss defines the risk level for this setup.",
+      "market_context": "BTC is in a bearish 4H trend and the broader market shows a broadly negative breadth, with 70% red assets.",
+      "result": "PENDING"
     }
   ]
 }
