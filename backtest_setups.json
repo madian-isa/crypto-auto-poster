@@ -48168,6 +48168,23 @@
       "technical_analysis": "RSI 81.6 and Stochastic 88 place GMT deep in overbought territory. Price sits above the upper Bollinger band and near the 1‑hour resistance 0.0092, while order‑book shows slight sell pressure. Invalidates if price clears 0.0092. Target is near 0.0080, offering a 2R reward‑to‑risk. SHORT bias targets continuation toward support, with resistance as the invalidation level.",
       "market_context": "BTC is up 0.8% on the day, though the 4‑hour trend is bearish. Overall market breadth is broadly positive with 76.8% green",
       "result": "PENDING"
+    },
+    {
+      "id": 2834,
+      "created_at": "2026-10-09T20:00:49.773397+00:00",
+      "symbol": "SPCXBUSDT",
+      "direction": "SHORT",
+      "title": "Major Support Breakdown Confirmed on $SPCXB Higher Timeframes",
+      "entry_low": 162.4,
+      "entry_high": 162.55,
+      "stop_loss": 168.2,
+      "take_profit": 151.025,
+      "support": 161.59,
+      "resistance": 165.46,
+      "news_line": "",
+      "technical_analysis": "Price sits below EMA9, EMA21 and EMA50, with EMA200 barely higher, signaling a downtrend. MACD is negative, RSI at 39 and Stochastic K below 30 show weakening momentum. Order‑book imbalance favors sellers. SHORT bias targets continuation toward support, with resistance as the invalidation level. The stop loss defines the risk level for this setup.",
+      "market_context": "BTC is marginally bullish on the 24h chart, but SPCX shows bearish pressure despite a broadly positive market breadth.",
+      "result": "PENDING"
     }
   ]
 }
