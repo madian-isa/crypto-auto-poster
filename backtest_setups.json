@@ -48287,6 +48287,23 @@
       "technical_analysis": "Price sits near the 1H support at 1577 and below all EMAs, while ADX shows a strong downtrend. RSI and Stochastic are deep oversold, but the order‑book imbalance (-7.7%) and negative MACD confirm bearish pressure. A short entry around 1582‑1584 targets the next swing low near 1470. Risk is the 1639 level; a break above 1625 invalidates the setup.",
       "market_context": "BTC is slightly bullish (up 0.8%) and the broader market is broadly positive, yet SNDKBUSDT shows clear bearish structure on the 1H/4H",
       "result": "PENDING"
+    },
+    {
+      "id": 2841,
+      "created_at": "2026-10-09T22:20:56.709543+00:00",
+      "symbol": "XAIUSDT",
+      "direction": "LONG",
+      "title": "Smart Money Flow Increases into $XAI Ahead of Catalysts",
+      "entry_low": 0.0094,
+      "entry_high": 0.0096,
+      "stop_loss": 0.009,
+      "take_profit": 0.0105,
+      "support": 0.009,
+      "resistance": 0.00996,
+      "news_line": "",
+      "technical_analysis": "Price sits above EMA9/21/50/200 and MACD histogram is positive, indicating bullish momentum. RSI at 74.7 and price touching the Bollinger upper suggest overbought pressure, while order‑book shows a -15.6% ask imbalance. A long entry around 0.0094‑0.0096, SL ~0.0090, TP ~0.0102 targets the 0.00996 resistance. Watch a break below 0.0090 to invalidate.",
+      "market_context": "BTC is up 0.87% in 24h and market breadth is 75.6% green, providing a broadly positive backdrop.",
+      "result": "PENDING"
     }
   ]
 }
