@@ -48355,6 +48355,23 @@
       "technical_analysis": "Price sits below the 200‑EMA, keeping the bias bearish. Stochastic K at 79 signals overbought conditions, while the 1H swing shows resistance around 0.7024. A short entry near 0.7023 targets a 2R profit near 0.653, with the stop set above 0.727. Watch a break above 0.7024 for invalidation. SHORT bias targets continuation toward support, with resistance as the invalidation level.",
       "market_context": "BTC is bearish on the 4H chart but mixed on the daily, while overall market breadth remains broadly positive.",
       "result": "PENDING"
+    },
+    {
+      "id": 2845,
+      "created_at": "2026-10-09T23:30:49.389623+00:00",
+      "symbol": "HBARUSDT",
+      "direction": "LONG",
+      "title": "Spot Inflows Surge for $HBAR as Futures Open Interest Rises",
+      "entry_low": 0.09149,
+      "entry_high": 0.09158,
+      "stop_loss": 0.0883,
+      "take_profit": 0.098005,
+      "support": 0.09182,
+      "resistance": 0.09271,
+      "news_line": "",
+      "technical_analysis": "Price sits just above the 9‑ and 21‑EMA while the MACD line sits above its signal and Stochastic K is over 60, all pointing bullish. A tight 0.09149‑0.09158 range offers a clean entry. Risk lies if price breaks below 0.0883 (the 3.5% SL). Target near 0.0980 aligns with the next resistance level.",
+      "market_context": "BTC is up 0.9% on the day, market breadth remains broadly positive, supporting risk‑on sentiment.",
+      "result": "PENDING"
     }
   ]
 }
