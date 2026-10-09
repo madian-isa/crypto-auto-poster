@@ -47845,6 +47845,23 @@
       "technical_analysis": "Price sits below EMA9, EMA21, EMA50 and EMA200, confirming a downtrend. RSI at 47.9 and Stochastic K (58) below D (63) add bearish pressure. Watch the 7.203 resistance; a break invalidates the short. Target moves toward the 6.746 support. SHORT bias targets continuation toward support, with resistance as the invalidation level.",
       "market_context": "BTC is marginally bullish (+0.6%) while the broader market is broadly negative, with 73.8% of assets in red. The overall sentiment does",
       "result": "PENDING"
+    },
+    {
+      "id": 2815,
+      "created_at": "2026-10-09T14:10:53.103099+00:00",
+      "symbol": "ETHFIUSDT",
+      "direction": "SHORT",
+      "title": "$ETHFI Rejection at Key Supply Zone: Short Setup Activated",
+      "entry_low": 0.6895,
+      "entry_high": 0.6905,
+      "stop_loss": 0.715,
+      "take_profit": 0.64,
+      "support": 0.6763,
+      "resistance": 0.6994,
+      "news_line": "",
+      "technical_analysis": "Price sits under EMA9/21/50, confirming bearish bias. A break below that level supports a short toward the 4‑hour support 0.6763. Watch 0.6994 for entry; invalidation above 0.715. Target 0.639. SHORT bias targets continuation toward support, with resistance as the invalidation level. The stop loss defines the risk level for this setup.",
+      "market_context": "BTC is up 0.45% while overall market breadth is negative (77.8% red).",
+      "result": "PENDING"
     }
   ]
 }
