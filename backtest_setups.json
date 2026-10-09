@@ -47641,6 +47641,23 @@
       "technical_analysis": "RSI at 50.9 and positive MACD histogram suggest early momentum shift. Stochastic is overbought at 90, so a pullback to 0.1195 is ideal. A break below 0.1183 invalidates the structure. Watch for price to reclaim 0.1208 resistance to target 0.1275. LONG bias targets continuation toward resistance, with support as the invalidation level.",
       "market_context": "BTC is bearish on the 4H, with 67% of the market red. However, ALGO shows relative strength with positive orderbook imbalance.",
       "result": "PENDING"
+    },
+    {
+      "id": 2803,
+      "created_at": "2026-10-09T09:00:59.620917+00:00",
+      "symbol": "WUSDT",
+      "direction": "SHORT",
+      "title": "$W Fails Resistance Retest: Bearish Extension Imminent",
+      "entry_low": 0.0183,
+      "entry_high": 0.01836,
+      "stop_loss": 0.019,
+      "take_profit": 0.01699,
+      "support": 0.01587,
+      "resistance": 0.0185,
+      "news_line": "",
+      "technical_analysis": "Price sits just below 0.0185 resistance, above all EMAs and with a 10% bid imbalance. RSI 76 and Stochastic 96 show overbought, and price is past the Bollinger upper band, hinting at a pullback. Short entry near 0.01832, SL 0.01900, TP 0.01700, targeting the 0.0174‑0.01587 support zone. A break above 0.0185 invalidates the trade.",
+      "market_context": "BTC down 0.28% on a bearish 4‑hour trend, broader market breadth remains negative.",
+      "result": "PENDING"
     }
   ]
 }
