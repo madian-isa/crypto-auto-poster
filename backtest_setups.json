@@ -47403,6 +47403,23 @@
       "technical_analysis": "Order‑book imbalance is negative, adding sell pressure. A break above the 770 resistance would invalidate the short. SHORT bias targets continuation toward support, with resistance as the invalidation level. The stop loss defines the risk level for this setup. The listed entry and target provide the trade plan.",
       "market_context": "BTC is in a bearish 4‑hour trend and the broader market is broadly negative, supporting downside bias for BNB.",
       "result": "PENDING"
+    },
+    {
+      "id": 2789,
+      "created_at": "2026-10-09T05:31:00.985477+00:00",
+      "symbol": "WLDUSDT",
+      "direction": "SHORT",
+      "title": "$WLD Prepares for Breakdown: Downside Risk Escalates",
+      "entry_low": 0.4905,
+      "entry_high": 0.491,
+      "stop_loss": 0.508,
+      "take_profit": 0.45625,
+      "support": 0.459,
+      "resistance": 0.5228,
+      "news_line": "",
+      "technical_analysis": "Short bias dominates. ADX above 30 confirms a strong trend. A break above 0.5228 invalidates the short. SHORT bias targets continuation toward support, with resistance as the invalidation level. The stop loss defines the risk level for this setup. The listed entry and target provide the trade plan.",
+      "market_context": "BTC is bearish, down 0.5% on the 24h, and overall market breadth is broadly negative.",
+      "result": "PENDING"
     }
   ]
 }
