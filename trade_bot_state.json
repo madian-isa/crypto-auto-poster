@@ -1,12 +1,13 @@
 {
   "date": "2026-10-09",
-  "count": 6,
+  "count": 7,
   "posted_symbols_today": [
     "OGNUSDT",
     "RLCUSDT",
     "NEARUSDT",
     "STRKUSDT",
     "ZECUSDT",
-    "PUMPUSDT"
+    "PUMPUSDT",
+    "AMPUSDT"
   ]
 }
