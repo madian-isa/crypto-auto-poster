@@ -47726,6 +47726,23 @@
       "technical_analysis": "Price sits below EMA9 (0.2209) and EMA21 (0.2213), indicating bearish pressure. Stochastic K (47.8) under D (76.6) and a negative RSI (46.3) add downside bias. Order‑book shows an 8% ask imbalance and volume dropped 63%, supporting a short. Watch 0.2157 as invalidation; target 0.2089. SHORT bias targets continuation toward support, with resistance as the invalidation level.",
       "market_context": "BTC is in a bearish 4‑hour trend and the broader market is broadly negative, reinforcing the short bias for FET.",
       "result": "PENDING"
+    },
+    {
+      "id": 2808,
+      "created_at": "2026-10-09T11:10:46.764050+00:00",
+      "symbol": "ERAUSDT",
+      "direction": "SHORT",
+      "title": "$ERA Resistance Test Fails: Bearish Momentum Building Fast",
+      "entry_low": 0.0618,
+      "entry_high": 0.0621,
+      "stop_loss": 0.0642,
+      "take_profit": 0.05745,
+      "support": 0.061,
+      "resistance": 0.0649,
+      "news_line": "",
+      "technical_analysis": "Short bias dominates. Price sits below EMA9‑200, and MACD remains negative, confirming downtrend. RSI near 44 and stochastic at 22 signal lingering weakness. Order‑book shows modest bid pressure. Target is 0.0576, twice the 0.0022‑risk from a 0.0642 stop. Watch 0.061 as the invalidation level; a break above 0.0649 would negate the setup.",
+      "market_context": "BTC is up 5.3% in 24 h, yet the overall market breadth is negative (31% green, 69% red). Broad sentiment stays bearish",
+      "result": "PENDING"
     }
   ]
 }
