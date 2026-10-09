@@ -47760,6 +47760,23 @@
       "technical_analysis": "Price sits just above EMA9/21 and MACD histogram is positive, indicating upside bias. RSI is neutral and stochastic is near overbought, warning of a pull‑back. A long entry between 242.4‑242.8 targets the next resistance cluster at 247.9, with SL near 234 and TP around 259. Watch a break below 242.3 to invalidate.",
       "market_context": "BTC is marginally bullish on the 24h chart while overall market breadth is negative. The broader market shows more red than green",
       "result": "PENDING"
+    },
+    {
+      "id": 2810,
+      "created_at": "2026-10-09T12:00:54.997560+00:00",
+      "symbol": "ZROUSDT",
+      "direction": "LONG",
+      "title": "Smart Money Flow Increases into $ZRO Ahead of Catalysts",
+      "entry_low": 2.119,
+      "entry_high": 2.134,
+      "stop_loss": 2.045,
+      "take_profit": 2.2895,
+      "support": 2.119,
+      "resistance": 2.18,
+      "news_line": "",
+      "technical_analysis": "Price sits above EMA9, EMA21 and EMA200, while MACD line stays positive and above its signal, supporting a bullish bias. RSI at 57 shows room for upside. The 1‑hour support at 2.119 holds, but the order‑book shows a 20% ask imbalance and stochastic overbought, warning of a possible pullback. A break above the 2.18 resistance would confirm the target. Watch",
+      "market_context": "BTC is modestly higher (+0.9%) in a broadly negative market, offering limited positive spill‑over for risk assets.",
+      "result": "PENDING"
     }
   ]
 }
