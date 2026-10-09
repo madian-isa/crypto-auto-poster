@@ -48219,6 +48219,23 @@
       "technical_analysis": "Short bias dominates. Price sits below EMA9/21/50 and MACD histogram is negative, confirming downtrend. Stochastic is oversold but order‑book shows bid pressure, suggesting a pull‑back to the 1H support at 0.09456. Risk if price breaks above 0.09941 resistance. Target 0.0906, stop at 0.1009. Volume surged 274% confirming activity. Watch 0.0972 low as intermediate floor.",
       "market_context": "BTC up 0.736% on 24h, market broadly positive (72.6% green).",
       "result": "PENDING"
+    },
+    {
+      "id": 2837,
+      "created_at": "2026-10-09T20:40:53.986895+00:00",
+      "symbol": "OPUSDT",
+      "direction": "LONG",
+      "title": "Critical Resistance Test: $OP Preparing to Surge Higher",
+      "entry_low": 0.1206,
+      "entry_high": 0.1208,
+      "stop_loss": 0.115872,
+      "take_profit": 0.130356,
+      "support": 0.1213,
+      "resistance": 0.1291,
+      "news_line": "",
+      "technical_analysis": "OP is trading just above the 9‑EMA and holds a bullish MACD histogram (+0.00026) with RSI at 58.8. The 1‑hour support sits near 0.1213, offering a pull‑back entry around 0.1206‑0.1208. Stop loss below 0.1165 and target 0.1291 gives a 2R setup. A break under 0.119 would invalidate the long trade.",
+      "market_context": "BTC up 0.73% on the day, market breadth broadly positive with 72.9% green assets, supporting risk‑on sentiment.",
+      "result": "PENDING"
     }
   ]
 }
