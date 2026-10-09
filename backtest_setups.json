@@ -48015,6 +48015,23 @@
       "technical_analysis": "Price sits above EMA9, EMA21, EMA50 and EMA200, while MACD line is above its signal and the histogram is positive. RSI at 61 supports bullish bias. A break above 0.3714 could drive price toward the 0.3881 resistance. Invalidating level is the 0.3575 stop. LONG bias targets continuation toward resistance, with support as the invalidation level.",
       "market_context": "BTC is up 2.2% and the market is broadly positive, with 85% of assets in green. This backdrop adds subtle upside pressure",
       "result": "PENDING"
+    },
+    {
+      "id": 2825,
+      "created_at": "2026-10-09T17:00:58.058558+00:00",
+      "symbol": "FILUSDT",
+      "direction": "SHORT",
+      "title": "Bearish Divergence Spotted on $FIL: Downside Targets Ahead",
+      "entry_low": 1.0805,
+      "entry_high": 1.083,
+      "stop_loss": 1.12502,
+      "take_profit": 0.99521,
+      "support": 1.0724,
+      "resistance": 1.0884,
+      "news_line": "",
+      "technical_analysis": "Price sits just below the 1H resistance at 1.0835 while the MACD histogram is negative and volume fell 24%. RSI is neutral and the ADX (13.9) shows a weak trend. These bearish cues favor a short toward the 2R target near 1.006. A break above 1.0884 invalidates the setup. SHORT bias targets continuation toward support, with resistance as the invalidation",
+      "market_context": "BTC is up 2.46% on the day and the broader market is broadly positive, but FIL's own momentum appears to be weakening.",
+      "result": "PENDING"
     }
   ]
 }
