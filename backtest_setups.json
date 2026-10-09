@@ -47437,6 +47437,23 @@
       "technical_analysis": "Prometheus holds above the 5.12 support, showing bullish momentum as the MACD histogram turns positive. Price sits below the 50 EMA, indicating a recovery phase rather than a strong trend. Watch for a break above 5.35 resistance to confirm the upward move. Invalid if price loses 4.95. LONG bias targets continuation toward resistance, with support as the invalidation level.",
       "market_context": "Bitcoin remains bearish on the 4H chart, pressuring the broader market.",
       "result": "PENDING"
+    },
+    {
+      "id": 2791,
+      "created_at": "2026-10-09T06:00:55.630728+00:00",
+      "symbol": "GTCUSDT",
+      "direction": "SHORT",
+      "title": "$GTC Fakeout Confirmed: Bulls Trapped at Local Highs",
+      "entry_low": 0.1949,
+      "entry_high": 0.1954,
+      "stop_loss": 0.202,
+      "take_profit": 0.18145,
+      "support": 0.17478,
+      "resistance": 0.19969,
+      "news_line": "",
+      "technical_analysis": "Short bias is supported by MACD below signal, price under EMA9, and order‑book imbalance favoring sells. ADX at 42 confirms a strong trend. Watch 0.1949‑0.1954 entry, SL near 0.202, TP targeted around 0.181 as profit zone for the trade and potential. SHORT bias targets continuation toward support, with resistance as the invalidation level.",
+      "market_context": "BTC down 0.4% on 4‑hour bearish trend, market breadth broadly negative with 65% red assets.",
+      "result": "PENDING"
     }
   ]
 }
