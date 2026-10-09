@@ -47216,6 +47216,23 @@
       "technical_analysis": "Price sits just below the 1H resistance at 1.0566, while EMA21 (1.069) and EMA50 (1.104) sit well above. RSI at 41 and a strong ADX (44) confirm a bearish overall trend. A short entry around 1.054 ± 0.001 targets 0.98 with a stop at 1.091. Watch a break above 1.0566 to invalidate.",
       "market_context": "BTC down 1.5% on a bearish 4‑hour trend, market breadth 81% red, overall sentiment broadly negative.",
       "result": "PENDING"
+    },
+    {
+      "id": 2778,
+      "created_at": "2026-10-09T02:40:50.928155+00:00",
+      "symbol": "ADAUSDT",
+      "direction": "SHORT",
+      "title": "High Volume Selling Sweep Breaks $ADA Market Structure",
+      "entry_low": 0.2345,
+      "entry_high": 0.2355,
+      "stop_loss": 0.244,
+      "take_profit": 0.217,
+      "support": 0.2313,
+      "resistance": 0.2356,
+      "news_line": "",
+      "technical_analysis": "Price sits below EMA9, EMA21, EMA50 and EMA200, confirming a downtrend. ADX at 43 shows strong trend strength. RSI at 35 and Stochastic below 50 add bearish bias. A break below 0.2313 invalidates the short. SHORT bias targets continuation toward support, with resistance as the invalidation level. The stop loss defines the risk level for this setup.",
+      "market_context": "BTC is down 1.5% on a bearish 4H trend, and the overall market is broadly negative, supporting downside pressure on ADA.",
+      "result": "PENDING"
     }
   ]
 }
