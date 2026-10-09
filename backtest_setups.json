@@ -47998,6 +47998,23 @@
       "technical_analysis": "MACD histogram is positive and order‑book shows a 14% bid imbalance, supporting a long bias. Risk if price breaks below 0.2075; next target near 0.230. LONG bias targets continuation toward resistance, with support as the invalidation level. The stop loss defines the risk level for this setup. The listed entry and target provide the trade plan.",
       "market_context": "BTC up 1.97% on the day, market breadth broadly positive (82% green).",
       "result": "PENDING"
+    },
+    {
+      "id": 2824,
+      "created_at": "2026-10-09T16:50:43.712467+00:00",
+      "symbol": "JUPUSDT",
+      "direction": "LONG",
+      "title": "$JUP Buying Pressure Rises as Bulls Test Key Resistance",
+      "entry_low": 0.369,
+      "entry_high": 0.371,
+      "stop_loss": 0.3552,
+      "take_profit": 0.3996,
+      "support": 0.3622,
+      "resistance": 0.3881,
+      "news_line": "",
+      "technical_analysis": "Price sits above EMA9, EMA21, EMA50 and EMA200, while MACD line is above its signal and the histogram is positive. RSI at 61 supports bullish bias. A break above 0.3714 could drive price toward the 0.3881 resistance. Invalidating level is the 0.3575 stop. LONG bias targets continuation toward resistance, with support as the invalidation level.",
+      "market_context": "BTC is up 2.2% and the market is broadly positive, with 85% of assets in green. This backdrop adds subtle upside pressure",
+      "result": "PENDING"
     }
   ]
 }
