@@ -47318,6 +47318,23 @@
       "technical_analysis": "PYTH is trading above EMA9, EMA21, EMA50 and EMA200, with MACD line above signal and a positive histogram. RSI at 58 and ADX 41 confirm a strong uptrend. Order‑book shows a 12% bid imbalance. Watch the 0.08277 resistance; a break could push toward the 0.0853‑0.0870 zone. A close below 0.0788 invalidates the setup.",
       "market_context": "BTC is in a bearish 4‑hour trend and the broader market is broadly negative, with 73% red assets.",
       "result": "PENDING"
+    },
+    {
+      "id": 2784,
+      "created_at": "2026-10-09T04:21:24.877394+00:00",
+      "symbol": "TIAUSDT",
+      "direction": "LONG",
+      "title": "$TIA Breaks Out of Falling Wedge Pattern: Targets Set Higher",
+      "entry_low": 0.508,
+      "entry_high": 0.512,
+      "stop_loss": 0.489,
+      "take_profit": 0.552,
+      "support": 0.4949,
+      "resistance": 0.5303,
+      "news_line": "",
+      "technical_analysis": "Price sits above EMA9/21/50 and MACD line is above signal, giving bullish momentum. RSI 62 and Stochastic near 88 support upside. Orderbook shows 13% bid imbalance. A long entry between 0.508‑0.512 targets the 0.530‑0.548 zone. Risk is if price falls below 0.4949 support, invalidating the setup. LONG bias targets continuation toward resistance, with support as the invalidation level.",
+      "market_context": "BTC is modestly bullish (+0.199% 24h) while overall market breadth is mixed (42.7% green, 57.3% red).",
+      "result": "PENDING"
     }
   ]
 }
