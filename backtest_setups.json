@@ -47063,6 +47063,23 @@
       "technical_analysis": "Stochastic is at 86 and RSI sits at 54, indicating overbought pressure. Price is just below the 1‑hour resistance 1.111 and under the 50‑EMA (1.1115). A break under the 1.103‑1.105 zone could push DOT toward the 1.022 target. Watch 1.111; a clear close above invalidates the short. SHORT bias targets continuation toward support, with resistance as the invalidation level.",
       "market_context": "BTC is down 1.86% on the day and the broader market is 80.6% red, adding bearish bias to the setup.",
       "result": "PENDING"
+    },
+    {
+      "id": 2769,
+      "created_at": "2026-10-09T00:00:59.157395+00:00",
+      "symbol": "OGNUSDT",
+      "direction": "SHORT",
+      "title": "$OGN Derivative Data Shows Heavy Long Liquidations Incoming",
+      "entry_low": 0.04558,
+      "entry_high": 0.0457,
+      "stop_loss": 0.04725,
+      "take_profit": 0.04242,
+      "support": 0.03764,
+      "resistance": 0.04596,
+      "news_line": "",
+      "technical_analysis": "OGN is hugging the 0.04596 resistance while RSI (69.6) and Stochastic (70/75) signal overbought conditions. With ADX at 67 indicating a strong trend, the bias leans short toward the 0.04558‑0.04570 entry. Risk if price breaks above 0.0472; target 0.0424. SHORT bias targets continuation toward support, with resistance as the invalidation level.",
+      "market_context": "BTC down 1.79% on a bearish 4‑hour trend; overall market 81% red, breadth broadly negative, adding pressure on altcoins.",
+      "result": "PENDING"
     }
   ]
 }
