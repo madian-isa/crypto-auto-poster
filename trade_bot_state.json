@@ -1,6 +1,6 @@
 {
   "date": "2026-10-09",
-  "count": 47,
+  "count": 48,
   "posted_symbols_today": [
     "OGNUSDT",
     "RLCUSDT",
@@ -48,6 +48,7 @@
     "XRPUSDT",
     "USD1USDT",
     "INJUSDT",
-    "ETHFIUSDT"
+    "ETHFIUSDT",
+    "RADUSDT"
   ]
 }

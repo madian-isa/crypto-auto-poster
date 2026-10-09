@@ -47862,6 +47862,23 @@
       "technical_analysis": "Price sits under EMA9/21/50, confirming bearish bias. A break below that level supports a short toward the 4‑hour support 0.6763. Watch 0.6994 for entry; invalidation above 0.715. Target 0.639. SHORT bias targets continuation toward support, with resistance as the invalidation level. The stop loss defines the risk level for this setup.",
       "market_context": "BTC is up 0.45% while overall market breadth is negative (77.8% red).",
       "result": "PENDING"
+    },
+    {
+      "id": 2816,
+      "created_at": "2026-10-09T14:20:44.911397+00:00",
+      "symbol": "RADUSDT",
+      "direction": "LONG",
+      "title": "Strong Accumulation Detected: $RAD Prepares for Next Wave Up",
+      "entry_low": 0.327,
+      "entry_high": 0.332,
+      "stop_loss": 0.31632,
+      "take_profit": 0.35586,
+      "support": 0.325,
+      "resistance": 0.412,
+      "news_line": "",
+      "technical_analysis": "Price sits above EMA9/21/50/200, MACD histogram positive and MACD line above signal, indicating bullish momentum. RSI 71 and Stochastic 94 show overbought condition, warning of a pullback. A break above the 1H support at 0.325 supports a long bias toward the 0.412 resistance. Watch 0.319 for stop and 0.351 TP.",
+      "market_context": "BTC is up 0.6% in 24h, showing bullish bias, while overall market breadth is broadly negative.",
+      "result": "PENDING"
     }
   ]
 }
