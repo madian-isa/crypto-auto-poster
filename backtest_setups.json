@@ -47743,6 +47743,23 @@
       "technical_analysis": "Short bias dominates. Price sits below EMA9‑200, and MACD remains negative, confirming downtrend. RSI near 44 and stochastic at 22 signal lingering weakness. Order‑book shows modest bid pressure. Target is 0.0576, twice the 0.0022‑risk from a 0.0642 stop. Watch 0.061 as the invalidation level; a break above 0.0649 would negate the setup.",
       "market_context": "BTC is up 5.3% in 24 h, yet the overall market breadth is negative (31% green, 69% red). Broad sentiment stays bearish",
       "result": "PENDING"
+    },
+    {
+      "id": 2809,
+      "created_at": "2026-10-09T11:20:57.349058+00:00",
+      "symbol": "QNTUSDT",
+      "direction": "LONG",
+      "title": "$QNT Liquidation Squeeze: Bears Trapped Near Critical Resistance",
+      "entry_low": 242.4,
+      "entry_high": 242.8,
+      "stop_loss": 234.0,
+      "take_profit": 259.8,
+      "support": 238.22,
+      "resistance": 247.89,
+      "news_line": "",
+      "technical_analysis": "Price sits just above EMA9/21 and MACD histogram is positive, indicating upside bias. RSI is neutral and stochastic is near overbought, warning of a pull‑back. A long entry between 242.4‑242.8 targets the next resistance cluster at 247.9, with SL near 234 and TP around 259. Watch a break below 242.3 to invalidate.",
+      "market_context": "BTC is marginally bullish on the 24h chart while overall market breadth is negative. The broader market shows more red than green",
+      "result": "PENDING"
     }
   ]
 }
