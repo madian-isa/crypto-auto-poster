@@ -47658,6 +47658,23 @@
       "technical_analysis": "Price sits just below 0.0185 resistance, above all EMAs and with a 10% bid imbalance. RSI 76 and Stochastic 96 show overbought, and price is past the Bollinger upper band, hinting at a pullback. Short entry near 0.01832, SL 0.01900, TP 0.01700, targeting the 0.0174‑0.01587 support zone. A break above 0.0185 invalidates the trade.",
       "market_context": "BTC down 0.28% on a bearish 4‑hour trend, broader market breadth remains negative.",
       "result": "PENDING"
+    },
+    {
+      "id": 2804,
+      "created_at": "2026-10-09T09:20:51.862337+00:00",
+      "symbol": "BCHUSDT",
+      "direction": "SHORT",
+      "title": "$BCH Volume Decreases on Rally: Weak Buyers Exposed",
+      "entry_low": 279.0,
+      "entry_high": 280.1,
+      "stop_loss": 289.9,
+      "take_profit": 258.85,
+      "support": 272.4,
+      "resistance": 282.2,
+      "news_line": "",
+      "technical_analysis": "Price sits below EMA9/21/50/200, confirming a bearish structure. A break above the 282.2 resistance would invalidate the short. Target the 260.5 TP if the market stays under the 289.9 SL. SHORT bias targets continuation toward support, with resistance as the invalidation level. The stop loss defines the risk level for this setup.",
+      "market_context": "BTC is in a bearish 4‑hour trend and the broader market is broadly negative, reinforcing downside bias for BCH.",
+      "result": "PENDING"
     }
   ]
 }
