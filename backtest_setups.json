@@ -48202,6 +48202,23 @@
       "technical_analysis": "Price sits above EMA9, EMA21, EMA50 and EMA200, showing a clear bullish structure. ADX at 34 confirms strong trend momentum. Watch the 4193.66 resistance; a break could drive price toward the 2R target around 4467. A move below 4169.38 invalidates the setup. LONG bias targets continuation toward resistance, with support as the invalidation level.",
       "market_context": "BTC is up 0.76% on the day, while 76.4% of the market is green, indicating broadly positive sentiment.",
       "result": "PENDING"
+    },
+    {
+      "id": 2836,
+      "created_at": "2026-10-09T20:30:52.778200+00:00",
+      "symbol": "POLUSDT",
+      "direction": "SHORT",
+      "title": "$POL Distribution Phase Ends: Downside Target Zone Set",
+      "entry_low": 0.0974,
+      "entry_high": 0.0976,
+      "stop_loss": 0.10096,
+      "take_profit": 0.09058,
+      "support": 0.09456,
+      "resistance": 0.09941,
+      "news_line": "",
+      "technical_analysis": "Short bias dominates. Price sits below EMA9/21/50 and MACD histogram is negative, confirming downtrend. Stochastic is oversold but order‑book shows bid pressure, suggesting a pull‑back to the 1H support at 0.09456. Risk if price breaks above 0.09941 resistance. Target 0.0906, stop at 0.1009. Volume surged 274% confirming activity. Watch 0.0972 low as intermediate floor.",
+      "market_context": "BTC up 0.736% on 24h, market broadly positive (72.6% green).",
+      "result": "PENDING"
     }
   ]
 }
