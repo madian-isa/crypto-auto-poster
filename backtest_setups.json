@@ -48032,6 +48032,23 @@
       "technical_analysis": "Price sits just below the 1H resistance at 1.0835 while the MACD histogram is negative and volume fell 24%. RSI is neutral and the ADX (13.9) shows a weak trend. These bearish cues favor a short toward the 2R target near 1.006. A break above 1.0884 invalidates the setup. SHORT bias targets continuation toward support, with resistance as the invalidation",
       "market_context": "BTC is up 2.46% on the day and the broader market is broadly positive, but FIL's own momentum appears to be weakening.",
       "result": "PENDING"
+    },
+    {
+      "id": 2826,
+      "created_at": "2026-10-09T17:10:47.701625+00:00",
+      "symbol": "LINKUSDT",
+      "direction": "SHORT",
+      "title": "Bearish Continuation Pattern Confirmed on $LINK Chart Structure",
+      "entry_low": 12.94,
+      "entry_high": 12.956,
+      "stop_loss": 13.41,
+      "take_profit": 12.024,
+      "support": 12.746,
+      "resistance": 12.956,
+      "news_line": "",
+      "technical_analysis": "Short bias: price sits just below the 1‑hour resistance 12.956 while under EMA50/200, signaling a higher‑time downtrend. A break below 12.95 targets 12.74 support; a move above 13.41 invalidates the setup. SHORT bias targets continuation toward support, with resistance as the invalidation level. The stop loss defines the risk level for this setup.",
+      "market_context": "BTC is up 2.2% in 24 h, driving a broadly positive market (89% green). The overall sentiment supports risk‑off moves on altcoins",
+      "result": "PENDING"
     }
   ]
 }
