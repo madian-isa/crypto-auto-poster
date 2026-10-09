@@ -47675,6 +47675,23 @@
       "technical_analysis": "Price sits below EMA9/21/50/200, confirming a bearish structure. A break above the 282.2 resistance would invalidate the short. Target the 260.5 TP if the market stays under the 289.9 SL. SHORT bias targets continuation toward support, with resistance as the invalidation level. The stop loss defines the risk level for this setup.",
       "market_context": "BTC is in a bearish 4‑hour trend and the broader market is broadly negative, reinforcing downside bias for BCH.",
       "result": "PENDING"
+    },
+    {
+      "id": 2805,
+      "created_at": "2026-10-09T10:00:51.010422+00:00",
+      "symbol": "ORCAUSDT",
+      "direction": "LONG",
+      "title": "$ORCA Liquidation Squeeze: Bears Trapped Near Critical Resistance",
+      "entry_low": 2.394,
+      "entry_high": 2.399,
+      "stop_loss": 2.30064,
+      "take_profit": 2.58822,
+      "support": 2.394,
+      "resistance": 2.461,
+      "news_line": "",
+      "technical_analysis": "Price is just under the 1‑hour support at 2.394. MACD line sits above its signal, giving bullish momentum, and the order‑book shows a 13.6 % bid imbalance. EMA200 provides a floor while shorter EMAs sit above price. A clear break above 2.394 could drive the pair toward the 2‑hour resistance at 2.461. Watch 2.394 for invalidation; a drop below 2.31",
+      "market_context": "BTC is in a bearish 4‑hour trend and the broader market is broadly negative, with 70.9% of assets red. The overall crypto",
+      "result": "PENDING"
     }
   ]
 }
