@@ -47590,6 +47590,23 @@
       "technical_analysis": "Price sits just below the 1H resistance at 0.038 and under EMA50, signaling a short bias. A break above the 4H high 0.0397 would invalidate the trade. Watch the 0.0381 support for entry and 0.0350 for profit. SHORT bias targets continuation toward support, with resistance as the invalidation level. The stop loss defines the risk level for this setup.",
       "market_context": "BTC is down 0.43% on the 24h and the broader market shows 68% red assets, adding bearish pressure to altcoins.",
       "result": "PENDING"
+    },
+    {
+      "id": 2800,
+      "created_at": "2026-10-09T08:30:53.166250+00:00",
+      "symbol": "BTCUSDT",
+      "direction": "SHORT",
+      "title": "Technical Signals Turn Negative as $BTC Selling Pressure Rises",
+      "entry_low": 82550.0,
+      "entry_high": 82670.0,
+      "stop_loss": 86000.0,
+      "take_profit": 75830.0,
+      "support": 80825.67,
+      "resistance": 83031.05,
+      "news_line": "",
+      "technical_analysis": "Bearish 4H trend with price below EMA20. Orderbook shows negative imbalance, suggesting selling pressure. Entry near resistance at 82.6k. Stop loss above 86k invalidates structure. Target 75.7k for 2R. Watch for rejection at 83k. SHORT bias targets continuation toward support, with resistance as the invalidation level. The stop loss defines the risk level for this setup.",
+      "market_context": "BTC down 0.5% in 24h. Market breadth is broadly negative with 68.9% of assets red. 4H trend remains bearish while daily is",
+      "result": "PENDING"
     }
   ]
 }
