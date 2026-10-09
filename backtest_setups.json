@@ -48270,6 +48270,23 @@
       "technical_analysis": "Price sits just above the 1‑hour support at 63.68, with EMA9 (63.60) and EMA21 (63.71) hugging the market, while EMA50 remains higher. MACD line is marginally above its signal and stochastic K crosses above D, indicating early bullish momentum. Order‑book shows a 12% bid imbalance. Watch 64.02 resistance; a break confirms the long setup. Risk lies at 61.5; target 68.1.",
       "market_context": "BTC is up 0.96% on the day, keeping the broader market broadly positive.",
       "result": "PENDING"
+    },
+    {
+      "id": 2840,
+      "created_at": "2026-10-09T22:10:45.293540+00:00",
+      "symbol": "SNDKBUSDT",
+      "direction": "SHORT",
+      "title": "$SNDKB Breaks Below Critical Support: Further Drop Expected",
+      "entry_low": 1582.0,
+      "entry_high": 1584.0,
+      "stop_loss": 1639.0,
+      "take_profit": 1471.0,
+      "support": 1577.18,
+      "resistance": 1624.52,
+      "news_line": "",
+      "technical_analysis": "Price sits near the 1H support at 1577 and below all EMAs, while ADX shows a strong downtrend. RSI and Stochastic are deep oversold, but the order‑book imbalance (-7.7%) and negative MACD confirm bearish pressure. A short entry around 1582‑1584 targets the next swing low near 1470. Risk is the 1639 level; a break above 1625 invalidates the setup.",
+      "market_context": "BTC is slightly bullish (up 0.8%) and the broader market is broadly positive, yet SNDKBUSDT shows clear bearish structure on the 1H/4H",
+      "result": "PENDING"
     }
   ]
 }
