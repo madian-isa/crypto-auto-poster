@@ -48780,6 +48780,23 @@
       "technical_analysis": "Short bias: price sits at the 1‑hour resistance around 2496.6, below EMA50 (2510) and far under EMA200 (2602). Stochastic is overbought (96) and order‑book shows a -38% ask‑side imbalance. A break below 2496.6 could push toward the 1‑hour support 2487.6, with a stop at 2585 and TP near 2319. SHORT bias targets continuation toward support, with resistance as the invalidation",
       "market_context": "BTC is modestly bullish (+0.4%) while the broader market is broadly positive (71% green).",
       "result": "PENDING"
+    },
+    {
+      "id": 2870,
+      "created_at": "2026-10-10T06:30:52.816183+00:00",
+      "symbol": "LPTUSDT",
+      "direction": "LONG",
+      "title": "High R-Multiple Long Trade Setup Forming on $LPT",
+      "entry_low": 1.85,
+      "entry_high": 1.89,
+      "stop_loss": 1.78,
+      "take_profit": 2.05,
+      "support": 1.775,
+      "resistance": 2.175,
+      "news_line": "",
+      "technical_analysis": "LPTUSDT holds above the 9, 21, and 50 EMAs, confirming an uptrend. MACD is positive with expanding histogram, while RSI at 68 suggests momentum without extreme overbought conditions. The 24h volume spike supports this move. A pullback to the 1.85 support offers a clean entry. Loss of 1.775 invalidates the bullish structure, targeting 2.03 for a 2R reward.",
+      "market_context": "Bitcoin is trading slightly above key moving averages with a generally positive market breadth, providing a supportive backdrop for altcoin rallies.",
+      "result": "PENDING"
     }
   ]
 }
