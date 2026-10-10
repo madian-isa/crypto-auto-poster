@@ -1,6 +1,6 @@
 {
   "date": "2026-10-10",
-  "count": 36,
+  "count": 37,
   "posted_symbols_today": [
     "STRKUSDT",
     "RLCUSDT",
@@ -37,6 +37,7 @@
     "SOLUSDT",
     "BNBUSDT",
     "ARPAUSDT",
-    "XRPUSDT"
+    "XRPUSDT",
+    "ZECUSDT"
   ]
 }

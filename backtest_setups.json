@@ -48984,6 +48984,23 @@
       "technical_analysis": "XRP is pressing against the 200 EMA at 1.4487, a key resistance level. A rejection from this overhead supply is the trigger. Watch for a break below 1.3754 support to confirm the downside move. If price holds above 1.45, the short setup is invalid. SHORT bias targets continuation toward support, with resistance as the invalidation level.",
       "market_context": "BTC is mixed, trading near 82.8k, providing neutral broader context.",
       "result": "PENDING"
+    },
+    {
+      "id": 2882,
+      "created_at": "2026-10-10T10:00:52.525828+00:00",
+      "symbol": "ZECUSDT",
+      "direction": "LONG",
+      "title": "$ZEC Liquidation Squeeze: Bears Trapped Near Critical Resistance",
+      "entry_low": 1224.0,
+      "entry_high": 1225.5,
+      "stop_loss": 1180.0,
+      "take_profit": 1314.25,
+      "support": 1215.62,
+      "resistance": 1228.1,
+      "news_line": "",
+      "technical_analysis": "Price sits just above the 9‑EMA (1223.1) and 21‑EMA (1219.8) while the MACD line (2.23) sits well over its signal (0.62), giving bullish momentum. Stochastic is overbought (73/82) and could cap upside. A break above the 1‑h resistance at 1228.1 would validate a long entry around 1224‑1225.5. Stop below 1180; target near 1314.",
+      "market_context": "BTC is modestly bullish (+0.245%) and the broader market shows 69% green breadth, indicating a generally risk‑on environment.",
+      "result": "PENDING"
     }
   ]
 }
