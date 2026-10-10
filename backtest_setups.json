@@ -48746,6 +48746,23 @@
       "technical_analysis": "CTSIUSDT is holding above its 9, 21, and 50 EMAs, confirming a bullish trend. MACD is positive and RSI is at 64, showing strong momentum without being overbought. The main risk is a pullback to the 0.03387 support; a close below that level invalidates the structure. Watch for a clean break above 0.03632 to trigger the move toward the 0.03839",
       "market_context": "Broad market sentiment is positive with 75.5% of assets green. BTC remains bullish on the 24-hour timeframe, supporting broader altcoin strength.",
       "result": "PENDING"
+    },
+    {
+      "id": 2868,
+      "created_at": "2026-10-10T06:01:00.662861+00:00",
+      "symbol": "BTCUSDT",
+      "direction": "SHORT",
+      "title": "Major Support Breakdown Confirmed on $BTC Higher Timeframes",
+      "entry_low": 83100.0,
+      "entry_high": 83170.0,
+      "stop_loss": 86200.0,
+      "take_profit": 77005.0,
+      "support": 82560.0,
+      "resistance": 83170.0,
+      "news_line": "",
+      "technical_analysis": "BTCUSDT trades at 82,844, just under the 1‑hour resistance near 83,170. A short between 83,100‑83,170 targets 77,000, stop‑loss around 86,200. A break above 83,170 invalidates the trade; watch 82,560 support. SHORT bias targets continuation toward support, with resistance as the invalidation level. The stop loss defines the risk level for this setup.",
+      "market_context": "BTC up 0.5% in 24h, market breadth broadly positive (74.9% green).",
+      "result": "PENDING"
     }
   ]
 }
