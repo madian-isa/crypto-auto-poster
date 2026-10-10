@@ -48372,6 +48372,23 @@
       "technical_analysis": "Price sits just above the 9‑ and 21‑EMA while the MACD line sits above its signal and Stochastic K is over 60, all pointing bullish. A tight 0.09149‑0.09158 range offers a clean entry. Risk lies if price breaks below 0.0883 (the 3.5% SL). Target near 0.0980 aligns with the next resistance level.",
       "market_context": "BTC is up 0.9% on the day, market breadth remains broadly positive, supporting risk‑on sentiment.",
       "result": "PENDING"
+    },
+    {
+      "id": 2846,
+      "created_at": "2026-10-10T00:20:48.592551+00:00",
+      "symbol": "STRKUSDT",
+      "direction": "LONG",
+      "title": "Major Breakout Signals Emerge on $STRK Higher Timeframes",
+      "entry_low": 0.071,
+      "entry_high": 0.0725,
+      "stop_loss": 0.0692,
+      "take_profit": 0.07685,
+      "support": 0.07041,
+      "resistance": 0.07682,
+      "news_line": "",
+      "technical_analysis": "Price sits above EMA9, EMA21 and EMA50, while RSI at 62 and Stochastic K > D signal bullish momentum. ADX 48 confirms a strong trend. Aim for the 0.0768 resistance; a break confirms the target. Risk if price drops below the 0.0692 stop or the 0.0704 support level. LONG bias targets continuation toward resistance, with support as the invalidation level.",
+      "market_context": "BTC is up 1% and the overall market is broadly positive, supporting risk‑on sentiment.",
+      "result": "PENDING"
     }
   ]
 }
