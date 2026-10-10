@@ -49647,6 +49647,23 @@
       "technical_analysis": "RSI at 51.5 confirms neutral‑to‑bullish momentum. ADX around 27 signals a moderate trend, and order‑book imbalance (+7.8% bids) adds buying pressure. Immediate support sits near 0.4237 and resistance near 0.4254. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
       "market_context": "BTC is modestly bullish (+0.645%) and 79.6% of the market is green, indicating broadly positive sentiment.",
       "result": "PENDING"
+    },
+    {
+      "id": 2921,
+      "created_at": "2026-10-10T21:10:47.085631+00:00",
+      "symbol": "SUSDT",
+      "direction": "LONG",
+      "title": "$S Higher Low Structure Confirmed: Long Entry Level Reached",
+      "entry_low": 0.045,
+      "entry_high": 0.046,
+      "stop_loss": 0.0439,
+      "take_profit": 0.0487,
+      "support": 0.04371,
+      "resistance": 0.04798,
+      "news_line": "",
+      "technical_analysis": "MACD shows a bullish crossover with a positive histogram, and price sits above the EMA9, EMA21, EMA50 and EMA200, confirming an uptrend. ADX at 37 indicates a strong trend. Although RSI and Stochastic are in overbought territory, the dominant EMA and MACD signals favor a continued move higher toward the 0.04798 resistance.",
+      "market_context": "BTC is modestly higher (+0.55%) with a mixed 4‑hour trend, while overall market breadth is broadly positive (≈81% green).",
+      "result": "PENDING"
     }
   ]
 }
