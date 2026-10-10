@@ -1,6 +1,6 @@
 {
   "date": "2026-10-10",
-  "count": 45,
+  "count": 46,
   "posted_symbols_today": [
     "STRKUSDT",
     "RLCUSDT",
@@ -46,6 +46,7 @@
     "PUMPUSDT",
     "ENAUSDT",
     "SKLUSDT",
-    "FETUSDT"
+    "FETUSDT",
+    "BELUSDT"
   ]
 }
