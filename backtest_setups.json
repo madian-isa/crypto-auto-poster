@@ -49630,6 +49630,23 @@
       "technical_analysis": "Price sits beneath all EMAs (9‑200) and Stochastic is in the low 20s, reinforcing bearish momentum. Resistance clusters near 0.1394, with support around 0.1355. Orderbook imbalance favors bids, but the overall bias remains bearish. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
       "market_context": "BTC is marginally bullish (+0.69%) and the overall market shows 81% green breadth, indicating a broadly positive environment.",
       "result": "PENDING"
+    },
+    {
+      "id": 2920,
+      "created_at": "2026-10-10T21:00:57.110593+00:00",
+      "symbol": "METUSDT",
+      "direction": "LONG",
+      "title": "$MET Breaks Out of Falling Wedge Pattern: Targets Set Higher",
+      "entry_low": 0.4235,
+      "entry_high": 0.425,
+      "stop_loss": 0.4085,
+      "take_profit": 0.45575,
+      "support": 0.4232,
+      "resistance": 0.4321,
+      "news_line": "",
+      "technical_analysis": "RSI at 51.5 confirms neutral‑to‑bullish momentum. ADX around 27 signals a moderate trend, and order‑book imbalance (+7.8% bids) adds buying pressure. Immediate support sits near 0.4237 and resistance near 0.4254. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
+      "market_context": "BTC is modestly bullish (+0.645%) and 79.6% of the market is green, indicating broadly positive sentiment.",
+      "result": "PENDING"
     }
   ]
 }
