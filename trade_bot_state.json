@@ -1,12 +1,13 @@
 {
   "date": "2026-10-10",
-  "count": 6,
+  "count": 7,
   "posted_symbols_today": [
     "STRKUSDT",
     "RLCUSDT",
     "MAGICUSDT",
     "KAIAUSDT",
     "ZKUSDT",
-    "BATUSDT"
+    "BATUSDT",
+    "OPUSDT"
   ]
 }
