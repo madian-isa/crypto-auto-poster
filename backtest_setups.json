@@ -48593,6 +48593,23 @@
       "technical_analysis": "Price sits above EMA9, EMA21, EMA50 and EMA200, confirming an uptrend. ADX at 52 shows strong momentum, while RSI 60 and stochastic 25 suggest room to rise. Target 0.361 (2R) if price holds above 0.323; a break of 0.323 invalidates the long. LONG bias targets continuation toward resistance, with support as the invalidation level.",
       "market_context": "BTC is bullish on the 24‑hour chart but shows a bearish 4‑hour trend; overall market breadth is broadly positive with 73% green.",
       "result": "PENDING"
+    },
+    {
+      "id": 2859,
+      "created_at": "2026-10-10T04:10:47.613992+00:00",
+      "symbol": "SENTUSDT",
+      "direction": "LONG",
+      "title": "$SENT Breakout Confirmation: Bulls Target Next Supply Zone",
+      "entry_low": 0.02035,
+      "entry_high": 0.02045,
+      "stop_loss": 0.01955,
+      "take_profit": 0.0221,
+      "support": 0.02033,
+      "resistance": 0.02157,
+      "news_line": "",
+      "technical_analysis": "SENTUSDT sits near support at 0.02033 with RSI at 27 and Stochastic K at 1.98, signaling deep oversold conditions. A bounce targets the 0.02157 resistance. Invalid below 0.01955. LONG bias targets continuation toward resistance, with support as the invalidation level. The stop loss defines the risk level for this setup.",
+      "market_context": "BTC remains mixed with short-term bearish pressure, but broad market breadth is positive. SENTUSDT lags BTC, creating a potential divergence setup.",
+      "result": "PENDING"
     }
   ]
 }
