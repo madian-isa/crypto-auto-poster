@@ -48763,6 +48763,23 @@
       "technical_analysis": "BTCUSDT trades at 82,844, just under the 1‑hour resistance near 83,170. A short between 83,100‑83,170 targets 77,000, stop‑loss around 86,200. A break above 83,170 invalidates the trade; watch 82,560 support. SHORT bias targets continuation toward support, with resistance as the invalidation level. The stop loss defines the risk level for this setup.",
       "market_context": "BTC up 0.5% in 24h, market breadth broadly positive (74.9% green).",
       "result": "PENDING"
+    },
+    {
+      "id": 2869,
+      "created_at": "2026-10-10T06:20:49.133837+00:00",
+      "symbol": "ETHUSDT",
+      "direction": "SHORT",
+      "title": "Technical Signals Turn Negative as $ETH Selling Pressure Rises",
+      "entry_low": 2496.3,
+      "entry_high": 2496.8,
+      "stop_loss": 2585.0,
+      "take_profit": 2319.65,
+      "support": 2487.57,
+      "resistance": 2496.6,
+      "news_line": "",
+      "technical_analysis": "Short bias: price sits at the 1‑hour resistance around 2496.6, below EMA50 (2510) and far under EMA200 (2602). Stochastic is overbought (96) and order‑book shows a -38% ask‑side imbalance. A break below 2496.6 could push toward the 1‑hour support 2487.6, with a stop at 2585 and TP near 2319. SHORT bias targets continuation toward support, with resistance as the invalidation",
+      "market_context": "BTC is modestly bullish (+0.4%) while the broader market is broadly positive (71% green).",
+      "result": "PENDING"
     }
   ]
 }
