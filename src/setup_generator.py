@@ -462,6 +462,69 @@ def _select_title(direction, coin):
     )
 
 
+def _select_setup_title(direction, coin, indicators, advanced_market_data):
+    fallback_title = _select_title(direction, coin)
+    indicators = indicators or {}
+    advanced_market_data = advanced_market_data or {}
+
+    rsi = _indicator_number(indicators, "rsi", "rsi14")
+    if rsi is None or not 0 <= rsi <= 100:
+        return fallback_title
+
+    price = _get_current_price(indicators)
+    sr = advanced_market_data.get("multi_timeframe_sr") or {}
+
+    if rsi >= 70:
+        resistance = None
+        timeframe = None
+        for candidate_timeframe in ("4h", "1h"):
+            level = _safe_float(
+                (sr.get(candidate_timeframe) or {}).get("resistance")
+            )
+            if (
+                price is not None
+                and level is not None
+                and level > 0
+                and 0 <= (level - price) / level <= 0.015
+            ):
+                resistance = level
+                timeframe = candidate_timeframe.upper()
+                break
+
+        if resistance is not None:
+            return (
+                f"RSI {rsi:.0f} at {timeframe} Resistance: "
+                f"${coin} Faces a Key Test"
+            )
+        return f"RSI {rsi:.0f} Flags Overbought Momentum in ${coin}"
+
+    if rsi <= 30:
+        support = None
+        timeframe = None
+        for candidate_timeframe in ("4h", "1h"):
+            level = _safe_float(
+                (sr.get(candidate_timeframe) or {}).get("support")
+            )
+            if (
+                price is not None
+                and level is not None
+                and level > 0
+                and 0 <= (price - level) / level <= 0.015
+            ):
+                support = level
+                timeframe = candidate_timeframe.upper()
+                break
+
+        if support is not None:
+            return (
+                f"RSI {rsi:.0f} at {timeframe} Support: "
+                f"${coin} Tests a Key Floor"
+            )
+        return f"RSI {rsi:.0f} Flags Oversold Momentum in ${coin}"
+
+    return fallback_title
+
+
 # =========================================================
 # NEWS
 # =========================================================
@@ -1295,7 +1358,12 @@ def _python_fallback_setup(
     return {
         "symbol": symbol,
         "direction": direction,
-        "title": _select_title(direction, coin),
+        "title": _select_setup_title(
+            direction,
+            coin,
+            indicators,
+            advanced_market_data,
+        ),
         "entry_low": entry_low,
         "entry_high": entry_high,
         "stop_loss": stop_loss,
@@ -1473,6 +1541,10 @@ TASK:
     wording; avoid vague disclaimer phrases such as "not a
     verified trade" or "promise of direction". Never guarantee
     profit or claim the target is certain.
+    In technical_analysis, discuss only supplied indicators
+    and support/resistance levels. Do not include or repeat
+    any Entry, Stop Loss, or Take Profit price; those prices
+    belong only in their separate fields and formatted lines.
 11. Keep the entire post short enough to read in about
     30 seconds. Use plain language and avoid repetition.
 12. Do not claim that a real position was opened or filled.
@@ -1730,9 +1802,11 @@ Return JSON only:
 
     setup["rr"] = 2
 
-    setup["title"] = _select_title(
+    setup["title"] = _select_setup_title(
         direction,
         coin,
+        indicators,
+        advanced_market_data,
     )
 
     setup["news_line"] = _limit_words(
