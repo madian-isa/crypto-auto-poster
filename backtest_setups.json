@@ -49613,6 +49613,23 @@
       "technical_analysis": "MACD is bullish with a positive histogram, EMA9 sits above EMA21 and both sit near the current price, and RSI at 55 shows mild buying pressure. Price holds above the 1‑hour support at 63.99 and below the 64.44 resistance, suggesting upside momentum while trend strength remains modest overall at present.",
       "market_context": "BTC is modestly higher (+0.8%) with mixed 4h/1d trends, and overall market breadth is broadly positive.",
       "result": "PENDING"
+    },
+    {
+      "id": 2919,
+      "created_at": "2026-10-10T20:50:42.165660+00:00",
+      "symbol": "JSTUSDT",
+      "direction": "SHORT",
+      "title": "$JST Open Interest Drops Rapidly: Long Squeeze Underway",
+      "entry_low": 0.1388,
+      "entry_high": 0.1392,
+      "stop_loss": 0.14404,
+      "take_profit": 0.12892,
+      "support": 0.1355,
+      "resistance": 0.13942,
+      "news_line": "",
+      "technical_analysis": "Price sits beneath all EMAs (9‑200) and Stochastic is in the low 20s, reinforcing bearish momentum. Resistance clusters near 0.1394, with support around 0.1355. Orderbook imbalance favors bids, but the overall bias remains bearish. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
+      "market_context": "BTC is marginally bullish (+0.69%) and the overall market shows 81% green breadth, indicating a broadly positive environment.",
+      "result": "PENDING"
     }
   ]
 }
