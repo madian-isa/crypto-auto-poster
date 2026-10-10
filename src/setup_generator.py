@@ -402,55 +402,6 @@ def _ensure_analysis_length(value, direction=None):
     return _limit_words(_strip_opposite_direction_claims(text, direction), 60)
 
 
-def _remove_trade_price_references(text, setup):
-    setup = setup or {}
-    trade_prices = {
-        value
-        for value in (
-            _safe_float(setup.get("entry_low")),
-            _safe_float(setup.get("entry_high")),
-            _safe_float(setup.get("stop_loss")),
-            _safe_float(setup.get("take_profit")),
-        )
-        if value is not None
-    }
-    key_levels = {
-        value
-        for value in (
-            _safe_float(setup.get("support")),
-            _safe_float(setup.get("resistance")),
-        )
-        if value is not None
-    }
-    restricted_prices = trade_prices - key_levels
-
-    sentences = re.split(r"(?<=[.!?])\s+(?=[A-Z$])", _clean_text(text, 2000))
-    kept = []
-    trade_plan_terms = re.compile(
-        r"(?i)\b(?:entry|stop[- ]?loss|take[- ]?profit|target|"
-        r"2r|invalidat\w*)\b"
-    )
-    number_pattern = re.compile(r"(?<![\w.])\$?(\d+(?:\.\d+)?)(?![\w.])")
-
-    for sentence in sentences:
-        if trade_plan_terms.search(sentence):
-            continue
-        numbers = (
-            _safe_float(match.group(1))
-            for match in number_pattern.finditer(sentence)
-        )
-        if any(
-            any(abs(number - trade_price) <= max(abs(trade_price) * 0.0001, 1e-10)
-                for trade_price in restricted_prices)
-            for number in numbers
-            if number is not None
-        ):
-            continue
-        kept.append(sentence.strip())
-
-    return _clean_text(" ".join(part for part in kept if part), 2000)
-
-
 # =========================================================
 # COIN HELPERS
 # =========================================================
@@ -509,69 +460,6 @@ def _select_title(direction, coin):
         titles[index],
         coin,
     )
-
-
-def _select_setup_title(direction, coin, indicators, advanced_market_data):
-    fallback_title = _select_title(direction, coin)
-    indicators = indicators or {}
-    advanced_market_data = advanced_market_data or {}
-
-    rsi = _indicator_number(indicators, "rsi", "rsi14")
-    if rsi is None or not 0 <= rsi <= 100:
-        return fallback_title
-
-    price = _get_current_price(indicators)
-    sr = advanced_market_data.get("multi_timeframe_sr") or {}
-
-    if rsi >= 70:
-        resistance = None
-        timeframe = None
-        for candidate_timeframe in ("4h", "1h"):
-            level = _safe_float(
-                (sr.get(candidate_timeframe) or {}).get("resistance")
-            )
-            if (
-                price is not None
-                and level is not None
-                and level > 0
-                and 0 <= (level - price) / level <= 0.015
-            ):
-                resistance = level
-                timeframe = candidate_timeframe.upper()
-                break
-
-        if resistance is not None:
-            return (
-                f"RSI {rsi:.0f} at {timeframe} Resistance: "
-                f"${coin} Faces a Key Test"
-            )
-        return f"RSI {rsi:.0f} Flags Overbought Momentum in ${coin}"
-
-    if rsi <= 30:
-        support = None
-        timeframe = None
-        for candidate_timeframe in ("4h", "1h"):
-            level = _safe_float(
-                (sr.get(candidate_timeframe) or {}).get("support")
-            )
-            if (
-                price is not None
-                and level is not None
-                and level > 0
-                and 0 <= (price - level) / level <= 0.015
-            ):
-                support = level
-                timeframe = candidate_timeframe.upper()
-                break
-
-        if support is not None:
-            return (
-                f"RSI {rsi:.0f} at {timeframe} Support: "
-                f"${coin} Tests a Key Floor"
-            )
-        return f"RSI {rsi:.0f} Flags Oversold Momentum in ${coin}"
-
-    return fallback_title
 
 
 # =========================================================
@@ -1407,12 +1295,7 @@ def _python_fallback_setup(
     return {
         "symbol": symbol,
         "direction": direction,
-        "title": _select_setup_title(
-            direction,
-            coin,
-            indicators,
-            advanced_market_data,
-        ),
+        "title": _select_title(direction, coin),
         "entry_low": entry_low,
         "entry_high": entry_high,
         "stop_loss": stop_loss,
@@ -1590,10 +1473,6 @@ TASK:
     wording; avoid vague disclaimer phrases such as "not a
     verified trade" or "promise of direction". Never guarantee
     profit or claim the target is certain.
-    In technical_analysis, discuss only supplied indicators
-    and support/resistance levels. Do not include or repeat
-    any Entry, Stop Loss, or Take Profit price; those prices
-    belong only in their separate fields and formatted lines.
 11. Keep the entire post short enough to read in about
     30 seconds. Use plain language and avoid repetition.
 12. Do not claim that a real position was opened or filled.
@@ -1851,11 +1730,9 @@ Return JSON only:
 
     setup["rr"] = 2
 
-    setup["title"] = _select_setup_title(
+    setup["title"] = _select_title(
         direction,
         coin,
-        indicators,
-        advanced_market_data,
     )
 
     setup["news_line"] = _limit_words(
@@ -1968,7 +1845,6 @@ def format_post_text(setup):
         direction,
     )
     technical = _strip_opposite_direction_claims(technical, direction)
-    technical = _remove_trade_price_references(technical, setup)
 
     news_line = _limit_words(setup.get(
         "news_line",
