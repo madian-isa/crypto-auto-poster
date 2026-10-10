@@ -49290,6 +49290,23 @@
       "technical_analysis": "Price sits above the 9‑, 21‑ and 50‑EMA, while the MACD line sits comfortably over its signal, giving clear bullish momentum. Order‑book shows an 8.9% bid‑side imbalance, supporting the upside near the 0.10031‑0.10110 range. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
       "market_context": "BTC is marginally bullish (+0.13%) and overall market breadth is broadly positive, providing a supportive backdrop for POLU's short‑term upside.",
       "result": "PENDING"
+    },
+    {
+      "id": 2900,
+      "created_at": "2026-10-10T13:58:49.036777+00:00",
+      "symbol": "RONINUSDT",
+      "direction": "LONG",
+      "title": "High R-Multiple Long Trade Setup Forming on $RONIN",
+      "entry_low": 0.063,
+      "entry_high": 0.0645,
+      "stop_loss": 0.059925,
+      "take_profit": 0.0714,
+      "support": 0.063,
+      "resistance": 0.0692,
+      "news_line": "",
+      "technical_analysis": "RONIN is oversold with Stochastic K at 7.9, signaling potential momentum reversal. Price holds above the 50 EMA, while ADX at 45.68 confirms a strong trend structure. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure. The nearby support and resistance levels frame the current market structure.",
+      "market_context": "Bitcoin is up 0.219% with 80.3% of the market green, providing a supportive backdrop for altcoin recovery attempts.",
+      "result": "PENDING"
     }
   ]
 }
