@@ -49205,6 +49205,23 @@
       "technical_analysis": "AEROUSDT shows strong bullish momentum with price above all key EMAs and a positive MACD histogram. RSI at 75 suggests overbought conditions, posing a pullback risk. Entry is placed near the 9 EMA at 0.842-0.852. A break above 0.87 resistance targets the major swing high at 0.906. Stop loss is set below the 0.815 support to manage risk.",
       "market_context": "Bitcoin trends bearish on the 4H chart, but overall market breadth is positive. AEROUSDT is decoupling with strong volume, indicating independent strength",
       "result": "PENDING"
+    },
+    {
+      "id": 2895,
+      "created_at": "2026-10-10T13:00:57.632838+00:00",
+      "symbol": "PYTHUSDT",
+      "direction": "SHORT",
+      "title": "Technical Signals Turn Negative as $PYTH Selling Pressure Rises",
+      "entry_low": 0.082,
+      "entry_high": 0.0823,
+      "stop_loss": 0.0855,
+      "take_profit": 0.07545,
+      "support": 0.07774,
+      "resistance": 0.08231,
+      "news_line": "",
+      "technical_analysis": "Price sits near the 1‑hour resistance of $0.0823. A bearish MACD histogram, price under EMA9/21 and RSI near 41 signal downside pressure. A break below $0.0775 would invalidate; watch $0.0800 as the next pull‑back level target. SHORT bias targets continuation toward support, with resistance as the invalidation level. The stop loss defines the risk level for this setup.",
+      "market_context": "BTC is in a 4‑hour bearish trend while the broader market shows a positive breadth, keeping risk sentiment mixed.",
+      "result": "PENDING"
     }
   ]
 }
