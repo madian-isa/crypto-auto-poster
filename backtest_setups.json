@@ -49035,6 +49035,23 @@
       "technical_analysis": "Price sits just above EMA9 (7.438) and EMA21 (7.403), while MACD histogram remains positive and RSI at 57.8 supports modest upside. Stochastic K 77 signals near‑overbought but momentum persists. Order‑book shows a 10 % bid imbalance. A break above the 1H/4H resistance 7.554 would confirm the long bias; a fall below the 7.414 support invalidates it.",
       "market_context": "BTC is marginally bullish, up 0.4 % on 24 h, while overall market breadth is broadly positive (75.7 % green). This backdrop",
       "result": "PENDING"
+    },
+    {
+      "id": 2885,
+      "created_at": "2026-10-10T11:27:58.845632+00:00",
+      "symbol": "DOGEUSDT",
+      "direction": "LONG",
+      "title": "$DOGE Volume Expansion Signals High Conviction Upward Move",
+      "entry_low": 0.0858,
+      "entry_high": 0.0859,
+      "stop_loss": 0.0828,
+      "take_profit": 0.09195,
+      "support": 0.08518,
+      "resistance": 0.0864,
+      "news_line": "",
+      "technical_analysis": "Price sits just above 1‑hour support (0.08518) and below 0.0864 resistance. EMA9 (0.08607) is slightly higher than price while EMA21 (0.08579) sits below, showing mild upside. MACD histogram is positive and order‑book shows a 60 % bid bias. RSI at 52 is neutral. A break above 0.0864 could push price toward 0.092; a fall under 0.0828 would invalidate the trade.",
+      "market_context": "BTC up 0.34% on the day, market breadth broadly positive (≈76% green).",
+      "result": "PENDING"
     }
   ]
 }
