@@ -48831,6 +48831,23 @@
       "technical_analysis": "Price sits above EMA9, EMA21, EMA50 and EMA200, while MACD line is positive and expanding. RSI at 68 and ADX near 40 confirm strong bullish momentum. Enter around 0.0183, target the 0.01986 resistance, and watch 0.01741 support as the invalidation level. LONG bias targets continuation toward resistance, with support as the invalidation level.",
       "market_context": "BTC is modestly bullish (+0.26%) and overall market breadth is broadly positive, supporting risk‑on sentiment for altcoins like C98.",
       "result": "PENDING"
+    },
+    {
+      "id": 2873,
+      "created_at": "2026-10-10T08:00:54.713287+00:00",
+      "symbol": "LUMIAUSDT",
+      "direction": "LONG",
+      "title": "$LUMIA Liquidation Squeeze: Bears Trapped Near Critical Resistance",
+      "entry_low": 0.124,
+      "entry_high": 0.125,
+      "stop_loss": 0.12,
+      "take_profit": 0.1335,
+      "support": 0.0838,
+      "resistance": 0.1357,
+      "news_line": "",
+      "technical_analysis": "MACD histogram is positive and the MACD line sits above its signal, while EMA9, EMA21 and EMA50 are all aligned bullishly under price. RSI is overbought at 94.8, a key risk. A break above the current range could push price toward the 0.1357 resistance. Watch the 0.130 level; a drop below 0.120 invalidates the setup.",
+      "market_context": "BTC is in a bullish 24‑hour move and the broader market is broadly positive, supporting upward bias for altcoins.",
+      "result": "PENDING"
     }
   ]
 }
