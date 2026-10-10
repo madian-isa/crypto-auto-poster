@@ -48423,6 +48423,23 @@
       "technical_analysis": "Price sits above EMA9, EMA21, EMA50 and EMA200, showing clear bullish alignment. MACD histogram is positive and ADX 61 confirms strong trend. RSI 81 and Stochastic 92 signal overbought risk, making the 0.1245‑0.1260 zone a logical entry on a breakout above 0.1282. SL at 0.1209, TP at 0.1333; watch 0.1282 as the next resistance.",
       "market_context": "BTC is up 1.07% on the day, with a mixed 4‑hour trend; overall market breadth is broadly positive (84.6% green).",
       "result": "PENDING"
+    },
+    {
+      "id": 2849,
+      "created_at": "2026-10-10T01:20:51.448451+00:00",
+      "symbol": "KAIAUSDT",
+      "direction": "LONG",
+      "title": "$KAIA Holds Moving Average Support: High Probability Long Setup",
+      "entry_low": 0.0608,
+      "entry_high": 0.0612,
+      "stop_loss": 0.0585,
+      "take_profit": 0.066,
+      "support": 0.051,
+      "resistance": 0.068,
+      "news_line": "",
+      "technical_analysis": "Price sits above EMA9/21/50/200, MACD line > signal with a positive histogram, and ADX 44 shows a strong trend. RSI and Stoch are overbought, flagging a near‑term pull‑back risk. A bullish swing low at ~0.0596 supports a long entry around 0.0608‑0.0612. SL 0.0585, TP 0.0654. Watch break of 0.068 as invalidation.",
+      "market_context": "BTC is bullish on the 24h chart and the broader market is broadly positive, with 83.4% of assets green.",
+      "result": "PENDING"
     }
   ]
 }
