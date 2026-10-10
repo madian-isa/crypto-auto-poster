@@ -48610,6 +48610,23 @@
       "technical_analysis": "SENTUSDT sits near support at 0.02033 with RSI at 27 and Stochastic K at 1.98, signaling deep oversold conditions. A bounce targets the 0.02157 resistance. Invalid below 0.01955. LONG bias targets continuation toward resistance, with support as the invalidation level. The stop loss defines the risk level for this setup.",
       "market_context": "BTC remains mixed with short-term bearish pressure, but broad market breadth is positive. SENTUSDT lags BTC, creating a potential divergence setup.",
       "result": "PENDING"
+    },
+    {
+      "id": 2860,
+      "created_at": "2026-10-10T04:20:50.311203+00:00",
+      "symbol": "NEARUSDT",
+      "direction": "LONG",
+      "title": "$NEAR Prepares for Parabolic Phase: Key Technical Trigger Met",
+      "entry_low": 4.94,
+      "entry_high": 4.95,
+      "stop_loss": 4.76,
+      "take_profit": 5.315,
+      "support": 4.739,
+      "resistance": 5.454,
+      "news_line": "",
+      "technical_analysis": "NEAR sits just below the 5‑hour resistance at 4.96, trading above EMA9 (4.91) and EMA200 (4.94). MACD histogram is positive and RSI is 57, supporting a bullish bias. Target 5.30; stop below 4.74 breaks the 1H swing low. LONG bias targets continuation toward resistance, with support as the invalidation level.",
+      "market_context": "BTC is modestly higher (+0.2%) and the broader market shows a 74% green breadth, indicating overall positive sentiment.",
+      "result": "PENDING"
     }
   ]
 }
