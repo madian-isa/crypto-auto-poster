@@ -48695,6 +48695,23 @@
       "technical_analysis": "Price sits just above EMA200 and EMA9, with MACD histogram positive and RSI at 67. These bullish cues line up with a clear 1‑hour support at 0.2531. Risk comes from a –14.5% order‑book imbalance and overbought stochastic. A break above 0.255 would confirm the move; a drop below 0.245 invalidates.",
       "market_context": "BTC shows a bullish 4‑hour trend while overall market breadth is broadly positive.",
       "result": "PENDING"
+    },
+    {
+      "id": 2865,
+      "created_at": "2026-10-10T05:30:41.186274+00:00",
+      "symbol": "ATOMUSDT",
+      "direction": "LONG",
+      "title": "$ATOM Breaks Out of Falling Wedge Pattern: Targets Set Higher",
+      "entry_low": 2.007,
+      "entry_high": 2.017,
+      "stop_loss": 1.93,
+      "take_profit": 2.176,
+      "support": 2.007,
+      "resistance": 2.086,
+      "news_line": "",
+      "technical_analysis": "ATOM holds above the 21 EMA with positive MACD momentum, signaling bullish continuation. We target a move toward $2.17 as price consolidates. The main risk is rejection at $2.086. A break above this level confirms strength, while a drop below $2.007 invalidates the setup. Watch for volume expansion to sustain the upward move.",
+      "market_context": "BTC shows mild bullishness at $82,668, supporting broader altcoin strength. Market breadth is broadly positive.",
+      "result": "PENDING"
     }
   ]
 }
