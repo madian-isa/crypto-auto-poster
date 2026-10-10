@@ -48950,6 +48950,23 @@
       "technical_analysis": "Price sits just below the 1H resistance at 751.27, hugging the upper Bollinger band. EMA9/21 sit under price while EMA200 remains higher, signaling a longer‑term downtrend. A short entry around 749.5‑750.5 targets 696, with SL at 777. Break above 751.27 invalidates the trade. SHORT bias targets continuation toward support, with resistance as the invalidation level.",
       "market_context": "BTC is modestly bullish (+0.33% 24h) while overall market breadth is broadly positive (71.7% green).",
       "result": "PENDING"
+    },
+    {
+      "id": 2880,
+      "created_at": "2026-10-10T09:40:43.628122+00:00",
+      "symbol": "ARPAUSDT",
+      "direction": "LONG",
+      "title": "Critical Resistance Test: $ARPA Preparing to Surge Higher",
+      "entry_low": 0.012,
+      "entry_high": 0.0122,
+      "stop_loss": 0.01148,
+      "take_profit": 0.01334,
+      "support": 0.01148,
+      "resistance": 0.01395,
+      "news_line": "",
+      "technical_analysis": "Monitoring ARPA sits above all key EMAs, with MACD histogram positive and RSI at 64, indicating bullish momentum. ADX above 30 confirms a strong trend. Price is near the 1‑hour support at 0.01148 and aims for the 0.0139 resistance. Risk: a break below 0.01148 would invalidate the long. Overall, the setup favors a swing long.",
+      "market_context": "BTC is up 0.34% over 24 h and market breadth is broadly positive, with 72.7% of assets green.",
+      "result": "PENDING"
     }
   ]
 }
