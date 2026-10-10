@@ -48576,6 +48576,23 @@
       "technical_analysis": "Price sits above the 9, 21 and 50 EMA and MACD line stays over its signal, confirming bullish momentum. ADX at 45 shows a strong trend. RSI and Stoch are overbought and price is above the upper Bollinger band, flagging pull‑back risk. Entry 1.27‑1.28, stop 1.23, target 1.365. Watch 1.296 resistance; break below 1.226 invalidates.",
       "market_context": "BTC is up 0.27% in 24h, showing bullish bias while overall market breadth is broadly positive (74.5% green).",
       "result": "PENDING"
+    },
+    {
+      "id": 2858,
+      "created_at": "2026-10-10T04:01:11.239092+00:00",
+      "symbol": "RADUSDT",
+      "direction": "LONG",
+      "title": "High R-Multiple Long Trade Setup Forming on $RAD",
+      "entry_low": 0.335,
+      "entry_high": 0.342,
+      "stop_loss": 0.322,
+      "take_profit": 0.3715,
+      "support": 0.323,
+      "resistance": 0.372,
+      "news_line": "",
+      "technical_analysis": "Price sits above EMA9, EMA21, EMA50 and EMA200, confirming an uptrend. ADX at 52 shows strong momentum, while RSI 60 and stochastic 25 suggest room to rise. Target 0.361 (2R) if price holds above 0.323; a break of 0.323 invalidates the long. LONG bias targets continuation toward resistance, with support as the invalidation level.",
+      "market_context": "BTC is bullish on the 24‑hour chart but shows a bearish 4‑hour trend; overall market breadth is broadly positive with 73% green.",
+      "result": "PENDING"
     }
   ]
 }
