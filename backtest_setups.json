@@ -48508,6 +48508,23 @@
       "technical_analysis": "PIXELUSDT shows strong momentum with RSI at 74 and MACD expanding. Price holds above the 9 and 21 EMAs, confirming an uptrend. Volume is up 9.6%, supporting the move. Watch for a pullback to 0.0070 for entry. A break below 0.0068 invalidates the setup. Target is 0.0077, near the 24h high and upper Bollinger Band.",
       "market_context": "BTC is bullish 24h with 81.8% of the market green, providing a supportive backdrop for altcoins like PIXEL.",
       "result": "PENDING"
+    },
+    {
+      "id": 2854,
+      "created_at": "2026-10-10T02:40:48.846722+00:00",
+      "symbol": "OGNUSDT",
+      "direction": "LONG",
+      "title": "$OGN Holds Moving Average Support: High Probability Long Setup",
+      "entry_low": 0.0395,
+      "entry_high": 0.0398,
+      "stop_loss": 0.0381,
+      "take_profit": 0.04275,
+      "support": 0.03529,
+      "resistance": 0.03952,
+      "news_line": "",
+      "technical_analysis": "Price has broken above the 1‑hour resistance at 0.03952, staying above EMA9 (0.03908) and EMA21 (0.03904). MACD line is positive, and RSI sits near neutral while stochastic is over 70, supporting momentum. Entry around 0.0395‑0.0398 targets 0.0429 (2R) with SL at 0.0381. Watch 0.04044 as the next resistance; a drop below 0.0381 invalidates the setup.",
+      "market_context": "BTC is up 0.8% and market breadth is broadly positive (81.6% green), providing supportive sentiment for OGN.",
+      "result": "PENDING"
     }
   ]
 }
