@@ -49477,6 +49477,23 @@
       "technical_analysis": "Momentum indicators are bullish: RSI at 66, Stochastic in the 80s, MACD line above signal with a positive histogram, and ADX near 30 confirming a strong trend. Price sits above the 9‑ and 21‑EMA, while the order book shows a 24% bid imbalance. Immediate support sits at 7.281 and resistance near 7.332.",
       "market_context": "BTC is modestly higher (+0.33%) and the broader market is broadly positive, with over 80% of assets in green.",
       "result": "PENDING"
+    },
+    {
+      "id": 2911,
+      "created_at": "2026-10-10T16:40:48.814671+00:00",
+      "symbol": "CHIPUSDT",
+      "direction": "LONG",
+      "title": "Critical Resistance Test: $CHIP Preparing to Surge Higher",
+      "entry_low": 0.0517,
+      "entry_high": 0.05185,
+      "stop_loss": 0.0499,
+      "take_profit": 0.055525,
+      "support": 0.04858,
+      "resistance": 0.05639,
+      "news_line": "",
+      "technical_analysis": "Stochastic is deep in oversold at 8, while ADX at 34 signals a strong trend. With immediate support around 0.05171 and resistance near 0.05188, momentum points upward. The 4‑hour structure shows a higher low, reinforcing the upside case. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
+      "market_context": "Bitcoin is trading bullish at $83,056 with mixed 4‑hour and daily trends, while the broader market is broadly positive (83.2% green).",
+      "result": "PENDING"
     }
   ]
 }
