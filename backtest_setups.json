@@ -49154,6 +49154,23 @@
       "technical_analysis": "Price sits just below the 0.1442 resistance while above all short‑term EMAs. Short entry around 0.138‑0.140, SL 0.1445, TP 0.128 targets the 0.1223‑0.1263 support zone. Risk invalidates if price breaks above 0.1442. SHORT bias targets continuation toward support, with resistance as the invalidation level. The stop loss defines the risk level for this setup.",
       "market_context": "BTC is bearish on 4h and 1d charts, down 0.6% in 24h, while the broader market shows 71% green breadth. BEL order‑book",
       "result": "PENDING"
+    },
+    {
+      "id": 2892,
+      "created_at": "2026-10-10T12:20:43.861169+00:00",
+      "symbol": "AMPUSDT",
+      "direction": "SHORT",
+      "title": "$AMP Breaks Ascending Support Line: Bearish Momentum Surge",
+      "entry_low": 0.000642,
+      "entry_high": 0.000645,
+      "stop_loss": 0.000667,
+      "take_profit": 0.0005965,
+      "support": 0.000643,
+      "resistance": 0.00065,
+      "news_line": "",
+      "technical_analysis": "AMPUSDT trades below key EMAs, with price stuck under resistance at 0.00065. Bearish MACD and near-oversold Stochastics suggest weakness, but volume drop limits immediate momentum. Break below support at 0.000643 confirms the bearish swing toward 0.000592. Watch for rejection at 0.00065 to invalidate the short structure. SHORT bias targets continuation toward support, with resistance as the invalidation level.",
+      "market_context": "BTC remains bearish on 4H charts, capping altcoin upside.",
+      "result": "PENDING"
     }
   ]
 }
