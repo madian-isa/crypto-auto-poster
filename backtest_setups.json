@@ -49732,6 +49732,23 @@
       "technical_analysis": "ARBUSDT is pressing against the 0.1909 resistance cap, where the RSI at 70.1 and Stochastic K at 93.4 indicate significant overheating. The orderbook shows a slight selling imbalance, reinforcing the likelihood of a pullback toward the 0.1850 support zone Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
       "market_context": "BTC is trading at $83,043, showing a mixed daily trend but bearish 4H structure. The broader market is broadly positive with 79.5%",
       "result": "PENDING"
+    },
+    {
+      "id": 2926,
+      "created_at": "2026-10-10T22:20:49.632446+00:00",
+      "symbol": "TRXUSDT",
+      "direction": "LONG",
+      "title": "Bullish Divergence Flashed on $TRX Daily Chart Structure",
+      "entry_low": 0.3308,
+      "entry_high": 0.331,
+      "stop_loss": 0.319,
+      "take_profit": 0.3547,
+      "support": 0.3308,
+      "resistance": 0.3311,
+      "news_line": "",
+      "technical_analysis": "MACD histogram is positive and the MACD line sits above its signal, indicating bullish momentum. Stochastic K is at 0 % with D near 15 %, suggesting oversold conditions. Price rests at the 1‑hour support 0.3308, near the lower Bollinger band, while order‑book imbalance shows buying pressure. These factors favor a near‑term long bias.",
+      "market_context": "BTC shows a bearish 4‑hour trend, yet the broader 24‑hour market remains broadly positive with 78.8 % of assets green.",
+      "result": "PENDING"
     }
   ]
 }
