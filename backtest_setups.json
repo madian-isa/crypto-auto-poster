@@ -49171,6 +49171,23 @@
       "technical_analysis": "AMPUSDT trades below key EMAs, with price stuck under resistance at 0.00065. Bearish MACD and near-oversold Stochastics suggest weakness, but volume drop limits immediate momentum. Break below support at 0.000643 confirms the bearish swing toward 0.000592. Watch for rejection at 0.00065 to invalidate the short structure. SHORT bias targets continuation toward support, with resistance as the invalidation level.",
       "market_context": "BTC remains bearish on 4H charts, capping altcoin upside.",
       "result": "PENDING"
+    },
+    {
+      "id": 2893,
+      "created_at": "2026-10-10T12:30:47.166818+00:00",
+      "symbol": "USD1USDT",
+      "direction": "SHORT",
+      "title": "Bearish Continuation Pattern Confirmed on $USD1 Chart Structure",
+      "entry_low": 1.00005,
+      "entry_high": 1.00007,
+      "stop_loss": 1.0351,
+      "take_profit": 0.92998,
+      "support": 0.99994,
+      "resistance": 1.00007,
+      "news_line": "",
+      "technical_analysis": "Stochastic K at 20 signals oversold conditions, while EMA9 sits below EMA21 and MACD histogram stays negative, pointing to downward pressure. The 1‑hour resistance at 1.00007 offers a short entry zone between 1.00005‑1.00007. Risk is capped at 1.0351, with a 2R target near 0.93. Watch a break above 1.0351 as invalidation.",
+      "market_context": "BTC on the 4‑hour chart remains bearish below its EMA20, while the broader market shows a positive breadth (73% green). The USD1USDT",
+      "result": "PENDING"
     }
   ]
 }
