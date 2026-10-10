@@ -48457,6 +48457,23 @@
       "technical_analysis": "Price sits above EMA9, EMA21 and EMA50, confirming bullish momentum. MACD histogram is positive and ADX at 48 signals a strong trend. RSI at 65 adds upward bias, while Stochastic shows a mild pullback. A break below the 0.01355 swing low would invalidate the setup; watch for a retest of 0.01422 as the next target.",
       "market_context": "BTC is up 1% and the broader market is broadly positive, supporting risk‑on sentiment.",
       "result": "PENDING"
+    },
+    {
+      "id": 2851,
+      "created_at": "2026-10-10T01:40:49.366432+00:00",
+      "symbol": "BATUSDT",
+      "direction": "LONG",
+      "title": "High R-Multiple Long Trade Setup Forming on $BAT",
+      "entry_low": 0.1385,
+      "entry_high": 0.1395,
+      "stop_loss": 0.13344,
+      "take_profit": 0.15012,
+      "support": 0.1281,
+      "resistance": 0.1388,
+      "news_line": "",
+      "technical_analysis": "Price has broken above the 1‑hour resistance at 0.1388, sitting on a clean EMA stack (9‑21‑50‑200) and a positive MACD histogram. ADX above 50 confirms strong momentum, while order‑book imbalance favors bids. Overbought RSI and stochastic warn of a pull‑back. Target 0.1480; stop at 0.1345. Watch 0.1464 as next resistance and 0.1351 as invalidation.",
+      "market_context": "BTC is bullish on the 24h chart and the overall market is broadly positive, with 81% of assets green.",
+      "result": "PENDING"
     }
   ]
 }
