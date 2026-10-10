@@ -49120,6 +49120,23 @@
       "technical_analysis": "SKL is pressing against the 0.00529 resistance, where the negative MACD histogram and bearish orderbook imbalance suggest a rejection. The price sits below the EMA21, confirming short-term weakness. A break below 0.00505 support opens the path to 0.00458. Watch for a decisive close below 0.00505; if price reclaims 0.00529, the downtrend loses momentum.",
       "market_context": "BTC remains bearish on the 4H timeframe, trading below its key moving averages. While the broader market shows positive breadth, SKL’s specific",
       "result": "PENDING"
+    },
+    {
+      "id": 2890,
+      "created_at": "2026-10-10T12:00:55.112195+00:00",
+      "symbol": "FETUSDT",
+      "direction": "LONG",
+      "title": "Strong Accumulation Detected: $FET Prepares for Next Wave Up",
+      "entry_low": 0.2243,
+      "entry_high": 0.2254,
+      "stop_loss": 0.2155,
+      "take_profit": 0.24355,
+      "support": 0.2243,
+      "resistance": 0.2318,
+      "news_line": "",
+      "technical_analysis": "FET is holding above the 21 and 50 EMAs, with MACD momentum shifting positive. The orderbook shows a slight bid imbalance, supporting a push toward the 0.2318 resistance. A hold above 0.2243 is key to sustain the move. If price breaks below this support, the setup invalidates. Watch for a breakout above 0.2318 to confirm the next leg up.",
+      "market_context": "BTC is trading bearish on the 4H chart, which poses a headwind, but the broader market breadth remains broadly positive, suggesting altcoins",
+      "result": "PENDING"
     }
   ]
 }
