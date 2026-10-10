@@ -402,6 +402,55 @@ def _ensure_analysis_length(value, direction=None):
     return _limit_words(_strip_opposite_direction_claims(text, direction), 60)
 
 
+def _remove_trade_price_references(text, setup):
+    setup = setup or {}
+    trade_prices = {
+        value
+        for value in (
+            _safe_float(setup.get("entry_low")),
+            _safe_float(setup.get("entry_high")),
+            _safe_float(setup.get("stop_loss")),
+            _safe_float(setup.get("take_profit")),
+        )
+        if value is not None
+    }
+    key_levels = {
+        value
+        for value in (
+            _safe_float(setup.get("support")),
+            _safe_float(setup.get("resistance")),
+        )
+        if value is not None
+    }
+    restricted_prices = trade_prices - key_levels
+
+    sentences = re.split(r"(?<=[.!?])\s+(?=[A-Z$])", _clean_text(text, 2000))
+    kept = []
+    trade_plan_terms = re.compile(
+        r"(?i)\b(?:entry|stop[- ]?loss|take[- ]?profit|target|"
+        r"2r|invalidat\w*)\b"
+    )
+    number_pattern = re.compile(r"(?<![\w.])\$?(\d+(?:\.\d+)?)(?![\w.])")
+
+    for sentence in sentences:
+        if trade_plan_terms.search(sentence):
+            continue
+        numbers = (
+            _safe_float(match.group(1))
+            for match in number_pattern.finditer(sentence)
+        )
+        if any(
+            any(abs(number - trade_price) <= max(abs(trade_price) * 0.0001, 1e-10)
+                for trade_price in restricted_prices)
+            for number in numbers
+            if number is not None
+        ):
+            continue
+        kept.append(sentence.strip())
+
+    return _clean_text(" ".join(part for part in kept if part), 2000)
+
+
 # =========================================================
 # COIN HELPERS
 # =========================================================
@@ -1919,6 +1968,7 @@ def format_post_text(setup):
         direction,
     )
     technical = _strip_opposite_direction_claims(technical, direction)
+    technical = _remove_trade_price_references(technical, setup)
 
     news_line = _limit_words(setup.get(
         "news_line",
