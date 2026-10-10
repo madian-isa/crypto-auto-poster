@@ -49239,6 +49239,23 @@
       "technical_analysis": "Price has broken above the 0.4966 1H/4H resistance, staying above EMA9, EMA21, EMA50 and EMA200. MACD histogram is positive and RSI sits at a neutral 59. These bullish signs favor a long move toward the 0.5324 target. Risk is a pullback below the 0.4916 support, which would invalidate the setup. Watch the 0.5020 level for early confirmation.",
       "market_context": "BTC is down about 0.3% on a bearish 4‑hour trend, while overall market breadth remains broadly positive.",
       "result": "PENDING"
+    },
+    {
+      "id": 2897,
+      "created_at": "2026-10-10T13:30:48.886269+00:00",
+      "symbol": "CFXUSDT",
+      "direction": "LONG",
+      "title": "Key Support Holds Firm: $CFX Bullish Continuation Setup Active",
+      "entry_low": 0.0535,
+      "entry_high": 0.0545,
+      "stop_loss": 0.05085,
+      "take_profit": 0.0603,
+      "support": 0.05085,
+      "resistance": 0.05928,
+      "news_line": "",
+      "technical_analysis": "Order‑book imbalance favors bids. However RSI 74 and Stochastic 92 flag overbought pressure; a drop through the 1H swing low 0.05085 would cancel the trade. Watch for a move above 0.0535 and aim for the 0.0593 resistance, a 2R target. LONG bias targets continuation toward resistance, with support as the invalidation level.",
+      "market_context": "BTC is in a bearish 4H trend, down 0.14% on the day, while overall crypto market breadth remains broadly positive with 74%",
+      "result": "PENDING"
     }
   ]
 }
