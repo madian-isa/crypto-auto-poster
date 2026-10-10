@@ -135,9 +135,11 @@ Only use news supplied in the input.
 If no relevant news is supplied, news_line must be empty.
 
 TECHNICAL ANALYSIS:
-Use the strongest available technical information.
-Mention EMA, SMA, MACD, RSI, Stochastic, volume,
-orderbook or advanced data only when supplied.
+Use the strongest 3-5 available technical signals, not just
+moving averages. Consider RSI, MACD, EMA/SMA trend alignment,
+volume, Stochastic, ADX, Bollinger Bands, and supplied orderbook
+or other advanced data. Mention each only when its value is
+present, and briefly explain what the reading indicates.
 Write an original, easy-to-follow take of 50-60 words.
 State directly which direction the supplied indicators favor
 and why. Use confident, plain language to describe momentum
@@ -1069,48 +1071,78 @@ def _fallback_technical_text(
         "rsi14",
     )
 
-    if rsi is not None:
-        if direction == "LONG":
-            rsi_read = (
-                "RSI is {:.1f}, showing bullish momentum without "
-                "being deeply overbought"
-            ).format(rsi)
-        else:
-            rsi_read = (
-                "RSI is {:.1f}, showing weakening momentum without "
-                "being deeply oversold"
-            ).format(rsi)
-        parts.append(rsi_read)
-
     price = _get_current_price(
         indicators
     )
 
-    ema21 = _safe_float(
-        indicators.get("ema21")
-    )
-
-    if (
-        price is not None
-        and ema21 is not None
-    ):
-
-        if direction == "LONG" and price > ema21:
-            parts.append(
-                "price is holding above the 21 EMA, supporting the bullish bias"
-            )
-        elif direction == "SHORT" and price < ema21:
-            parts.append(
-                "price is trading below the 21 EMA, supporting the bearish bias"
-            )
-        elif price > ema21:
-            parts.append(
-                "price is above the 21 EMA, supporting positive momentum"
-            )
+    if rsi is not None:
+        if direction == "LONG" and rsi >= 50:
+            parts.append(f"RSI at {rsi:.1f} supports positive momentum")
+        elif direction == "SHORT" and rsi < 50:
+            parts.append(f"RSI at {rsi:.1f} supports negative momentum")
+        elif direction == "LONG":
+            parts.append(f"RSI at {rsi:.1f} is below the bullish momentum threshold")
         else:
-            parts.append(
-                "price is below the 21 EMA, so recovery strength remains limited"
-            )
+            parts.append(f"RSI at {rsi:.1f} is above the bearish momentum threshold")
+
+    ema9 = _safe_float(indicators.get("ema9"))
+    ema21 = _safe_float(indicators.get("ema21"))
+    ema50 = _safe_float(indicators.get("ema50"))
+    ema200 = _safe_float(indicators.get("ema200"))
+    sma50 = _safe_float(indicators.get("sma50"))
+    sma200 = _safe_float(indicators.get("sma200"))
+
+    bullish_average_levels = [
+        left > right
+        for left, right in ((ema9, ema21), (ema21, ema50), (sma50, sma200))
+        if left is not None and right is not None
+    ]
+    bearish_average_levels = [
+        left < right
+        for left, right in ((ema9, ema21), (ema21, ema50), (sma50, sma200))
+        if left is not None and right is not None
+    ]
+    above_averages = [
+        name
+        for name, average in (
+            ("EMA9", ema9),
+            ("EMA21", ema21),
+            ("EMA50", ema50),
+            ("EMA200", ema200),
+            ("SMA50", sma50),
+            ("SMA200", sma200),
+        )
+        if price is not None and average is not None and price > average
+    ]
+    below_averages = [
+        name
+        for name, average in (
+            ("EMA9", ema9),
+            ("EMA21", ema21),
+            ("EMA50", ema50),
+            ("EMA200", ema200),
+            ("SMA50", sma50),
+            ("SMA200", sma200),
+        )
+        if price is not None and average is not None and price < average
+    ]
+
+    if direction == "LONG" and above_averages:
+        parts.append(
+            "price is above "
+            + ", ".join(above_averages[:4])
+            + ", supporting the bullish trend"
+        )
+    elif direction == "SHORT" and below_averages:
+        parts.append(
+            "price is below "
+            + ", ".join(below_averages[:4])
+            + ", supporting the bearish trend"
+        )
+    elif direction == "LONG" and any(bullish_average_levels):
+        parts.append("EMA/SMA alignment supports a bullish trend")
+    elif direction == "SHORT" and any(bearish_average_levels):
+        parts.append("EMA/SMA alignment supports a bearish trend")
 
     macd, macd_signal = _get_macd_values(indicators)
 
@@ -1129,11 +1161,11 @@ def _fallback_technical_text(
             )
         elif macd > macd_signal:
             parts.append(
-                "MACD is above its signal line, although the move still needs follow-through"
+                "MACD is above its signal line, supporting positive momentum"
             )
         elif macd < macd_signal:
             parts.append(
-                "MACD is below its signal line, so upside recovery remains weak"
+                "MACD is below its signal line, supporting negative momentum"
             )
 
     volume_change = _safe_float(
@@ -1149,32 +1181,39 @@ def _fallback_technical_text(
             f"volume is {volume_word} by {abs(volume_change):.1f}%"
         )
 
-    ema50 = _safe_float(indicators.get("ema50"))
-    ema200 = _safe_float(indicators.get("ema200"))
-    if price is not None and ema50 is not None:
-        if direction == "LONG" and price > ema50:
-            parts.append("price is above the 50 EMA, keeping the short-term structure constructive")
-        elif direction == "SHORT" and price < ema50:
-            parts.append("price is below the 50 EMA, keeping the short-term structure weak")
-    if price is not None and ema200 is not None:
-        if direction == "LONG" and price > ema200:
-            parts.append("price is above the 200 EMA, supporting the broader bullish trend")
-        elif direction == "SHORT" and price < ema200:
-            parts.append("price is below the 200 EMA, supporting the broader bearish trend")
-
     adx = _safe_float(indicators.get("adx"))
     if adx is not None:
         parts.append(
             f"ADX is {adx:.1f}, indicating "
-            + ("a developing trend" if adx >= 20 else "limited trend strength")
+            + ("a strong trend" if adx >= 25 else "a developing trend")
         )
 
     stochastic = _get_stochastic_k(indicators)
     if stochastic is not None:
-        if direction == "LONG":
-            parts.append(f"Stochastic is {stochastic:.1f}, leaving room for upside continuation")
-        else:
-            parts.append(f"Stochastic is {stochastic:.1f}, leaving room for further downside")
+        if direction == "LONG" and stochastic >= 50:
+            parts.append(
+                f"Stochastic at {stochastic:.1f} supports bullish momentum"
+            )
+        elif direction == "SHORT" and stochastic < 50:
+            parts.append(
+                f"Stochastic at {stochastic:.1f} supports bearish momentum"
+            )
+
+    bollinger_upper = _safe_float(indicators.get("bollinger_upper"))
+    bollinger_lower = _safe_float(indicators.get("bollinger_lower"))
+    if (
+        price is not None
+        and bollinger_upper is not None
+        and bollinger_lower is not None
+        and bollinger_upper > bollinger_lower
+    ):
+        band_position = (price - bollinger_lower) / (
+            bollinger_upper - bollinger_lower
+        )
+        if direction == "LONG" and band_position >= 0.5:
+            parts.append("price is in the upper half of the Bollinger Bands")
+        elif direction == "SHORT" and band_position < 0.5:
+            parts.append("price is in the lower half of the Bollinger Bands")
 
     if not parts:
         analysis = (
@@ -1194,13 +1233,11 @@ def _fallback_technical_text(
 
     if direction == "LONG":
         conclusion = (
-            "Together, these signals favor LONG continuation, with buyers maintaining "
-            "control and resistance as the next level in focus."
+            "These signals favor LONG continuation, with resistance next."
         )
     else:
         conclusion = (
-            "Together, these signals favor SHORT continuation, with sellers maintaining "
-            "control and support as the next level in focus."
+            "These signals favor SHORT continuation, with support next."
         )
 
     analysis = (
