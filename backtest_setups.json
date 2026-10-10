@@ -49817,6 +49817,23 @@
       "technical_analysis": "Momentum favors a short bias as price remains below the 9, 21, and 50 EMAs. The MACD histogram is negative, confirming downward pressure, while the Stochastic Oscillator sits in bearish territory. Although RSI is neutral near 43, the immediate resistance at 0.07602 and weak volume suggest sellers have control over the 1H structure.",
       "market_context": "BTC is trading at $83,048 with a mixed 4H trend. Market breadth is broadly positive with 69.6% green assets, but MUBARAK is",
       "result": "PENDING"
+    },
+    {
+      "id": 2931,
+      "created_at": "2026-10-10T23:40:51.333826+00:00",
+      "symbol": "JUPUSDT",
+      "direction": "LONG",
+      "title": "$JUP Breakout Confirmation: Bulls Target Next Supply Zone",
+      "entry_low": 0.356,
+      "entry_high": 0.3572,
+      "stop_loss": 0.34334,
+      "take_profit": 0.38312,
+      "support": 0.356,
+      "resistance": 0.368,
+      "news_line": "",
+      "technical_analysis": "RSI at 35 and a stochastic K of 0 signal oversold conditions, while price sits just below the lower Bollinger Band and the EMA200, providing a firm support cushion. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure. The nearby support and resistance levels frame the current market structure.",
+      "market_context": "BTC is up 0.54% on the day, keeping a bullish tone, and the overall market breadth remains broadly positive.",
+      "result": "PENDING"
     }
   ]
 }
