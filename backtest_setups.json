@@ -49409,6 +49409,23 @@
       "technical_analysis": "Price sits above the 9‑, 21‑, 50‑ and 200‑EMA, confirming bullish bias. MACD histogram is positive at 0.00118 and the MACD line sits well above its signal, adding momentum. RSI at 58.6 supports an uptrend, while Stochastic K near 90 shows strong buying pressure. The pair respects 0.4949 support and eyes 0.5283 resistance.",
       "market_context": "BTC is up 0.16% on the 4‑hour chart, and the broader market shows 84% green symbols, indicating overall positive sentiment.",
       "result": "PENDING"
+    },
+    {
+      "id": 2907,
+      "created_at": "2026-10-10T15:20:46.110842+00:00",
+      "symbol": "APTUSDT",
+      "direction": "SHORT",
+      "title": "Smart Money Distribution Visible on $APT On-Chain Data",
+      "entry_low": 0.8187,
+      "entry_high": 0.825,
+      "stop_loss": 0.851,
+      "take_profit": 0.76355,
+      "support": 0.7994,
+      "resistance": 0.8305,
+      "news_line": "",
+      "technical_analysis": "APT faces clear short-term resistance at 0.8305, where price is currently stalling. The MACD histogram is negative, indicating fading momentum despite a neutral RSI. The orderbook shows a slight bid imbalance, but the broader 4H structure remains cautious. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
+      "market_context": "Bitcoin is trading mixed with a slightly bullish 24h trend, while 84.8% of the market is green. APT's technicals show internal weakness",
+      "result": "PENDING"
     }
   ]
 }
