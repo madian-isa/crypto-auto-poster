@@ -49749,6 +49749,23 @@
       "technical_analysis": "MACD histogram is positive and the MACD line sits above its signal, indicating bullish momentum. Stochastic K is at 0 % with D near 15 %, suggesting oversold conditions. Price rests at the 1‑hour support 0.3308, near the lower Bollinger band, while order‑book imbalance shows buying pressure. These factors favor a near‑term long bias.",
       "market_context": "BTC shows a bearish 4‑hour trend, yet the broader 24‑hour market remains broadly positive with 78.8 % of assets green.",
       "result": "PENDING"
+    },
+    {
+      "id": 2927,
+      "created_at": "2026-10-10T22:50:55.952612+00:00",
+      "symbol": "RAYUSDT",
+      "direction": "LONG",
+      "title": "Bullish Momentum Accelerates as $RAY Liquidity Sweep Completes",
+      "entry_low": 2.361,
+      "entry_high": 2.3719,
+      "stop_loss": 2.28,
+      "take_profit": 2.53935,
+      "support": 2.361,
+      "resistance": 2.407,
+      "news_line": "",
+      "technical_analysis": "RSI at 53 confirms mild buying pressure. Order‑book shows a 43% bid imbalance. With support at 2.361 and resistance near 2.407, momentum favors a long bias. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure. The nearby support and resistance levels frame the current market structure.",
+      "market_context": "BTC shows a bearish 4‑hour trend but a mixed daily picture; the broader crypto market is broadly positive with 73.5% of assets",
+      "result": "PENDING"
     }
   ]
 }
