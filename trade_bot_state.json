@@ -1,6 +1,6 @@
 {
   "date": "2026-10-10",
-  "count": 25,
+  "count": 26,
   "posted_symbols_today": [
     "STRKUSDT",
     "RLCUSDT",
@@ -26,6 +26,7 @@
     "CTSIUSDT",
     "BTCUSDT",
     "ETHUSDT",
-    "LPTUSDT"
+    "LPTUSDT",
+    "GTCUSDT"
   ]
 }
