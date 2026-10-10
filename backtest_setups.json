@@ -48389,6 +48389,23 @@
       "technical_analysis": "Price sits above EMA9, EMA21 and EMA50, while RSI at 62 and Stochastic K > D signal bullish momentum. ADX 48 confirms a strong trend. Aim for the 0.0768 resistance; a break confirms the target. Risk if price drops below the 0.0692 stop or the 0.0704 support level. LONG bias targets continuation toward resistance, with support as the invalidation level.",
       "market_context": "BTC is up 1% and the overall market is broadly positive, supporting risk‑on sentiment.",
       "result": "PENDING"
+    },
+    {
+      "id": 2847,
+      "created_at": "2026-10-10T01:00:48.942292+00:00",
+      "symbol": "RLCUSDT",
+      "direction": "LONG",
+      "title": "Key Support Holds Firm: $RLC Bullish Continuation Setup Active",
+      "entry_low": 1.042,
+      "entry_high": 1.045,
+      "stop_loss": 1.0,
+      "take_profit": 1.1305,
+      "support": 1.0166,
+      "resistance": 1.0845,
+      "news_line": "",
+      "technical_analysis": "Price sits just above EMA9 (1.0289) and EMA21 (1.0004), indicating bullish bias. ADX is 41.7, confirming a strong trend. RSI 54 and Stochastic 57 show neutral‑to‑bullish momentum. Holding above the 1‑hour support 1.0166 keeps the path toward resistance 1.0845 alive; a break below 1.0166 would invalidate the long case. LONG bias targets continuation toward resistance, with support as the invalidation",
+      "market_context": "BTC is in a bullish 24‑hour move with price near $82,564 and market breadth broadly positive (84% green). The overall crypto market",
+      "result": "PENDING"
     }
   ]
 }
