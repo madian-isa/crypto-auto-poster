@@ -48899,6 +48899,23 @@
       "technical_analysis": "QNT sits just above its EMA9/21 cluster and respects the 242.33‑255.45 swing zone. A break above 246.67 could trigger a long entry around 245.5‑246.3, with SL near 236.9 and TP near 263.5. Watch 242.33 as the key invalidation level. LONG bias targets continuation toward resistance, with support as the invalidation level.",
       "market_context": "BTC up 0.2% and market breadth broadly positive (71% green).",
       "result": "PENDING"
+    },
+    {
+      "id": 2877,
+      "created_at": "2026-10-10T09:00:52.119544+00:00",
+      "symbol": "AAVEUSDT",
+      "direction": "LONG",
+      "title": "$AAVE Reclaims Key Resistance Level: Flip to Support Complete",
+      "entry_low": 173.8,
+      "entry_high": 174.2,
+      "stop_loss": 167.04,
+      "take_profit": 187.92,
+      "support": 172.96,
+      "resistance": 176.11,
+      "news_line": "",
+      "technical_analysis": "Price sits above EMA9/21/50 and MACD histogram stays positive, while RSI at 66 and Stochastic near 85 show strong upward bias overall. Order‑book shows a 29% bid imbalance. A break above the 1H resistance 176.11 could push toward the 184 TP. Risk if price falls below 169 SL, thus invalidating the swing.",
+      "market_context": "BTC up 0.21% on the day, with a mixed 1‑day trend but 4‑hour bearish bias. Overall market breadth is broadly positive (71%",
+      "result": "PENDING"
     }
   ]
 }
