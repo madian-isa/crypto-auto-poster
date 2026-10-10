@@ -49222,6 +49222,23 @@
       "technical_analysis": "Price sits near the 1‑hour resistance of $0.0823. A bearish MACD histogram, price under EMA9/21 and RSI near 41 signal downside pressure. A break below $0.0775 would invalidate; watch $0.0800 as the next pull‑back level target. SHORT bias targets continuation toward support, with resistance as the invalidation level. The stop loss defines the risk level for this setup.",
       "market_context": "BTC is in a 4‑hour bearish trend while the broader market shows a positive breadth, keeping risk sentiment mixed.",
       "result": "PENDING"
+    },
+    {
+      "id": 2896,
+      "created_at": "2026-10-10T13:10:38.609302+00:00",
+      "symbol": "ONDOUSDT",
+      "direction": "LONG",
+      "title": "Bullish Divergence Flashed on $ONDO Daily Chart Structure",
+      "entry_low": 0.4965,
+      "entry_high": 0.497,
+      "stop_loss": 0.479,
+      "take_profit": 0.53225,
+      "support": 0.4916,
+      "resistance": 0.4966,
+      "news_line": "",
+      "technical_analysis": "Price has broken above the 0.4966 1H/4H resistance, staying above EMA9, EMA21, EMA50 and EMA200. MACD histogram is positive and RSI sits at a neutral 59. These bullish signs favor a long move toward the 0.5324 target. Risk is a pullback below the 0.4916 support, which would invalidate the setup. Watch the 0.5020 level for early confirmation.",
+      "market_context": "BTC is down about 0.3% on a bearish 4‑hour trend, while overall market breadth remains broadly positive.",
+      "result": "PENDING"
     }
   ]
 }
