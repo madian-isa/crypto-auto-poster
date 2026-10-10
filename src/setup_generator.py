@@ -139,10 +139,12 @@ Use the strongest available technical information.
 Mention EMA, SMA, MACD, RSI, Stochastic, volume,
 orderbook or advanced data only when supplied.
 Write an original, easy-to-follow take of 50-60 words.
-Explain the strongest supporting signals, one relevant
-counter-signal or risk when available, and what level or
-confirmation would matter next. Use short sentences and
-plain language. Never claim the bot entered a real trade.
+State directly which direction the supplied indicators favor
+and why. Use confident, plain language to describe momentum
+and relevant support/resistance structure. Do not add risk,
+stop-loss, invalidation, entry, target, or uncertainty
+commentary. Never promise profit or claim a certain outcome,
+and never claim the bot entered a real trade.
 
 MARKET CONTEXT:
 BTC and broader market information should be used only
@@ -374,32 +376,108 @@ def _strip_opposite_direction_claims(text, direction):
     return _clean_text(filtered, max_length=2000)
 
 
-def _ensure_analysis_length(value, direction=None):
-    text = _strip_opposite_direction_claims(_limit_words(value, 60), direction)
+def _remove_trade_plan_sentences(text, setup=None):
+    setup = setup or {}
+    trade_prices = {
+        value
+        for value in (
+            _safe_float(setup.get("entry_low")),
+            _safe_float(setup.get("entry_high")),
+            _safe_float(setup.get("stop_loss")),
+            _safe_float(setup.get("take_profit")),
+        )
+        if value is not None
+    }
+    key_levels = {
+        value
+        for value in (
+            _safe_float(setup.get("support")),
+            _safe_float(setup.get("resistance")),
+        )
+        if value is not None
+    }
+    restricted_prices = trade_prices - key_levels
+    sentences = re.split(
+        r"(?<=[.!?])\s+(?=[A-Z$])",
+        _clean_text(text, max_length=2000),
+    )
+    trade_plan_terms = re.compile(
+        r"(?i)\b(?:risk|stop[- ]?loss|take[- ]?profit|target\w*|"
+        r"entry|invalidation|invalidate\w*|2r)\b"
+    )
+    number_pattern = re.compile(
+        r"(?<![\w.])\$?(\d+(?:\.\d+)?)(?![\w.])"
+    )
+
+    kept = []
+    for sentence in sentences:
+        if trade_plan_terms.search(sentence):
+            continue
+        numbers = (
+            _safe_float(match.group(1))
+            for match in number_pattern.finditer(sentence)
+        )
+        if any(
+            any(
+                abs(number - trade_price)
+                <= max(abs(trade_price) * 0.0001, 1e-10)
+                for trade_price in restricted_prices
+            )
+            for number in numbers
+            if number is not None
+        ):
+            continue
+        kept.append(sentence.strip())
+
+    return _clean_text(" ".join(part for part in kept if part), 2000)
+
+
+def _ensure_analysis_length(value, direction=None, setup=None):
+    text = _remove_trade_plan_sentences(
+        _strip_opposite_direction_claims(_limit_words(value, 60), direction),
+        setup,
+    )
     if direction == "LONG":
         supplements = (
-            "LONG bias targets continuation toward resistance, with support as the invalidation level.",
-            "The stop loss defines the risk level for this setup.",
-            "The listed entry and target provide the trade plan.",
+            "Together, these indicators favor LONG continuation toward resistance.",
+            "Positive momentum and trend readings give this setup a clear bullish structure.",
+            "The nearby support and resistance levels frame the current market structure.",
+        )
+        fallback = (
+            "The supplied indicators show a bullish structure for this market. "
+            "Together, they favor LONG continuation, with momentum pointing "
+            "toward resistance and support framing the current price structure."
         )
     elif direction == "SHORT":
         supplements = (
-            "SHORT bias targets continuation toward support, with resistance as the invalidation level.",
-            "The stop loss defines the risk level for this setup.",
-            "The listed entry and target provide the trade plan.",
+            "Together, these indicators favor SHORT continuation toward support.",
+            "Negative momentum and trend readings give this setup a clear bearish structure.",
+            "The nearby resistance and support levels frame the current market structure.",
+        )
+        fallback = (
+            "The supplied indicators show a bearish structure for this market. "
+            "Together, they favor SHORT continuation, with momentum pointing "
+            "toward support and resistance framing the current price structure."
         )
     else:
         supplements = (
-            "The supplied signals favor the selected direction toward the stated target.",
-            "The key level invalidates the setup; the stop loss defines the risk level.",
-            "Watch the listed support and resistance for the next price milestone.",
-            "The listed entry and target provide the trade plan.",
+            "The supplied indicators align with the selected direction.",
+            "Momentum and nearby support/resistance define the market structure.",
         )
+        fallback = "The supplied indicators and key levels define the current market structure."
+
+    if not text:
+        text = fallback
+
     for sentence in supplements:
         if len(text.split()) >= 50:
             break
         text = f"{text} {sentence}".strip()
-    return _limit_words(_strip_opposite_direction_claims(text, direction), 60)
+    text = _remove_trade_plan_sentences(
+        _strip_opposite_direction_claims(text, direction),
+        setup,
+    )
+    return _limit_words(text, 60)
 
 
 # =========================================================
@@ -1027,7 +1105,7 @@ def _fallback_technical_text(
             )
         elif price > ema21:
             parts.append(
-                "price is above the 21 EMA, but this needs confirmation"
+                "price is above the 21 EMA, supporting positive momentum"
             )
         else:
             parts.append(
@@ -1101,9 +1179,8 @@ def _fallback_technical_text(
     if not parts:
         analysis = (
             f"${coin} available price structure favors the {direction.lower()} "
-            f"setup. The listed target is the objective, while the stop loss "
-            "defines the risk and the level that invalidates this view. "
-            "Watch support and resistance for the next price milestone."
+            "setup. The supplied indicators and nearby support/resistance "
+            "levels point to continuation in this direction."
         )
         return _limit_words(analysis, 60)
 
@@ -1117,13 +1194,13 @@ def _fallback_technical_text(
 
     if direction == "LONG":
         conclusion = (
-            "Together, these signals favor LONG continuation toward the stated target. "
-            "Support is the key level; a break below it invalidates this view."
+            "Together, these signals favor LONG continuation, with buyers maintaining "
+            "control and resistance as the next level in focus."
         )
     else:
         conclusion = (
-            "Together, these signals favor SHORT continuation toward the stated target. "
-            "Resistance is the key level; a break above it invalidates this view."
+            "Together, these signals favor SHORT continuation, with sellers maintaining "
+            "control and support as the next level in focus."
         )
 
     analysis = (
@@ -1132,9 +1209,8 @@ def _fallback_technical_text(
     )
     if len(analysis.split()) < 50:
         analysis += (
-            " The listed entry and target provide the trade plan. "
-            "The stop loss defines the risk level and the point that invalidates "
-            "the directional view."
+            " Momentum and trend readings reinforce this directional bias, "
+            "while the nearby support and resistance levels frame the market structure."
         )
     return _limit_words(analysis, 60)
 
@@ -1466,13 +1542,12 @@ TASK:
 9. Do not invent a title. A title will be replaced by code.
 
 10. Write technical_analysis as a clear 50-60 word original
-    take. State clearly which direction the supplied signals
-    favor and the expected path toward the listed target.
-    Include the key reasons, the main risk/invalidation level,
-    and what price level to watch next. Use direct, confident
-    wording; avoid vague disclaimer phrases such as "not a
-    verified trade" or "promise of direction". Never guarantee
-    profit or claim the target is certain.
+    take. State directly which direction the supplied indicators
+    favor and why. Use confident, plain language to describe
+    momentum and the relevant support/resistance structure.
+    Do not add risk, stop-loss, invalidation, entry, target, or
+    uncertainty commentary. Do not promise profit or claim an
+    outcome is certain.
 11. Keep the entire post short enough to read in about
     30 seconds. Use plain language and avoid repetition.
 12. Do not claim that a real position was opened or filled.
@@ -1749,6 +1824,7 @@ Return JSON only:
             "",
         ),
         direction,
+        setup,
     )
     setup["technical_analysis"] = _strip_opposite_direction_claims(
         setup["technical_analysis"],
@@ -1843,8 +1919,10 @@ def format_post_text(setup):
             "",
         ),
         direction,
+        setup,
     )
     technical = _strip_opposite_direction_claims(technical, direction)
+    technical = _remove_trade_plan_sentences(technical, setup)
 
     news_line = _limit_words(setup.get(
         "news_line",
