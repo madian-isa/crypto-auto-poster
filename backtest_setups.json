@@ -50072,6 +50072,23 @@
       "technical_analysis": "RSI at 36.5 and Stochastic K at 0 show oversold conditions while price sits just below the lower Bollinger Band, suggesting a near‑term bounce. EMA200 remains above price, but the 1H/4H support at 1.0724 provides a firm floor, favoring an upward move toward the 1.0884 resistance. Together, these indicators favor LONG continuation toward resistance.",
       "market_context": "BTC is modestly bullish (+0.27%) but overall market breadth is broadly negative, with 69% of assets in red.",
       "result": "PENDING"
+    },
+    {
+      "id": 2946,
+      "created_at": "2026-10-11T04:40:45.941639+00:00",
+      "symbol": "INJUSDT",
+      "direction": "SHORT",
+      "title": "$INJ Rejection at Key Supply Zone: Short Setup Activated",
+      "entry_low": 7.51,
+      "entry_high": 7.55,
+      "stop_loss": 7.85,
+      "take_profit": 6.89,
+      "support": 7.264,
+      "resistance": 7.695,
+      "news_line": "",
+      "technical_analysis": "The price sits below the 9‑EMA while remaining above the 21‑EMA, indicating short‑term bearish pressure. MACD line is under its signal with a negative histogram, and Stochastic K (38) is under D (56), both pointing down. ADX at 52 confirms a strong trend, and the order book shows a slight sell‑side imbalance.",
+      "market_context": "BTC’s 4‑hour chart remains bearish while the daily picture is mixed; overall market breadth is broadly negative, with a modest 0.38% bullish",
+      "result": "PENDING"
     }
   ]
 }
