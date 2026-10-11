@@ -50191,6 +50191,23 @@
       "technical_analysis": "Price sits above EMA9/21/50/200, indicating bullish bias. ADX at 52 confirms a strong trend. RSI 55 and Stochastic K 83 show momentum still positive. Order‑book shows slight buying pressure. Current price 0.01219 sits within Bollinger bands, reinforcing the balanced view. Key resistance at 0.0123, support at 0.01194. Together, these indicators favor LONG continuation toward resistance.",
       "market_context": "BTC is bullish (+0.34%) while overall market breadth is broadly negative.",
       "result": "PENDING"
+    },
+    {
+      "id": 2953,
+      "created_at": "2026-10-11T06:40:45.762186+00:00",
+      "symbol": "WALUSDT",
+      "direction": "LONG",
+      "title": "Bullish Divergence Flashed on $WAL Daily Chart Structure",
+      "entry_low": 0.0369,
+      "entry_high": 0.0372,
+      "stop_loss": 0.0356,
+      "take_profit": 0.03995,
+      "support": 0.03661,
+      "resistance": 0.04444,
+      "news_line": "",
+      "technical_analysis": "MACD histogram is positive and the MACD line sits above its signal, confirming upward momentum. EMA9‑21‑50‑200 are all below price, showing a clear bullish trend. RSI at 59 suggests room before overbought, while ADX above 55 signals a strong trend. Price respects the 0.03661 support and aims toward the 0.03856 resistance.",
+      "market_context": "BTC is marginally bullish, up 0.374% in 24 h, with mixed 4 h and daily trends. Overall market breadth is near even",
+      "result": "PENDING"
     }
   ]
 }
