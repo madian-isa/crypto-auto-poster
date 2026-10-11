@@ -54237,6 +54237,23 @@
       "technical_analysis": "MACD line sits above the signal with a positive histogram, and RSI at 62 confirms upward momentum. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure. The nearby support and resistance levels frame the current market structure.",
       "market_context": "BTC is modestly bullish (+0.7% on 24 h) and the overall market shows a 59 % green breadth, suggesting favorable risk sentiment",
       "result": "PENDING"
+    },
+    {
+      "id": 3191,
+      "created_at": "2026-10-11T22:30:53.060804+00:00",
+      "symbol": "TAOUSDT",
+      "direction": "LONG",
+      "title": "Bullish Divergence Flashed on $TAO Daily Chart Structure",
+      "entry_low": 290.5,
+      "entry_high": 291.5,
+      "stop_loss": 280.8,
+      "take_profit": 311.4,
+      "support": 290.5,
+      "resistance": 293.4,
+      "news_line": "",
+      "technical_analysis": "TAO is holding just above the 1‑hour support at 290.5, with price aligned above EMA21, EMA50 and EMA200. A bullish MACD crossover and a positive histogram, combined with RSI near 60 and ADX around 29, signal upward momentum. The next resistance sits near 293.4, reinforcing a long bias overall trend remains bullish.",
+      "market_context": "BTC is modestly higher (+0.73%) on a bullish daily trend, and the broader market shows a 62% green breadth, adding supportive backdrop",
+      "result": "PENDING"
     }
   ]
 }
