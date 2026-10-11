@@ -54050,6 +54050,23 @@
       "technical_analysis": "EMA9‑21‑50‑200 sit below price, confirming an uptrend. MACD line is above its signal with a positive histogram, adding bullish momentum. ADX at 23 indicates a developing trend, and the order‑book shows a 5.8 % bid‑side imbalance. RSI at 77 and Stoch near 91 signal overbought but momentum remains strong. Together, these indicators favor LONG continuation toward resistance.",
       "market_context": "Bitcoin trades around $83,584, showing bullish daily momentum and mixed 4‑hour trends, while overall market breadth is broadly positive with 61% of",
       "result": "PENDING"
+    },
+    {
+      "id": 3180,
+      "created_at": "2026-10-11T19:01:09.854682+00:00",
+      "symbol": "DYMUSDT",
+      "direction": "LONG",
+      "title": "$DYM Reclaims Key Resistance Level: Flip to Support Complete",
+      "entry_low": 0.0195,
+      "entry_high": 0.02,
+      "stop_loss": 0.0188,
+      "take_profit": 0.02165,
+      "support": 0.01849,
+      "resistance": 0.023,
+      "news_line": "",
+      "technical_analysis": "Price sits above EMA9, EMA21, EMA50 and EMA200, confirming a strong uptrend. MACD histogram is positive and ADX at 43 indicates a robust trend. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure. The nearby support and resistance levels frame the current market structure.",
+      "market_context": "BTC is bullish on the daily chart around $83,676, with EMA20 above EMA50, and the broader market shows a 64.5% green breadth",
+      "result": "PENDING"
     }
   ]
 }
