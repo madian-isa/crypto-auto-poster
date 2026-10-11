@@ -50123,6 +50123,23 @@
       "technical_analysis": "Price sits above EMA9 and EMA21, both above EMA50/200, indicating an uptrend. RSI at 56 and Stochastic K above 60 with D near 47 show bullish momentum. ADX 39 confirms a strong trend. Order‑book shows 19% bid‑side imbalance. Current price respects the 0.5511 support and aims toward the 0.5673 resistance.",
       "market_context": "BTC is up 0.4% in 24 h, with mixed 4 h and 1 d trends; market breadth is mixed, 40% green versus",
       "result": "PENDING"
+    },
+    {
+      "id": 2949,
+      "created_at": "2026-10-11T05:10:51.965506+00:00",
+      "symbol": "VELODROMEUSDT",
+      "direction": "LONG",
+      "title": "Bullish Momentum Accelerates as $VELODROME Liquidity Sweep Completes",
+      "entry_low": 0.039,
+      "entry_high": 0.0396,
+      "stop_loss": 0.0375,
+      "take_profit": 0.0429,
+      "support": 0.03885,
+      "resistance": 0.04132,
+      "news_line": "",
+      "technical_analysis": "Indicators point to bullish pressure. Price sits above the 9‑, 21‑, 50‑ and 200‑EMA, confirming an uptrend, while ADX at 54.8 shows a strong trend. RSI and Stochastic are elevated but MACD remains near neutral, supporting a LONG bias. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
+      "market_context": "BTC rose 0.43% to $83,042, keeping a bullish edge, while overall crypto breadth stays broadly negative with 62.4% red assets.",
+      "result": "PENDING"
     }
   ]
 }
