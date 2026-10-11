@@ -1,6 +1,6 @@
 {
   "date": "2026-10-11",
-  "count": 36,
+  "count": 37,
   "posted_symbols_today": [
     "STRKUSDT",
     "MAGICUSDT",
@@ -37,6 +37,7 @@
     "ACTUSDT",
     "\u5e01\u5b89\u4eba\u751fUSDT",
     "BTCUSDT",
-    "RVNUSDT"
+    "RVNUSDT",
+    "ETHUSDT"
   ]
 }
