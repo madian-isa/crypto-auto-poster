@@ -49902,6 +49902,23 @@
       "technical_analysis": "EMA9 sits above EMA21, which sits above EMA50, confirming an uptrend. Stochastic K at 2.9% signals deep oversold conditions, suggesting a bounce. ADX at 54 shows a strong trend, while the orderbook shows a 0.95 bid‑side imbalance, adding buying pressure. Overall the indicators favor a long move toward the 0.109 resistance.",
       "market_context": "BTC is up 0.53% over 24h, showing bullish momentum, while overall market breadth is mixed with 57.4% green assets.",
       "result": "PENDING"
+    },
+    {
+      "id": 2936,
+      "created_at": "2026-10-11T00:50:48.613728+00:00",
+      "symbol": "TIAUSDT",
+      "direction": "SHORT",
+      "title": "Panic Selling Risk Increases as $TIA Tests Critical Floor",
+      "entry_low": 0.585,
+      "entry_high": 0.595,
+      "stop_loss": 0.62,
+      "take_profit": 0.53,
+      "support": 0.4949,
+      "resistance": 0.6129,
+      "news_line": "",
+      "technical_analysis": "Indicators strongly favor a short setup due to extreme overbought conditions. Price is pressing against the upper Bollinger Band at 0.6020, while MACD momentum remains elevated but stretched. The structure suggests a pullback towards the 0.4949 support zone is likely after this sharp surge. Together, these indicators favor SHORT continuation toward support.",
+      "market_context": "BTC is trading at 82,988 with a mixed daily trend, providing neutral broader market context.",
+      "result": "PENDING"
     }
   ]
 }
