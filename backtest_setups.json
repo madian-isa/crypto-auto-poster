@@ -53727,6 +53727,23 @@
       "technical_analysis": "CKB is trading above its EMA9, EMA21, EMA50 and EMA200, confirming an uptrend. RSI at 60 and stochastic K/D above 60 show solid buying momentum. MACD histogram is positive and ADX above 50 signals a strong trend. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
       "market_context": "BTC is marginally bullish (+0.35%) with mixed 4h and 1d trends, and the broader market is 56% green.",
       "result": "PENDING"
+    },
+    {
+      "id": 3161,
+      "created_at": "2026-10-11T13:50:50.359591+00:00",
+      "symbol": "SENTUSDT",
+      "direction": "LONG",
+      "title": "High R-Multiple Long Trade Setup Forming on $SENT",
+      "entry_low": 0.0232,
+      "entry_high": 0.0234,
+      "stop_loss": 0.0224,
+      "take_profit": 0.0251,
+      "support": 0.02082,
+      "resistance": 0.02498,
+      "news_line": "",
+      "technical_analysis": "Sentiment shows bullish momentum. RSI at 68.8 and ADX 40.4 indicate a strong uptrend. MACD histogram is positive and MACD line sits above its signal. Price trades above EMA9‑200 and just above the upper Bollinger band, finding support near 0.023 and resistance around 0.0243. Indicators favor a long bias overall.",
+      "market_context": "BTC is up 0.3% on the day, trading around $83,090 with mixed 4‑h and daily trends, offering a generally positive backdrop for",
+      "result": "PENDING"
     }
   ]
 }
