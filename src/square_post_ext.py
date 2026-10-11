@@ -26,8 +26,8 @@ BASE_URL_V2 = (
     "bapi/composite/v2/public/pgc/openApi"
 )
 
-POLL_INTERVAL_SECONDS = 3
-MAX_POLL_RETRIES = 10
+POLL_INTERVAL_SECONDS = 5
+MAX_POLL_RETRIES = 20
 
 
 _CONTENT_TYPE_MAP = {
@@ -169,14 +169,21 @@ def _poll_image_status(
         )
 
         status = data.get("status")
+        failed_reason = data.get("failedReason")
 
-        if status == 1:
+        print(
+            "[square_post_ext] image status response: "
+            f"status={status!r}, "
+            f"failedReason={failed_reason!r}"
+        )
+
+        if str(status) == "1":
             return data
 
-        if status == 2:
+        if str(status) == "2":
             raise RuntimeError(
                 "Image processing failed: "
-                f"{data.get('failedReason')}"
+                f"{failed_reason or 'Binance returned status 2 without a reason.'}"
             )
 
         print(
@@ -191,7 +198,8 @@ def _poll_image_status(
 
     raise RuntimeError(
         "Image processing poll timed out after "
-        f"{MAX_POLL_RETRIES} retries."
+        f"{MAX_POLL_RETRIES} retries "
+        f"({MAX_POLL_RETRIES * POLL_INTERVAL_SECONDS} seconds)."
     )
 
 
