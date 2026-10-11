@@ -53999,6 +53999,23 @@
       "technical_analysis": "Yet RSI 72 and stochastic 95 place the pair deep in overbought territory, with price above the Bollinger upper band. The short‑term structure hints at a near‑term pull‑back toward the 1‑hour support at 109.88. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
       "market_context": "BTC shows a mixed 4‑hour trend but a bullish daily outlook; overall crypto market breadth is broadly positive with 72.3% of assets",
       "result": "PENDING"
+    },
+    {
+      "id": 3177,
+      "created_at": "2026-10-11T18:00:52.308439+00:00",
+      "symbol": "AVAXUSDT",
+      "direction": "LONG",
+      "title": "$AVAX Breaks Out of Falling Wedge Pattern: Targets Set Higher",
+      "entry_low": 10.84,
+      "entry_high": 10.9,
+      "stop_loss": 10.465,
+      "take_profit": 11.68,
+      "support": 10.465,
+      "resistance": 11.0,
+      "news_line": "",
+      "technical_analysis": "AVAX is trading above its 9‑, 21‑ and 200‑EMA, while the MACD line sits well above the signal and the histogram is positive, confirming upward momentum. ADX above 30 shows a strong trend, and a 22% bid‑side order‑book imbalance adds buying pressure. The price respects the 10.465 support and eyes the 11.0 resistance.",
+      "market_context": "BTC is up 0.9% on the day and the market breadth is broadly positive, with about 69% of assets green, reinforcing a",
+      "result": "PENDING"
     }
   ]
 }
