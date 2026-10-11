@@ -54067,6 +54067,23 @@
       "technical_analysis": "Price sits above EMA9, EMA21, EMA50 and EMA200, confirming a strong uptrend. MACD histogram is positive and ADX at 43 indicates a robust trend. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure. The nearby support and resistance levels frame the current market structure.",
       "market_context": "BTC is bullish on the daily chart around $83,676, with EMA20 above EMA50, and the broader market shows a 64.5% green breadth",
       "result": "PENDING"
+    },
+    {
+      "id": 3181,
+      "created_at": "2026-10-11T19:10:45.777772+00:00",
+      "symbol": "BNBUSDT",
+      "direction": "SHORT",
+      "title": "$BNB Derivative Data Shows Heavy Long Liquidations Incoming",
+      "entry_low": 749.5,
+      "entry_high": 753.8,
+      "stop_loss": 786.0,
+      "take_profit": 682.95,
+      "support": 735.0,
+      "resistance": 759.9,
+      "news_line": "",
+      "technical_analysis": "The orderbook shows a negative imbalance with heavier ask volume, suggesting sellers are dominant. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
+      "market_context": "Bitcoin is trading at 83,670 with a bullish daily trend, but the 4H trend is mixed. Market breadth is broadly positive with",
+      "result": "PENDING"
     }
   ]
 }

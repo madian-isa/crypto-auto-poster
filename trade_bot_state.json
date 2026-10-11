@@ -1,6 +1,6 @@
 {
   "date": "2026-10-11",
-  "count": 50,
+  "count": 51,
   "posted_symbols_today": [
     "STRKUSDT",
     "MAGICUSDT",
@@ -51,6 +51,7 @@
     "AVAXUSDT",
     "PLUMEUSDT",
     "WUSDT",
-    "DYMUSDT"
+    "DYMUSDT",
+    "BNBUSDT"
   ]
 }
