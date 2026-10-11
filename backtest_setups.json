@@ -53914,6 +53914,23 @@
       "technical_analysis": "The price is approaching the 4H resistance of 0.2315 while support sits near 0.2227, making a short trade a logical choice. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
       "market_context": "BTC is in a bullish trend with a 4H price above its 20‑EMA, reinforcing the broader market positivity.",
       "result": "PENDING"
+    },
+    {
+      "id": 3172,
+      "created_at": "2026-10-11T16:10:48.114732+00:00",
+      "symbol": "MEGAUSDT",
+      "direction": "LONG",
+      "title": "$MEGA Higher Low Structure Confirmed: Long Entry Level Reached",
+      "entry_low": 0.0449,
+      "entry_high": 0.0455,
+      "stop_loss": 0.0433,
+      "take_profit": 0.049,
+      "support": 0.04314,
+      "resistance": 0.0473,
+      "news_line": "",
+      "technical_analysis": "MEGA is holding above all key EMAs and the MACD histogram stays positive, indicating bullish momentum. ADX at 46 confirms a strong trend. RSI and Stoch are overbought but the order‑book shows a 9% bid imbalance supporting upside. Price respects the 0.04314 support and aims toward the 0.0473 ceiling in the near term.",
+      "market_context": "BTC up 0.95% on the 4‑hour mixed but 1‑day bullish trend; overall market 76% green, broadly positive.",
+      "result": "PENDING"
     }
   ]
 }
