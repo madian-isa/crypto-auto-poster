@@ -1,6 +1,6 @@
 {
   "date": "2026-10-11",
-  "count": 40,
+  "count": 41,
   "posted_symbols_today": [
     "STRKUSDT",
     "MAGICUSDT",
@@ -41,6 +41,7 @@
     "ETHUSDT",
     "ROSEUSDT",
     "ZECUSDT",
-    "ETHFIUSDT"
+    "ETHFIUSDT",
+    "ENAUSDT"
   ]
 }

@@ -53897,6 +53897,23 @@
       "technical_analysis": "Indicators point to bullish momentum. ADX above 25 confirms a strong trend, while order‑book imbalance favors bids. The price respects the 0.7004‑0.7322 range, supporting a long bias. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure. The nearby support and resistance levels frame the current market structure.",
       "market_context": "BTC is bullish on the 1‑day chart and market breadth is broadly positive, with 69.4% of assets green.",
       "result": "PENDING"
+    },
+    {
+      "id": 3171,
+      "created_at": "2026-10-11T16:00:56.417456+00:00",
+      "symbol": "ENAUSDT",
+      "direction": "SHORT",
+      "title": "$ENA Volume Decreases on Rally: Weak Buyers Exposed",
+      "entry_low": 0.2306,
+      "entry_high": 0.231,
+      "stop_loss": 0.2225,
+      "take_profit": 0.2142,
+      "support": 0.2227,
+      "resistance": 0.2315,
+      "news_line": "",
+      "technical_analysis": "The price is approaching the 4H resistance of 0.2315 while support sits near 0.2227, making a short trade a logical choice. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
+      "market_context": "BTC is in a bullish trend with a 4H price above its 20‑EMA, reinforcing the broader market positivity.",
+      "result": "PENDING"
     }
   ]
 }
