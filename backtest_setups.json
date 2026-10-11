@@ -53965,6 +53965,23 @@
       "technical_analysis": "Stochastic (95.8) and RSI (69.7) show overbought pressure, while price sits above the upper Bollinger band. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
       "market_context": "BTC is in a bullish daily trend and the broader market is broadly positive, providing a supportive backdrop for risk‑on assets.",
       "result": "PENDING"
+    },
+    {
+      "id": 3175,
+      "created_at": "2026-10-11T17:20:46.236307+00:00",
+      "symbol": "PUMPUSDT",
+      "direction": "LONG",
+      "title": "Strong Accumulation Detected: $PUMP Prepares for Next Wave Up",
+      "entry_low": 0.0056,
+      "entry_high": 0.0057,
+      "stop_loss": 0.00545,
+      "take_profit": 0.00605,
+      "support": 0.005594,
+      "resistance": 0.005874,
+      "news_line": "",
+      "technical_analysis": "MACD histogram stays positive and the MACD line sits well above its signal, confirming bullish momentum. Price trades above the 9‑, 21‑, 50‑ and 200‑EMA, indicating an uptrend. RSI at 71 and Stochastic near 97 show strong buying pressure, while volume is up 134 %. Resistance sits near 0.005874. Current price at 0.005836 reinforces the bias.",
+      "market_context": "BTC is in a bullish daily trend and the broader market is broadly positive, with 70 % of coins green.",
+      "result": "PENDING"
     }
   ]
 }
