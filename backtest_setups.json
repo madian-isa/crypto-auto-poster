@@ -55223,6 +55223,23 @@
       "technical_analysis": "Indicators favor a short bias as the price sits below the 9, 21, and 50 EMAs, with a negative MACD histogram confirming downward momentum. Structure supports a move toward the 7.306 swing low. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
       "market_context": "BTC is trading bearishly on the 4H chart, and broader market breadth is predominantly negative, aligning with the downward pressure on UNI.",
       "result": "PENDING"
+    },
+    {
+      "id": 3249,
+      "created_at": "2026-10-12T15:10:49.890535+00:00",
+      "symbol": "ATOMUSDT",
+      "direction": "SHORT",
+      "title": "$ATOM Lower High Pattern Confirmed: Short Target in View",
+      "entry_low": 1.86,
+      "entry_high": 1.87,
+      "stop_loss": 1.9396,
+      "take_profit": 1.7158,
+      "support": 1.828,
+      "resistance": 1.897,
+      "news_line": "",
+      "technical_analysis": "The price sits below all key EMAs (9‑200) and MACD remains negative, indicating a downtrend. RSI at 35.7 and Stochastic K at 16 suggest oversold conditions, but momentum stays bearish. With the 1‑hour resistance at 1.897 acting as a ceiling, the indicators favor a short bias. Current volume is up 3.5% and order‑book imbalance leans bearish, reinforcing the downside view.",
+      "market_context": "BTC shows a bearish 4‑hour trend and a mixed daily picture, while the overall market is broadly negative with about 80% of",
+      "result": "PENDING"
     }
   ]
 }

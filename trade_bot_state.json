@@ -1,6 +1,6 @@
 {
   "date": "2026-10-12",
-  "count": 53,
+  "count": 54,
   "posted_symbols_today": [
     "SUSDT",
     "LUMIAUSDT",
@@ -54,6 +54,7 @@
     "POLUSDT",
     "XRPUSDT",
     "BNBUSDT",
-    "UNIUSDT"
+    "UNIUSDT",
+    "ATOMUSDT"
   ]
 }
