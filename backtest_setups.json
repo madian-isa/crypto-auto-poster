@@ -55359,6 +55359,23 @@
       "technical_analysis": "EMA9, EMA21 and EMA50 sit above price, confirming bearish trend. MACD histogram is negative and MACD line sits below its signal, reinforcing downside pressure. Price is near the 1H resistance zone, favoring a short bias. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
       "market_context": "BTC is in a bearish 4‑hour trend and the broader market shows a largely negative breadth, supporting downside bias for altcoins.",
       "result": "PENDING"
+    },
+    {
+      "id": 3257,
+      "created_at": "2026-10-12T17:30:55.187709+00:00",
+      "symbol": "LINKUSDT",
+      "direction": "SHORT",
+      "title": "Smart Money Distribution Visible on $LINK On-Chain Data",
+      "entry_low": 12.888,
+      "entry_high": 13.03,
+      "stop_loss": 13.5,
+      "take_profit": 11.877,
+      "support": 12.872,
+      "resistance": 13.03,
+      "news_line": "",
+      "technical_analysis": "MACD is below its signal line with a negative histogram, and price sits under EMA9, EMA21, EMA50 and EMA200, confirming bearish momentum. ADX at 28 shows a solid trend. RSI at 32 and stochastic near 2 suggest oversold conditions but the price is trapped near the 1H resistance, favoring a short bias.",
+      "market_context": "BTC is in a bearish 4‑hour trend and the broader market is broadly negative, with 87.6% of assets red.",
+      "result": "PENDING"
     }
   ]
 }
