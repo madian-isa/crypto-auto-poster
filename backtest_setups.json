@@ -54645,6 +54645,23 @@
       "technical_analysis": "Price sits above the 9, 21, 50 and 200 EMA, confirming an uptrend. MACD line is above its signal with a positive histogram, while RSI at 60 shows solid momentum. ADX above 30 signals a strong trend, and Stochastic near the 80 zone adds bullish bias. The next resistance sits at 2.13.",
       "market_context": "Bitcoin is bullish on the daily chart and mixed on the 4‑hour, while the overall market breadth is broadly positive, supporting a",
       "result": "PENDING"
+    },
+    {
+      "id": 3215,
+      "created_at": "2026-10-12T04:10:48.295778+00:00",
+      "symbol": "MUBARAKUSDT",
+      "direction": "SHORT",
+      "title": "Major Support Breakdown Confirmed on $MUBARAK Higher Timeframes",
+      "entry_low": 0.0714,
+      "entry_high": 0.0718,
+      "stop_loss": 0.0742,
+      "take_profit": 0.0664,
+      "support": 0.06399,
+      "resistance": 0.07284,
+      "news_line": "",
+      "technical_analysis": "The pair respects the 0.07284 resistance level, with the next solid support near 0.06399 ahead. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
+      "market_context": "BTC remains bullish on the 1‑day chart, and overall market breadth is broadly positive, supporting a risk‑off tilt for altcoins.",
+      "result": "PENDING"
     }
   ]
 }
