@@ -55580,6 +55580,23 @@
       "technical_analysis": "RSI at 26.9 and Stochastic K near 1 signal deep oversold conditions, while ADX around 30 confirms a strong trend. Order‑book shows a 25% bid‑side imbalance and volume jumped nearly 83%, indicating buying pressure. Together these point to upward momentum toward the 0.09035 resistance. Together, these indicators favor LONG continuation toward resistance.",
       "market_context": "BTC is down 1.4% on the 4‑hour chart, and the broader market is broadly negative with only about 9% of assets in",
       "result": "PENDING"
+    },
+    {
+      "id": 3270,
+      "created_at": "2026-10-12T23:40:47.523142+00:00",
+      "symbol": "币安人生USDT",
+      "direction": "SHORT",
+      "title": "Strong Rejection at Trendline Resistance: $币安人生 Short Entry",
+      "entry_low": 0.568,
+      "entry_high": 0.572,
+      "stop_loss": 0.59,
+      "take_profit": 0.53,
+      "support": 0.5264,
+      "resistance": 0.5663,
+      "news_line": "",
+      "technical_analysis": "MACD sits below its signal with a negative histogram, while price trades under the EMA9, EMA21 and EMA50, indicating bearish momentum. RSI at 43 and Stochastic K around 27 suggest weakening strength. ADX’s 13 signals a soft trend. With the 1‑hour resistance at 0.5663, the setup leans short overall short bias.",
+      "market_context": "BTC is in a bearish 4‑hour trend, down 2.3% on the day, and the broader market is 91.8% red, indicating overall negative",
+      "result": "PENDING"
     }
   ]
 }
