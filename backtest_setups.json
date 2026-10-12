@@ -55393,6 +55393,23 @@
       "technical_analysis": "RSI at 28.45 and Stochastic K at 2 signal deep oversold conditions, while the orderbook shows a 24.9% bid‑side imbalance. Price sits just above the 1H support of 160.5, below all EMAs, indicating a potential bounce. Momentum cues point to upward pressure from the support zone and may drive the pair toward the next resistance near 168.",
       "market_context": "BTC is in a bearish 4‑hour trend, down 1.66% today, with market breadth showing 85% red. The broader weakness supports AAVE’s downside",
       "result": "PENDING"
+    },
+    {
+      "id": 3259,
+      "created_at": "2026-10-12T19:01:01.577071+00:00",
+      "symbol": "RAYUSDT",
+      "direction": "SHORT",
+      "title": "$RAY Volume Decreases on Rally: Weak Buyers Exposed",
+      "entry_low": 2.19,
+      "entry_high": 2.2,
+      "stop_loss": 2.28,
+      "take_profit": 2.025,
+      "support": 2.1704,
+      "resistance": 2.3408,
+      "news_line": "",
+      "technical_analysis": "RSI at 26.8 and Stochastic K below 5 signal deep oversold conditions, yet price sits under EMA9, EMA21 and EMA200, confirming a bearish trend. MACD histogram stays negative, and ADX around 29 shows solid momentum. Order‑book shows a slight bid imbalance, but overall indicators favor a short move toward the 2.17 support.",
+      "market_context": "BTC is in a bearish 4‑hour trend and the broader market is broadly negative, with 85% of assets red. This backdrop supports",
+      "result": "PENDING"
     }
   ]
 }
