@@ -55529,6 +55529,23 @@
       "technical_analysis": "RSI at 11 signals deep oversold conditions while ADX above 30 confirms a strong trend. Price sits below the EMA9‑200 cluster, reinforcing bearish momentum. MACD histogram remains negative, and the price is under the lower Bollinger Band. Together these indicators favor a short bias toward the 0.0141 support in the near term.",
       "market_context": "BTC is in a bearish 4‑hour trend and down 0.68% over 24 h. Market breadth is broadly negative with 86% of assets",
       "result": "PENDING"
+    },
+    {
+      "id": 3267,
+      "created_at": "2026-10-12T21:20:41.787401+00:00",
+      "symbol": "RENDERUSDT",
+      "direction": "LONG",
+      "title": "Key Support Holds Firm: $RENDER Bullish Continuation Setup Active",
+      "entry_low": 2.097,
+      "entry_high": 2.116,
+      "stop_loss": 1.98011,
+      "take_profit": 2.35928,
+      "support": 1.994,
+      "resistance": 2.145,
+      "news_line": "",
+      "technical_analysis": "RSI at 64.8 and Stochastic K/D at 70/52 show bullish momentum. Price sits above EMA9, EMA21, EMA50 and EMA200, confirming an uptrend. ADX 26 indicates a moderate trend. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure. The nearby support and resistance levels frame the current market structure.",
+      "market_context": "Bitcoin is in a bearish 4‑hour trend and down 0.5% on the day, while overall market breadth is broadly negative.",
+      "result": "PENDING"
     }
   ]
 }
