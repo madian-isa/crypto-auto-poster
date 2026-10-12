@@ -54458,6 +54458,23 @@
       "technical_analysis": "NEAR is trading above its 9‑, 21‑, 50‑ and 200‑EMA, with MACD line above signal and a positive histogram. ADX at 40 confirms a strong trend. While RSI and Stochastic are in overbought territory, the bullish EMA stack and order‑book imbalance keep momentum upward toward the 5.9 resistance level overall today.",
       "market_context": "BTC is slightly bullish, up 0.86% in 24h, with a mixed 4h trend but bullish on the daily chart, supporting overall positive",
       "result": "PENDING"
+    },
+    {
+      "id": 3204,
+      "created_at": "2026-10-12T01:50:48.564582+00:00",
+      "symbol": "BATUSDT",
+      "direction": "LONG",
+      "title": "Critical Resistance Test: $BAT Preparing to Surge Higher",
+      "entry_low": 0.1604,
+      "entry_high": 0.1606,
+      "stop_loss": 0.15408,
+      "take_profit": 0.17334,
+      "support": 0.1463,
+      "resistance": 0.1699,
+      "news_line": "",
+      "technical_analysis": "Current price sits above multiple EMAs and the MACD line exceeds its signal, indicating upward momentum. RSI at 60.3 shows a healthy, though not overbought, stance. Bollinger Bands place the price near the upper band, supporting a bullish bias. The 1‑hour support at 0.1463 and resistance around 0.1699 frame a clear trade window.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
