@@ -1,6 +1,6 @@
 {
   "date": "2026-10-12",
-  "count": 9,
+  "count": 10,
   "posted_symbols_today": [
     "SUSDT",
     "LUMIAUSDT",
@@ -10,6 +10,7 @@
     "WUSDT",
     "PLUMEUSDT",
     "NEARUSDT",
-    "BATUSDT"
+    "BATUSDT",
+    "FILUSDT"
   ]
 }
