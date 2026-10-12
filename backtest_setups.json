@@ -55563,6 +55563,23 @@
       "technical_analysis": "The 1‑hour swing range sits between 3.97 µ and 4.04 µ, framing the trade. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure. The nearby support and resistance levels frame the current market structure.",
       "market_context": "BTC is bearish on the 4‑hour chart, mixed on daily, and the broader market is broadly negative with 89.6% red breadth.",
       "result": "PENDING"
+    },
+    {
+      "id": 3269,
+      "created_at": "2026-10-12T22:40:53.720378+00:00",
+      "symbol": "NILUSDT",
+      "direction": "LONG",
+      "title": "Bullish Divergence Flashed on $NIL Daily Chart Structure",
+      "entry_low": 0.0769,
+      "entry_high": 0.0775,
+      "stop_loss": 0.074,
+      "take_profit": 0.0836,
+      "support": 0.07682,
+      "resistance": 0.09035,
+      "news_line": "",
+      "technical_analysis": "RSI at 26.9 and Stochastic K near 1 signal deep oversold conditions, while ADX around 30 confirms a strong trend. Order‑book shows a 25% bid‑side imbalance and volume jumped nearly 83%, indicating buying pressure. Together these point to upward momentum toward the 0.09035 resistance. Together, these indicators favor LONG continuation toward resistance.",
+      "market_context": "BTC is down 1.4% on the 4‑hour chart, and the broader market is broadly negative with only about 9% of assets in",
+      "result": "PENDING"
     }
   ]
 }
