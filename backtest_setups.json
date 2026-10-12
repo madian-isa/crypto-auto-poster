@@ -54985,6 +54985,23 @@
       "technical_analysis": "MACD line sits above its signal with a positive histogram, confirming bullish momentum. Price is above the 9‑, 21‑, 50‑ and 200‑EMA cluster, indicating an uptrend. RSI and Stochastic are in overbought territory but ADX at 26 shows the trend remains firm. Together, these indicators favor LONG continuation toward resistance.",
       "market_context": "BTC is up 0.48% on the 4‑hour and daily charts, showing a bullish trend, while overall market breadth is mixed with a",
       "result": "PENDING"
+    },
+    {
+      "id": 3235,
+      "created_at": "2026-10-12T10:10:51.375361+00:00",
+      "symbol": "GTCUSDT",
+      "direction": "SHORT",
+      "title": "$GTC Resistance Test Fails: Bearish Momentum Building Fast",
+      "entry_low": 0.1658,
+      "entry_high": 0.1661,
+      "stop_loss": 0.172,
+      "take_profit": 0.15385,
+      "support": 0.165,
+      "resistance": 0.16616,
+      "news_line": "",
+      "technical_analysis": "Price sits below EMA9, EMA21, EMA50 and EMA200, confirming a downtrend. MACD is negative with a bearish histogram, RSI at 36.6 and Stochastic K/D in the low 30s signal weakening momentum. The pair is near its short‑term resistance at 0.166, favoring a short bias. Together, these indicators favor SHORT continuation toward support.",
+      "market_context": "BTC is modestly bullish (+0.5%) with a mixed 4‑hour trend and bullish daily trend. Market breadth is mixed, 55% of assets are",
+      "result": "PENDING"
     }
   ]
 }
