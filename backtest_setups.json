@@ -54441,6 +54441,23 @@
       "technical_analysis": "The mix points to a short‑term pull‑back from resistance. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
       "market_context": "BTC is up 0.8% and bullish on the daily, with a mixed 4‑hour picture, supporting overall positive market sentiment.",
       "result": "PENDING"
+    },
+    {
+      "id": 3203,
+      "created_at": "2026-10-12T01:40:50.920949+00:00",
+      "symbol": "NEARUSDT",
+      "direction": "LONG",
+      "title": "Bullish Momentum Is Building: Can $NEAR Continue Its Breakout?",
+      "entry_low": 5.813,
+      "entry_high": 5.9,
+      "stop_loss": 5.61,
+      "take_profit": 6.3495,
+      "support": 5.626,
+      "resistance": 5.9,
+      "news_line": "",
+      "technical_analysis": "NEAR is trading above its 9‑, 21‑, 50‑ and 200‑EMA, with MACD line above signal and a positive histogram. ADX at 40 confirms a strong trend. While RSI and Stochastic are in overbought territory, the bullish EMA stack and order‑book imbalance keep momentum upward toward the 5.9 resistance level overall today.",
+      "market_context": "BTC is slightly bullish, up 0.86% in 24h, with a mixed 4h trend but bullish on the daily chart, supporting overall positive",
+      "result": "PENDING"
     }
   ]
 }
