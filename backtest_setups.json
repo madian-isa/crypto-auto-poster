@@ -54424,6 +54424,23 @@
       "technical_analysis": "Momentum favors a long setup with RSI at 66.83 and a positive MACD histogram confirming upward pressure. Price holds above the 9, 21, and 50 EMAs, while ADX at 41.6 signals a strong trend. Bullish orderbook imbalance supports continuation toward resistance at 0.02337. Together, these indicators favor LONG continuation toward resistance.",
       "market_context": "BTC is bullish on the daily chart, and 67.8% of the market is green, providing a supportive backdrop for WUSDT.",
       "result": "PENDING"
+    },
+    {
+      "id": 3202,
+      "created_at": "2026-10-12T01:30:54.940760+00:00",
+      "symbol": "PLUMEUSDT",
+      "direction": "SHORT",
+      "title": "$PLUME Prepares for Breakdown: Downside Risk Escalates",
+      "entry_low": 0.02315,
+      "entry_high": 0.02328,
+      "stop_loss": 0.0241,
+      "take_profit": 0.021445,
+      "support": 0.01895,
+      "resistance": 0.02332,
+      "news_line": "",
+      "technical_analysis": "The mix points to a short‑term pull‑back from resistance. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
+      "market_context": "BTC is up 0.8% and bullish on the daily, with a mixed 4‑hour picture, supporting overall positive market sentiment.",
+      "result": "PENDING"
     }
   ]
 }
