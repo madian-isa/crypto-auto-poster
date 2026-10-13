@@ -56668,6 +56668,23 @@
       "technical_analysis": "MACD histogram is positive and the MACD line sits above its signal, indicating bullish momentum. Stochastic K/D around 62/58 supports an uptrend, while ADX above 35 confirms a strong trend. Price holds above the 9‑EMA and sits near the 1‑hour support zone, with a +6.3% order‑book imbalance favoring buyers today.",
       "market_context": "BTC is in a bullish 4‑hour and daily trend, up 0.6% today, while overall crypto market breadth remains broadly negative.",
       "result": "PENDING"
+    },
+    {
+      "id": 3334,
+      "created_at": "2026-10-13T21:30:55.346241+00:00",
+      "symbol": "ICPUSDT",
+      "direction": "SHORT",
+      "title": "Panic Selling Risk Increases as $ICP Tests Critical Floor",
+      "entry_low": 3.149,
+      "entry_high": 3.155,
+      "stop_loss": 3.27808,
+      "take_profit": 2.89984,
+      "support": 3.097,
+      "resistance": 3.204,
+      "news_line": "",
+      "technical_analysis": "RSI at 45.5 and Stochastic K at 35 reinforce weak momentum, while ADX 22 shows a soft trend. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
+      "market_context": "BTC is bullish on the daily chart but mixed on the 4‑hour, while the broader crypto market is broadly negative with 78.6%",
+      "result": "PENDING"
     }
   ]
 }
