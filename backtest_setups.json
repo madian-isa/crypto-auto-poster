@@ -56107,6 +56107,23 @@
       "technical_analysis": "MACD sits below its signal with a negative histogram, while price trades beneath the 9‑, 21‑ and 50‑EMA bands, confirming bearish momentum. ADX at 41 signals a strong trend, and the order‑book shows a –26 % imbalance toward asks. Stochastic is deep in oversold territory, but the overall bias remains short.",
       "market_context": "BTC slipped 0.9 % over 24 h, keeping a bearish tone as the broader market showed 86 % red breadth.",
       "result": "PENDING"
+    },
+    {
+      "id": 3301,
+      "created_at": "2026-10-13T09:40:55.192986+00:00",
+      "symbol": "ETHUSDT",
+      "direction": "LONG",
+      "title": "$ETH Holds Moving Average Support: High Probability Long Setup",
+      "entry_low": 2510.0,
+      "entry_high": 2515.0,
+      "stop_loss": 2412.0,
+      "take_profit": 2713.5,
+      "support": 2504.26,
+      "resistance": 2527.5,
+      "news_line": "",
+      "technical_analysis": "MACD histogram is positive and the MACD line sits above its signal, indicating bullish momentum. Order‑book data shows a 34% bid imbalance and volume is up 74%, both supporting buying pressure. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
+      "market_context": "BTC is bullish on the daily chart while the 4‑hour trend is mixed; overall crypto market breadth is broadly negative with 86%",
+      "result": "PENDING"
     }
   ]
 }
