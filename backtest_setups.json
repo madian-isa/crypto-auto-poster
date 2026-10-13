@@ -56413,6 +56413,23 @@
       "technical_analysis": "Stochastic K is below its D line and order‑book imbalance shows 14.8% more sell pressure, while price sits under EMA50/200 and the broader market is 81% red. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
       "market_context": "BTC remains bullish on the daily, but overall market breadth is broadly negative with a strong red majority.",
       "result": "PENDING"
+    },
+    {
+      "id": 3319,
+      "created_at": "2026-10-13T16:51:03.193233+00:00",
+      "symbol": "INJUSDT",
+      "direction": "LONG",
+      "title": "$INJ Holds Moving Average Support: High Probability Long Setup",
+      "entry_low": 7.78,
+      "entry_high": 7.8,
+      "stop_loss": 7.51,
+      "take_profit": 8.35,
+      "support": 7.766,
+      "resistance": 8.113,
+      "news_line": "",
+      "technical_analysis": "Price sits above the 9‑, 21‑ and 50‑EMA, with the MACD line (0.043) comfortably above its signal (0.029) and a positive histogram, while RSI is at 54 and Stochastic around 68, indicating upward momentum. The 1‑hour swing shows support at 7.766 and resistance near 8.11, favoring a long bias on the current market.",
+      "market_context": "BTC is in a bullish daily trend, up 0.96% on 4‑hour mixed signals, while the broader crypto market shows a largely negative",
+      "result": "PENDING"
     }
   ]
 }
