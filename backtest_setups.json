@@ -56328,6 +56328,23 @@
       "technical_analysis": "MACD histogram is positive, confirming upward momentum, while price sits above EMA9, EMA21, EMA50 and EMA200, showing a clear bullish trend. ADX at 28 signals moderate strength. Stochastic K (73.8) above D (29.8) adds bullish bias. Order‑book shows a 24.6 % bid imbalance, supporting a long outlook in overall positioning.",
       "market_context": "BTC is bullish on the daily chart but shows mixed signals on the 4‑hour timeframe, while the broader market remains broadly negative",
       "result": "PENDING"
+    },
+    {
+      "id": 3314,
+      "created_at": "2026-10-13T15:40:54.254753+00:00",
+      "symbol": "LUMIAUSDT",
+      "direction": "SHORT",
+      "title": "Smart Money Distribution Visible on $LUMIA On-Chain Data",
+      "entry_low": 0.104,
+      "entry_high": 0.1048,
+      "stop_loss": 0.1085,
+      "take_profit": 0.0962,
+      "support": 0.0923,
+      "resistance": 0.1105,
+      "news_line": "",
+      "technical_analysis": "Price sits below all key EMAs (9‑200) and the MACD histogram remains negative, while RSI is under 40 and Stochastic K is well below its D line. These bearish signals line up with the nearby resistance at ~0.105, suggesting short‑term downside pressure and may test the 0.100‑0.092 support zone for price levels.",
+      "market_context": "BTC shows a bullish 1‑day trend, yet overall market breadth remains broadly negative with only 15.5% of assets green.",
+      "result": "PENDING"
     }
   ]
 }
