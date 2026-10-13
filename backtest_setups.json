@@ -56158,6 +56158,23 @@
       "technical_analysis": "Stochastic K at 71 with D at 81 flags overbought conditions. Order‑book shows a 3.8% ask‑side tilt. Immediate resistance sits at 0.1566, with solid support at 0.1561. The 1‑hour swing places resistance just above current price, reinforcing the short setup. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
       "market_context": "BTC remains bullish on the 1‑day chart, while overall market breadth is broadly negative with 87.8% red coins.",
       "result": "PENDING"
+    },
+    {
+      "id": 3304,
+      "created_at": "2026-10-13T11:01:03.328664+00:00",
+      "symbol": "FILUSDT",
+      "direction": "SHORT",
+      "title": "$FIL Breaks Ascending Support Line: Bearish Momentum Surge",
+      "entry_low": 1.16,
+      "entry_high": 1.165,
+      "stop_loss": 1.206,
+      "take_profit": 1.0755,
+      "support": 1.0936,
+      "resistance": 1.2033,
+      "news_line": "",
+      "technical_analysis": "Price sits below the 9‑, 21‑ and 50‑EMA, indicating bearish bias. The order‑book shows a –7.1 % imbalance toward sellers, while the stochastic K (63) is under its D line (76), suggesting downward momentum. RSI at 47 is neutral, and ADX 22 signals a weak trend, reinforcing the short Together, these indicators favor SHORT continuation toward support.",
+      "market_context": "BTC is down 0.27 % on the 24‑hour chart, with a bearish direction and the broader market showing 89 % red breadth",
+      "result": "PENDING"
     }
   ]
 }
