@@ -55937,6 +55937,23 @@
       "technical_analysis": "ADX is above 25, confirming a strong trend, while RSI is neutral at 44.25. The price is near the 1H/4H resistance of 2.136, making a short move a logical choice. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
       "market_context": "BTC is in a bearish trend with a 24‑hour decline of -0.389% and a broadly negative market breadth.",
       "result": "PENDING"
+    },
+    {
+      "id": 3291,
+      "created_at": "2026-10-13T05:50:51.169719+00:00",
+      "symbol": "SOLUSDT",
+      "direction": "SHORT",
+      "title": "$SOL Open Interest Drops Rapidly: Long Squeeze Underway",
+      "entry_low": 108.7,
+      "entry_high": 108.85,
+      "stop_loss": 113.126,
+      "take_profit": 100.073,
+      "support": 107.16,
+      "resistance": 108.85,
+      "news_line": "",
+      "technical_analysis": "Stochastic K at 84 signals overbought conditions, and ADX at 39 confirms a strong trend. With price near the 1H resistance of 108.85, momentum leans toward a short bias. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
+      "market_context": "BTC is slightly bearish, down 0.36% on the 24h, and the broader market shows 88% red breadth, adding pressure to risk assets.",
+      "result": "PENDING"
     }
   ]
 }
