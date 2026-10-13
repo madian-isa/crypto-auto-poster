@@ -56209,6 +56209,23 @@
       "technical_analysis": "MACD is bullish with the line (0.0005) above its signal (0.00031) and a positive histogram. Price sits above the EMA9, EMA21, EMA50 and EMA200, confirming an uptrend. RSI at 63 signals continued strength, while the stochastic is overbought. The market respects a near‑term support around 0.0607 and faces resistance near 0.0618.",
       "market_context": "BTC shows mixed 4‑hour momentum but a bullish daily trend around $83.5k, providing a modestly positive backdrop despite broadly negative market breadth.",
       "result": "PENDING"
+    },
+    {
+      "id": 3307,
+      "created_at": "2026-10-13T12:50:59.242279+00:00",
+      "symbol": "POLUSDT",
+      "direction": "SHORT",
+      "title": "$POL Volume Decreases on Rally: Weak Buyers Exposed",
+      "entry_low": 0.10185,
+      "entry_high": 0.1021,
+      "stop_loss": 0.10555,
+      "take_profit": 0.094825,
+      "support": 0.10061,
+      "resistance": 0.10213,
+      "news_line": "",
+      "technical_analysis": "RSI at 41.9 and Stochastic K below D suggest weakening momentum. Order‑book shows a modest bid‑side imbalance, yet the price is near the 1H/4H support zone (0.10061) and below the key resistance at 0.10213, supporting a short outlook. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
+      "market_context": "BTC shows mixed 4‑hour trend but a bullish daily bias, while overall crypto market breadth is negative (87.6% red).",
+      "result": "PENDING"
     }
   ]
 }
