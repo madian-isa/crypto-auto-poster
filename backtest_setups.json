@@ -56175,6 +56175,23 @@
       "technical_analysis": "Price sits below the 9‑, 21‑ and 50‑EMA, indicating bearish bias. The order‑book shows a –7.1 % imbalance toward sellers, while the stochastic K (63) is under its D line (76), suggesting downward momentum. RSI at 47 is neutral, and ADX 22 signals a weak trend, reinforcing the short Together, these indicators favor SHORT continuation toward support.",
       "market_context": "BTC is down 0.27 % on the 24‑hour chart, with a bearish direction and the broader market showing 89 % red breadth",
       "result": "PENDING"
+    },
+    {
+      "id": 3305,
+      "created_at": "2026-10-13T11:20:50.302551+00:00",
+      "symbol": "QNTUSDT",
+      "direction": "SHORT",
+      "title": "Overbought Indicators Signal Impending Correction for $QNT",
+      "entry_low": 218.4,
+      "entry_high": 219.0,
+      "stop_loss": 226.7,
+      "take_profit": 202.7,
+      "support": 201.09,
+      "resistance": 231.67,
+      "news_line": "",
+      "technical_analysis": "The MACD sits below its signal with a negative histogram, and price rests under the 9‑, 21‑, 50‑ and 200‑EMA lines, confirming a strong downtrend currently. ADX at 40 signals a vigorous trend. Both RSI (31.9) and Stochastic (K 2.6) are deep in oversold territory, but the prevailing overall momentum remains bearish.",
+      "market_context": "BTC is slightly bearish over the last 24 hours (‑0.27 %) while 89.8 % of the market is red, indicating a broadly",
+      "result": "PENDING"
     }
   ]
 }
