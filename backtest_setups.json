@@ -55682,6 +55682,23 @@
       "technical_analysis": "All moving averages sit above price, confirming a clear downtrend. MACD remains negative and below its signal line, while RSI at 20 and Stochastic K at 16 signal oversold conditions within a strong 61‑point ADX trend. The pair respects the 0.0007455 support and faces resistance near 0.0010566, favoring short pressure.",
       "market_context": "BTC is in a bearish 4‑hour trend, down 1.4% today, and the broader market shows 92% red symbols, underscoring overall downside pressure.",
       "result": "PENDING"
+    },
+    {
+      "id": 3276,
+      "created_at": "2026-10-13T02:30:56.174686+00:00",
+      "symbol": "ENAUSDT",
+      "direction": "SHORT",
+      "title": "Bears Retake Control as $ENA Fails to Hold Moving Averages",
+      "entry_low": 0.2075,
+      "entry_high": 0.2078,
+      "stop_loss": 0.215,
+      "take_profit": 0.19295,
+      "support": 0.1988,
+      "resistance": 0.2246,
+      "news_line": "",
+      "technical_analysis": "Short bias dominates ENA. EMA9‑200 sit well above price, confirming a downtrend, while MACD remains below its signal line and the histogram is negative. ADX at 40.8 signals a strong trend. Order‑book shows a 6.3% ask‑side imbalance. RSI near 32 hints at oversold but momentum stays bearish. Together, these indicators favor SHORT continuation toward support.",
+      "market_context": "BTC is in a bearish 4‑hour trend while the daily picture is mixed; overall market breadth is heavily negative with 91.8% of",
+      "result": "PENDING"
     }
   ]
 }
