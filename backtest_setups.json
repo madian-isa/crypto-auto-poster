@@ -55920,6 +55920,23 @@
       "technical_analysis": "Price sits above the 9‑ and 21‑EMA, while the MACD line sits just above its signal, giving a bullish tilt. ADX at 39.9 confirms a strong trend, and the order‑book shows a slight bid bias. RSI is neutral and Stochastic is overbought, but momentum remains upward, supporting a long bias toward the 0.5625 resistance.",
       "market_context": "BTC is in a 24‑hour bearish phase and the broader market is broadly negative, adding a cautious backdrop to the WLDUSDT setup.",
       "result": "PENDING"
+    },
+    {
+      "id": 3290,
+      "created_at": "2026-10-13T05:40:45.525556+00:00",
+      "symbol": "ZROUSDT",
+      "direction": "SHORT",
+      "title": "Smart Money Distribution Visible on $ZRO On-Chain Data",
+      "entry_low": 2.115,
+      "entry_high": 2.123,
+      "stop_loss": 2.042,
+      "take_profit": 1.965,
+      "support": 2.073,
+      "resistance": 2.136,
+      "news_line": "",
+      "technical_analysis": "ADX is above 25, confirming a strong trend, while RSI is neutral at 44.25. The price is near the 1H/4H resistance of 2.136, making a short move a logical choice. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
+      "market_context": "BTC is in a bearish trend with a 24‑hour decline of -0.389% and a broadly negative market breadth.",
+      "result": "PENDING"
     }
   ]
 }
