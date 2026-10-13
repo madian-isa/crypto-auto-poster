@@ -55631,6 +55631,23 @@
       "technical_analysis": "Short bias dominates RSRUSDT. Price sits below the 9‑ and 21‑EMA while the MACD histogram is negative, confirming bearish momentum. ADX at 43 signals a strong trend, and the tight 0.002145‑0.002222 range provides clear resistance. Order‑book shows a 30% bid imbalance, yet price remains under pressure, and BTC’s 4‑hour bearish trend adds broader downside pressure.",
       "market_context": "BTC is in a 4‑hour bearish trend and the overall market is broadly negative, with 93% red assets, reinforcing downside pressure on",
       "result": "PENDING"
+    },
+    {
+      "id": 3273,
+      "created_at": "2026-10-13T01:10:51.651537+00:00",
+      "symbol": "GTCUSDT",
+      "direction": "SHORT",
+      "title": "Technical Signals Turn Negative as $GTC Selling Pressure Rises",
+      "entry_low": 0.233,
+      "entry_high": 0.239,
+      "stop_loss": 0.247,
+      "take_profit": 0.214,
+      "support": 0.18254,
+      "resistance": 0.32164,
+      "news_line": "",
+      "technical_analysis": "Short bias dominates GTCUSDT. MACD histogram is negative and the line sits below its signal, while EMA9 and EMA21 sit above price, indicating downward pressure. ADX at 47 confirms a strong trend. Stochastic K is deep in oversold territory, and order‑book imbalance shows more sell pressure. Price respects the 0.234 support and eyes the 0.182 level.",
+      "market_context": "BTC is down 2.5% on a bearish 4‑hour trend, and the overall market is broadly negative with 93% of assets red.",
+      "result": "PENDING"
     }
   ]
 }
