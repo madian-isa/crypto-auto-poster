@@ -55665,6 +55665,23 @@
       "technical_analysis": "MACD histogram stays negative and price is below the 9‑, 21‑ and 50‑period EMAs, confirming short‑term bearish pressure. ADX at 34 signals a strong trend. Stochastic is deep oversold (K≈18) and the order‑book shows a 19.5% bid imbalance, hinting at a pull‑back toward the 0.01981 support before testing the 0.01864 swing low.",
       "market_context": "BTC is in a bearish 4‑hour trend, down 1.38%, and the broader market is 92% red, underscoring overall downside sentiment.",
       "result": "PENDING"
+    },
+    {
+      "id": 3275,
+      "created_at": "2026-10-13T02:20:50.648941+00:00",
+      "symbol": "BOMEUSDT",
+      "direction": "SHORT",
+      "title": "High Conviction Short Opportunity as $BOME Tests Supply Wall",
+      "entry_low": 0.000775,
+      "entry_high": 0.0007785,
+      "stop_loss": 0.000805,
+      "take_profit": 0.00072025,
+      "support": 0.0007455,
+      "resistance": 0.0010566,
+      "news_line": "",
+      "technical_analysis": "All moving averages sit above price, confirming a clear downtrend. MACD remains negative and below its signal line, while RSI at 20 and Stochastic K at 16 signal oversold conditions within a strong 61‑point ADX trend. The pair respects the 0.0007455 support and faces resistance near 0.0010566, favoring short pressure.",
+      "market_context": "BTC is in a bearish 4‑hour trend, down 1.4% today, and the broader market shows 92% red symbols, underscoring overall downside pressure.",
+      "result": "PENDING"
     }
   ]
 }
