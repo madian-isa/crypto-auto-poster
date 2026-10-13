@@ -56430,6 +56430,23 @@
       "technical_analysis": "Price sits above the 9‑, 21‑ and 50‑EMA, with the MACD line (0.043) comfortably above its signal (0.029) and a positive histogram, while RSI is at 54 and Stochastic around 68, indicating upward momentum. The 1‑hour swing shows support at 7.766 and resistance near 8.11, favoring a long bias on the current market.",
       "market_context": "BTC is in a bullish daily trend, up 0.96% on 4‑hour mixed signals, while the broader crypto market shows a largely negative",
       "result": "PENDING"
+    },
+    {
+      "id": 3320,
+      "created_at": "2026-10-13T17:01:01.671677+00:00",
+      "symbol": "GNSUSDT",
+      "direction": "SHORT",
+      "title": "Bearish Continuation Pattern Confirmed on $GNS Chart Structure",
+      "entry_low": 0.735,
+      "entry_high": 0.739,
+      "stop_loss": 0.763,
+      "take_profit": 0.685,
+      "support": 0.385,
+      "resistance": 0.789,
+      "news_line": "",
+      "technical_analysis": "The EMA cluster (9‑21‑50‑200) sits well below currently price, reinforcing the short‑bias around the resistance zone. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
+      "market_context": "BTC shows a bullish daily trend, yet the broader market breadth is negative with 76% red assets, indicating overall weakness that supports",
+      "result": "PENDING"
     }
   ]
 }
