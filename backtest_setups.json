@@ -56498,6 +56498,23 @@
       "technical_analysis": "OP trades above EMA9, EMA21 and EMA50, confirming bullish alignment. MACD histogram is positive, adding upward momentum. RSI at 64 and Stochastic near 75 show strength without extreme overbought pressure. Volume jumped 176% and the order‑book shows a 4% bid‑side imbalance, supporting a long bias near the 0.143 – 0.1457 zone.",
       "market_context": "BTC is up 0.91% in 24h, showing bullish direction, while the broader market is broadly negative with 78.5% of assets red.",
       "result": "PENDING"
+    },
+    {
+      "id": 3324,
+      "created_at": "2026-10-13T18:20:48.804956+00:00",
+      "symbol": "PEPEUSDT",
+      "direction": "LONG",
+      "title": "$PEPE Liquidation Squeeze: Bears Trapped Near Critical Resistance",
+      "entry_low": 4.18e-06,
+      "entry_high": 4.2e-06,
+      "stop_loss": 4.03e-06,
+      "take_profit": 4.51e-06,
+      "support": 4.17e-06,
+      "resistance": 4.25e-06,
+      "news_line": "",
+      "technical_analysis": "MACD histogram is positive and the MACD line sits above its signal, indicating upward momentum. Price is above the 9‑, 21‑, 50‑ and 200‑EMA, confirming a bullish trend. Bollinger bands show room below the upper band. Together the indicators favor a long bias near the 4.17 USDT support. Together, these indicators favor LONG continuation toward resistance.",
+      "market_context": "BTC is modestly higher (+0.76 %) on the daily but in a bearish 4‑hour trend; overall crypto market breadth remains broadly negative",
+      "result": "PENDING"
     }
   ]
 }
