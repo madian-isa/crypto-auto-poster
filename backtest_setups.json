@@ -56617,6 +56617,23 @@
       "technical_analysis": "Price sits above the 9‑, 21‑ and 50‑EMA, confirming an uptrend. RSI at 58.7 shows room above neutral, while ADX 40.5 signals a strong trend. Order‑book shows modest ask dominance. Overall momentum leans bullish toward the 0.0992 resistance. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
       "market_context": "BTC is trading bullish on the 1‑day chart, while overall market breadth remains negative, with 78% of assets in red.",
       "result": "PENDING"
+    },
+    {
+      "id": 3331,
+      "created_at": "2026-10-13T20:50:47.610662+00:00",
+      "symbol": "HYPEUSDT",
+      "direction": "LONG",
+      "title": "Golden Cross Formation Confirmed on $HYPE 4-Hour Timeframe",
+      "entry_low": 81.22,
+      "entry_high": 81.53,
+      "stop_loss": 78.5,
+      "take_profit": 87.125,
+      "support": 80.84,
+      "resistance": 82.35,
+      "news_line": "",
+      "technical_analysis": "MACD line sits above its signal with a positive histogram, indicating bullish momentum. Stochastic K at 31 and RSI near 38 suggest the pair is oversold and primed for a bounce. EMA9 is just below price while higher EMAs remain above, and ADX above 39 confirms a strong trend. Together, these indicators favor LONG continuation toward resistance.",
+      "market_context": "BTC is modestly bullish (+0.3%) while the overall crypto market shows broad negative breadth, with 80% of assets red.",
+      "result": "PENDING"
     }
   ]
 }
