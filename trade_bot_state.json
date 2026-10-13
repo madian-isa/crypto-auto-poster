@@ -1,6 +1,6 @@
 {
   "date": "2026-10-13",
-  "count": 62,
+  "count": 63,
   "posted_symbols_today": [
     "STRKUSDT",
     "RSRUSDT",
@@ -63,6 +63,7 @@
     "RENDERUSDT",
     "DUSKUSDT",
     "HYPEUSDT",
-    "AAVEUSDT"
+    "AAVEUSDT",
+    "HBARUSDT"
   ]
 }
