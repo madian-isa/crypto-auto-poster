@@ -56345,6 +56345,23 @@
       "technical_analysis": "Price sits below all key EMAs (9‑200) and the MACD histogram remains negative, while RSI is under 40 and Stochastic K is well below its D line. These bearish signals line up with the nearby resistance at ~0.105, suggesting short‑term downside pressure and may test the 0.100‑0.092 support zone for price levels.",
       "market_context": "BTC shows a bullish 1‑day trend, yet overall market breadth remains broadly negative with only 15.5% of assets green.",
       "result": "PENDING"
+    },
+    {
+      "id": 3315,
+      "created_at": "2026-10-13T15:50:49.663499+00:00",
+      "symbol": "PYTHUSDT",
+      "direction": "SHORT",
+      "title": "$PYTH Breaks Below Critical Support: Further Drop Expected",
+      "entry_low": 0.0824,
+      "entry_high": 0.0828,
+      "stop_loss": 0.0855,
+      "take_profit": 0.0768,
+      "support": 0.07799,
+      "resistance": 0.07921,
+      "news_line": "",
+      "technical_analysis": "Price sits below the 9‑ and 21‑EMA while still above the 50‑EMA, showing short‑term bearish pressure. MACD is negative with a falling histogram, and Stochastic K/D are under 50, confirming downtrend momentum. RSI at 48.4 and a weak ADX (~19) suggest limited strength, favoring a short bias near the 0.0792 resistance.",
+      "market_context": "BTC remains bullish on the daily chart, yet overall market breadth is broadly negative with only 14.3% of assets in the green",
+      "result": "PENDING"
     }
   ]
 }
