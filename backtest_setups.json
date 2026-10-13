@@ -56396,6 +56396,23 @@
       "technical_analysis": "MACD histogram is positive and MACD line sits above its signal, while RSI near 60 and Stochastic K above 80 signal strong upward momentum. Price trades above the 9‑, 21‑ and 50‑EMA, and order‑book shows a 13% bid imbalance. The pair respects the 1H/4H support at 7.525 and eyes resistance near 7.624.",
       "market_context": "BTC remains slightly bullish (+0.7%) on the day, but overall market breadth is negative, with only 18.8% of assets green.",
       "result": "PENDING"
+    },
+    {
+      "id": 3318,
+      "created_at": "2026-10-13T16:20:52.335150+00:00",
+      "symbol": "BNBUSDT",
+      "direction": "SHORT",
+      "title": "$BNB Volume Decreases on Rally: Weak Buyers Exposed",
+      "entry_low": 746.3,
+      "entry_high": 746.51,
+      "stop_loss": 776.2612,
+      "take_profit": 686.6926,
+      "support": 742.61,
+      "resistance": 746.51,
+      "news_line": "",
+      "technical_analysis": "Stochastic K is below its D line and order‑book imbalance shows 14.8% more sell pressure, while price sits under EMA50/200 and the broader market is 81% red. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
+      "market_context": "BTC remains bullish on the daily, but overall market breadth is broadly negative with a strong red majority.",
+      "result": "PENDING"
     }
   ]
 }
