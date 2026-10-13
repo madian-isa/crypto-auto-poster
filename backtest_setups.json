@@ -55597,6 +55597,23 @@
       "technical_analysis": "MACD sits below its signal with a negative histogram, while price trades under the EMA9, EMA21 and EMA50, indicating bearish momentum. RSI at 43 and Stochastic K around 27 suggest weakening strength. ADX’s 13 signals a soft trend. With the 1‑hour resistance at 0.5663, the setup leans short overall short bias.",
       "market_context": "BTC is in a bearish 4‑hour trend, down 2.3% on the day, and the broader market is 91.8% red, indicating overall negative",
       "result": "PENDING"
+    },
+    {
+      "id": 3271,
+      "created_at": "2026-10-13T00:20:46.660045+00:00",
+      "symbol": "STRKUSDT",
+      "direction": "LONG",
+      "title": "Trend Reversal Confirmed for $STRK as Volume Spikes Upward",
+      "entry_low": 0.0848,
+      "entry_high": 0.0853,
+      "stop_loss": 0.0819,
+      "take_profit": 0.09135,
+      "support": 0.082,
+      "resistance": 0.0995,
+      "news_line": "",
+      "technical_analysis": "RSI at 33 and Stochastic K at 12 place STRK deep in oversold territory, suggesting upward momentum. The price sits just above the long‑term EMA200 (0.078) while remaining under the shorter EMA9/21, indicating a potential bounce. Order‑book shows a 20.9% bid‑side imbalance, reinforcing a bullish bias toward the 0.082 support.",
+      "market_context": "BTC is trading lower at $81,437, down 2.7% on the 4‑hour chart, and the broader market is broadly negative with 92.4% of",
+      "result": "PENDING"
     }
   ]
 }
