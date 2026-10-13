@@ -56379,6 +56379,23 @@
       "technical_analysis": "RSI at 66.7 and Stochastic K near 88 show strong upward bias. MACD line sits above its signal with a positive histogram, confirming bullish momentum. All EMAs (9‑200) lie below the price, and ADX above 50 signals a firm trend. Price sits just above the upper Bollinger band, near resistance 0.000748.",
       "market_context": "BTC up 0.9% on the day, showing bullish momentum while the broader crypto market remains broadly negative.",
       "result": "PENDING"
+    },
+    {
+      "id": 3317,
+      "created_at": "2026-10-13T16:10:55.555027+00:00",
+      "symbol": "UNIUSDT",
+      "direction": "LONG",
+      "title": "$UNI Breakout Confirmation: Bulls Target Next Supply Zone",
+      "entry_low": 7.525,
+      "entry_high": 7.56,
+      "stop_loss": 7.26,
+      "take_profit": 8.1075,
+      "support": 7.525,
+      "resistance": 7.624,
+      "news_line": "",
+      "technical_analysis": "MACD histogram is positive and MACD line sits above its signal, while RSI near 60 and Stochastic K above 80 signal strong upward momentum. Price trades above the 9‑, 21‑ and 50‑EMA, and order‑book shows a 13% bid imbalance. The pair respects the 1H/4H support at 7.525 and eyes resistance near 7.624.",
+      "market_context": "BTC remains slightly bullish (+0.7%) on the day, but overall market breadth is negative, with only 18.8% of assets green.",
+      "result": "PENDING"
     }
   ]
 }
