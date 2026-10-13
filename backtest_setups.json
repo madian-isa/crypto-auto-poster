@@ -55648,6 +55648,23 @@
       "technical_analysis": "Short bias dominates GTCUSDT. MACD histogram is negative and the line sits below its signal, while EMA9 and EMA21 sit above price, indicating downward pressure. ADX at 47 confirms a strong trend. Stochastic K is deep in oversold territory, and order‑book imbalance shows more sell pressure. Price respects the 0.234 support and eyes the 0.182 level.",
       "market_context": "BTC is down 2.5% on a bearish 4‑hour trend, and the overall market is broadly negative with 93% of assets red.",
       "result": "PENDING"
+    },
+    {
+      "id": 3274,
+      "created_at": "2026-10-13T02:10:53.976660+00:00",
+      "symbol": "WUSDT",
+      "direction": "SHORT",
+      "title": "Bears Retake Control as $W Fails to Hold Moving Averages",
+      "entry_low": 0.02015,
+      "entry_high": 0.0202,
+      "stop_loss": 0.0209,
+      "take_profit": 0.018725,
+      "support": 0.01864,
+      "resistance": 0.02337,
+      "news_line": "",
+      "technical_analysis": "MACD histogram stays negative and price is below the 9‑, 21‑ and 50‑period EMAs, confirming short‑term bearish pressure. ADX at 34 signals a strong trend. Stochastic is deep oversold (K≈18) and the order‑book shows a 19.5% bid imbalance, hinting at a pull‑back toward the 0.01981 support before testing the 0.01864 swing low.",
+      "market_context": "BTC is in a bearish 4‑hour trend, down 1.38%, and the broader market is 92% red, underscoring overall downside sentiment.",
+      "result": "PENDING"
     }
   ]
 }
