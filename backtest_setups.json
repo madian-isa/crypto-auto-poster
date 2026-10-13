@@ -56294,6 +56294,23 @@
       "technical_analysis": "MACD histogram is positive and the line sits above the signal, confirming bullish momentum. Price sits above EMA9, EMA21, EMA50 and EMA200, showing a clean uptrend. RSI at 61.8 and Stochastic K above 80 add strength, while volume surged over 500% and order‑book imbalance favors bids. Support sits near 0.01565, resistance around 0.01707.",
       "market_context": "BTC is in a bullish daily trend despite a broadly negative market breadth, providing a supportive backdrop for risk assets.",
       "result": "PENDING"
+    },
+    {
+      "id": 3312,
+      "created_at": "2026-10-13T14:50:54.390757+00:00",
+      "symbol": "TIAUSDT",
+      "direction": "LONG",
+      "title": "Key Support Holds Firm: $TIA Bullish Continuation Setup Active",
+      "entry_low": 0.5878,
+      "entry_high": 0.5885,
+      "stop_loss": 0.567,
+      "take_profit": 0.63045,
+      "support": 0.5692,
+      "resistance": 0.5942,
+      "news_line": "",
+      "technical_analysis": "MACD shows a positive histogram and the line sits above its signal, indicating bullish momentum. ADX at 25 confirms a moderate trend. Order‑book imbalance favors buyers (+13 %). These factors point to upside toward the 0.5942 resistance. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
+      "market_context": "BTC is up 1.5 % on the day, showing bullish momentum, while overall market breadth remains negative.",
+      "result": "PENDING"
     }
   ]
 }
