@@ -56226,6 +56226,23 @@
       "technical_analysis": "RSI at 41.9 and Stochastic K below D suggest weakening momentum. Order‑book shows a modest bid‑side imbalance, yet the price is near the 1H/4H support zone (0.10061) and below the key resistance at 0.10213, supporting a short outlook. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
       "market_context": "BTC shows mixed 4‑hour trend but a bullish daily bias, while overall crypto market breadth is negative (87.6% red).",
       "result": "PENDING"
+    },
+    {
+      "id": 3308,
+      "created_at": "2026-10-13T13:10:53.253066+00:00",
+      "symbol": "TAOUSDT",
+      "direction": "SHORT",
+      "title": "High Volume Selling Sweep Breaks $TAO Market Structure",
+      "entry_low": 276.0,
+      "entry_high": 276.4,
+      "stop_loss": 286.0,
+      "take_profit": 256.6,
+      "support": 271.3,
+      "resistance": 284.6,
+      "news_line": "",
+      "technical_analysis": "TAO is trading below its 9, 21, 50 and 200 EMA, confirming a bearish structure. RSI near 43 adds to the neutral‑to‑bearish tone; overall, it leans toward a short bias. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
+      "market_context": "BTC remains mildly bullish on the daily, but the broader crypto market is broadly negative with 87.8% red and only 12.2% green.",
+      "result": "PENDING"
     }
   ]
 }
