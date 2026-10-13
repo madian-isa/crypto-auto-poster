@@ -56073,6 +56073,23 @@
       "technical_analysis": "ADX at 34.5 confirms a strong trend. The price sits just below the 1‑hour resistance and below the EMA50, favoring a short bias. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
       "market_context": "BTC remains bullish on the daily chart, but the overall crypto market is broadly negative with 85.6% red breadth. This broader weakness",
       "result": "PENDING"
+    },
+    {
+      "id": 3299,
+      "created_at": "2026-10-13T08:50:41.662636+00:00",
+      "symbol": "MARSCOINUSDT",
+      "direction": "SHORT",
+      "title": "$MARSCOIN Lower High Pattern Confirmed: Short Target in View",
+      "entry_low": 0.0828,
+      "entry_high": 0.0843,
+      "stop_loss": 0.0872,
+      "take_profit": 0.07625,
+      "support": 0.0754,
+      "resistance": 0.0848,
+      "news_line": "",
+      "technical_analysis": "Price is capped by the 0.0848 resistance and the 200 EMA, indicating strong overhead supply. With the MACD histogram showing bearish momentum and RSI near neutral, the path of least resistance points down. The structure favors a decline toward the 0.0754 swing low as sellers maintain control above the 9 EMA.",
+      "market_context": "With 84% of the market trading red and BTC showing a bearish 24h trend, broad sentiment remains negative. This macro backdrop supports",
+      "result": "PENDING"
     }
   ]
 }
