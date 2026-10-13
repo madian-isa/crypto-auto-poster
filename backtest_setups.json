@@ -55733,6 +55733,23 @@
       "technical_analysis": "MACD shows a positive histogram and the line sits above its signal, indicating bullish momentum. RSI at 59 and a strong ADX of 60 confirm a firm uptrend. Indicators collectively favor a long bias. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
       "market_context": "BTC remains in a bearish 4‑hour trend, down 1.2% on the day, and the broader market shows a 92.6% red breadth, underscoring",
       "result": "PENDING"
+    },
+    {
+      "id": 3279,
+      "created_at": "2026-10-13T03:01:02.327644+00:00",
+      "symbol": "PUMPUSDT",
+      "direction": "SHORT",
+      "title": "Technical Signals Turn Negative as $PUMP Selling Pressure Rises",
+      "entry_low": 0.0051,
+      "entry_high": 0.00514,
+      "stop_loss": 0.0053,
+      "take_profit": 0.00476,
+      "support": 0.00477,
+      "resistance": 0.005542,
+      "news_line": "",
+      "technical_analysis": "Price sits below all EMAs (9‑200) and under the MACD line, which is beneath its signal, confirming bearish momentum. ADX at 39 shows a strong trend, while RSI at 34.9 and Stochastic K at 29.5 indicate oversold conditions but still descending. The pair respects a 0.00477 support and 0.00555 resistance band, favoring a short bias.",
+      "market_context": "BTC is in a bearish 4‑hour trend, down 1.07% over 24 h, and the overall market is broadly negative with 91.8% red",
+      "result": "PENDING"
     }
   ]
 }
