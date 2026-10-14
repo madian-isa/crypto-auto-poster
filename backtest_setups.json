@@ -57297,6 +57297,23 @@
       "technical_analysis": "Price sits below the 9‑, 21‑ and 50‑EMA, confirming downtrend. MACD line remains under its signal with a negative histogram, adding bearish momentum. Order‑book shows modest bid‑side imbalance. The next resistance sits near 0.10207, support near 0.09926. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
       "market_context": "BTC down 0.1% over 24 h, market breadth shows 73.7% red, overall sentiment broadly negative.",
       "result": "PENDING"
+    },
+    {
+      "id": 3371,
+      "created_at": "2026-10-14T08:50:41.207854+00:00",
+      "symbol": "EPICUSDT",
+      "direction": "SHORT",
+      "title": "$EPIC Distribution Phase Ends: Downside Target Zone Set",
+      "entry_low": 0.3976,
+      "entry_high": 0.4009,
+      "stop_loss": 0.4174,
+      "take_profit": 0.36295,
+      "support": 0.3698,
+      "resistance": 0.4418,
+      "news_line": "",
+      "technical_analysis": "EPICUSDT favors a short position as price remains below key EMAs. RSI at 19.62 signals strong downward momentum, while the MACD histogram confirms bearish pressure. The 1H structure shows clear resistance at 0.4418 and support at 0.3698, aligning with the current downtrend. Together, these indicators favor SHORT continuation toward support.",
+      "market_context": "Bitcoin trades mixed on the 4H but remains bullish on the 1D, though overall market breadth is broadly negative with 76.4% of",
+      "result": "PENDING"
     }
   ]
 }
