@@ -57110,6 +57110,23 @@
       "technical_analysis": "RSI sits at 42.75, below neutral, and the MACD line is negative, confirming bearish momentum. The price is below the 9‑, 21‑, and 50‑EMA, and the Bollinger upper band sits above current levels, indicating a pullback. Stochastic K/D near 56 suggests no overbought condition yet, so the trend remains weakly bearish. This setup favours a short position.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 3360,
+      "created_at": "2026-10-14T05:40:52.847804+00:00",
+      "symbol": "WALUSDT",
+      "direction": "LONG",
+      "title": "On-Chain Metrics Confirm Strong Whale Accumulation on $WAL",
+      "entry_low": 0.0399,
+      "entry_high": 0.0404,
+      "stop_loss": 0.037741,
+      "take_profit": 0.044968,
+      "support": 0.03763,
+      "resistance": 0.0452,
+      "news_line": "",
+      "technical_analysis": "Price sits above the 9‑, 21‑, 50‑ and 200‑EMA, indicating a clear uptrend. MACD is bullish (line above signal, positive histogram) and ADX at 30.6 confirms strong momentum. RSI at 62.5 and Stochastic around 57 suggest room for upside. The current resistance lies near 0.0452, with support at 0.03763 for WALUSDT today.",
+      "market_context": "BTC is in a bearish 24‑hour move, while overall market breadth is broadly negative, with 72.9% red assets.",
+      "result": "PENDING"
     }
   ]
 }
