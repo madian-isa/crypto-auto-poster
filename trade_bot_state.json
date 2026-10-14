@@ -1,6 +1,6 @@
 {
   "date": "2026-10-14",
-  "count": 59,
+  "count": 60,
   "posted_symbols_today": [
     "BATUSDT",
     "OPUSDT",
@@ -60,6 +60,7 @@
     "ETHFIUSDT",
     "ADAUSDT",
     "RAYUSDT",
-    "FETUSDT"
+    "FETUSDT",
+    "AAVEUSDT"
   ]
 }

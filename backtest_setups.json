@@ -57807,6 +57807,23 @@
       "technical_analysis": "RSI at 28.93 and stochastic K under 4 signal deep oversold conditions, yet price sits below EMA9, EMA21, EMA50 and EMA200, confirming a downtrend. MACD histogram remains negative. The pair is trading near the 0.2088 resistance, with order‑book imbalance favoring bids. Overall market pressure adds to the short case. Together, these indicators favor SHORT continuation toward support.",
       "market_context": "BTC is in a bearish 4‑hour trend and down 1.7% over 24 h, while the broader market is broadly negative with 90.7%",
       "result": "PENDING"
+    },
+    {
+      "id": 3401,
+      "created_at": "2026-10-14T19:20:53.773044+00:00",
+      "symbol": "AAVEUSDT",
+      "direction": "LONG",
+      "title": "$AAVE Breakout Confirmation: Bulls Target Next Supply Zone",
+      "entry_low": 154.2,
+      "entry_high": 154.7,
+      "stop_loss": 148.272,
+      "take_profit": 166.806,
+      "support": 151.94,
+      "resistance": 158.5,
+      "news_line": "",
+      "technical_analysis": "The supplied indicators show a bullish structure for this market. Together, they favor LONG continuation, with momentum pointing toward resistance and support framing the current price structure. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure. The nearby support and resistance levels frame the current market structure.",
+      "market_context": "BTC is in a bearish 4‑hour trend and down 1.6 % on the day, while overall market breadth is broadly negative (90.7",
+      "result": "PENDING"
     }
   ]
 }
