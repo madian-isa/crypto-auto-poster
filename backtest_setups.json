@@ -57654,6 +57654,23 @@
       "technical_analysis": "The EMA9‑200 ladder sits above the current 0.4417 price, confirming a bearish hierarchy. MACD’s histogram remains negative, reinforcing down‑momentum. RSI at 21 signals oversold conditions but the price is still below all moving averages, keeping pressure to the downside. Order‑book shows a 32 % bid imbalance, yet the pair is trapped near its 0.4415 support, suggesting further decline.",
       "market_context": "BTC is in a bearish 4‑hour trend, down 2.17 % over 24 h, and the broader market is broadly negative with 91",
       "result": "PENDING"
+    },
+    {
+      "id": 3392,
+      "created_at": "2026-10-14T16:20:51.028180+00:00",
+      "symbol": "SOXLBUSDT",
+      "direction": "SHORT",
+      "title": "Overbought Indicators Signal Impending Correction for $SOXLB",
+      "entry_low": 114.4,
+      "entry_high": 115.0,
+      "stop_loss": 119.288,
+      "take_profit": 105.524,
+      "support": 112.24,
+      "resistance": 124.59,
+      "news_line": "",
+      "technical_analysis": "RSI at 27.5 and Stochastic K below 10 signal deep oversold, yet MACD remains negative with a widening histogram, confirming bearish momentum. Price sits below EMA9, EMA21, EMA50 and EMA200, and has broken the lower Bollinger Band. The next key resistance is 124.59, with support around 112.24. Current price is 114.71, indicating room for further decline toward the support zone.",
+      "market_context": "BTC is in a bearish 4‑hour trend, down 2.2% over 24 h, and the overall market is broadly negative with 92 %",
+      "result": "PENDING"
     }
   ]
 }
