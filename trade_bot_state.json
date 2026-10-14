@@ -1,6 +1,6 @@
 {
   "date": "2026-10-14",
-  "count": 14,
+  "count": 15,
   "posted_symbols_today": [
     "BATUSDT",
     "OPUSDT",
@@ -15,6 +15,7 @@
     "AMPUSDT",
     "AVAUSDT",
     "\u725b\u6765USDT",
-    "QNTUSDT"
+    "QNTUSDT",
+    "NEARUSDT"
   ]
 }

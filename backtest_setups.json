@@ -57042,6 +57042,23 @@
       "technical_analysis": "ADX at 29 shows a solid trend, and the order book is 9.5% bid‑heavy. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure. The nearby support and resistance levels frame the current market structure.",
       "market_context": "Bitcoin is bullish on the daily chart and mixed on the 4‑hour, while overall market breadth is slightly negative (45% green, 55%",
       "result": "PENDING"
+    },
+    {
+      "id": 3356,
+      "created_at": "2026-10-14T04:30:55.842792+00:00",
+      "symbol": "NEARUSDT",
+      "direction": "SHORT",
+      "title": "Panic Selling Risk Increases as $NEAR Tests Critical Floor",
+      "entry_low": 5.12,
+      "entry_high": 5.136,
+      "stop_loss": 5.31,
+      "take_profit": 4.764,
+      "support": 5.019,
+      "resistance": 5.136,
+      "news_line": "",
+      "technical_analysis": "NEAR is trading below EMA9, EMA21, EMA50 and EMA200, confirming a bearish framework. ADX at 32 signals a strong trend, while Stochastic K (60) sits under D (76), indicating downward pressure. Order‑book shows a 6.5 % bid‑side bias, supporting a short outlook. Together, these indicators favor SHORT continuation toward support.",
+      "market_context": "BTC is up 0.53 % on the day, keeping a bullish bias, while overall market breadth is mixed (46.9 % green, 53.1",
+      "result": "PENDING"
     }
   ]
 }
