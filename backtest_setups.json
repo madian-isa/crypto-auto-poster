@@ -57722,6 +57722,23 @@
       "technical_analysis": "AXL is trading at $0.0642, above its EMA series (9‑200) and holding near the 1‑hour resistance of $0.065. A positive MACD histogram, strong ADX at 30, and a 12% bid‑side order‑book imbalance point to upward momentum. RSI at 66 and stochastic K at 91 suggest the asset is overbought but still in a bullish swing.",
       "market_context": "BTC is in a bearish 4‑hour trend and down 1.74% over 24 h, with the broader market showing 89.3% red symbols and",
       "result": "PENDING"
+    },
+    {
+      "id": 3396,
+      "created_at": "2026-10-14T17:50:49.230988+00:00",
+      "symbol": "LTCUSDT",
+      "direction": "SHORT",
+      "title": "High Volume Selling Sweep Breaks $LTC Market Structure",
+      "entry_low": 59.85,
+      "entry_high": 59.92,
+      "stop_loss": 62.0,
+      "take_profit": 55.655,
+      "support": 59.41,
+      "resistance": 61.82,
+      "news_line": "",
+      "technical_analysis": "MACD sits below its signal with a negative histogram, and price is under the 9‑, 21‑, 50‑ and 200‑EMA, confirming bearish momentum. RSI at 36.6 and Stochastic around 30 point to oversold conditions, while the price hugs the lower Bollinger band. These cues favor a short bias near the 59.9 level.",
+      "market_context": "BTC is down 1.73% on the 4‑hour chart, showing a bearish trend, and the broader market is 88% red, indicating overall negative",
+      "result": "PENDING"
     }
   ]
 }
