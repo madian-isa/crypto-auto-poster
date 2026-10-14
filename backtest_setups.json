@@ -56991,6 +56991,23 @@
       "technical_analysis": "MACD is below its signal line and the histogram is negative, confirming bearish momentum. The price sits below both EMA9 and EMA21, while the ADX is above 50, indicating a strong trend. The current range near the 1‑hour resistance of 0.000748 suggests a short bias. Together, these indicators favor SHORT continuation toward support.",
       "market_context": "BTC is in a bullish 4‑hour trend and a bullish daily trend, adding broader market positivity.",
       "result": "PENDING"
+    },
+    {
+      "id": 3353,
+      "created_at": "2026-10-14T03:30:54.106282+00:00",
+      "symbol": "AVAUSDT",
+      "direction": "LONG",
+      "title": "Technical Signals Turn Positive as Market Momentum Builds",
+      "entry_low": 0.245,
+      "entry_high": 0.25,
+      "stop_loss": 0.236,
+      "take_profit": 0.2705,
+      "support": 0.2297,
+      "resistance": 0.3043,
+      "news_line": "",
+      "technical_analysis": "AVA is trading above its EMA9, EMA21, EMA50 and EMA200, while the MACD histogram stays positive and the signal line sits below the MACD line, confirming upward momentum. RSI at 60 and ADX near 45 indicate a strong, still‑rising trend. Price respects the 0.2297 support zone and aims toward the 0.3043 resistance.",
+      "market_context": "BTC remains bullish, up 1.1% on the day, and the broader market shows a 64.6% green bias, supporting AVA’s upward bias.",
+      "result": "PENDING"
     }
   ]
 }
