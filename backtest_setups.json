@@ -57263,6 +57263,23 @@
       "technical_analysis": "Order‑book shows a 25% bid‑side imbalance, while RSI is neutral and ADX is low, suggesting a modest but upward‑biased momentum toward the nearby resistance. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure. The nearby support and resistance levels frame the current market structure.",
       "market_context": "BTC is down 0.34% on the day, with a bearish 4‑hour trend and a broadly negative market breadth, providing a backdrop of",
       "result": "PENDING"
+    },
+    {
+      "id": 3369,
+      "created_at": "2026-10-14T08:30:53.731231+00:00",
+      "symbol": "GLMRUSDT",
+      "direction": "LONG",
+      "title": "$GLMR Reclaims Key Resistance Level: Flip to Support Complete",
+      "entry_low": 0.010531,
+      "entry_high": 0.0106,
+      "stop_loss": 0.010176,
+      "take_profit": 0.0113445,
+      "support": 0.010531,
+      "resistance": 0.0117,
+      "news_line": "",
+      "technical_analysis": "MACD shows a positive histogram while price sits above the 9, 21, 50 and 200 EMA lines, confirming bullish momentum. ADX at 28 signals a firm trend. Although RSI is near 70, the price remains above the upper Bollinger band, indicating strength. The 1‑hour support sits at 0.010531, guiding a long bias.",
+      "market_context": "BTC is down 0.12% on the 24‑hour chart, with a mixed 4‑hour trend and overall market breadth showing broadly negative sentiment.",
+      "result": "PENDING"
     }
   ]
 }
