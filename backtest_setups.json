@@ -57280,6 +57280,23 @@
       "technical_analysis": "MACD shows a positive histogram while price sits above the 9, 21, 50 and 200 EMA lines, confirming bullish momentum. ADX at 28 signals a firm trend. Although RSI is near 70, the price remains above the upper Bollinger band, indicating strength. The 1‑hour support sits at 0.010531, guiding a long bias.",
       "market_context": "BTC is down 0.12% on the 24‑hour chart, with a mixed 4‑hour trend and overall market breadth showing broadly negative sentiment.",
       "result": "PENDING"
+    },
+    {
+      "id": 3370,
+      "created_at": "2026-10-14T08:40:50.207551+00:00",
+      "symbol": "POLUSDT",
+      "direction": "SHORT",
+      "title": "$POL Prepares for Breakdown: Downside Risk Escalates",
+      "entry_low": 0.1008,
+      "entry_high": 0.1012,
+      "stop_loss": 0.10504,
+      "take_profit": 0.09292,
+      "support": 0.09926,
+      "resistance": 0.10207,
+      "news_line": "",
+      "technical_analysis": "Price sits below the 9‑, 21‑ and 50‑EMA, confirming downtrend. MACD line remains under its signal with a negative histogram, adding bearish momentum. Order‑book shows modest bid‑side imbalance. The next resistance sits near 0.10207, support near 0.09926. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
+      "market_context": "BTC down 0.1% over 24 h, market breadth shows 73.7% red, overall sentiment broadly negative.",
+      "result": "PENDING"
     }
   ]
 }
