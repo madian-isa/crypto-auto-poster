@@ -57909,6 +57909,23 @@
       "technical_analysis": "Order‑book data shows a 30% bid imbalance, adding buying pressure. RSI is neutral and ADX low, indicating a weak but currently positive momentum toward the 0.8085‑0.8298 range. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure. The nearby support and resistance levels frame the current market structure.",
       "market_context": "BTC is down ~1.9% on 4‑hour and 1‑day charts, with bearish momentum and a broadly negative market breadth (91% red).",
       "result": "PENDING"
+    },
+    {
+      "id": 3407,
+      "created_at": "2026-10-14T21:20:53.194320+00:00",
+      "symbol": "CAKEUSDT",
+      "direction": "LONG",
+      "title": "$CAKE Breaks Out of Falling Wedge Pattern: Targets Set Higher",
+      "entry_low": 2.224,
+      "entry_high": 2.228,
+      "stop_loss": 2.13696,
+      "take_profit": 2.40408,
+      "support": 2.224,
+      "resistance": 2.255,
+      "news_line": "",
+      "technical_analysis": "Stochastic K at 2.7 and RSI 39 signal oversold conditions, while the order book shows a 20% bid imbalance, indicating buying pressure near the 2.224 support level. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure. The nearby support and resistance levels frame the current market structure.",
+      "market_context": "BTC is in a bearish 4‑hour trend with price below its EMA20/50, and the overall market shows a broadly negative breadth (90%",
+      "result": "PENDING"
     }
   ]
 }
