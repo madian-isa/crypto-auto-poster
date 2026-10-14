@@ -57161,6 +57161,23 @@
       "technical_analysis": "Price sits below the 9‑, 21‑ and 50‑EMA while the EMA200 stays higher, indicating bearish pressure. MACD histogram remains negative and the line is under its signal, confirming down momentum. RSI at 38 and Stochastic K near 16 show oversold conditions. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish",
       "market_context": "BTC is down 0.2% on the 24h chart, with market breadth broadly negative (78% red assets).",
       "result": "PENDING"
+    },
+    {
+      "id": 3363,
+      "created_at": "2026-10-14T06:30:57.949921+00:00",
+      "symbol": "OGNUSDT",
+      "direction": "SHORT",
+      "title": "$OGN Lower High Pattern Confirmed: Short Target in View",
+      "entry_low": 0.0342,
+      "entry_high": 0.03425,
+      "stop_loss": 0.035594,
+      "take_profit": 0.031487,
+      "support": 0.03324,
+      "resistance": 0.03425,
+      "news_line": "",
+      "technical_analysis": "Short bias is clear: price sits below the 9‑EMA (0.03451), 21‑EMA (0.03515) and 50‑EMA, while MACD is negative with a bearish histogram. RSI at 40 and Stochastic K at 8 signal weakening momentum, and volume is down 51 %. The pair respects the 0.03425 resistance and 0.03324 support. Overall the setup points to further downside.",
+      "market_context": "BTC is down 0.29 % over 24 h, showing bearish pressure, while the broader market is broadly negative with only 24.8 %",
+      "result": "PENDING"
     }
   ]
 }
