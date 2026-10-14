@@ -57943,6 +57943,23 @@
       "technical_analysis": "MACD is firmly bearish (‑1.73 vs signal ‑0.98) and the EMA cascade (9‑21‑50‑200) sits above price, confirming downtrend. RSI at 27 and Stochastic K/D below 20 signal oversold conditions, while ADX 36 shows a strong trend. The price is hugging the lower Bollinger band, favoring short pressure. Together, these indicators favor SHORT continuation toward support.",
       "market_context": "BTC is bearish on the 4‑hour chart and mixed on daily, with a 1.7% drop and a broadly negative market sentiment (89.6%",
       "result": "PENDING"
+    },
+    {
+      "id": 3409,
+      "created_at": "2026-10-14T21:40:50.370905+00:00",
+      "symbol": "ARBUSDT",
+      "direction": "SHORT",
+      "title": "Major Support Breakdown Confirmed on $ARB Higher Timeframes",
+      "entry_low": 0.1795,
+      "entry_high": 0.1812,
+      "stop_loss": 0.1875,
+      "take_profit": 0.16605,
+      "support": 0.1792,
+      "resistance": 0.1867,
+      "news_line": "",
+      "technical_analysis": "ARBUSDT favors a short setup with RSI at 36.88 and a negative MACD histogram confirming bearish momentum. Price is trading below the 9, 21, and 50 EMAs, indicating a downward trend. The 24-hour low at 0.1792 acts as key support, while resistance sits near 0.1867. Together, these indicators favor SHORT continuation toward support.",
+      "market_context": "BTC is bearish on the 4H timeframe, trading below its 20 and 50 EMAs. The broader market is 88.7% red, creating a",
+      "result": "PENDING"
     }
   ]
 }
