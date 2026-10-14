@@ -57688,6 +57688,23 @@
       "technical_analysis": "Price sits below EMA9, EMA21, EMA50 and EMA200, confirming a bearish framework. MACD remains under its signal line with a negative histogram, while RSI at 37 and Stochastic around 15 signal oversold conditions but lack momentum. Order‑book shows a 15 % ask‑side bias. The pair respects the 1H resistance near 1452 and finds support around 1404.",
       "market_context": "BTC is in a 4‑hour bearish trend around $81.8k and the broader market is 93 % red, indicating overall downside pressure.",
       "result": "PENDING"
+    },
+    {
+      "id": 3394,
+      "created_at": "2026-10-14T17:20:57.569369+00:00",
+      "symbol": "XAUTUSDT",
+      "direction": "SHORT",
+      "title": "$XAUT Rejection at Key Supply Zone: Short Setup Activated",
+      "entry_low": 4086.0,
+      "entry_high": 4088.0,
+      "stop_loss": 4250.48,
+      "take_profit": 3760.04,
+      "support": 4076.01,
+      "resistance": 4155.8,
+      "news_line": "",
+      "technical_analysis": "All key indicators point short. RSI at 20.7 and Stochastic near 11 show oversold conditions, yet MACD stays deep negative with a widening histogram, confirming bearish momentum. Price sits below EMA9‑200, and ADX ≈ 49 signals a strong trend. Order‑book imbalance is –11 % and BTC is on a 4 h bearish frame, reinforcing downside bias.",
+      "market_context": "BTC fell 1.48 % in 24 h, remaining bearish, while overall market breadth is broadly negative with 87.5 % red versus 12.5",
+      "result": "PENDING"
     }
   ]
 }
