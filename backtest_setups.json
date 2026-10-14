@@ -57705,6 +57705,23 @@
       "technical_analysis": "All key indicators point short. RSI at 20.7 and Stochastic near 11 show oversold conditions, yet MACD stays deep negative with a widening histogram, confirming bearish momentum. Price sits below EMA9‑200, and ADX ≈ 49 signals a strong trend. Order‑book imbalance is –11 % and BTC is on a 4 h bearish frame, reinforcing downside bias.",
       "market_context": "BTC fell 1.48 % in 24 h, remaining bearish, while overall market breadth is broadly negative with 87.5 % red versus 12.5",
       "result": "PENDING"
+    },
+    {
+      "id": 3395,
+      "created_at": "2026-10-14T17:40:50.276422+00:00",
+      "symbol": "AXLUSDT",
+      "direction": "LONG",
+      "title": "$AXL Higher Low Structure Confirmed: Long Entry Level Reached",
+      "entry_low": 0.0608,
+      "entry_high": 0.0622,
+      "stop_loss": 0.0593,
+      "take_profit": 0.0659,
+      "support": 0.0581,
+      "resistance": 0.065,
+      "news_line": "",
+      "technical_analysis": "AXL is trading at $0.0642, above its EMA series (9‑200) and holding near the 1‑hour resistance of $0.065. A positive MACD histogram, strong ADX at 30, and a 12% bid‑side order‑book imbalance point to upward momentum. RSI at 66 and stochastic K at 91 suggest the asset is overbought but still in a bullish swing.",
+      "market_context": "BTC is in a bearish 4‑hour trend and down 1.74% over 24 h, with the broader market showing 89.3% red symbols and",
+      "result": "PENDING"
     }
   ]
 }
