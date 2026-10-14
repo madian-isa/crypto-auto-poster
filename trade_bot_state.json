@@ -1,6 +1,6 @@
 {
   "date": "2026-10-14",
-  "count": 44,
+  "count": 45,
   "posted_symbols_today": [
     "BATUSDT",
     "OPUSDT",
@@ -45,6 +45,7 @@
     "USD1USDT",
     "ZROUSDT",
     "AVAXUSDT",
-    "PUMPUSDT"
+    "PUMPUSDT",
+    "LINKUSDT"
   ]
 }
