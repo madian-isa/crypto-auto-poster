@@ -58062,6 +58062,23 @@
       "technical_analysis": "All key indicators point to downside pressure. RSI at 22 and Stochastic K 7 signal deep oversold conditions, yet MACD sits well below its signal line and the histogram stays negative, confirming bearish momentum. Price sits under the 9‑,21‑,50‑and 200‑EMA chain, while ADX above 30 shows a strong trend. The next resistance sits near 101.3.",
       "market_context": "BTC is in a bearish 4‑hour trend and the broader market shows 86.7% red assets, reinforcing downside bias.",
       "result": "PENDING"
+    },
+    {
+      "id": 3416,
+      "created_at": "2026-10-14T23:40:50.857232+00:00",
+      "symbol": "HYPEUSDT",
+      "direction": "SHORT",
+      "title": "$HYPE Prepares for Breakdown: Downside Risk Escalates",
+      "entry_low": 81.9,
+      "entry_high": 82.1,
+      "stop_loss": 84.9,
+      "take_profit": 76.2,
+      "support": 80.84,
+      "resistance": 82.1,
+      "news_line": "",
+      "technical_analysis": "Price sits below EMA9, EMA21, EMA50 and EMA200, confirming a downtrend. RSI at 45 and Stochastic K below D signal mild bearish momentum, while ADX 29 shows a strong trend. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
+      "market_context": "BTC is bearish on the 4‑hour chart and down 2% over 24 h, while the broader market is broadly negative with 87.8%",
+      "result": "PENDING"
     }
   ]
 }
