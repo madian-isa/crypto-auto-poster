@@ -58028,6 +58028,23 @@
       "technical_analysis": "RSI at 35 and MACD below its signal show weak momentum, while price sits below all short‑term EMAs. The current price near the 1H support of 0.05174 confirms a bearish bias, with the 0.05724 resistance acting as the next obstacle. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 3414,
+      "created_at": "2026-10-14T23:01:02.864129+00:00",
+      "symbol": "MUBUSDT",
+      "direction": "SHORT",
+      "title": "$MUB Lower High Pattern Confirmed: Short Target in View",
+      "entry_low": 894.0,
+      "entry_high": 896.0,
+      "stop_loss": 927.4,
+      "take_profit": 830.2,
+      "support": 893.52,
+      "resistance": 951.01,
+      "news_line": "",
+      "technical_analysis": "Technical indicators point sharply down. RSI at 20.4 and Stochastic K below 3 signal deep oversold, while MACD sits well below its signal line and the histogram is negative, confirming bearish momentum. Price sits under EMA9‑200 cascade and ADX above 30 shows a strong trend. Order‑book imbalance favors sellers overall.",
+      "market_context": "BTC is in a bearish 4‑hour trend and down 2.2% over 24 hours, while the broader crypto market is broadly negative with",
+      "result": "PENDING"
     }
   ]
 }
