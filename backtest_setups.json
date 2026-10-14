@@ -57382,6 +57382,23 @@
       "technical_analysis": "MACD histogram is positive and the line sits above its signal, indicating bullish momentum. Stochastic K is deep in oversold territory (≈17) while D is higher, suggesting upward reversal. Order‑book shows a 14% bid‑side imbalance. Price sits just above the EMA200 and near the 1.1585 support level, reinforcing a long bias.",
       "market_context": "BTC shows bearish pressure on the 4‑hour chart and mixed signals on daily, while the broader market is broadly negative with 68%",
       "result": "PENDING"
+    },
+    {
+      "id": 3376,
+      "created_at": "2026-10-14T10:10:53.462115+00:00",
+      "symbol": "SPCXBUSDT",
+      "direction": "SHORT",
+      "title": "$SPCXB Volume Decreases on Rally: Weak Buyers Exposed",
+      "entry_low": 157.3,
+      "entry_high": 158.55,
+      "stop_loss": 164.1,
+      "take_profit": 145.575,
+      "support": 157.08,
+      "resistance": 158.55,
+      "news_line": "",
+      "technical_analysis": "SPCX is trading below its EMA9, EMA21, EMA50 and EMA200, confirming a downtrend. RSI at 36.5 and Stochastic K at 35 signal oversold conditions but still under pressure. ADX at 36.8 shows a strong trend, while volume fell 59%, reinforcing bearish momentum. The pair respects the 157.08‑158.55 range key levels.",
+      "market_context": "BTC shows a bearish 4‑hour trend but a bullish daily outlook, while the broader market is broadly negative with 68% red assets.",
+      "result": "PENDING"
     }
   ]
 }
