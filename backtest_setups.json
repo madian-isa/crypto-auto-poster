@@ -56923,6 +56923,23 @@
       "technical_analysis": "Indicators point to upside pressure. Stochastic K sits at 7.9, deep in oversold territory, and price is just below the lower Bollinger Band, suggesting a potential rebound. The order book shows a 41% bid‑side imbalance, while RSI at 40 hints at modest buying. Together these signals favor a LONG bias near the 0.1154 support zone.",
       "market_context": "BTC remains in a bullish daily trend and the broader market is broadly positive, with 70.7% of assets green, supporting risk‑on sentiment.",
       "result": "PENDING"
+    },
+    {
+      "id": 3349,
+      "created_at": "2026-10-14T02:40:51.877363+00:00",
+      "symbol": "ZKUSDT",
+      "direction": "LONG",
+      "title": "$ZK Prepares for Parabolic Phase: Key Technical Trigger Met",
+      "entry_low": 0.0161,
+      "entry_high": 0.0162,
+      "stop_loss": 0.0155,
+      "take_profit": 0.01745,
+      "support": 0.01603,
+      "resistance": 0.01625,
+      "news_line": "",
+      "technical_analysis": "All key indicators point bullish. Price sits above the 9‑, 21‑, 50‑ and 200‑EMA, which are neatly stacked in ascending order. MACD line sits above its signal with a positive histogram, while ADX near 30 confirms a strong trend. RSI at 57 and a modest order‑book imbalance further support upside pressure near the 0.01625 resistance.",
+      "market_context": "Bitcoin remains in a bullish daily frame, trading around $83,400 with mixed 4‑hour signals, while overall crypto market breadth is broadly positive",
+      "result": "PENDING"
     }
   ]
 }
