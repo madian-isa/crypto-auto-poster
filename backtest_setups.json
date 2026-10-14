@@ -56940,6 +56940,23 @@
       "technical_analysis": "All key indicators point bullish. Price sits above the 9‑, 21‑, 50‑ and 200‑EMA, which are neatly stacked in ascending order. MACD line sits above its signal with a positive histogram, while ADX near 30 confirms a strong trend. RSI at 57 and a modest order‑book imbalance further support upside pressure near the 0.01625 resistance.",
       "market_context": "Bitcoin remains in a bullish daily frame, trading around $83,400 with mixed 4‑hour signals, while overall crypto market breadth is broadly positive",
       "result": "PENDING"
+    },
+    {
+      "id": 3350,
+      "created_at": "2026-10-14T02:50:49.941442+00:00",
+      "symbol": "ZECUSDT",
+      "direction": "LONG",
+      "title": "$ZEC Breaks Out of Falling Wedge Pattern: Targets Set Higher",
+      "entry_low": 1245.0,
+      "entry_high": 1255.0,
+      "stop_loss": 1197.0,
+      "take_profit": 1356.0,
+      "support": 1245.0,
+      "resistance": 1289.0,
+      "news_line": "",
+      "technical_analysis": "ZECUSDT favors a long bias as price holds above the 9 and 21 EMAs while the MACD histogram expands positively. RSI at 67 indicates healthy momentum without immediate overextension. The 1H structure shows strong support at 1245, while resistance sits near 1289. Volume is rising, supporting the upward push toward the next major swing high.",
+      "market_context": "BTC remains broadly positive with a bullish daily trend, providing a supportive macro environment for altcoin moves. Market breadth is 75.7% green",
+      "result": "PENDING"
     }
   ]
 }
