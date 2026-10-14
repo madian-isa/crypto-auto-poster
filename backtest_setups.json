@@ -57348,6 +57348,23 @@
       "technical_analysis": "UNI is trading below its short-term EMAs, with the 9, 21, and 50-period averages all overhead at 7.42, 7.45, and 7.47. The MACD histogram is negative, suggesting bearish momentum, while the RSI at 42 indicates no oversold conditions yet. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
       "market_context": "BTC is mixed on the 4H but bullish on the 1D, while the broader market is 71.8% red.",
       "result": "PENDING"
+    },
+    {
+      "id": 3374,
+      "created_at": "2026-10-14T09:40:46.421228+00:00",
+      "symbol": "RENDERUSDT",
+      "direction": "SHORT",
+      "title": "Bearish Divergence Spotted on $RENDER: Downside Targets Ahead",
+      "entry_low": 2.005,
+      "entry_high": 2.011,
+      "stop_loss": 2.08,
+      "take_profit": 1.864,
+      "support": 1.95,
+      "resistance": 2.007,
+      "news_line": "",
+      "technical_analysis": "Price sits below all short‑term EMAs and the MACD line remains under its signal, indicating bearish momentum. RSI is modestly under 50 and ADX shows a weak trend. Stochastic is deep in oversold territory, but order‑book imbalance leans toward bids. Overall, the next resistance sits near 2.01, with support around 1.95.",
+      "market_context": "BTC is marginally down (-0.47%) and the broader market shows a bearish bias, with 73.6% red assets.",
+      "result": "PENDING"
     }
   ]
 }
