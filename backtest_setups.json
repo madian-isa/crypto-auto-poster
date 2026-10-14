@@ -57365,6 +57365,23 @@
       "technical_analysis": "Price sits below all short‑term EMAs and the MACD line remains under its signal, indicating bearish momentum. RSI is modestly under 50 and ADX shows a weak trend. Stochastic is deep in oversold territory, but order‑book imbalance leans toward bids. Overall, the next resistance sits near 2.01, with support around 1.95.",
       "market_context": "BTC is marginally down (-0.47%) and the broader market shows a bearish bias, with 73.6% red assets.",
       "result": "PENDING"
+    },
+    {
+      "id": 3375,
+      "created_at": "2026-10-14T09:50:49.670096+00:00",
+      "symbol": "FILUSDT",
+      "direction": "LONG",
+      "title": "Strong Accumulation Detected: $FIL Prepares for Next Wave Up",
+      "entry_low": 1.1585,
+      "entry_high": 1.1628,
+      "stop_loss": 1.1186,
+      "take_profit": 1.24475,
+      "support": 1.1585,
+      "resistance": 1.1628,
+      "news_line": "",
+      "technical_analysis": "MACD histogram is positive and the line sits above its signal, indicating bullish momentum. Stochastic K is deep in oversold territory (≈17) while D is higher, suggesting upward reversal. Order‑book shows a 14% bid‑side imbalance. Price sits just above the EMA200 and near the 1.1585 support level, reinforcing a long bias.",
+      "market_context": "BTC shows bearish pressure on the 4‑hour chart and mixed signals on daily, while the broader market is broadly negative with 68%",
+      "result": "PENDING"
     }
   ]
 }
