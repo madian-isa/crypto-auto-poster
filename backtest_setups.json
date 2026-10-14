@@ -56906,6 +56906,23 @@
       "technical_analysis": "The MACD histogram is negative, MACD line sits below its signal and price sits under the EMA9/21/50, indicating bearish momentum. RSI at 36 and Stochastic K near 2 signal oversold but still down pressure. Price is just above the lower Bollinger Band, hugging the 1H resistance zone, favoring a short bias.",
       "market_context": "BTC shows a mixed 4‑hour trend but a bullish daily outlook; overall market breadth is broadly positive with 71% of assets in",
       "result": "PENDING"
+    },
+    {
+      "id": 3348,
+      "created_at": "2026-10-14T02:30:53.036324+00:00",
+      "symbol": "MAGICUSDT",
+      "direction": "LONG",
+      "title": "On-Chain Metrics Confirm Strong Whale Accumulation on $MAGIC",
+      "entry_low": 0.1155,
+      "entry_high": 0.1163,
+      "stop_loss": 0.111,
+      "take_profit": 0.1257,
+      "support": 0.1154,
+      "resistance": 0.123,
+      "news_line": "",
+      "technical_analysis": "Indicators point to upside pressure. Stochastic K sits at 7.9, deep in oversold territory, and price is just below the lower Bollinger Band, suggesting a potential rebound. The order book shows a 41% bid‑side imbalance, while RSI at 40 hints at modest buying. Together these signals favor a LONG bias near the 0.1154 support zone.",
+      "market_context": "BTC remains in a bullish daily trend and the broader market is broadly positive, with 70.7% of assets green, supporting risk‑on sentiment.",
+      "result": "PENDING"
     }
   ]
 }
