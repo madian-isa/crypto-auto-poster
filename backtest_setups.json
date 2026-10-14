@@ -57620,6 +57620,23 @@
       "technical_analysis": "CRCLB is trading well below its EMA9‑200 cluster, confirming a bearish framework. RSI at 20 and stochastic K near 11 signal deep oversold conditions, yet MACD remains negative and its histogram widens, reinforcing downward momentum. The price sits near the 79.5 support, with the next resistance at 84.48, suggesting short bias.",
       "market_context": "Bitcoin is in a bearish 4‑hour trend and down 2.2% over 24 h, while the overall market breadth is heavily negative (90.5%",
       "result": "PENDING"
+    },
+    {
+      "id": 3390,
+      "created_at": "2026-10-14T15:30:58.719410+00:00",
+      "symbol": "ZAMAUSDT",
+      "direction": "SHORT",
+      "title": "$ZAMA Rejection at Key Supply Zone: Short Setup Activated",
+      "entry_low": 0.0738,
+      "entry_high": 0.0742,
+      "stop_loss": 0.07792,
+      "take_profit": 0.06616,
+      "support": 0.06964,
+      "resistance": 0.07792,
+      "news_line": "",
+      "technical_analysis": "Price sits below EMA9, EMA21 and EMA50, confirming a downtrend. MACD histogram is negative, reinforcing bearish momentum. RSI at 32.4 and Stochastic K around 10 show oversold conditions, while the price is under the lower Bollinger Band. Order‑book imbalance favors sellers. The indicators collectively point to short bias. Together, these indicators favor SHORT continuation toward support.",
+      "market_context": "BTC is in a bearish 4‑hour trend, down 2% on the day, and the broader market is 87.5% red, indicating overall weakness.",
+      "result": "PENDING"
     }
   ]
 }
