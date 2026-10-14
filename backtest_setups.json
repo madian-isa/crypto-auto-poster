@@ -57569,6 +57569,23 @@
       "technical_analysis": "The price sits below the 9‑, 21‑, 50‑ and 200‑EMA, confirming a downtrend. MACD line is under its signal with a negative histogram, adding bearish momentum. RSI at 30 and stochastic near 18 signal oversold conditions, but the bearish EMA and MACD outweigh them. The pair is testing the 12.632 resistance, with the 12.553 support below.",
       "market_context": "BTC is down 1.63% on the 4‑hour chart, showing a bearish trend, while the overall market is broadly negative with 88.9% red",
       "result": "PENDING"
+    },
+    {
+      "id": 3387,
+      "created_at": "2026-10-14T14:20:43.456992+00:00",
+      "symbol": "PEPEUSDT",
+      "direction": "SHORT",
+      "title": "Bearish Divergence Spotted on $PEPE: Downside Targets Ahead",
+      "entry_low": 4.1e-06,
+      "entry_high": 4.12e-06,
+      "stop_loss": 4.26e-06,
+      "take_profit": 3.81e-06,
+      "support": 4.02e-06,
+      "resistance": 4.12e-06,
+      "news_line": "",
+      "technical_analysis": "PEPE is trading below all key EMAs (9‑200) and the MACD histogram is negative, indicating bearish momentum. With price near the 4‑hour swing high at 4.12 USDT, the setup favors a short move toward the 4.02 USDT support. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
+      "market_context": "BTC is in a bearish 4‑hour trend and the broader market is broadly negative, with 89 % red assets.",
+      "result": "PENDING"
     }
   ]
 }
