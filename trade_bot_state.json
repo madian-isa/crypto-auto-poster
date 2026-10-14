@@ -1,6 +1,6 @@
 {
   "date": "2026-10-14",
-  "count": 25,
+  "count": 26,
   "posted_symbols_today": [
     "BATUSDT",
     "OPUSDT",
@@ -26,6 +26,7 @@
     "OGNUSDT",
     "ETHUSDT",
     "SOLUSDT",
-    "ENAUSDT"
+    "ENAUSDT",
+    "BTCUSDT"
   ]
 }
