@@ -58045,6 +58045,23 @@
       "technical_analysis": "Technical indicators point sharply down. RSI at 20.4 and Stochastic K below 3 signal deep oversold, while MACD sits well below its signal line and the histogram is negative, confirming bearish momentum. Price sits under EMA9‑200 cascade and ADX above 30 shows a strong trend. Order‑book imbalance favors sellers overall.",
       "market_context": "BTC is in a bearish 4‑hour trend and down 2.2% over 24 hours, while the broader crypto market is broadly negative with",
       "result": "PENDING"
+    },
+    {
+      "id": 3415,
+      "created_at": "2026-10-14T23:20:49.972090+00:00",
+      "symbol": "INTCBUSDT",
+      "direction": "SHORT",
+      "title": "$INTCB Breaks Ascending Support Line: Bearish Momentum Surge",
+      "entry_low": 97.5,
+      "entry_high": 97.8,
+      "stop_loss": 101.2,
+      "take_profit": 90.55,
+      "support": 96.13,
+      "resistance": 101.27,
+      "news_line": "",
+      "technical_analysis": "All key indicators point to downside pressure. RSI at 22 and Stochastic K 7 signal deep oversold conditions, yet MACD sits well below its signal line and the histogram stays negative, confirming bearish momentum. Price sits under the 9‑,21‑,50‑and 200‑EMA chain, while ADX above 30 shows a strong trend. The next resistance sits near 101.3.",
+      "market_context": "BTC is in a bearish 4‑hour trend and the broader market shows 86.7% red assets, reinforcing downside bias.",
+      "result": "PENDING"
     }
   ]
 }
