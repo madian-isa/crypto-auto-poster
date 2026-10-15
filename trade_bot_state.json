@@ -1,6 +1,6 @@
 {
   "date": "2026-10-15",
-  "count": 9,
+  "count": 10,
   "posted_symbols_today": [
     "WALUSDT",
     "EPICUSDT",
@@ -10,6 +10,7 @@
     "ZECUSDT",
     "\u725b\u6765USDT",
     "KORUBUSDT",
-    "OPUSDT"
+    "OPUSDT",
+    "ENAUSDT"
   ]
 }
