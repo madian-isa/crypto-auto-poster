@@ -58249,6 +58249,23 @@
       "technical_analysis": "RSI at 24.5 signals oversold conditions while the order‑book shows a 24% bid‑side imbalance, indicating buying pressure. Price sits just above the lower Bollinger band and near the 1‑hour support of 0.1875, suggesting a potential bounce. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
       "market_context": "BTC is in a bearish 4‑hour trend and down 2.6% over 24 h, while the broader market is broadly negative with only",
       "result": "PENDING"
+    },
+    {
+      "id": 3427,
+      "created_at": "2026-10-15T03:10:50.840870+00:00",
+      "symbol": "PUMPUSDT",
+      "direction": "SHORT",
+      "title": "Bearish Divergence Spotted on $PUMP: Downside Targets Ahead",
+      "entry_low": 0.0047,
+      "entry_high": 0.00479,
+      "stop_loss": 0.00492,
+      "take_profit": 0.004395,
+      "support": 0.004364,
+      "resistance": 0.00479,
+      "news_line": "",
+      "technical_analysis": "Price sits below EMA9, EMA21, EMA50 and EMA200, confirming a downtrend. MACD is negative with a bearish histogram, and ADX above 30 shows strong momentum. RSI at 25 signals oversold conditions but the order‑book imbalance is -13.7%, indicating sell pressure. The pair respects the 0.00479 resistance and 0.004364 support. Together, these indicators favor SHORT continuation toward support.",
+      "market_context": "BTC is in a bearish 4‑hour trend and the broader market is broadly negative, with 93.5% of assets red. This adds downward",
+      "result": "PENDING"
     }
   ]
 }
