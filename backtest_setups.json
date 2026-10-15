@@ -58691,6 +58691,23 @@
       "technical_analysis": "Indicators favor a short setup. Price hovers near the lower Bollinger Band with RSI at 27 and Stochastic K near 4, signaling oversold conditions. This divergence suggests weak momentum against a clear downtrend. The 1H structure shows resistance at 149.94, acting as Together, these indicators favor SHORT continuation toward support.",
       "market_context": "BTC is trading below its key EMAs on the 4H chart, confirming a bearish broader market tone. With 92.5% of assets in",
       "result": "PENDING"
+    },
+    {
+      "id": 3453,
+      "created_at": "2026-10-15T11:10:42.798066+00:00",
+      "symbol": "BNBUSDT",
+      "direction": "SHORT",
+      "title": "Bears Retake Control as $BNB Fails to Hold Moving Averages",
+      "entry_low": 722.0,
+      "entry_high": 723.0,
+      "stop_loss": 748.0,
+      "take_profit": 671.5,
+      "support": 712.96,
+      "resistance": 723.71,
+      "news_line": "",
+      "technical_analysis": "Price is trading below EMA9, EMA21, EMA50 and EMA200, confirming a clear downtrend. ADX at 42.8 signals strong trend momentum. RSI at 40.7 sits near oversold but still below 50. Overall bias remains bearish. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
+      "market_context": "BTC is in a bearish 4‑hour trend and the broader market is broadly negative, with 92.7% of assets red.",
+      "result": "PENDING"
     }
   ]
 }
