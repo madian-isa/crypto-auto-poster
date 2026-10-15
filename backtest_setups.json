@@ -59116,6 +59116,23 @@
       "technical_analysis": "Stochastic K/D sit at 98, signaling extreme overbought conditions, while price sits just above the Bollinger upper band. ADX at 27 confirms a strong trend, and order‑book imbalance shows 7.5% more asks than bids. The confluence points to short pressure near the 1‑hour resistance zone. Together, these indicators favor SHORT continuation toward support.",
       "market_context": "BTC is marginally bullish, up 0.75% on the day, while 59% of the market is green and overall breadth is mixed, providing",
       "result": "PENDING"
+    },
+    {
+      "id": 3478,
+      "created_at": "2026-10-15T20:11:04.303371+00:00",
+      "symbol": "MSTRBUSDT",
+      "direction": "SHORT",
+      "title": "$MSTRB Breaks Ascending Support Line: Bearish Momentum Surge",
+      "entry_low": 151.3,
+      "entry_high": 151.38,
+      "stop_loss": 156.64,
+      "take_profit": 140.74,
+      "support": 151.15,
+      "resistance": 154.07,
+      "news_line": "",
+      "technical_analysis": "Price sits just below the 1‑hour resistance 154.07 and under the EMA200, while EMA9‑50 remain above price, signaling a potential pull‑back. ADX 34 confirms a firm trend, and a modest ask‑side order‑book tilt supports a short stance. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
+      "market_context": "BTC is up 0.55% on the day, with a bullish direction, while overall market breadth is mixed (53.8% green, 46.2% red).",
+      "result": "PENDING"
     }
   ]
 }
