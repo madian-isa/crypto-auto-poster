@@ -58130,6 +58130,23 @@
       "technical_analysis": "RSI at 15.9 and Stochastic K at 1.1 signal deep oversold conditions, while MACD remains negative and all EMA lines sit well above price, confirming bearish momentum. ADX above 39 indicates a strong trend. The price is hugging the lower Bollinger band, supporting a short bias toward the 103.5 support level.",
       "market_context": "BTC is in a bearish 4‑hour trend and the broader market shows 90.9% red breadth, reinforcing the down‑side pressure on altcoins like",
       "result": "PENDING"
+    },
+    {
+      "id": 3420,
+      "created_at": "2026-10-15T00:50:41.217293+00:00",
+      "symbol": "NILUSDT",
+      "direction": "SHORT",
+      "title": "$NIL Lower High Pattern Confirmed: Short Target in View",
+      "entry_low": 0.0895,
+      "entry_high": 0.0915,
+      "stop_loss": 0.0955,
+      "take_profit": 0.0805,
+      "support": 0.07954,
+      "resistance": 0.09371,
+      "news_line": "",
+      "technical_analysis": "Indicators favor a short bias due to extreme overbought conditions. RSI at 75.34 and Stochastic near 89 signal exhaustion, while price hugging the upper Bollinger Band suggests a potential pullback. Although ADX confirms a strong trend, the move is stretched. With BTC showing bearish 4h momentum, NILUSDT is vulnerable to a correction toward the 0.0795 support zone, offering a clear",
+      "market_context": "BTC is trading at $81,512 with a bearish 4-hour trend, contributing to a broadly negative market breadth where 91.1% of assets are",
+      "result": "PENDING"
     }
   ]
 }
