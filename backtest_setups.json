@@ -58436,6 +58436,23 @@
       "technical_analysis": "SUI is trading below all major exponential moving averages, confirming a persistent downtrend. The MACD histogram remains negative with bearish momentum, while the RSI sits near oversold levels at 30.57. Price is pressing against the lower Bollinger Band, indicating strong downward pressure. Together, these indicators favor SHORT continuation toward support.",
       "market_context": "Bitcoin’s bearish 4-hour trend and broad market negativity (94.1% red) provide a headwind for altcoins like SUI.",
       "result": "PENDING"
+    },
+    {
+      "id": 3438,
+      "created_at": "2026-10-15T06:50:54.900597+00:00",
+      "symbol": "SNDKBUSDT",
+      "direction": "SHORT",
+      "title": "Technical Signals Turn Negative as $SNDKB Selling Pressure Rises",
+      "entry_low": 1335.5,
+      "entry_high": 1336.5,
+      "stop_loss": 1383.0,
+      "take_profit": 1242.0,
+      "support": 1325.97,
+      "resistance": 1451.71,
+      "news_line": "",
+      "technical_analysis": "RSI at 24.53 and Stochastic K near 9 point to oversold conditions, yet the MACD sits at –28.66 with a –4.40 histogram, confirming bearish momentum. Price is under EMA9, EMA21, EMA50 and EMA200, reinforcing a downtrend, while ADX at 44.53 signals a strong trend and the order‑book shows a 6.9 % sell‑side imbalance. Short bias.",
+      "market_context": "BTC shows a bearish 4‑hour trend and mixed daily movement, while overall market breadth is broadly negative with 94.5% red assets.",
+      "result": "PENDING"
     }
   ]
 }
