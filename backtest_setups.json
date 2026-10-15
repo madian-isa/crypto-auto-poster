@@ -58657,6 +58657,23 @@
       "technical_analysis": "AVAXUSDT favors a short bias as price remains below key EMAs and RSI sits at 37.8, indicating weak momentum. MACD is negative with a negative histogram, confirming downward pressure. The 1H structure shows rejection near 9.688 resistance, while support at 9.479 acts as the next major floor. Broad market weakness adds headwind to the bearish setup.",
       "market_context": "BTC is trading below key moving averages with a bearish 4H trend, and 92.3% of the market is red, creating a headwind",
       "result": "PENDING"
+    },
+    {
+      "id": 3451,
+      "created_at": "2026-10-15T10:30:56.808711+00:00",
+      "symbol": "PEPEUSDT",
+      "direction": "SHORT",
+      "title": "$PEPE Breaks Below Critical Support: Further Drop Expected",
+      "entry_low": 3.92e-06,
+      "entry_high": 3.94e-06,
+      "stop_loss": 4.07e-06,
+      "take_profit": 3.65e-06,
+      "support": 3.83e-06,
+      "resistance": 4.01e-06,
+      "news_line": "",
+      "technical_analysis": "PEPEUSDT sits below the 9‑, 21‑, 50‑and 200‑EMA, confirming a downtrend. MACD line remains under its signal, and the histogram is negative. RSI at 41 and Stochastic K 35 indicate momentum still bearish. ADX ~26 shows a moderate trend, while order‑book pressure is ask‑biased. Overall, the market setup supports a short stance.",
+      "market_context": "BTC is in a bearish 4‑hour trend, trading below its 20‑ and 50‑EMA, and the broader market is 92 % red with",
+      "result": "PENDING"
     }
   ]
 }
