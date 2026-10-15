@@ -59252,6 +59252,23 @@
       "technical_analysis": "Combined with a sell‑side order‑book imbalance, the indicators point toward downside pressure toward the 0.0989 support. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
       "market_context": "BTC is up 0.96% on the day, showing mixed trend on higher timeframes, while overall market breadth is slightly bullish (52.3% green).",
       "result": "PENDING"
+    },
+    {
+      "id": 3486,
+      "created_at": "2026-10-15T23:10:45.977861+00:00",
+      "symbol": "WUSDT",
+      "direction": "SHORT",
+      "title": "Major Support Breakdown Confirmed on $W Higher Timeframes",
+      "entry_low": 0.0148,
+      "entry_high": 0.0149,
+      "stop_loss": 0.01538,
+      "take_profit": 0.01379,
+      "support": 0.01452,
+      "resistance": 0.01502,
+      "news_line": "",
+      "technical_analysis": "Indicators point to downside. Price sits under EMA9, EMA21 and EMA50, confirming bearish structure. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
+      "market_context": "BTC is up 0.84% over 24 h, showing bullish bias, while overall market breadth is mixed (47% green, 53% red).",
+      "result": "PENDING"
     }
   ]
 }
