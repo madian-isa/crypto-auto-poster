@@ -58113,6 +58113,23 @@
       "technical_analysis": "Price sits below EMA21 (0.3357) and EMA50 (0.3813), signaling a downtrend. RSI at 38.8 and Stochastic K/D around 37 point to bearish momentum. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
       "market_context": "BTC is down 2.1% on a bearish 4‑hour trend, and the broader market is broadly negative, with 89.3% of assets red.",
       "result": "PENDING"
+    },
+    {
+      "id": 3419,
+      "created_at": "2026-10-15T00:40:54.457388+00:00",
+      "symbol": "SOXLBUSDT",
+      "direction": "SHORT",
+      "title": "$SOXLB Breaks Ascending Support Line: Bearish Momentum Surge",
+      "entry_low": 103.6,
+      "entry_high": 103.8,
+      "stop_loss": 107.5,
+      "take_profit": 96.1,
+      "support": 103.5,
+      "resistance": 124.59,
+      "news_line": "",
+      "technical_analysis": "RSI at 15.9 and Stochastic K at 1.1 signal deep oversold conditions, while MACD remains negative and all EMA lines sit well above price, confirming bearish momentum. ADX above 39 indicates a strong trend. The price is hugging the lower Bollinger band, supporting a short bias toward the 103.5 support level.",
+      "market_context": "BTC is in a bearish 4‑hour trend and the broader market shows 90.9% red breadth, reinforcing the down‑side pressure on altcoins like",
+      "result": "PENDING"
     }
   ]
 }
