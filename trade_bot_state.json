@@ -1,6 +1,6 @@
 {
   "date": "2026-10-15",
-  "count": 44,
+  "count": 45,
   "posted_symbols_today": [
     "WALUSDT",
     "EPICUSDT",
@@ -45,6 +45,7 @@
     "AAVEUSDT",
     "ADAUSDT",
     "ACEUSDT",
-    "INTCBUSDT"
+    "INTCBUSDT",
+    "JTOUSDT"
   ]
 }

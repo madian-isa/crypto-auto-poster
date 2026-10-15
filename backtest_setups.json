@@ -58827,6 +58827,23 @@
       "technical_analysis": "All major EMAs sit above the current 94.17 price, confirming a downtrend. MACD remains below its signal line with a negative histogram, while ADX at 44.5 signals a strong trend. Both RSI (28.6) and Stochastic (K 18, D 16) are deep in oversold territory, reinforcing bearish momentum toward the 96.06 resistance.",
       "market_context": "BTC is in a bearish 4‑hour trend and the broader market is broadly negative, with 90% of assets red.",
       "result": "PENDING"
+    },
+    {
+      "id": 3461,
+      "created_at": "2026-10-15T14:01:03.088988+00:00",
+      "symbol": "JTOUSDT",
+      "direction": "SHORT",
+      "title": "Major Support Breakdown Confirmed on $JTO Higher Timeframes",
+      "entry_low": 0.456,
+      "entry_high": 0.461,
+      "stop_loss": 0.47684,
+      "take_profit": 0.42182,
+      "support": 0.4337,
+      "resistance": 0.4613,
+      "news_line": "",
+      "technical_analysis": "RSI at 24 and Stochastic K under 20 signal deep oversold conditions, while ADX 59 confirms a strong trend overall. Current price sits below EMA9‑200 and MACD histogram remains negative, indicating bearish momentum. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
+      "market_context": "BTC is in a bearish 4‑hour trend, down 2.7% in 24 h, and overall market breadth is broadly negative with 90.7% of",
+      "result": "PENDING"
     }
   ]
 }
