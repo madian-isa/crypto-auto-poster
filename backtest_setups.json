@@ -58946,6 +58946,23 @@
       "technical_analysis": "RSI at 65.73 and Stochastic K at 90 show strong upward momentum, while MACD histogram remains positive (0.002) confirming bullish bias. Price sits above the 9‑, 21‑ and 50‑EMA and just under the 200‑EMA, indicating an intact uptrend. ADX around 22 signals a moderate trend. Together these suggest a long‑side bias near the 0.354‑0.356 range.",
       "market_context": "BTC is up 0.86% over 24 h, showing bullish momentum, while the 4‑hour trend remains bearish. Market breadth is mixed with a",
       "result": "PENDING"
+    },
+    {
+      "id": 3468,
+      "created_at": "2026-10-15T17:00:56.293329+00:00",
+      "symbol": "NXPCUSDT",
+      "direction": "SHORT",
+      "title": "$NXPC Distribution Phase Ends: Downside Target Zone Set",
+      "entry_low": 0.298,
+      "entry_high": 0.3,
+      "stop_loss": 0.311,
+      "take_profit": 0.275,
+      "support": 0.2061,
+      "resistance": 0.3003,
+      "news_line": "",
+      "technical_analysis": "Volume is high and the order‑book shows a modest sell‑side imbalance (‑4.6%). Price sits just under the 0.3003 resistance, suggesting downside bias toward the 0.2061 support. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
+      "market_context": "BTC is up 10.6% over 24 h, yet overall market breadth is broadly negative with 67.5% red.",
+      "result": "PENDING"
     }
   ]
 }
