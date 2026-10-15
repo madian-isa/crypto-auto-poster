@@ -58147,6 +58147,23 @@
       "technical_analysis": "Indicators favor a short bias due to extreme overbought conditions. RSI at 75.34 and Stochastic near 89 signal exhaustion, while price hugging the upper Bollinger Band suggests a potential pullback. Although ADX confirms a strong trend, the move is stretched. With BTC showing bearish 4h momentum, NILUSDT is vulnerable to a correction toward the 0.0795 support zone, offering a clear",
       "market_context": "BTC is trading at $81,512 with a bearish 4-hour trend, contributing to a broadly negative market breadth where 91.1% of assets are",
       "result": "PENDING"
+    },
+    {
+      "id": 3421,
+      "created_at": "2026-10-15T01:20:48.196425+00:00",
+      "symbol": "AVAUSDT",
+      "direction": "SHORT",
+      "title": "Overbought Indicators Signal Impending Correction for $AVA",
+      "entry_low": 0.2765,
+      "entry_high": 0.2785,
+      "stop_loss": 0.2875,
+      "take_profit": 0.2575,
+      "support": 0.2648,
+      "resistance": 0.3043,
+      "news_line": "",
+      "technical_analysis": "MACD line sits under its signal with a negative histogram, confirming downside momentum. ADX at 41 indicates a strong trend. Stochastic hovers near the low‑30s, adding pressure. Resistance is around 0.2758; support near 0.2648. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
+      "market_context": "BTC is in a bearish 4‑hour trend, down 1.87% over 24 h, and the overall market is broadly negative with 89.9% red",
+      "result": "PENDING"
     }
   ]
 }
