@@ -58538,6 +58538,23 @@
       "technical_analysis": "The EMA hierarchy (9‑21‑50‑200) sits above price, MACD is negative and below its signal, and ADX at 34 confirms a strong downtrend. RSI at 40 and Stochastic below 50 add bearish bias. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
       "market_context": "BTC is in a bearish 4‑hour trend and down 3.1% on the day, while the broader market is broadly negative with 93.7%",
       "result": "PENDING"
+    },
+    {
+      "id": 3444,
+      "created_at": "2026-10-15T08:30:55.943907+00:00",
+      "symbol": "XRPUSDT",
+      "direction": "SHORT",
+      "title": "$XRP Fakeout Confirmed: Bulls Trapped at Local Highs",
+      "entry_low": 1.322,
+      "entry_high": 1.33,
+      "stop_loss": 1.38,
+      "take_profit": 1.218,
+      "support": 1.3112,
+      "resistance": 1.3369,
+      "news_line": "",
+      "technical_analysis": "Price sits below EMA9, EMA21, EMA50 and EMA200, while the MACD histogram is negative and RSI is at 41, all pointing to bearish momentum. ADX at 34 confirms a strong trend. With 1‑hour resistance at 1.3369 and support at 1.3112, short pressure is favored. Together, these indicators favor SHORT continuation toward support.",
+      "market_context": "BTC is in a bearish 4‑hour trend, down 3% on the day, and the broader market is broadly negative with 93.7% red",
+      "result": "PENDING"
     }
   ]
 }
