@@ -58606,6 +58606,23 @@
       "technical_analysis": "The MACD sits below its signal with a negative histogram, while price is under the 9‑, 21‑ and 50‑EMA, indicating down‑trend momentum. RSI at 37 and a 35.8 ADX confirm a strong bearish bias. The pair respects a short‑term resistance near 12.16 and finds support around 12.07, supporting a short outlook.",
       "market_context": "Bitcoin is in a bearish 4‑hour trend and the overall market breadth is broadly negative, with 92% of assets red, reinforcing the",
       "result": "PENDING"
+    },
+    {
+      "id": 3448,
+      "created_at": "2026-10-15T09:50:51.540051+00:00",
+      "symbol": "BLURUSDT",
+      "direction": "LONG",
+      "title": "$BLUR Breakout Confirmation: Bulls Target Next Supply Zone",
+      "entry_low": 0.01045,
+      "entry_high": 0.01053,
+      "stop_loss": 0.0100704,
+      "take_profit": 0.0113292,
+      "support": 0.01045,
+      "resistance": 0.01053,
+      "news_line": "",
+      "technical_analysis": "ADX at 38 confirms a strong trend. Stochastic is in the 80s, adding momentum. Together they favor a bounce toward the nearby resistance at 0.01053. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure. The nearby support and resistance levels frame the current market structure.",
+      "market_context": "BTC is down 2.38% on a bearish 4‑hour trend, and the overall market breadth is broadly negative (91.9% red).",
+      "result": "PENDING"
     }
   ]
 }
