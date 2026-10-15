@@ -59201,6 +59201,23 @@
       "technical_analysis": "Price sits above the 9‑, 21‑ and 50‑EMA, confirming an uptrend. MACD histogram is positive and MACD line sits above the signal, while RSI at 55 shows modest bullish momentum. Order‑book shows a 15 % bid‑side imbalance. The pair respects the 1H swing range between 0.05575 and 0.05765 on the chart today. Overall sentiment aligns with the bullish bias.",
       "market_context": "BTC is up 0.567 % over 24 h, showing bullish momentum while overall market breadth is mixed (53.6 % green).",
       "result": "PENDING"
+    },
+    {
+      "id": 3483,
+      "created_at": "2026-10-15T21:50:44.317520+00:00",
+      "symbol": "QQQBUSDT",
+      "direction": "SHORT",
+      "title": "$QQQB Prepares for Breakdown: Downside Risk Escalates",
+      "entry_low": 725.0,
+      "entry_high": 728.0,
+      "stop_loss": 758.0,
+      "take_profit": 663.5,
+      "support": 727.56,
+      "resistance": 729.88,
+      "news_line": "",
+      "technical_analysis": "QQQBUSDT faces strong overhead resistance at 729.88, with price trading below the key 50 and 200 EMAs. The RSI is neutral at 52, but the MACD histogram suggests fading upward momentum. Orderbook imbalance shows significant sell pressure, favoring a bearish continuation. The structure supports a short bias as the asset struggles to reclaim higher levels.",
+      "market_context": "Bitcoin trades at 82,362 USDT with a mixed 1-day trend, while the broader market breadth is balanced with 51.3% of assets in",
+      "result": "PENDING"
     }
   ]
 }
