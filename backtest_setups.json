@@ -58504,6 +58504,23 @@
       "technical_analysis": "DOGEUSDT sits below the 9‑, 21‑ and 50‑EMA, with a negative MACD histogram and RSI at 32.8. Price hugs the lower Bollinger band and the order book shows a modest bid imbalance, all pointing to bearish momentum toward the 0.08004 support. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish",
       "market_context": "BTC is in a bearish 4‑hour trend and down 2.6% over 24 h, while the broader market is broadly negative with 93.5%",
       "result": "PENDING"
+    },
+    {
+      "id": 3442,
+      "created_at": "2026-10-15T08:00:57.192014+00:00",
+      "symbol": "SOLUSDT",
+      "direction": "SHORT",
+      "title": "$SOL Distribution Phase Ends: Downside Target Zone Set",
+      "entry_low": 102.8,
+      "entry_high": 103.5,
+      "stop_loss": 109.339,
+      "take_profit": 90.772,
+      "support": 101.69,
+      "resistance": 104.33,
+      "news_line": "",
+      "technical_analysis": "SOLUSDT faces significant bearish pressure as price remains below the 21, 50, and 200 EMAs, confirming a sustained downward trend. The MACD histogram is negative, indicating weakening momentum, while RSI at 43 suggests sellers maintain control. With Bitcoin trading in a bearish 4-hour structure and 93.5% of the market red, the path of least resistance points downward toward the 101.69",
+      "market_context": "Bitcoin is trading below its 4H EMAs, signaling a bearish macro environment that typically suppresses altcoin rallies. The broader market is 93.5%",
+      "result": "PENDING"
     }
   ]
 }
