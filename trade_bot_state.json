@@ -1,6 +1,6 @@
 {
   "date": "2026-10-15",
-  "count": 54,
+  "count": 55,
   "posted_symbols_today": [
     "WALUSDT",
     "EPICUSDT",
@@ -55,6 +55,7 @@
     "CRVUSDT",
     "NXPCUSDT",
     "FFUSDT",
-    "USD1USDT"
+    "USD1USDT",
+    "HYPEUSDT"
   ]
 }
