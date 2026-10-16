@@ -60085,6 +60085,23 @@
       "technical_analysis": "RSI at 33.8 and Stochastic K at 2 indicate oversold conditions, but price sits below EMA9, EMA21 and EMA50, and MACD histogram is negative, confirming a prevailing downtrend. ADX above 30 shows the trend is strong. The short bias aligns with the 5.018 resistance level. Together, these indicators favor SHORT continuation toward support.",
       "market_context": "BTC is in a bearish 4‑hour trend and down 0.84% over 24h, while the broader market shows more red than green assets",
       "result": "PENDING"
+    },
+    {
+      "id": 3535,
+      "created_at": "2026-10-16T15:40:52.774390+00:00",
+      "symbol": "PUMPUSDT",
+      "direction": "SHORT",
+      "title": "$PUMP Breaks Below Critical Support: Further Drop Expected",
+      "entry_low": 0.004395,
+      "entry_high": 0.004415,
+      "stop_loss": 0.00458,
+      "take_profit": 0.004055,
+      "support": 0.004235,
+      "resistance": 0.004435,
+      "news_line": "",
+      "technical_analysis": "Momentum favors shorts as price hovers near the lower Bollinger Band with RSI at 36.9. The MACD histogram remains negative, confirming downward pressure, while Stochastic K is deeply oversold at 11.9. Price sits below the 9, 21, and 50 EMAs, with the 200 EMA acting as a significant overhead ceiling. Structure suggests continued weakness until the 0.004435 resistance is reclaimed.",
+      "market_context": "Bitcoin is bearish on the 4H timeframe, trading below key moving averages, while broader market breadth is negative with 64.2% of assets",
+      "result": "PENDING"
     }
   ]
 }
