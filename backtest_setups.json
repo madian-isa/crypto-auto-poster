@@ -59813,6 +59813,23 @@
       "technical_analysis": "ADX at 29 signals a strong trend. RSI at 67 and a bid‑side order‑book imbalance add buying pressure. Price respects a near‑term support around 160.7 and faces resistance near 161.8. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
       "market_context": "BTC is bullish on the 24h timeframe (+1.29%) and the overall market is broadly positive, with 91.5% of assets showing gains.",
       "result": "PENDING"
+    },
+    {
+      "id": 3519,
+      "created_at": "2026-10-16T10:50:50.123444+00:00",
+      "symbol": "SUPERUSDT",
+      "direction": "LONG",
+      "title": "$SUPER Breaks Out of Falling Wedge Pattern: Targets Set Higher",
+      "entry_low": 0.208,
+      "entry_high": 0.21,
+      "stop_loss": 0.2,
+      "take_profit": 0.227,
+      "support": 0.208,
+      "resistance": 0.231,
+      "news_line": "",
+      "technical_analysis": "MACD shows a positive line and expanding histogram, confirming upward momentum. ADX at 36 signals a strong trend. Price sits above the 9‑, 21‑ and 50‑EMA, while the orderbook is bid‑heavy with a 16.6% imbalance, reinforcing bullish bias. Resistance lies near 0.2128, support at 0.208. Overall the setup favors a continuation to the upside.",
+      "market_context": "BTC is up 1.6% and the overall market shows 92.8% green, indicating broad bullish sentiment.",
+      "result": "PENDING"
     }
   ]
 }
