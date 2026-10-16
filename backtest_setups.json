@@ -59728,6 +59728,23 @@
       "technical_analysis": "MACD shows a positive histogram and the line sits above its signal, confirming bullish momentum. EMA9, EMA21 and EMA50 are all below price, aligning with an uptrend, while ADX at 36 signals a strong trend. RSI at 68 adds further upward bias. Together, these indicators favor LONG continuation toward resistance.",
       "market_context": "BTC is up 1.24% on the 24‑hour chart despite a bearish 4‑hour trend, and the overall market is broadly positive with 92%",
       "result": "PENDING"
+    },
+    {
+      "id": 3514,
+      "created_at": "2026-10-16T08:30:52.959261+00:00",
+      "symbol": "CHIPUSDT",
+      "direction": "LONG",
+      "title": "Strong Accumulation Detected: $CHIP Prepares for Next Wave Up",
+      "entry_low": 0.0494,
+      "entry_high": 0.0496,
+      "stop_loss": 0.0475,
+      "take_profit": 0.0535,
+      "support": 0.04242,
+      "resistance": 0.05219,
+      "news_line": "",
+      "technical_analysis": "Indicators favor a long setup as price holds above the EMA9 and 21, with a positive MACD histogram signaling strengthening momentum. RSI at 54.72 shows moderate bullish strength without overextension. The ADX above 30 confirms a trending market, supporting the move toward the 0.05219 resistance level. Volume contraction suggests a potential breakout.",
+      "market_context": "BTC is trading at 82,264 with a bullish 24h trend, providing a supportive backdrop for altcoin moves.",
+      "result": "PENDING"
     }
   ]
 }
