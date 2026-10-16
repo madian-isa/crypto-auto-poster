@@ -59762,6 +59762,23 @@
       "technical_analysis": "RSI at 66.9 and Stochastic K near 90 indicate overbought conditions, yet the MACD line remains above its signal with a positive histogram, confirming bullish momentum. ADX above 30 shows a strong trend. Price sits above the 9‑ and 21‑EMA and within the 1H support (0.462) and resistance (0.4738) zone, supporting a long bias.",
       "market_context": "BTC shows a bearish 4‑hour trend despite a slight 24‑hour bullish edge, and market breadth is broadly positive.",
       "result": "PENDING"
+    },
+    {
+      "id": 3516,
+      "created_at": "2026-10-16T09:30:58.128883+00:00",
+      "symbol": "BLURUSDT",
+      "direction": "SHORT",
+      "title": "Bears Retake Control as $BLUR Fails to Hold Moving Averages",
+      "entry_low": 0.0107,
+      "entry_high": 0.01078,
+      "stop_loss": 0.01112,
+      "take_profit": 0.00998,
+      "support": 0.01074,
+      "resistance": 0.01109,
+      "news_line": "",
+      "technical_analysis": "MACD is negative with a bearish histogram, and price sits below EMA9, EMA21 and EMA50, confirming downtrend. Order‑book shows a 37 % bid imbalance, while 1H resistance sits at 0.01109. The overall indicators favor a short bias. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
+      "market_context": "BTC shows mixed 1‑day signals but a bearish 4‑hour trend, while the broader market is broadly positive with 91% of assets green.",
+      "result": "PENDING"
     }
   ]
 }
