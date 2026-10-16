@@ -1,6 +1,6 @@
 {
   "date": "2026-10-16",
-  "count": 54,
+  "count": 55,
   "posted_symbols_today": [
     "STRKUSDT",
     "WALUSDT",
@@ -55,6 +55,7 @@
     "NXPCUSDT",
     "AMPUSDT",
     "BERAUSDT",
-    "NILUSDT"
+    "NILUSDT",
+    "SOXLBUSDT"
   ]
 }
