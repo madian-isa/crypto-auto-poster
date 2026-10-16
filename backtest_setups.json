@@ -60034,6 +60034,23 @@
       "technical_analysis": "Price sits below EMA9, EMA21, EMA50 and EMA200, confirming a downtrend. MACD histogram is negative and the line is under its signal, adding bearish momentum. ADX below 20 shows a soft trend, favoring a short bias. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
       "market_context": "BTC is up 1.1% and the broader market is broadly positive, but BNB shows clearer bearish signals on its own chart.",
       "result": "PENDING"
+    },
+    {
+      "id": 3532,
+      "created_at": "2026-10-16T14:50:51.470000+00:00",
+      "symbol": "USD1USDT",
+      "direction": "SHORT",
+      "title": "$USD1 Open Interest Drops Rapidly: Long Squeeze Underway",
+      "entry_low": 1.0002,
+      "entry_high": 1.00029,
+      "stop_loss": 1.0402548,
+      "take_profit": 0.9202254,
+      "support": 0.9999,
+      "resistance": 1.00029,
+      "news_line": "",
+      "technical_analysis": "MACD is negative with a bearish histogram, and price sits below the 9, 21, 50 and 200 EMA lines, confirming down‑trend pressure. RSI at 36 and a low ADX indicate weak momentum, while stochastic is deep oversold. Order‑book shows a modest bid bias, but the dominant signals favor a short stance near resistance.",
+      "market_context": "BTC is modestly higher (+0.82%) and the broader market is broadly positive, with 82.5% green assets.",
+      "result": "PENDING"
     }
   ]
 }
