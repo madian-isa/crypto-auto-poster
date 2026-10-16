@@ -60017,6 +60017,23 @@
       "technical_analysis": "The price sits above EMA9, EMA21, EMA50 and EMA200, confirming a clear uptrend. MACD line remains above its signal with a positive histogram, adding bullish momentum. ADX at 53.6 signals a strong trend, while RSI at 71.8 shows overbought but does not yet reverse. Stochastic near 55 supports continued buying pressure.",
       "market_context": "BTC is bearish on the 4‑hour chart but mixed on the daily, while the broader market is broadly positive with 85.9 %",
       "result": "PENDING"
+    },
+    {
+      "id": 3531,
+      "created_at": "2026-10-16T14:41:02.184458+00:00",
+      "symbol": "BNBUSDT",
+      "direction": "SHORT",
+      "title": "$BNB Open Interest Drops Rapidly: Long Squeeze Underway",
+      "entry_low": 728.8,
+      "entry_high": 732.0,
+      "stop_loss": 758.0,
+      "take_profit": 675.2,
+      "support": 729.59,
+      "resistance": 732.0,
+      "news_line": "",
+      "technical_analysis": "Price sits below EMA9, EMA21, EMA50 and EMA200, confirming a downtrend. MACD histogram is negative and the line is under its signal, adding bearish momentum. ADX below 20 shows a soft trend, favoring a short bias. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
+      "market_context": "BTC is up 1.1% and the broader market is broadly positive, but BNB shows clearer bearish signals on its own chart.",
+      "result": "PENDING"
     }
   ]
 }
