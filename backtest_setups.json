@@ -59541,6 +59541,23 @@
       "technical_analysis": "RSI at 59 shows modest strength, while Stochastic K/D are below 50, indicating weakening momentum. ADX at 28 confirms a moderate trend, and the order book shows slight bid dominance. The confluence points to bearish bias. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
       "market_context": "BTC is up 1.25% and the overall market is broadly positive, yet ZAMA is trading below short‑term support, suggesting isolated downside pressure.",
       "result": "PENDING"
+    },
+    {
+      "id": 3503,
+      "created_at": "2026-10-16T05:30:59.465516+00:00",
+      "symbol": "UNIUSDT",
+      "direction": "SHORT",
+      "title": "Major Support Breakdown Confirmed on $UNI Higher Timeframes",
+      "entry_low": 7.447,
+      "entry_high": 7.505,
+      "stop_loss": 7.78,
+      "take_profit": 6.868,
+      "support": 7.468,
+      "resistance": 7.505,
+      "news_line": "",
+      "technical_analysis": "UNI is trading below the 1H/4H support zone at 7.468, with the 200‑EMA still higher at 7.576, indicating longer‑term downside. Stochastic K (43) sits beneath its D line (61), and ADX at 32 confirms a strong trend. These factors collectively tilt momentum toward the short side. Together, these indicators favor SHORT continuation toward support.",
+      "market_context": "BTC is in a modest bullish 1.4% rise and the overall market shows a broadly positive breadth, with over 90% of assets",
+      "result": "PENDING"
     }
   ]
 }
