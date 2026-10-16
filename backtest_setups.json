@@ -59626,6 +59626,23 @@
       "technical_analysis": "Price sits above the 9‑, 21‑ and 200‑EMA, showing a clear bullish alignment. RSI at 58.5 keeps momentum positive, while the order book shows a 25 % bid‑side imbalance. overall Support sits near 0.0835 and resistance around 0.0862. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
       "market_context": "BTC shows a bearish 4‑hour trend but the broader market is broadly positive, with 91.7 % of assets green and BTC up",
       "result": "PENDING"
+    },
+    {
+      "id": 3508,
+      "created_at": "2026-10-16T06:50:55.122414+00:00",
+      "symbol": "SUIUSDT",
+      "direction": "LONG",
+      "title": "$SUI Buying Pressure Rises as Bulls Test Key Resistance",
+      "entry_low": 1.038,
+      "entry_high": 1.0414,
+      "stop_loss": 1.0033,
+      "take_profit": 1.1125,
+      "support": 1.0352,
+      "resistance": 1.0415,
+      "news_line": "",
+      "technical_analysis": "Indicators show upside bias. RSI at 58.8 is modestly bullish, while stochastic near 71 signals strong momentum, while ADX under 20 indicates a weak trend. Overall the setup favors a long move toward the 1‑hour resistance at 1.0522. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
+      "market_context": "BTC is up 1.79% over 24 h, showing bullish momentum, though on the 4 h chart it remains bearish under its EMA20/50.",
+      "result": "PENDING"
     }
   ]
 }
