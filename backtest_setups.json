@@ -60051,6 +60051,23 @@
       "technical_analysis": "MACD is negative with a bearish histogram, and price sits below the 9, 21, 50 and 200 EMA lines, confirming down‑trend pressure. RSI at 36 and a low ADX indicate weak momentum, while stochastic is deep oversold. Order‑book shows a modest bid bias, but the dominant signals favor a short stance near resistance.",
       "market_context": "BTC is modestly higher (+0.82%) and the broader market is broadly positive, with 82.5% green assets.",
       "result": "PENDING"
+    },
+    {
+      "id": 3533,
+      "created_at": "2026-10-16T15:10:49.583950+00:00",
+      "symbol": "HUMAUSDT",
+      "direction": "SHORT",
+      "title": "$HUMA Fakeout Confirmed: Bulls Trapped at Local Highs",
+      "entry_low": 0.0284,
+      "entry_high": 0.0285,
+      "stop_loss": 0.0295,
+      "take_profit": 0.02635,
+      "support": 0.02715,
+      "resistance": 0.03254,
+      "news_line": "",
+      "technical_analysis": "All EMAs (9, 21, 50, 200) sit above the current price, MACD is below its signal line, RSI is at 34 and Stochastic K is under 20. ADX near 30 confirms a defined trend. The confluence points to bearish momentum, with price trading between 1‑hour support 0.02715 and resistance 0.03254.",
+      "market_context": "BTC is in a bearish 4‑hour trend, down 0.654% over 24 h, and the broader market shows a slight red bias (57.1%",
+      "result": "PENDING"
     }
   ]
 }
