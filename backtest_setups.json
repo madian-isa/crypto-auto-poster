@@ -59575,6 +59575,23 @@
       "technical_analysis": "MACD is bullish with the line well above the signal and a positive histogram. EMA9, EMA21, EMA50 and EMA200 are all below price, confirming an uptrend. ADX above 30 shows strong momentum, while RSI near 68 and Stochastic above 90 indicate continued buying pressure despite overbought readings. Together, these indicators favor LONG continuation toward resistance.",
       "market_context": "BTC is up about 1.2% on the day, showing bullish momentum on the 4‑hour chart, and the broader crypto market is broadly",
       "result": "PENDING"
+    },
+    {
+      "id": 3505,
+      "created_at": "2026-10-16T06:01:01.371396+00:00",
+      "symbol": "KORUBUSDT",
+      "direction": "LONG",
+      "title": "Spot Inflows Surge for $KORUB as Futures Open Interest Rises",
+      "entry_low": 11.8,
+      "entry_high": 12.0,
+      "stop_loss": 11.38,
+      "take_profit": 12.94,
+      "support": 11.64,
+      "resistance": 12.16,
+      "news_line": "",
+      "technical_analysis": "MACD histogram is positive and the MACD line sits above the signal, indicating bullish momentum. RSI at 53.6 is neutral, while ADX 22 shows a weak trend. Order‑book shows a slight bid‑side imbalance, reinforcing a modest long bias near the 11.64–12.16 range. Together, these indicators favor LONG continuation toward resistance.",
+      "market_context": "BTC is up 1.94% in 24 h and the overall market is broadly positive, with 93.7% of assets green, adding supportive background",
+      "result": "PENDING"
     }
   ]
 }
