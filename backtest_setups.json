@@ -60357,6 +60357,23 @@
       "technical_analysis": "Price sits below EMA9, EMA21, EMA50 and EMA200, confirming a bearish trend. MACD is negative and under its signal line, while RSI at 35.6 and Stochastic K/D below 20 indicate weakening momentum. Order‑book shows a modest bid‑side imbalance, but overall indicators favor a short move toward the 1‑hour support at 0.01826.",
       "market_context": "BTC is in a bearish 4‑hour trend and 24‑hour price is down 0.5 %. Overall market breadth is broadly negative with 83.8",
       "result": "PENDING"
+    },
+    {
+      "id": 3551,
+      "created_at": "2026-10-16T21:01:00.169286+00:00",
+      "symbol": "LTCUSDT",
+      "direction": "SHORT",
+      "title": "Moving Average Death Cross Signals Downward Trend for $LTC",
+      "entry_low": 59.48,
+      "entry_high": 59.63,
+      "stop_loss": 61.9372,
+      "take_profit": 54.7906,
+      "support": 59.19,
+      "resistance": 60.02,
+      "news_line": "",
+      "technical_analysis": "LTC is trading below key EMAs with a bearish MACD histogram and low RSI, signaling weak momentum. The orderbook shows heavy sell-side imbalance, reinforcing downward pressure. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
+      "market_context": "BTC is bearish on the 4H, and overall market breadth is broadly negative, creating a hostile environment for altcoins.",
+      "result": "PENDING"
     }
   ]
 }
