@@ -60119,6 +60119,23 @@
       "technical_analysis": "FET is trading below all key EMAs (9‑, 21‑, 50‑ and 200‑period), confirming bearish momentum. MACD histogram is negative and RSI sits at 38, while Stochastic K is under 10, indicating oversold conditions but no upward thrust. Price sits beneath the lower Bollinger band and near the 0.2005 resistance, favoring a short bias.",
       "market_context": "BTC is in a bearish 4‑hour trend and mixed daily trend, with a 1.27% 24h decline. Overall market breadth is broadly negative",
       "result": "PENDING"
+    },
+    {
+      "id": 3537,
+      "created_at": "2026-10-16T16:30:50.095342+00:00",
+      "symbol": "SNDKBUSDT",
+      "direction": "SHORT",
+      "title": "$SNDKB Rejection at Key Supply Zone: Short Setup Activated",
+      "entry_low": 1335.5,
+      "entry_high": 1336.5,
+      "stop_loss": 1383.0,
+      "take_profit": 1242.0,
+      "support": 1329.23,
+      "resistance": 1357.03,
+      "news_line": "",
+      "technical_analysis": "Price sits below EMA9, EMA21, EMA50 and EMA200, confirming a downtrend. MACD histogram is negative and RSI at 38 points to bearish momentum. ADX around 25 shows a moderate trend, while the price has slipped beneath the lower Bollinger Band, indicating oversold conditions but still favoring short pressure. Together, these indicators favor SHORT continuation toward support.",
+      "market_context": "BTC is in a bearish 4‑hour trend and the broader market is broadly negative, with more red than green assets.",
+      "result": "PENDING"
     }
   ]
 }
