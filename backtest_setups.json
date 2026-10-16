@@ -59643,6 +59643,23 @@
       "technical_analysis": "Indicators show upside bias. RSI at 58.8 is modestly bullish, while stochastic near 71 signals strong momentum, while ADX under 20 indicates a weak trend. Overall the setup favors a long move toward the 1‑hour resistance at 1.0522. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
       "market_context": "BTC is up 1.79% over 24 h, showing bullish momentum, though on the 4 h chart it remains bearish under its EMA20/50.",
       "result": "PENDING"
+    },
+    {
+      "id": 3509,
+      "created_at": "2026-10-16T07:30:53.438910+00:00",
+      "symbol": "APTUSDT",
+      "direction": "SHORT",
+      "title": "Bearish Continuation Pattern Confirmed on $APT Chart Structure",
+      "entry_low": 0.86,
+      "entry_high": 0.864,
+      "stop_loss": 0.89648,
+      "take_profit": 0.79304,
+      "support": 0.8302,
+      "resistance": 0.8673,
+      "news_line": "",
+      "technical_analysis": "RSI at 68.9 and Stochastic K at 88.7 signal strong overbought conditions. The order‑book shows a -11.1% imbalance, favoring sellers. ADX 36 confirms a firm trend, tilting the bias short. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
+      "market_context": "BTC is up 1.29% on the day, and the broader market is broadly positive with 92.3% of assets green.",
+      "result": "PENDING"
     }
   ]
 }
