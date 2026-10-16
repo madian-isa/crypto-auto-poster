@@ -59609,6 +59609,23 @@
       "technical_analysis": "ARBUSDT favors a long bias as price holds above the 0.1903 swing low. The MACD histogram is positive, and ADX at 33 confirms a strengthening trend. RSI at 66 shows healthy momentum without extreme overbought conditions. Price is testing the 0.196 resistance level, with bullish EMA alignment supporting upside continuation if this barrier breaks.",
       "market_context": "Bitcoin remains bullish on the 24h timeframe, with broad market sentiment positive. This macro backdrop provides supportive context for ARB's technical setup.",
       "result": "PENDING"
+    },
+    {
+      "id": 3507,
+      "created_at": "2026-10-16T06:40:49.062622+00:00",
+      "symbol": "XPLUSDT",
+      "direction": "LONG",
+      "title": "Key Support Holds Firm: $XPL Bullish Continuation Setup Active",
+      "entry_low": 0.0845,
+      "entry_high": 0.085,
+      "stop_loss": 0.081,
+      "take_profit": 0.09225,
+      "support": 0.08353,
+      "resistance": 0.08618,
+      "news_line": "",
+      "technical_analysis": "Price sits above the 9‑, 21‑ and 200‑EMA, showing a clear bullish alignment. RSI at 58.5 keeps momentum positive, while the order book shows a 25 % bid‑side imbalance. overall Support sits near 0.0835 and resistance around 0.0862. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
+      "market_context": "BTC shows a bearish 4‑hour trend but the broader market is broadly positive, with 91.7 % of assets green and BTC up",
+      "result": "PENDING"
     }
   ]
 }
