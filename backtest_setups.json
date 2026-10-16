@@ -59745,6 +59745,23 @@
       "technical_analysis": "Indicators favor a long setup as price holds above the EMA9 and 21, with a positive MACD histogram signaling strengthening momentum. RSI at 54.72 shows moderate bullish strength without overextension. The ADX above 30 confirms a trending market, supporting the move toward the 0.05219 resistance level. Volume contraction suggests a potential breakout.",
       "market_context": "BTC is trading at 82,264 with a bullish 24h trend, providing a supportive backdrop for altcoin moves.",
       "result": "PENDING"
+    },
+    {
+      "id": 3515,
+      "created_at": "2026-10-16T09:01:01.638305+00:00",
+      "symbol": "ONDOUSDT",
+      "direction": "LONG",
+      "title": "$ONDO Reclaims Key Resistance Level: Flip to Support Complete",
+      "entry_low": 0.462,
+      "entry_high": 0.468,
+      "stop_loss": 0.4458,
+      "take_profit": 0.5034,
+      "support": 0.462,
+      "resistance": 0.4738,
+      "news_line": "",
+      "technical_analysis": "RSI at 66.9 and Stochastic K near 90 indicate overbought conditions, yet the MACD line remains above its signal with a positive histogram, confirming bullish momentum. ADX above 30 shows a strong trend. Price sits above the 9‑ and 21‑EMA and within the 1H support (0.462) and resistance (0.4738) zone, supporting a long bias.",
+      "market_context": "BTC shows a bearish 4‑hour trend despite a slight 24‑hour bullish edge, and market breadth is broadly positive.",
+      "result": "PENDING"
     }
   ]
 }

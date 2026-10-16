@@ -1,6 +1,6 @@
 {
   "date": "2026-10-16",
-  "count": 27,
+  "count": 28,
   "posted_symbols_today": [
     "STRKUSDT",
     "WALUSDT",
@@ -28,6 +28,7 @@
     "ETHUSDT",
     "SOLUSDT",
     "ETHFIUSDT",
-    "CHIPUSDT"
+    "CHIPUSDT",
+    "ONDOUSDT"
   ]
 }
