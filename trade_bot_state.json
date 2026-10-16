@@ -1,6 +1,6 @@
 {
   "date": "2026-10-16",
-  "count": 37,
+  "count": 38,
   "posted_symbols_today": [
     "STRKUSDT",
     "WALUSDT",
@@ -38,6 +38,7 @@
     "QNTUSDT",
     "LINKUSDT",
     "ANIMEUSDT",
-    "XRPUSDT"
+    "XRPUSDT",
+    "BTCUSDT"
   ]
 }
