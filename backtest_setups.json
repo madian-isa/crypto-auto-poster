@@ -60289,6 +60289,23 @@
       "technical_analysis": "Indicators point to downside. RSI at 27 and Stochastic K/D around 3‑4 show oversold conditions, but price sits below EMA9‑200 and MACD histogram is strongly negative, confirming bearish momentum. ADX above 35 signals a firm trend. With 1‑hour support at 349.9 and resistance near 363, the structure favors a short bias.",
       "market_context": "BTC is in a bearish 4‑hour trend and the broader market is broadly negative, with 87.7% of assets red.",
       "result": "PENDING"
+    },
+    {
+      "id": 3547,
+      "created_at": "2026-10-16T20:00:59.057100+00:00",
+      "symbol": "ADAUSDT",
+      "direction": "SHORT",
+      "title": "Smart Money Distribution Visible on $ADA On-Chain Data",
+      "entry_low": 0.2244,
+      "entry_high": 0.2247,
+      "stop_loss": 0.2325,
+      "take_profit": 0.20865,
+      "support": 0.2213,
+      "resistance": 0.2313,
+      "news_line": "",
+      "technical_analysis": "ADA is trading below the 9‑, 21‑ and 50‑EMA, confirming a downtrend. The MACD histogram remains negative and the RSI sits at 38, keeping momentum bearish. Stochastic K at 23 reinforces downside pressure, while a weak ADX (~19) shows an unfocused trend. Order‑book shows a 40% bid imbalance, but price action respects the 0.2213 support and 0.2313 resistance.",
+      "market_context": "BTC is down 0.94% on the 4‑hour chart, showing a bearish trend, and the broader market is broadly negative with 85.9% of",
+      "result": "PENDING"
     }
   ]
 }
