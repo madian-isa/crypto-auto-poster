@@ -60272,6 +60272,23 @@
       "technical_analysis": "RSI at 32.5 and stochastic K below 10 signal oversold conditions, yet MACD histogram is deeply negative and price sits below the 9, 21, 50 and 200 EMA lines, confirming bearish momentum. ADX above 40 shows a strong trend, and price is under the 1‑hour support while nearing the 1‑hour resistance, favoring further downside.",
       "market_context": "BTC is in a bearish 4‑hour trend and the broader market is broadly negative, with 84.8% of assets red.",
       "result": "PENDING"
+    },
+    {
+      "id": 3546,
+      "created_at": "2026-10-16T19:50:56.006934+00:00",
+      "symbol": "TSLABUSDT",
+      "direction": "SHORT",
+      "title": "$TSLAB Fakeout Confirmed: Bulls Trapped at Local Highs",
+      "entry_low": 350.5,
+      "entry_high": 351.5,
+      "stop_loss": 363.5,
+      "take_profit": 326.0,
+      "support": 349.9,
+      "resistance": 363.01,
+      "news_line": "",
+      "technical_analysis": "Indicators point to downside. RSI at 27 and Stochastic K/D around 3‑4 show oversold conditions, but price sits below EMA9‑200 and MACD histogram is strongly negative, confirming bearish momentum. ADX above 35 signals a firm trend. With 1‑hour support at 349.9 and resistance near 363, the structure favors a short bias.",
+      "market_context": "BTC is in a bearish 4‑hour trend and the broader market is broadly negative, with 87.7% of assets red.",
+      "result": "PENDING"
     }
   ]
 }
