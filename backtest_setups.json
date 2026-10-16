@@ -60238,6 +60238,23 @@
       "technical_analysis": "MSTR is trading well below its EMA9‑EMA200 cluster and under the lower Bollinger band. RSI at 23.6 and Stochastic K at 5 signal deep oversold conditions, but MACD is negative with a widening histogram and ADX around 28 confirms a firm downtrend. The short bias aligns with the 1H support at 135.05 and resistance at 141.82.",
       "market_context": "BTC is in a bearish 4‑hour trend and down 1.55% over 24 h, while the broader market is broadly negative with 87.7%",
       "result": "PENDING"
+    },
+    {
+      "id": 3544,
+      "created_at": "2026-10-16T19:10:52.455317+00:00",
+      "symbol": "HYPEUSDT",
+      "direction": "SHORT",
+      "title": "$HYPE Open Interest Drops Rapidly: Long Squeeze Underway",
+      "entry_low": 80.2,
+      "entry_high": 80.5,
+      "stop_loss": 83.564,
+      "take_profit": 73.922,
+      "support": 78.48,
+      "resistance": 80.69,
+      "news_line": "",
+      "technical_analysis": "The price sits under the 9‑, 21‑, 50‑ and 200‑EMA, confirming a downtrend. MACD is negative with a –0.31 histogram, while RSI at 35 and Stochastic K around 17 show oversold but still bearish momentum. Order‑book shows a 15 % bid imbalance, yet the dominant technical picture favors a short bias.",
+      "market_context": "BTC is in a bearish 4‑hour trend and the broader market is broadly negative, with 88 % of assets red.",
+      "result": "PENDING"
     }
   ]
 }
