@@ -60068,6 +60068,23 @@
       "technical_analysis": "All EMAs (9, 21, 50, 200) sit above the current price, MACD is below its signal line, RSI is at 34 and Stochastic K is under 20. ADX near 30 confirms a defined trend. The confluence points to bearish momentum, with price trading between 1‑hour support 0.02715 and resistance 0.03254.",
       "market_context": "BTC is in a bearish 4‑hour trend, down 0.654% over 24 h, and the broader market shows a slight red bias (57.1%",
       "result": "PENDING"
+    },
+    {
+      "id": 3534,
+      "created_at": "2026-10-16T15:30:56.857658+00:00",
+      "symbol": "PROMUSDT",
+      "direction": "SHORT",
+      "title": "$PROM Resistance Test Fails: Bearish Momentum Building Fast",
+      "entry_low": 5.014,
+      "entry_high": 5.018,
+      "stop_loss": 5.194,
+      "take_profit": 4.66,
+      "support": 5.013,
+      "resistance": 5.018,
+      "news_line": "",
+      "technical_analysis": "RSI at 33.8 and Stochastic K at 2 indicate oversold conditions, but price sits below EMA9, EMA21 and EMA50, and MACD histogram is negative, confirming a prevailing downtrend. ADX above 30 shows the trend is strong. The short bias aligns with the 5.018 resistance level. Together, these indicators favor SHORT continuation toward support.",
+      "market_context": "BTC is in a bearish 4‑hour trend and down 0.84% over 24h, while the broader market shows more red than green assets",
+      "result": "PENDING"
     }
   ]
 }
