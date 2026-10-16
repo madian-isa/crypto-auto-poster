@@ -60102,6 +60102,23 @@
       "technical_analysis": "Momentum favors shorts as price hovers near the lower Bollinger Band with RSI at 36.9. The MACD histogram remains negative, confirming downward pressure, while Stochastic K is deeply oversold at 11.9. Price sits below the 9, 21, and 50 EMAs, with the 200 EMA acting as a significant overhead ceiling. Structure suggests continued weakness until the 0.004435 resistance is reclaimed.",
       "market_context": "Bitcoin is bearish on the 4H timeframe, trading below key moving averages, while broader market breadth is negative with 64.2% of assets",
       "result": "PENDING"
+    },
+    {
+      "id": 3536,
+      "created_at": "2026-10-16T16:10:52.172669+00:00",
+      "symbol": "FETUSDT",
+      "direction": "SHORT",
+      "title": "Smart Money Distribution Visible on $FET On-Chain Data",
+      "entry_low": 0.1998,
+      "entry_high": 0.2002,
+      "stop_loss": 0.208,
+      "take_profit": 0.184,
+      "support": 0.1925,
+      "resistance": 0.2005,
+      "news_line": "",
+      "technical_analysis": "FET is trading below all key EMAs (9‑, 21‑, 50‑ and 200‑period), confirming bearish momentum. MACD histogram is negative and RSI sits at 38, while Stochastic K is under 10, indicating oversold conditions but no upward thrust. Price sits beneath the lower Bollinger band and near the 0.2005 resistance, favoring a short bias.",
+      "market_context": "BTC is in a bearish 4‑hour trend and mixed daily trend, with a 1.27% 24h decline. Overall market breadth is broadly negative",
+      "result": "PENDING"
     }
   ]
 }
