@@ -60306,6 +60306,23 @@
       "technical_analysis": "ADA is trading below the 9‑, 21‑ and 50‑EMA, confirming a downtrend. The MACD histogram remains negative and the RSI sits at 38, keeping momentum bearish. Stochastic K at 23 reinforces downside pressure, while a weak ADX (~19) shows an unfocused trend. Order‑book shows a 40% bid imbalance, but price action respects the 0.2213 support and 0.2313 resistance.",
       "market_context": "BTC is down 0.94% on the 4‑hour chart, showing a bearish trend, and the broader market is broadly negative with 85.9% of",
       "result": "PENDING"
+    },
+    {
+      "id": 3548,
+      "created_at": "2026-10-16T20:10:51.971624+00:00",
+      "symbol": "PEPEUSDT",
+      "direction": "SHORT",
+      "title": "Smart Money Distribution Visible on $PEPE On-Chain Data",
+      "entry_low": 4.01e-06,
+      "entry_high": 4.02e-06,
+      "stop_loss": 4.16e-06,
+      "take_profit": 3.72e-06,
+      "support": 4e-06,
+      "resistance": 4.12e-06,
+      "news_line": "",
+      "technical_analysis": "Stochastic K under 40 and a bearish order‑book imbalance reinforce the bias. With price near the 4‑hour resistance zone, short momentum appears favored. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
+      "market_context": "BTC is down 0.84% on a bearish 4‑hour trend; market breadth is broadly negative with 84.3% red assets.",
+      "result": "PENDING"
     }
   ]
 }
