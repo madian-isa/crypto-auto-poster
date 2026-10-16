@@ -59847,6 +59847,23 @@
       "technical_analysis": "The MACD histogram is negative and the price sits below the EMA9/21/50/200 cluster, confirming bearish momentum. ADX at 35 shows a strong trend, while RSI (26) and Stochastic (9) indicate oversold conditions but do not outweigh the downtrend. The pair is testing the 0.002699 resistance with support at 0.002591. Together, these indicators favor SHORT continuation toward support.",
       "market_context": "BTC is up 1.74% on the day, the broader market is broadly positive (93.3% green), and order‑book imbalance favors bids, but ZIL’s",
       "result": "PENDING"
+    },
+    {
+      "id": 3521,
+      "created_at": "2026-10-16T11:30:55.212716+00:00",
+      "symbol": "QNTUSDT",
+      "direction": "LONG",
+      "title": "Major Breakout Signals Emerge on $QNT Higher Timeframes",
+      "entry_low": 211.5,
+      "entry_high": 212.0,
+      "stop_loss": 204.1,
+      "take_profit": 227.05,
+      "support": 211.49,
+      "resistance": 212.02,
+      "news_line": "",
+      "technical_analysis": "RSI at 56.9 and a strong Stochastic K above 80 support the upside. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure. The nearby support and resistance levels frame the current market structure.",
+      "market_context": "BTC is up 2.1% on the day, keeping a bullish tone, and 93% of the market is green, indicating broadly positive breadth.",
+      "result": "PENDING"
     }
   ]
 }
