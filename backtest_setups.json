@@ -60425,6 +60425,23 @@
       "technical_analysis": "MACD sits deep in negative territory with the histogram expanding, and price is under the EMA9, EMA21, EMA50 and EMA200, confirming a strong downtrend. ADX above 30 (37.4) shows the trend is robust. RSI and Stochastic are in oversold zones, but the bearish structure and order‑book imbalance keep pressure to the downside.",
       "market_context": "Bitcoin remains bearish on the 4‑hour and 1‑day charts, and overall market breadth is broadly negative, with 82.6% of assets in red.",
       "result": "PENDING"
+    },
+    {
+      "id": 3555,
+      "created_at": "2026-10-16T22:10:54.332834+00:00",
+      "symbol": "VELODROMEUSDT",
+      "direction": "SHORT",
+      "title": "$VELODROME Open Interest Drops Rapidly: Long Squeeze Underway",
+      "entry_low": 0.03875,
+      "entry_high": 0.03885,
+      "stop_loss": 0.0402,
+      "take_profit": 0.036,
+      "support": 0.03794,
+      "resistance": 0.03958,
+      "news_line": "",
+      "technical_analysis": "MACD sits below its signal with a negative histogram, and Stochastic K is around 26, indicating oversold conditions. ADX above 30 confirms a strong trend, while price remains under EMA21 and EMA50. Order‑book shows a heavy sell imbalance. These factors collectively favor short pressure near the 0.03958 resistance level today.",
+      "market_context": "BTC trades lower, down 0.8% in 24 h, with a bearish 4‑hour trend. The broader crypto market is broadly negative, 82% of",
+      "result": "PENDING"
     }
   ]
 }
