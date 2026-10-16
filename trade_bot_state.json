@@ -1,6 +1,6 @@
 {
   "date": "2026-10-16",
-  "count": 41,
+  "count": 42,
   "posted_symbols_today": [
     "STRKUSDT",
     "WALUSDT",
@@ -42,6 +42,7 @@
     "BTCUSDT",
     "DOTUSDT",
     "DOGEUSDT",
-    "USUALUSDT"
+    "USUALUSDT",
+    "SEIUSDT"
   ]
 }
