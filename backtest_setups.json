@@ -60510,6 +60510,23 @@
       "technical_analysis": "TRX trades just above its EMA cluster (9‑21‑50‑200) and RSI at 58, indicating bullish momentum. ADX at 28 confirms a strong trend, while Stochastic K (54) sits above D (40), adding upward bias. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
       "market_context": "BTC is in a bearish 4‑hour trend and down 0.7% over 24 h, while the broader market shows 74.8% red symbols, indicating",
       "result": "PENDING"
+    },
+    {
+      "id": 3560,
+      "created_at": "2026-10-17T00:10:44.904649+00:00",
+      "symbol": "TIAUSDT",
+      "direction": "LONG",
+      "title": "Bullish Divergence Flashed on $TIA Daily Chart Structure",
+      "entry_low": 0.6882,
+      "entry_high": 0.6885,
+      "stop_loss": 0.660816,
+      "take_profit": 0.743418,
+      "support": 0.6842,
+      "resistance": 0.7148,
+      "news_line": "",
+      "technical_analysis": "Price sits above a clean EMA9‑EMA21‑EMA50‑EMA200 ladder, confirming bullish trend. ADX at 50.6 signals a strong move, while RSI at 63 and Stochastic K crossing above D show upward momentum. Order‑book imbalance favors bids, and the price is near the 1H support at 0.6842, suggesting a long bias. Together, these indicators favor LONG continuation toward resistance.",
+      "market_context": "BTC is in a bearish 4H frame and the broader market is broadly negative, with most assets red, adding cautious backdrop to",
+      "result": "PENDING"
     }
   ]
 }
