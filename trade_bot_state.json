@@ -1,6 +1,6 @@
 {
   "date": "2026-10-17",
-  "count": 64,
+  "count": 65,
   "posted_symbols_today": [
     "TIAUSDT",
     "STRKUSDT",
@@ -65,6 +65,7 @@
     "RSRUSDT",
     "MUBARAKUSDT",
     "WALUSDT",
-    "HBARUSDT"
+    "HBARUSDT",
+    "PARTIUSDT"
   ]
 }
