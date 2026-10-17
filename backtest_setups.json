@@ -61037,6 +61037,23 @@
       "technical_analysis": "FETUSDT favors a short bias as price trades below the 9, 21, and 50 EMAs, confirming a bearish trend. The RSI at 32.59 and Stochastic K at 18.06 indicate oversold conditions, but the MACD histogram remains negative, suggesting sustained downward momentum. Price is pressing against the lower Bollinger Band near 0.1916, while resistance holds firm at 0.2036. A break below",
       "market_context": "BTC is bearish on the 4H chart, sitting below its 20 and 50 EMAs, which adds headwind to altcoins like FET. The",
       "result": "PENDING"
+    },
+    {
+      "id": 3591,
+      "created_at": "2026-10-17T10:20:53.463177+00:00",
+      "symbol": "AVAXUSDT",
+      "direction": "LONG",
+      "title": "Bullish Momentum Accelerates as $AVAX Liquidity Sweep Completes",
+      "entry_low": 10.012,
+      "entry_high": 10.018,
+      "stop_loss": 9.66,
+      "take_profit": 10.725,
+      "support": 9.928,
+      "resistance": 10.025,
+      "news_line": "",
+      "technical_analysis": "MACD line sits above its signal with a positive histogram, indicating bullish momentum. RSI sits near 50 and ADX is low, suggesting a weak trend, but order‑book imbalance leans toward bids. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
+      "market_context": "BTC is bearish, down 0.54% on the 24h chart, and the overall market breadth is broadly negative with 88.5% red assets.",
+      "result": "PENDING"
     }
   ]
 }
