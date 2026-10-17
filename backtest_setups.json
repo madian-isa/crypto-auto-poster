@@ -60578,6 +60578,23 @@
       "technical_analysis": "Price sits under EMA9 (4.876) and EMA21 (5.018), with MACD line below its signal and a negative histogram, indicating bearish momentum. RSI at 42 and Stochastic K around 37 stay below neutral, while ADX ~27 confirms a moderate trend. Order‑book shows a 10% ask‑side imbalance and volume has collapsed, supporting a short bias.",
       "market_context": "BTC is in a bearish 4‑hour trend and the broader market shows 75.7% red assets, reinforcing negative sentiment.",
       "result": "PENDING"
+    },
+    {
+      "id": 3564,
+      "created_at": "2026-10-17T01:01:32.379774+00:00",
+      "symbol": "ZROUSDT",
+      "direction": "SHORT",
+      "title": "Moving Average Death Cross Signals Downward Trend for $ZRO",
+      "entry_low": 1.96,
+      "entry_high": 1.963,
+      "stop_loss": 2.031,
+      "take_profit": 1.8225,
+      "support": 1.887,
+      "resistance": 1.963,
+      "news_line": "",
+      "technical_analysis": "ZRO is trading below the 9‑, 21‑ and 200‑EMA, with MACD histogram deep negative and RSI at 35, while Stochastic K sits under 10. ADX below 25 signals a weak trend. The pair sits near the 1.963 resistance, suggesting short bias toward the 1.887 support zone. Together, these indicators favor SHORT continuation toward support.",
+      "market_context": "BTC is in a bearish 4‑hour trend and 24‑hour market breadth is broadly negative, with 76.8% of assets red.",
+      "result": "PENDING"
     }
   ]
 }
