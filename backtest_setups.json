@@ -61292,6 +61292,23 @@
       "technical_analysis": "MACD is below its signal and the histogram is negative, while Stochastic K sits under 40, both pointing to downside momentum. Price sits under EMA21 and EMA50, confirming a bearish bias. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
       "market_context": "Bitcoin is in a bearish 4‑hour trend and the broader market is broadly negative, reinforcing the downside outlook for USD1USDT.",
       "result": "PENDING"
+    },
+    {
+      "id": 3606,
+      "created_at": "2026-10-17T15:20:45.102471+00:00",
+      "symbol": "DOTUSDT",
+      "direction": "SHORT",
+      "title": "$DOT Volume Decreases on Rally: Weak Buyers Exposed",
+      "entry_low": 1.155,
+      "entry_high": 1.159,
+      "stop_loss": 1.199,
+      "take_profit": 1.073,
+      "support": 1.126,
+      "resistance": 1.159,
+      "news_line": "",
+      "technical_analysis": "Price sits below the 9‑, 21‑ and 200‑EMA, MACD histogram is negative and RSI is under 50, all pointing to downside pressure. Stochastic is deep in oversold territory but the order‑book shows a 21 % bid imbalance. The 1H swing places resistance at 1.159 and support at 1.126, favouring a short bias.",
+      "market_context": "BTC is in a bearish 4‑hour trend and mixed on the daily, down 0.21 % over 24 h. The broader market is",
+      "result": "PENDING"
     }
   ]
 }
