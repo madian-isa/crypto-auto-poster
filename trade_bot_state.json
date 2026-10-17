@@ -1,6 +1,6 @@
 {
   "date": "2026-10-17",
-  "count": 73,
+  "count": 74,
   "posted_symbols_today": [
     "TIAUSDT",
     "STRKUSDT",
@@ -74,6 +74,7 @@
     "TRUMPUSDT",
     "KORUBUSDT",
     "XPLUSDT",
-    "ASTERUSDT"
+    "ASTERUSDT",
+    "NIGHTUSDT"
   ]
 }

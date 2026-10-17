@@ -61751,6 +61751,23 @@
       "technical_analysis": "The price sits below EMA9, EMA21 and EMA200, confirming a downtrend. MACD histogram is negative and the line is under the signal, while stochastic K is under its D line, both pointing bearish. Immediate resistance lies around 0.7067 on the chart, with support near 0.6984. Together, these indicators favor SHORT continuation toward support.",
       "market_context": "BTC is in a bearish 4‑hour trend and the broader market is broadly negative, with 90% of assets down.",
       "result": "PENDING"
+    },
+    {
+      "id": 3633,
+      "created_at": "2026-10-17T23:50:50.466297+00:00",
+      "symbol": "NIGHTUSDT",
+      "direction": "SHORT",
+      "title": "Bearish Continuation Pattern Confirmed on $NIGHT Chart Structure",
+      "entry_low": 0.04155,
+      "entry_high": 0.04178,
+      "stop_loss": 0.0433316,
+      "take_profit": 0.0383318,
+      "support": 0.04067,
+      "resistance": 0.04178,
+      "news_line": "",
+      "technical_analysis": "Price sits below all EMA lines, confirming a downtrend. MACD is negative with a bearish histogram, while RSI at 41 signals modest weakness. Stochastic is deep in oversold territory, but the dominant EMA and MACD readings favor short pressure near the 0.04178 resistance level. Together, these indicators favor SHORT continuation toward support.",
+      "market_context": "BTC is bearish on the 4‑hour chart and mixed on daily, while the broader market shows 88.9% red assets, reinforcing the short",
+      "result": "PENDING"
     }
   ]
 }
