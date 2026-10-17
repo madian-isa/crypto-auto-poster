@@ -61088,6 +61088,23 @@
       "technical_analysis": "Indicators point to upside potential. Price sits just above the 200‑EMA and the lower Bollinger band, while the Stochastic K at 12 % and RSI around 42 suggest oversold conditions. A strong bid‑side order‑book imbalance (≈32 % more bids) adds buying pressure. Support sits near 0.8294, with resistance at 0.839.",
       "market_context": "BTC is in a bearish 4‑hour trend and the broader market shows 87.7 % red, indicating a generally negative backdrop.",
       "result": "PENDING"
+    },
+    {
+      "id": 3594,
+      "created_at": "2026-10-17T10:50:43.913822+00:00",
+      "symbol": "BNBUSDT",
+      "direction": "SHORT",
+      "title": "Major Support Breakdown Confirmed on $BNB Higher Timeframes",
+      "entry_low": 721.56,
+      "entry_high": 723.27,
+      "stop_loss": 761.0,
+      "take_profit": 645.245,
+      "support": 721.49,
+      "resistance": 723.27,
+      "news_line": "",
+      "technical_analysis": "BNB trades below key EMAs, with price pinned under the 200-period moving average at 739.25. Short-term structure favors a drop toward the 718.85 Bollinger lower band, as bearish pressure remains dominant across multiple timeframes. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
+      "market_context": "Bitcoin is bearish on the 4-hour chart, with broader market breadth showing 88.4% red assets.",
+      "result": "PENDING"
     }
   ]
 }
