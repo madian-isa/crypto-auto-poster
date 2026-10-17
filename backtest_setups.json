@@ -60986,6 +60986,23 @@
       "technical_analysis": "Indicators favor a short bias as price sits below key EMAs and MACD histogram remains negative. Orderbook shows significant sell pressure with negative imbalance. Structure remains constrained between immediate resistance and support, aligning with the broader bearish 4H trend. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
       "market_context": "BTC is down 0.59% in 24h with broadly negative market breadth.",
       "result": "PENDING"
+    },
+    {
+      "id": 3588,
+      "created_at": "2026-10-17T09:20:49.558796+00:00",
+      "symbol": "ERAUSDT",
+      "direction": "LONG",
+      "title": "Strong Accumulation Detected: $ERA Prepares for Next Wave Up",
+      "entry_low": 0.06,
+      "entry_high": 0.062,
+      "stop_loss": 0.0585,
+      "take_profit": 0.066,
+      "support": 0.0585,
+      "resistance": 0.0697,
+      "news_line": "",
+      "technical_analysis": "EMA9, EMA21, EMA50 and EMA200 are all below the current price, confirming an uptrend. MACD histogram is positive and the MACD line sits above its signal, adding bullish momentum. ADX above 30 shows a strong trend. Despite an overbought RSI, the overall structure favors a long bias. Together, these indicators favor LONG continuation toward resistance.",
+      "market_context": "BTC is in a bearish 4‑hour trend and the broader market is broadly negative, with 88% of assets down. This backdrop adds",
+      "result": "PENDING"
     }
   ]
 }
