@@ -61666,6 +61666,23 @@
       "technical_analysis": "Price sits below all EMA levels (9‑200) and the MACD histogram is negative, indicating bearish momentum. RSI is deep oversold at 27 and the price is touching the lower Bollinger Band, while the order book shows a modest ask‑side imbalance. The short bias aligns with the 4.06 USDT resistance. Together, these indicators favor SHORT continuation toward support.",
       "market_context": "BTC is in a bearish 4‑hour trend and mixed on the daily, with a 0.59% decline and broadly negative market breadth (8.8%",
       "result": "PENDING"
+    },
+    {
+      "id": 3628,
+      "created_at": "2026-10-17T22:20:49.560475+00:00",
+      "symbol": "ONDOUSDT",
+      "direction": "SHORT",
+      "title": "$ONDO Derivative Data Shows Heavy Long Liquidations Incoming",
+      "entry_low": 0.43,
+      "entry_high": 0.436,
+      "stop_loss": 0.453,
+      "take_profit": 0.393,
+      "support": 0.4223,
+      "resistance": 0.457,
+      "news_line": "",
+      "technical_analysis": "ONDOUSDT favors shorts as price remains trapped below the 200 EMA and MACD histogram stays negative. Resistance at 0.4570 caps upward movement, and the broader bearish BTC context reinforces the downward bias. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
+      "market_context": "BTC is trading bearishly at 81,270, with the broader market 91.7% red, indicating significant downside pressure across the sector.",
+      "result": "PENDING"
     }
   ]
 }
