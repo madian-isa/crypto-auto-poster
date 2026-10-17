@@ -60918,6 +60918,23 @@
       "technical_analysis": "ADX at 25 confirms moderate strength, and the order‑book slight bid bias adds downside pressure toward the 1.303 support. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
       "market_context": "BTC is in a bearish 4‑hour trend and down 0.71% over 24 h, while the broader market is broadly negative with 87.4%",
       "result": "PENDING"
+    },
+    {
+      "id": 3584,
+      "created_at": "2026-10-17T08:01:01.307223+00:00",
+      "symbol": "SOLUSDT",
+      "direction": "LONG",
+      "title": "Technical Signals Turn Positive as Market Momentum Builds",
+      "entry_low": 104.6,
+      "entry_high": 104.7,
+      "stop_loss": 100.464,
+      "take_profit": 113.022,
+      "support": 104.59,
+      "resistance": 105.25,
+      "news_line": "",
+      "technical_analysis": "MACD histogram is positive (0.103) and the MACD line sits above its signal, showing bullish momentum. Price sits above the 9‑, 21‑ and 50‑period EMAs, reinforcing an upward bias. Although the stochastic is overbought (K 93, D 90), the combined signals favor a long move toward the 105.25 resistance and may test higher levels if buying pressure holds.",
+      "market_context": "BTC is in a bearish 4‑hour trend and the broader crypto market is broadly negative, with 86.4% of assets red.",
+      "result": "PENDING"
     }
   ]
 }
