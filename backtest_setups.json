@@ -60935,6 +60935,23 @@
       "technical_analysis": "MACD histogram is positive (0.103) and the MACD line sits above its signal, showing bullish momentum. Price sits above the 9‑, 21‑ and 50‑period EMAs, reinforcing an upward bias. Although the stochastic is overbought (K 93, D 90), the combined signals favor a long move toward the 105.25 resistance and may test higher levels if buying pressure holds.",
       "market_context": "BTC is in a bearish 4‑hour trend and the broader crypto market is broadly negative, with 86.4% of assets red.",
       "result": "PENDING"
+    },
+    {
+      "id": 3585,
+      "created_at": "2026-10-17T08:30:54.918084+00:00",
+      "symbol": "ETHUSDT",
+      "direction": "LONG",
+      "title": "On-Chain Metrics Confirm Strong Whale Accumulation on $ETH",
+      "entry_low": 2428.0,
+      "entry_high": 2432.0,
+      "stop_loss": 2332.8,
+      "take_profit": 2624.4,
+      "support": 2424.51,
+      "resistance": 2467.05,
+      "news_line": "",
+      "technical_analysis": "EMA9/21/50 sit below price, MACD histogram positive and line above signal, indicating bullish momentum. Stochastic K at 92 signals overbought, suggesting a possible pullback. RSI near neutral. Price is near the 1‑hour support at 2424.5, with resistance at 2467.0. Overall the setup leans long. Together, these indicators favor LONG continuation toward resistance.",
+      "market_context": "BTC is in a bearish 4‑hour trend and the broader market is broadly negative, with 86.5% of assets red. ETH faces sell‑side",
+      "result": "PENDING"
     }
   ]
 }
