@@ -61377,6 +61377,23 @@
       "technical_analysis": "RSI at 34.8 and Stochastic K under 7 point to oversold conditions, but price sits beneath the 9‑, 21‑ and 50‑EMA, confirming a prevailing downtrend. MACD remains negative with a shrinking histogram, and ADX around 26 shows the trend is still active. The pair respects the 1‑hour resistance near 59.7, supporting a short outlook.",
       "market_context": "BTC is in a bearish 4‑hour trend, while the 1‑day picture is mixed. Overall market breadth is broadly negative with only 10.7",
       "result": "PENDING"
+    },
+    {
+      "id": 3611,
+      "created_at": "2026-10-17T16:50:51.167810+00:00",
+      "symbol": "AAVEUSDT",
+      "direction": "SHORT",
+      "title": "Major Support Breakdown Confirmed on $AAVE Higher Timeframes",
+      "entry_low": 150.5,
+      "entry_high": 152.1,
+      "stop_loss": 158.2,
+      "take_profit": 137.5,
+      "support": 147.27,
+      "resistance": 154.41,
+      "news_line": "",
+      "technical_analysis": "Bearish momentum is evident as price trades below the 9, 21, and 50 EMAs. RSI at 32.58 and a negative MACD histogram confirm downward pressure. The orderbook shows a 20.89% bid imbalance, but price rejection at 154.41 resistance suggests sellers are in control. Together, these indicators favor SHORT continuation toward support.",
+      "market_context": "BTC is trading bearishly at 81,309, below its 4H EMAs. Market breadth is broadly negative with 87.2% of assets red, providing a",
+      "result": "PENDING"
     }
   ]
 }
