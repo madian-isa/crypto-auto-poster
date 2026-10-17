@@ -61020,6 +61020,23 @@
       "technical_analysis": "MACD is bearish with a negative histogram, and price sits below EMA21, EMA50 and EMA200, confirming downtrend pressure. RSI at 46.6 hints at weakening momentum, while ADX around 20 shows a lack of strong trend. Stochastic is high but the broader signals favor a short bias near the 276.2 resistance zone.",
       "market_context": "BTC is bearish on the 4‑hour chart and mixed on daily, while overall market breadth is broadly negative.",
       "result": "PENDING"
+    },
+    {
+      "id": 3590,
+      "created_at": "2026-10-17T09:40:49.501609+00:00",
+      "symbol": "FETUSDT",
+      "direction": "SHORT",
+      "title": "$FET Fakeout Confirmed: Bulls Trapped at Local Highs",
+      "entry_low": 0.1945,
+      "entry_high": 0.1955,
+      "stop_loss": 0.2035,
+      "take_profit": 0.178,
+      "support": 0.1941,
+      "resistance": 0.2036,
+      "news_line": "",
+      "technical_analysis": "FETUSDT favors a short bias as price trades below the 9, 21, and 50 EMAs, confirming a bearish trend. The RSI at 32.59 and Stochastic K at 18.06 indicate oversold conditions, but the MACD histogram remains negative, suggesting sustained downward momentum. Price is pressing against the lower Bollinger Band near 0.1916, while resistance holds firm at 0.2036. A break below",
+      "market_context": "BTC is bearish on the 4H chart, sitting below its 20 and 50 EMAs, which adds headwind to altcoins like FET. The",
+      "result": "PENDING"
     }
   ]
 }
