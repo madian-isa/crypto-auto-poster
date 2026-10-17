@@ -60544,6 +60544,23 @@
       "technical_analysis": "Short bias: price sits below EMA21, EMA50 and EMA200, MACD line is under the signal with a negative histogram, RSI at 40.6 and Stochastic K at 28 indicate weakening momentum. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
       "market_context": "BTC is in a bearish 4‑hour trend and the broader market is broadly negative, reinforcing downside pressure on altcoins.",
       "result": "PENDING"
+    },
+    {
+      "id": 3562,
+      "created_at": "2026-10-17T00:30:58.351145+00:00",
+      "symbol": "ZILUSDT",
+      "direction": "SHORT",
+      "title": "Overbought Indicators Signal Impending Correction for $ZIL",
+      "entry_low": 0.00256,
+      "entry_high": 0.00259,
+      "stop_loss": 0.0027,
+      "take_profit": 0.002325,
+      "support": 0.002477,
+      "resistance": 0.00259,
+      "news_line": "",
+      "technical_analysis": "RSI at 22 and Stochastic K under 4 show deep oversold conditions, but price sits below EMA9, EMA21, EMA50 and EMA200, confirming a strong downtrend. ADX 46 signals a firm trend, while MACD remains slightly negative. The order book shows modest bid‑side pressure. Overall indicators favor short momentum toward the nearby support.",
+      "market_context": "BTC is in a bearish 4‑hour trend and the broader market is broadly negative, reinforcing downside bias for ZIL.",
+      "result": "PENDING"
     }
   ]
 }
