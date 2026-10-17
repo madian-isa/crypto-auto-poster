@@ -60969,6 +60969,23 @@
       "technical_analysis": "DOGE trades below the 200 EMA, signaling a dominant bearish structure. The orderbook displays a sell-side imbalance, with asks outweighing bids, reinforcing downward pressure. Broader market weakness and BTC’s bearish 4H trend further support this outlook. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
       "market_context": "BTC is bearish on the 4H chart, trading below key EMAs. The broader market is broadly negative, with 87.4% of assets showing",
       "result": "PENDING"
+    },
+    {
+      "id": 3587,
+      "created_at": "2026-10-17T09:00:55.095059+00:00",
+      "symbol": "BTCUSDT",
+      "direction": "SHORT",
+      "title": "$BTC Resistance Test Fails: Bearish Momentum Building Fast",
+      "entry_low": 81600.0,
+      "entry_high": 81750.0,
+      "stop_loss": 84900.0,
+      "take_profit": 75225.0,
+      "support": 81688.0,
+      "resistance": 81770.0,
+      "news_line": "",
+      "technical_analysis": "Indicators favor a short bias as price sits below key EMAs and MACD histogram remains negative. Orderbook shows significant sell pressure with negative imbalance. Structure remains constrained between immediate resistance and support, aligning with the broader bearish 4H trend. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
+      "market_context": "BTC is down 0.59% in 24h with broadly negative market breadth.",
+      "result": "PENDING"
     }
   ]
 }
