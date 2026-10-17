@@ -61513,6 +61513,23 @@
       "technical_analysis": "MACD histogram is negative and the MACD line sits below its signal, showing bearish momentum. Price is under the 9‑, 21‑ and 50‑EMA, while RSI at 43 signals weakness. Stochastic is oversold, but order book shows a 23 % bid imbalance. With the 1H swing high at 0.2569 and low at 0.2482, the structure favors a short move toward lower",
       "market_context": "BTC is in a bearish 4‑hour trend while the broader market is broadly negative, with 74 % of assets red.",
       "result": "PENDING"
+    },
+    {
+      "id": 3619,
+      "created_at": "2026-10-17T19:30:55.411846+00:00",
+      "symbol": "TRXUSDT",
+      "direction": "SHORT",
+      "title": "$TRX Derivative Data Shows Heavy Long Liquidations Incoming",
+      "entry_low": 0.3355,
+      "entry_high": 0.3358,
+      "stop_loss": 0.3474,
+      "take_profit": 0.31215,
+      "support": 0.334,
+      "resistance": 0.3358,
+      "news_line": "",
+      "technical_analysis": "Short bias dominates TRXUSDT. MACD histogram is negative and MACD line remains below its signal, confirming bearish momentum. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
+      "market_context": "BTC is in a bearish 4H trend and overall market breadth is broadly negative, with 76% of assets down. This pressure adds",
+      "result": "PENDING"
     }
   ]
 }
