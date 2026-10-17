@@ -60952,6 +60952,23 @@
       "technical_analysis": "EMA9/21/50 sit below price, MACD histogram positive and line above signal, indicating bullish momentum. Stochastic K at 92 signals overbought, suggesting a possible pullback. RSI near neutral. Price is near the 1‑hour support at 2424.5, with resistance at 2467.0. Overall the setup leans long. Together, these indicators favor LONG continuation toward resistance.",
       "market_context": "BTC is in a bearish 4‑hour trend and the broader market is broadly negative, with 86.5% of assets red. ETH faces sell‑side",
       "result": "PENDING"
+    },
+    {
+      "id": 3586,
+      "created_at": "2026-10-17T08:50:46.286159+00:00",
+      "symbol": "DOGEUSDT",
+      "direction": "SHORT",
+      "title": "High Conviction Short Opportunity as $DOGE Tests Supply Wall",
+      "entry_low": 0.0805,
+      "entry_high": 0.0807,
+      "stop_loss": 0.0839,
+      "take_profit": 0.074,
+      "support": 0.0798,
+      "resistance": 0.0841,
+      "news_line": "",
+      "technical_analysis": "DOGE trades below the 200 EMA, signaling a dominant bearish structure. The orderbook displays a sell-side imbalance, with asks outweighing bids, reinforcing downward pressure. Broader market weakness and BTC’s bearish 4H trend further support this outlook. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
+      "market_context": "BTC is bearish on the 4H chart, trading below key EMAs. The broader market is broadly negative, with 87.4% of assets showing",
+      "result": "PENDING"
     }
   ]
 }
