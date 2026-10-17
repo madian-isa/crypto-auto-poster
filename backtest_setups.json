@@ -61003,6 +61003,23 @@
       "technical_analysis": "EMA9, EMA21, EMA50 and EMA200 are all below the current price, confirming an uptrend. MACD histogram is positive and the MACD line sits above its signal, adding bullish momentum. ADX above 30 shows a strong trend. Despite an overbought RSI, the overall structure favors a long bias. Together, these indicators favor LONG continuation toward resistance.",
       "market_context": "BTC is in a bearish 4‑hour trend and the broader market is broadly negative, with 88% of assets down. This backdrop adds",
       "result": "PENDING"
+    },
+    {
+      "id": 3589,
+      "created_at": "2026-10-17T09:30:47.151856+00:00",
+      "symbol": "TAOUSDT",
+      "direction": "SHORT",
+      "title": "Bearish Continuation Pattern Confirmed on $TAO Chart Structure",
+      "entry_low": 275.9,
+      "entry_high": 276.2,
+      "stop_loss": 286.0,
+      "take_profit": 256.15,
+      "support": 274.3,
+      "resistance": 276.2,
+      "news_line": "",
+      "technical_analysis": "MACD is bearish with a negative histogram, and price sits below EMA21, EMA50 and EMA200, confirming downtrend pressure. RSI at 46.6 hints at weakening momentum, while ADX around 20 shows a lack of strong trend. Stochastic is high but the broader signals favor a short bias near the 276.2 resistance zone.",
+      "market_context": "BTC is bearish on the 4‑hour chart and mixed on daily, while overall market breadth is broadly negative.",
+      "result": "PENDING"
     }
   ]
 }
