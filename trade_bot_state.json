@@ -1,6 +1,6 @@
 {
   "date": "2026-10-17",
-  "count": 54,
+  "count": 55,
   "posted_symbols_today": [
     "TIAUSDT",
     "STRKUSDT",
@@ -55,6 +55,7 @@
     "LTCUSDT",
     "AAVEUSDT",
     "ALTUSDT",
-    "\u725b\u6765USDT"
+    "\u725b\u6765USDT",
+    "ARBUSDT"
   ]
 }
