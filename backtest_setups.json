@@ -60561,6 +60561,23 @@
       "technical_analysis": "RSI at 22 and Stochastic K under 4 show deep oversold conditions, but price sits below EMA9, EMA21, EMA50 and EMA200, confirming a strong downtrend. ADX 46 signals a firm trend, while MACD remains slightly negative. The order book shows modest bid‑side pressure. Overall indicators favor short momentum toward the nearby support.",
       "market_context": "BTC is in a bearish 4‑hour trend and the broader market is broadly negative, reinforcing downside bias for ZIL.",
       "result": "PENDING"
+    },
+    {
+      "id": 3563,
+      "created_at": "2026-10-17T00:50:42.678922+00:00",
+      "symbol": "PROMUSDT",
+      "direction": "SHORT",
+      "title": "Technical Signals Turn Negative as $PROM Selling Pressure Rises",
+      "entry_low": 4.875,
+      "entry_high": 5.084,
+      "stop_loss": 5.27,
+      "take_profit": 4.3985,
+      "support": 4.407,
+      "resistance": 5.084,
+      "news_line": "",
+      "technical_analysis": "Price sits under EMA9 (4.876) and EMA21 (5.018), with MACD line below its signal and a negative histogram, indicating bearish momentum. RSI at 42 and Stochastic K around 37 stay below neutral, while ADX ~27 confirms a moderate trend. Order‑book shows a 10% ask‑side imbalance and volume has collapsed, supporting a short bias.",
+      "market_context": "BTC is in a bearish 4‑hour trend and the broader market shows 75.7% red assets, reinforcing negative sentiment.",
+      "result": "PENDING"
     }
   ]
 }
