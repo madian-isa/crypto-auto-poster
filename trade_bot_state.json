@@ -1,11 +1,12 @@
 {
   "date": "2026-10-17",
-  "count": 5,
+  "count": 6,
   "posted_symbols_today": [
     "TIAUSDT",
     "STRKUSDT",
     "ZILUSDT",
     "PROMUSDT",
-    "ZROUSDT"
+    "ZROUSDT",
+    "ZECUSDT"
   ]
 }
