@@ -62482,6 +62482,23 @@
       "technical_analysis": "RSI at 31.6 and Stochastic K at 18 signal oversold conditions, while MACD line sits just above its signal and the price has slipped beneath the lower Bollinger band, suggesting a potential bounce. Order‑book shows a 20% bid imbalance. With 1H support at 0.7697 and resistance near 0.801, momentum leans bullish.",
       "market_context": "BTC is in a bearish 4H trend and the broader crypto market is broadly negative, with 91.8% red assets.",
       "result": "PENDING"
+    },
+    {
+      "id": 3676,
+      "created_at": "2026-10-18T15:30:52.092971+00:00",
+      "symbol": "QKCUSDT",
+      "direction": "LONG",
+      "title": "Buyers Defend Key Demand Zone: $QKC Ready for Extension",
+      "entry_low": 0.00248,
+      "entry_high": 0.00253,
+      "stop_loss": 0.00239,
+      "take_profit": 0.002735,
+      "support": 0.002477,
+      "resistance": 0.00346,
+      "news_line": "",
+      "technical_analysis": "MACD shows a positive histogram and the line sits above its signal, confirming bullish momentum. Price sits above the 9‑, 21‑ and 50‑EMA, while ADX at 33 signals a strong trend. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
+      "market_context": "BTC is bearish on the 4H chart and down about 0.5% in 24h; overall market breadth is broadly negative.",
+      "result": "PENDING"
     }
   ]
 }
