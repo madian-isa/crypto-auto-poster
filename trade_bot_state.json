@@ -1,6 +1,6 @@
 {
   "date": "2026-10-18",
-  "count": 27,
+  "count": 28,
   "posted_symbols_today": [
     "AVAUSDT",
     "GTCUSDT",
@@ -28,6 +28,7 @@
     "QUICKUSDT",
     "HBARUSDT",
     "BTCUSDT",
-    "BNBUSDT"
+    "BNBUSDT",
+    "XRPUSDT"
   ]
 }
