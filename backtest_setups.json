@@ -62176,6 +62176,23 @@
       "technical_analysis": "Price sits below EMA9, EMA21, EMA50 and EMA200, confirming a bearish framework. MACD line and histogram are negative, reinforcing downside momentum. Stochastic K at 10.7 signals oversold conditions that often precede further drops. Order‑book shows a 19.6% sell‑side imbalance, adding pressure to push lower. Together, these indicators favor SHORT continuation toward support.",
       "market_context": "BTC is in a bearish 4‑hour trend and the broader market is broadly negative, with 91% of assets red, supporting the short",
       "result": "PENDING"
+    },
+    {
+      "id": 3658,
+      "created_at": "2026-10-18T08:40:49.491751+00:00",
+      "symbol": "HBARUSDT",
+      "direction": "SHORT",
+      "title": "$HBAR Distribution Phase Ends: Downside Target Zone Set",
+      "entry_low": 0.0869,
+      "entry_high": 0.087,
+      "stop_loss": 0.0901,
+      "take_profit": 0.08065,
+      "support": 0.08572,
+      "resistance": 0.08862,
+      "news_line": "",
+      "technical_analysis": "The bias leans short. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
+      "market_context": "BTC shows a modest 0.09% rise and is bullish on the 24‑hour chart, yet the overall crypto market is broadly negative with",
+      "result": "PENDING"
     }
   ]
 }
