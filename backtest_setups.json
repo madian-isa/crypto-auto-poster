@@ -62074,6 +62074,23 @@
       "technical_analysis": "MACD histogram is positive, showing bullish momentum, while RSI at 38 signals oversold conditions. Price rests just above the lower Bollinger band and near the 1‑hour support of 0.186, providing a clear floor. Order‑book shows a 35 % bid imbalance, and EMA9 at 0.1895 lies just above price, ready to act as support if buying returns.",
       "market_context": "BTC up 0.213% on the day while the overall market breadth is broadly negative, with 93.2% red.",
       "result": "PENDING"
+    },
+    {
+      "id": 3652,
+      "created_at": "2026-10-18T06:30:56.051976+00:00",
+      "symbol": "INJUSDT",
+      "direction": "SHORT",
+      "title": "Moving Average Death Cross Signals Downward Trend for $INJ",
+      "entry_low": 8.7,
+      "entry_high": 8.74,
+      "stop_loss": 9.05,
+      "take_profit": 8.06,
+      "support": 8.456,
+      "resistance": 8.748,
+      "news_line": "",
+      "technical_analysis": "Short bias dominates: price sits below EMA9, EMA21 and EMA50, MACD line trails its signal, and Stochastic K is under its D, while RSI sits under 50. These bearish signals line up against the 1‑hour resistance at 8.748, suggesting downside momentum toward the nearby support zone and could test the 8.456 support level.",
+      "market_context": "BTC is marginally bullish (+0.11%) but the overall market breadth is broadly negative, with 91.8% of coins red.",
+      "result": "PENDING"
     }
   ]
 }
