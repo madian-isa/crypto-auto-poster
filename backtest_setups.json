@@ -61938,6 +61938,23 @@
       "technical_analysis": "BATUSDT favors a short bias as price trades below key EMAs and MACD momentum remains negative. The 1H chart shows rejection near the 0.1900 resistance, with RSI at 38.76 indicating weak upward pressure. Volume spikes of 63% confirm selling interest. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
       "market_context": "Bitcoin is trading at 81,737 with a mixed daily trend, providing a neutral background. The broader market is 89.6% red, reflecting negative",
       "result": "PENDING"
+    },
+    {
+      "id": 3644,
+      "created_at": "2026-10-18T02:50:53.745589+00:00",
+      "symbol": "PUMPUSDT",
+      "direction": "SHORT",
+      "title": "$PUMP Fakeout Confirmed: Bulls Trapped at Local Highs",
+      "entry_low": 0.00448,
+      "entry_high": 0.0045,
+      "stop_loss": 0.00466,
+      "take_profit": 0.00415,
+      "support": 0.00432,
+      "resistance": 0.004492,
+      "news_line": "",
+      "technical_analysis": "Price sits below EMA9, EMA21, EMA50 and EMA200, confirming a bearish trend. MACD is negative, RSI at 39.8 and Stochastic K/D below 30 signal weakening momentum. ADX around 26 shows a moderate trend, while volume has slipped 28%. The pair respects the 0.00432‑0.004492 swing range, favoring a short bias. Together, these indicators favor SHORT continuation toward support.",
+      "market_context": "BTC is slightly bullish on the day, but the broader market remains broadly negative, with only 9.9% of assets in the green.",
+      "result": "PENDING"
     }
   ]
 }
