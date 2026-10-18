@@ -62006,6 +62006,23 @@
       "technical_analysis": "MACD is negative and sits below its signal line, while the price remains under the 21‑ and 50‑period EMAs, indicating bearish momentum. RSI sits near neutral at 47 and ADX shows a weak trend. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
       "market_context": "BTC is up 0.46% on the day, yet overall market breadth remains broadly negative with only about 10% of assets green.",
       "result": "PENDING"
+    },
+    {
+      "id": 3648,
+      "created_at": "2026-10-18T04:50:48.384763+00:00",
+      "symbol": "SUIUSDT",
+      "direction": "SHORT",
+      "title": "$SUI Resistance Test Fails: Bearish Momentum Building Fast",
+      "entry_low": 0.9915,
+      "entry_high": 0.9935,
+      "stop_loss": 1.0288,
+      "take_profit": 0.9199,
+      "support": 0.9696,
+      "resistance": 0.9965,
+      "news_line": "",
+      "technical_analysis": "Price sits just below the 1‑hour resistance at 0.9965 and above short‑term EMAs, suggesting a pull‑back toward the 0.9911‑0.9696 support band. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
+      "market_context": "BTC shows a modest 0.3% bullish gain, yet overall market breadth is broadly negative with 89% red assets, underscoring caution.",
+      "result": "PENDING"
     }
   ]
 }
