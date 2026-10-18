@@ -1,12 +1,13 @@
 {
   "date": "2026-10-18",
-  "count": 6,
+  "count": 7,
   "posted_symbols_today": [
     "AVAUSDT",
     "GTCUSDT",
     "EPICUSDT",
     "ERAUSDT",
     "STRKUSDT",
-    "TIAUSDT"
+    "TIAUSDT",
+    "SANDUSDT"
   ]
 }
