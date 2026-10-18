@@ -62040,6 +62040,23 @@
       "technical_analysis": "Price sits below EMA9, EMA21, EMA50 and EMA200, showing clear bearish structure. RSI at 45 signals modest downside pressure, while ADX 23 indicates a weak trend. Order‑book shows a 40% ask‑side imbalance. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
       "market_context": "BTC is marginally bullish (+0.3%) while the broader market remains broadly negative, with only 9.4% of assets green.",
       "result": "PENDING"
+    },
+    {
+      "id": 3650,
+      "created_at": "2026-10-18T05:20:54.078679+00:00",
+      "symbol": "NEARUSDT",
+      "direction": "SHORT",
+      "title": "Bearish Divergence Spotted on $NEAR: Downside Targets Ahead",
+      "entry_low": 5.0,
+      "entry_high": 5.01,
+      "stop_loss": 5.2,
+      "take_profit": 4.615,
+      "support": 4.952,
+      "resistance": 5.014,
+      "news_line": "",
+      "technical_analysis": "The EMA stack shows a clear bearish hierarchy (EMA9 < EMA21 < EMA50 < EMA200) and price sits below EMA50/200, while RSI is near 49 and Stochastic sits in the high‑70s, indicating weakening momentum. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
+      "market_context": "BTC is bearish on the 4‑hour chart but mixed on daily, while the broader market is broadly negative with 90% of assets",
+      "result": "PENDING"
     }
   ]
 }
