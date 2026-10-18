@@ -62091,6 +62091,23 @@
       "technical_analysis": "Short bias dominates: price sits below EMA9, EMA21 and EMA50, MACD line trails its signal, and Stochastic K is under its D, while RSI sits under 50. These bearish signals line up against the 1‑hour resistance at 8.748, suggesting downside momentum toward the nearby support zone and could test the 8.456 support level.",
       "market_context": "BTC is marginally bullish (+0.11%) but the overall market breadth is broadly negative, with 91.8% of coins red.",
       "result": "PENDING"
+    },
+    {
+      "id": 3653,
+      "created_at": "2026-10-18T07:10:58.319821+00:00",
+      "symbol": "SOXLBUSDT",
+      "direction": "SHORT",
+      "title": "Technical Signals Turn Negative as $SOXLB Selling Pressure Rises",
+      "entry_low": 92.1,
+      "entry_high": 92.3,
+      "stop_loss": 95.5,
+      "take_profit": 85.6,
+      "support": 86.37,
+      "resistance": 92.78,
+      "news_line": "",
+      "technical_analysis": "Price sits just below the 1‑hour resistance at 92.78 and under the 21‑, 50‑ and 200‑EMA, signaling a prevailing downtrend. ADX at 41 confirms a strong trend, while the stochastic at ~69 shows overbought conditions. Order‑book imbalance favors sellers (‑7%). Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
+      "market_context": "BTC shows a modest 0.15% rise, yet overall market breadth remains broadly negative with 91% red coins.",
+      "result": "PENDING"
     }
   ]
 }
