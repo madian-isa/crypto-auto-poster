@@ -61768,6 +61768,23 @@
       "technical_analysis": "Price sits below all EMA lines, confirming a downtrend. MACD is negative with a bearish histogram, while RSI at 41 signals modest weakness. Stochastic is deep in oversold territory, but the dominant EMA and MACD readings favor short pressure near the 0.04178 resistance level. Together, these indicators favor SHORT continuation toward support.",
       "market_context": "BTC is bearish on the 4‑hour chart and mixed on daily, while the broader market shows 88.9% red assets, reinforcing the short",
       "result": "PENDING"
+    },
+    {
+      "id": 3634,
+      "created_at": "2026-10-18T00:01:02.835570+00:00",
+      "symbol": "AVAUSDT",
+      "direction": "LONG",
+      "title": "Major Breakout Signals Emerge on $AVA Higher Timeframes",
+      "entry_low": 0.3725,
+      "entry_high": 0.3765,
+      "stop_loss": 0.361,
+      "take_profit": 0.4015,
+      "support": 0.3559,
+      "resistance": 0.4069,
+      "news_line": "",
+      "technical_analysis": "AVA is trading above its 9‑, 21‑ and 50‑EMA, with price at 0.3785, indicating bullish momentum. RSI at 67.5 and a positive MACD histogram support upside. ADX 44 shows a strong trend, and the order‑book shows a slight bid bias. Immediate resistance sits near 0.4069, support around 0.3559. Overall, the setup favors a long move toward the upper range.",
+      "market_context": "BTC is in a bearish 4‑hour trend and down 0.19% over 24 h, with the broader market broadly negative (≈90% red).",
+      "result": "PENDING"
     }
   ]
 }
