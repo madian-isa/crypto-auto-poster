@@ -62737,6 +62737,23 @@
       "technical_analysis": "CRCLB is holding above its EMA9, EMA21 and EMA50, with price also north of the EMA200. MACD shows a bullish histogram (+0.04) as the line sits above the signal, while RSI at 58 signals modest upside. ADX near 21 confirms a developing trend, and a slight bid‑side order‑book imbalance adds support.",
       "market_context": "Bitcoin is marginally bullish (+0.9% 24h) while the broader market shows broadly negative breadth, with 67.6% of assets red versus 32.4% green.",
       "result": "PENDING"
+    },
+    {
+      "id": 3691,
+      "created_at": "2026-10-18T23:50:53.613092+00:00",
+      "symbol": "AEROUSDT",
+      "direction": "SHORT",
+      "title": "$AERO Breaks Below Critical Support: Further Drop Expected",
+      "entry_low": 0.7965,
+      "entry_high": 0.7985,
+      "stop_loss": 0.826,
+      "take_profit": 0.7405,
+      "support": 0.7966,
+      "resistance": 0.8475,
+      "news_line": "",
+      "technical_analysis": "Technical indicators point to downside pressure. MACD sits below its signal line with a negative histogram, while price remains under the 21‑, 50‑ and 200‑EMA, confirming bearish alignment. ADX at 32 signals a strong trend. RSI at 39 and Stochastic K at 34 suggest room for further decline toward the 0.791 support.",
+      "market_context": "BTC is up 0.7% on the day, but overall market breadth is negative with two‑thirds of assets red.",
+      "result": "PENDING"
     }
   ]
 }
