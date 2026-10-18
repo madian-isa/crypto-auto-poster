@@ -62023,6 +62023,23 @@
       "technical_analysis": "Price sits just below the 1‑hour resistance at 0.9965 and above short‑term EMAs, suggesting a pull‑back toward the 0.9911‑0.9696 support band. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
       "market_context": "BTC shows a modest 0.3% bullish gain, yet overall market breadth is broadly negative with 89% red assets, underscoring caution.",
       "result": "PENDING"
+    },
+    {
+      "id": 3649,
+      "created_at": "2026-10-18T05:00:52.075140+00:00",
+      "symbol": "ZECUSDT",
+      "direction": "SHORT",
+      "title": "$ZEC Loses Key Demand Zone: Next Support Level Unprotected",
+      "entry_low": 1152.0,
+      "entry_high": 1156.0,
+      "stop_loss": 1196.5,
+      "take_profit": 1069.0,
+      "support": 1133.0,
+      "resistance": 1156.78,
+      "news_line": "",
+      "technical_analysis": "Price sits below EMA9, EMA21, EMA50 and EMA200, showing clear bearish structure. RSI at 45 signals modest downside pressure, while ADX 23 indicates a weak trend. Order‑book shows a 40% ask‑side imbalance. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
+      "market_context": "BTC is marginally bullish (+0.3%) while the broader market remains broadly negative, with only 9.4% of assets green.",
+      "result": "PENDING"
     }
   ]
 }
