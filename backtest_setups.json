@@ -62601,6 +62601,23 @@
       "technical_analysis": "Multiple bearish cues dominate LSKUSDT: price sits below EMA9, EMA21, EMA50 and EMA200, confirming downtrend. MACD histogram remains negative, while RSI at 36 and Stochastic K at 3 signal weakening momentum. Bollinger bands hug the lower edge, ADX 18 indicates a weak trend. The pair is testing the 0.1962 resistance, with the next support around 0.1879.",
       "market_context": "BTC is bearish on 4‑hour and 1‑day charts, down 0.2% in 24 h. Overall market breadth is broadly negative with 92.2% red",
       "result": "PENDING"
+    },
+    {
+      "id": 3683,
+      "created_at": "2026-10-18T18:10:48.244806+00:00",
+      "symbol": "TRUMPUSDT",
+      "direction": "SHORT",
+      "title": "$TRUMP Open Interest Drops Rapidly: Long Squeeze Underway",
+      "entry_low": 1.682,
+      "entry_high": 1.688,
+      "stop_loss": 1.7524,
+      "take_profit": 1.5502,
+      "support": 1.675,
+      "resistance": 1.746,
+      "news_line": "",
+      "technical_analysis": "Price sits below all EMA lines (9‑200) and the MACD histogram remains negative, while ADX at 49 signals a strong downtrend. RSI 21 and Stochastic under 10 show oversold levels, but the prevailing trend cues dominate, keeping pressure toward the 1H resistance at 1.746, favoring a short bias. Together, these indicators favor SHORT continuation toward support.",
+      "market_context": "BTC is bearish on the 4‑hour chart and mixed on daily, down 0.3% in 24 h, with the broader market 93% red",
+      "result": "PENDING"
     }
   ]
 }
