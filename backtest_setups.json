@@ -62210,6 +62210,23 @@
       "technical_analysis": "Stochastic is in the 70s, indicating momentum, and RSI sits at 53, neutral. ADX at 16 points to a weak trend, but the bias leans long near the 1‑hour support zone. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
       "market_context": "BTC is up 0.27% over 24 h, showing modest bullishness, though overall market breadth remains largely negative (11.4% green vs 88.6% red).",
       "result": "PENDING"
+    },
+    {
+      "id": 3660,
+      "created_at": "2026-10-18T09:50:48.745169+00:00",
+      "symbol": "BNBUSDT",
+      "direction": "SHORT",
+      "title": "$BNB Distribution Phase Ends: Downside Target Zone Set",
+      "entry_low": 720.17,
+      "entry_high": 720.56,
+      "stop_loss": 746.8,
+      "take_profit": 667.495,
+      "support": 721.49,
+      "resistance": 723.45,
+      "news_line": "",
+      "technical_analysis": "Stochastic K at 76 shows overbought conditions. Order‑book shows a 38% bid imbalance. Overall, indicators favor a short bias near the 720 level. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
+      "market_context": "BTC is up 0.65% in 24 h, but the broader market is broadly negative with 85.9% red symbols.",
+      "result": "PENDING"
     }
   ]
 }
