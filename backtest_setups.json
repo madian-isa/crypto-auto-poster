@@ -62057,6 +62057,23 @@
       "technical_analysis": "The EMA stack shows a clear bearish hierarchy (EMA9 < EMA21 < EMA50 < EMA200) and price sits below EMA50/200, while RSI is near 49 and Stochastic sits in the high‑70s, indicating weakening momentum. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
       "market_context": "BTC is bearish on the 4‑hour chart but mixed on daily, while the broader market is broadly negative with 90% of assets",
       "result": "PENDING"
+    },
+    {
+      "id": 3651,
+      "created_at": "2026-10-18T06:00:52.865979+00:00",
+      "symbol": "ENAUSDT",
+      "direction": "LONG",
+      "title": "Technical Signals Turn Positive as Market Momentum Builds",
+      "entry_low": 0.1865,
+      "entry_high": 0.1875,
+      "stop_loss": 0.1798,
+      "take_profit": 0.2014,
+      "support": 0.186,
+      "resistance": 0.1926,
+      "news_line": "",
+      "technical_analysis": "MACD histogram is positive, showing bullish momentum, while RSI at 38 signals oversold conditions. Price rests just above the lower Bollinger band and near the 1‑hour support of 0.186, providing a clear floor. Order‑book shows a 35 % bid imbalance, and EMA9 at 0.1895 lies just above price, ready to act as support if buying returns.",
+      "market_context": "BTC up 0.213% on the day while the overall market breadth is broadly negative, with 93.2% red.",
+      "result": "PENDING"
     }
   ]
 }
