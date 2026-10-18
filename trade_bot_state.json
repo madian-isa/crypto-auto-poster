@@ -1,6 +1,6 @@
 {
   "date": "2026-10-18",
-  "count": 37,
+  "count": 38,
   "posted_symbols_today": [
     "AVAUSDT",
     "GTCUSDT",
@@ -38,6 +38,7 @@
     "QNTUSDT",
     "HYPEUSDT",
     "OGNUSDT",
-    "UNIUSDT"
+    "UNIUSDT",
+    "ALTUSDT"
   ]
 }
