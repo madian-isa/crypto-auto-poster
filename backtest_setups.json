@@ -61836,6 +61836,23 @@
       "technical_analysis": "RSI at 68 and Stochastic K near 77 show strong upward momentum. MACD line sits above its signal with a positive histogram, confirming bullish bias. ADX above 38 indicates a firm trend, while price sits above the EMA9/21/50/200 cluster. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
       "market_context": "BTC is up 1.6% on the day, but overall market breadth remains broadly negative with 89% red assets, suggesting limited upside for",
       "result": "PENDING"
+    },
+    {
+      "id": 3638,
+      "created_at": "2026-10-18T01:20:51.379940+00:00",
+      "symbol": "STRKUSDT",
+      "direction": "SHORT",
+      "title": "$STRK Lower High Pattern Confirmed: Short Target in View",
+      "entry_low": 0.0644,
+      "entry_high": 0.06455,
+      "stop_loss": 0.0683,
+      "take_profit": 0.056825,
+      "support": 0.0631,
+      "resistance": 0.06829,
+      "news_line": "",
+      "technical_analysis": "RSI at 29.9 and Stochastic K under 11 signal oversold conditions, yet price sits beneath EMA9, EMA21, EMA50 and EMA200, confirming a bearish slope. MACD line remains negative, ADX 39 shows a strong trend, and order‑book imbalance of –14 % adds sell pressure. The setup favors a short move toward the 0.0631 support.",
+      "market_context": "BTC is up 0.15% on the day, but overall market breadth is negative with 89% of assets red, suggesting limited upside for",
+      "result": "PENDING"
     }
   ]
 }
