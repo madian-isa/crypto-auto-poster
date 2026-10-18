@@ -62465,6 +62465,23 @@
       "technical_analysis": "RSI at 30.5 and Stochastic K near 10 signal oversold conditions, while the MACD histogram stays negative and price sits below the 9, 21, 50 and 200 EMA lines, indicating bearish momentum. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
       "market_context": "BTC is trading bearish on the 4h chart around $81.2k, with broader market breadth heavily red (93.4% losers) and overall sentiment negative.",
       "result": "PENDING"
+    },
+    {
+      "id": 3675,
+      "created_at": "2026-10-18T15:20:49.906349+00:00",
+      "symbol": "APTUSDT",
+      "direction": "LONG",
+      "title": "$APT Volume Expansion Signals High Conviction Upward Move",
+      "entry_low": 0.77,
+      "entry_high": 0.775,
+      "stop_loss": 0.745,
+      "take_profit": 0.8275,
+      "support": 0.7697,
+      "resistance": 0.801,
+      "news_line": "",
+      "technical_analysis": "RSI at 31.6 and Stochastic K at 18 signal oversold conditions, while MACD line sits just above its signal and the price has slipped beneath the lower Bollinger band, suggesting a potential bounce. Order‑book shows a 20% bid imbalance. With 1H support at 0.7697 and resistance near 0.801, momentum leans bullish.",
+      "market_context": "BTC is in a bearish 4H trend and the broader crypto market is broadly negative, with 91.8% red assets.",
+      "result": "PENDING"
     }
   ]
 }
