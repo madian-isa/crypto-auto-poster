@@ -62125,6 +62125,23 @@
       "technical_analysis": "Price sits below EMA9/21/50/200, indicating bearish bias. ADX at 23 shows weak momentum. Order‑book shows a 14.5% bid imbalance, supporting short pressure near the 104.34 resistance on the chart. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
       "market_context": "BTC is in a bearish 4‑hour trend and the broader crypto market shows 91% red assets, reinforcing the short outlook for SOL.",
       "result": "PENDING"
+    },
+    {
+      "id": 3655,
+      "created_at": "2026-10-18T07:50:51.361742+00:00",
+      "symbol": "ETHUSDT",
+      "direction": "SHORT",
+      "title": "Moving Average Death Cross Signals Downward Trend for $ETH",
+      "entry_low": 2410.5,
+      "entry_high": 2411.0,
+      "stop_loss": 2507.18,
+      "take_profit": 2217.89,
+      "support": 2398.68,
+      "resistance": 2425.0,
+      "news_line": "",
+      "technical_analysis": "ETH trades just below the 4‑hour resistance at 2425, with price under EMA9, EMA21 and EMA50, confirming a downtrend. RSI sits near 47 while Stochastic is in overbought territory, and ADX shows a weak trend. Order‑book imbalance leans bearish, supporting a short bias. Together, these indicators favor SHORT continuation toward support.",
+      "market_context": "BTC is in a bearish 4‑hour trend and mixed daily trend, while the broader market shows 90.6% red, reinforcing ETH’s downside bias.",
+      "result": "PENDING"
     }
   ]
 }
