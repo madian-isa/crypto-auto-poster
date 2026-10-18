@@ -62720,6 +62720,23 @@
       "technical_analysis": "MACD is negative with a bearish histogram, and price sits below EMA21, EMA50 and EMA200, confirming downtrend. ADX at 42.9 shows a strong trend. RSI at 45 and Stochastic below 50 suggest weakening momentum. The price is under the 1H support zone, favoring a short stance. Together, these indicators favor SHORT continuation toward support.",
       "market_context": "BTC is slightly bullish (up 0.37%) while overall market breadth is broadly negative, indicating limited upside for risk assets.",
       "result": "PENDING"
+    },
+    {
+      "id": 3690,
+      "created_at": "2026-10-18T23:40:45.769045+00:00",
+      "symbol": "CRCLBUSDT",
+      "direction": "LONG",
+      "title": "$CRCLB Outperformance Signal: Buying Momentum Beats Broader Market",
+      "entry_low": 82.6,
+      "entry_high": 82.9,
+      "stop_loss": 79.85,
+      "take_profit": 88.55,
+      "support": 82.63,
+      "resistance": 82.9,
+      "news_line": "",
+      "technical_analysis": "CRCLB is holding above its EMA9, EMA21 and EMA50, with price also north of the EMA200. MACD shows a bullish histogram (+0.04) as the line sits above the signal, while RSI at 58 signals modest upside. ADX near 21 confirms a developing trend, and a slight bid‑side order‑book imbalance adds support.",
+      "market_context": "Bitcoin is marginally bullish (+0.9% 24h) while the broader market shows broadly negative breadth, with 67.6% of assets red versus 32.4% green.",
+      "result": "PENDING"
     }
   ]
 }
