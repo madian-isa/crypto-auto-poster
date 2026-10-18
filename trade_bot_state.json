@@ -1,6 +1,6 @@
 {
   "date": "2026-10-18",
-  "count": 31,
+  "count": 32,
   "posted_symbols_today": [
     "AVAUSDT",
     "GTCUSDT",
@@ -32,6 +32,7 @@
     "XRPUSDT",
     "USD1USDT",
     "MUBUSDT",
-    "LINKUSDT"
+    "LINKUSDT",
+    "AVAXUSDT"
   ]
 }

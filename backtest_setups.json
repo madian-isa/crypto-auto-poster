@@ -62295,6 +62295,23 @@
       "technical_analysis": "However, the Stochastic K at 71 % is overbought and price sits below the EMA21/50, indicating downside bias. Resistance clusters at 12.073 on the 1‑hour chart, support near 11.94. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
       "market_context": "BTC is marginally bullish (+0.67 %) while the broader market shows 87.5 % red and a broadly negative breadth, indicating overall risk‑off",
       "result": "PENDING"
+    },
+    {
+      "id": 3665,
+      "created_at": "2026-10-18T11:40:53.384579+00:00",
+      "symbol": "AVAXUSDT",
+      "direction": "LONG",
+      "title": "$AVAX Volume Expansion Signals High Conviction Upward Move",
+      "entry_low": 9.71,
+      "entry_high": 9.78,
+      "stop_loss": 9.37,
+      "take_profit": 10.495,
+      "support": 9.709,
+      "resistance": 9.895,
+      "news_line": "",
+      "technical_analysis": "MACD bullish (line above signal, positive histogram), price sits just above EMA9 while below longer EMAs, and order‑book shows a 17% bid imbalance, indicating buying pressure. RSI near neutral and ADX weak, but Stochastic in overbought zone. The pair respects the 9.709‑9.895 swing, suggesting a modest overall upside potential bias.",
+      "market_context": "BTC is up 0.6% on the day in a mixed 4h/1d trend, while overall market breadth remains broadly negative with 88% red",
+      "result": "PENDING"
     }
   ]
 }
