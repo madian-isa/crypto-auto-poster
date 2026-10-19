@@ -62822,6 +62822,23 @@
       "technical_analysis": "RSI at 80 and Stochastic K near 96 place KORU deep in overbought territory, while price sits above the upper Bollinger band. Combined with a clear 1H resistance at 11.98, momentum tilts toward a short move in the near term. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
       "market_context": "BTC is slightly bullish (+0.9 %) but overall market breadth is negative, with 62 % red assets.",
       "result": "PENDING"
+    },
+    {
+      "id": 3696,
+      "created_at": "2026-10-19T04:30:58.824285+00:00",
+      "symbol": "AUSDT",
+      "direction": "SHORT",
+      "title": "$A Resistance Test Fails: Bearish Momentum Building Fast",
+      "entry_low": 0.0896,
+      "entry_high": 0.0897,
+      "stop_loss": 0.093,
+      "take_profit": 0.08295,
+      "support": 0.0861,
+      "resistance": 0.0956,
+      "news_line": "",
+      "technical_analysis": "Price sits below the 9‑, 21‑, 50‑ and 200‑EMA, signalling a clear downtrend. RSI at 32.3 and Stochastic near 28 show oversold conditions but still under 30, keeping downside pressure. Overall, indicators tilt short. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
+      "market_context": "BTC is modestly bullish (+0.77%) while the broader market shows a negative breadth, with 64.4% red assets. This mixed backdrop supports a",
+      "result": "PENDING"
     }
   ]
 }
