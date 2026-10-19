@@ -63145,6 +63145,23 @@
       "technical_analysis": "Indicators point bullish. Price sits above EMA9, EMA21, EMA50 and EMA200, confirming an uptrend. MACD histogram is positive and above its signal line, while ADX at 29 signals strong momentum. RSI at 68 and Stochastic near 73 show near‑overbought conditions but still support upward bias. Immediate support sits around 0.08544, with resistance near 0.08977.",
       "market_context": "BTC is trading higher, up about 1.1% on the 4‑hour and daily charts, keeping the broader market broadly positive with 72.9% green",
       "result": "PENDING"
+    },
+    {
+      "id": 3715,
+      "created_at": "2026-10-19T16:10:48.849358+00:00",
+      "symbol": "ZROUSDT",
+      "direction": "LONG",
+      "title": "$ZRO Reclaims Key Resistance Level: Flip to Support Complete",
+      "entry_low": 1.895,
+      "entry_high": 1.902,
+      "stop_loss": 1.828,
+      "take_profit": 2.0395,
+      "support": 1.877,
+      "resistance": 1.986,
+      "news_line": "",
+      "technical_analysis": "Price sits above the 9‑, 21‑ and 50‑EMA, while RSI at 58 signals moderate bullish momentum. Stochastic %K (52) sits above %D (23), confirming upward pressure. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure. The nearby support and resistance levels frame the current market structure.",
+      "market_context": "BTC is up 1.0% on the day, keeping a bullish tone, and the broader market shows 75% green assets, supporting a positive",
+      "result": "PENDING"
     }
   ]
 }
