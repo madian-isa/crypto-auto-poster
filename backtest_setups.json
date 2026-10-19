@@ -62754,6 +62754,23 @@
       "technical_analysis": "Technical indicators point to downside pressure. MACD sits below its signal line with a negative histogram, while price remains under the 21‑, 50‑ and 200‑EMA, confirming bearish alignment. ADX at 32 signals a strong trend. RSI at 39 and Stochastic K at 34 suggest room for further decline toward the 0.791 support.",
       "market_context": "BTC is up 0.7% on the day, but overall market breadth is negative with two‑thirds of assets red.",
       "result": "PENDING"
+    },
+    {
+      "id": 3692,
+      "created_at": "2026-10-19T00:20:42.432824+00:00",
+      "symbol": "AVAUSDT",
+      "direction": "LONG",
+      "title": "Key Support Holds Firm: $AVA Bullish Continuation Setup Active",
+      "entry_low": 0.3198,
+      "entry_high": 0.3223,
+      "stop_loss": 0.3085,
+      "take_profit": 0.34615,
+      "support": 0.3186,
+      "resistance": 0.4069,
+      "news_line": "",
+      "technical_analysis": "Order‑book shows a 24 % bid‑side imbalance, and price holds just above the 200‑EMA, providing a firm floor at ~0.3186. The 1H resistance at 0.4069 caps upside. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure. The nearby support and resistance levels frame the current market structure.",
+      "market_context": "BTC is up 0.74 % on the day, but overall market breadth remains broadly negative with only 32 % of assets green.",
+      "result": "PENDING"
     }
   ]
 }
