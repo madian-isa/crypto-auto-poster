@@ -62856,6 +62856,23 @@
       "technical_analysis": "AMP is trading just above its EMA9 and well above the EMA21‑200 cluster, while the MACD line sits above its signal and the histogram stays positive. RSI at 63 and a strong ADX of 49 confirm bullish momentum. Price respects the 0.000758 support and eyes the 0.000844 resistance on the 1‑hour chart, suggesting further upside.",
       "market_context": "BTC shows a mixed 4‑hour trend but a bullish daily outlook, up 1.1%.",
       "result": "PENDING"
+    },
+    {
+      "id": 3698,
+      "created_at": "2026-10-19T05:30:56.982694+00:00",
+      "symbol": "SNDKBUSDT",
+      "direction": "SHORT",
+      "title": "Smart Money Distribution Visible on $SNDKB On-Chain Data",
+      "entry_low": 1342.0,
+      "entry_high": 1345.5,
+      "stop_loss": 1393.0,
+      "take_profit": 1245.25,
+      "support": 1293.57,
+      "resistance": 1345.98,
+      "news_line": "",
+      "technical_analysis": "All major indicators point to short pressure. RSI at 77 and stochastic K at 94 signal overbought conditions. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
+      "market_context": "BTC is marginally bullish on the daily chart while 4‑hour signals are mixed; overall market breadth is split with 48% green versus",
+      "result": "PENDING"
     }
   ]
 }
