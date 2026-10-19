@@ -62890,6 +62890,23 @@
       "technical_analysis": "RSI at 61.7 and MACD histogram positive 10.4 show strong upward momentum. The pair respects the 1‑hour support at 1141 and faces resistance near 1178, suggesting further upside. Current volume dip of 30% hints at possible pull‑back, but order‑book pressure remains modest. Together, these indicators favor LONG continuation toward resistance.",
       "market_context": "BTC is bullish on the daily timeframe, while the 4‑hour trend is mixed, providing a generally positive backdrop for risk assets.",
       "result": "PENDING"
+    },
+    {
+      "id": 3700,
+      "created_at": "2026-10-19T06:40:55.010046+00:00",
+      "symbol": "EPICUSDT",
+      "direction": "LONG",
+      "title": "Strong Accumulation Detected: $EPIC Prepares for Next Wave Up",
+      "entry_low": 0.2942,
+      "entry_high": 0.3033,
+      "stop_loss": 0.2839,
+      "take_profit": 0.32845,
+      "support": 0.2729,
+      "resistance": 0.3077,
+      "news_line": "",
+      "technical_analysis": "RSI at 65 and MACD histogram positive show bullish momentum. Stochastic K near 79 supports strength. Order‑book shows 22% bid imbalance. Key resistance sits around 0.3077, support near 0.2729. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure. The nearby support and resistance levels frame the current market structure.",
+      "market_context": "BTC is in a bullish daily trend, up 1.33% on the day, while overall market breadth is mixed with 43.5% green and",
+      "result": "PENDING"
     }
   ]
 }
