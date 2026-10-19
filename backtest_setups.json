@@ -63128,6 +63128,23 @@
       "technical_analysis": "Price sits above the 9‑EMA, 21‑EMA and 50‑EMA but remains under the 200‑EMA, and RSI and Stochastic are deep in overbought territory. The setup favors a short move toward the 9.68 support. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
       "market_context": "BTC is up 1.13% on the day, keeping a mixed but overall bullish tone, while the broader market shows 68.8% green assets.",
       "result": "PENDING"
+    },
+    {
+      "id": 3714,
+      "created_at": "2026-10-19T15:51:53.728641+00:00",
+      "symbol": "NILUSDT",
+      "direction": "LONG",
+      "title": "Bullish Momentum Accelerates as $NIL Liquidity Sweep Completes",
+      "entry_low": 0.0855,
+      "entry_high": 0.0859,
+      "stop_loss": 0.0824,
+      "take_profit": 0.0923,
+      "support": 0.08544,
+      "resistance": 0.08977,
+      "news_line": "",
+      "technical_analysis": "Indicators point bullish. Price sits above EMA9, EMA21, EMA50 and EMA200, confirming an uptrend. MACD histogram is positive and above its signal line, while ADX at 29 signals strong momentum. RSI at 68 and Stochastic near 73 show near‑overbought conditions but still support upward bias. Immediate support sits around 0.08544, with resistance near 0.08977.",
+      "market_context": "BTC is trading higher, up about 1.1% on the 4‑hour and daily charts, keeping the broader market broadly positive with 72.9% green",
+      "result": "PENDING"
     }
   ]
 }
