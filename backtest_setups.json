@@ -63247,6 +63247,23 @@
       "technical_analysis": "The short‑term EMAs (9, 21, 50) sit above price, confirming bearish bias. MACD histogram is negative and MACD line is below its signal, reinforcing downside pressure. Stochastic is near oversold at 20, but the order book shows a -8 % ask‑side imbalance. Price sits just below the 1‑hour resistance at 0.9932, with support at 0.9804.",
       "market_context": "BTC shows a modest 0.9 % rise over 24 h, though the 4‑hour chart is bearish. Overall market breadth is broadly positive",
       "result": "PENDING"
+    },
+    {
+      "id": 3721,
+      "created_at": "2026-10-19T20:10:47.658616+00:00",
+      "symbol": "SOLUSDT",
+      "direction": "SHORT",
+      "title": "$SOL Breaks Ascending Support Line: Bearish Momentum Surge",
+      "entry_low": 104.3,
+      "entry_high": 104.37,
+      "stop_loss": 108.0,
+      "take_profit": 97.005,
+      "support": 103.66,
+      "resistance": 104.37,
+      "news_line": "",
+      "technical_analysis": "MACD sits below its signal with a negative histogram, while price trades under the EMA9‑200 cluster, indicating bearish pressure. RSI at 46.6 and ADX 17 suggest weak momentum. Stochastic is deep in oversold territory but the order‑book shows a 5.5% ask‑side imbalance. The 1‑hour resistance at 104.37 frames the downside bias.",
+      "market_context": "BTC is 1.35% higher in a broadly positive market, showing mixed short‑term trends, which aligns with overall bullish sentiment.",
+      "result": "PENDING"
     }
   ]
 }
