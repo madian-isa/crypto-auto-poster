@@ -63196,6 +63196,23 @@
       "technical_analysis": "MACD shows a positive histogram (+0.00043) with the line above its signal, confirming bullish momentum. Price sits above the 9‑, 21‑, 50‑ and 200‑EMA, indicating an uptrend. ADX at 28 signals a strong trend, and order‑book imbalance (+17.9% bids) adds buying pressure. Momentum supports a long bias. Together, these indicators favor LONG continuation toward resistance.",
       "market_context": "BTC is up 0.9% with a broadly positive market (74.6% green), reinforcing the bullish outlook for PHA.",
       "result": "PENDING"
+    },
+    {
+      "id": 3718,
+      "created_at": "2026-10-19T18:30:59.860619+00:00",
+      "symbol": "ETHUSDT",
+      "direction": "SHORT",
+      "title": "$ETH Loses Key Demand Zone: Next Support Level Unprotected",
+      "entry_low": 2396.5,
+      "entry_high": 2398.8,
+      "stop_loss": 2483.0,
+      "take_profit": 2226.95,
+      "support": 2385.18,
+      "resistance": 2425.0,
+      "news_line": "",
+      "technical_analysis": "ETH trades at $2,398, sitting below the 9‑, 21‑, 50‑ and 200‑EMA cluster, confirming bearish bias. MACD shows a negative histogram and the line remains under the signal, while RSI at 44 and Stochastic K around 22 indicate weakening momentum. Order‑book imbalance favors asks. The price respects the 1‑hour support at $2,385 and faces resistance near $2,425, supporting a short",
+      "market_context": "BTC is up 0.9% on the day, holding a bullish stance, while overall market breadth remains broadly positive (≈75% green).",
+      "result": "PENDING"
     }
   ]
 }
