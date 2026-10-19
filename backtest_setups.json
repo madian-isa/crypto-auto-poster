@@ -62805,6 +62805,23 @@
       "technical_analysis": "MACD shows a strong bullish histogram and the line sits well above its signal, while ADX at 37 confirms a firm trend. Price sits above the 9‑, 21‑ and 50‑EMA, and volume is up 90%, with a slight bid‑side orderbook imbalance. Momentum favors upside toward the 102.5 resistance. Together, these indicators favor LONG continuation toward resistance.",
       "market_context": "BTC is in a mild bullish stance, but overall market breadth is broadly negative.",
       "result": "PENDING"
+    },
+    {
+      "id": 3695,
+      "created_at": "2026-10-19T03:30:50.044803+00:00",
+      "symbol": "KORUBUSDT",
+      "direction": "SHORT",
+      "title": "Overbought Indicators Signal Impending Correction for $KORUB",
+      "entry_low": 11.7,
+      "entry_high": 11.8,
+      "stop_loss": 12.22,
+      "take_profit": 10.81,
+      "support": 10.58,
+      "resistance": 11.98,
+      "news_line": "",
+      "technical_analysis": "RSI at 80 and Stochastic K near 96 place KORU deep in overbought territory, while price sits above the upper Bollinger band. Combined with a clear 1H resistance at 11.98, momentum tilts toward a short move in the near term. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
+      "market_context": "BTC is slightly bullish (+0.9 %) but overall market breadth is negative, with 62 % red assets.",
+      "result": "PENDING"
     }
   ]
 }
