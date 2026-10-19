@@ -63332,6 +63332,23 @@
       "technical_analysis": "RSI at 65.6 and Stochastic K at 84.8 signal overbought conditions, while price sits above the Bollinger upper band. These factors point to downside momentum toward the 724 support. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
       "market_context": "BTC is in a bearish 24‑hour frame, yet overall market breadth remains broadly positive.",
       "result": "PENDING"
+    },
+    {
+      "id": 3726,
+      "created_at": "2026-10-19T23:50:50.642012+00:00",
+      "symbol": "BTCUSDT",
+      "direction": "SHORT",
+      "title": "$BTC Rejection at Key Supply Zone: Short Setup Activated",
+      "entry_low": 81980.0,
+      "entry_high": 82030.0,
+      "stop_loss": 85000.0,
+      "take_profit": 76015.0,
+      "support": 81800.0,
+      "resistance": 82078.0,
+      "news_line": "",
+      "technical_analysis": "MACD is deep in negative territory and the histogram stays below zero, indicating bearish momentum. RSI sits near 49 and Stochastic is below 25, together pointing to a short bias near the 82078 resistance level. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
+      "market_context": "BTC is down 0.05% over 24 h, with a bearish direction, while the broader market shows 59% green and 41% red. Both",
+      "result": "PENDING"
     }
   ]
 }
