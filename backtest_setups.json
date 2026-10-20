@@ -63808,6 +63808,23 @@
       "technical_analysis": "Price sits above all EMA levels, but RSI at 88 and Stochastic near 97 indicate extreme overbought conditions. The pair is perched near the 24‑hour high of 27.66, suggesting short‑term downside pressure toward the 24.37 support. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
       "market_context": "BTC is bullish on the daily timeframe and 84% of the market is green, creating a broadly positive backdrop for COMP.",
       "result": "PENDING"
+    },
+    {
+      "id": 3754,
+      "created_at": "2026-10-20T18:20:50.033228+00:00",
+      "symbol": "PUMPUSDT",
+      "direction": "LONG",
+      "title": "Strong Accumulation Detected: $PUMP Prepares for Next Wave Up",
+      "entry_low": 0.00445,
+      "entry_high": 0.00455,
+      "stop_loss": 0.0043,
+      "take_profit": 0.0049,
+      "support": 0.0044,
+      "resistance": 0.004774,
+      "news_line": "",
+      "technical_analysis": "RSI at 62 and Stochastic K at 74 point to solid buying pressure. MACD line sits above its signal with a positive histogram, confirming upward momentum. Price is above the 9‑, 21‑ and 50‑EMA, while the order‑book shows a 13.6% bid imbalance, all supporting a bullish bias toward the 0.0044‑0.004774 range.",
+      "market_context": "Bitcoin is up 0.77% on a bullish daily trend, and 85% of the market is green, indicating broad positive sentiment that backs",
+      "result": "PENDING"
     }
   ]
 }
