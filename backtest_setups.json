@@ -63468,6 +63468,23 @@
       "technical_analysis": "RSI at 63.8 and Stochastic K/D above 70/64 show solid upward momentum. MACD histogram remains positive, confirming bullish bias. Price sits above EMA9, EMA21, EMA50 and EMA200, while ADX above 30 signals a strong trend. With support around 0.1928 and resistance near 0.1951, indicators favor a long stance. Overall, the current market setup aligns with a bullish outlook.",
       "market_context": "BTC slipped 0.5% in the last 24 h, with mixed 4 h and daily trends. Overall market breadth remains mixed, though greens",
       "result": "PENDING"
+    },
+    {
+      "id": 3734,
+      "created_at": "2026-10-20T04:01:00.067756+00:00",
+      "symbol": "ALTUSDT",
+      "direction": "LONG",
+      "title": "$ALT Liquidation Squeeze: Bears Trapped Near Critical Resistance",
+      "entry_low": 0.0096,
+      "entry_high": 0.0099,
+      "stop_loss": 0.0092,
+      "take_profit": 0.01085,
+      "support": 0.00901,
+      "resistance": 0.01107,
+      "news_line": "",
+      "technical_analysis": "ALT is trading well above its EMA9, EMA21, EMA50 and EMA200, confirming bullish momentum. MACD line sits above the signal with a positive histogram, while ADX around 28 signals a solid trend. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
+      "market_context": "BTC slipped 0.45% in the last 24 h, showing a bearish tilt, while overall market breadth remains broadly positive with about 62%",
+      "result": "PENDING"
     }
   ]
 }
