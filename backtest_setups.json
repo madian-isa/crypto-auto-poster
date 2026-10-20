@@ -63791,6 +63791,23 @@
       "technical_analysis": "RSI at 56.7 supports a mild bullish bias. Order‑book shows a 34% bid‑side imbalance, reinforcing buying pressure near the 105.5 resistance potential breakout. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure. The nearby support and resistance levels frame the current market structure.",
       "market_context": "BTC is slightly bullish up 0.39% and the overall market shows a broadly positive breadth, supporting risk‑on sentiment.",
       "result": "PENDING"
+    },
+    {
+      "id": 3753,
+      "created_at": "2026-10-20T17:40:54.927516+00:00",
+      "symbol": "COMPUSDT",
+      "direction": "SHORT",
+      "title": "Smart Money Distribution Visible on $COMP On-Chain Data",
+      "entry_low": 27.5,
+      "entry_high": 27.6,
+      "stop_loss": 28.52,
+      "take_profit": 25.61,
+      "support": 24.37,
+      "resistance": 27.66,
+      "news_line": "",
+      "technical_analysis": "Price sits above all EMA levels, but RSI at 88 and Stochastic near 97 indicate extreme overbought conditions. The pair is perched near the 24‑hour high of 27.66, suggesting short‑term downside pressure toward the 24.37 support. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
+      "market_context": "BTC is bullish on the daily timeframe and 84% of the market is green, creating a broadly positive backdrop for COMP.",
+      "result": "PENDING"
     }
   ]
 }
