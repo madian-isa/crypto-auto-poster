@@ -63587,6 +63587,23 @@
       "technical_analysis": "ETH trades below all key EMAs (9‑200) and a negative MACD histogram, indicating down‑trend momentum. Volume jumped 75%, and a slight bid‑side order‑book imbalance exists, yet broader market sentiment stays broadly negative. Current price hovers around 2391, near the 1‑hour support zone. Together, these indicators favor SHORT continuation toward support.",
       "market_context": "BTC is in a bearish 4‑hour trend and down 1.44% on the day, while overall crypto market shows 70.9% red assets and",
       "result": "PENDING"
+    },
+    {
+      "id": 3741,
+      "created_at": "2026-10-20T08:40:54.894933+00:00",
+      "symbol": "ARBUSDT",
+      "direction": "SHORT",
+      "title": "$ARB Prepares for Breakdown: Downside Risk Escalates",
+      "entry_low": 0.193,
+      "entry_high": 0.1934,
+      "stop_loss": 0.2,
+      "take_profit": 0.1796,
+      "support": 0.1807,
+      "resistance": 0.2,
+      "news_line": "",
+      "technical_analysis": "Short bias is clear: MACD histogram is negative and the MACD line sits below its signal, confirming down momentum. Price trades under the 9‑EMA and 21‑EMA while staying above the 50‑EMA, showing a short‑term pullback. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
+      "market_context": "BTC is in a bearish 4‑hour trend and the broader market is broadly negative, with 73% of assets red, reinforcing the short",
+      "result": "PENDING"
     }
   ]
 }
