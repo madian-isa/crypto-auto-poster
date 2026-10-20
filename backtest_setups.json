@@ -63672,6 +63672,23 @@
       "technical_analysis": "The RSI at 63, MACD histogram positive, ADX 31 indicating a strong uptrend, and price sitting above EMA9/21/50/200 align bullish. Order‑book shows a modest bid‑side imbalance. With price holding above the 1‑hour support 0.01724 and below the 0.01965 resistance, momentum favors a long move. Bollinger bands also support the upside potential.",
       "market_context": "BTC is down 0.91% on the 24‑hour chart, showing a bearish 4‑hour trend, while overall market breadth is mixed with 49.2% green",
       "result": "PENDING"
+    },
+    {
+      "id": 3746,
+      "created_at": "2026-10-20T12:50:52.502931+00:00",
+      "symbol": "BTCUSDT",
+      "direction": "SHORT",
+      "title": "$BTC Distribution Phase Ends: Downside Target Zone Set",
+      "entry_low": 81480.0,
+      "entry_high": 81520.0,
+      "stop_loss": 84760.0,
+      "take_profit": 74980.0,
+      "support": 81331.97,
+      "resistance": 82078.0,
+      "news_line": "",
+      "technical_analysis": "MACD is deep in negative territory and price sits below EMA9, EMA21, EMA50 and EMA200, confirming bearish momentum. RSI at 39.4 and Stochastic K at 28 signal still‑weak but potential downside. Order‑book shows an 82.6% sell imbalance, and ADX under 25 reflects a soft trend. The structure favors a short stance near the 1H resistance.",
+      "market_context": "BTC is down 1.14% over 24 h, the broader market is 56.9% red, and overall breadth is mixed, reinforcing the bearish bias.",
+      "result": "PENDING"
     }
   ]
 }
