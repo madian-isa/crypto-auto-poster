@@ -63910,6 +63910,23 @@
       "technical_analysis": "Price sits above the 9‑, 21‑ and 50‑EMA, confirming bullish bias. Stochastic K (22) crossing above D (19) signals upward momentum, while ADX at 27 confirms a solid trend. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure. The nearby support and resistance levels frame the current market structure.",
       "market_context": "BTC is in a bullish daily trend and the broader market is broadly positive, supporting upside bias for risk assets.",
       "result": "PENDING"
+    },
+    {
+      "id": 3760,
+      "created_at": "2026-10-20T22:00:53.164173+00:00",
+      "symbol": "AEROUSDT",
+      "direction": "LONG",
+      "title": "Bullish Momentum Is Building: Can $AERO Continue Its Breakout?",
+      "entry_low": 0.86,
+      "entry_high": 0.87,
+      "stop_loss": 0.83,
+      "take_profit": 0.935,
+      "support": 0.8487,
+      "resistance": 0.8936,
+      "news_line": "",
+      "technical_analysis": "Price sits near the 1‑hour high of $0.887, comfortably above the EMA9, EMA21 and EMA50, confirming an uptrend. MACD line remains above its signal with a positive histogram, while ADX at 34.7 signals a strong trend. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
+      "market_context": "BTC remains in a bullish daily trend, and overall market breadth is broadly positive with 86 % of assets green.",
+      "result": "PENDING"
     }
   ]
 }
