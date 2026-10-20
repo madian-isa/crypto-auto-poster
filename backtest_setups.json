@@ -63689,6 +63689,23 @@
       "technical_analysis": "MACD is deep in negative territory and price sits below EMA9, EMA21, EMA50 and EMA200, confirming bearish momentum. RSI at 39.4 and Stochastic K at 28 signal still‑weak but potential downside. Order‑book shows an 82.6% sell imbalance, and ADX under 25 reflects a soft trend. The structure favors a short stance near the 1H resistance.",
       "market_context": "BTC is down 1.14% over 24 h, the broader market is 56.9% red, and overall breadth is mixed, reinforcing the bearish bias.",
       "result": "PENDING"
+    },
+    {
+      "id": 3747,
+      "created_at": "2026-10-20T13:10:48.003110+00:00",
+      "symbol": "BEAMXUSDT",
+      "direction": "LONG",
+      "title": "$BEAMX Outperformance Signal: Buying Momentum Beats Broader Market",
+      "entry_low": 0.00314,
+      "entry_high": 0.00318,
+      "stop_loss": 0.00303,
+      "take_profit": 0.00342,
+      "support": 0.00304,
+      "resistance": 0.003314,
+      "news_line": "",
+      "technical_analysis": "Price sits above the 9, 21, 50 and 200 EMA, confirming a clear uptrend. MACD line sits above its signal with a positive histogram, while ADX at 40 signals a strong trend. RSI at 68 shows momentum still bullish. Order‑book shows a modest bid‑side imbalance. The market respects the 0.00304 support and eyes the 0.003314 resistance.",
+      "market_context": "BTC is down 1.36% on the 24‑hour chart, keeping the broader market in a bearish mood, with 62.6% of assets in red.",
+      "result": "PENDING"
     }
   ]
 }
