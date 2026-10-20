@@ -63876,6 +63876,23 @@
       "technical_analysis": "MACD’s positive line and expanding histogram add bullish momentum. RSI at 68 and Stochastic near 90 show overbought pressure but momentum remains intact, while a 9.7 % bid‑side order‑book imbalance supports buying. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
       "market_context": "BTC is modestly bullish, up 0.88% on the day, and the broader market is broadly positive with 83% of assets in the",
       "result": "PENDING"
+    },
+    {
+      "id": 3758,
+      "created_at": "2026-10-20T21:20:55.041647+00:00",
+      "symbol": "XRPUSDT",
+      "direction": "LONG",
+      "title": "$XRP Liquidation Squeeze: Bears Trapped Near Critical Resistance",
+      "entry_low": 1.327,
+      "entry_high": 1.332,
+      "stop_loss": 1.27632,
+      "take_profit": 1.43586,
+      "support": 1.317,
+      "resistance": 1.3465,
+      "news_line": "",
+      "technical_analysis": "RSI at 63.9 and Stochastic K/D at 79/69 show strong buying momentum. MACD histogram is positive and the MACD line sits above its signal. Price sits above EMA9, EMA21, EMA50 and EMA200, confirming an uptrend. ADX around 27 signals a firm trend. The next resistance sits near 1.336. Current support is around 1.326, offering a firm base.",
+      "market_context": "BTC is in a bullish daily trend with price above its 20‑ and 50‑day EMAs, and the overall crypto market is broadly",
+      "result": "PENDING"
     }
   ]
 }
