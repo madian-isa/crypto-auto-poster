@@ -63774,6 +63774,23 @@
       "technical_analysis": "Near the 4‑hour resistance of 0.000947, momentum tilts toward a short bias overall trend. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
       "market_context": "BTC is up 0.5% on the day, showing a mixed but slightly bullish trend, and the overall crypto market is broadly positive",
       "result": "PENDING"
+    },
+    {
+      "id": 3752,
+      "created_at": "2026-10-20T16:20:55.082623+00:00",
+      "symbol": "SOLUSDT",
+      "direction": "LONG",
+      "title": "$SOL Breakout Confirmation: Bulls Target Next Supply Zone",
+      "entry_low": 105.5,
+      "entry_high": 105.9,
+      "stop_loss": 101.8,
+      "take_profit": 113.5,
+      "support": 103.89,
+      "resistance": 105.5,
+      "news_line": "",
+      "technical_analysis": "RSI at 56.7 supports a mild bullish bias. Order‑book shows a 34% bid‑side imbalance, reinforcing buying pressure near the 105.5 resistance potential breakout. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure. The nearby support and resistance levels frame the current market structure.",
+      "market_context": "BTC is slightly bullish up 0.39% and the overall market shows a broadly positive breadth, supporting risk‑on sentiment.",
+      "result": "PENDING"
     }
   ]
 }
