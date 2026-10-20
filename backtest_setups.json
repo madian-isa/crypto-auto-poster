@@ -63893,6 +63893,23 @@
       "technical_analysis": "RSI at 63.9 and Stochastic K/D at 79/69 show strong buying momentum. MACD histogram is positive and the MACD line sits above its signal. Price sits above EMA9, EMA21, EMA50 and EMA200, confirming an uptrend. ADX around 27 signals a firm trend. The next resistance sits near 1.336. Current support is around 1.326, offering a firm base.",
       "market_context": "BTC is in a bullish daily trend with price above its 20‑ and 50‑day EMAs, and the overall crypto market is broadly",
       "result": "PENDING"
+    },
+    {
+      "id": 3759,
+      "created_at": "2026-10-20T21:40:48.510578+00:00",
+      "symbol": "INJUSDT",
+      "direction": "LONG",
+      "title": "$INJ Liquidation Squeeze: Bears Trapped Near Critical Resistance",
+      "entry_low": 8.56,
+      "entry_high": 8.6,
+      "stop_loss": 8.26,
+      "take_profit": 9.22,
+      "support": 8.479,
+      "resistance": 9.184,
+      "news_line": "",
+      "technical_analysis": "Price sits above the 9‑, 21‑ and 50‑EMA, confirming bullish bias. Stochastic K (22) crossing above D (19) signals upward momentum, while ADX at 27 confirms a solid trend. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure. The nearby support and resistance levels frame the current market structure.",
+      "market_context": "BTC is in a bullish daily trend and the broader market is broadly positive, supporting upside bias for risk assets.",
+      "result": "PENDING"
     }
   ]
 }
