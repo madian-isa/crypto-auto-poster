@@ -63383,6 +63383,23 @@
       "technical_analysis": "MACD is bullish with the line above its signal and a positive histogram, while ADX at 47 confirms a strong trend. Price sits above EMA21/50/200 and order‑book shows a 12% bid‑side imbalance, supporting upward pressure. RSI near 61 and the pair respects a 0.0586 support‑0.0628 resistance zone, favoring a long bias.",
       "market_context": "BTC is in a bearish 4‑hour trend and the broader market shows a 77% red breadth, adding overall downside pressure.",
       "result": "PENDING"
+    },
+    {
+      "id": 3729,
+      "created_at": "2026-10-20T01:40:45.154713+00:00",
+      "symbol": "AVAUSDT",
+      "direction": "SHORT",
+      "title": "Major Support Breakdown Confirmed on $AVA Higher Timeframes",
+      "entry_low": 0.4105,
+      "entry_high": 0.4115,
+      "stop_loss": 0.42744,
+      "take_profit": 0.37812,
+      "support": 0.4068,
+      "resistance": 0.4118,
+      "news_line": "",
+      "technical_analysis": "Price sits above the 21‑, 50‑ and 200‑EMA but below the 9‑EMA, RSI is neutral at 53.5, MACD histogram is negative and Stochastic K is under D, all pointing to downside pressure. ADX at 36 shows a strong trend, and the order‑book imbalance of –37 % adds bearish bias. Resistance is near 0.4118, support around 0.4068.",
+      "market_context": "BTC is in a bearish 4‑hour trend and the broader market is broadly negative, with 71 % of assets red.",
+      "result": "PENDING"
     }
   ]
 }
