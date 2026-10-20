@@ -63570,6 +63570,23 @@
       "technical_analysis": "ZEC is trading below its 9, 21 and 50‑EMA, with the MACD histogram still negative and the line under its signal, indicating bearish momentum. RSI sits at 48.9 and Stochastic K is under 50, adding to the downside bias. The pair respects a 1H/4H resistance near 1143 and support around 1127.",
       "market_context": "BTC is in a bearish 4‑hour trend and the overall market breadth is broadly negative, with two‑thirds of assets red.",
       "result": "PENDING"
+    },
+    {
+      "id": 3740,
+      "created_at": "2026-10-20T08:10:53.206277+00:00",
+      "symbol": "ETHUSDT",
+      "direction": "SHORT",
+      "title": "$ETH Rejection at Key Supply Zone: Short Setup Activated",
+      "entry_low": 2395.0,
+      "entry_high": 2398.8,
+      "stop_loss": 2483.0,
+      "take_profit": 2224.7,
+      "support": 2372.62,
+      "resistance": 2408.24,
+      "news_line": "",
+      "technical_analysis": "ETH trades below all key EMAs (9‑200) and a negative MACD histogram, indicating down‑trend momentum. Volume jumped 75%, and a slight bid‑side order‑book imbalance exists, yet broader market sentiment stays broadly negative. Current price hovers around 2391, near the 1‑hour support zone. Together, these indicators favor SHORT continuation toward support.",
+      "market_context": "BTC is in a bearish 4‑hour trend and down 1.44% on the day, while overall crypto market shows 70.9% red assets and",
+      "result": "PENDING"
     }
   ]
 }
