@@ -64131,6 +64131,23 @@
       "technical_analysis": "Price sits below EMA9, EMA21, EMA50 and EMA200, confirming bearish alignment. MACD line is under its signal with a negative histogram, reinforcing downside momentum. RSI at 30 and Stochastic K at 17 indicate oversold conditions but still point to a short bias. ADX near 29 shows a moderate trend strength, supporting a move toward the 0.3138 support zone.",
       "market_context": "BTC is in a bullish 1‑day trend while the overall market remains broadly positive, providing a supportive backdrop for AVA's short setup.",
       "result": "PENDING"
+    },
+    {
+      "id": 3773,
+      "created_at": "2026-10-21T07:10:49.366914+00:00",
+      "symbol": "GTCUSDT",
+      "direction": "LONG",
+      "title": "Major Breakout Signals Emerge on $GTC Higher Timeframes",
+      "entry_low": 0.3006,
+      "entry_high": 0.301,
+      "stop_loss": 0.29,
+      "take_profit": 0.3224,
+      "support": 0.29752,
+      "resistance": 0.314,
+      "news_line": "",
+      "technical_analysis": "Stochastic is deep in oversold territory (16) and RSI sits at 43, suggesting room for upside. Buying pressure shows in a 26.8% order‑book bid imbalance. Momentum points to a potential bounce in the near term. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
