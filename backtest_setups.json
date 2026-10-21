@@ -64284,6 +64284,23 @@
       "technical_analysis": "Price sits above EMA9, EMA21 and EMA50, confirming an uptrend. RSI at 58 and Stochastic K at 63 signal bullish momentum, while MACD is near the signal line with a small negative histogram. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
       "market_context": "BTC is in a bullish trend on 4H and 1D timeframes, up about 2.8% today, and the broader market shows a 91.6%",
       "result": "PENDING"
+    },
+    {
+      "id": 3782,
+      "created_at": "2026-10-21T14:50:56.896046+00:00",
+      "symbol": "BATUSDT",
+      "direction": "SHORT",
+      "title": "Major Support Breakdown Confirmed on $BAT Higher Timeframes",
+      "entry_low": 0.1813,
+      "entry_high": 0.1815,
+      "stop_loss": 0.188656,
+      "take_profit": 0.166888,
+      "support": 0.1771,
+      "resistance": 0.1858,
+      "news_line": "",
+      "technical_analysis": "MACD is negative with a bearish histogram, while RSI at 32.8 and Stochastic K at 7 signal oversold momentum turning down. Price sits below EMA9, EMA21, EMA50 and EMA200, confirming a downtrend. Order‑book shows a 9.3% sell imbalance. The pair respects the 0.1771 support and 0.1858 resistance, favoring short pressure.",
+      "market_context": "BTC remains in a bullish 4‑hour and daily trend, trading above its 20‑ and 50‑EMA, and the broader market shows a 74%",
+      "result": "PENDING"
     }
   ]
 }
