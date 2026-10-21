@@ -64080,6 +64080,23 @@
       "technical_analysis": "Price sits above the 9‑, 21‑, 50‑ and 200‑EMA, showing a clear uptrend. RSI at 64 signals solid momentum without being overbought. ADX above 50 confirms a strong trend. Order‑book shows a 36.8% bid‑side imbalance, adding buying pressure. Current support lies around 0.01995. Thus the bias remains bullish. Together, these indicators favor LONG continuation toward resistance.",
       "market_context": "BTC is trading bullish on the 4‑h and daily frames, and 82.8% of the market is green, indicating broadly positive sentiment.",
       "result": "PENDING"
+    },
+    {
+      "id": 3770,
+      "created_at": "2026-10-21T05:10:54.567430+00:00",
+      "symbol": "GNSUSDT",
+      "direction": "SHORT",
+      "title": "$GNS Loses Key Demand Zone: Next Support Level Unprotected",
+      "entry_low": 0.487,
+      "entry_high": 0.49,
+      "stop_loss": 0.508,
+      "take_profit": 0.4495,
+      "support": 0.463,
+      "resistance": 0.53,
+      "news_line": "",
+      "technical_analysis": "Price rests near the lower half of the 0.463‑0.53 range, favoring a short bias. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
+      "market_context": "BTC holds a bullish daily trend, up about 1% and trading near its 20‑ and 50‑day EMAs, while the broader crypto market",
+      "result": "PENDING"
     }
   ]
 }
