@@ -64182,6 +64182,23 @@
       "technical_analysis": "MACD is positive with a rising histogram, RSI sits at 67 and ADX above 30 confirming strong bullish momentum. Price sits above EMA9, EMA21, EMA50 and EMA200, while the Bollinger band upper edge is being tested. The structure favors a move toward the 5.28 resistance. Together, these indicators favor LONG continuation toward resistance.",
       "market_context": "BTC is up 2.6% on a bullish day and the broader market shows 90% green breadth, supporting the overall positive sentiment for",
       "result": "PENDING"
+    },
+    {
+      "id": 3776,
+      "created_at": "2026-10-21T09:50:55.095967+00:00",
+      "symbol": "PARTIUSDT",
+      "direction": "LONG",
+      "title": "Bullish Momentum Accelerates as $PARTI Liquidity Sweep Completes",
+      "entry_low": 0.038,
+      "entry_high": 0.0385,
+      "stop_loss": 0.0369,
+      "take_profit": 0.04095,
+      "support": 0.0294,
+      "resistance": 0.0394,
+      "news_line": "",
+      "technical_analysis": "Price sits above EMA9, EMA21, EMA50 and EMA200, confirming a solid uptrend. MACD line is above its signal with a positive histogram, while ADX at 36.7 shows strong momentum. Volume has surged over 200%, reinforcing bullish pressure despite an overbought RSI. The structure favors a long bias. Together, these indicators favor LONG continuation toward resistance.",
+      "market_context": "BTC is up 2.5% on the day, the market is broadly positive with over 90% of assets in green, supporting overall risk‑on",
+      "result": "PENDING"
     }
   ]
 }
