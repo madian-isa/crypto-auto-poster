@@ -64046,6 +64046,23 @@
       "technical_analysis": "MACD line sits above its signal and the histogram is positive, indicating bullish momentum. Stochastic K (67) remains above D, reinforcing upward pressure. ADX at 42.8 shows a strong trend, while the order‑book imbalance (+23% bids) signals buying interest. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
       "market_context": "BTC is up 1.17% on the day, keeping the broader market broadly positive with 87% of assets in green.",
       "result": "PENDING"
+    },
+    {
+      "id": 3768,
+      "created_at": "2026-10-21T03:01:10.493945+00:00",
+      "symbol": "WLDUSDT",
+      "direction": "LONG",
+      "title": "$WLD Higher Low Structure Confirmed: Long Entry Level Reached",
+      "entry_low": 0.5792,
+      "entry_high": 0.58,
+      "stop_loss": 0.5584,
+      "take_profit": 0.622,
+      "support": 0.5792,
+      "resistance": 0.5961,
+      "news_line": "",
+      "technical_analysis": "Price sits above EMA9, EMA21, EMA50 and EMA200, showing a clear bullish stack. ADX at 44.9 confirms a strong trend. The next key barrier is the 0.5961 resistance. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure. The nearby support and resistance levels frame the current market structure.",
+      "market_context": "Bitcoin is bullish on the daily chart and the broader market is broadly positive, with 86.6% of assets in green.",
+      "result": "PENDING"
     }
   ]
 }
