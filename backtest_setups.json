@@ -64148,6 +64148,23 @@
       "technical_analysis": "Stochastic is deep in oversold territory (16) and RSI sits at 43, suggesting room for upside. Buying pressure shows in a 26.8% order‑book bid imbalance. Momentum points to a potential bounce in the near term. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 3774,
+      "created_at": "2026-10-21T08:00:59.955118+00:00",
+      "symbol": "SOXLBUSDT",
+      "direction": "LONG",
+      "title": "$SOXLB Prepares for Parabolic Phase: Key Technical Trigger Met",
+      "entry_low": 104.31,
+      "entry_high": 104.54,
+      "stop_loss": 100.66,
+      "take_profit": 111.955,
+      "support": 104.31,
+      "resistance": 104.72,
+      "news_line": "",
+      "technical_analysis": "MACD shows bullish momentum with the line above the signal and a positive histogram. The price sits above the 9‑, 21‑ and 50‑EMA cluster, while RSI at 59 and Stochastic K at 76 indicate continued strength. ADX around 29 confirms a solid trend, and a modest bid‑side order‑book imbalance supports a long bias.",
+      "market_context": "BTC is up about 2% with a bullish daily trend and mixed 4‑hour outlook. The broader market is broadly positive, with roughly",
+      "result": "PENDING"
     }
   ]
 }
