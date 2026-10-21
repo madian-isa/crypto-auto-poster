@@ -1,9 +1,10 @@
 {
   "date": "2026-10-21",
-  "count": 3,
+  "count": 4,
   "posted_symbols_today": [
     "COMPUSDT",
     "IOSTUSDT",
-    "ZECUSDT"
+    "ZECUSDT",
+    "EPICUSDT"
   ]
 }
