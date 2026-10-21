@@ -1,6 +1,6 @@
 {
   "date": "2026-10-21",
-  "count": 27,
+  "count": 28,
   "posted_symbols_today": [
     "COMPUSDT",
     "IOSTUSDT",
@@ -28,6 +28,7 @@
     "XRPUSDT",
     "ZAMAUSDT",
     "PROMUSDT",
-    "BTCUSDT"
+    "BTCUSDT",
+    "QNTUSDT"
   ]
 }

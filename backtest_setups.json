@@ -64437,6 +64437,23 @@
       "technical_analysis": "All major indicators point bullish. EMA9, EMA21, EMA50 and EMA200 sit below price, confirming an uptrend. MACD line sits well above its signal with a strong positive histogram. ADX at 49 signals a powerful trend. Order‑book shows a 66 % bid imbalance. Despite RSI and Stoch overbought, momentum remains firmly to the upside.",
       "market_context": "BTC up 2.16% in 24 h, market breadth broadly positive with 79 % green assets.",
       "result": "PENDING"
+    },
+    {
+      "id": 3791,
+      "created_at": "2026-10-21T22:50:51.432057+00:00",
+      "symbol": "QNTUSDT",
+      "direction": "LONG",
+      "title": "Technical Signals Turn Positive as Market Momentum Builds",
+      "entry_low": 208.5,
+      "entry_high": 209.5,
+      "stop_loss": 201.2,
+      "take_profit": 224.6,
+      "support": 208.37,
+      "resistance": 211.99,
+      "news_line": "",
+      "technical_analysis": "Volume is up 63 % and the order book shows a 32 % bid imbalance. RSI and Stochastic are overbought, but the structure favors a long move toward the 212.87 resistance. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
+      "market_context": "BTC is bullish on 4h and 1d, up 1.76%, and the broader market is broadly positive with 69.5% green.",
+      "result": "PENDING"
     }
   ]
 }
