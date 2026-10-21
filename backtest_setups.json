@@ -64165,6 +64165,23 @@
       "technical_analysis": "MACD shows bullish momentum with the line above the signal and a positive histogram. The price sits above the 9‑, 21‑ and 50‑EMA cluster, while RSI at 59 and Stochastic K at 76 indicate continued strength. ADX around 29 confirms a solid trend, and a modest bid‑side order‑book imbalance supports a long bias.",
       "market_context": "BTC is up about 2% with a bullish daily trend and mixed 4‑hour outlook. The broader market is broadly positive, with roughly",
       "result": "PENDING"
+    },
+    {
+      "id": 3775,
+      "created_at": "2026-10-21T09:40:47.362089+00:00",
+      "symbol": "NEARUSDT",
+      "direction": "LONG",
+      "title": "Bullish Momentum Is Building: Can $NEAR Continue Its Breakout?",
+      "entry_low": 5.16,
+      "entry_high": 5.2,
+      "stop_loss": 4.99,
+      "take_profit": 5.56,
+      "support": 4.991,
+      "resistance": 5.28,
+      "news_line": "",
+      "technical_analysis": "MACD is positive with a rising histogram, RSI sits at 67 and ADX above 30 confirming strong bullish momentum. Price sits above EMA9, EMA21, EMA50 and EMA200, while the Bollinger band upper edge is being tested. The structure favors a move toward the 5.28 resistance. Together, these indicators favor LONG continuation toward resistance.",
+      "market_context": "BTC is up 2.6% on a bullish day and the broader market shows 90% green breadth, supporting the overall positive sentiment for",
+      "result": "PENDING"
     }
   ]
 }
