@@ -64114,6 +64114,23 @@
       "technical_analysis": "RSI at 79.8 and Stochastic K at 97 signal strong overbought conditions. Price sits just below the upper Bollinger Band and near the 1H resistance of 2.619. Order‑book shows a -4.73% imbalance favoring sellers. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
       "market_context": "BTC remains bullish on the 1‑day chart and the overall market is broadly positive, supporting a risk‑off tilt for overbought altcoins.",
       "result": "PENDING"
+    },
+    {
+      "id": 3772,
+      "created_at": "2026-10-21T06:40:51.861819+00:00",
+      "symbol": "AVAUSDT",
+      "direction": "SHORT",
+      "title": "$AVA Distribution Phase Ends: Downside Target Zone Set",
+      "entry_low": 0.332,
+      "entry_high": 0.333,
+      "stop_loss": 0.345,
+      "take_profit": 0.3075,
+      "support": 0.3138,
+      "resistance": 0.3678,
+      "news_line": "",
+      "technical_analysis": "Price sits below EMA9, EMA21, EMA50 and EMA200, confirming bearish alignment. MACD line is under its signal with a negative histogram, reinforcing downside momentum. RSI at 30 and Stochastic K at 17 indicate oversold conditions but still point to a short bias. ADX near 29 shows a moderate trend strength, supporting a move toward the 0.3138 support zone.",
+      "market_context": "BTC is in a bullish 1‑day trend while the overall market remains broadly positive, providing a supportive backdrop for AVA's short setup.",
+      "result": "PENDING"
     }
   ]
 }
