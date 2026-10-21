@@ -64267,6 +64267,23 @@
       "technical_analysis": "PEPE is trading above its 9‑,21‑,50‑ and 200‑EMA, showing a clear uptrend. ADX at 40 confirms strong momentum, and the order book is 7.9% bid‑heavy, supporting buying pressure. While RSI (67) and Stochastic (K 92, D 79) are near overbought, the bullish EMA alignment and volume depth favor a continued rise toward the 4.6 µUSDT resistance.",
       "market_context": "Bitcoin remains bullish on both 4‑hour and daily charts, up around 2.7%, and overall market breadth is broadly positive with 92.4% of",
       "result": "PENDING"
+    },
+    {
+      "id": 3781,
+      "created_at": "2026-10-21T13:10:43.160940+00:00",
+      "symbol": "ZROUSDT",
+      "direction": "LONG",
+      "title": "$ZRO Holds Moving Average Support: High Probability Long Setup",
+      "entry_low": 2.028,
+      "entry_high": 2.039,
+      "stop_loss": 1.96,
+      "take_profit": 2.1805,
+      "support": 2.01,
+      "resistance": 2.073,
+      "news_line": "",
+      "technical_analysis": "Price sits above EMA9, EMA21 and EMA50, confirming an uptrend. RSI at 58 and Stochastic K at 63 signal bullish momentum, while MACD is near the signal line with a small negative histogram. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
+      "market_context": "BTC is in a bullish trend on 4H and 1D timeframes, up about 2.8% today, and the broader market shows a 91.6%",
+      "result": "PENDING"
     }
   ]
 }
