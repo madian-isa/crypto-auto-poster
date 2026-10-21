@@ -64318,6 +64318,23 @@
       "technical_analysis": "MACD histogram is positive and the line sits above the signal, confirming upward momentum. Order‑book shows a 17.9 % bid‑side imbalance, supporting buying pressure. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure. The nearby support and resistance levels frame the current market structure.",
       "market_context": "BTC is in a bullish 4‑hour and daily trend, trading around $84,634, while 86.8 % of the market is green, indicating broad",
       "result": "PENDING"
+    },
+    {
+      "id": 3784,
+      "created_at": "2026-10-21T16:00:59.120570+00:00",
+      "symbol": "STRKUSDT",
+      "direction": "LONG",
+      "title": "$STRK Liquidation Squeeze: Bears Trapped Near Critical Resistance",
+      "entry_low": 0.0578,
+      "entry_high": 0.0582,
+      "stop_loss": 0.05452,
+      "take_profit": 0.06496,
+      "support": 0.05765,
+      "resistance": 0.06496,
+      "news_line": "",
+      "technical_analysis": "Order‑book pressure leans 22 % to the bid, while price remains above the key 1H/4H support at 0.05765. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure. The nearby support and resistance levels frame the current market structure.",
+      "market_context": "BTC is in a bullish 4H and 1D trend, up 2.3 % today, and overall market breadth is broadly positive (84.9 %",
+      "result": "PENDING"
     }
   ]
 }
