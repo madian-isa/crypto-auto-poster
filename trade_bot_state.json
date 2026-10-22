@@ -1,6 +1,6 @@
 {
   "date": "2026-10-22",
-  "count": 24,
+  "count": 25,
   "posted_symbols_today": [
     "ALTUSDT",
     "MITOUSDT",
@@ -25,6 +25,7 @@
     "ZECUSDT",
     "BTCUSDT",
     "ZROUSDT",
-    "WUSDT"
+    "WUSDT",
+    "SPCXBUSDT"
   ]
 }
