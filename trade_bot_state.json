@@ -1,10 +1,11 @@
 {
   "date": "2026-10-22",
-  "count": 4,
+  "count": 5,
   "posted_symbols_today": [
     "ALTUSDT",
     "MITOUSDT",
     "BMTUSDT",
-    "GTCUSDT"
+    "GTCUSDT",
+    "AVAUSDT"
   ]
 }
