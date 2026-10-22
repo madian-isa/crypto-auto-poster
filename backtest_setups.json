@@ -64641,6 +64641,23 @@
       "technical_analysis": "The MACD histogram is negative and the MACD line sits below its signal, signaling bearish momentum. Price is trading beneath the 9‑ and 21‑period EMAs, reinforcing a short bias. RSI at 46 shows no overbought pressure, while a low Stochastic K (~26) suggests lingering weakness. ADX around 18 points to a weak trend, and volume is up 15 %.",
       "market_context": "BTC is up 0.08 % and shows a bullish daily trend, but overall market breadth is broadly negative with 70 % red",
       "result": "PENDING"
+    },
+    {
+      "id": 3803,
+      "created_at": "2026-10-22T05:01:08.877854+00:00",
+      "symbol": "PHAUSDT",
+      "direction": "LONG",
+      "title": "Technical Signals Turn Positive as Market Momentum Builds",
+      "entry_low": 0.0606,
+      "entry_high": 0.062,
+      "stop_loss": 0.0585,
+      "take_profit": 0.0669,
+      "support": 0.0606,
+      "resistance": 0.0664,
+      "news_line": "",
+      "technical_analysis": "PHA is trading above all key EMAs, with the EMA9 at 0.0635, EMA21 at 0.0615 and EMA50 at 0.0595, confirming bullish alignment. RSI at 67.8 and Stochastic K/D in the high 80s show strong upward momentum, while MACD histogram is positive. ADX above 30 signals a firm trend. Together, these indicators favor LONG continuation toward resistance.",
+      "market_context": "BTC remains bullish on higher‑time frames, trading above its 20‑ and 50‑EMA, while overall market breadth is negative.",
+      "result": "PENDING"
     }
   ]
 }
