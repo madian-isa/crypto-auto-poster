@@ -64726,6 +64726,23 @@
       "technical_analysis": "MACD is below its signal line with a negative histogram, and price sits under the 9‑, 21‑ and 50‑EMA, confirming bearish momentum. Stochastic K at 5.6 signals oversold conditions, while ADX at 13.9 shows a weak trend. Order‑book imbalance leans toward sellers, reinforcing a short bias near the 0.0335 resistance.",
       "market_context": "BTC is in a mixed but overall bearish 4‑hour and daily trend, with a 1.2% 24‑hour decline and a broadly negative market",
       "result": "PENDING"
+    },
+    {
+      "id": 3808,
+      "created_at": "2026-10-22T08:40:55.439451+00:00",
+      "symbol": "UNIUSDT",
+      "direction": "SHORT",
+      "title": "$UNI Prepares for Breakdown: Downside Risk Escalates",
+      "entry_low": 7.052,
+      "entry_high": 7.092,
+      "stop_loss": 7.342,
+      "take_profit": 6.532,
+      "support": 7.052,
+      "resistance": 7.342,
+      "news_line": "",
+      "technical_analysis": "Short bias: price sits below EMA9, EMA21, EMA50 and EMA200, MACD histogram is negative, and RSI at 31 with Stochastic K at 9 shows oversold conditions but momentum remains bearish. ADX at 23 indicates a defined trend, and the order book shows a 41% bid‑side imbalance supporting downside. Immediate resistance is around 7.13, support near 7.12.",
+      "market_context": "BTC is down 1.5% on the 4‑hour chart, with mixed trend signals and a broadly negative market breadth of 88.9% red. Overall",
+      "result": "PENDING"
     }
   ]
 }
