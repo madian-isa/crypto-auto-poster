@@ -65066,6 +65066,23 @@
       "technical_analysis": "RSI at 32.7 and Stochastic K around 22 place SOL in oversold territory, while the order‑book shows a 20% bid‑side imbalance. Price sits just above the lower Bollinger band and near the 1‑hour support of 103.55. These factors point to upward momentum and could test the 104.8 resistance level. Together, these indicators favor LONG continuation toward resistance.",
       "market_context": "BTC is down 3.6% on the day, market breadth is broadly negative with 92.6% red tickers.",
       "result": "PENDING"
+    },
+    {
+      "id": 3828,
+      "created_at": "2026-10-22T20:10:54.413905+00:00",
+      "symbol": "AAVEUSDT",
+      "direction": "SHORT",
+      "title": "$AAVE Volume Decreases on Rally: Weak Buyers Exposed",
+      "entry_low": 146.9,
+      "entry_high": 147.1,
+      "stop_loss": 152.15,
+      "take_profit": 136.7,
+      "support": 146.62,
+      "resistance": 151.13,
+      "news_line": "",
+      "technical_analysis": "The MACD sits below its signal with a negative histogram, while price trades under the 9, 21, 50 and 200‑EMA lines, confirming bearish momentum. RSI at 37 and Stochastic around 38 signal still‑weak but oversold territory. ADX near 29 shows a moderate downtrend. The 1‑hour support sits at 146.62 and resistance at 151.13, framing the short bias.",
+      "market_context": "BTC is in a bearish 4‑hour trend, trading below its 20‑ and 50‑EMA, while the daily picture is mixed. Overall market breadth",
+      "result": "PENDING"
     }
   ]
 }
