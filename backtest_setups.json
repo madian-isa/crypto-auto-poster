@@ -64811,6 +64811,23 @@
       "technical_analysis": "The EMA stack sits above price, confirming a downtrend, while MACD remains below its signal and the histogram is negative. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
       "market_context": "BTC is mixed on 4h and 1d, down 1.7% over 24h, while the broader market is broadly negative with 89.7% red.",
       "result": "PENDING"
+    },
+    {
+      "id": 3813,
+      "created_at": "2026-10-22T11:30:51.799352+00:00",
+      "symbol": "ETHUSDT",
+      "direction": "SHORT",
+      "title": "$ETH Breaks Below Critical Support: Further Drop Expected",
+      "entry_low": 2415.0,
+      "entry_high": 2417.0,
+      "stop_loss": 2505.0,
+      "take_profit": 2238.0,
+      "support": 2395.55,
+      "resistance": 2417.66,
+      "news_line": "",
+      "technical_analysis": "Price sits below the 9, 21, 50 and 200 EMA, and MACD is deep in negative territory, confirming bearish momentum. ADX above 30 signals a strong trend. RSI at 28 and Stochastic near 10 show oversold conditions but do not outweigh the downtrend bias. Together, these indicators favor SHORT continuation toward support.",
+      "market_context": "BTC is trading lower on a mixed 4H and 1D trend, with broader market breadth showing 90.6% red. The overall environment is",
+      "result": "PENDING"
     }
   ]
 }
