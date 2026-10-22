@@ -65117,6 +65117,23 @@
       "technical_analysis": "RSI 27 and Stochastic K 6 show oversold conditions, but MACD (-0.44) is below its signal (-0.35) with a negative histogram, confirming bearish momentum. ADX 34.7 signals a strong trend, and price sits under all EMAs (9‑day to 200‑day). Order‑book imbalance –9.8% adds sell pressure, favoring a short bias near the 8.46 $ resistance and the 8.02 $ support.",
       "market_context": "BTC is in a bearish 4‑hour trend and down 3.8% over 24 h, while the broader market is broadly negative with 93.4%",
       "result": "PENDING"
+    },
+    {
+      "id": 3831,
+      "created_at": "2026-10-22T22:20:45.968893+00:00",
+      "symbol": "PEPEUSDT",
+      "direction": "SHORT",
+      "title": "$PEPE Rejection at Key Supply Zone: Short Setup Activated",
+      "entry_low": 4.48e-06,
+      "entry_high": 4.51e-06,
+      "stop_loss": 4.652325e-06,
+      "take_profit": 4.18e-06,
+      "support": 4.38e-06,
+      "resistance": 4.51e-06,
+      "news_line": "",
+      "technical_analysis": "Short bias dominates PEPEUSDT. Price sits below the 9‑EMA, 21‑EMA and 50‑EMA, while MACD remains negative and RSI at 38 signals weakening momentum. Order‑book shows a 23 % bid imbalance, supporting downside pressure. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
+      "market_context": "BTC is in a bearish 4‑hour trend and the broader market is broadly negative, with 92.8% of assets red, reinforcing the short",
+      "result": "PENDING"
     }
   ]
 }
