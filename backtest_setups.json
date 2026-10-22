@@ -64658,6 +64658,23 @@
       "technical_analysis": "PHA is trading above all key EMAs, with the EMA9 at 0.0635, EMA21 at 0.0615 and EMA50 at 0.0595, confirming bullish alignment. RSI at 67.8 and Stochastic K/D in the high 80s show strong upward momentum, while MACD histogram is positive. ADX above 30 signals a firm trend. Together, these indicators favor LONG continuation toward resistance.",
       "market_context": "BTC remains bullish on higher‑time frames, trading above its 20‑ and 50‑EMA, while overall market breadth is negative.",
       "result": "PENDING"
+    },
+    {
+      "id": 3804,
+      "created_at": "2026-10-22T05:20:59.348471+00:00",
+      "symbol": "SNDKBUSDT",
+      "direction": "SHORT",
+      "title": "Panic Selling Risk Increases as $SNDKB Tests Critical Floor",
+      "entry_low": 1342.0,
+      "entry_high": 1345.0,
+      "stop_loss": 1400.0,
+      "take_profit": 1230.5,
+      "support": 1331.35,
+      "resistance": 1368.81,
+      "news_line": "",
+      "technical_analysis": "Indicators point to a short bias. Price sits beneath EMA9, EMA21, EMA50 and EMA200, confirming a downtrend. MACD is negative and under its signal line, while ADX at 30 signals a strong trend. RSI at 36 and Stochastic K around 12 suggest lingering weakness. Resistance sits near 1369, support near 1331.",
+      "market_context": "Overall market remains broadly negative, with 74% of assets in red. BTC shows mixed 4‑hour movement but a bullish daily trend; however",
+      "result": "PENDING"
     }
   ]
 }
