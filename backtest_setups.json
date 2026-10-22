@@ -65049,6 +65049,23 @@
       "technical_analysis": "ZAMA is sitting just above the 1‑hour support of 0.07292. RSI at 36 and Stochastic around 28 signal oversold conditions, while the orderbook shows a slight bid‑side edge. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure. The nearby support and resistance levels frame the current market structure.",
       "market_context": "BTC is in a bearish 24h move, down 3.5%, and the overall market is broadly negative with 92.4% red assets.",
       "result": "PENDING"
+    },
+    {
+      "id": 3827,
+      "created_at": "2026-10-22T19:31:02.695264+00:00",
+      "symbol": "SOLUSDT",
+      "direction": "LONG",
+      "title": "$SOL Outperformance Signal: Buying Momentum Beats Broader Market",
+      "entry_low": 103.55,
+      "entry_high": 103.75,
+      "stop_loss": 99.9,
+      "take_profit": 111.15,
+      "support": 103.55,
+      "resistance": 104.8,
+      "news_line": "",
+      "technical_analysis": "RSI at 32.7 and Stochastic K around 22 place SOL in oversold territory, while the order‑book shows a 20% bid‑side imbalance. Price sits just above the lower Bollinger band and near the 1‑hour support of 103.55. These factors point to upward momentum and could test the 104.8 resistance level. Together, these indicators favor LONG continuation toward resistance.",
+      "market_context": "BTC is down 3.6% on the day, market breadth is broadly negative with 92.6% red tickers.",
+      "result": "PENDING"
     }
   ]
 }
