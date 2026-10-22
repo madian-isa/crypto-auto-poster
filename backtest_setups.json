@@ -65083,6 +65083,23 @@
       "technical_analysis": "The MACD sits below its signal with a negative histogram, while price trades under the 9, 21, 50 and 200‑EMA lines, confirming bearish momentum. RSI at 37 and Stochastic around 38 signal still‑weak but oversold territory. ADX near 29 shows a moderate downtrend. The 1‑hour support sits at 146.62 and resistance at 151.13, framing the short bias.",
       "market_context": "BTC is in a bearish 4‑hour trend, trading below its 20‑ and 50‑EMA, while the daily picture is mixed. Overall market breadth",
       "result": "PENDING"
+    },
+    {
+      "id": 3829,
+      "created_at": "2026-10-22T20:20:51.060383+00:00",
+      "symbol": "TAOUSDT",
+      "direction": "SHORT",
+      "title": "High Volume Selling Sweep Breaks $TAO Market Structure",
+      "entry_low": 261.8,
+      "entry_high": 262.0,
+      "stop_loss": 271.2,
+      "take_profit": 243.3,
+      "support": 252.9,
+      "resistance": 262.0,
+      "news_line": "",
+      "technical_analysis": "TAO is trading well below its 9, 21, 50 and 200 EMA, confirming a downtrend. MACD sits under its signal line, and the histogram stays negative. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
+      "market_context": "Bitcoin is in a bearish 4‑hour trend, down 3.7% on the day, and the broader market is broadly negative with 92.8% of",
+      "result": "PENDING"
     }
   ]
 }
