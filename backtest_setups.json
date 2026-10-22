@@ -64828,6 +64828,23 @@
       "technical_analysis": "Price sits below the 9, 21, 50 and 200 EMA, and MACD is deep in negative territory, confirming bearish momentum. ADX above 30 signals a strong trend. RSI at 28 and Stochastic near 10 show oversold conditions but do not outweigh the downtrend bias. Together, these indicators favor SHORT continuation toward support.",
       "market_context": "BTC is trading lower on a mixed 4H and 1D trend, with broader market breadth showing 90.6% red. The overall environment is",
       "result": "PENDING"
+    },
+    {
+      "id": 3814,
+      "created_at": "2026-10-22T12:30:59.390394+00:00",
+      "symbol": "ZECUSDT",
+      "direction": "SHORT",
+      "title": "Smart Money Distribution Visible on $ZEC On-Chain Data",
+      "entry_low": 1270.0,
+      "entry_high": 1275.0,
+      "stop_loss": 1319.63,
+      "take_profit": 1178.24,
+      "support": 1251.18,
+      "resistance": 1277.49,
+      "news_line": "",
+      "technical_analysis": "MACD is deep in negative territory with the line well below its signal and a large bearish histogram. Price sits beneath the 9‑, 21‑ and 50‑EMA, confirming downtrend pressure. RSI at 40 and Stochastic under 20 signal weakening momentum, while ADX above 30 shows a strong trend. Together, these indicators favor SHORT continuation toward support.",
+      "market_context": "BTC shows a mixed trend on 4H and 1D charts around $81.8k, with a slight bearish tilt and overall market breadth largely",
+      "result": "PENDING"
     }
   ]
 }
