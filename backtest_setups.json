@@ -65576,6 +65576,23 @@
       "technical_analysis": "Price sits below EMA50 (4.99) and EMA200 (5.02), indicating bearish bias. RSI is neutral at 48.6 and ADX is weak (13), showing little trend strength. Order‑book imbalance favors bids, but the level sits at the 1‑hour resistance of 4.958, supporting a short stance. Together, these indicators favor SHORT continuation toward support.",
       "market_context": "BTC is bearish on the 4‑hour chart yet mixed on the daily, while the broader market is 58.6% red. NEAR’s order‑book shows",
       "result": "PENDING"
+    },
+    {
+      "id": 3858,
+      "created_at": "2026-10-23T13:50:51.930281+00:00",
+      "symbol": "BEBUSDT",
+      "direction": "LONG",
+      "title": "$BEB Breaks Out of Falling Wedge Pattern: Targets Set Higher",
+      "entry_low": 208.0,
+      "entry_high": 209.0,
+      "stop_loss": 200.5,
+      "take_profit": 224.5,
+      "support": 207.78,
+      "resistance": 211.12,
+      "news_line": "",
+      "technical_analysis": "MACD line sits above its signal with a positive histogram, while RSI at 39.5 and Stochastic K at 26 suggest oversold conditions. Price rests near the 207.8 support and below all EMA tiers, but the bullish momentum signals favor an upward move toward the 211.1 resistance. Together, these indicators favor LONG continuation toward resistance.",
+      "market_context": "BTC shows a mixed 4‑hour bearish trend but overall 24‑hour bullish momentum, with 56.9% of assets green and market breadth mixed.",
+      "result": "PENDING"
     }
   ]
 }
