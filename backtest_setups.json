@@ -65831,6 +65831,23 @@
       "technical_analysis": "MACD histogram is negative and the line remains under its signal, adding bearish momentum. RSI at 42.8 is below neutral, while the price has slipped just under the lower Bollinger Band. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
       "market_context": "BTC is marginally bullish (+0.4%) and the broader market shows a 72% green breadth, providing overall positive sentiment while USD1USDT remains in",
       "result": "PENDING"
+    },
+    {
+      "id": 3873,
+      "created_at": "2026-10-23T18:01:06.220664+00:00",
+      "symbol": "SUIUSDT",
+      "direction": "SHORT",
+      "title": "$SUI Fails Resistance Retest: Bearish Extension Imminent",
+      "entry_low": 0.9915,
+      "entry_high": 0.9917,
+      "stop_loss": 1.0264,
+      "take_profit": 0.922,
+      "support": 0.9843,
+      "resistance": 0.9917,
+      "news_line": "",
+      "technical_analysis": "Price sits just below the 1‑hour resistance at 0.9917 while trading under EMA9, EMA21, EMA50 and EMA200, signaling bearish bias. RSI is neutral at 48.9 and Stochastic shows a marginal downshift (K < D). Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
+      "market_context": "BTC up 0.47% on the day, with a mixed 1‑day trend but a bearish 4‑hour EMA alignment; overall market breadth remains broadly",
+      "result": "PENDING"
     }
   ]
 }
