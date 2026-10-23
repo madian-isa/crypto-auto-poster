@@ -65984,6 +65984,23 @@
       "technical_analysis": "RSI at 32 signals oversold conditions while MACD stays below its signal line, producing a negative histogram. All EMAs (9‑200) sit above price, confirming a downtrend. Stochastic K (32) under D (47) adds bearish pressure, and ADX 35 shows a strong trend. Order‑book imbalance of –90 % further favors selling.",
       "market_context": "BTC is in a bearish 4‑hour trend, down 4.3% over 24 h, while the broader market shows a slight green bias (55",
       "result": "PENDING"
+    },
+    {
+      "id": 3882,
+      "created_at": "2026-10-23T20:40:47.189816+00:00",
+      "symbol": "DOTUSDT",
+      "direction": "SHORT",
+      "title": "Bearish Continuation Pattern Confirmed on $DOT Chart Structure",
+      "entry_low": 1.122,
+      "entry_high": 1.124,
+      "stop_loss": 1.163,
+      "take_profit": 1.043,
+      "support": 1.118,
+      "resistance": 1.125,
+      "news_line": "",
+      "technical_analysis": "DOT is trading below all key EMAs (9,21,50,200) and the MACD histogram remains negative, indicating bearish momentum. Order‑book shows a 22% bid‑side imbalance, supporting a short bias near the 1.118‑1.125 resistance cluster. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
+      "market_context": "Bitcoin is in a mild bullish phase, up 0.09% on the day, while overall market breadth shows 66% green assets, indicating a",
+      "result": "PENDING"
     }
   ]
 }
