@@ -65593,6 +65593,23 @@
       "technical_analysis": "MACD line sits above its signal with a positive histogram, while RSI at 39.5 and Stochastic K at 26 suggest oversold conditions. Price rests near the 207.8 support and below all EMA tiers, but the bullish momentum signals favor an upward move toward the 211.1 resistance. Together, these indicators favor LONG continuation toward resistance.",
       "market_context": "BTC shows a mixed 4‑hour bearish trend but overall 24‑hour bullish momentum, with 56.9% of assets green and market breadth mixed.",
       "result": "PENDING"
+    },
+    {
+      "id": 3859,
+      "created_at": "2026-10-23T14:01:05.175384+00:00",
+      "symbol": "STRKUSDT",
+      "direction": "LONG",
+      "title": "$STRK Holds Moving Average Support: High Probability Long Setup",
+      "entry_low": 0.0525,
+      "entry_high": 0.0529,
+      "stop_loss": 0.05085,
+      "take_profit": 0.0564,
+      "support": 0.05241,
+      "resistance": 0.05355,
+      "news_line": "",
+      "technical_analysis": "MACD shows a bullish crossover (line above signal, positive histogram) while the 20‑minute order book is 20 % bid‑heavy, indicating buying pressure. Price sits just above the 9‑EMA and the stochastic is at 64 % above the 50 % midpoint. Together these signals favor a long bias and suggest near the 0.0524‑0.0535 range.",
+      "market_context": "BTC is up 0.239% on the day, showing bullish momentum, while overall market breadth is mixed (45.3% green, 54.7% red).",
+      "result": "PENDING"
     }
   ]
 }
