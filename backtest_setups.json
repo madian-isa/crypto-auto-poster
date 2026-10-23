@@ -65542,6 +65542,23 @@
       "technical_analysis": "RSI at 62.5 and MACD histogram positive show bullish momentum, while price sits above EMA9, EMA21, EMA50 and EMA200, confirming an uptrend. ADX 44 indicates a strong trend. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure. The nearby support and resistance levels frame the current market structure.",
       "market_context": "BTC is in a bearish 4‑hour trend and mixed daily trend, down 0.07% on the day, while overall market breadth leans slightly",
       "result": "PENDING"
+    },
+    {
+      "id": 3856,
+      "created_at": "2026-10-23T13:01:06.159892+00:00",
+      "symbol": "BNBUSDT",
+      "direction": "LONG",
+      "title": "$BNB Breakout Confirmation: Bulls Target Next Supply Zone",
+      "entry_low": 744.0,
+      "entry_high": 745.5,
+      "stop_loss": 718.0,
+      "take_profit": 798.25,
+      "support": 744.0,
+      "resistance": 749.27,
+      "news_line": "",
+      "technical_analysis": "BNB is trading above all key EMAs and the MACD histogram remains solidly positive, confirming bullish momentum. RSI at 64 and ADX above 30 indicate a strong uptrend, while the order‑book shows a 54% bid imbalance. Price sits near the 1‑hour support at 744 and faces resistance around 749 on the chart.",
+      "market_context": "BTC shows a marginal 0.01% rise, with a mixed 4‑hour trend and overall market breadth split (51.6% green, 48.4% red).",
+      "result": "PENDING"
     }
   ]
 }
