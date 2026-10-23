@@ -65967,6 +65967,23 @@
       "technical_analysis": "The MACD histogram is negative and the MACD line sits below its signal, confirming down momentum. ADX shows a moderate trend, and the pair sits near the lower Bollinger band, with resistance at 12.014 and support at 11.906. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
       "market_context": "BTC is in a bearish 4‑hour trend and down 0.1% on the day, while overall market breadth stays broadly positive (63% green).",
       "result": "PENDING"
+    },
+    {
+      "id": 3881,
+      "created_at": "2026-10-23T20:20:55.619913+00:00",
+      "symbol": "VELODROMEUSDT",
+      "direction": "SHORT",
+      "title": "$VELODROME Prepares for Breakdown: Downside Risk Escalates",
+      "entry_low": 0.0326,
+      "entry_high": 0.0327,
+      "stop_loss": 0.03381,
+      "take_profit": 0.03033,
+      "support": 0.03158,
+      "resistance": 0.03381,
+      "news_line": "",
+      "technical_analysis": "RSI at 32 signals oversold conditions while MACD stays below its signal line, producing a negative histogram. All EMAs (9‑200) sit above price, confirming a downtrend. Stochastic K (32) under D (47) adds bearish pressure, and ADX 35 shows a strong trend. Order‑book imbalance of –90 % further favors selling.",
+      "market_context": "BTC is in a bearish 4‑hour trend, down 4.3% over 24 h, while the broader market shows a slight green bias (55",
+      "result": "PENDING"
     }
   ]
 }
