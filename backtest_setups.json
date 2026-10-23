@@ -66154,6 +66154,23 @@
       "technical_analysis": "RSI at 10% signals deep oversold, yet price sits well below all EMA lines (9‑200) and MACD remains negative under its signal, confirming bearish momentum. ADX above 45 shows a strong trend, and order‑book imbalance leans toward sellers. The pair is constrained between 1.156 support and 1.316 resistance, supporting a short bias.",
       "market_context": "BTC is in a bearish 4‑hour trend and the broader market shows a 69% red breadth, reinforcing downside pressure on risk assets.",
       "result": "PENDING"
+    },
+    {
+      "id": 3892,
+      "created_at": "2026-10-23T23:10:48.255533+00:00",
+      "symbol": "AVAXUSDT",
+      "direction": "SHORT",
+      "title": "Moving Average Death Cross Signals Downward Trend for $AVAX",
+      "entry_low": 9.08,
+      "entry_high": 9.12,
+      "stop_loss": 9.57,
+      "take_profit": 8.16,
+      "support": 8.863,
+      "resistance": 9.154,
+      "news_line": "",
+      "technical_analysis": "AVAX is trading below all key EMAs and the MACD histogram remains negative, confirming bearish momentum. RSI at 30.9 and Stochastic K at 16.6 signal oversold conditions, but the strong ADX (34.5) shows the downtrend is firm. The price sits near the 1H/4H resistance zone, favoring a short bias. Together, these indicators favor SHORT continuation toward support.",
+      "market_context": "BTC is in a bearish 4H trend and the broader market is broadly negative, with 71.4% red assets. AVAX faces a 20.5%",
+      "result": "PENDING"
     }
   ]
 }
