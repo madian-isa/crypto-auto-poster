@@ -65270,6 +65270,23 @@
       "technical_analysis": "MACD line is above its signal with a positive histogram, suggesting bullish momentum. RSI at 33 and Stochastic K at 16 show oversold conditions. ADX 35 confirms a strong trend, and order‑book imbalance of 41 % to the bid adds buying pressure. Together, these indicators favor LONG continuation toward resistance.",
       "market_context": "BTC is bearish on the 4‑hour chart and mixed on daily, while the overall market is broadly negative with 87.4% red.",
       "result": "PENDING"
+    },
+    {
+      "id": 3840,
+      "created_at": "2026-10-23T04:00:58.023780+00:00",
+      "symbol": "ZECUSDT",
+      "direction": "LONG",
+      "title": "$ZEC Breaks Out of Falling Wedge Pattern: Targets Set Higher",
+      "entry_low": 1210.0,
+      "entry_high": 1225.0,
+      "stop_loss": 1168.8,
+      "take_profit": 1314.9,
+      "support": 1203.74,
+      "resistance": 1226.25,
+      "news_line": "",
+      "technical_analysis": "MACD line sits above its signal with a positive histogram, while the stochastic is just above its trigger line. RSI is near 45, indicating room to rise. The indicators collectively tilt slightly bullish. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
+      "market_context": "BTC shows a bearish 4‑hour trend and the overall market is broadly negative, with 84% of tickers red and a 1.3% drop",
+      "result": "PENDING"
     }
   ]
 }
