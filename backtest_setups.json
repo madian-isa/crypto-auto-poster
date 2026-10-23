@@ -65304,6 +65304,23 @@
       "technical_analysis": "Price sits above the 9, 21, 50 and 200 EMA, confirming an uptrend. MACD line exceeds its signal with a positive histogram, while RSI at 58 signals moderate bullish momentum. ADX above 30 (36.5) shows a strong trend, and Stochastic K/D around 73/75 indicate near‑overbought but still upward pressure. Resistance lies near 0.0207.",
       "market_context": "BTC is in a bearish 4‑hour trend and down 1.2% over 24 h, while the broader market shows 78 % red tokens",
       "result": "PENDING"
+    },
+    {
+      "id": 3842,
+      "created_at": "2026-10-23T05:50:57.745695+00:00",
+      "symbol": "PUMPUSDT",
+      "direction": "SHORT",
+      "title": "$PUMP Rejection at Key Supply Zone: Short Setup Activated",
+      "entry_low": 0.00466,
+      "entry_high": 0.00468,
+      "stop_loss": 0.004845,
+      "take_profit": 0.00432,
+      "support": 0.004525,
+      "resistance": 0.004695,
+      "news_line": "",
+      "technical_analysis": "Short bias dominates: price sits below EMA9, EMA21, EMA50 and EMA200, confirming a downtrend overall. RSI at 42 and stochastic near 47 stay under neutral, while ADX 22 shows a weak trend. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
+      "market_context": "BTC is in a bearish 4‑hour trend, down 1.0% over 24 h, and the broader market is broadly negative (66 % red).",
+      "result": "PENDING"
     }
   ]
 }
