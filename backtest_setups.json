@@ -65287,6 +65287,23 @@
       "technical_analysis": "MACD line sits above its signal with a positive histogram, while the stochastic is just above its trigger line. RSI is near 45, indicating room to rise. The indicators collectively tilt slightly bullish. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
       "market_context": "BTC shows a bearish 4‑hour trend and the overall market is broadly negative, with 84% of tickers red and a 1.3% drop",
       "result": "PENDING"
+    },
+    {
+      "id": 3841,
+      "created_at": "2026-10-23T05:10:51.860495+00:00",
+      "symbol": "AIUSDT",
+      "direction": "LONG",
+      "title": "Critical Resistance Test: $AI Preparing to Surge Higher",
+      "entry_low": 0.02035,
+      "entry_high": 0.02045,
+      "stop_loss": 0.019584,
+      "take_profit": 0.022032,
+      "support": 0.0203,
+      "resistance": 0.0207,
+      "news_line": "",
+      "technical_analysis": "Price sits above the 9, 21, 50 and 200 EMA, confirming an uptrend. MACD line exceeds its signal with a positive histogram, while RSI at 58 signals moderate bullish momentum. ADX above 30 (36.5) shows a strong trend, and Stochastic K/D around 73/75 indicate near‑overbought but still upward pressure. Resistance lies near 0.0207.",
+      "market_context": "BTC is in a bearish 4‑hour trend and down 1.2% over 24 h, while the broader market shows 78 % red tokens",
+      "result": "PENDING"
     }
   ]
 }
