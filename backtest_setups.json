@@ -65491,6 +65491,23 @@
       "technical_analysis": "QNT is trading well below its EMA9‑200 cluster, with price under the lower Bollinger band, confirming bearish pressure. MACD remains negative and under its signal line, while ADX at 26 shows a moderate trend. Although RSI (28) and Stochastic (≈16) signal oversold conditions, the prevailing EMA and MACD bias favors a short swing toward the 181.3 support.",
       "market_context": "Bitcoin remains bearish on the 4‑hour chart, down 0.48% in 24 h, while daily sentiment is mixed. Overall market breadth shows 59",
       "result": "PENDING"
+    },
+    {
+      "id": 3853,
+      "created_at": "2026-10-23T12:10:52.317364+00:00",
+      "symbol": "PHAUSDT",
+      "direction": "LONG",
+      "title": "Bullish Momentum Is Building: Can $PHA Continue Its Breakout?",
+      "entry_low": 0.065,
+      "entry_high": 0.0655,
+      "stop_loss": 0.06264,
+      "take_profit": 0.07047,
+      "support": 0.0616,
+      "resistance": 0.0681,
+      "news_line": "",
+      "technical_analysis": "RSI at 60.4 and a positive MACD histogram signal bullish momentum, while price sits above the EMA9, EMA21 and EMA50 lines. ADX above 25 confirms a firm trend, and volume is up 56 %. Stochastic at 100 shows strong buying pressure near the upper Bollinger band. Together, these indicators favor LONG continuation toward resistance.",
+      "market_context": "BTC is in a bearish 4‑hour trend and down 0.3 % on the day, keeping overall market sentiment slightly negative.",
+      "result": "PENDING"
     }
   ]
 }
