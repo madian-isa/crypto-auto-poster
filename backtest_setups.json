@@ -65678,6 +65678,23 @@
       "technical_analysis": "RSI at 42.7 shows neutral momentum, ADX at 17.9 signals a weak trend, and the order‑book imbalance is slightly bearish. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
       "market_context": "BTC is in a bearish 4‑hour trend, while overall market breadth is broadly positive, adding a cautious backdrop for XRP.",
       "result": "PENDING"
+    },
+    {
+      "id": 3864,
+      "created_at": "2026-10-23T15:40:47.220540+00:00",
+      "symbol": "ETHUSDT",
+      "direction": "SHORT",
+      "title": "Smart Money Distribution Visible on $ETH On-Chain Data",
+      "entry_low": 2408.5,
+      "entry_high": 2409.2,
+      "stop_loss": 2495.0,
+      "take_profit": 2236.55,
+      "support": 2395.55,
+      "resistance": 2413.87,
+      "news_line": "",
+      "technical_analysis": "Stochastic is deep in overbought territory (77.6) and price sits just below the 1‑hour resistance at 2413.87. The market is under slight sell pressure (order‑book imbalance -5.9%). Longer‑term EMAs (50, 200) sit above price, indicating a broader downtrend. These factors favor a short bias. Together, these indicators favor SHORT continuation toward support.",
+      "market_context": "BTC is marginally bullish (+0.015%) while overall market breadth remains broadly positive (70% green).",
+      "result": "PENDING"
     }
   ]
 }
