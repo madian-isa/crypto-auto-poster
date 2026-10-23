@@ -65644,6 +65644,23 @@
       "technical_analysis": "AVA is trading above its EMA9, EMA21 and EMA50, with the MACD line comfortably above the signal and a positive histogram. RSI at 64 and Stochastic K/D in the high 80s signal strong upward momentum, while ADX near 30 confirms a firm trend. Together, these indicators favor LONG continuation toward resistance.",
       "market_context": "BTC shows a slight bullish edge (up 0.2%) and the broader market is broadly positive, with 68% of assets green, providing a",
       "result": "PENDING"
+    },
+    {
+      "id": 3862,
+      "created_at": "2026-10-23T15:01:07.388268+00:00",
+      "symbol": "WLDUSDT",
+      "direction": "SHORT",
+      "title": "Bearish Continuation Pattern Confirmed on $WLD Chart Structure",
+      "entry_low": 0.5345,
+      "entry_high": 0.535,
+      "stop_loss": 0.554,
+      "take_profit": 0.49625,
+      "support": 0.5309,
+      "resistance": 0.5348,
+      "news_line": "",
+      "technical_analysis": "The price sits beneath EMA9, EMA21 and EMA50, confirming a downtrend. MACD histogram is negative and the line remains under its signal, while RSI at 39.7 and Stochastic K at 18 signal oversold but still bearish pressure. Order‑book shows a 6.9% ask‑side imbalance, reinforcing a short bias in today’s overall market sentiment.",
+      "market_context": "BTC is in a bearish 4‑hour trend while the broader market breadth stays broadly positive, with 63% of assets green.",
+      "result": "PENDING"
     }
   ]
 }
