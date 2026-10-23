@@ -65474,6 +65474,23 @@
       "technical_analysis": "Short bias dominates as price sits below the 50‑EMA (1309) and 200‑EMA (1359), while short‑term EMAs sit just under price. Stochastic is high (~69) and RSI near neutral, suggesting overbought conditions. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
       "market_context": "BTC 24h down 0.48%, overall market 57% red, 43% green, breadth mixed.",
       "result": "PENDING"
+    },
+    {
+      "id": 3852,
+      "created_at": "2026-10-23T11:10:55.650204+00:00",
+      "symbol": "QNTUSDT",
+      "direction": "SHORT",
+      "title": "$QNT Breaks Ascending Support Line: Bearish Momentum Surge",
+      "entry_low": 184.5,
+      "entry_high": 184.9,
+      "stop_loss": 191.2,
+      "take_profit": 171.7,
+      "support": 181.3,
+      "resistance": 190.44,
+      "news_line": "",
+      "technical_analysis": "QNT is trading well below its EMA9‑200 cluster, with price under the lower Bollinger band, confirming bearish pressure. MACD remains negative and under its signal line, while ADX at 26 shows a moderate trend. Although RSI (28) and Stochastic (≈16) signal oversold conditions, the prevailing EMA and MACD bias favors a short swing toward the 181.3 support.",
+      "market_context": "Bitcoin remains bearish on the 4‑hour chart, down 0.48% in 24 h, while daily sentiment is mixed. Overall market breadth shows 59",
+      "result": "PENDING"
     }
   ]
 }
