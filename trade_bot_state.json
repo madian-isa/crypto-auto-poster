@@ -1,6 +1,6 @@
 {
   "date": "2026-10-23",
-  "count": 56,
+  "count": 57,
   "posted_symbols_today": [
     "SOXLBUSDT",
     "ALTUSDT",
@@ -57,6 +57,7 @@
     "HYPEUSDT",
     "PAXGUSDT",
     "LAUSDT",
-    "MSTRBUSDT"
+    "MSTRBUSDT",
+    "TIAUSDT"
   ]
 }
