@@ -66834,6 +66834,23 @@
       "technical_analysis": "However price remains under EMA21/50/200 and ADX 56 shows a strong trend. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
       "market_context": "BTC is in a bearish 4‑hour trend and down 1.34% over 24 h, while overall market breadth is broadly negative (77% red).",
       "result": "PENDING"
+    },
+    {
+      "id": 3932,
+      "created_at": "2026-10-24T11:00:51.906534+00:00",
+      "symbol": "ARBUSDT",
+      "direction": "SHORT",
+      "title": "$ARB Distribution Phase Ends: Downside Target Zone Set",
+      "entry_low": 0.1695,
+      "entry_high": 0.1729,
+      "stop_loss": 0.1795,
+      "take_profit": 0.1546,
+      "support": 0.1683,
+      "resistance": 0.1729,
+      "news_line": "",
+      "technical_analysis": "RSI at 30 and Stochastic K/D around 14/15 signal oversold conditions, but price sits below EMA9‑200, confirming a downtrend. MACD histogram remains negative, and ADX 36 shows strong trend momentum. Order‑book shows a 56 % bid imbalance. Resistance sits near 0.1729, support at 0.1683, favoring short pressure. Current volume drop of 63 % adds to the bearish bias.",
+      "market_context": "BTC is in a bearish 4‑hour trend, trading around $80,675 below its 20‑ and 50‑EMA, while the broader market is broadly negative",
+      "result": "PENDING"
     }
   ]
 }
