@@ -67072,6 +67072,23 @@
       "technical_analysis": "The MACD histogram sits at –0.008, with the line under its signal, confirming bearish momentum. RSI at 32.6 and Stochastic around 35 signal oversold conditions but still below 40, aligning with the downtrend. ADX above 50 shows a strong trend, and price sits under EMA9, EMA21, EMA50 and EMA200, reinforcing a short bias near the 1‑hour resistance of 8.95.",
       "market_context": "BTC is in a bearish 4‑hour trend, down 1.8% on the day, and the broader market is broadly negative with 84.5% red",
       "result": "PENDING"
+    },
+    {
+      "id": 3946,
+      "created_at": "2026-10-24T15:10:53.151907+00:00",
+      "symbol": "ANIMEUSDT",
+      "direction": "LONG",
+      "title": "Critical Resistance Test: $ANIME Preparing to Surge Higher",
+      "entry_low": 0.00305,
+      "entry_high": 0.0031,
+      "stop_loss": 0.00296,
+      "take_profit": 0.003305,
+      "support": 0.00297,
+      "resistance": 0.0034,
+      "news_line": "",
+      "technical_analysis": "MACD histogram is positive and above its signal, EMA9‑21‑50‑200 are all below price, indicating bullish trend. ADX at 43 confirms strong momentum. RSI at 75 signals overbought but momentum remains firm. Price sits near the upper Bollinger band with support at 0.00297 and resistance at 0.0034, favoring a long bias.",
+      "market_context": "BTC is in a bearish 4‑hour trend and down 2% on the day, with market breadth broadly negative.",
+      "result": "PENDING"
     }
   ]
 }
