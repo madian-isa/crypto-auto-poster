@@ -67004,6 +67004,23 @@
       "technical_analysis": "The pair sits just below the 1‑hour resistance at 1.683 while all EMAs (9‑200) lie above price, confirming a downtrend. MACD remains negative, ADX at 44 signals a strong trend, and both RSI (32) and Stochastic (16) are in oversold territory, pointing to further downside pressure in the current market.",
       "market_context": "BTC is in a bearish 4‑hour trend and down 1.5% on the day, while the broader market shows 77% red assets, adding",
       "result": "PENDING"
+    },
+    {
+      "id": 3942,
+      "created_at": "2026-10-24T14:20:56.080460+00:00",
+      "symbol": "MARSCOINUSDT",
+      "direction": "SHORT",
+      "title": "$MARSCOIN Loses Key Demand Zone: Next Support Level Unprotected",
+      "entry_low": 0.067,
+      "entry_high": 0.0675,
+      "stop_loss": 0.0705,
+      "take_profit": 0.06075,
+      "support": 0.0641,
+      "resistance": 0.0707,
+      "news_line": "",
+      "technical_analysis": "RSI at 27 and Stochastic K below 10 signal oversold conditions, but MACD is negative and the histogram is expanding, confirming bearish momentum. ADX above 50 shows a strong trend. Price sits below EMA9, EMA21 and EMA50, reinforcing a down‑trend bias toward the 0.0707 resistance. Together, these indicators favor SHORT continuation toward support.",
+      "market_context": "BTC is in a bearish 4‑hour trend and the broader market is broadly negative, with 80% of assets down. This adds pressure",
+      "result": "PENDING"
     }
   ]
 }
