@@ -66392,6 +66392,23 @@
       "technical_analysis": "Multiple EMAs (9, 21, 50, 200) sit above price, MACD histogram is negative and widening, and ADX at 44.8 confirms a strong trend. Order‑book imbalance shows heavy ask pressure, while Stochastic below 30 signals oversold conditions but does not outweigh the bearish momentum. Short bias is clear. Together, these indicators favor SHORT continuation toward support.",
       "market_context": "BTC is down 1.18% in 24 h, market breadth is broadly negative with 70.9% of assets red.",
       "result": "PENDING"
+    },
+    {
+      "id": 3906,
+      "created_at": "2026-10-24T03:01:03.639523+00:00",
+      "symbol": "XRPUSDT",
+      "direction": "SHORT",
+      "title": "$XRP Fakeout Confirmed: Bulls Trapped at Local Highs",
+      "entry_low": 1.2938,
+      "entry_high": 1.2941,
+      "stop_loss": 1.3395,
+      "take_profit": 1.20285,
+      "support": 1.2817,
+      "resistance": 1.3257,
+      "news_line": "",
+      "technical_analysis": "XRP is trading below its 9, 21, 50 and 200‑EMA, confirming a downtrend. MACD histogram is negative and the line sits under the signal, while ADX at 34.8 shows a strong trend. RSI at 37 and Stochastic around 25 signal weakening momentum, keeping pressure toward near the 1.2817 support level.",
+      "market_context": "BTC is in a bearish 4‑hour trend and the broader market breadth is largely negative, with 71.9% red assets.",
+      "result": "PENDING"
     }
   ]
 }
