@@ -67565,6 +67565,23 @@
       "technical_analysis": "Price sits just above the 1‑hour resistance at 0.003244, with EMA9‑21‑50‑200 in bullish order and RSI at 54.2. Stochastic K is rising above D. Overall momentum leans bullish toward the next resistance zone. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
       "market_context": "BTC is in a bearish 4‑hour trend and the broader market shows broadly negative breadth, with 73.8% red assets, adding pressure on",
       "result": "PENDING"
+    },
+    {
+      "id": 3975,
+      "created_at": "2026-10-24T22:50:42.237339+00:00",
+      "symbol": "MUBUSDT",
+      "direction": "LONG",
+      "title": "$MUB Higher Low Structure Confirmed: Long Entry Level Reached",
+      "entry_low": 883.13,
+      "entry_high": 884.25,
+      "stop_loss": 852.0,
+      "take_profit": 947.07,
+      "support": 878.51,
+      "resistance": 885.32,
+      "news_line": "",
+      "technical_analysis": "Price sits above the 9‑, 21‑ and 50‑EMA, MACD histogram is positive and the order‑book shows a bid imbalance. RSI is neutral and ADX low, while stochastic is overbought. The nearest resistance sits around 885, support near 878. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
+      "market_context": "BTC is in a bearish 4‑hour trend while the daily picture is mixed. Overall market sentiment is slightly red, with 58.5 %",
+      "result": "PENDING"
     }
   ]
 }
