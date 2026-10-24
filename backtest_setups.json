@@ -66902,6 +66902,23 @@
       "technical_analysis": "Price sits below the 9‑, 21‑ and 50‑EMA, while the MACD histogram is negative and the MACD line remains under its signal. RSI at 36 and a low Stochastic K (≈7) signal weakening momentum. Order‑book imbalance shows heavier asks. The 1H/4H structure points to resistance at 0.0203 and support at 0.0193, favoring a short bias.",
       "market_context": "BTC is bearish on the 4‑hour chart, mixed on the daily, down 1.35% in 24h, with broadly negative market breadth.",
       "result": "PENDING"
+    },
+    {
+      "id": 3936,
+      "created_at": "2026-10-24T12:10:53.757411+00:00",
+      "symbol": "ZROUSDT",
+      "direction": "LONG",
+      "title": "Buyers Defend Key Demand Zone: $ZRO Ready for Extension",
+      "entry_low": 1.675,
+      "entry_high": 1.682,
+      "stop_loss": 1.616,
+      "take_profit": 1.8035,
+      "support": 1.675,
+      "resistance": 1.713,
+      "news_line": "",
+      "technical_analysis": "RSI at 35.8 and Stochastic K/D around 27/32 signal oversold conditions, while MACD histogram turned positive, indicating early bullish momentum. Price sits near the lower Bollinger band and a modest bid‑side order‑book imbalance supports upside. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
+      "market_context": "BTC is in a bearish 4‑hour trend and the broader market shows a largely negative breadth, reinforcing caution despite the bullish signals",
+      "result": "PENDING"
     }
   ]
 }
