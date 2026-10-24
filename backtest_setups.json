@@ -67293,6 +67293,23 @@
       "technical_analysis": "Price sits near the lower Bollinger band and the 49.4 support zone. RSI (34.7) and Stochastic (24/27) are in oversold territory, while the order book shows a 25 % bid imbalance. The combination points to a potential bounce toward the 51.5 resistance. Together, these indicators favor LONG continuation toward resistance.",
       "market_context": "BTC is in a bearish 4‑hour trend, down 1.5 % over 24 h, and the broader market is largely negative with 87.8",
       "result": "PENDING"
+    },
+    {
+      "id": 3959,
+      "created_at": "2026-10-24T18:30:57.564473+00:00",
+      "symbol": "QNTUSDT",
+      "direction": "SHORT",
+      "title": "Panic Selling Risk Increases as $QNT Tests Critical Floor",
+      "entry_low": 176.8,
+      "entry_high": 177.0,
+      "stop_loss": 183.976,
+      "take_profit": 162.748,
+      "support": 177.25,
+      "resistance": 181.86,
+      "news_line": "",
+      "technical_analysis": "QNT is trading below all key EMAs (9‑200) and MACD sits under its signal, confirming bearish momentum. RSI at 37.8 and Stochastic near 28 indicate oversold conditions but not enough to offset the downtrend. Order‑book shows a 37% bid imbalance, while ADX ~29 signals a solid trend. Short bias is evident.",
+      "market_context": "BTC at 80,405 USDT, 4‑hour trend bearish, market breadth 86.7% red, overall broadly negative sentiment.",
+      "result": "PENDING"
     }
   ]
 }
