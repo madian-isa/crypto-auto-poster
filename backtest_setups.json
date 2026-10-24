@@ -66681,6 +66681,23 @@
       "technical_analysis": "Price sits below EMA9, EMA21, EMA50 and EMA200, confirming a clear downtrend. ADX at 31 signals a strong trend, while RSI at 41 and Stochastic K at 33 show lingering downside momentum. The pair is near the 1H support zone, making short pressure the dominant bias. Together, these indicators favor SHORT continuation toward support.",
       "market_context": "BTC is in a bearish 4‑hour trend and the broader market is broadly negative, reinforcing the short orientation for SOXLBUSDT.",
       "result": "PENDING"
+    },
+    {
+      "id": 3923,
+      "created_at": "2026-10-24T08:30:50.358969+00:00",
+      "symbol": "LTCUSDT",
+      "direction": "SHORT",
+      "title": "$LTC Lower High Pattern Confirmed: Short Target in View",
+      "entry_low": 57.4,
+      "entry_high": 57.55,
+      "stop_loss": 59.774,
+      "take_profit": 52.877,
+      "support": 56.14,
+      "resistance": 57.57,
+      "news_line": "",
+      "technical_analysis": "Short bias dominates LTCUSDT. Price sits below EMA9/21/50/200, confirming a downtrend, while MACD remains negative and ADX at 47 signals strong momentum. RSI at 30 and Stochastic K near 16 point to oversold conditions, yet order‑book shows a 19% bid imbalance. Immediate resistance sits around 57.5, with support near 56.1. On the 1H chart, resistance clusters near 57.5.",
+      "market_context": "BTC is bearish and the broader market is broadly negative, with 82.7% red assets.",
+      "result": "PENDING"
     }
   ]
 }
