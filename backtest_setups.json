@@ -66375,6 +66375,23 @@
       "technical_analysis": "MACD sits below its signal with a negative histogram, confirming bearish momentum. Price sits under EMA9, EMA21, EMA50 and EMA200, reinforcing a downtrend. RSI at 36.8 and Stochastic K around 20 signal oversold conditions but do not outweigh the prevailing bearish bias. Resistance clusters near 1180.6, making a short setup plausible.",
       "market_context": "Bitcoin is in a bearish 4‑hour trend and the broader market shows a predominantly red bias, with 66% of assets down and",
       "result": "PENDING"
+    },
+    {
+      "id": 3905,
+      "created_at": "2026-10-24T02:50:44.618719+00:00",
+      "symbol": "BTCUSDT",
+      "direction": "SHORT",
+      "title": "$BTC Breaks Ascending Support Line: Bearish Momentum Surge",
+      "entry_low": 80930.0,
+      "entry_high": 80940.0,
+      "stop_loss": 84172.4,
+      "take_profit": 74460.2,
+      "support": 80939.54,
+      "resistance": 81500.0,
+      "news_line": "",
+      "technical_analysis": "Multiple EMAs (9, 21, 50, 200) sit above price, MACD histogram is negative and widening, and ADX at 44.8 confirms a strong trend. Order‑book imbalance shows heavy ask pressure, while Stochastic below 30 signals oversold conditions but does not outweigh the bearish momentum. Short bias is clear. Together, these indicators favor SHORT continuation toward support.",
+      "market_context": "BTC is down 1.18% in 24 h, market breadth is broadly negative with 70.9% of assets red.",
+      "result": "PENDING"
     }
   ]
 }
