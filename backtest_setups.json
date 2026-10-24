@@ -66273,6 +66273,23 @@
       "technical_analysis": "Price sits below every EMA, with EMA9 at 0.508 and EMA200 at 0.535, confirming bearish bias. MACD stays negative under its signal line and the histogram widens down. RSI 23 and Stochastic in the low teens show oversold pressure, while ADX ≈ 26 indicates the downtrend is still firm. Together, these indicators favor SHORT continuation toward support.",
       "market_context": "BTC remains bearish on the 4‑hour chart, trading around $80,847 below its EMA20/50, and the broader market shows more red than green",
       "result": "PENDING"
+    },
+    {
+      "id": 3899,
+      "created_at": "2026-10-24T01:10:44.756919+00:00",
+      "symbol": "AVAUSDT",
+      "direction": "LONG",
+      "title": "Bullish Momentum Is Building: Can $AVA Continue Its Breakout?",
+      "entry_low": 0.424,
+      "entry_high": 0.43,
+      "stop_loss": 0.412,
+      "take_profit": 0.457,
+      "support": 0.375,
+      "resistance": 0.4438,
+      "news_line": "",
+      "technical_analysis": "RSI at 74.8 and Stochastic K/D above 80 show strong overbought pressure, but MACD remains positive with a 0.0044 histogram, and price sits above the EMA9‑200 cluster, confirming bullish momentum. ADX at 44 indicates a firm trend. Order‑book imbalance favoring bids, the indicators collectively point to upward bias toward the nearest resistance.",
+      "market_context": "BTC is in a bearish 4‑hour trend, down 0.8% on the day, while overall market shows a slight tilt toward red (56.5%",
+      "result": "PENDING"
     }
   ]
 }
