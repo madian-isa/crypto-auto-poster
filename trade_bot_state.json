@@ -1,6 +1,6 @@
 {
   "date": "2026-10-24",
-  "count": 75,
+  "count": 76,
   "posted_symbols_today": [
     "ARKUSDT",
     "ERAUSDT",
@@ -76,6 +76,7 @@
     "SEIUSDT",
     "REDUSDT",
     "CAKEUSDT",
-    "ETHFIUSDT"
+    "ETHFIUSDT",
+    "CRCLBUSDT"
   ]
 }
