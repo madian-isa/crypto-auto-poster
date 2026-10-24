@@ -67276,6 +67276,23 @@
       "technical_analysis": "However RSI at 89.5 and Stochastic K near 79 indicate extreme overbought conditions, and order‑book shows a modest ask‑side imbalance. The combination points to a short‑bias near the 0.0833 resistance, with support around 0.0714. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
       "market_context": "BTC is in a bearish 4‑hour trend and down 1.6% over 24 h, while overall market breadth is broadly negative (88.8% red).",
       "result": "PENDING"
+    },
+    {
+      "id": 3958,
+      "created_at": "2026-10-24T18:20:51.956222+00:00",
+      "symbol": "DASHUSDT",
+      "direction": "LONG",
+      "title": "Spot Inflows Surge for $DASH as Futures Open Interest Rises",
+      "entry_low": 49.39,
+      "entry_high": 49.44,
+      "stop_loss": 47.4384,
+      "take_profit": 53.3682,
+      "support": 49.39,
+      "resistance": 51.56,
+      "news_line": "",
+      "technical_analysis": "Price sits near the lower Bollinger band and the 49.4 support zone. RSI (34.7) and Stochastic (24/27) are in oversold territory, while the order book shows a 25 % bid imbalance. The combination points to a potential bounce toward the 51.5 resistance. Together, these indicators favor LONG continuation toward resistance.",
+      "market_context": "BTC is in a bearish 4‑hour trend, down 1.5 % over 24 h, and the broader market is largely negative with 87.8",
+      "result": "PENDING"
     }
   ]
 }
