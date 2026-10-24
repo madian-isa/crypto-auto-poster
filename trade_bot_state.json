@@ -1,6 +1,6 @@
 {
   "date": "2026-10-24",
-  "count": 36,
+  "count": 37,
   "posted_symbols_today": [
     "ARKUSDT",
     "ERAUSDT",
@@ -37,6 +37,7 @@
     "AAVEUSDT",
     "ALTUSDT",
     "WCTUSDT",
-    "AEROUSDT"
+    "AEROUSDT",
+    "GRAMUSDT"
   ]
 }
