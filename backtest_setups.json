@@ -67395,6 +67395,23 @@
       "technical_analysis": "RSI at 29.7 signals oversold conditions while the MACD line sits above its signal, giving a bullish crossover. Stochastic K is rising toward 40, and ADX at 56 confirms a strong trend. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
       "market_context": "BTC is in a bearish 4‑hour trend and the broader market is broadly negative, with 80% of assets red. This backdrop supports",
       "result": "PENDING"
+    },
+    {
+      "id": 3965,
+      "created_at": "2026-10-24T20:01:05.348297+00:00",
+      "symbol": "SAHARAUSDT",
+      "direction": "LONG",
+      "title": "$SAHARA Volume Expansion Signals High Conviction Upward Move",
+      "entry_low": 0.00815,
+      "entry_high": 0.00817,
+      "stop_loss": 0.00787,
+      "take_profit": 0.00874,
+      "support": 0.00778,
+      "resistance": 0.00821,
+      "news_line": "",
+      "technical_analysis": "ADX at 39.8 signals a strong trend, RSI at 58.7 stays clear of overbought, and stochastic hovers around 52. Together these indicators favor a long stance near the current price setup today. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
+      "market_context": "BTC is down 0.9% on a bearish 4‑hour trend, and the broader market is broadly negative with 80.6% of assets red.",
+      "result": "PENDING"
     }
   ]
 }
