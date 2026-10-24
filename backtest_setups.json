@@ -67038,6 +67038,23 @@
       "technical_analysis": "Ondo is trading beneath its 9, 21, 50 and 200‑EMA, confirming a downtrend. ADX at 53.6 signals a strong trend, while MACD remains negative and RSI sits at 31, near oversold. Stochastic is neutral. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
       "market_context": "BTC is in a bearish 4‑hour trend, down 1.9% today, while overall crypto market breadth is broadly negative (84.9% red).",
       "result": "PENDING"
+    },
+    {
+      "id": 3944,
+      "created_at": "2026-10-24T14:50:51.385734+00:00",
+      "symbol": "HYPEUSDT",
+      "direction": "SHORT",
+      "title": "Bears Retake Control as $HYPE Fails to Hold Moving Averages",
+      "entry_low": 76.1,
+      "entry_high": 76.5,
+      "stop_loss": 79.0,
+      "take_profit": 70.9,
+      "support": 75.19,
+      "resistance": 77.51,
+      "news_line": "",
+      "technical_analysis": "Price sits below EMA9, EMA21, EMA50 and EMA200, confirming a downtrend. MACD is negative with a bearish histogram, RSI at 40.6 and Stochastic K/D under 40 signal weakening momentum. ADX above 40 shows the trend is strong. The setup favors a short move toward the 75.19 support. Together, these indicators favor SHORT continuation toward support.",
+      "market_context": "BTC is bearish on the 4‑hour chart and the broader market is broadly negative, with 85.3% of assets red.",
+      "result": "PENDING"
     }
   ]
 }
