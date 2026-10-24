@@ -67548,6 +67548,23 @@
       "technical_analysis": "ADX at 56 signals a strong trend. Stochastic K at 86 is overbought, and the order book shows a 12% bid‑side imbalance. These factors favor a short bias near the 1H resistance of Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
       "market_context": "BTC is in a bearish 4‑hour trend and down 1.08% over 24 h, while the overall market breadth is broadly negative (78.5%",
       "result": "PENDING"
+    },
+    {
+      "id": 3974,
+      "created_at": "2026-10-24T22:30:59.378195+00:00",
+      "symbol": "FUSDT",
+      "direction": "LONG",
+      "title": "Key Support Holds Firm: $F Bullish Continuation Setup Active",
+      "entry_low": 0.00325,
+      "entry_high": 0.00326,
+      "stop_loss": 0.003136,
+      "take_profit": 0.003493,
+      "support": 0.003161,
+      "resistance": 0.003244,
+      "news_line": "",
+      "technical_analysis": "Price sits just above the 1‑hour resistance at 0.003244, with EMA9‑21‑50‑200 in bullish order and RSI at 54.2. Stochastic K is rising above D. Overall momentum leans bullish toward the next resistance zone. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
+      "market_context": "BTC is in a bearish 4‑hour trend and the broader market shows broadly negative breadth, with 73.8% red assets, adding pressure on",
+      "result": "PENDING"
     }
   ]
 }
