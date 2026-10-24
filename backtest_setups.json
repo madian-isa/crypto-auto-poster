@@ -66358,6 +66358,23 @@
       "technical_analysis": "RSI at 29 and Stochastic K near 3 signal oversold conditions, while price sits just above the lower Bollinger band. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure. The nearby support and resistance levels frame the current market structure.",
       "market_context": "BTC is in a bearish 4‑hour trend and mixed on the daily, down about 0.7% with broadly negative market breadth.",
       "result": "PENDING"
+    },
+    {
+      "id": 3904,
+      "created_at": "2026-10-24T02:31:01.140808+00:00",
+      "symbol": "ZECUSDT",
+      "direction": "SHORT",
+      "title": "High Volume Selling Sweep Breaks $ZEC Market Structure",
+      "entry_low": 1180.0,
+      "entry_high": 1181.0,
+      "stop_loss": 1222.0,
+      "take_profit": 1097.5,
+      "support": 1158.36,
+      "resistance": 1226.25,
+      "news_line": "",
+      "technical_analysis": "MACD sits below its signal with a negative histogram, confirming bearish momentum. Price sits under EMA9, EMA21, EMA50 and EMA200, reinforcing a downtrend. RSI at 36.8 and Stochastic K around 20 signal oversold conditions but do not outweigh the prevailing bearish bias. Resistance clusters near 1180.6, making a short setup plausible.",
+      "market_context": "Bitcoin is in a bearish 4‑hour trend and the broader market shows a predominantly red bias, with 66% of assets down and",
+      "result": "PENDING"
     }
   ]
 }
