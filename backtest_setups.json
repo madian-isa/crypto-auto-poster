@@ -66290,6 +66290,23 @@
       "technical_analysis": "RSI at 74.8 and Stochastic K/D above 80 show strong overbought pressure, but MACD remains positive with a 0.0044 histogram, and price sits above the EMA9‑200 cluster, confirming bullish momentum. ADX at 44 indicates a firm trend. Order‑book imbalance favoring bids, the indicators collectively point to upward bias toward the nearest resistance.",
       "market_context": "BTC is in a bearish 4‑hour trend, down 0.8% on the day, while overall market shows a slight tilt toward red (56.5%",
       "result": "PENDING"
+    },
+    {
+      "id": 3900,
+      "created_at": "2026-10-24T01:20:51.806740+00:00",
+      "symbol": "BMTUSDT",
+      "direction": "SHORT",
+      "title": "$BMT Lower High Pattern Confirmed: Short Target in View",
+      "entry_low": 0.02263,
+      "entry_high": 0.02265,
+      "stop_loss": 0.02344,
+      "take_profit": 0.02104,
+      "support": 0.02196,
+      "resistance": 0.024,
+      "news_line": "",
+      "technical_analysis": "Price sits just below EMA9 (0.02271) and EMA21 (0.02362), while MACD is negative and under its signal, indicating bearish momentum. RSI at 40.7 and Stochastic K at 23 show modest weakness. ADX around 21 suggests a low‑strength trend. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
+      "market_context": "BTC is bearish on the 4‑hour chart, while the 1‑day view is mixed. Overall market breadth leans slightly red.",
+      "result": "PENDING"
     }
   ]
 }
