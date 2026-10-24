@@ -66868,6 +66868,23 @@
       "technical_analysis": "Price sits below EMA9, EMA21, EMA50 and EMA200, confirming a bearish trend. MACD is negative and ADX at 47 shows strong momentum. RSI and Stochastic are in oversold territory, but the dominant EMA and MACD signals point to further downside toward the 1‑hour support. Together, these indicators favor SHORT continuation toward support.",
       "market_context": "BTC is bearish, down 1.2% on 24 h, and the broader market is broadly negative.",
       "result": "PENDING"
+    },
+    {
+      "id": 3934,
+      "created_at": "2026-10-24T11:30:51.712739+00:00",
+      "symbol": "TAOUSDT",
+      "direction": "SHORT",
+      "title": "Moving Average Death Cross Signals Downward Trend for $TAO",
+      "entry_low": 249.5,
+      "entry_high": 251.0,
+      "stop_loss": 261.0,
+      "take_profit": 228.75,
+      "support": 246.7,
+      "resistance": 255.2,
+      "news_line": "",
+      "technical_analysis": "TAO is trading below all key EMAs (9‑200), confirming a downtrend. MACD line sits under its signal with a negative histogram, while ADX at 48 signals a strong trend. RSI at 31 and Stochastic around 19 indicate oversold conditions but momentum remains bearish. Price sits near the 1‑hour resistance zone, supporting short bias.",
+      "market_context": "BTC is in a bearish 4‑hour trend and down 1.34% over 24 h, while overall market breadth is broadly negative with 77.9%",
+      "result": "PENDING"
     }
   ]
 }
