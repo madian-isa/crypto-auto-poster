@@ -66664,6 +66664,23 @@
       "technical_analysis": "ETH is trading below its 9‑, 21‑ and 200‑EMA, with a negative MACD histogram and a sub‑50 Stochastic. The price sits near the 1H resistance around 2390, suggesting short bias as momentum remains bearish. Order‑book imbalance shows more sell pressure, reinforcing the downside. Together, these indicators favor SHORT continuation toward support.",
       "market_context": "BTC is bearish on the 4‑hour chart, mixed on the daily chart, and the broader market shows 80.8% red assets, indicating overall",
       "result": "PENDING"
+    },
+    {
+      "id": 3922,
+      "created_at": "2026-10-24T08:20:52.129086+00:00",
+      "symbol": "SOXLBUSDT",
+      "direction": "SHORT",
+      "title": "$SOXLB Breaks Ascending Support Line: Bearish Momentum Surge",
+      "entry_low": 83.3,
+      "entry_high": 83.4,
+      "stop_loss": 86.3,
+      "take_profit": 77.45,
+      "support": 82.67,
+      "resistance": 84.39,
+      "news_line": "",
+      "technical_analysis": "Price sits below EMA9, EMA21, EMA50 and EMA200, confirming a clear downtrend. ADX at 31 signals a strong trend, while RSI at 41 and Stochastic K at 33 show lingering downside momentum. The pair is near the 1H support zone, making short pressure the dominant bias. Together, these indicators favor SHORT continuation toward support.",
+      "market_context": "BTC is in a bearish 4‑hour trend and the broader market is broadly negative, reinforcing the short orientation for SOXLBUSDT.",
+      "result": "PENDING"
     }
   ]
 }
