@@ -66698,6 +66698,23 @@
       "technical_analysis": "Short bias dominates LTCUSDT. Price sits below EMA9/21/50/200, confirming a downtrend, while MACD remains negative and ADX at 47 signals strong momentum. RSI at 30 and Stochastic K near 16 point to oversold conditions, yet order‑book shows a 19% bid imbalance. Immediate resistance sits around 57.5, with support near 56.1. On the 1H chart, resistance clusters near 57.5.",
       "market_context": "BTC is bearish and the broader market is broadly negative, with 82.7% red assets.",
       "result": "PENDING"
+    },
+    {
+      "id": 3924,
+      "created_at": "2026-10-24T08:50:55.231064+00:00",
+      "symbol": "DOGEUSDT",
+      "direction": "SHORT",
+      "title": "Major Support Breakdown Confirmed on $DOGE Higher Timeframes",
+      "entry_low": 0.0789,
+      "entry_high": 0.07904,
+      "stop_loss": 0.0818,
+      "take_profit": 0.07331,
+      "support": 0.07738,
+      "resistance": 0.07904,
+      "news_line": "",
+      "technical_analysis": "Price sits below EMA9, EMA21, EMA50 and EMA200, confirming a downtrend. MACD is negative with a bearish histogram, while ADX above 30 signals a strong trend. Stochastic is deep in oversold territory, and order‑book imbalance shows more bids, but the dominant signals point to short pressure. Together, these indicators favor SHORT continuation toward support.",
+      "market_context": "BTC is in a bearish 4‑hour trend and the broader market is broadly negative, with 81.9% red assets.",
+      "result": "PENDING"
     }
   ]
 }
