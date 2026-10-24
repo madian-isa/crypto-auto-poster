@@ -67412,6 +67412,23 @@
       "technical_analysis": "ADX at 39.8 signals a strong trend, RSI at 58.7 stays clear of overbought, and stochastic hovers around 52. Together these indicators favor a long stance near the current price setup today. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
       "market_context": "BTC is down 0.9% on a bearish 4‑hour trend, and the broader market is broadly negative with 80.6% of assets red.",
       "result": "PENDING"
+    },
+    {
+      "id": 3966,
+      "created_at": "2026-10-24T20:10:45.047846+00:00",
+      "symbol": "SEIUSDT",
+      "direction": "SHORT",
+      "title": "$SEI Fakeout Confirmed: Bulls Trapped at Local Highs",
+      "entry_low": 0.0537,
+      "entry_high": 0.05382,
+      "stop_loss": 0.05635,
+      "take_profit": 0.04858,
+      "support": 0.05222,
+      "resistance": 0.05635,
+      "news_line": "",
+      "technical_analysis": "The price sits below EMA9, EMA21, EMA50 and EMA200, while RSI at 36.3 and Stochastic K/D under 50 signal weakening momentum. ADX above 55 confirms a strong trend. Together these indicators point to bearish pressure, making a short bias around the 0.0538 level. Together, these indicators favor SHORT continuation toward support.",
+      "market_context": "BTC is in a bearish 4‑hour trend and the broader market shows a largely negative breadth, reinforcing the downside bias for SEIUSDT.",
+      "result": "PENDING"
     }
   ]
 }
