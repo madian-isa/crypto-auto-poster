@@ -67225,6 +67225,23 @@
       "technical_analysis": "RSI at 31.5 and stochastic around 29 signal oversold conditions, but the price sits below a tight stack of EMAs (9‑21‑50‑200) and MACD remains negative, confirming a prevailing downtrend. ADX at 47 shows strong momentum. With resistance near 0.725 and support at 0.695, the indicators favor short pressure on the chart.",
       "market_context": "BTC on 4h remains bearish, trading below its EMA20 and EMA50, while the broader market is broadly negative with 87.6% red.",
       "result": "PENDING"
+    },
+    {
+      "id": 3955,
+      "created_at": "2026-10-24T17:31:01.065246+00:00",
+      "symbol": "NILUSDT",
+      "direction": "SHORT",
+      "title": "$NIL Lower High Pattern Confirmed: Short Target in View",
+      "entry_low": 0.0835,
+      "entry_high": 0.084,
+      "stop_loss": 0.087,
+      "take_profit": 0.07725,
+      "support": 0.08224,
+      "resistance": 0.08461,
+      "news_line": "",
+      "technical_analysis": "MACD histogram is negative and the MACD line sits below its signal, indicating bearish momentum. Stochastic K at 39% under its D line reinforces downside pressure. Although price trades above the short‑term EMAs, the RSI is neutral and ADX is weak, suggesting a fragile trend. Together, these indicators favor SHORT continuation toward support.",
+      "market_context": "BTC is in a bearish 4‑hour trend and the broader market is broadly negative, with 86.9% of symbols red and only 13.1%",
+      "result": "PENDING"
     }
   ]
 }
