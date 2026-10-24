@@ -66885,6 +66885,23 @@
       "technical_analysis": "TAO is trading below all key EMAs (9‑200), confirming a downtrend. MACD line sits under its signal with a negative histogram, while ADX at 48 signals a strong trend. RSI at 31 and Stochastic around 19 indicate oversold conditions but momentum remains bearish. Price sits near the 1‑hour resistance zone, supporting short bias.",
       "market_context": "BTC is in a bearish 4‑hour trend and down 1.34% over 24 h, while overall market breadth is broadly negative with 77.9%",
       "result": "PENDING"
+    },
+    {
+      "id": 3935,
+      "created_at": "2026-10-24T12:01:07.168881+00:00",
+      "symbol": "AIUSDT",
+      "direction": "SHORT",
+      "title": "$AI Distribution Phase Ends: Downside Target Zone Set",
+      "entry_low": 0.0199,
+      "entry_high": 0.0201,
+      "stop_loss": 0.0208,
+      "take_profit": 0.0184,
+      "support": 0.0193,
+      "resistance": 0.0203,
+      "news_line": "",
+      "technical_analysis": "Price sits below the 9‑, 21‑ and 50‑EMA, while the MACD histogram is negative and the MACD line remains under its signal. RSI at 36 and a low Stochastic K (≈7) signal weakening momentum. Order‑book imbalance shows heavier asks. The 1H/4H structure points to resistance at 0.0203 and support at 0.0193, favoring a short bias.",
+      "market_context": "BTC is bearish on the 4‑hour chart, mixed on the daily, down 1.35% in 24h, with broadly negative market breadth.",
+      "result": "PENDING"
     }
   ]
 }
