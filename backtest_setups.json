@@ -67021,6 +67021,23 @@
       "technical_analysis": "RSI at 27 and Stochastic K below 10 signal oversold conditions, but MACD is negative and the histogram is expanding, confirming bearish momentum. ADX above 50 shows a strong trend. Price sits below EMA9, EMA21 and EMA50, reinforcing a down‑trend bias toward the 0.0707 resistance. Together, these indicators favor SHORT continuation toward support.",
       "market_context": "BTC is in a bearish 4‑hour trend and the broader market is broadly negative, with 80% of assets down. This adds pressure",
       "result": "PENDING"
+    },
+    {
+      "id": 3943,
+      "created_at": "2026-10-24T14:40:54.625554+00:00",
+      "symbol": "ONDOUSDT",
+      "direction": "SHORT",
+      "title": "$ONDO Loses Key Demand Zone: Next Support Level Unprotected",
+      "entry_low": 0.4076,
+      "entry_high": 0.4083,
+      "stop_loss": 0.4226,
+      "take_profit": 0.37865,
+      "support": 0.4022,
+      "resistance": 0.4192,
+      "news_line": "",
+      "technical_analysis": "Ondo is trading beneath its 9, 21, 50 and 200‑EMA, confirming a downtrend. ADX at 53.6 signals a strong trend, while MACD remains negative and RSI sits at 31, near oversold. Stochastic is neutral. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
+      "market_context": "BTC is in a bearish 4‑hour trend, down 1.9% today, while overall crypto market breadth is broadly negative (84.9% red).",
+      "result": "PENDING"
     }
   ]
 }
