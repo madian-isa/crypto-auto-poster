@@ -66460,6 +66460,23 @@
       "technical_analysis": "LA is trading above all key EMAs (9, 21, 50, 200) and the MACD line sits comfortably above its signal, producing a positive histogram. ADX at 47 signals a strong trend, while RSI and Stochastic are in overbought territory but do not yet negate the bullish bias. Together, these indicators favor LONG continuation toward resistance.",
       "market_context": "BTC is down 1.1% on the 4‑hour chart, showing a bearish EMA crossover, and the broader crypto market is broadly negative with",
       "result": "PENDING"
+    },
+    {
+      "id": 3910,
+      "created_at": "2026-10-24T04:40:57.361752+00:00",
+      "symbol": "KATUSDT",
+      "direction": "LONG",
+      "title": "Bullish Divergence Flashed on $KAT Daily Chart Structure",
+      "entry_low": 0.00435,
+      "entry_high": 0.00445,
+      "stop_loss": 0.004136,
+      "take_profit": 0.004928,
+      "support": 0.00412,
+      "resistance": 0.00497,
+      "news_line": "",
+      "technical_analysis": "MACD sits above its signal line with a positive histogram, confirming bullish momentum. Price trades well above the EMA9/21/50/200 cluster, while ADX above 30 signals a strong trend. Order‑book shows an 18.6% bid imbalance, adding buying pressure. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
+      "market_context": "BTC is in a bearish 4‑hour trend and the broader market shows a largely negative breadth, with only 34 % of assets",
+      "result": "PENDING"
     }
   ]
 }
