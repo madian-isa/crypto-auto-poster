@@ -67106,6 +67106,23 @@
       "technical_analysis": "RSI at 32 and Stochastic K below 30 show weakening momentum. Price sits below EMA9, EMA21, EMA50 and EMA200, reinforcing downside pressure. Order‑book imbalance favors sellers, pointing to further downside. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
       "market_context": "BTC is down 2.7% on the 24‑hour chart, with a bearish 4‑hour trend and a broadly negative market breadth, supporting the overall",
       "result": "PENDING"
+    },
+    {
+      "id": 3948,
+      "created_at": "2026-10-24T15:50:51.867464+00:00",
+      "symbol": "MSTRBUSDT",
+      "direction": "SHORT",
+      "title": "$MSTRB Breaks Ascending Support Line: Bearish Momentum Surge",
+      "entry_low": 144.8,
+      "entry_high": 145.2,
+      "stop_loss": 150.8,
+      "take_profit": 133.4,
+      "support": 140.01,
+      "resistance": 145.9,
+      "news_line": "",
+      "technical_analysis": "All key indicators point bearish. Price sits below the EMA9, EMA21, EMA50 and EMA200, confirming a downtrend. MACD is negative with a bearish histogram, RSI at 39 and Stochastic K at 17 signal oversold momentum turning lower. The price is just under the lower Bollinger Band, and immediate resistance sits near 144.97.",
+      "market_context": "BTC is in a bearish 4‑hour trend and down 2.55% over 24 h; overall market breadth is broadly negative with 92 %",
+      "result": "PENDING"
     }
   ]
 }
