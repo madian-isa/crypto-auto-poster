@@ -66851,6 +66851,23 @@
       "technical_analysis": "RSI at 30 and Stochastic K/D around 14/15 signal oversold conditions, but price sits below EMA9‑200, confirming a downtrend. MACD histogram remains negative, and ADX 36 shows strong trend momentum. Order‑book shows a 56 % bid imbalance. Resistance sits near 0.1729, support at 0.1683, favoring short pressure. Current volume drop of 63 % adds to the bearish bias.",
       "market_context": "BTC is in a bearish 4‑hour trend, trading around $80,675 below its 20‑ and 50‑EMA, while the broader market is broadly negative",
       "result": "PENDING"
+    },
+    {
+      "id": 3933,
+      "created_at": "2026-10-24T11:20:52.515204+00:00",
+      "symbol": "LINKUSDT",
+      "direction": "SHORT",
+      "title": "$LINK Lower High Pattern Confirmed: Short Target in View",
+      "entry_low": 11.9,
+      "entry_high": 11.92,
+      "stop_loss": 12.35,
+      "take_profit": 11.03,
+      "support": 11.595,
+      "resistance": 11.917,
+      "news_line": "",
+      "technical_analysis": "Price sits below EMA9, EMA21, EMA50 and EMA200, confirming a bearish trend. MACD is negative and ADX at 47 shows strong momentum. RSI and Stochastic are in oversold territory, but the dominant EMA and MACD signals point to further downside toward the 1‑hour support. Together, these indicators favor SHORT continuation toward support.",
+      "market_context": "BTC is bearish, down 1.2% on 24 h, and the broader market is broadly negative.",
+      "result": "PENDING"
     }
   ]
 }
