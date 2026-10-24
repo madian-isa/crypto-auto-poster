@@ -66953,6 +66953,23 @@
       "technical_analysis": "RSI at 37.8 and Stochastic K/D near 22/19 signal bearish momentum. MACD histogram is negative and the line sits below its signal, confirming downside pressure. ADX above 30 shows a strong trend. Price sits below EMA9, EMA21 and EMA50, reinforcing a short bias near the 1H resistance. Together, these indicators favor SHORT continuation toward support.",
       "market_context": "BTC is in a bearish 4‑hour trend and the broader market is broadly negative, with 74% of assets red, adding pressure to",
       "result": "PENDING"
+    },
+    {
+      "id": 3939,
+      "created_at": "2026-10-24T13:10:53.354392+00:00",
+      "symbol": "USD1USDT",
+      "direction": "SHORT",
+      "title": "Bears Retake Control as $USD1 Fails to Hold Moving Averages",
+      "entry_low": 0.99989,
+      "entry_high": 0.99991,
+      "stop_loss": 1.0349,
+      "take_profit": 0.9299,
+      "support": 0.99983,
+      "resistance": 0.99991,
+      "news_line": "",
+      "technical_analysis": "Price sits below all EMAs, confirming bearish bias. MACD remains negative with a small histogram, while ADX under 10 signals a weak trend. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
+      "market_context": "BTC is in a bearish 4‑hour trend and the broader market is broadly negative, reinforcing downside pressure on USD1USDT.",
+      "result": "PENDING"
     }
   ]
 }
