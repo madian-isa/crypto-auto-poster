@@ -68347,6 +68347,23 @@
       "technical_analysis": "MACD sits below its signal with a negative histogram, and price is under the 9, 21, 50 and 200 EMA lines, confirming bearish momentum. ADX at 44.7 signals a strong trend. RSI at 38.6 and Stochastic K/D around 32/26 further point down. Together, these indicators favor SHORT continuation toward support.",
       "market_context": "BTC remains bearish, down 0.53% on 24 h, with a mixed 4 h trend and overall market breadth showing 79.9% red, indicating",
       "result": "PENDING"
+    },
+    {
+      "id": 4021,
+      "created_at": "2026-10-25T12:40:55.381794+00:00",
+      "symbol": "MSTRBUSDT",
+      "direction": "SHORT",
+      "title": "Panic Selling Risk Increases as $MSTRB Tests Critical Floor",
+      "entry_low": 144.45,
+      "entry_high": 144.55,
+      "stop_loss": 149.6,
+      "take_profit": 134.3,
+      "support": 143.69,
+      "resistance": 144.56,
+      "news_line": "",
+      "technical_analysis": "MACD is in negative territory with the line below its signal and a bearish histogram, while price sits under EMA21, EMA50 and EMA200, indicating downtrend pressure. RSI at 48 signals neutral‑to‑bearish momentum, and the order‑book shows a 26% sell imbalance. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
+      "market_context": "BTC is in a bearish 4‑hour trend and the broader market is broadly negative, with 77% of assets red.",
+      "result": "PENDING"
     }
   ]
 }
