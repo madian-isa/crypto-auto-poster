@@ -68211,6 +68211,23 @@
       "technical_analysis": "Stochastic K at 5.7 and RSI near 37 signal oversold conditions, while MACD sits below its signal line and the price trades beneath the EMA9‑200 hierarchy. Combined with a 29% ask‑side order‑book imbalance, momentum tilts bearish. The pair respects the 0.0694 resistance and 0.0666 support on the 1‑4 h frames. Overall.",
       "market_context": "BTC shows a bearish 4h trend and mixed 1d trend, down 0.2% over 24h, with market breadth broadly negative.",
       "result": "PENDING"
+    },
+    {
+      "id": 4013,
+      "created_at": "2026-10-25T10:30:55.865219+00:00",
+      "symbol": "POLYXUSDT",
+      "direction": "LONG",
+      "title": "Spot Inflows Surge for $POLYX as Futures Open Interest Rises",
+      "entry_low": 0.0368,
+      "entry_high": 0.0372,
+      "stop_loss": 0.0355,
+      "take_profit": 0.04,
+      "support": 0.034,
+      "resistance": 0.0406,
+      "news_line": "",
+      "technical_analysis": "Price sits above the EMA9, EMA21, EMA50 and EMA200, confirming a clear uptrend. MACD histogram is positive and expanding, while ADX above 35 signals strong momentum. Volume has jumped over 115%, adding conviction. RSI and Stochastic are near overbought levels but still support bullish bias. Together, these indicators favor LONG continuation toward resistance.",
+      "market_context": "BTC is in a bearish 4‑hour trend and the broader market is broadly negative, yet POLYX shows solid internal strength.",
+      "result": "PENDING"
     }
   ]
 }
