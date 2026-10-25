@@ -68126,6 +68126,23 @@
       "technical_analysis": "FUSDT sits under all key EMAs and the MACD line remains negative, confirming bearish momentum. RSI at 36.6 and Stochastic K under 4 signal oversold conditions, yet price is hugging the lower Bollinger band and the 1‑hour resistance at 0.003008. The indicators collectively favor a short bias in the current market.",
       "market_context": "BTC is in a bearish 4‑hour trend and the broader market is broadly negative, reinforcing the downside bias for FUSDT.",
       "result": "PENDING"
+    },
+    {
+      "id": 4008,
+      "created_at": "2026-10-25T08:40:45.375877+00:00",
+      "symbol": "STRKUSDT",
+      "direction": "SHORT",
+      "title": "$STRK Fakeout Confirmed: Bulls Trapped at Local Highs",
+      "entry_low": 0.0466,
+      "entry_high": 0.0467,
+      "stop_loss": 0.0483,
+      "take_profit": 0.04335,
+      "support": 0.04537,
+      "resistance": 0.04737,
+      "news_line": "",
+      "technical_analysis": "Price sits below EMA9, EMA21, EMA50 and EMA200, confirming a broader downtrend. ADX at 39 shows a strong trend, while RSI at 40 signals modest weakness. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
+      "market_context": "BTC is in a bearish 4‑hour trend and the overall market breadth is broadly negative, reinforcing the short bias for STRKUSDT.",
+      "result": "PENDING"
     }
   ]
 }
