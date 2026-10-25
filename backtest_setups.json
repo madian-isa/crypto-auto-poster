@@ -68551,6 +68551,23 @@
       "technical_analysis": "EMA9, EMA21, EMA50 and EMA200 are all stacked bullish, keeping price well above each line. RSI at 58 supports upward bias, while Stochastic K at 82 signals strong momentum. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure. The nearby support and resistance levels frame the current market structure.",
       "market_context": "BTC up 0.99% in 24h, market broadly positive with 72.3% green, supporting risk‑on sentiment.",
       "result": "PENDING"
+    },
+    {
+      "id": 4033,
+      "created_at": "2026-10-25T16:10:46.250425+00:00",
+      "symbol": "TAOUSDT",
+      "direction": "SHORT",
+      "title": "$TAO Loses Key Demand Zone: Next Support Level Unprotected",
+      "entry_low": 251.4,
+      "entry_high": 251.6,
+      "stop_loss": 260.5,
+      "take_profit": 233.5,
+      "support": 249.2,
+      "resistance": 253.0,
+      "news_line": "",
+      "technical_analysis": "Stochastic shows overbought (K 81, D 65) and price sits near the upper Bollinger band, hinting at a pull‑back. ADX at 32 confirms a strong trend. Trading between 1‑hour support 249.2 and resistance 253.0, short bias is favored. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
+      "market_context": "BTC is up 1.03% on the 24‑hour chart, showing bullish momentum, while the broader crypto market is broadly positive with 70.8% of",
+      "result": "PENDING"
     }
   ]
 }
