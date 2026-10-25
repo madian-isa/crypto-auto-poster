@@ -68602,6 +68602,23 @@
       "technical_analysis": "MACD line sits above its signal with a positive histogram, indicating bullish momentum. Stochastic is overbought near 99, suggesting a possible pullback, but overall indicators favor a long bias near the 7.755‑7.783 range. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
       "market_context": "BTC is up 0.8% on the 4‑hour chart, with a mixed daily trend, while overall crypto market breadth is broadly positive (≈70%",
       "result": "PENDING"
+    },
+    {
+      "id": 4036,
+      "created_at": "2026-10-25T17:30:56.592264+00:00",
+      "symbol": "AVAXUSDT",
+      "direction": "SHORT",
+      "title": "Bearish Continuation Pattern Confirmed on $AVAX Chart Structure",
+      "entry_low": 8.9,
+      "entry_high": 8.94,
+      "stop_loss": 9.3,
+      "take_profit": 8.16,
+      "support": 8.881,
+      "resistance": 8.953,
+      "news_line": "",
+      "technical_analysis": "Stochastic is deep in overbought territory (77.9) while price sits just below the 1‑hour resistance at 8.953. The 50‑ and 200‑EMA sit above the market, confirming a longer‑term bias down. ADX at 33.7 shows a strong trend, and order‑book imbalance (-9.6%) favors sellers. These signals collectively point to short pressure.",
+      "market_context": "BTC is marginally bullish (+0.7%) and the overall market is broadly positive, providing a cautious backdrop for a short bias on AVAX.",
+      "result": "PENDING"
     }
   ]
 }
