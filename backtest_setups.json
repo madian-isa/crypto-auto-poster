@@ -68823,6 +68823,23 @@
       "technical_analysis": "RSI sits near 50, while ADX around 24 signals a modest trend. With price above the 0.4037 support and below the 0.4081 resistance, momentum leans long on the chart for now. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
       "market_context": "BTC is modestly up 0.11% on the day, though the 4‑hour trend remains bearish, keeping overall market sentiment mixed.",
       "result": "PENDING"
+    },
+    {
+      "id": 4049,
+      "created_at": "2026-10-25T21:30:56.372159+00:00",
+      "symbol": "LSKUSDT",
+      "direction": "SHORT",
+      "title": "Bears Retake Control as $LSK Fails to Hold Moving Averages",
+      "entry_low": 0.162,
+      "entry_high": 0.163,
+      "stop_loss": 0.1685,
+      "take_profit": 0.1505,
+      "support": 0.1609,
+      "resistance": 0.1664,
+      "news_line": "",
+      "technical_analysis": "Price sits below EMA9, EMA21, EMA50 and EMA200, confirming a bearish framework. ADX around 23 shows weak trend strength. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
+      "market_context": "BTC is up 4.6% over 24 h, showing bullish momentum, though its 4 h chart remains bearish. Overall market breadth is mixed",
+      "result": "PENDING"
     }
   ]
 }
