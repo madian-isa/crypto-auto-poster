@@ -68840,6 +68840,23 @@
       "technical_analysis": "Price sits below EMA9, EMA21, EMA50 and EMA200, confirming a bearish framework. ADX around 23 shows weak trend strength. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
       "market_context": "BTC is up 4.6% over 24 h, showing bullish momentum, though its 4 h chart remains bearish. Overall market breadth is mixed",
       "result": "PENDING"
+    },
+    {
+      "id": 4050,
+      "created_at": "2026-10-25T22:01:09.758053+00:00",
+      "symbol": "ARBUSDT",
+      "direction": "LONG",
+      "title": "$ARB Prepares for Parabolic Phase: Key Technical Trigger Met",
+      "entry_low": 0.1686,
+      "entry_high": 0.1688,
+      "stop_loss": 0.1627,
+      "take_profit": 0.1807,
+      "support": 0.1683,
+      "resistance": 0.171,
+      "news_line": "",
+      "technical_analysis": "MACD is above its signal with a positive histogram, pointing to bullish momentum. RSI at 51, stochastic slipping from overbought, and a 34% bid‑side order‑book bias support a move toward the 0.171 resistance. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
+      "market_context": "BTC is in a bearish 4‑hour trend and down 0.17% on the day, while the overall market shows a broadly negative breadth",
+      "result": "PENDING"
     }
   ]
 }
