@@ -68262,6 +68262,23 @@
       "technical_analysis": "Price sits below EMA9, EMA21, EMA50 and EMA200, confirming a downtrend. MACD line remains under its signal with a negative histogram, while RSI at 38.6 and Stochastic K at 27 point to weakening momentum. ADX above 35 signals a strong trend. The pair respects the 0.07752 resistance, supporting a short bias.",
       "market_context": "BTC remains bearish on the 4‑hour chart, with mixed daily signals, while the broader market shows 81.5% red assets and a broadly",
       "result": "PENDING"
+    },
+    {
+      "id": 4016,
+      "created_at": "2026-10-25T11:10:53.591568+00:00",
+      "symbol": "USD1USDT",
+      "direction": "SHORT",
+      "title": "$USD1 Open Interest Drops Rapidly: Long Squeeze Underway",
+      "entry_low": 0.9999,
+      "entry_high": 0.99991,
+      "stop_loss": 1.035,
+      "take_profit": 0.929715,
+      "support": 0.99987,
+      "resistance": 0.99991,
+      "news_line": "",
+      "technical_analysis": "Multiple bearish cues line up. Price sits below EMA9, EMA21 and EMA200, indicating downtrend. MACD histogram is negative and MACD line under the signal. Stochastic is at 0, and RSI at 40 shows weakening momentum. ADX is weak, and order‑book imbalance favors sellers. Together, these indicators favor SHORT continuation toward support.",
+      "market_context": "Bitcoin remains bearish on the 4‑hour chart, trading below its EMA20 and EMA50, while the overall market is broadly negative with 80.6%",
+      "result": "PENDING"
     }
   ]
 }
