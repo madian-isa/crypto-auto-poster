@@ -67786,6 +67786,23 @@
       "technical_analysis": "Price sits above the 9‑, 21‑, 50‑ and 200‑EMA, confirming a clear uptrend. MACD line remains above its signal with a positive histogram, while RSI at 60 shows momentum still on the bullish side. Order‑book shows a 59 % bid imbalance, adding buying pressure. The next resistance sits near 0.1574 and may guide price action.",
       "market_context": "BTC shows a bearish 4‑hour trend despite a mixed daily picture, while the overall market breadth remains broadly negative.",
       "result": "PENDING"
+    },
+    {
+      "id": 3988,
+      "created_at": "2026-10-25T02:50:55.122370+00:00",
+      "symbol": "ZECUSDT",
+      "direction": "LONG",
+      "title": "On-Chain Metrics Confirm Strong Whale Accumulation on $ZEC",
+      "entry_low": 1215.0,
+      "entry_high": 1220.0,
+      "stop_loss": 1168.8,
+      "take_profit": 1314.9,
+      "support": 1213.76,
+      "resistance": 1226.25,
+      "news_line": "",
+      "technical_analysis": "RSI at 63.8 and a bullish MACD histogram (+8.34) signal upward momentum. EMA9, EMA21 and EMA50 sit below price, confirming the uptrend, while ADX 28 shows moderate trend strength. Order‑book imbalance favors bids (33.6% more bid value). These factors collectively point to a LONG bias near the 1213.76 support zone.",
+      "market_context": "BTC is in a bearish 4‑hour trend and the broader market is broadly negative, with 73.9% of assets red. ZEC’s bullish setup",
+      "result": "PENDING"
     }
   ]
 }
