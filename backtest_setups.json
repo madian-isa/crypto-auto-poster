@@ -67701,6 +67701,23 @@
       "technical_analysis": "All signals point to a short bias. RSI sits at 94.7 and Stochastic K is 87.7, indicating extreme overbought conditions. Price is above the upper Bollinger band and nearing the 0.00791 resistance. The setup favors a pull‑back. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
       "market_context": "BTC shows a bearish 4‑hour trend while the daily picture is mixed, and overall market breadth is broadly negative with 66% red",
       "result": "PENDING"
+    },
+    {
+      "id": 3983,
+      "created_at": "2026-10-25T01:40:53.716517+00:00",
+      "symbol": "TREEUSDT",
+      "direction": "SHORT",
+      "title": "Bearish Continuation Pattern Confirmed on $TREE Chart Structure",
+      "entry_low": 0.0388,
+      "entry_high": 0.0392,
+      "stop_loss": 0.04056,
+      "take_profit": 0.03588,
+      "support": 0.0381,
+      "resistance": 0.0386,
+      "news_line": "",
+      "technical_analysis": "The MACD histogram is negative and the line sits below the signal, while ADX above 40 confirms a strong downtrend. Price is under EMA9, EMA21, EMA50 and EMA200, indicating bearish bias. RSI at 38.5 is near oversold, and Stochastic K near 99% suggests overextension. Order‑book imbalance leans bearish, supporting a short outlook near the 0.0386 resistance.",
+      "market_context": "BTC is showing bullish momentum on a mixed‑trend daily chart, but the broader market breadth is negative, with more red than green",
+      "result": "PENDING"
     }
   ]
 }
