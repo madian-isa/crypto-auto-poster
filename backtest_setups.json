@@ -68857,6 +68857,23 @@
       "technical_analysis": "MACD is above its signal with a positive histogram, pointing to bullish momentum. RSI at 51, stochastic slipping from overbought, and a 34% bid‑side order‑book bias support a move toward the 0.171 resistance. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
       "market_context": "BTC is in a bearish 4‑hour trend and down 0.17% on the day, while the overall market shows a broadly negative breadth",
       "result": "PENDING"
+    },
+    {
+      "id": 4051,
+      "created_at": "2026-10-25T22:10:56.617046+00:00",
+      "symbol": "QUICKUSDT",
+      "direction": "SHORT",
+      "title": "Strong Rejection at Trendline Resistance: $QUICK Short Entry",
+      "entry_low": 0.00305,
+      "entry_high": 0.00307,
+      "stop_loss": 0.00317,
+      "take_profit": 0.00284,
+      "support": 0.0023,
+      "resistance": 0.00399,
+      "news_line": "",
+      "technical_analysis": "Short bias is clear: price sits under EMA9, EMA21, EMA50 and EMA200, confirming a downtrend. MACD histogram remains negative and ADX at 35 shows strong momentum. RSI at 23 hints oversold but does not outweigh bearish alignment. Order‑book imbalance of –39% adds sell pressure, keeping resistance near 0.00306 on the chart.",
+      "market_context": "BTC is in a 4‑hour bearish trend while the daily picture is mixed, and overall market breadth leans red (58.9%). BTC’s 24‑hour",
+      "result": "PENDING"
     }
   ]
 }
