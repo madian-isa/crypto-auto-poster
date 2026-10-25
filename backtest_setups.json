@@ -68279,6 +68279,23 @@
       "technical_analysis": "Multiple bearish cues line up. Price sits below EMA9, EMA21 and EMA200, indicating downtrend. MACD histogram is negative and MACD line under the signal. Stochastic is at 0, and RSI at 40 shows weakening momentum. ADX is weak, and order‑book imbalance favors sellers. Together, these indicators favor SHORT continuation toward support.",
       "market_context": "Bitcoin remains bearish on the 4‑hour chart, trading below its EMA20 and EMA50, while the overall market is broadly negative with 80.6%",
       "result": "PENDING"
+    },
+    {
+      "id": 4017,
+      "created_at": "2026-10-25T11:30:56.228850+00:00",
+      "symbol": "ENAUSDT",
+      "direction": "SHORT",
+      "title": "$ENA Distribution Phase Ends: Downside Target Zone Set",
+      "entry_low": 0.1906,
+      "entry_high": 0.1909,
+      "stop_loss": 0.1975,
+      "take_profit": 0.17725,
+      "support": 0.1887,
+      "resistance": 0.1967,
+      "news_line": "",
+      "technical_analysis": "Price sits below EMA9, EMA21, EMA50 and EMA200, showing clear bearish bias. Stochastic at 19 indicates oversold conditions, yet the 1‑hour support at 0.1887 and resistance at 0.1967 frame a Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
+      "market_context": "BTC is bearish on the 4‑hour chart, trading around $80,401 below its EMA20 and EMA50, while the broader market is broadly negative",
+      "result": "PENDING"
     }
   ]
 }
