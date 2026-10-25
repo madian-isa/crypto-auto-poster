@@ -68330,6 +68330,23 @@
       "technical_analysis": "With a 30% bid‑side order‑book imbalance and a broadly bearish market backdrop, the setup leans toward a short bias. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
       "market_context": "BTC is in a bearish 4‑hour trend and the overall crypto market shows a broadly negative breadth, with 74.9% of assets red.",
       "result": "PENDING"
+    },
+    {
+      "id": 4020,
+      "created_at": "2026-10-25T12:30:58.088825+00:00",
+      "symbol": "FILUSDT",
+      "direction": "SHORT",
+      "title": "Technical Signals Turn Negative as $FIL Selling Pressure Rises",
+      "entry_low": 0.9185,
+      "entry_high": 0.9192,
+      "stop_loss": 0.955604,
+      "take_profit": 0.845342,
+      "support": 0.9101,
+      "resistance": 0.9406,
+      "news_line": "",
+      "technical_analysis": "MACD sits below its signal with a negative histogram, and price is under the 9, 21, 50 and 200 EMA lines, confirming bearish momentum. ADX at 44.7 signals a strong trend. RSI at 38.6 and Stochastic K/D around 32/26 further point down. Together, these indicators favor SHORT continuation toward support.",
+      "market_context": "BTC remains bearish, down 0.53% on 24 h, with a mixed 4 h trend and overall market breadth showing 79.9% red, indicating",
+      "result": "PENDING"
     }
   ]
 }
