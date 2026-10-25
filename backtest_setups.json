@@ -67735,6 +67735,23 @@
       "technical_analysis": "Price sits below EMA9, EMA21 and EMA50 while RSI hovers just under 50. MACD is negative and under its signal line, and ADX above 40 signals a strong trend. Stochastic is in the low‑20s and order‑book imbalance is bearish, all pointing to downside momentum toward the 0.1389 support. Together, these indicators favor SHORT continuation toward support.",
       "market_context": "BTC is in a bearish 4‑hour trend and the broader market shows a largely negative bias, with 67.4% of assets in red.",
       "result": "PENDING"
+    },
+    {
+      "id": 3985,
+      "created_at": "2026-10-25T02:01:07.763486+00:00",
+      "symbol": "ARKUSDT",
+      "direction": "SHORT",
+      "title": "$ARK Breaks Below Critical Support: Further Drop Expected",
+      "entry_low": 0.1848,
+      "entry_high": 0.185,
+      "stop_loss": 0.1915,
+      "take_profit": 0.1717,
+      "support": 0.1823,
+      "resistance": 0.1851,
+      "news_line": "",
+      "technical_analysis": "Price is below EMA9, EMA21, EMA50 and EMA200, confirming a downtrend. ADX at 32 shows strong trend strength, and order‑book imbalance of –6.6% adds sell pressure. Volume rose 77%, adding conviction. RSI sits near 44 and Stochastic K at 17 signals oversold. Near 1H resistance 0.1851, downside bias overall market context supports this view.",
+      "market_context": "BTC down 0.05% on 4h bearish trend; broader market 70% red and broadly negative.",
+      "result": "PENDING"
     }
   ]
 }
