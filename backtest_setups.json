@@ -68568,6 +68568,23 @@
       "technical_analysis": "Stochastic shows overbought (K 81, D 65) and price sits near the upper Bollinger band, hinting at a pull‑back. ADX at 32 confirms a strong trend. Trading between 1‑hour support 249.2 and resistance 253.0, short bias is favored. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
       "market_context": "BTC is up 1.03% on the 24‑hour chart, showing bullish momentum, while the broader crypto market is broadly positive with 70.8% of",
       "result": "PENDING"
+    },
+    {
+      "id": 4034,
+      "created_at": "2026-10-25T16:40:54.493291+00:00",
+      "symbol": "MEGAUSDT",
+      "direction": "LONG",
+      "title": "Golden Cross Formation Confirmed on $MEGA 4-Hour Timeframe",
+      "entry_low": 0.0458,
+      "entry_high": 0.046,
+      "stop_loss": 0.0442,
+      "take_profit": 0.0493,
+      "support": 0.04571,
+      "resistance": 0.04727,
+      "news_line": "",
+      "technical_analysis": "EMA9, EMA21, EMA50 and EMA200 are stacked bullishly below price, confirming an uptrend. MACD histogram is positive and RSI sits at 54.5, indicating moderate buying pressure. Stochastic K is above D, and order‑book shows a 7.9% bid‑side imbalance, all pointing to upward momentum toward the 0.04727 resistance. Together, these indicators favor LONG continuation toward resistance.",
+      "market_context": "BTC is up 0.98% on the day, and the broader market is broadly positive with 73% of assets green, supporting the bullish",
+      "result": "PENDING"
     }
   ]
 }
