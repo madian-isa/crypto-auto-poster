@@ -68177,6 +68177,23 @@
       "technical_analysis": "Short bias dominates WCT. Price sits beneath the 9‑, 21‑ and 200‑EMA, while MACD remains negative and its histogram is below zero, confirming down momentum. RSI at 36.6 and Stochastic K near 5 show oversold conditions, yet the pair is trading under the lower Bollinger band. Together, these indicators favor SHORT continuation toward support.",
       "market_context": "BTC is in a bearish 4‑hour trend, down 0.48% over 24 h, with market breadth broadly negative.",
       "result": "PENDING"
+    },
+    {
+      "id": 4011,
+      "created_at": "2026-10-25T09:30:50.630159+00:00",
+      "symbol": "STEEMUSDT",
+      "direction": "SHORT",
+      "title": "$STEEM Volume Decreases on Rally: Weak Buyers Exposed",
+      "entry_low": 0.05178,
+      "entry_high": 0.05189,
+      "stop_loss": 0.0539084,
+      "take_profit": 0.0476882,
+      "support": 0.0524,
+      "resistance": 0.05296,
+      "news_line": "",
+      "technical_analysis": "Price sits below EMA9 (0.05244) and EMA21 (0.05206), while MACD is under its signal and the histogram is negative, signaling bearish momentum. ADX at 55.5 confirms a strong trend. Stochastic is low (≈14), but the dominant EMA and MACD bias points to a short outlook near the 0.0524 support zone.",
+      "market_context": "BTC is bearish on the 4‑hour chart and mixed on daily, with the broader market showing a largely negative breadth.",
+      "result": "PENDING"
     }
   ]
 }
