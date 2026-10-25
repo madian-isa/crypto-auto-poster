@@ -67990,6 +67990,23 @@
       "technical_analysis": "RSI at 39.8 and stochastic K below D signal weakening momentum. ADX 35 shows a strong trend, and order‑book imbalance leans negative, pointing to short bias near the 0.4702 resistance. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
       "market_context": "BTC trades lower on the 4‑hour chart, price 80,588 under both EMA20 and EMA50, while the overall market shows 76.3% red assets",
       "result": "PENDING"
+    },
+    {
+      "id": 4000,
+      "created_at": "2026-10-25T06:10:52.634312+00:00",
+      "symbol": "LINKUSDT",
+      "direction": "SHORT",
+      "title": "Moving Average Death Cross Signals Downward Trend for $LINK",
+      "entry_low": 11.52,
+      "entry_high": 11.58,
+      "stop_loss": 12.0,
+      "take_profit": 10.65,
+      "support": 11.2,
+      "resistance": 11.608,
+      "news_line": "",
+      "technical_analysis": "RSI at 35 and Stochastic K below D show weakening momentum. ADX above 45 confirms a strong trend. Price is near the lower Bollinger band, testing the 11.2 support. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
+      "market_context": "BTC is in a bearish 4‑hour trend and the broader market is broadly negative, supporting a cautious short bias for LINKUSDT.",
+      "result": "PENDING"
     }
   ]
 }
