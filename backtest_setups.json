@@ -68619,6 +68619,23 @@
       "technical_analysis": "Stochastic is deep in overbought territory (77.9) while price sits just below the 1‑hour resistance at 8.953. The 50‑ and 200‑EMA sit above the market, confirming a longer‑term bias down. ADX at 33.7 shows a strong trend, and order‑book imbalance (-9.6%) favors sellers. These signals collectively point to short pressure.",
       "market_context": "BTC is marginally bullish (+0.7%) and the overall market is broadly positive, providing a cautious backdrop for a short bias on AVAX.",
       "result": "PENDING"
+    },
+    {
+      "id": 4037,
+      "created_at": "2026-10-25T17:50:55.101743+00:00",
+      "symbol": "MTLUSDT",
+      "direction": "SHORT",
+      "title": "$MTL Distribution Phase Ends: Downside Target Zone Set",
+      "entry_low": 0.272,
+      "entry_high": 0.273,
+      "stop_loss": 0.2826,
+      "take_profit": 0.2523,
+      "support": 0.2717,
+      "resistance": 0.2784,
+      "news_line": "",
+      "technical_analysis": "Price sits below EMA9, EMA21, EMA50 and EMA200, confirming bearish bias. MACD histogram is negative and the signal line sits above the MACD line. RSI at 48.9 and Stochastic K around 30 show weakening momentum, while ADX above 59 signals a strong trend. Resistance sits near 0.2784, support at 0.2717.",
+      "market_context": "BTC is up 0.7% over 24 h, but on the 4 h chart it remains bearish, while overall market breadth is broadly",
+      "result": "PENDING"
     }
   ]
 }
