@@ -68908,6 +68908,23 @@
       "technical_analysis": "RSI at 70.2 and Stochastic K at 83 signal overbought conditions, while the order book shows a -60% imbalance favoring sellers. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
       "market_context": "BTC is bearish, down 0.177% over 24h, and the broader market is broadly negative with 63.6% red assets.",
       "result": "PENDING"
+    },
+    {
+      "id": 4054,
+      "created_at": "2026-10-25T23:10:54.080235+00:00",
+      "symbol": "BEAMXUSDT",
+      "direction": "LONG",
+      "title": "Bullish Momentum Is Building: Can $BEAMX Continue Its Breakout?",
+      "entry_low": 0.00297,
+      "entry_high": 0.002985,
+      "stop_loss": 0.002826,
+      "take_profit": 0.0032805,
+      "support": 0.002826,
+      "resistance": 0.003044,
+      "news_line": "",
+      "technical_analysis": "MACD line sits just above its signal with a positive histogram, while the stochastic K/D sit around 61/60, indicating upward momentum. ADX at 31 confirms a strong trend. Price holds above the 9‑EMA and sits near the 1‑hour support at 0.002826. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish",
+      "market_context": "BTC is bearish on the 4‑hour chart, trading near $80,384 below its 20‑ and 50‑EMA, and the broader crypto market shows a",
+      "result": "PENDING"
     }
   ]
 }
