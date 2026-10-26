@@ -1,6 +1,6 @@
 {
   "date": "2026-10-26",
-  "count": 25,
+  "count": 26,
   "posted_symbols_today": [
     "TUSDT",
     "DODOUSDT",
@@ -26,6 +26,7 @@
     "OSMOUSDT",
     "BTCUSDT",
     "UNIUSDT",
-    "NEARUSDT"
+    "NEARUSDT",
+    "REUSDT"
   ]
 }
