@@ -69129,6 +69129,23 @@
       "technical_analysis": "RSI sits at 50.4, MACD line is above its signal with a positive histogram, and Stochastic K/D are in the mid‑60s, all pointing bullish. Price is trading above the 9‑, 21‑ and 50‑EMA and well above the 200‑EMA, while the order book shows a 7% bid imbalance. Together they suggest upward momentum toward the nearby 0.03445 resistance.",
       "market_context": "BTC is in a bearish 4‑hour trend and the broader market is broadly negative, with 85% of assets red, adding pressure to",
       "result": "PENDING"
+    },
+    {
+      "id": 4067,
+      "created_at": "2026-10-26T02:40:49.619291+00:00",
+      "symbol": "ETHUSDT",
+      "direction": "SHORT",
+      "title": "$ETH Lower High Pattern Confirmed: Short Target in View",
+      "entry_low": 2328.0,
+      "entry_high": 2332.0,
+      "stop_loss": 2415.0,
+      "take_profit": 2160.0,
+      "support": 2282.46,
+      "resistance": 2343.77,
+      "news_line": "",
+      "technical_analysis": "ETH is trading below all key EMAs (9‑21‑50‑200) and the MACD line sits under its signal, confirming bearish momentum. RSI at 35 and stochastic around 23 signal oversold conditions, yet price has slipped beneath the lower Bollinger Band, suggesting a potential continuation lower toward the 1H/4H support at 2282.46 and possible further downside.",
+      "market_context": "BTC remains in a 4‑hour bearish trend, with price below its EMA20/50, while the broader market shows 87.9% red assets and a",
+      "result": "PENDING"
     }
   ]
 }
