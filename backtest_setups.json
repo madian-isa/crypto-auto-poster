@@ -69554,6 +69554,23 @@
       "technical_analysis": "MACD line sits above its signal with a positive histogram, indicating bullish momentum. ADX at 36 confirms a strong trend, and Stochastic K at 75 points to upward pressure. These factors favor a long bias near the 11.32‑11.48 range. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
       "market_context": "BTC is modestly bullish (+0.049%) and the overall market is evenly split, offering a neutral backdrop for LINKUSDT.",
       "result": "PENDING"
+    },
+    {
+      "id": 4092,
+      "created_at": "2026-10-26T10:31:01.001380+00:00",
+      "symbol": "KATUSDT",
+      "direction": "LONG",
+      "title": "Buyers Defend Key Demand Zone: $KAT Ready for Extension",
+      "entry_low": 0.00431,
+      "entry_high": 0.00438,
+      "stop_loss": 0.00418,
+      "take_profit": 0.004675,
+      "support": 0.00431,
+      "resistance": 0.0048,
+      "news_line": "",
+      "technical_analysis": "MACD histogram is positive and the MACD line sits above its signal, indicating bullish momentum. Price sits above the EMA9, EMA21, EMA50 and EMA200, confirming an uptrend. RSI at 72 shows overbought conditions but ADX around 26 signals a trend. Bollinger bands are broken to the upside, and the pair respects a key 1‑hour support at 0.00431 and resistance near",
+      "market_context": "BTC is up 0.13% on the day with bullish direction, while the broader market is mixed (52% green, 48% red).",
+      "result": "PENDING"
     }
   ]
 }
