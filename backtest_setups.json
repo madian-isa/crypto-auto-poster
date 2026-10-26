@@ -69299,6 +69299,23 @@
       "technical_analysis": "IOST is trading below its EMA9‑200 cluster, with the MACD line under its signal and a negative histogram, confirming bearish momentum. RSI sits at 44 and the stochastic K at 22 indicate modest downside pressure. Price is near the 1‑hour resistance 0.000772, while the 0.000746 support holds. Volume has dropped 40% YoY, adding to the downtrend.",
       "market_context": "BTC is in a bearish 4‑hour trend and the broader market is broadly negative, with 74.8% of assets red.",
       "result": "PENDING"
+    },
+    {
+      "id": 4077,
+      "created_at": "2026-10-26T05:50:48.580354+00:00",
+      "symbol": "NILUSDT",
+      "direction": "LONG",
+      "title": "Smart Money Flow Increases into $NIL Ahead of Catalysts",
+      "entry_low": 0.0898,
+      "entry_high": 0.0915,
+      "stop_loss": 0.0865,
+      "take_profit": 0.09895,
+      "support": 0.08858,
+      "resistance": 0.0952,
+      "news_line": "",
+      "technical_analysis": "RSI at 61 and ADX above 38 show solid upward momentum. Price sits above EMA9, EMA21 and EMA50, confirming a bullish trend. MACD histogram is positive and the order book shows a 35% bid imbalance. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
+      "market_context": "BTC is in a bearish 4‑hour trend and the broader market is broadly negative, adding slight downside pressure to altcoins.",
+      "result": "PENDING"
     }
   ]
 }
