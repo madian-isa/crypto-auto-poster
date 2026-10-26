@@ -69418,6 +69418,23 @@
       "technical_analysis": "The EMA suite (9,21,50,200) sits above the 101.03 price, confirming downtrend pressure. RSI at 46 and stochastic K below D signal weakening momentum. MACD histogram is negative, while ADX 24.6 shows an established trend. Price is testing the 1‑hour resistance near 101.38, supporting a short bias. Overall, the confluence points to further downside.",
       "market_context": "BTC is in a bearish 4‑hour trend and mixed daily trend, with a 0.7% 24‑hour decline, contributing to broadly negative market breadth.",
       "result": "PENDING"
+    },
+    {
+      "id": 4084,
+      "created_at": "2026-10-26T08:01:01.695783+00:00",
+      "symbol": "BNBUSDT",
+      "direction": "SHORT",
+      "title": "Major Support Breakdown Confirmed on $BNB Higher Timeframes",
+      "entry_low": 738.65,
+      "entry_high": 738.75,
+      "stop_loss": 764.6,
+      "take_profit": 686.9,
+      "support": 735.82,
+      "resistance": 741.53,
+      "news_line": "",
+      "technical_analysis": "MACD sits below its signal with a negative histogram, and Stochastic %K is under %D, both pointing down. RSI hovers just under 50, indicating weak momentum. Price rests just below the 9‑EMA and 21‑EMA while staying above the 200‑EMA, and the order book shows a 30 % ask‑side imbalance. Together, these indicators favor SHORT continuation toward support.",
+      "market_context": "BTC is in a bearish 4‑hour trend and the broader market shows a largely negative breadth, with only about 21 % of",
+      "result": "PENDING"
     }
   ]
 }
