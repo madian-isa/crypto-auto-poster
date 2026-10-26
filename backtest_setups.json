@@ -69061,6 +69061,23 @@
       "technical_analysis": "Order‑book imbalance shows buying pressure near the 0.23 support, suggesting a potential rebound. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure. The nearby support and resistance levels frame the current market structure.",
       "market_context": "BTC is in a bearish 4‑hour trend and down 1.06% on the day, with market breadth broadly negative.",
       "result": "PENDING"
+    },
+    {
+      "id": 4063,
+      "created_at": "2026-10-26T01:40:56.951206+00:00",
+      "symbol": "WLDUSDT",
+      "direction": "LONG",
+      "title": "Golden Cross Formation Confirmed on $WLD 4-Hour Timeframe",
+      "entry_low": 0.4482,
+      "entry_high": 0.4484,
+      "stop_loss": 0.430368,
+      "take_profit": 0.484164,
+      "support": 0.4299,
+      "resistance": 0.4564,
+      "news_line": "",
+      "technical_analysis": "MACD line sits above its signal with a positive histogram, while Stochastic K at 25% signals oversold conditions. Order‑book shows a 43% bid imbalance and price is holding just above the 1H support 0.4299. Together these indicate upward momentum and a bias toward a long setup. Together, these indicators favor LONG continuation toward resistance.",
+      "market_context": "BTC is in a bearish 4‑hour trend and the broader market is broadly negative, with 87% red assets.",
+      "result": "PENDING"
     }
   ]
 }
