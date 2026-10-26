@@ -69367,6 +69367,23 @@
       "technical_analysis": "RSI at 58.9 and Stochastic K at 80 support continued buying pressure, while ADX around 21 shows a modest trend. Order‑book imbalance favors bids, pointing to a LONG bias. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure. The nearby support and resistance levels frame the current market structure.",
       "market_context": "BTC is in a bearish 4‑hour trend and overall market breadth is broadly negative, with most assets under pressure.",
       "result": "PENDING"
+    },
+    {
+      "id": 4081,
+      "created_at": "2026-10-26T07:01:08.985721+00:00",
+      "symbol": "NEARUSDT",
+      "direction": "SHORT",
+      "title": "$NEAR Rejection at Key Supply Zone: Short Setup Activated",
+      "entry_low": 4.49,
+      "entry_high": 4.498,
+      "stop_loss": 4.652,
+      "take_profit": 4.178,
+      "support": 4.431,
+      "resistance": 4.498,
+      "news_line": "",
+      "technical_analysis": "Price sits below EMA9, EMA21, EMA50 and EMA200, confirming a downtrend. MACD line is under its signal with a negative histogram, reinforcing bearish momentum. RSI at 44.8 and Stochastic K at 15 indicate oversold conditions but still under 20. ADX shows a weak trend. Order‑book shows slight bid bias, yet overall structure points short.",
+      "market_context": "BTC slipped 0.4% on the 4‑hour chart, trading below its EMA20 and EMA50, while 73% of the market is red, indicating broadly",
+      "result": "PENDING"
     }
   ]
 }
