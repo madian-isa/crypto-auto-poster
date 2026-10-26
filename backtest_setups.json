@@ -69792,6 +69792,23 @@
       "technical_analysis": "AAVE sits below all key EMAs (9‑200), confirming bearish bias. RSI at 43.5 and stochastic K below 50 signal weakening momentum. ADX 28.7 shows a clear trend. Immediate resistance sits near 136.8, with support around 136.3 on the 1H chart. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
       "market_context": "BTC is in a short‑term bearish phase, down 0.55% on 24h, while overall market breadth remains broadly positive (63% green).",
       "result": "PENDING"
+    },
+    {
+      "id": 4106,
+      "created_at": "2026-10-26T15:01:02.898786+00:00",
+      "symbol": "CELOUSDT",
+      "direction": "LONG",
+      "title": "Strong Accumulation Detected: $CELO Prepares for Next Wave Up",
+      "entry_low": 0.0785,
+      "entry_high": 0.0795,
+      "stop_loss": 0.0758,
+      "take_profit": 0.0854,
+      "support": 0.0785,
+      "resistance": 0.08064,
+      "news_line": "",
+      "technical_analysis": "The MACD histogram is firmly positive and the MACD line sits well above its signal, signaling bullish momentum. Price rests above the 9‑, 21‑ and 50‑EMA while RSI at 66 and Stochastic near 93 show strength but approaching overbought. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
+      "market_context": "BTC is in a bearish 4‑hour trend while the daily picture is mixed; overall market breadth remains broadly positive.",
+      "result": "PENDING"
     }
   ]
 }
