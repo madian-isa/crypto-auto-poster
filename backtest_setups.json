@@ -69826,6 +69826,23 @@
       "technical_analysis": "AIUSDT favors a long bias as price holds above the 9, 21, and 50 EMAs, confirming upward momentum. RSI at 62.36 and positive MACD histogram support bullish continuation. Resistance at 0.0204 is the key level to watch for a breakout, while support at 0.0194 remains the primary floor for maintaining this structure.",
       "market_context": "BTC is trading bearish on the 4H chart but market breadth remains broadly positive at 71.3% green, suggesting relative strength in altcoins",
       "result": "PENDING"
+    },
+    {
+      "id": 4108,
+      "created_at": "2026-10-26T15:40:50.850473+00:00",
+      "symbol": "AVAXUSDT",
+      "direction": "LONG",
+      "title": "Bullish Momentum Accelerates as $AVAX Liquidity Sweep Completes",
+      "entry_low": 8.9,
+      "entry_high": 9.0,
+      "stop_loss": 8.59,
+      "take_profit": 9.67,
+      "support": 8.881,
+      "resistance": 9.075,
+      "news_line": "",
+      "technical_analysis": "MACD posts a positive histogram (+0.010) with the line above its signal, showing upward momentum. RSI at 57.8 and an overbought Stochastic (K≈99) keep momentum alive, while ADX around 21 signals a weak trend. The pair respects the 1‑hour swing range of 8.88 support to 9.075 resistance. Together, these indicators favor LONG continuation toward resistance.",
+      "market_context": "BTC is marginally bullish (+0.07%) and the overall market shows a broadly positive breadth with 64% green assets.",
+      "result": "PENDING"
     }
   ]
 }
