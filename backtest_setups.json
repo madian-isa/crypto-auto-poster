@@ -69520,6 +69520,23 @@
       "technical_analysis": "MACD shows a negative histogram and a MACD line below its signal, indicating bearish momentum. Price sits under the EMA50 (1248) and far beneath the EMA200 (1302), while still above short‑term EMAs, suggesting a downtrend pressure. Order‑book imbalance is -3.4%, and RSI hovers around 51. These factors favor a short bias near the 1248 resistance zone.",
       "market_context": "BTC is modestly bullish (+0.39%) and the broader market shows a 63.8% green breadth, providing overall positive sentiment.",
       "result": "PENDING"
+    },
+    {
+      "id": 4090,
+      "created_at": "2026-10-26T09:40:54.014376+00:00",
+      "symbol": "PYTHUSDT",
+      "direction": "SHORT",
+      "title": "$PYTH Lower High Pattern Confirmed: Short Target in View",
+      "entry_low": 0.0746,
+      "entry_high": 0.07465,
+      "stop_loss": 0.07761,
+      "take_profit": 0.068655,
+      "support": 0.07262,
+      "resistance": 0.0757,
+      "news_line": "",
+      "technical_analysis": "MACD sits below its signal with a negative histogram, indicating bearish momentum. Price remains under the 200‑EMA while short‑term EMAs stay above, suggesting a higher‑time downtrend. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
+      "market_context": "BTC up 0.3% on the day, keeping the broader market broadly positive, though Bitcoin’s 4‑h trend remains bearish.",
+      "result": "PENDING"
     }
   ]
 }
