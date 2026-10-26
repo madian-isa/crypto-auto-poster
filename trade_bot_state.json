@@ -1,6 +1,6 @@
 {
   "date": "2026-10-26",
-  "count": 9,
+  "count": 10,
   "posted_symbols_today": [
     "TUSDT",
     "DODOUSDT",
@@ -10,6 +10,7 @@
     "GTCUSDT",
     "WLDUSDT",
     "PEPEUSDT",
-    "ENAUSDT"
+    "ENAUSDT",
+    "BMTUSDT"
   ]
 }
