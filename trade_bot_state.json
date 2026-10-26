@@ -1,6 +1,6 @@
 {
   "date": "2026-10-26",
-  "count": 77,
+  "count": 78,
   "posted_symbols_today": [
     "TUSDT",
     "DODOUSDT",
@@ -78,6 +78,7 @@
     "MEGAUSDT",
     "ARBUSDT",
     "XPLUSDT",
-    "FOGOUSDT"
+    "FOGOUSDT",
+    "NBISBUSDT"
   ]
 }
