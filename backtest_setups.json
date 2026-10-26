@@ -69962,6 +69962,23 @@
       "technical_analysis": "FIL sits at 0.912 USDT, below the 9‑, 21‑ and 50‑EMA, indicating bearish bias. RSI at 45.9 is neutral, while Stochastic (K 41, D 70) signals down pressure. ADX above 30 confirms an active trend. The price respects the 1‑hour resistance around 0.921, supporting a short outlook. Together, these indicators favor SHORT continuation toward support.",
       "market_context": "BTC is in a bearish 4‑hour trend, down 0.63% today, while overall market shows 56.2% red assets. FIL’s order book shows an",
       "result": "PENDING"
+    },
+    {
+      "id": 4116,
+      "created_at": "2026-10-26T17:51:00.354442+00:00",
+      "symbol": "MSTRBUSDT",
+      "direction": "SHORT",
+      "title": "$MSTRB Resistance Test Fails: Bearish Momentum Building Fast",
+      "entry_low": 143.8,
+      "entry_high": 144.5,
+      "stop_loss": 149.3,
+      "take_profit": 133.85,
+      "support": 140.51,
+      "resistance": 144.56,
+      "news_line": "",
+      "technical_analysis": "Price sits below all EMA levels, confirming a bearish framework, while RSI near 47 and Stochastic K crossing under D signal downside pressure. Despite a modest MACD histogram boost, ADX 35 shows a strong trend, and order‑book imbalance favors bids. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
+      "market_context": "BTC is in a bearish 4‑hour trend and down 0.8% over 24 h, while overall crypto market breadth is broadly negative (60%",
+      "result": "PENDING"
     }
   ]
 }
