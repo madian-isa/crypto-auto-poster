@@ -70013,6 +70013,23 @@
       "technical_analysis": "MACD shows a positive histogram (+0.00042) while the line sits above the signal, indicating bullish momentum. RSI at 55.8 and ADX 28 point to a healthy trend, and the order‑book shows a 25 % bid‑side imbalance. Resistance lies near 0.2071, support around 0.2064. Together, these indicators favor LONG continuation toward resistance.",
       "market_context": "BTC is in a bearish 4‑hour trend, down 0.56% on the day, while overall market breadth is mixed with slightly more red",
       "result": "PENDING"
+    },
+    {
+      "id": 4119,
+      "created_at": "2026-10-26T18:31:03.839138+00:00",
+      "symbol": "TAOUSDT",
+      "direction": "LONG",
+      "title": "$TAO Reclaims Key Resistance Level: Flip to Support Complete",
+      "entry_low": 252.8,
+      "entry_high": 253.2,
+      "stop_loss": 244.0,
+      "take_profit": 271.0,
+      "support": 249.8,
+      "resistance": 252.6,
+      "news_line": "",
+      "technical_analysis": "MACD shows a positive histogram and the line sits above its signal, indicating upward momentum. Stochastic K at 67 reinforces bullish pressure, while RSI at 54 stays in modestly positive territory. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
+      "market_context": "BTC is in a bearish 24‑hour move, with mixed 4‑hour and daily trends, keeping overall market breadth slightly red.",
+      "result": "PENDING"
     }
   ]
 }
