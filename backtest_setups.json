@@ -69894,6 +69894,23 @@
       "technical_analysis": "PARTI is trading above all key EMAs, confirming strong bullish trend alignment. RSI at 82 and Stochastic at 89 indicate extreme momentum, while a 17% orderbook imbalance favors buyers. Price is testing the 0.0389 resistance with volume up 265%, suggesting potential breakout strength rather than immediate reversal. Together, these indicators favor LONG continuation toward resistance.",
       "market_context": "BTC is bearish on the 4H, but PARTI is outperforming the broader market.",
       "result": "PENDING"
+    },
+    {
+      "id": 4112,
+      "created_at": "2026-10-26T16:40:56.753777+00:00",
+      "symbol": "ZROUSDT",
+      "direction": "LONG",
+      "title": "$ZRO Higher Low Structure Confirmed: Long Entry Level Reached",
+      "entry_low": 1.706,
+      "entry_high": 1.708,
+      "stop_loss": 1.639,
+      "take_profit": 1.843,
+      "support": 1.639,
+      "resistance": 1.715,
+      "news_line": "",
+      "technical_analysis": "MACD line sits above its signal with a positive histogram, indicating bullish momentum. Stochastic %K (53) is above %D (43) reinforcing upward pressure. Volume has jumped 85% and the order book shows a 9% bid imbalance. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
+      "market_context": "BTC remains in a bearish 4‑hour trend while the broader market shows mixed breadth, with 55.8% of assets in red.",
+      "result": "PENDING"
     }
   ]
 }
