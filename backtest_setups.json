@@ -69214,6 +69214,23 @@
       "technical_analysis": "All moving averages sit above price (EMA9 0.918, EMA21 0.922, EMA50 0.935, EMA200 0.979), confirming a downtrend. MACD line remains under its signal with a negative histogram, while ADX at 34 signals a strong trend. RSI at 37 and Stochastic K below 20 show momentum still weak, favoring a short bias near the 0.9213 resistance.",
       "market_context": "BTC is in a bearish 4‑hour trend, down 1.75% over 24 h, and the broader market is broadly negative.",
       "result": "PENDING"
+    },
+    {
+      "id": 4072,
+      "created_at": "2026-10-26T04:01:00.133770+00:00",
+      "symbol": "AVAUSDT",
+      "direction": "SHORT",
+      "title": "Panic Selling Risk Increases as $AVA Tests Critical Floor",
+      "entry_low": 0.4035,
+      "entry_high": 0.4044,
+      "stop_loss": 0.4182,
+      "take_profit": 0.37545,
+      "support": 0.3916,
+      "resistance": 0.4044,
+      "news_line": "",
+      "technical_analysis": "Price sits below EMA9, EMA21 and EMA50, while MACD histogram stays negative and RSI is under 50, indicating bearish momentum. Indicators collectively favor a short bias. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
+      "market_context": "BTC is in a bearish 4H trend, down 1.57% over 24h, and the broader market shows a largely negative breadth.",
+      "result": "PENDING"
     }
   ]
 }
