@@ -70098,6 +70098,23 @@
       "technical_analysis": "Price sits below the 9, 21, 50 and 200 EMA, indicating bearish bias. RSI at 45.7 is neutral, while Stochastic K (34) under D (55) suggests downward momentum. ADX at 27 shows a moderate trend, and order‑book imbalance is slightly sell‑heavy. Resistance sits near 0.1329, support around 0.1241. Together, these indicators favor SHORT continuation toward support.",
       "market_context": "BTC is bearish on the 4‑hour chart and mixed on the daily, while overall market breadth leans red (58%).",
       "result": "PENDING"
+    },
+    {
+      "id": 4124,
+      "created_at": "2026-10-26T20:21:01.953082+00:00",
+      "symbol": "STRKUSDT",
+      "direction": "LONG",
+      "title": "Buyers Defend Key Demand Zone: $STRK Ready for Extension",
+      "entry_low": 0.04626,
+      "entry_high": 0.04638,
+      "stop_loss": 0.04465,
+      "take_profit": 0.04966,
+      "support": 0.04626,
+      "resistance": 0.04716,
+      "news_line": "",
+      "technical_analysis": "MACD histogram is positive (+0.00020) with the line crossing above the signal, indicating bullish momentum. RSI at 57 shows room above neutral, while Stochastic K at 73 signals overbought but still strong. ADX around 20 suggests a weak trend, keeping the upside bias intact. Together, these indicators favor LONG continuation toward resistance.",
+      "market_context": "BTC is in a bearish 4‑hour trend and the broader market is broadly negative, with 63% of assets red.",
+      "result": "PENDING"
     }
   ]
 }
