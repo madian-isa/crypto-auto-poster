@@ -70217,6 +70217,23 @@
       "technical_analysis": "MEGA is trading just above its 9‑EMA and comfortably above the 21‑EMA, with bullish EMA alignment. MACD is positive, RSI sits at 54, and Stochastic is near 60, all pointing upward. ADX shows a weak trend, but order‑book imbalance favors bids. The price respects the 0.04593–0.04721 zone, supporting a long bias.",
       "market_context": "BTC remains bearish on the 4‑hour chart while the daily picture is mixed, with a 0.3% drop over 24 h. Overall market",
       "result": "PENDING"
+    },
+    {
+      "id": 4131,
+      "created_at": "2026-10-26T22:20:58.481031+00:00",
+      "symbol": "ARBUSDT",
+      "direction": "SHORT",
+      "title": "$ARB Fails Resistance Retest: Bearish Extension Imminent",
+      "entry_low": 0.1685,
+      "entry_high": 0.169,
+      "stop_loss": 0.175,
+      "take_profit": 0.15625,
+      "support": 0.167,
+      "resistance": 0.169,
+      "news_line": "",
+      "technical_analysis": "MACD sits below its signal line with a negative histogram, and price trades beneath the 9‑, 21‑and 50‑EMA, confirming bearish momentum. RSI at 44.8 is neutral, while the Stochastic K at 12.5 signals oversold conditions but does not outweigh the downtrend. The 1‑hour resistance at 0.169 frames short‑bias pressure today.",
+      "market_context": "BTC remains bearish on the 4‑hour chart, trading near $80,010 below its 20‑EMA, while the broader market shows a slight red bias",
+      "result": "PENDING"
     }
   ]
 }
