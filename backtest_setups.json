@@ -69741,6 +69741,23 @@
       "technical_analysis": "MACD shows a negative histogram while the line sits below its signal, indicating bearish momentum. Price is under the 9‑ and 21‑EMA, and the stochastic K at 34.8 is below its D, reinforcing downside bias. RSI sits at 48, and ADX at 13.8 signals a weak trend. Immediate resistance sits at 148.26 with support near 148.20.",
       "market_context": "BTC is bearish on the 4‑hour chart, trading below its 20‑EMA, while the daily picture is mixed. The broader market is slightly",
       "result": "PENDING"
+    },
+    {
+      "id": 4103,
+      "created_at": "2026-10-26T14:20:48.953370+00:00",
+      "symbol": "ONDOUSDT",
+      "direction": "LONG",
+      "title": "Bullish Momentum Accelerates as $ONDO Liquidity Sweep Completes",
+      "entry_low": 0.4118,
+      "entry_high": 0.4125,
+      "stop_loss": 0.395664,
+      "take_profit": 0.445122,
+      "support": 0.4037,
+      "resistance": 0.4192,
+      "news_line": "",
+      "technical_analysis": "RSI at 58.9 and a positive MACD histogram show modest buying pressure. Order‑book imbalance favors bids, while volume is up 67 %. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure. The nearby support and resistance levels frame the current market structure.",
+      "market_context": "BTC is in a bearish 4‑hour trend, yet the broader market breadth is positive (68.5% green).",
+      "result": "PENDING"
     }
   ]
 }
