@@ -69588,6 +69588,23 @@
       "technical_analysis": "Bullish momentum favors a long setup as RSI sits at 54.66 and MACD histogram turns positive. Price holds above the key 0.01824 support, with EMA 9 and 21 aligning upward. Stochastic K crossing above D confirms strengthening upside pressure. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
       "market_context": "BTC trades near $80,456 with mixed daily trends, but 24h sentiment is slightly bullish. Market breadth is neutral with 54.7% green assets.",
       "result": "PENDING"
+    },
+    {
+      "id": 4094,
+      "created_at": "2026-10-26T11:01:14.157446+00:00",
+      "symbol": "SOXLBUSDT",
+      "direction": "SHORT",
+      "title": "$SOXLB Resistance Test Fails: Bearish Momentum Building Fast",
+      "entry_low": 83.4,
+      "entry_high": 83.55,
+      "stop_loss": 86.5,
+      "take_profit": 77.425,
+      "support": 83.0,
+      "resistance": 84.39,
+      "news_line": "",
+      "technical_analysis": "Indicators point to short bias: price sits beneath the EMA9/21/50 chain, MACD line is under its signal with a negative histogram, and Stochastic K (37) is below its D line, showing down‑trend momentum. RSI at 46.5 is modestly bearish, and ADX at 17 signals a weak trend. Resistance sits at 84.39.",
+      "market_context": "BTC is in a bearish 4‑hour trend while the broader market shows more red than green, adding pressure to risk assets.",
+      "result": "PENDING"
     }
   ]
 }
