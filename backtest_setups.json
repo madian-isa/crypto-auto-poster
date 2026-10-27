@@ -70676,6 +70676,23 @@
       "technical_analysis": "Price is below EMA9, EMA21 and EMA50, with RSI under 50 and Stochastic K around 26, indicating bearish bias. Momentum favors a short move toward 2304.44 support. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
       "market_context": "BTC is in a bearish 4‑hour trend, down 0.35% on the day, with mixed daily sentiment, reflecting broader downside pressure.",
       "result": "PENDING"
+    },
+    {
+      "id": 4158,
+      "created_at": "2026-10-27T06:01:01.997371+00:00",
+      "symbol": "BNBUSDT",
+      "direction": "LONG",
+      "title": "Spot Inflows Surge for $BNB as Futures Open Interest Rises",
+      "entry_low": 738.83,
+      "entry_high": 738.83,
+      "stop_loss": 709.2768,
+      "take_profit": 797.9364,
+      "support": 736.62,
+      "resistance": 742.86,
+      "news_line": "",
+      "technical_analysis": "Bollinger lower band is just below the price, indicating a slight bullish bias. The orderbook shows a bid‑ask imbalance favoring bids, supporting a modest upward move. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure. The nearby support and resistance levels frame the current market structure.",
+      "market_context": "BTC is in a bearish 4‑hour trend, with 24‑hour decline of 0.386%. Market breadth is mixed, 45% green and 55% red.",
+      "result": "PENDING"
     }
   ]
 }
