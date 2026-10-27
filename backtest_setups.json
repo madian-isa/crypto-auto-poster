@@ -71390,6 +71390,23 @@
       "technical_analysis": "CFGUSDT sits above its EMA9, EMA21, EMA50 and EMA200, confirming a clear uptrend. MACD line sits above the signal with a positive histogram, while ADX at 34 signals strong momentum. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
       "market_context": "BTC is up 1.0% with a mixed 4h/1d trend, while overall market breadth is broadly positive (77% green).",
       "result": "PENDING"
+    },
+    {
+      "id": 4200,
+      "created_at": "2026-10-27T22:00:49.051833+00:00",
+      "symbol": "MEGAUSDT",
+      "direction": "LONG",
+      "title": "High R-Multiple Long Trade Setup Forming on $MEGA",
+      "entry_low": 0.0488,
+      "entry_high": 0.0494,
+      "stop_loss": 0.047,
+      "take_profit": 0.0533,
+      "support": 0.04763,
+      "resistance": 0.052,
+      "news_line": "",
+      "technical_analysis": "Price sits above the EMA9, EMA21, EMA50 and EMA200, while MACD histogram is positive and ADX is above 30, indicating a strong upward trend. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure. The nearby support and resistance levels frame the current market structure.",
+      "market_context": "BTC is up 1.1% on the day, supporting a broadly positive market environment.",
+      "result": "PENDING"
     }
   ]
 }
