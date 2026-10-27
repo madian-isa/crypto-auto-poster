@@ -1,6 +1,6 @@
 {
   "date": "2026-10-27",
-  "count": 53,
+  "count": 54,
   "posted_symbols_today": [
     "CHIPUSDT",
     "SOXLBUSDT",
@@ -54,6 +54,7 @@
     "INTCBUSDT",
     "BREVUSDT",
     "CELOUSDT",
-    "\u725b\u6765USDT"
+    "\u725b\u6765USDT",
+    "BCHUSDT"
   ]
 }
