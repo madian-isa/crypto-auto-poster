@@ -70897,6 +70897,23 @@
       "technical_analysis": "Price sits below the EMA9, EMA21, EMA50 and EMA200, confirming a bearish slope. MACD line is under its signal with a negative histogram, reinforcing downside pressure. Together these cues favor a short bias. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
       "market_context": "BTC is in a bearish 4‑hour trend and the overall market breadth is broadly negative, with 62.4% of assets in red.",
       "result": "PENDING"
+    },
+    {
+      "id": 4171,
+      "created_at": "2026-10-27T09:40:57.205566+00:00",
+      "symbol": "HAEDALUSDT",
+      "direction": "LONG",
+      "title": "Strong Accumulation Detected: $HAEDAL Prepares for Next Wave Up",
+      "entry_low": 0.0212,
+      "entry_high": 0.0215,
+      "stop_loss": 0.0206,
+      "take_profit": 0.02285,
+      "support": 0.02115,
+      "resistance": 0.02363,
+      "news_line": "",
+      "technical_analysis": "Price sits above EMA9, EMA21, EMA50 and EMA200, confirming an uptrend. MACD histogram is positive and MACD line exceeds its signal, adding bullish momentum. ADX at 52.9 signals a strong trend. Despite RSI and Stoch in overbought territory, the EMA alignment and MACD favor a long bias near the 0.02115 support zone.",
+      "market_context": "BTC is in a bearish 4‑hour trend and the broader market shows a predominantly negative breadth, adding a cautious backdrop to the",
+      "result": "PENDING"
     }
   ]
 }
