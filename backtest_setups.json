@@ -70659,6 +70659,23 @@
       "technical_analysis": "Indicators favor a short bias as price trades below the EMA9, 21, 50, and 200. The MACD histogram is negative, confirming downward momentum, while the stochastic K-line near 10 suggests oversold conditions that often precede further downside in a bearish trend. ADX above 30 validates the strength of the current move.",
       "market_context": "Bitcoin remains in a broad bearish trend on 4H and 1D timeframes, with a negative 24h change. Market breadth is largely red",
       "result": "PENDING"
+    },
+    {
+      "id": 4157,
+      "created_at": "2026-10-27T05:50:57.799146+00:00",
+      "symbol": "ETHUSDT",
+      "direction": "SHORT",
+      "title": "Moving Average Death Cross Signals Downward Trend for $ETH",
+      "entry_low": 2314.0,
+      "entry_high": 2316.0,
+      "stop_loss": 2409.0,
+      "take_profit": 2127.0,
+      "support": 2304.44,
+      "resistance": 2329.85,
+      "news_line": "",
+      "technical_analysis": "Price is below EMA9, EMA21 and EMA50, with RSI under 50 and Stochastic K around 26, indicating bearish bias. Momentum favors a short move toward 2304.44 support. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
+      "market_context": "BTC is in a bearish 4‑hour trend, down 0.35% on the day, with mixed daily sentiment, reflecting broader downside pressure.",
+      "result": "PENDING"
     }
   ]
 }
