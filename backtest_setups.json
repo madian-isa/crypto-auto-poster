@@ -71407,6 +71407,23 @@
       "technical_analysis": "Price sits above the EMA9, EMA21, EMA50 and EMA200, while MACD histogram is positive and ADX is above 30, indicating a strong upward trend. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure. The nearby support and resistance levels frame the current market structure.",
       "market_context": "BTC is up 1.1% on the day, supporting a broadly positive market environment.",
       "result": "PENDING"
+    },
+    {
+      "id": 4201,
+      "created_at": "2026-10-27T23:40:44.774437+00:00",
+      "symbol": "TAOUSDT",
+      "direction": "SHORT",
+      "title": "$TAO Derivative Data Shows Heavy Long Liquidations Incoming",
+      "entry_low": 255.0,
+      "entry_high": 255.4,
+      "stop_loss": 265.408,
+      "take_profit": 234.784,
+      "support": 250.6,
+      "resistance": 256.1,
+      "news_line": "",
+      "technical_analysis": "Price sits near the upper Bollinger band and just below the 1‑hour resistance (256.1). These factors point to downside pressure and favor a short setup. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
+      "market_context": "BTC is slightly bullish (+0.94%) and overall market breadth is broadly positive, with 72.7% of assets green.",
+      "result": "PENDING"
     }
   ]
 }
