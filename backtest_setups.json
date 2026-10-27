@@ -71186,6 +71186,23 @@
       "technical_analysis": "MACD histogram is positive and the MACD line sits well above its signal, while price sits above the 9‑, 21‑and 200‑EMA, indicating bullish momentum. RSI at 68.8 shows strength but not yet overbought, and the order book is 20 % bid‑heavy. The price is near the 0.0888 resistance, with firm support at 0.0873.",
       "market_context": "BTC is modestly bullish (+0.6 %) with mixed broader market breadth, 57.6 % green.",
       "result": "PENDING"
+    },
+    {
+      "id": 4188,
+      "created_at": "2026-10-27T15:20:56.773352+00:00",
+      "symbol": "CELOUSDT",
+      "direction": "LONG",
+      "title": "Major Breakout Signals Emerge on $CELO Higher Timeframes",
+      "entry_low": 0.0808,
+      "entry_high": 0.0815,
+      "stop_loss": 0.0782,
+      "take_profit": 0.08705,
+      "support": 0.07783,
+      "resistance": 0.08286,
+      "news_line": "",
+      "technical_analysis": "MACD histogram is positive and the MACD line sits above its signal, while EMA9, EMA21 and EMA50 all sit below price, indicating bullish momentum. RSI and Stochastic are in overbought territory but the price remains above the EMA200 and near the upper Bollinger band, supporting a continued up move toward resistance.",
+      "market_context": "BTC is in a bearish 24‑hour frame, and overall market breadth is slightly negative, providing a broader backdrop for a cautious long",
+      "result": "PENDING"
     }
   ]
 }
