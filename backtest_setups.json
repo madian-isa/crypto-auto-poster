@@ -70557,6 +70557,23 @@
       "technical_analysis": "MACD shows a negative histogram and the line sits below its signal, indicating bearish momentum. Stochastic K (42.7) is under its D line (56.1), reinforcing downside pressure. Price sits beneath the 9‑ and 21‑EMA, while RSI hovers near 50. With weak ADX (14.7) the structure leans short near the 0.2078 resistance.",
       "market_context": "BTC is modestly higher (+0.48%) with a mixed 4‑h trend, while overall market breadth is broadly positive (≈70% green).",
       "result": "PENDING"
+    },
+    {
+      "id": 4151,
+      "created_at": "2026-10-27T04:01:03.125371+00:00",
+      "symbol": "PARTIUSDT",
+      "direction": "LONG",
+      "title": "Critical Resistance Test: $PARTI Preparing to Surge Higher",
+      "entry_low": 0.0379,
+      "entry_high": 0.0382,
+      "stop_loss": 0.0367,
+      "take_profit": 0.04075,
+      "support": 0.0379,
+      "resistance": 0.0389,
+      "news_line": "",
+      "technical_analysis": "Price sits above the EMA9, EMA21, EMA50 and EMA200, confirming a clear uptrend. MACD is marginally bullish and ADX at 40 shows strong momentum. Although RSI (70) and Stochastic (≈83) are in overbought territory, the 1‑hour support at 0.0379 holds, giving the pair upward bias toward the 0.0389 resistance. Together, these indicators favor LONG continuation toward resistance.",
+      "market_context": "BTC is bullish on the 24‑hour frame while the 4‑hour trend remains bearish, indicating mixed broader market sentiment.",
+      "result": "PENDING"
     }
   ]
 }
