@@ -71033,6 +71033,23 @@
       "technical_analysis": "The ADX at 50.75 signals a strong trend, while price sits below EMA9, EMA21, EMA50 and EMA200, confirming bearish momentum. RSI at 33 hints at oversold conditions but remains under 40. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
       "market_context": "BTC is in a bearish 4‑hour trend and down 0.6 % over 24 h, while the broader market shows more red than",
       "result": "PENDING"
+    },
+    {
+      "id": 4179,
+      "created_at": "2026-10-27T11:50:56.508047+00:00",
+      "symbol": "HYPEUSDT",
+      "direction": "SHORT",
+      "title": "$HYPE Distribution Phase Ends: Downside Target Zone Set",
+      "entry_low": 77.9,
+      "entry_high": 78.0,
+      "stop_loss": 81.068,
+      "take_profit": 71.714,
+      "support": 77.31,
+      "resistance": 78.37,
+      "news_line": "",
+      "technical_analysis": "MACD histogram is negative and MACD line sits below its signal, indicating bearish momentum. Stochastic K/D are below 50, showing down pressure. EMA9 and EMA21 sit just above price, while EMA50 is below, reinforcing a short bias. Price is testing the 77.91 resistance within a tight 77.79‑77.91 range and may seek lower support.",
+      "market_context": "BTC is in a bearish 4‑hour trend and overall market shows more red (58%) than green, adding downward pressure.",
+      "result": "PENDING"
     }
   ]
 }
