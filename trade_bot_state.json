@@ -1,6 +1,6 @@
 {
   "date": "2026-10-27",
-  "count": 19,
+  "count": 20,
   "posted_symbols_today": [
     "CHIPUSDT",
     "SOXLBUSDT",
@@ -20,6 +20,7 @@
     "XRPUSDT",
     "CRCLBUSDT",
     "NEARUSDT",
-    "SOLUSDT"
+    "SOLUSDT",
+    "BTCUSDT"
   ]
 }
