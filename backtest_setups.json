@@ -70353,6 +70353,23 @@
       "technical_analysis": "MACD is bullish with the line (2.12) above its signal (1.68) and a positive histogram. Price sits above the EMA9, EMA21, EMA50 and EMA200, confirming an uptrend. RSI at 66.7 shows strength, while ADX 27.7 indicates a solid trend. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
       "market_context": "BTC is marginally bullish (+0.06%) while overall market breadth is mixed, with 54.6% green assets.",
       "result": "PENDING"
+    },
+    {
+      "id": 4139,
+      "created_at": "2026-10-27T00:20:57.696400+00:00",
+      "symbol": "QNTUSDT",
+      "direction": "LONG",
+      "title": "$QNT Liquidation Squeeze: Bears Trapped Near Critical Resistance",
+      "entry_low": 200.0,
+      "entry_high": 205.0,
+      "stop_loss": 193.0,
+      "take_profit": 221.5,
+      "support": 188.29,
+      "resistance": 223.96,
+      "news_line": "",
+      "technical_analysis": "QNT holds above key moving averages, signaling sustained bullish structure. While the MACD histogram shows minor cooling, the strong ADX confirms trend strength. Price consolidates near resistance, with volume dip suggesting accumulation rather than distribution. The setup favors a long bias as price tests the upper Bollinger Band, aiming for a breakout toward the 224 resistance level.",
+      "market_context": "BTC remains bullish on the 24h chart, providing supportive broader market context.",
+      "result": "PENDING"
     }
   ]
 }
