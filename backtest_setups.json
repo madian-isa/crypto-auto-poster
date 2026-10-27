@@ -70625,6 +70625,23 @@
       "technical_analysis": "Price sits below EMA9, EMA21, EMA50 and EMA200, confirming a downtrend. MACD is negative with a bearish histogram, while RSI at 41 and Stochastic K at 13 signal weakening momentum. ADX is low, indicating a weak trend. Order‑book shows slight bid dominance, but overall bias remains short. Together, these indicators favor SHORT continuation toward support.",
       "market_context": "BTC is in a bearish 4‑hour trend and the broader market shows more red than green assets, adding pressure to risk assets",
       "result": "PENDING"
+    },
+    {
+      "id": 4155,
+      "created_at": "2026-10-27T05:30:59.021154+00:00",
+      "symbol": "SOLUSDT",
+      "direction": "SHORT",
+      "title": "Overbought Indicators Signal Impending Correction for $SOL",
+      "entry_low": 100.95,
+      "entry_high": 101.15,
+      "stop_loss": 105.2,
+      "take_profit": 92.75,
+      "support": 99.77,
+      "resistance": 101.15,
+      "news_line": "",
+      "technical_analysis": "Short bias dominates: price sits below the 9‑, 21‑, 50‑ and 200‑EMA, while MACD is negative and its histogram remains below zero. ADX at 29 confirms a solid downtrend. Stochastic is deep in oversold territory, and the 1‑hour resistance sits at 101.15, framing the downside move. Current price at 100.14 suggests room to test lower support around 99.77.",
+      "market_context": "BTC is in a bearish 4‑hour trend and the broader market shows a predominantly negative breadth, with 62% red coins, reinforcing downside",
+      "result": "PENDING"
     }
   ]
 }
