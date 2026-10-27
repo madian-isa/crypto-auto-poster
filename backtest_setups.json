@@ -70455,6 +70455,23 @@
       "technical_analysis": "Order‑book imbalance leans slightly to the ask, favoring a short bias. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
       "market_context": "BTC is bullish on the day and the broader market shows a positive breadth, but SYNUSDT faces pressure near its key resistance.",
       "result": "PENDING"
+    },
+    {
+      "id": 4145,
+      "created_at": "2026-10-27T02:21:13.686245+00:00",
+      "symbol": "BMTUSDT",
+      "direction": "SHORT",
+      "title": "Bearish Continuation Pattern Confirmed on $BMT Chart Structure",
+      "entry_low": 0.0297,
+      "entry_high": 0.02978,
+      "stop_loss": 0.03089,
+      "take_profit": 0.02744,
+      "support": 0.02885,
+      "resistance": 0.03089,
+      "news_line": "",
+      "technical_analysis": "ADX is low, confirming a weak trend, and the order book shows a slight bid bias. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
+      "market_context": "BTC is up 0.5% with a bullish tilt and overall market breadth is broadly positive.",
+      "result": "PENDING"
     }
   ]
 }
