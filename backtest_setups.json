@@ -70319,6 +70319,23 @@
       "technical_analysis": "The MACD histogram is positive, and RSI at 57 shows healthy momentum without being overbought. Price is pressing against the 53.34 resistance, with the orderbook showing a slight bid imbalance. The 24h low at 50.06 acts as the major swing low, providing a clear baseline Together, these indicators favor LONG continuation toward resistance.",
       "market_context": "BTC is trading above its 4-hour EMA20, suggesting a neutral to slightly bullish backdrop, though the 1-day trend remains mixed. Broader market",
       "result": "PENDING"
+    },
+    {
+      "id": 4137,
+      "created_at": "2026-10-27T00:00:53.652350+00:00",
+      "symbol": "CHIPUSDT",
+      "direction": "LONG",
+      "title": "Key Support Holds Firm: $CHIP Bullish Continuation Setup Active",
+      "entry_low": 0.05085,
+      "entry_high": 0.051,
+      "stop_loss": 0.048888,
+      "take_profit": 0.054999,
+      "support": 0.05069,
+      "resistance": 0.05725,
+      "news_line": "",
+      "technical_analysis": "RSI at 57 supports upside, and ADX above 35 confirms a strong trend. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure. The nearby support and resistance levels frame the current market structure.",
+      "market_context": "BTC is in a bearish 4‑hour trend, yet overall market breadth is mixed with 58.4% of assets green.",
+      "result": "PENDING"
     }
   ]
 }
