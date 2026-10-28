@@ -71781,6 +71781,23 @@
       "technical_analysis": "The market shows bullish momentum. RSI at 62.7 and a positive MACD histogram of 36 confirm upward pressure. Price sits above EMA9, EMA21, EMA50 and EMA200, indicating a clear uptrend. ADX at 38 signals a strong trend, while the order‑book shows a 55% bid‑side imbalance. Resistance sits near 81,823 and potential upside remains.",
       "market_context": "BTC is up 1.79% in 24 h, with a bullish direction and broadly positive market breadth; 86% of assets are green.",
       "result": "PENDING"
+    },
+    {
+      "id": 4223,
+      "created_at": "2026-10-28T12:10:57.098936+00:00",
+      "symbol": "DOGEUSDT",
+      "direction": "LONG",
+      "title": "Bullish Momentum Is Building: Can $DOGE Continue Its Breakout?",
+      "entry_low": 0.08014,
+      "entry_high": 0.0803,
+      "stop_loss": 0.0770112,
+      "take_profit": 0.0866376,
+      "support": 0.07801,
+      "resistance": 0.0803,
+      "news_line": "",
+      "technical_analysis": "The EMA9 sits above EMA21, EMA50 and EMA200, confirming bullish alignment. MACD line remains above its signal with a positive histogram, while ADX at 49 signals a strong trend. RSI at 69.6 and Stochastic K near 78 show momentum still upward. Price respects the 0.0803 resistance, with support near 0.08014.",
+      "market_context": "BTC shows a mixed trend on 4h and 1d frames around $81,170 with a slight bullish bias, and the broader market is",
+      "result": "PENDING"
     }
   ]
 }
