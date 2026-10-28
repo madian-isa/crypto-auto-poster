@@ -71679,6 +71679,23 @@
       "technical_analysis": "All key indicators point to downside pressure. RSI at 66.9 and Stochastic K at 94 signal overbought conditions, while price sits near the upper Bollinger band. ADX at 34 confirms a strong trend, supporting a short bias toward the 101.94 support level. Together, these indicators favor SHORT continuation toward support.",
       "market_context": "BTC shows a mixed trend with a 1.7% bullish move and market breadth remains broadly positive, with 82% of assets green.",
       "result": "PENDING"
+    },
+    {
+      "id": 4217,
+      "created_at": "2026-10-28T09:50:46.712152+00:00",
+      "symbol": "BLURUSDT",
+      "direction": "LONG",
+      "title": "Spot Inflows Surge for $BLUR as Futures Open Interest Rises",
+      "entry_low": 0.00845,
+      "entry_high": 0.0085,
+      "stop_loss": 0.00817,
+      "take_profit": 0.009085,
+      "support": 0.00741,
+      "resistance": 0.0091,
+      "news_line": "",
+      "technical_analysis": "Momentum is bullish: MACD histogram is positive and MACD line sits above its signal, while price sits above the 9‑, 21‑, 50‑ and 200‑EMA chain. Order‑book shows a ~20 % bid‑side imbalance, and ADX at 24 confirms a defined uptrend. Despite RSI near 79, the setup favors a long move toward the 0.0091 resistance.",
+      "market_context": "BTC is up 2.3 % on the day, market breadth is broadly positive with 89 % of assets green, supporting risk‑on sentiment.",
+      "result": "PENDING"
     }
   ]
 }
