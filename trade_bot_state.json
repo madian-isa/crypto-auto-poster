@@ -1,6 +1,6 @@
 {
   "date": "2026-10-28",
-  "count": 36,
+  "count": 37,
   "posted_symbols_today": [
     "HAEDALUSDT",
     "BANKUSDT",
@@ -37,6 +37,7 @@
     "GOOGLBUSDT",
     "PUMPUSDT",
     "LITEBUSDT",
-    "UNIUSDT"
+    "UNIUSDT",
+    "USD1USDT"
   ]
 }
