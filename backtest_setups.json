@@ -71526,6 +71526,23 @@
       "technical_analysis": "MACD is bullish with a positive histogram, and ADX above 40 confirms a strong trend. Price sits above the 9, 21, 50 and 200 EMA series, showing clear upward alignment. RSI at 68 and Stochastic above 80 signal overbought conditions but still support momentum toward the 1318 resistance. Together, these indicators favor LONG continuation toward resistance.",
       "market_context": "BTC is in a mixed but overall bullish stance, and the broader market is broadly positive with 86% green assets.",
       "result": "PENDING"
+    },
+    {
+      "id": 4208,
+      "created_at": "2026-10-28T04:10:55.613291+00:00",
+      "symbol": "INITUSDT",
+      "direction": "LONG",
+      "title": "Critical Resistance Test: $INIT Preparing to Surge Higher",
+      "entry_low": 0.1765,
+      "entry_high": 0.1775,
+      "stop_loss": 0.1708,
+      "take_profit": 0.1894,
+      "support": 0.1769,
+      "resistance": 0.1798,
+      "news_line": "",
+      "technical_analysis": "All key indicators point upward: price sits above the 9‑, 21‑, 50‑ and 200‑EMA line, confirming a strong bullish ladder. RSI at 59.6 and Stochastic K crossing above D signal healthy momentum, while ADX above 25 shows a defined trend. Rising volume and a slight bid‑side order‑book imbalance add support overall.",
+      "market_context": "Bitcoin is up 1.49% on the day, keeping the broader market broadly positive.",
+      "result": "PENDING"
     }
   ]
 }
