@@ -71645,6 +71645,23 @@
       "technical_analysis": "MACD sits well above its signal with a positive histogram, confirming bullish momentum. Price is trading above the 9, 21, 50 and 200‑EMA line‑up, reinforcing an uptrend. ADX at 36 indicates a strong trend. Despite RSI and Stochastic in overbought territory, the momentum remains intact, supporting a long bias overall.",
       "market_context": "BTC is modestly bullish, up about 1.5%, while 80.8% of the market is green, suggesting broadly positive sentiment.",
       "result": "PENDING"
+    },
+    {
+      "id": 4215,
+      "created_at": "2026-10-28T08:10:49.547841+00:00",
+      "symbol": "ETHUSDT",
+      "direction": "LONG",
+      "title": "Smart Money Flow Increases into $ETH Ahead of Catalysts",
+      "entry_low": 2358.0,
+      "entry_high": 2362.0,
+      "stop_loss": 2275.5,
+      "take_profit": 2529.0,
+      "support": 2350.99,
+      "resistance": 2369.26,
+      "news_line": "",
+      "technical_analysis": "MACD line sits 0.28 above its signal, while the histogram stays positive, confirming bullish momentum. RSI at 63 and Stochastic K (73) above D (51) indicate upward strength without extreme overbought. Price rests above the 9‑, 21‑ and 50‑EMA, and ADX 32 shows a solid trend. Order‑book imbalance (+13.7% bids) adds buying pressure.",
+      "market_context": "BTC is up 1.6% on the day, with mixed 4H and 1D trends, and the broader market shows a strongly positive breadth.",
+      "result": "PENDING"
     }
   ]
 }
