@@ -72019,6 +72019,23 @@
       "technical_analysis": "MACD is below its signal with a negative histogram, and Stochastic shows K under D, both pointing bearish. ADX at 45 confirms a strong trend. Price sits under the 9‑EMA while staying above the 21‑EMA, adding pressure toward the nearby resistance around 894. The indicators collectively favor a short bias.",
       "market_context": "Bitcoin remains slightly bullish with a mixed 4‑hour and daily trend, and the overall market is broadly positive (67.5% green). This backdrop",
       "result": "PENDING"
+    },
+    {
+      "id": 4237,
+      "created_at": "2026-10-28T22:31:05.347517+00:00",
+      "symbol": "UNIUSDT",
+      "direction": "LONG",
+      "title": "Technical Signals Turn Positive as Market Momentum Builds",
+      "entry_low": 7.26,
+      "entry_high": 7.28,
+      "stop_loss": 7.0,
+      "take_profit": 7.81,
+      "support": 7.13,
+      "resistance": 7.274,
+      "news_line": "",
+      "technical_analysis": "MACD is bullish with a positive histogram, and the price sits above the 9‑, 21‑, 50‑ and 200‑EMA, confirming upward bias. Rising volume and a 10% bid‑side order‑book imbalance add strength. Although RSI and Stochastic are near overbought, the breakout above the 7.274 resistance supports a long outlook for the next swing.",
+      "market_context": "BTC shows a modest bullish bias and the broader market is 57.7% green, offering supportive backdrop for UNI.",
+      "result": "PENDING"
     }
   ]
 }
