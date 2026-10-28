@@ -1,6 +1,6 @@
 {
   "date": "2026-10-28",
-  "count": 28,
+  "count": 29,
   "posted_symbols_today": [
     "HAEDALUSDT",
     "BANKUSDT",
@@ -29,6 +29,7 @@
     "BMTUSDT",
     "SPCXBUSDT",
     "ERAUSDT",
-    "XRPUSDT"
+    "XRPUSDT",
+    "CHIPUSDT"
   ]
 }
