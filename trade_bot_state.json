@@ -1,6 +1,6 @@
 {
   "date": "2026-10-28",
-  "count": 20,
+  "count": 21,
   "posted_symbols_today": [
     "HAEDALUSDT",
     "BANKUSDT",
@@ -21,6 +21,7 @@
     "TUTUSDT",
     "SHELLUSDT",
     "GTCUSDT",
-    "BNBUSDT"
+    "BNBUSDT",
+    "BTCUSDT"
   ]
 }
