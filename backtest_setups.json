@@ -71798,6 +71798,23 @@
       "technical_analysis": "The EMA9 sits above EMA21, EMA50 and EMA200, confirming bullish alignment. MACD line remains above its signal with a positive histogram, while ADX at 49 signals a strong trend. RSI at 69.6 and Stochastic K near 78 show momentum still upward. Price respects the 0.0803 resistance, with support near 0.08014.",
       "market_context": "BTC shows a mixed trend on 4h and 1d frames around $81,170 with a slight bullish bias, and the broader market is",
       "result": "PENDING"
+    },
+    {
+      "id": 4224,
+      "created_at": "2026-10-28T13:31:01.202456+00:00",
+      "symbol": "REZUSDT",
+      "direction": "LONG",
+      "title": "Key Support Holds Firm: $REZ Bullish Continuation Setup Active",
+      "entry_low": 0.00485,
+      "entry_high": 0.0049,
+      "stop_loss": 0.0045825,
+      "take_profit": 0.00546,
+      "support": 0.004576,
+      "resistance": 0.00485,
+      "news_line": "",
+      "technical_analysis": "Stochastic is deep in oversold territory (K≈9, D≈6) and price sits just above the lower Bollinger band, suggesting a bounce. RSI at 41 shows room for upside. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure. The nearby support and resistance levels frame the current market structure.",
+      "market_context": "BTC is modestly bullish and the overall market is broadly positive, with 74% of assets in green.",
+      "result": "PENDING"
     }
   ]
 }
