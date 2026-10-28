@@ -72002,6 +72002,23 @@
       "technical_analysis": "Indicators point to bullish pressure on PUMP. EMA9, EMA21 and EMA50 sit below the current price, confirming an uptrend. MACD histogram is positive, and ADX at 26 shows a strengthening trend. Order‑book shows a 36% bid imbalance, while RSI at 70.9 and Stochastic near 80 suggest momentum remains high. Resistance sits around 0.00465.",
       "market_context": "BTC is bullish and the broader market is broadly positive, with 74% of assets green, supporting risk‑on sentiment.",
       "result": "PENDING"
+    },
+    {
+      "id": 4236,
+      "created_at": "2026-10-28T21:31:02.024842+00:00",
+      "symbol": "LITEBUSDT",
+      "direction": "SHORT",
+      "title": "Bearish Divergence Spotted on $LITEB: Downside Targets Ahead",
+      "entry_low": 892.0,
+      "entry_high": 894.0,
+      "stop_loss": 925.0,
+      "take_profit": 829.0,
+      "support": 874.85,
+      "resistance": 1071.35,
+      "news_line": "",
+      "technical_analysis": "MACD is below its signal with a negative histogram, and Stochastic shows K under D, both pointing bearish. ADX at 45 confirms a strong trend. Price sits under the 9‑EMA while staying above the 21‑EMA, adding pressure toward the nearby resistance around 894. The indicators collectively favor a short bias.",
+      "market_context": "Bitcoin remains slightly bullish with a mixed 4‑hour and daily trend, and the overall market is broadly positive (67.5% green). This backdrop",
+      "result": "PENDING"
     }
   ]
 }
