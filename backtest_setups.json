@@ -71543,6 +71543,23 @@
       "technical_analysis": "All key indicators point upward: price sits above the 9‑, 21‑, 50‑ and 200‑EMA line, confirming a strong bullish ladder. RSI at 59.6 and Stochastic K crossing above D signal healthy momentum, while ADX above 25 shows a defined trend. Rising volume and a slight bid‑side order‑book imbalance add support overall.",
       "market_context": "Bitcoin is up 1.49% on the day, keeping the broader market broadly positive.",
       "result": "PENDING"
+    },
+    {
+      "id": 4209,
+      "created_at": "2026-10-28T04:31:13.982610+00:00",
+      "symbol": "SNDKBUSDT",
+      "direction": "SHORT",
+      "title": "Smart Money Distribution Visible on $SNDKB On-Chain Data",
+      "entry_low": 1365.0,
+      "entry_high": 1368.59,
+      "stop_loss": 1415.0,
+      "take_profit": 1270.385,
+      "support": 1290.01,
+      "resistance": 1368.59,
+      "news_line": "",
+      "technical_analysis": "RSI at 78.2 and Stochastic K at 93 signal overbought conditions while price sits just below the 1H/4H resistance of 1368.59. Combined with the EMA stack above price, the indicators tilt toward a short bias overall positioning. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
+      "market_context": "BTC is in a bullish 4H and 1D mixed trend, with a 1.5% rise and broadly positive market breadth.",
+      "result": "PENDING"
     }
   ]
 }
