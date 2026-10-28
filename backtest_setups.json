@@ -71577,6 +71577,23 @@
       "technical_analysis": "MACD is bullish (line above signal, positive histogram) and EMA9/21/50/200 are all below price, confirming an uptrend. ADX at 48 signals a strong trend. Although RSI (74.5) and Stochastic (K 85, D 92) show overbought conditions, the momentum remains positive, keeping pressure toward the 13.14 resistance. A break above could trigger further buying.",
       "market_context": "BTC is up 1.3% on the day, market breadth shows 83.5% green, indicating overall bullish sentiment.",
       "result": "PENDING"
+    },
+    {
+      "id": 4211,
+      "created_at": "2026-10-28T06:01:06.076311+00:00",
+      "symbol": "NEARUSDT",
+      "direction": "LONG",
+      "title": "$NEAR Holds Moving Average Support: High Probability Long Setup",
+      "entry_low": 4.56,
+      "entry_high": 4.6,
+      "stop_loss": 4.392,
+      "take_profit": 4.956,
+      "support": 4.656,
+      "resistance": 4.755,
+      "news_line": "",
+      "technical_analysis": "Price sits above the 9‑ and 21‑EMA and the MACD line remains above its signal, while RSI is at 60, indicating bullish momentum. ADX at 42 confirms a strong trend, and order‑book imbalance shows modest buying pressure. With support near 4.66 and resistance around 4.75, the setup favors a long move.",
+      "market_context": "BTC is in a mixed short‑term trend but overall bullish, up 1.16% on the day, and market breadth is broadly positive (80%",
+      "result": "PENDING"
     }
   ]
 }
