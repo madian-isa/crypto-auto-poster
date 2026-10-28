@@ -71713,6 +71713,23 @@
       "technical_analysis": "EMA9, EMA21, EMA50 and EMA200 sit below the current price, confirming an uptrend. ADX at 53 signals a strong trend, while RSI at 66.9 and a modest order‑book imbalance favor buying pressure. Price holds above the 1H/4H support at 0.01883 and eyes the nearby resistance around 0.0203, indicating bullish momentum overall.",
       "market_context": "BTC is up 2.36% in 24h, market breadth is broadly positive with 90% green assets, supporting risk‑on sentiment.",
       "result": "PENDING"
+    },
+    {
+      "id": 4219,
+      "created_at": "2026-10-28T10:40:52.406272+00:00",
+      "symbol": "SHELLUSDT",
+      "direction": "LONG",
+      "title": "$SHELL Reclaims Key Resistance Level: Flip to Support Complete",
+      "entry_low": 0.0238,
+      "entry_high": 0.024,
+      "stop_loss": 0.022944,
+      "take_profit": 0.025812,
+      "support": 0.0237,
+      "resistance": 0.02694,
+      "news_line": "",
+      "technical_analysis": "Price sits above all EMA lines, confirming bullish alignment. MACD is positive and above its signal, adding momentum. ADX above 45 shows a strong trend, while volume has surged over 190%. Despite an overbought RSI, the confluence of EMA, MACD and ADX favors a continued rise toward resistance. Together, these indicators favor LONG continuation toward resistance.",
+      "market_context": "BTC is up 2.1% and the broader market is broadly positive, with 89% of assets green, supporting a favorable environment for risk",
+      "result": "PENDING"
     }
   ]
 }
