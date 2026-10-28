@@ -71594,6 +71594,23 @@
       "technical_analysis": "Price sits above the 9‑ and 21‑EMA and the MACD line remains above its signal, while RSI is at 60, indicating bullish momentum. ADX at 42 confirms a strong trend, and order‑book imbalance shows modest buying pressure. With support near 4.66 and resistance around 4.75, the setup favors a long move.",
       "market_context": "BTC is in a mixed short‑term trend but overall bullish, up 1.16% on the day, and market breadth is broadly positive (80%",
       "result": "PENDING"
+    },
+    {
+      "id": 4212,
+      "created_at": "2026-10-28T06:20:52.269112+00:00",
+      "symbol": "SNXXBUSDT",
+      "direction": "LONG",
+      "title": "$SNXXB Volume Expansion Signals High Conviction Upward Move",
+      "entry_low": 9.71,
+      "entry_high": 9.78,
+      "stop_loss": 9.38,
+      "take_profit": 10.475,
+      "support": 8.82,
+      "resistance": 10.0,
+      "news_line": "",
+      "technical_analysis": "MACD line sits above its signal with a positive histogram, confirming bullish momentum. EMA9, EMA21 and EMA50 are all below price, showing a clear uptrend. ADX at 36.7 signals a strong trend, while RSI and Stochastic are in over‑bought zones but momentum remains intact. Together, these indicators favor LONG continuation toward resistance.",
+      "market_context": "BTC is on a modest bullish swing, up 1.5% in 24 h, while 83.5% of the market is green, indicating broadly positive",
+      "result": "PENDING"
     }
   ]
 }
