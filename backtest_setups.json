@@ -71747,6 +71747,23 @@
       "technical_analysis": "MACD shows a bullish crossover with a positive histogram, while ADX at 47 signals a strong trend. Price sits above the EMA9, EMA21, EMA50 and EMA200, confirming upward bias. RSI at 67 and Stochastic near 70 add momentum, and the pair is approaching the 0.2653 resistance level, favoring a long stance.",
       "market_context": "BTC up 1.8% and market breadth is broadly positive, supporting overall risk‑on sentiment.",
       "result": "PENDING"
+    },
+    {
+      "id": 4221,
+      "created_at": "2026-10-28T11:50:58.884151+00:00",
+      "symbol": "BNBUSDT",
+      "direction": "LONG",
+      "title": "$BNB Prepares for Parabolic Phase: Key Technical Trigger Met",
+      "entry_low": 757.0,
+      "entry_high": 759.0,
+      "stop_loss": 730.5,
+      "take_profit": 813.0,
+      "support": 744.3,
+      "resistance": 761.98,
+      "news_line": "",
+      "technical_analysis": "MACD shows a bullish crossover with the line at 2.52 above the 1.48 signal and a positive 1.04 histogram. Price sits above the EMA9‑200 cluster, confirming upward bias. Order‑book imbalance of 24 % on the bid side and a 144 % volume surge add buying pressure. Although RSI 75 and Stochastic 96 signal overbought, momentum favors a long move toward",
+      "market_context": "BTC up 1.86 % with mixed 4H/1D trends, while overall market breadth is 86.8 % green, indicating a broadly positive environment.",
+      "result": "PENDING"
     }
   ]
 }
