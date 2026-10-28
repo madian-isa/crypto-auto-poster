@@ -71560,6 +71560,23 @@
       "technical_analysis": "RSI at 78.2 and Stochastic K at 93 signal overbought conditions while price sits just below the 1H/4H resistance of 1368.59. Combined with the EMA stack above price, the indicators tilt toward a short bias overall positioning. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
       "market_context": "BTC is in a bullish 4H and 1D mixed trend, with a 1.5% rise and broadly positive market breadth.",
       "result": "PENDING"
+    },
+    {
+      "id": 4210,
+      "created_at": "2026-10-28T05:20:53.037749+00:00",
+      "symbol": "KORUBUSDT",
+      "direction": "LONG",
+      "title": "Bullish Momentum Is Building: Can $KORUB Continue Its Breakout?",
+      "entry_low": 12.9,
+      "entry_high": 12.95,
+      "stop_loss": 12.45,
+      "take_profit": 13.875,
+      "support": 11.7,
+      "resistance": 13.14,
+      "news_line": "",
+      "technical_analysis": "MACD is bullish (line above signal, positive histogram) and EMA9/21/50/200 are all below price, confirming an uptrend. ADX at 48 signals a strong trend. Although RSI (74.5) and Stochastic (K 85, D 92) show overbought conditions, the momentum remains positive, keeping pressure toward the 13.14 resistance. A break above could trigger further buying.",
+      "market_context": "BTC is up 1.3% on the day, market breadth shows 83.5% green, indicating overall bullish sentiment.",
+      "result": "PENDING"
     }
   ]
 }
