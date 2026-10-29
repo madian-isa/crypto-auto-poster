@@ -72342,6 +72342,23 @@
       "technical_analysis": "Price sits below EMA9, EMA21, EMA50 and EMA200, confirming bearish bias. MACD line is under its signal and the histogram stays negative, while RSI at 42.7 and Stochastic K at 22.7 signal weakening momentum. Order‑book imbalance of –11.9% adds sell pressure, supporting a short outlook near the 100.4 resistance. Together, these indicators favor SHORT continuation toward support.",
       "market_context": "Bitcoin is in a bearish 4‑hour trend and mixed on the daily, down 1.6% over 24 h. The broader market shows 87.5%",
       "result": "PENDING"
+    },
+    {
+      "id": 4256,
+      "created_at": "2026-10-29T10:50:53.270548+00:00",
+      "symbol": "BNBUSDT",
+      "direction": "SHORT",
+      "title": "$BNB Fails Resistance Retest: Bearish Extension Imminent",
+      "entry_low": 748.5,
+      "entry_high": 749.5,
+      "stop_loss": 775.3,
+      "take_profit": 696.4,
+      "support": 742.0,
+      "resistance": 746.5,
+      "news_line": "",
+      "technical_analysis": "MACD shows a bearish divergence with the histogram deep in negative territory and the line sitting well below its signal. Price sits under the 9‑ and 21‑EMA, while the 200‑EMA remains supportive. Stochastic K at 30 signals weakening momentum, and a modest sell‑side orderbook imbalance reinforces the short bias near the 746.5 resistance.",
+      "market_context": "BTC remains in a bearish 4‑hour trend and the broader market shows a 86.5% red breadth, underscoring overall downside pressure.",
+      "result": "PENDING"
     }
   ]
 }
