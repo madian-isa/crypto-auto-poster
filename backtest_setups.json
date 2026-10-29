@@ -72206,6 +72206,23 @@
       "technical_analysis": "MACD is negative with a bearish histogram, and the 1‑hour order book shows a 31% bid‑side imbalance, adding downside pressure. Resistance at 0.05026 supports a short bias. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
       "market_context": "BTC is bearish on the 4h chart, trading below its EMA20 and EMA50. The broader market is broadly negative, with 86.4% of",
       "result": "PENDING"
+    },
+    {
+      "id": 4248,
+      "created_at": "2026-10-29T05:10:46.169518+00:00",
+      "symbol": "NEARUSDT",
+      "direction": "SHORT",
+      "title": "Smart Money Distribution Visible on $NEAR On-Chain Data",
+      "entry_low": 4.485,
+      "entry_high": 4.494,
+      "stop_loss": 4.65,
+      "take_profit": 4.1685,
+      "support": 4.426,
+      "resistance": 4.494,
+      "news_line": "",
+      "technical_analysis": "NEAR is trading well below its EMA9, EMA21, EMA50 and EMA200, confirming a bearish structure. MACD sits negative with a falling histogram, while ADX at 29 signals a firm trend. RSI at 33 and Stochastic below 12 show oversold conditions, but price remains under the 1H resistance at 4.494, favoring a short bias.",
+      "market_context": "BTC is in a bearish 4‑hour trend and mixed on the daily, with a 0.75% decline and broadly negative market sentiment (82.9%",
+      "result": "PENDING"
     }
   ]
 }
