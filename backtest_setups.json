@@ -72665,6 +72665,23 @@
       "technical_analysis": "LINK is trading below its 9, 21, 50 and 200 EMA, confirming a clear downtrend. The MACD line sits under the signal with a negative histogram, reinforcing bearish momentum. RSI at 32 and a Stochastic below 20 show oversold conditions, yet the price remains under the lower Bollinger band, keeping pressure toward the 1‑hour resistance at 11.6.",
       "market_context": "Bitcoin fell 2.8% in 24 h, extending a bearish trend while the broader market shows 92 % red assets, indicating overall downside",
       "result": "PENDING"
+    },
+    {
+      "id": 4275,
+      "created_at": "2026-10-29T23:20:54.694821+00:00",
+      "symbol": "AAVEUSDT",
+      "direction": "SHORT",
+      "title": "$AAVE Fails Resistance Retest: Bearish Extension Imminent",
+      "entry_low": 119.9,
+      "entry_high": 120.3,
+      "stop_loss": 124.5,
+      "take_profit": 111.3,
+      "support": 118.43,
+      "resistance": 132.15,
+      "news_line": "",
+      "technical_analysis": "AAVE is deep in oversold territory with RSI 23.5 and Stochastic K 4, but price sits below all EMAs (9‑200) and MACD histogram remains negative, confirming a bearish framework. The 1H/4H swing places the next resistance near 132 and support at 118, keeping downside bias. Current order‑book shows bid pressure, reinforcing the short outlook.",
+      "market_context": "BTC is in a bearish 4H trend and overall market breadth is broadly negative, with 92% of assets red.",
+      "result": "PENDING"
     }
   ]
 }
