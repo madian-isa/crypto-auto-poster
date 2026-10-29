@@ -72461,6 +72461,23 @@
       "technical_analysis": "RSI at 12.2 and Stochastic K at 5.5 signal deep oversold conditions, but MACD remains negative with a -0.00048 histogram and price sits below EMA9, EMA21, EMA50 and EMA200. The price also broke the lower Bollinger Band. Momentum and structure favor a short bias toward the 0.0387 resistance on the 1H chart.",
       "market_context": "BTC shows a slight bullish edge at $80,970 with mixed 4H/1D trends, while overall market green percentage sits at 58.1%.",
       "result": "PENDING"
+    },
+    {
+      "id": 4263,
+      "created_at": "2026-10-29T15:01:14.085675+00:00",
+      "symbol": "LSKUSDT",
+      "direction": "LONG",
+      "title": "$LSK Prepares for Parabolic Phase: Key Technical Trigger Met",
+      "entry_low": 0.1765,
+      "entry_high": 0.18,
+      "stop_loss": 0.1704,
+      "take_profit": 0.19395,
+      "support": 0.1668,
+      "resistance": 0.2069,
+      "news_line": "",
+      "technical_analysis": "RSI at 84.8 and Stochastic in the 70s signal overbought conditions, yet MACD is positive (0.0037 above the 0.0016 signal) and the histogram remains bullish. EMA9, EMA21 and EMA50 sit below price, confirming upward bias. ADX above 30 shows a strong trend, and a 23.6% bid‑side order‑book imbalance adds buying pressure.",
+      "market_context": "BTC is up 0.78% on the 4‑hour chart, keeping a mixed but slightly bullish tone, while overall market breadth shows 58% of",
+      "result": "PENDING"
     }
   ]
 }
