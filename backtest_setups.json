@@ -72104,6 +72104,23 @@
       "technical_analysis": "Price sits above all EMA lines (9,21,50,200) and RSI at 64, while ADX at 44 signals a strong trend. With support near 4.79 µ, the indicators favor a continued upward move toward the 5.05 µ resistance zone. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
       "market_context": "BTC is marginally bullish with a 0.5% 24‑hour rise, while overall market breadth is mixed (49.4% green, 50.6% red).",
       "result": "PENDING"
+    },
+    {
+      "id": 4242,
+      "created_at": "2026-10-29T01:40:55.107259+00:00",
+      "symbol": "GOOGLBUSDT",
+      "direction": "SHORT",
+      "title": "Bearish Divergence Spotted on $GOOGLB: Downside Targets Ahead",
+      "entry_low": 296.3,
+      "entry_high": 296.46,
+      "stop_loss": 307.0,
+      "take_profit": 275.14,
+      "support": 287.85,
+      "resistance": 319.27,
+      "news_line": "",
+      "technical_analysis": "RSI at 24.8 and Stochastic K/D below 21 signal oversold conditions, yet MACD is negative and below its signal line, and ADX at 42 confirms a strong downtrend. Price sits under the EMA9‑200 stack, reinforcing bearish momentum. Immediate resistance sits near 296.5, with support around 287.9. Together, these indicators favor SHORT continuation toward support.",
+      "market_context": "Bitcoin is in a bearish 4‑hour trend and the broader market is broadly negative, with 78% of assets red and only 22%",
+      "result": "PENDING"
     }
   ]
 }
