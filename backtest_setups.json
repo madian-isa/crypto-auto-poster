@@ -72172,6 +72172,23 @@
       "technical_analysis": "MACD sits below its signal with a –5.27 histogram, indicating bearish momentum. Price trades beneath the 9‑, 21‑ and 50‑period EMAs, confirming a downtrend. Combined with a rising volume surge of nearly 100% it reinforces the short bias. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
       "market_context": "BTC is in a bearish 4‑hour trend, down 1.57% over 24 h, and the broader market is broadly negative with 89.6% red",
       "result": "PENDING"
+    },
+    {
+      "id": 4246,
+      "created_at": "2026-10-29T04:31:00.951675+00:00",
+      "symbol": "BLURUSDT",
+      "direction": "LONG",
+      "title": "$BLUR Prepares for Parabolic Phase: Key Technical Trigger Met",
+      "entry_low": 0.0088,
+      "entry_high": 0.00885,
+      "stop_loss": 0.00848,
+      "take_profit": 0.009515,
+      "support": 0.00826,
+      "resistance": 0.00879,
+      "news_line": "",
+      "technical_analysis": "Price sits above the 9‑, 21‑ and 200‑EMA, confirming an uptrend. ADX at 45 signals a strong trend, while RSI 65 and Stochastic K 92 show bullish momentum. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure. The nearby support and resistance levels frame the current market structure.",
+      "market_context": "BTC is in a bearish 4‑hour trend and the overall market remains broadly negative, with 87.6 % of assets red.",
+      "result": "PENDING"
     }
   ]
 }
