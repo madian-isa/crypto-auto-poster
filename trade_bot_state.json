@@ -1,6 +1,6 @@
 {
   "date": "2026-10-29",
-  "count": 20,
+  "count": 21,
   "posted_symbols_today": [
     "INITUSDT",
     "PEPEUSDT",
@@ -21,6 +21,7 @@
     "BNBUSDT",
     "HYPEUSDT",
     "XRPUSDT",
-    "BTCUSDT"
+    "BTCUSDT",
+    "SPCXBUSDT"
   ]
 }

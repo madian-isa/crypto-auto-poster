@@ -72410,6 +72410,23 @@
       "technical_analysis": "BTCUSDT sits below all key EMAs (9, 21, 50, 200) indicating bearish bias. MACD histogram is negative and RSI at 43 suggests momentum fading. Stochastic is low, and ADX under 20 shows a weak trend. The price is under the 1‑hour resistance at 80,374, favoring a short outlook currently overall today.",
       "market_context": "BTC is down 1.4% on the day, the broader market is broadly negative with 85.9% red, and the 1‑hour order book shows",
       "result": "PENDING"
+    },
+    {
+      "id": 4260,
+      "created_at": "2026-10-29T12:40:58.569251+00:00",
+      "symbol": "SPCXBUSDT",
+      "direction": "SHORT",
+      "title": "High Conviction Short Opportunity as $SPCXB Tests Supply Wall",
+      "entry_low": 144.2,
+      "entry_high": 144.5,
+      "stop_loss": 150.124,
+      "take_profit": 132.802,
+      "support": 142.49,
+      "resistance": 144.52,
+      "news_line": "",
+      "technical_analysis": "SPCX is trading below its 9‑, 21‑, 50‑ and 200‑EMA, confirming a downtrend. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
+      "market_context": "BTC is in a bearish 4‑hour trend, down 0.84% over 24 h, and the broader market is broadly negative with 71.9% red",
+      "result": "PENDING"
     }
   ]
 }
