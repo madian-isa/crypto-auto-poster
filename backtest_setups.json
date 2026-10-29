@@ -72376,6 +72376,23 @@
       "technical_analysis": "Price sits just below the 1‑hour resistance at 87.31 and above all key EMAs, suggesting a short bias as the market tests the ceiling. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
       "market_context": "Bitcoin is in a bearish 4‑hour trend and the broader market shows a largely negative breadth, reinforcing downside pressure on risk assets.",
       "result": "PENDING"
+    },
+    {
+      "id": 4258,
+      "created_at": "2026-10-29T11:41:00.441658+00:00",
+      "symbol": "XRPUSDT",
+      "direction": "LONG",
+      "title": "$XRP Reclaims Key Resistance Level: Flip to Support Complete",
+      "entry_low": 1.291,
+      "entry_high": 1.2945,
+      "stop_loss": 1.246,
+      "take_profit": 1.38625,
+      "support": 1.291,
+      "resistance": 1.3047,
+      "news_line": "",
+      "technical_analysis": "XRP is sitting near the 1‑hour support at 1.291. Price remains below all EMAs, but the order‑book shows buying pressure, favoring a near‑term bounce toward the 1.3047 resistance. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure. The nearby support and resistance levels frame the current market structure.",
+      "market_context": "BTC is in a bearish 4‑hour trend and down 1.5% over 24 h, while the overall crypto market shows 86.7% red breadth",
+      "result": "PENDING"
     }
   ]
 }
