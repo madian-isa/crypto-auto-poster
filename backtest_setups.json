@@ -72512,6 +72512,23 @@
       "technical_analysis": "ETH is trading just above the 1‑hour resistance at 2364.35, with price holding above the EMA9, EMA21 and EMA200, confirming an uptrend. MACD line sits above its signal and the histogram is positive, while RSI at 65 shows strength. Order‑book shows a modest bid‑side imbalance, supporting bullish momentum overall trend.",
       "market_context": "BTC is modestly bullish, up 1.2% on the day, with mixed 4‑hour and daily trends, keeping overall market breadth broadly positive.",
       "result": "PENDING"
+    },
+    {
+      "id": 4266,
+      "created_at": "2026-10-29T16:31:04.963568+00:00",
+      "symbol": "SUIUSDT",
+      "direction": "LONG",
+      "title": "$SUI Liquidation Squeeze: Bears Trapped Near Critical Resistance",
+      "entry_low": 0.951,
+      "entry_high": 0.954,
+      "stop_loss": 0.915,
+      "take_profit": 1.0275,
+      "support": 0.9322,
+      "resistance": 0.9484,
+      "news_line": "",
+      "technical_analysis": "The MACD histogram is positive and the line sits above the signal, while the price trades above the EMA9, EMA21 and EMA200, confirming bullish momentum. RSI at 66 and a strong volume surge support upward bias. Further, the ADX above 20 indicates a developing trend. Together, these indicators favor LONG continuation toward resistance.",
+      "market_context": "BTC is in a modest bullish stance and 69% of the market is green, providing a broadly positive backdrop.",
+      "result": "PENDING"
     }
   ]
 }
