@@ -72529,6 +72529,23 @@
       "technical_analysis": "The MACD histogram is positive and the line sits above the signal, while the price trades above the EMA9, EMA21 and EMA200, confirming bullish momentum. RSI at 66 and a strong volume surge support upward bias. Further, the ADX above 20 indicates a developing trend. Together, these indicators favor LONG continuation toward resistance.",
       "market_context": "BTC is in a modest bullish stance and 69% of the market is green, providing a broadly positive backdrop.",
       "result": "PENDING"
+    },
+    {
+      "id": 4267,
+      "created_at": "2026-10-29T17:01:05.911878+00:00",
+      "symbol": "INJUSDT",
+      "direction": "LONG",
+      "title": "$INJ Reclaims Key Resistance Level: Flip to Support Complete",
+      "entry_low": 8.015,
+      "entry_high": 8.1,
+      "stop_loss": 7.73,
+      "take_profit": 8.7125,
+      "support": 8.015,
+      "resistance": 8.205,
+      "news_line": "",
+      "technical_analysis": "MACD histogram is positive and the MACD line sits above its signal, while EMA9, EMA21, EMA50 and EMA200 are all below the price, confirming bullish momentum. RSI at 63 shows strength without extreme overbought, and ADX around 22 indicates a developing trend. Order‑book bias leans toward bids, supporting a long bias.",
+      "market_context": "Bitcoin trades around $81,254 with mixed short‑term trends, up 0.9% in 24 h, and the broader crypto market shows 71% green assets",
+      "result": "PENDING"
     }
   ]
 }
