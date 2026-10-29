@@ -72580,6 +72580,23 @@
       "technical_analysis": "RSI at 25 signals oversold conditions, yet MACD sits below its signal with a negative histogram, confirming bearish momentum. Price sits under EMA9‑200, reinforcing a downtrend, while ADX above 50 shows a strong trend. Order‑book shows modest bid bias, but the 1H support at 215.77 and resistance at 225.55 frame a clear short bias.",
       "market_context": "BTC is in a slight bearish stance on the 4H and 1D charts, and the overall market breadth is broadly negative with",
       "result": "PENDING"
+    },
+    {
+      "id": 4270,
+      "created_at": "2026-10-29T19:31:01.833206+00:00",
+      "symbol": "CELOUSDT",
+      "direction": "SHORT",
+      "title": "$CELO Rejection at Key Supply Zone: Short Setup Activated",
+      "entry_low": 0.0783,
+      "entry_high": 0.0785,
+      "stop_loss": 0.0814,
+      "take_profit": 0.0724,
+      "support": 0.07676,
+      "resistance": 0.07978,
+      "news_line": "",
+      "technical_analysis": "CELO is trading beneath its EMA9, EMA21, EMA50 and EMA200, indicating a clear downtrend. The MACD histogram remains negative and the RSI sits at 39.5, both pointing bearish. Stochastic K is deep in oversold territory (12), while ADX at 19.7 shows a weak trend. Together these signals favor short pressure near the 0.0784‑0.0798 resistance zone.",
+      "market_context": "Bitcoin is in a mixed but overall bearish 4‑hour and daily picture, with price around $80,900 and broader market sentiment largely negative",
+      "result": "PENDING"
     }
   ]
 }
