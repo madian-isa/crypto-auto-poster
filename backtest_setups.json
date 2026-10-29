@@ -72546,6 +72546,23 @@
       "technical_analysis": "MACD histogram is positive and the MACD line sits above its signal, while EMA9, EMA21, EMA50 and EMA200 are all below the price, confirming bullish momentum. RSI at 63 shows strength without extreme overbought, and ADX around 22 indicates a developing trend. Order‑book bias leans toward bids, supporting a long bias.",
       "market_context": "Bitcoin trades around $81,254 with mixed short‑term trends, up 0.9% in 24 h, and the broader crypto market shows 71% green assets",
       "result": "PENDING"
+    },
+    {
+      "id": 4268,
+      "created_at": "2026-10-29T18:40:49.620590+00:00",
+      "symbol": "SNDKBUSDT",
+      "direction": "LONG",
+      "title": "$SNDKB Breaks Out of Falling Wedge Pattern: Targets Set Higher",
+      "entry_low": 1336.9,
+      "entry_high": 1338.0,
+      "stop_loss": 1290.01,
+      "take_profit": 1432.33,
+      "support": 1336.9,
+      "resistance": 1350.57,
+      "news_line": "",
+      "technical_analysis": "RSI sits near 41, ADX shows a modest trend, and the market sits above the EMA200. These signals favor a bullish move toward the nearby resistance. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure. The nearby support and resistance levels frame the current market structure.",
+      "market_context": "BTC is in a bearish 4‑hour trend and the broader market is broadly negative, with 76% of assets in red. This backdrop",
+      "result": "PENDING"
     }
   ]
 }
