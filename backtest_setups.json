@@ -72155,6 +72155,23 @@
       "technical_analysis": "The MACD histogram is negative and the MACD line sits below its signal, confirming bearish momentum. EMA9 and EMA21 sit above price while EMA50 is only marginally lower, and ADX above 30 signals a strong trend. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
       "market_context": "BTC is in a bearish 4‑hour trend and the broader market is broadly negative, with only 10.8% of assets showing green momentum.",
       "result": "PENDING"
+    },
+    {
+      "id": 4245,
+      "created_at": "2026-10-29T03:31:01.831442+00:00",
+      "symbol": "ZECUSDT",
+      "direction": "SHORT",
+      "title": "$ZEC Derivative Data Shows Heavy Long Liquidations Incoming",
+      "entry_low": 1242.5,
+      "entry_high": 1245.0,
+      "stop_loss": 1293.5,
+      "take_profit": 1144.25,
+      "support": 1212.49,
+      "resistance": 1242.59,
+      "news_line": "",
+      "technical_analysis": "MACD sits below its signal with a –5.27 histogram, indicating bearish momentum. Price trades beneath the 9‑, 21‑ and 50‑period EMAs, confirming a downtrend. Combined with a rising volume surge of nearly 100% it reinforces the short bias. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
+      "market_context": "BTC is in a bearish 4‑hour trend, down 1.57% over 24 h, and the broader market is broadly negative with 89.6% red",
+      "result": "PENDING"
     }
   ]
 }
