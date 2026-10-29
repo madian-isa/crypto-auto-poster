@@ -72478,6 +72478,23 @@
       "technical_analysis": "RSI at 84.8 and Stochastic in the 70s signal overbought conditions, yet MACD is positive (0.0037 above the 0.0016 signal) and the histogram remains bullish. EMA9, EMA21 and EMA50 sit below price, confirming upward bias. ADX above 30 shows a strong trend, and a 23.6% bid‑side order‑book imbalance adds buying pressure.",
       "market_context": "BTC is up 0.78% on the 4‑hour chart, keeping a mixed but slightly bullish tone, while overall market breadth shows 58% of",
       "result": "PENDING"
+    },
+    {
+      "id": 4264,
+      "created_at": "2026-10-29T15:40:45.976056+00:00",
+      "symbol": "UNIUSDT",
+      "direction": "LONG",
+      "title": "Bullish Momentum Is Building: Can $UNI Continue Its Breakout?",
+      "entry_low": 7.22,
+      "entry_high": 7.24,
+      "stop_loss": 6.9408,
+      "take_profit": 7.8084,
+      "support": 7.13,
+      "resistance": 7.416,
+      "news_line": "",
+      "technical_analysis": "MACD histogram is positive, MACD line sits above its signal and both EMAs, while RSI at 63 and Stochastic K at 86 signal bullish momentum. Price trades above the 9‑, 21‑ and 50‑EMA cluster and sits near the lower Bollinger band edge, respecting the 7.236 support and 7.303 resistance. Overall, the setup leans toward buying pressure.",
+      "market_context": "BTC is up 1.144% on the day, showing bullish bias, and the broader market is broadly positive with 68.4% green assets.",
+      "result": "PENDING"
     }
   ]
 }
