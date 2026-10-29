@@ -72121,6 +72121,23 @@
       "technical_analysis": "RSI at 24.8 and Stochastic K/D below 21 signal oversold conditions, yet MACD is negative and below its signal line, and ADX at 42 confirms a strong downtrend. Price sits under the EMA9‑200 stack, reinforcing bearish momentum. Immediate resistance sits near 296.5, with support around 287.9. Together, these indicators favor SHORT continuation toward support.",
       "market_context": "Bitcoin is in a bearish 4‑hour trend and the broader market is broadly negative, with 78% of assets red and only 22%",
       "result": "PENDING"
+    },
+    {
+      "id": 4243,
+      "created_at": "2026-10-29T02:20:55.108297+00:00",
+      "symbol": "SHELLUSDT",
+      "direction": "LONG",
+      "title": "Bullish Momentum Accelerates as $SHELL Liquidity Sweep Completes",
+      "entry_low": 0.02715,
+      "entry_high": 0.02725,
+      "stop_loss": 0.02621,
+      "take_profit": 0.02918,
+      "support": 0.02503,
+      "resistance": 0.0285,
+      "news_line": "",
+      "technical_analysis": "RSI at 69.3 shows strength but not extreme overbought. MACD line sits above its signal with a positive histogram, confirming upward momentum. Price is above the 9, 21, 50 and 200 EMA series, indicating a solid uptrend. ADX at 39 signals a strong trend, and a modest bid‑side order‑book imbalance adds bullish pressure.",
+      "market_context": "BTC is bearish on the 4‑hour chart and mixed on the daily, down 1.31% over 24 h, while the broader market is",
+      "result": "PENDING"
     }
   ]
 }
