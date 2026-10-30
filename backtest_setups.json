@@ -72767,6 +72767,23 @@
       "technical_analysis": "RSI at 25 and Stochastic K around 12 signal deep oversold conditions, while price sits just above the lower Bollinger band and the 3‑hour support at 3.909. ADX at 28 confirms a firm trend. These factors point to buying pressure and favor a long bias toward the 4.518 resistance area.",
       "market_context": "BTC is in a bearish 4‑hour trend, down 3.96% over 24 h, and the overall crypto market shows 92 % red assets",
       "result": "PENDING"
+    },
+    {
+      "id": 4281,
+      "created_at": "2026-10-30T03:10:57.764786+00:00",
+      "symbol": "GTCUSDT",
+      "direction": "LONG",
+      "title": "Major Breakout Signals Emerge on $GTC Higher Timeframes",
+      "entry_low": 0.1828,
+      "entry_high": 0.1888,
+      "stop_loss": 0.1765,
+      "take_profit": 0.2044,
+      "support": 0.17472,
+      "resistance": 0.24075,
+      "news_line": "",
+      "technical_analysis": "RSI at 25.31 and stochastic K/D around 25/14 signal deep oversold conditions, while price sits below the lower Bollinger Band, suggesting a potential bounce. A strong bid‑side order‑book imbalance (≈35%) adds buying pressure. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
+      "market_context": "Bitcoin is in a bearish 4‑hour trend and the broader market is broadly negative, with 90.9% of assets red. GTC’s oversold signals",
+      "result": "PENDING"
     }
   ]
 }
