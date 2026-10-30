@@ -72954,6 +72954,23 @@
       "technical_analysis": "RSI at 39.8 is near oversold. However, price sits below EMA9, EMA21, EMA50 and EMA200, confirming a prevailing downtrend. ADX at 26.7 signals a moderate trend. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
       "market_context": "BTC is in a bearish 4‑hour trend, trading below its EMA20 and EMA50, while the daily chart shows mixed signals. Overall crypto",
       "result": "PENDING"
+    },
+    {
+      "id": 4292,
+      "created_at": "2026-10-30T09:01:01.573533+00:00",
+      "symbol": "BTCUSDT",
+      "direction": "SHORT",
+      "title": "High Conviction Short Opportunity as $BTC Tests Supply Wall",
+      "entry_low": 78700.0,
+      "entry_high": 78800.0,
+      "stop_loss": 81560.0,
+      "take_profit": 73130.0,
+      "support": 76500.11,
+      "resistance": 78804.01,
+      "news_line": "",
+      "technical_analysis": "Multiple bearish signals line up: price sits below EMA9, EMA21, EMA50 and EMA200, MACD histogram is negative, RSI at 38.9 and Stochastic K/D under 40, while ADX around 29 confirms a firm trend. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
+      "market_context": "BTC is down 2.66% over 24 h, the broader market is broadly negative with 86% red assets, and the 4‑hour chart shows",
+      "result": "PENDING"
     }
   ]
 }
