@@ -73311,6 +73311,23 @@
       "technical_analysis": "RSI at 62.9 and MACD histogram positive indicate bullish momentum. Price sits above the 9‑, 21‑ and 50‑EMA, confirming an uptrend, while the 200‑EMA is only slightly higher, leaving room for upside. Order‑book shows 18.6 % bid imbalance and ADX 26 points a moderate trend. Support sits near 0.0788 and resistance around 0.0824.",
       "market_context": "BTC is in a bearish 4‑hour trend, down 2.6 % over 24 h, while overall market breadth remains mixed with 57.6 %",
       "result": "PENDING"
+    },
+    {
+      "id": 4313,
+      "created_at": "2026-10-30T23:40:57.251519+00:00",
+      "symbol": "ZROUSDT",
+      "direction": "LONG",
+      "title": "$ZRO Holds Moving Average Support: High Probability Long Setup",
+      "entry_low": 1.706,
+      "entry_high": 1.712,
+      "stop_loss": 1.648,
+      "take_profit": 1.831,
+      "support": 1.674,
+      "resistance": 1.74,
+      "news_line": "",
+      "technical_analysis": "Order‑book shows a 52.9% bid imbalance, supporting upward pressure. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure. The nearby support and resistance levels frame the current market structure.",
+      "market_context": "BTC is in a 1.6% bearish 24‑hour move, while the broader market shows a 63.7% green breadth, indicating overall positivity despite crypto‑wide",
+      "result": "PENDING"
     }
   ]
 }
