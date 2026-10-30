@@ -72733,6 +72733,23 @@
       "technical_analysis": "RSI at 10 and Stochastic K at 3 signal extreme oversold, but price sits well below all EMAs (9‑200) and under the lower Bollinger band, confirming a firm downtrend. MACD is negative and under its signal, while ADX at 33 shows a strong trend. Together, these indicators favor SHORT continuation toward support.",
       "market_context": "BTC is bearish on the 4h and 1d charts, and the overall market is broadly negative with 93% of assets red.",
       "result": "PENDING"
+    },
+    {
+      "id": 4279,
+      "created_at": "2026-10-30T01:41:01.556386+00:00",
+      "symbol": "HYPEUSDT",
+      "direction": "LONG",
+      "title": "$HYPE Volume Expansion Signals High Conviction Upward Move",
+      "entry_low": 91.32,
+      "entry_high": 91.89,
+      "stop_loss": 88.0,
+      "take_profit": 98.815,
+      "support": 89.96,
+      "resistance": 95.21,
+      "news_line": "",
+      "technical_analysis": "RSI at 61 signals bullish momentum while price sits above EMA9, EMA21, EMA50 and EMA200, confirming an uptrend. ADX above 40 shows a strong trend, and order‑book imbalance favors buyers (+17.5%). Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
+      "market_context": "BTC is in a bearish 4‑hour trend and down 4.3% over 24 h, with the broader market broadly negative (92.6% red).",
+      "result": "PENDING"
     }
   ]
 }
