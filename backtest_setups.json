@@ -72988,6 +72988,23 @@
       "technical_analysis": "RSI at 25.7 and Stochastic K/D around 7/15 signal deep oversold conditions, while MACD sits below its signal line with a negative histogram. ADX above 25 confirms a strong trend, and price sits under EMA9‑200, all pointing to bearish momentum. The next key barrier lies at the 1H/4H resistance of 9.13.",
       "market_context": "BTC is in a bearish 4‑hour trend and the broader market shows a 85.8% red breadth, reinforcing the downside bias for SNXXB.",
       "result": "PENDING"
+    },
+    {
+      "id": 4294,
+      "created_at": "2026-10-30T11:40:46.329308+00:00",
+      "symbol": "PEPEUSDT",
+      "direction": "LONG",
+      "title": "Key Support Holds Firm: $PEPE Bullish Continuation Setup Active",
+      "entry_low": 5.28e-06,
+      "entry_high": 5.33e-06,
+      "stop_loss": 5.09e-06,
+      "take_profit": 5.73e-06,
+      "support": 5.28e-06,
+      "resistance": 5.35e-06,
+      "news_line": "",
+      "technical_analysis": "RSI at 63 and Stochastic K near 98 show strong upward momentum. MACD histogram is positive while the MACD line sits above its signal, confirming bullish bias. Price sits above the 9‑, 21‑, 50‑ and 200‑EMA cluster, and the order book shows a modest bid‑side imbalance. Together these factors favor a long stance toward the nearby resistance around 5.35 USDT.",
+      "market_context": "BTC is down 3.2% on the 4‑hour chart, indicating a bearish trend, while the overall market breadth is broadly negative with 86.5%",
+      "result": "PENDING"
     }
   ]
 }
