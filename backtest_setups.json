@@ -72886,6 +72886,23 @@
       "technical_analysis": "ADX above 30 confirms a strong trend, suggesting short pressure near the top of the range. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
       "market_context": "BTC is in a bearish 4‑hour trend and down 1.8% on the day, contributing to broadly negative market breadth.",
       "result": "PENDING"
+    },
+    {
+      "id": 4288,
+      "created_at": "2026-10-30T07:01:10.407754+00:00",
+      "symbol": "BNBUSDT",
+      "direction": "LONG",
+      "title": "$BNB Volume Expansion Signals High Conviction Upward Move",
+      "entry_low": 714.65,
+      "entry_high": 716.08,
+      "stop_loss": 689.63,
+      "take_profit": 766.835,
+      "support": 714.65,
+      "resistance": 716.08,
+      "news_line": "",
+      "technical_analysis": "ADX at 34 confirms a strong trend, and order‑book imbalance (+8.44%) favors buyers. RSI at 41.9 and Stochastic near 50 indicate room to rise toward the nearby resistance zone. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure. The nearby support and resistance levels frame the current market structure.",
+      "market_context": "Bitcoin remains in a bearish 4‑hour trend and the overall market is broadly negative, yet BNB shows bullish micro‑signals, making it a",
+      "result": "PENDING"
     }
   ]
 }
