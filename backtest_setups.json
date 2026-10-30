@@ -72784,6 +72784,23 @@
       "technical_analysis": "RSI at 25.31 and stochastic K/D around 25/14 signal deep oversold conditions, while price sits below the lower Bollinger Band, suggesting a potential bounce. A strong bid‑side order‑book imbalance (≈35%) adds buying pressure. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
       "market_context": "Bitcoin is in a bearish 4‑hour trend and the broader market is broadly negative, with 90.9% of assets red. GTC’s oversold signals",
       "result": "PENDING"
+    },
+    {
+      "id": 4282,
+      "created_at": "2026-10-30T03:31:02.170766+00:00",
+      "symbol": "SOXLBUSDT",
+      "direction": "SHORT",
+      "title": "High Conviction Short Opportunity as $SOXLB Tests Supply Wall",
+      "entry_low": 85.8,
+      "entry_high": 85.96,
+      "stop_loss": 88.89,
+      "take_profit": 79.86,
+      "support": 83.54,
+      "resistance": 101.57,
+      "news_line": "",
+      "technical_analysis": "The EMA stack sits well above price (EMA9 89.68, EMA21 94.36, EMA50 97.02, EMA200 95.46), confirming a downtrend. MACD is negative with a –4.06 line beneath the –2.41 signal. RSI at 29 and Stochastic K at 8.5 signal oversold conditions, but momentum remains bearish. Together, these indicators favor SHORT continuation toward support.",
+      "market_context": "BTC shows a bearish 4‑hour trend and the overall market is broadly negative, with about 90% of assets red.",
+      "result": "PENDING"
     }
   ]
 }
