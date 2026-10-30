@@ -73107,6 +73107,23 @@
       "technical_analysis": "Price sits below EMA9, EMA21, EMA50 and EMA200, confirming bearish bias. RSI at 37 and Stochastic K under its D line signal weakening momentum. ADX above 30 shows a strong trend. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
       "market_context": "BTC is in a bearish 4‑hour trend and the broader crypto market is broadly negative, reinforcing the downside outlook for TAO.",
       "result": "PENDING"
+    },
+    {
+      "id": 4301,
+      "created_at": "2026-10-30T15:40:56.731556+00:00",
+      "symbol": "INITUSDT",
+      "direction": "SHORT",
+      "title": "Bearish Continuation Pattern Confirmed on $INIT Chart Structure",
+      "entry_low": 0.2095,
+      "entry_high": 0.2189,
+      "stop_loss": 0.224,
+      "take_profit": 0.1946,
+      "support": 0.17257,
+      "resistance": 0.21886,
+      "news_line": "",
+      "technical_analysis": "MACD is negative with a bearish histogram, and price sits below EMA9, EMA21 and EMA50, confirming down‑trend pressure. RSI at 33.8 and Stochastic K under 5 signal oversold conditions, while the price is under the lower Bollinger Band, suggesting a short bias near the 0.209‑0.219 resistance zone. Together, these indicators favor SHORT continuation toward support.",
+      "market_context": "Bitcoin is in a bearish 4‑hour trend, down about 5% and the overall market breadth is broadly negative, reinforcing the short outlook",
+      "result": "PENDING"
     }
   ]
 }
