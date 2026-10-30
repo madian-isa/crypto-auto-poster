@@ -73005,6 +73005,23 @@
       "technical_analysis": "RSI at 63 and Stochastic K near 98 show strong upward momentum. MACD histogram is positive while the MACD line sits above its signal, confirming bullish bias. Price sits above the 9‑, 21‑, 50‑ and 200‑EMA cluster, and the order book shows a modest bid‑side imbalance. Together these factors favor a long stance toward the nearby resistance around 5.35 USDT.",
       "market_context": "BTC is down 3.2% on the 4‑hour chart, indicating a bearish trend, while the overall market breadth is broadly negative with 86.5%",
       "result": "PENDING"
+    },
+    {
+      "id": 4295,
+      "created_at": "2026-10-30T11:50:55.411838+00:00",
+      "symbol": "ENAUSDT",
+      "direction": "LONG",
+      "title": "$ENA Breakout Confirmation: Bulls Target Next Supply Zone",
+      "entry_low": 0.1905,
+      "entry_high": 0.191,
+      "stop_loss": 0.184,
+      "take_profit": 0.20425,
+      "support": 0.1882,
+      "resistance": 0.1912,
+      "news_line": "",
+      "technical_analysis": "MACD histogram is positive while the line sits just above the signal, indicating bullish momentum. The 9‑EMA sits below price and the order book shows an 18% bid imbalance, supporting upside. Stochastic is overbought at 92, and RSI sits near 48, suggesting room for a modest rally toward the 0.1912 resistance.",
+      "market_context": "BTC is bearish on the 4‑hour chart, down 3.5% today, and the broader market is broadly negative with 87% of assets red.",
+      "result": "PENDING"
     }
   ]
 }
