@@ -73243,6 +73243,23 @@
       "technical_analysis": "Stochastic shows K (59) below D (67), a bearish signal, while RSI is neutral at 49. With 1H/4H resistance at 11.185, short pressure currently is favored. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
       "market_context": "",
       "result": "PENDING"
+    },
+    {
+      "id": 4309,
+      "created_at": "2026-10-30T21:11:01.659383+00:00",
+      "symbol": "XPLUSDT",
+      "direction": "LONG",
+      "title": "Bullish Momentum Is Building: Can $XPL Continue Its Breakout?",
+      "entry_low": 0.0788,
+      "entry_high": 0.0795,
+      "stop_loss": 0.07615,
+      "take_profit": 0.08515,
+      "support": 0.07615,
+      "resistance": 0.0817,
+      "news_line": "",
+      "technical_analysis": "Indicators are bullish. Price trades above EMA9, EMA21, EMA50 and EMA200, MACD line exceeds its signal with a positive histogram, RSI sits at 62.9 and Stochastic K is near 80, showing upward momentum. Order‑book shows ~19% bid imbalance. Resistance lies around 0.0817, support near 0.0762, favoring a long bias overall.",
+      "market_context": "BTC is in a bearish 4‑hour trend while the daily picture is mixed; overall crypto market breadth is broadly negative.",
+      "result": "PENDING"
     }
   ]
 }
