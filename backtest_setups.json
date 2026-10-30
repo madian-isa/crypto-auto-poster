@@ -72903,6 +72903,23 @@
       "technical_analysis": "ADX at 34 confirms a strong trend, and order‑book imbalance (+8.44%) favors buyers. RSI at 41.9 and Stochastic near 50 indicate room to rise toward the nearby resistance zone. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure. The nearby support and resistance levels frame the current market structure.",
       "market_context": "Bitcoin remains in a bearish 4‑hour trend and the overall market is broadly negative, yet BNB shows bullish micro‑signals, making it a",
       "result": "PENDING"
+    },
+    {
+      "id": 4289,
+      "created_at": "2026-10-30T07:50:54.224091+00:00",
+      "symbol": "ETHUSDT",
+      "direction": "SHORT",
+      "title": "Bearish Divergence Spotted on $ETH: Downside Targets Ahead",
+      "entry_low": 2255.0,
+      "entry_high": 2257.8,
+      "stop_loss": 2346.656,
+      "take_profit": 2075.888,
+      "support": 2233.0,
+      "resistance": 2330.93,
+      "news_line": "",
+      "technical_analysis": "Short bias dominates ETHUSDT. MACD sits deep in negative territory with a bearish histogram, while ADX above 30 confirms a strong trend. Price remains under EMA21/50/200, and the RSI at 42 indicates room below 50. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
+      "market_context": "BTC is down 2% on the 4‑hour chart, reinforcing the overall bearish bias as the broader market shows 86% red assets and",
+      "result": "PENDING"
     }
   ]
 }
