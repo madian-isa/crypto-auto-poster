@@ -1,6 +1,6 @@
 {
   "date": "2026-10-30",
-  "count": 16,
+  "count": 17,
   "posted_symbols_today": [
     "PARTIUSDT",
     "INTCBUSDT",
@@ -17,6 +17,7 @@
     "ETHUSDT",
     "LSKUSDT",
     "SNDKBUSDT",
-    "BTCUSDT"
+    "BTCUSDT",
+    "SNXXBUSDT"
   ]
 }
