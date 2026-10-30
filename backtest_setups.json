@@ -73090,6 +73090,23 @@
       "technical_analysis": "SOL sits below its 9, 21, 50 and 200‑EMA, confirming a downtrend. RSI at 37 and Stochastic K under D signal bearish momentum, while ADX 31 shows the trend is strong. overall outlook remains short. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
       "market_context": "BTC is in a bearish 4‑hour trend and down 5 % on the day, while the broader market shows 90 % red",
       "result": "PENDING"
+    },
+    {
+      "id": 4300,
+      "created_at": "2026-10-30T15:10:57.994710+00:00",
+      "symbol": "TAOUSDT",
+      "direction": "SHORT",
+      "title": "$TAO Fakeout Confirmed: Bulls Trapped at Local Highs",
+      "entry_low": 235.2,
+      "entry_high": 235.4,
+      "stop_loss": 244.712,
+      "take_profit": 216.476,
+      "support": 233.6,
+      "resistance": 235.4,
+      "news_line": "",
+      "technical_analysis": "Price sits below EMA9, EMA21, EMA50 and EMA200, confirming bearish bias. RSI at 37 and Stochastic K under its D line signal weakening momentum. ADX above 30 shows a strong trend. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
+      "market_context": "BTC is in a bearish 4‑hour trend and the broader crypto market is broadly negative, reinforcing the downside outlook for TAO.",
+      "result": "PENDING"
     }
   ]
 }
