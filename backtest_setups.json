@@ -73158,6 +73158,23 @@
       "technical_analysis": "Price sits below EMA9, EMA21, EMA50 and EMA200, confirming a downtrend. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
       "market_context": "BTC is in a bearish 4‑hour trend, down 4.7% in 24 h, and the broader market is 92% red, indicating overall negative",
       "result": "PENDING"
+    },
+    {
+      "id": 4304,
+      "created_at": "2026-10-30T17:10:57.100486+00:00",
+      "symbol": "CRCLBUSDT",
+      "direction": "SHORT",
+      "title": "Bearish Continuation Pattern Confirmed on $CRCLB Chart Structure",
+      "entry_low": 73.0,
+      "entry_high": 73.4,
+      "stop_loss": 75.8,
+      "take_profit": 68.0,
+      "support": 72.01,
+      "resistance": 77.25,
+      "news_line": "",
+      "technical_analysis": "RSI at 25.7 and Stochastic K under 7 signal deep oversold conditions, while MACD remains negative with a widening histogram. ADX above 40 confirms a strong downtrend. Price sits below EMA9‑200 and near the lower Bollinger band, reinforcing bearish momentum toward the 72.01 support level and may test further downside if sellers stay aggressive.",
+      "market_context": "BTC is in a bearish 4‑hour trend and down 4.7% over 24 h, while the broader market shows 92% red assets and",
+      "result": "PENDING"
     }
   ]
 }
