@@ -73124,6 +73124,23 @@
       "technical_analysis": "MACD is negative with a bearish histogram, and price sits below EMA9, EMA21 and EMA50, confirming down‑trend pressure. RSI at 33.8 and Stochastic K under 5 signal oversold conditions, while the price is under the lower Bollinger Band, suggesting a short bias near the 0.209‑0.219 resistance zone. Together, these indicators favor SHORT continuation toward support.",
       "market_context": "Bitcoin is in a bearish 4‑hour trend, down about 5% and the overall market breadth is broadly negative, reinforcing the short outlook",
       "result": "PENDING"
+    },
+    {
+      "id": 4302,
+      "created_at": "2026-10-30T16:10:49.673831+00:00",
+      "symbol": "ZECUSDT",
+      "direction": "SHORT",
+      "title": "$ZEC Breaks Below Critical Support: Further Drop Expected",
+      "entry_low": 1230.0,
+      "entry_high": 1235.0,
+      "stop_loss": 1280.0,
+      "take_profit": 1137.5,
+      "support": 1215.73,
+      "resistance": 1256.72,
+      "news_line": "",
+      "technical_analysis": "EMAs (9‑21‑50‑200) sit well above price, MACD histogram is negative and RSI sits at 41, indicating bearish momentum. Price is near the lower Bollinger band and below the 1‑hour resistance at 1256.7. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
+      "market_context": "BTC is in a bearish 4‑hour trend and down 5.3% on the day, while the broader market is 92.6% red, reinforcing downside",
+      "result": "PENDING"
     }
   ]
 }
