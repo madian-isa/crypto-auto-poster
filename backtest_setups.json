@@ -73923,6 +73923,23 @@
       "technical_analysis": "MACD sits below its signal with a negative histogram, and price is under the 9‑, 21‑ and 50‑EMA, confirming bearish momentum. ADX above 40 shows a strong trend. Stochastic at 25 hints at slight oversold conditions, but the order‑book imbalance and price trading near the 0.0341 resistance support a short bias.",
       "market_context": "BTC up 1% on 24h, though 4h trend is bearish; overall market breadth is mixed.",
       "result": "PENDING"
+    },
+    {
+      "id": 4349,
+      "created_at": "2026-10-31T23:00:59.581532+00:00",
+      "symbol": "BTCUSDT",
+      "direction": "SHORT",
+      "title": "$BTC Fails Resistance Retest: Bearish Extension Imminent",
+      "entry_low": 77540.0,
+      "entry_high": 77555.0,
+      "stop_loss": 80649.4,
+      "take_profit": 71343.7,
+      "support": 77450.0,
+      "resistance": 77654.44,
+      "news_line": "",
+      "technical_analysis": "Stochastic K (43) under D (60) and a weak ADX (~10) show fading momentum. Resistance clusters near 77,650, support Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
+      "market_context": "BTC up 0.8% in 24 h, overall market mixed with 47 % green versus 53 % red.",
+      "result": "PENDING"
     }
   ]
 }
