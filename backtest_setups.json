@@ -73634,6 +73634,23 @@
       "technical_analysis": "MACD histogram is positive, and the MACD line sits above its signal, indicating bullish momentum. RSI at 55.6 supports a mild upside bias. Stochastic K/D are in the low‑20s, hinting at room for a rebound. Price rests just above the 9‑EMA and holds near the 1‑hour support at 0.001468, suggesting a potential upward move.",
       "market_context": "BTC is up 6.7% in 24 h, keeping the broader market slightly bullish, while overall green tickers lead at 55.8%.",
       "result": "PENDING"
+    },
+    {
+      "id": 4332,
+      "created_at": "2026-10-31T11:10:46.419023+00:00",
+      "symbol": "HYPEUSDT",
+      "direction": "SHORT",
+      "title": "$HYPE Volume Decreases on Rally: Weak Buyers Exposed",
+      "entry_low": 87.9,
+      "entry_high": 87.9,
+      "stop_loss": 91.5,
+      "take_profit": 80.7,
+      "support": 86.36,
+      "resistance": 93.57,
+      "news_line": "",
+      "technical_analysis": "Indicators show a bearish bias: price sits below EMA9, EMA21, EMA50, and EMA200; MACD and RSI are below zero and 50, respectively; Bollinger bands are contracted and the price is near the lower band. These signals suggest a short move toward the 86.36 support level. Together, these indicators favor SHORT continuation toward support.",
+      "market_context": "",
+      "result": "PENDING"
     }
   ]
 }
