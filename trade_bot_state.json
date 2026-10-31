@@ -1,12 +1,13 @@
 {
   "date": "2026-10-31",
-  "count": 6,
+  "count": 7,
   "posted_symbols_today": [
     "BEAMXUSDT",
     "INTWBUSDT",
     "LSKUSDT",
     "NILUSDT",
     "SOPHUSDT",
-    "OPUSDT"
+    "OPUSDT",
+    "PARTIUSDT"
   ]
 }
