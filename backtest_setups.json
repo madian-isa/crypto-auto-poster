@@ -73736,6 +73736,23 @@
       "technical_analysis": "Price sits above the Bollinger upper band and well above all EMAs, indicating recent strength that may be exhausted. A negative order‑book imbalance and strong ADX (30) confirm weakening momentum, favoring a short move toward the 0.1227 support. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
       "market_context": "BTC up 0.77% in 24h, market breadth broadly positive with 71% green.",
       "result": "PENDING"
+    },
+    {
+      "id": 4338,
+      "created_at": "2026-10-31T15:30:55.854427+00:00",
+      "symbol": "REDUSDT",
+      "direction": "LONG",
+      "title": "$RED Buying Pressure Rises as Bulls Test Key Resistance",
+      "entry_low": 0.145,
+      "entry_high": 0.1457,
+      "stop_loss": 0.14,
+      "take_profit": 0.15605,
+      "support": 0.1457,
+      "resistance": 0.1528,
+      "news_line": "",
+      "technical_analysis": "MACD shows a positive histogram, confirming bullish momentum. All EMAs (9, 21, 50, 200) sit below the price, indicating an uptrend. The order book is bid‑heavy with a 30% imbalance, adding buying pressure. RSI is overbought at 76, but momentum remains strong, supporting a long bias. Together, these indicators favor LONG continuation toward resistance.",
+      "market_context": "BTC is slightly bearish (-0.2%) while the broader market is broadly positive, with 63.9% of assets green.",
+      "result": "PENDING"
     }
   ]
 }
