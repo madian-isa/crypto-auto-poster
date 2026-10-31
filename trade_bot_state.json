@@ -1,6 +1,6 @@
 {
   "date": "2026-10-31",
-  "count": 36,
+  "count": 37,
   "posted_symbols_today": [
     "BEAMXUSDT",
     "INTWBUSDT",
@@ -37,6 +37,7 @@
     "AMPUSDT",
     "\u725b\u6765USDT",
     "TURTLEUSDT",
-    "BTCUSDT"
+    "BTCUSDT",
+    "ETHUSDT"
   ]
 }
