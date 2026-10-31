@@ -73668,6 +73668,23 @@
       "technical_analysis": "LINK is holding just above the 11.553 support and near the 11.564 ceiling. EMA9 sits above EMA21 and EMA50, while price stays above EMA200, confirming bullish alignment. RSI at 60 and MACD histogram positive reinforce upward momentum, and Stochastic at 66 shows strength. Order‑book imbalance favors bids, supporting a long bias.",
       "market_context": "Bitcoin is in a bearish 4‑hour trend and shows a mixed daily picture, while overall market breadth is slightly green (54.8% up).",
       "result": "PENDING"
+    },
+    {
+      "id": 4334,
+      "created_at": "2026-10-31T12:01:04.925562+00:00",
+      "symbol": "XPLUSDT",
+      "direction": "LONG",
+      "title": "$XPL Buying Pressure Rises as Bulls Test Key Resistance",
+      "entry_low": 0.0805,
+      "entry_high": 0.08063,
+      "stop_loss": 0.0766,
+      "take_profit": 0.088495,
+      "support": 0.07947,
+      "resistance": 0.08079,
+      "news_line": "",
+      "technical_analysis": "Price sits just above the 9‑EMA and holds within the 1‑hour range of 0.07947–0.08079. Overall market the EMA stack, RSI and order flow favor a modest long bias near the current support. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
+      "market_context": "BTC up 0.37% in 24 h, market breadth broadly positive with 60.8% green assets.",
+      "result": "PENDING"
     }
   ]
 }
