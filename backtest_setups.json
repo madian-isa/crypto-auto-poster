@@ -73753,6 +73753,23 @@
       "technical_analysis": "MACD shows a positive histogram, confirming bullish momentum. All EMAs (9, 21, 50, 200) sit below the price, indicating an uptrend. The order book is bid‑heavy with a 30% imbalance, adding buying pressure. RSI is overbought at 76, but momentum remains strong, supporting a long bias. Together, these indicators favor LONG continuation toward resistance.",
       "market_context": "BTC is slightly bearish (-0.2%) while the broader market is broadly positive, with 63.9% of assets green.",
       "result": "PENDING"
+    },
+    {
+      "id": 4339,
+      "created_at": "2026-10-31T15:50:55.735516+00:00",
+      "symbol": "STXUSDT",
+      "direction": "LONG",
+      "title": "$STX Higher Low Structure Confirmed: Long Entry Level Reached",
+      "entry_low": 0.3135,
+      "entry_high": 0.3155,
+      "stop_loss": 0.302,
+      "take_profit": 0.3395,
+      "support": 0.2781,
+      "resistance": 0.399,
+      "news_line": "",
+      "technical_analysis": "MACD histogram is positive and the line sits above its signal, indicating bullish momentum. ADX at 49.6 shows a strong trend. Stochastic K is low at 23, suggesting upside potential, while RSI sits near 55, avoiding overbought conditions. Price holds above EMA21/50/200 and sits near the 0.3198 resistance, favoring a long bias.",
+      "market_context": "BTC shows a bearish 4‑hour trend while daily signals are mixed, yet the overall market breadth is broadly positive with 72.5% green",
+      "result": "PENDING"
     }
   ]
 }
