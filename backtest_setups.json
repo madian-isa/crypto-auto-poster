@@ -73583,6 +73583,23 @@
       "technical_analysis": "The EMA series (9,21,50,200) are all below price, showing bullish alignment. RSI at 54 indicates slight upside, while Stochastic %K at 85 signals strong momentum. MACD is flat near zero, and ADX 11 suggests a weak trend, but price sits above key support 4.96 µ and below resistance 5.15 µ. Indicators collectively favor a long bias.",
       "market_context": "BTC is in a bearish 4‑hour trend, down 0.47 % on the day, while the overall market is mixed with a slight",
       "result": "PENDING"
+    },
+    {
+      "id": 4329,
+      "created_at": "2026-10-31T09:50:44.399757+00:00",
+      "symbol": "TRXUSDT",
+      "direction": "SHORT",
+      "title": "$TRX Lower High Pattern Confirmed: Short Target in View",
+      "entry_low": 0.316,
+      "entry_high": 0.317,
+      "stop_loss": 0.328,
+      "take_profit": 0.2935,
+      "support": 0.316,
+      "resistance": 0.3269,
+      "news_line": "",
+      "technical_analysis": "TRX is trading below the 9, 21, 50 and 200 EMA, confirming a downtrend. MACD sits under its signal with a negative histogram, and the order‑book shows a 13% ask‑side imbalance. Although RSI and Stochastic are in oversold territory, the dominant signals point to further downside toward the 0.316 support.",
+      "market_context": "BTC is in a bearish 4‑hour trend, down 0.34% on the day, while the broader market shows a mixed breadth with 57.9%",
+      "result": "PENDING"
     }
   ]
 }
