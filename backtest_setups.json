@@ -73855,6 +73855,23 @@
       "technical_analysis": "MACD is negative and below its signal, the price sits under EMA21, EMA50 and EMA200, and the order book shows a 31% ask‑side imbalance. Stochastic K is deep in oversold territory and ADX is weak, all pointing to short‑term downside pressure. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish",
       "market_context": "BTC is up 1.2% on the day, yet the 4‑hour chart shows a bearish trend while the daily picture is mixed; overall",
       "result": "PENDING"
+    },
+    {
+      "id": 4345,
+      "created_at": "2026-10-31T19:50:49.551748+00:00",
+      "symbol": "ZROUSDT",
+      "direction": "LONG",
+      "title": "Bullish Divergence Flashed on $ZRO Daily Chart Structure",
+      "entry_low": 1.772,
+      "entry_high": 1.775,
+      "stop_loss": 1.71,
+      "take_profit": 1.9005,
+      "support": 1.716,
+      "resistance": 1.819,
+      "news_line": "",
+      "technical_analysis": "ZRO is holding above all key EMAs, with a bullish MACD histogram (+0.0044) and RSI at 60.8. Stochastic sits near 71, confirming upward momentum. The declining volume suggests caution, but the overall setup remains favorable. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
+      "market_context": "BTC is slightly bullish (+0.79% 24h) while the broader market is broadly positive (70.7% green).",
+      "result": "PENDING"
     }
   ]
 }

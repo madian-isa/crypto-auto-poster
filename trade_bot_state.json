@@ -1,6 +1,6 @@
 {
   "date": "2026-10-31",
-  "count": 31,
+  "count": 32,
   "posted_symbols_today": [
     "BEAMXUSDT",
     "INTWBUSDT",
@@ -32,6 +32,7 @@
     "MORPHOUSDT",
     "NEARUSDT",
     "ZECUSDT",
-    "BLURUSDT"
+    "BLURUSDT",
+    "ZROUSDT"
   ]
 }
