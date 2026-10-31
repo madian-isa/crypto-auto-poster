@@ -73600,6 +73600,23 @@
       "technical_analysis": "TRX is trading below the 9, 21, 50 and 200 EMA, confirming a downtrend. MACD sits under its signal with a negative histogram, and the order‑book shows a 13% ask‑side imbalance. Although RSI and Stochastic are in oversold territory, the dominant signals point to further downside toward the 0.316 support.",
       "market_context": "BTC is in a bearish 4‑hour trend, down 0.34% on the day, while the broader market shows a mixed breadth with 57.9%",
       "result": "PENDING"
+    },
+    {
+      "id": 4330,
+      "created_at": "2026-10-31T10:00:56.255786+00:00",
+      "symbol": "RADUSDT",
+      "direction": "SHORT",
+      "title": "$RAD Distribution Phase Ends: Downside Target Zone Set",
+      "entry_low": 0.278,
+      "entry_high": 0.282,
+      "stop_loss": 0.292,
+      "take_profit": 0.256,
+      "support": 0.262,
+      "resistance": 0.288,
+      "news_line": "",
+      "technical_analysis": "RSI at 78.8 and Stochastic K at 84.8 signal strong overbought conditions, while the price sits above the Bollinger upper band. Combined with a bearish order‑book imbalance, the indicators favor a short bias near the 0.288 resistance. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
+      "market_context": "BTC is in a bearish 4‑hour trend and down 0.25% over 24 h, while the broader market shows a slight green bias",
+      "result": "PENDING"
     }
   ]
 }
