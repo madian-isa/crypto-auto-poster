@@ -1,6 +1,6 @@
 {
   "date": "2026-10-31",
-  "count": 19,
+  "count": 20,
   "posted_symbols_today": [
     "BEAMXUSDT",
     "INTWBUSDT",
@@ -20,6 +20,7 @@
     "TRXUSDT",
     "RADUSDT",
     "RSRUSDT",
-    "HYPEUSDT"
+    "HYPEUSDT",
+    "LINKUSDT"
   ]
 }
