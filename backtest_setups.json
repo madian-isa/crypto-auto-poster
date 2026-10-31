@@ -73702,6 +73702,23 @@
       "technical_analysis": "RSI at 69 and Stochastic K ≈ 88 signal overbought conditions. Momentum points toward a short swing. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
       "market_context": "BTC displays a bearish 4‑hour trend while the overall market is 59.6% green, providing a mixed backdrop for AAVEUSDT.",
       "result": "PENDING"
+    },
+    {
+      "id": 4336,
+      "created_at": "2026-10-31T13:50:54.773414+00:00",
+      "symbol": "EDENUSDT",
+      "direction": "LONG",
+      "title": "$EDEN Volume Expansion Signals High Conviction Upward Move",
+      "entry_low": 0.0568,
+      "entry_high": 0.0575,
+      "stop_loss": 0.0548,
+      "take_profit": 0.06185,
+      "support": 0.0561,
+      "resistance": 0.0612,
+      "news_line": "",
+      "technical_analysis": "MACD shows a positive histogram (+0.00010) and the line sits above its signal, indicating bullish momentum. Price trades above the 9‑, 21‑, 50‑ and 200‑EMA, confirming an uptrend. ADX at 38.8 signals a strong trend, while RSI at 66 points to continued buying pressure. Bollinger bands place price near the upper edge, supporting a near‑term upside bias.",
+      "market_context": "BTC is bearish on the 4‑hour chart but mixed on daily, while the broader market shows 70 % green assets, indicating overall",
+      "result": "PENDING"
     }
   ]
 }
