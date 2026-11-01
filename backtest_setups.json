@@ -74331,6 +74331,23 @@
       "technical_analysis": "Short bias dominates: RSI at 22.7 and Stochastic K below 3 signal deep oversold conditions, yet price sits beneath EMA9, EMA21, EMA50 and EMA200, confirming a downtrend. MACD histogram remains negative and ADX at 36.6 shows strong momentum. Order‑book shows a 12% bid‑side imbalance, reinforcing downside pressure at current levels in the near term.",
       "market_context": "BTC trades lower on the 4‑hour chart, with price under both EMA20 and EMA50, while the daily picture is mixed. Overall crypto",
       "result": "PENDING"
+    },
+    {
+      "id": 4373,
+      "created_at": "2026-11-01T20:50:59.543667+00:00",
+      "symbol": "PEPEUSDT",
+      "direction": "SHORT",
+      "title": "$PEPE Resistance Test Fails: Bearish Momentum Building Fast",
+      "entry_low": 4.94e-06,
+      "entry_high": 4.95e-06,
+      "stop_loss": 5.12e-06,
+      "take_profit": 4.6e-06,
+      "support": 4.91e-06,
+      "resistance": 4.95e-06,
+      "news_line": "",
+      "technical_analysis": "MACD sits below zero with a negative histogram, and price is under the EMA21 and EMA50, indicating bearish momentum. RSI at 44 and Stochastic at 40 reinforce the down‑side bias. ADX shows a weak trend, while the order book shows slight ask pressure. The pair respects the 4.91‑4.95 USDT range, favoring a short setup.",
+      "market_context": "BTC shows a bearish 4‑hour trend but a mixed daily picture, while overall market breadth is broadly negative with 68.8% red assets.",
+      "result": "PENDING"
     }
   ]
 }
