@@ -73974,6 +73974,23 @@
       "technical_analysis": "Short bias dominates SOPH. Price sits under EMA9, EMA21, EMA50 and EMA200, confirming a downtrend. MACD remains negative with a shrinking histogram, while RSI at 34 and Stochastic K below 5 signal oversold momentum fading. ADX below 25 shows weak trend, and the order‑book shows a modest ask‑side imbalance. Resistance sits near 0.0015.",
       "market_context": "BTC is up 0.3% on the day, yet overall market breadth remains broadly negative.",
       "result": "PENDING"
+    },
+    {
+      "id": 4352,
+      "created_at": "2026-11-01T00:50:50.516667+00:00",
+      "symbol": "STXUSDT",
+      "direction": "LONG",
+      "title": "Buyers Defend Key Demand Zone: $STX Ready for Extension",
+      "entry_low": 0.3225,
+      "entry_high": 0.326,
+      "stop_loss": 0.3125,
+      "take_profit": 0.34775,
+      "support": 0.3229,
+      "resistance": 0.3264,
+      "news_line": "",
+      "technical_analysis": "EMA9 sits just above EMA21, both above EMA50 and EMA200, showing an uptrend. RSI at 55 and Stochastic K around 18 suggest room for upside from oversold conditions. ADX above 60 confirms a strong trend, while a 53% order‑book bid imbalance adds buying pressure. Momentum points toward a bullish bias near the 0.3229‑0.3264 range.",
+      "market_context": "BTC is up 0.14% on the day, but the broader crypto market is broadly negative with 70.8% red assets. Only 29.2% of",
+      "result": "PENDING"
     }
   ]
 }
