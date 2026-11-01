@@ -74161,6 +74161,23 @@
       "technical_analysis": "The MACD histogram is negative and the price sits beneath the EMA9, EMA21 and EMA50, confirming bearish momentum. ADX at 35 shows a strong trend. Although RSI and Stochastic are oversold, the dominant signals point to downside pressure toward the 0.06903 support. Together, these indicators favor SHORT continuation toward support.",
       "market_context": "BTC shows a bearish 4‑hour trend while the broader market is slightly bullish, with 51.9% of assets green. This mixed backdrop adds",
       "result": "PENDING"
+    },
+    {
+      "id": 4363,
+      "created_at": "2026-11-01T13:40:55.605146+00:00",
+      "symbol": "INITUSDT",
+      "direction": "LONG",
+      "title": "Smart Money Flow Increases into $INIT Ahead of Catalysts",
+      "entry_low": 0.195,
+      "entry_high": 0.202,
+      "stop_loss": 0.188,
+      "take_profit": 0.2195,
+      "support": 0.18283,
+      "resistance": 0.22363,
+      "news_line": "",
+      "technical_analysis": "INIT is trading at 0.2014, above its 9‑, 21‑ and 200‑EMA, confirming bullish trend. MACD histogram is positive and the line sits above the signal, adding momentum. RSI at 67 and Stochastic K above 90 show strong buying pressure, while the order‑book shows a 46 % bid imbalance. The price respects the 0.1828 support and aims toward the 0.2236 resistance.",
+      "market_context": "BTC is slightly bullish on the day (+0.55 %) while the 4‑hour trend stays bearish, reflecting mixed broader market sentiment.",
+      "result": "PENDING"
     }
   ]
 }

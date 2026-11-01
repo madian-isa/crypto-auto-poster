@@ -1,6 +1,6 @@
 {
   "date": "2026-11-01",
-  "count": 12,
+  "count": 13,
   "posted_symbols_today": [
     "SOPHUSDT",
     "STXUSDT",
@@ -13,6 +13,7 @@
     "LSKUSDT",
     "ZAMAUSDT",
     "BEAMXUSDT",
-    "XPLUSDT"
+    "XPLUSDT",
+    "INITUSDT"
   ]
 }
