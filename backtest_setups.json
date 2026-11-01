@@ -74263,6 +74263,23 @@
       "technical_analysis": "The BIOUSDT price sits at $0.02353, above the EMA9, EMA21, EMA50 and EMA200, confirming an uptrend. RSI at 68.8 and Stochastic K/D above 70 show strong momentum, while MACD histogram is positive and ADX 43 signals a firm trend. Order‑book imbalance favors bids, supporting further upside toward the $0.02366 resistance.",
       "market_context": "BTC is modestly higher (+0.7%) while the broader market shows a broadly negative breadth (62.4% red), indicating mixed sentiment.",
       "result": "PENDING"
+    },
+    {
+      "id": 4369,
+      "created_at": "2026-11-01T18:40:56.058484+00:00",
+      "symbol": "TRUMPUSDT",
+      "direction": "LONG",
+      "title": "Smart Money Flow Increases into $TRUMP Ahead of Catalysts",
+      "entry_low": 1.669,
+      "entry_high": 1.677,
+      "stop_loss": 1.614,
+      "take_profit": 1.791,
+      "support": 1.59,
+      "resistance": 1.778,
+      "news_line": "",
+      "technical_analysis": "Price sits above the EMA9, EMA21, EMA50 and EMA200, confirming bullish bias. MACD line exceeds its signal and the histogram is positive, while RSI at 64 shows solid momentum. ADX above 25 signals a strong trend, and order‑book imbalance favors buyers. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish",
+      "market_context": "BTC is slightly bullish (+0.3%) but the broader market remains broadly negative, providing a mixed backdrop for risk assets.",
+      "result": "PENDING"
     }
   ]
 }
