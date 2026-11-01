@@ -74365,6 +74365,23 @@
       "technical_analysis": "Short bias is favored. MACD histogram is negative and the signal line sits higher, showing weakening momentum. Resistance sits at 0.236, support at 0.2319. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
       "market_context": "BTC shows a bearish 4‑hour trend against its EMA20/50, while the daily picture is mixed. Overall market breadth is broadly negative with",
       "result": "PENDING"
+    },
+    {
+      "id": 4375,
+      "created_at": "2026-11-01T21:50:56.820109+00:00",
+      "symbol": "MARSCOINUSDT",
+      "direction": "SHORT",
+      "title": "$MARSCOIN Fakeout Confirmed: Bulls Trapped at Local Highs",
+      "entry_low": 0.0576,
+      "entry_high": 0.0578,
+      "stop_loss": 0.0598,
+      "take_profit": 0.0535,
+      "support": 0.0552,
+      "resistance": 0.0578,
+      "news_line": "",
+      "technical_analysis": "MACD is negative with a bearish histogram, and price sits below EMA9 and EMA21, confirming down‑trend pressure. RSI is neutral at 48.8, while Stochastic is deep in oversold territory (~19). ADX at 33 shows a strong trend. Order‑book shows a 26% bid imbalance, but the price is testing the 0.0578 resistance, supporting a short bias.",
+      "market_context": "BTC up 0.47% on 24h, yet overall market breadth is negative (66% red).",
+      "result": "PENDING"
     }
   ]
 }
