@@ -5,3 +5,4 @@ pandas
 mplfinance
 groq
 python-dotenv
+six>=1.16.0
