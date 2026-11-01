@@ -74348,6 +74348,23 @@
       "technical_analysis": "MACD sits below zero with a negative histogram, and price is under the EMA21 and EMA50, indicating bearish momentum. RSI at 44 and Stochastic at 40 reinforce the down‑side bias. ADX shows a weak trend, while the order book shows slight ask pressure. The pair respects the 4.91‑4.95 USDT range, favoring a short setup.",
       "market_context": "BTC shows a bearish 4‑hour trend but a mixed daily picture, while overall market breadth is broadly negative with 68.8% red assets.",
       "result": "PENDING"
+    },
+    {
+      "id": 4374,
+      "created_at": "2026-11-01T21:40:59.603084+00:00",
+      "symbol": "GTCUSDT",
+      "direction": "SHORT",
+      "title": "Panic Selling Risk Increases as $GTC Tests Critical Floor",
+      "entry_low": 0.2358,
+      "entry_high": 0.2362,
+      "stop_loss": 0.2445,
+      "take_profit": 0.219,
+      "support": 0.23189,
+      "resistance": 0.236,
+      "news_line": "",
+      "technical_analysis": "Short bias is favored. MACD histogram is negative and the signal line sits higher, showing weakening momentum. Resistance sits at 0.236, support at 0.2319. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
+      "market_context": "BTC shows a bearish 4‑hour trend against its EMA20/50, while the daily picture is mixed. Overall market breadth is broadly negative with",
+      "result": "PENDING"
     }
   ]
 }
