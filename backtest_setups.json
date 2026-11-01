@@ -74399,6 +74399,23 @@
       "technical_analysis": "All EMAs (9, 21, 50, 200) sit above the current price, confirming a bearish trend. MACD is negative with a bearish histogram, RSI at 37 hints at oversold but still below neutral, and ADX under 25 signals a weak trend. Order‑book imbalance shows more sell pressure, supporting a short bias near the 94.36 support.",
       "market_context": "BTC is bearish on the 4‑hour chart and mixed on daily, while overall market breadth is broadly negative, adding further downside pressure",
       "result": "PENDING"
+    },
+    {
+      "id": 4377,
+      "created_at": "2026-11-01T22:10:53.700208+00:00",
+      "symbol": "ENAUSDT",
+      "direction": "SHORT",
+      "title": "$ENA Volume Decreases on Rally: Weak Buyers Exposed",
+      "entry_low": 0.1825,
+      "entry_high": 0.1829,
+      "stop_loss": 0.190008,
+      "take_profit": 0.168084,
+      "support": 0.1808,
+      "resistance": 0.1829,
+      "news_line": "",
+      "technical_analysis": "Price sits below EMA9, EMA21, EMA50 and EMA200, confirming bearish structure. Order‑book shows slight bid dominance. The pair respects 0.1808 support and 0.1829 resistance, favoring a short bias. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
+      "market_context": "BTC is bullish on the day (+0.19%) while the overall market is broadly negative, with 70% of assets red.",
+      "result": "PENDING"
     }
   ]
 }
