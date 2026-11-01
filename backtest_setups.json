@@ -74076,6 +74076,23 @@
       "technical_analysis": "MACD histogram is positive and the MACD line sits above its signal, indicating bullish momentum. Price is above the 9‑EMA while ADX at 34.6 confirms a strong trend. Order‑book shows a ~20% bid imbalance, and RSI near 41 leaves upside room. These factors point to a near‑term long bias around the 0.309‑0.310 zone.",
       "market_context": "BTC is up 0.8% on the day, providing broader bullish sentiment, while overall market breadth is mixed.",
       "result": "PENDING"
+    },
+    {
+      "id": 4358,
+      "created_at": "2026-11-01T04:20:56.918901+00:00",
+      "symbol": "GUSDT",
+      "direction": "SHORT",
+      "title": "$G Breaks Ascending Support Line: Bearish Momentum Surge",
+      "entry_low": 0.00378,
+      "entry_high": 0.00382,
+      "stop_loss": 0.00394,
+      "take_profit": 0.00352,
+      "support": 0.00335,
+      "resistance": 0.00441,
+      "news_line": "",
+      "technical_analysis": "RSI is 81.9, showing overbought pressure, and price sits just above the upper Bollinger band (0.003752). Near the 1‑hour resistance of 0.00383, the 23.6% bid‑side order‑book imbalance hints at a near‑term pull‑back. This setup favors a short move toward the next support around 0.0035. Together, these indicators favor SHORT continuation toward support.",
+      "market_context": "BTC is slightly bullish on‑day (+0.68%) while the 4‑hour trend is bearish, indicating mixed broader market conditions.",
+      "result": "PENDING"
     }
   ]
 }
