@@ -74212,6 +74212,23 @@
       "technical_analysis": "The price sits below the EMA9‑200 cluster and the MACD histogram remains negative, indicating bearish momentum. RSI at 37 and a stochastic K of 26 suggest still‑weak demand. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
       "market_context": "BTC is up 0.58% on the day, but the broader market is broadly negative with 64.8% red assets.",
       "result": "PENDING"
+    },
+    {
+      "id": 4366,
+      "created_at": "2026-11-01T16:31:04.547815+00:00",
+      "symbol": "ZECUSDT",
+      "direction": "SHORT",
+      "title": "Bearish Divergence Spotted on $ZEC: Downside Targets Ahead",
+      "entry_low": 1245.0,
+      "entry_high": 1247.0,
+      "stop_loss": 1290.0,
+      "take_profit": 1158.0,
+      "support": 1219.45,
+      "resistance": 1255.51,
+      "news_line": "",
+      "technical_analysis": "ZEC is trading below its 9, 21 and 50 EMA, with MACD line under the signal and a negative histogram, indicating bearish momentum. RSI at 40.8 and Stochastic around 45 suggest the downside still has room. ADX near 20 shows a weak trend, while order‑book imbalance favors sellers. Resistance sits near 1255, support near 1219.",
+      "market_context": "BTC shows a mixed 4‑hour trend but remains slightly bullish, whereas the overall crypto market is broadly negative with 31% of assets",
+      "result": "PENDING"
     }
   ]
 }
