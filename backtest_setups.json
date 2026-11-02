@@ -74790,6 +74790,23 @@
       "technical_analysis": "HAEDAL is trading above its EMA9, EMA21, EMA50 and EMA200, showing a clear uptrend. RSI at 63 and Stochastic around 60 confirm bullish momentum, while MACD histogram stays positive. ADX above 35 signals a strong trend. With price near the lower edge of the Bollinger band and key resistance at 0.02849, upside bias is evident.",
       "market_context": "BTC is marginally up 0.19% on the day, yet the overall market breadth is broadly negative with 74% red assets.",
       "result": "PENDING"
+    },
+    {
+      "id": 4400,
+      "created_at": "2026-11-02T14:10:54.705825+00:00",
+      "symbol": "HOTUSDT",
+      "direction": "LONG",
+      "title": "$HOT Volume Expansion Signals High Conviction Upward Move",
+      "entry_low": 0.000378,
+      "entry_high": 0.000388,
+      "stop_loss": 0.000363,
+      "take_profit": 0.000423,
+      "support": 0.000377,
+      "resistance": 0.00041,
+      "news_line": "",
+      "technical_analysis": "HOT is trading above its 9‑, 21‑, 50‑ and 200‑EMA, confirming an uptrend. RSI at 61 and Stochastic K 68 % show bullish momentum, while MACD histogram is positive. ADX above 40 signals a strong trend. Order‑book shows a 6.5 % bid‑side imbalance and funding is negative, favoring longs. Together, these indicators favor LONG continuation toward resistance.",
+      "market_context": "BTC remains in a bearish 4H and 1D trend, with price below its EMA20/50 and a slightly negative 24h change, while the",
+      "result": "PENDING"
     }
   ]
 }
