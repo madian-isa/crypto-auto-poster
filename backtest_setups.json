@@ -74875,6 +74875,23 @@
       "technical_analysis": "All major trend indicators are bearish: price sits below EMA9‑200, MACD histogram is deep negative, and ADX shows a weak trend. RSI at 23 and Stochastic K at 4 signal extreme oversold conditions, yet the downtrend dominates. Current price 1121 trades under the lower Bollinger Band, and BTC’s market is broadly bearish, reinforcing downside bias.",
       "market_context": "BTC is in a bearish 4H and 1D trend, down 0.8% today, and the overall market shows 82% red assets, indicating broad",
       "result": "PENDING"
+    },
+    {
+      "id": 4405,
+      "created_at": "2026-11-02T16:51:11.547696+00:00",
+      "symbol": "INTCBUSDT",
+      "direction": "SHORT",
+      "title": "$INTCB Fails Resistance Retest: Bearish Extension Imminent",
+      "entry_low": 64.0,
+      "entry_high": 64.5,
+      "stop_loss": 66.82,
+      "take_profit": 59.11,
+      "support": 62.62,
+      "resistance": 65.38,
+      "news_line": "",
+      "technical_analysis": "Price sits beneath every EMA (9, 21, 50, 200), confirming a bearish framework. MACD histogram remains negative at –0.27, adding downside pressure. RSI is 31.3 and Stochastic K is 4.3, both deep in oversold territory, while price is below the lower Bollinger band (64.20). These signals favor a short stance.",
+      "market_context": "BTC is in a bearish 4H and 1D trend, down 0.8% today, and the broader market is broadly negative with 81% red",
+      "result": "PENDING"
     }
   ]
 }
