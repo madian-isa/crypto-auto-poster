@@ -74535,6 +74535,23 @@
       "technical_analysis": "RSI at 66.73 and Stochastic K around 78 show strong upward momentum. MACD histogram is positive and the signal line is below zero, confirming bullish bias. Price sits above the 9‑, 21‑ and 50‑EMA, while ADX above 30 indicates a solid trend. Immediate resistance sits near 0.00168 on the chart, with support around 0.00163.",
       "market_context": "BTC is up 0.96% in the last 24 hours, showing bullish momentum, while its 4‑hour trend is mixed and daily trend bearish",
       "result": "PENDING"
+    },
+    {
+      "id": 4385,
+      "created_at": "2026-11-02T04:01:04.084481+00:00",
+      "symbol": "BEAMXUSDT",
+      "direction": "LONG",
+      "title": "Critical Resistance Test: $BEAMX Preparing to Surge Higher",
+      "entry_low": 0.00538,
+      "entry_high": 0.00541,
+      "stop_loss": 0.0052,
+      "take_profit": 0.005785,
+      "support": 0.004922,
+      "resistance": 0.00553,
+      "news_line": "",
+      "technical_analysis": "Price sits just above the 9‑EMA and comfortably above the 21‑, 50‑ and 200‑EMA, indicating an uptrend. MACD line remains above its signal with a positive histogram, while RSI at 54 and Stochastic near 69 show bullish momentum. ADX around 28 confirms a moderate trend. Resistance sits near 0.005415 on the chart.",
+      "market_context": "BTC is up 1.04% in 24 h, showing bullish bias while overall market breadth is mixed (45% green, 55% red).",
+      "result": "PENDING"
     }
   ]
 }
