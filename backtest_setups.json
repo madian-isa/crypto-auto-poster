@@ -74501,6 +74501,23 @@
       "technical_analysis": "Stochastic is deep oversold (K ≈ 4, D ≈ 12) and RSI sits near 40, while MACD remains bearish with a negative histogram. Price is under the 9‑, 21‑ and 50‑EMA, confirming short‑term down pressure. ADX above 30 signals a strong trend, supporting a short bias. Together, these indicators favor SHORT continuation toward support.",
       "market_context": "BTC is modestly bullish (+0.9% 24h) but the overall market breadth is negative, with 60.6% of assets red, adding pressure to altcoins",
       "result": "PENDING"
+    },
+    {
+      "id": 4383,
+      "created_at": "2026-11-02T02:10:56.078945+00:00",
+      "symbol": "RUNEUSDT",
+      "direction": "SHORT",
+      "title": "$RUNE Open Interest Drops Rapidly: Long Squeeze Underway",
+      "entry_low": 0.518,
+      "entry_high": 0.521,
+      "stop_loss": 0.54,
+      "take_profit": 0.4785,
+      "support": 0.504,
+      "resistance": 0.65,
+      "news_line": "",
+      "technical_analysis": "RSI (14.5) and Stochastic (6.7) are deep in oversold territory, but price sits below EMA9, EMA21, EMA50 and EMA200, and MACD histogram is negative, confirming bearish momentum. ADX at 47 signals a strong trend, while a 27.9% bid‑side orderbook imbalance adds short‑bias pressure. Together, these indicators favor SHORT continuation toward support.",
+      "market_context": "BTC is modestly bullish (+0.93%) while the broader market leans red (58.4% down).",
+      "result": "PENDING"
     }
   ]
 }
