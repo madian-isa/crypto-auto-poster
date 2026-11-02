@@ -1,34 +1,7 @@
 {
-  "date": "2026-11-01",
-  "count": 28,
+  "date": "2026-11-02",
+  "count": 1,
   "posted_symbols_today": [
-    "SOPHUSDT",
-    "STXUSDT",
-    "ZROUSDT",
-    "\u725b\u6765USDT",
-    "POWRUSDT",
-    "RSRUSDT",
-    "TRXUSDT",
-    "GUSDT",
-    "LSKUSDT",
-    "ZAMAUSDT",
-    "BEAMXUSDT",
-    "XPLUSDT",
-    "INITUSDT",
-    "COWUSDT",
-    "RUNEUSDT",
-    "ZECUSDT",
-    "NEARUSDT",
-    "BIOUSDT",
-    "TRUMPUSDT",
-    "HOTUSDT",
-    "LINKUSDT",
-    "AWEUSDT",
-    "PEPEUSDT",
-    "GTCUSDT",
-    "MARSCOINUSDT",
-    "SOLUSDT",
-    "ENAUSDT",
-    "BTCUSDT"
+    "XPLUSDT"
   ]
 }
