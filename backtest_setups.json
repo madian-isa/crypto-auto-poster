@@ -75079,6 +75079,23 @@
       "technical_analysis": "CELO is trading below all key EMAs, with MACD below signal and a negative histogram. RSI and Stochastic sit in the high‑30s, indicating weakening momentum. ADX above 30 confirms a strong downtrend overall. The price is near the 1H/4H resistance at 0.0722, suggesting short bias toward the 0.0707 support trend.",
       "market_context": "BTC is bearish on both 4H and 1D timeframes, down about 1.4% in the last 24h. Market breadth is broadly negative, with",
       "result": "PENDING"
+    },
+    {
+      "id": 4417,
+      "created_at": "2026-11-02T23:31:03.642203+00:00",
+      "symbol": "SUIUSDT",
+      "direction": "SHORT",
+      "title": "$SUI Distribution Phase Ends: Downside Target Zone Set",
+      "entry_low": 0.873,
+      "entry_high": 0.8745,
+      "stop_loss": 0.9044,
+      "take_profit": 0.81245,
+      "support": 0.8639,
+      "resistance": 0.8805,
+      "news_line": "",
+      "technical_analysis": "Price sits below all EMA lines (9‑200) while RSI at 35.8 and Stochastic K/D under 40 signal bearish momentum. MACD histogram remains negative, confirming downtrend. ADX around 23 shows a weak trend, and order‑book imbalance favors sellers. The short bias aligns with the 1H/4H resistance at 0.8805. Together, these indicators favor SHORT continuation toward support.",
+      "market_context": "BTC is in a bearish 4H and 1D trend, with broader crypto markets showing 86% red and overall negative breadth.",
+      "result": "PENDING"
     }
   ]
 }
