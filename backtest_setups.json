@@ -75028,6 +75028,23 @@
       "technical_analysis": "RSI at 26.5 and Stochastic K at 4.4 signal deep oversold conditions, while MACD sits well below its signal with a -140 histogram, confirming bearish momentum. Price sits under the 9, 21, 50 and 200 EMA lines and is hugging the lower Bollinger Band. Order‑book imbalance shows 75% more asks, reinforcing a short bias.",
       "market_context": "BTC is in a bearish 4‑hour and daily trend, down 1.36% over 24 h, with market breadth broadly negative.",
       "result": "PENDING"
+    },
+    {
+      "id": 4414,
+      "created_at": "2026-11-02T21:20:55.578392+00:00",
+      "symbol": "TQQQBUSDT",
+      "direction": "SHORT",
+      "title": "$TQQQB Fails Resistance Retest: Bearish Extension Imminent",
+      "entry_low": 60.5,
+      "entry_high": 61.0,
+      "stop_loss": 62.9,
+      "take_profit": 56.45,
+      "support": 59.29,
+      "resistance": 63.07,
+      "news_line": "",
+      "technical_analysis": "RSI at 15.9 and Stochastic K below 4 signal deep oversell, but price sits under the 9‑EMA, 21‑EMA, 50‑EMA and 200‑EMA, confirming bearish bias. MACD is negative with a widening histogram, and ADX around 22 shows a firm trend. Order‑book imbalance leans slightly to bids, yet overall momentum points short.",
+      "market_context": "BTC is in a bearish 4H and 1D trend, with market breadth broadly negative and 86.9% of assets red, reinforcing the down‑side",
+      "result": "PENDING"
     }
   ]
 }
