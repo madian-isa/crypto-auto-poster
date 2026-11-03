@@ -75096,6 +75096,23 @@
       "technical_analysis": "Price sits below all EMA lines (9‑200) while RSI at 35.8 and Stochastic K/D under 40 signal bearish momentum. MACD histogram remains negative, confirming downtrend. ADX around 23 shows a weak trend, and order‑book imbalance favors sellers. The short bias aligns with the 1H/4H resistance at 0.8805. Together, these indicators favor SHORT continuation toward support.",
       "market_context": "BTC is in a bearish 4H and 1D trend, with broader crypto markets showing 86% red and overall negative breadth.",
       "result": "PENDING"
+    },
+    {
+      "id": 4418,
+      "created_at": "2026-11-03T00:01:05.004516+00:00",
+      "symbol": "BEAMXUSDT",
+      "direction": "SHORT",
+      "title": "$BEAMX Distribution Phase Ends: Downside Target Zone Set",
+      "entry_low": 0.00452,
+      "entry_high": 0.00455,
+      "stop_loss": 0.00473,
+      "take_profit": 0.004145,
+      "support": 0.004402,
+      "resistance": 0.005092,
+      "news_line": "",
+      "technical_analysis": "MACD is negative and below its signal, while RSI at 34.9 and Stochastic K/D under 15 signal oversold conditions. Price sits under the EMA9/21/50 cluster, confirming bearish momentum. Order‑book shows a 12% bid‑side imbalance, reinforcing short bias toward the 1H resistance zone. Together, these indicators favor SHORT continuation toward support.",
+      "market_context": "BTC is in a broader bearish trend on both 4H and 1D frames, with a 2% 24‑hour decline and market breadth heavily",
+      "result": "PENDING"
     }
   ]
 }
