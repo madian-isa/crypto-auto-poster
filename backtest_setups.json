@@ -75589,6 +75589,23 @@
       "technical_analysis": "RSI at 64 and a positive MACD histogram indicate upward momentum. Stochastic K/D in the high 80s adds to the momentum. The pair respects the 0.895 support and aims toward the 0.9013 resistance. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
       "market_context": "BTC is up 0.704% over 24h, showing bullish direction, while the broader market is broadly positive with 67.2% of assets green.",
       "result": "PENDING"
+    },
+    {
+      "id": 4447,
+      "created_at": "2026-11-03T19:11:15.175203+00:00",
+      "symbol": "UNIUSDT",
+      "direction": "LONG",
+      "title": "$UNI Breakout Confirmation: Bulls Target Next Supply Zone",
+      "entry_low": 7.22,
+      "entry_high": 7.24,
+      "stop_loss": 6.9408,
+      "take_profit": 7.8084,
+      "support": 7.17,
+      "resistance": 7.322,
+      "news_line": "",
+      "technical_analysis": "MACD histogram is positive and the MACD line sits above its signal, indicating bullish momentum. RSI at 55.5 shows modest upward pressure. Order‑book shows a 42% bid imbalance, supporting buying interest. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
+      "market_context": "BTC is slightly bullish (+0.7%) and the overall market is broadly positive, with 68.7% of assets in green.",
+      "result": "PENDING"
     }
   ]
 }
