@@ -1,6 +1,6 @@
 {
   "date": "2026-11-03",
-  "count": 22,
+  "count": 23,
   "posted_symbols_today": [
     "BEAMXUSDT",
     "HAEDALUSDT",
@@ -23,6 +23,7 @@
     "MUBUSDT",
     "SOLUSDT",
     "MITOUSDT",
-    "XRPUSDT"
+    "XRPUSDT",
+    "BTCUSDT"
   ]
 }
