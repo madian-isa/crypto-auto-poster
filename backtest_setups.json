@@ -75572,6 +75572,23 @@
       "technical_analysis": "ETH is trading just above its 200‑EMA at 2296, with price above the 9‑, 21‑ and 50‑EMA cluster, confirming bullish alignment. MACD shows a strong positive histogram (≈5) and the signal line is well below the MACD line. RSI at 66 and Stochastic in the 80s indicate upward momentum, while ADX (~25) confirms a moderate trend. Resistance sits near 2304.",
       "market_context": "BTC remains in a bearish 4‑hour and daily trend, yet ETH shows relative strength as the broader market is broadly positive with",
       "result": "PENDING"
+    },
+    {
+      "id": 4446,
+      "created_at": "2026-11-03T19:01:27.424079+00:00",
+      "symbol": "SUIUSDT",
+      "direction": "LONG",
+      "title": "$SUI Prepares for Parabolic Phase: Key Technical Trigger Met",
+      "entry_low": 0.8955,
+      "entry_high": 0.8965,
+      "stop_loss": 0.86,
+      "take_profit": 0.968,
+      "support": 0.895,
+      "resistance": 0.9013,
+      "news_line": "",
+      "technical_analysis": "RSI at 64 and a positive MACD histogram indicate upward momentum. Stochastic K/D in the high 80s adds to the momentum. The pair respects the 0.895 support and aims toward the 0.9013 resistance. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
+      "market_context": "BTC is up 0.704% over 24h, showing bullish direction, while the broader market is broadly positive with 67.2% of assets green.",
+      "result": "PENDING"
     }
   ]
 }
