@@ -75130,6 +75130,23 @@
       "technical_analysis": "HAEDAL is trading at 0.02876, comfortably above its EMA9, EMA21, EMA50 and EMA200, showing a clean bullish alignment. RSI at 65.5 and a positive MACD histogram confirm upward momentum, while ADX 46.7 signals a strong trend. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
       "market_context": "BTC remains in a bearish 4H and 1D trend, down 1.36% today, with the broader market showing a largely negative breadth.",
       "result": "PENDING"
+    },
+    {
+      "id": 4420,
+      "created_at": "2026-11-03T01:11:04.899542+00:00",
+      "symbol": "INITUSDT",
+      "direction": "SHORT",
+      "title": "$INIT Derivative Data Shows Heavy Long Liquidations Incoming",
+      "entry_low": 0.138,
+      "entry_high": 0.139,
+      "stop_loss": 0.14404,
+      "take_profit": 0.12742,
+      "support": 0.13295,
+      "resistance": 0.16285,
+      "news_line": "",
+      "technical_analysis": "All major indicators point down. Price sits beneath EMA9, EMA21, EMA50 and EMA200, confirming a bearish trend. MACD is negative and its histogram stays below zero. ADX at 31 shows a strong trend. RSI (28.8) and Stochastic (≈10) are oversold, but momentum remains weak, keeping short bias. Overall, the setup favors a short move toward the next support level.",
+      "market_context": "BTC is in a bearish 4H and 1D trend, down 1.46% over 24h; broader market breadth is broadly negative with 88.7% red.",
+      "result": "PENDING"
     }
   ]
 }
