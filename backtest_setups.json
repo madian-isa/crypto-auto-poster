@@ -75538,6 +75538,23 @@
       "technical_analysis": "RSI at 75 and stochastic K above 90 signal strong overbought momentum, while MACD histogram remains positive and the MACD line sits above its signal. Price sits above EMA9, EMA21, EMA50 and EMA200, confirming bullish alignment. ADX above 30 indicates a firm trend. With support at 1.839 and resistance near 1.921, momentum favors the upside.",
       "market_context": "BTC shows a modest 0.7% rise and remains bullish, while overall market breadth is broadly positive with 60.5% green assets.",
       "result": "PENDING"
+    },
+    {
+      "id": 4444,
+      "created_at": "2026-11-03T18:21:02.557179+00:00",
+      "symbol": "PUMPUSDT",
+      "direction": "LONG",
+      "title": "Key Support Holds Firm: $PUMP Bullish Continuation Setup Active",
+      "entry_low": 0.004204,
+      "entry_high": 0.004221,
+      "stop_loss": 0.00406,
+      "take_profit": 0.0045175,
+      "support": 0.004204,
+      "resistance": 0.004295,
+      "news_line": "",
+      "technical_analysis": "RSI at 63 and MACD histogram positive confirm upward momentum. Price sits above EMA9, EMA21, EMA50 and EMA200, while ADX near 30 signals a strong trend. Stochastic K at 84 shows bullish pressure. Bollinger band upper is 0.004342, keeping price near the lower‑mid range, supporting a long bias overall view.",
+      "market_context": "BTC up 0.7% in 24h, market breadth broadly positive with 63% green assets, adding overall optimism to risk assets.",
+      "result": "PENDING"
     }
   ]
 }
