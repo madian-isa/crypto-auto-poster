@@ -1,6 +1,6 @@
 {
   "date": "2026-11-03",
-  "count": 31,
+  "count": 32,
   "posted_symbols_today": [
     "BEAMXUSDT",
     "HAEDALUSDT",
@@ -32,6 +32,7 @@
     "ETHUSDT",
     "SUIUSDT",
     "UNIUSDT",
-    "HYPEUSDT"
+    "HYPEUSDT",
+    "AMDBUSDT"
   ]
 }

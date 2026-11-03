@@ -75623,6 +75623,23 @@
       "technical_analysis": "MACD is above its signal with a positive histogram, and order‑book imbalance shows 23 % more bid volume, indicating buying pressure. RSI is 48.6 (neutral) and ADX 25 confirms a moderate trend. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
       "market_context": "BTC shows bearish trends on 4 h and daily charts, yet the broader market is broadly positive with 69.6 % green assets",
       "result": "PENDING"
+    },
+    {
+      "id": 4449,
+      "created_at": "2026-11-03T21:51:06.392933+00:00",
+      "symbol": "AMDBUSDT",
+      "direction": "SHORT",
+      "title": "Smart Money Distribution Visible on $AMDB On-Chain Data",
+      "entry_low": 483.0,
+      "entry_high": 485.0,
+      "stop_loss": 502.0,
+      "take_profit": 448.0,
+      "support": 481.9,
+      "resistance": 485.22,
+      "news_line": "",
+      "technical_analysis": "Price sits under EMA9, EMA21, EMA50 and EMA200, indicating a clear downtrend. ADX at 31.6 confirms a strong trend. RSI at 47.7 and Stochastic K (52) below D (63) point to weakening momentum. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
+      "market_context": "BTC is up 1.4% on the day, keeping the broader market broadly positive with 71% green assets.",
+      "result": "PENDING"
     }
   ]
 }
