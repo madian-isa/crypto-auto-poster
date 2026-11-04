@@ -75878,6 +75878,23 @@
       "technical_analysis": "RSI at 67.5 and Stochastic K above 90 show strong momentum but nearing overbought. ADX around 21 confirms a moderate trend. Volume surged 62% in 24h, adding weight to the move. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
       "market_context": "BTC is up 1.9% with a bullish bias, and 89.8% of altcoins are green, indicating a broadly positive market environment.",
       "result": "PENDING"
+    },
+    {
+      "id": 4464,
+      "created_at": "2026-11-04T08:50:54.341022+00:00",
+      "symbol": "NEARUSDT",
+      "direction": "LONG",
+      "title": "Strong Accumulation Detected: $NEAR Prepares for Next Wave Up",
+      "entry_low": 3.95,
+      "entry_high": 3.99,
+      "stop_loss": 3.83,
+      "take_profit": 4.25,
+      "support": 3.847,
+      "resistance": 4.156,
+      "news_line": "",
+      "technical_analysis": "MACD histogram is positive and the MACD line sits above its signal, while price trades above the 9‑, 21‑ and 50‑EMA, indicating bullish momentum. RSI at 66 and a 75% volume surge add strength. Overbought stochastic and a touch above the Bollinger upper suggest caution, but the overall bias remains long toward the 4.156 resistance.",
+      "market_context": "BTC is up 2.5% with a bullish 4‑hour trend, and the broader market shows 89% green symbols, indicating a generally positive environment.",
+      "result": "PENDING"
     }
   ]
 }
