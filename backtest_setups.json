@@ -75776,6 +75776,23 @@
       "technical_analysis": "MACD shows a positive histogram and the signal line is below the MACD line, indicating bullish momentum. ADX at 39 confirms a strong trend. Stochastic K is low (29) while D is mid‑range, suggesting upside potential. Price sits above EMA21/50/200 and the order book shows a 21% bid‑side imbalance, reinforcing a long bias near the 0.004109 support.",
       "market_context": "BTC is in a bearish 4H and 1D trend, with broader market breadth mixed (48.7% green, 51.3% red).",
       "result": "PENDING"
+    },
+    {
+      "id": 4458,
+      "created_at": "2026-11-04T03:21:06.717905+00:00",
+      "symbol": "SOXLBUSDT",
+      "direction": "SHORT",
+      "title": "Overbought Indicators Signal Impending Correction for $SOXLB",
+      "entry_low": 69.3,
+      "entry_high": 69.6,
+      "stop_loss": 71.98,
+      "take_profit": 64.39,
+      "support": 65.43,
+      "resistance": 71.98,
+      "news_line": "",
+      "technical_analysis": "Price sits well below EMA9, EMA21, EMA50 and EMA200, confirming a strong downtrend. MACD is negative and its histogram deepens, reinforcing bearish momentum. ADX below 25 indicates a weak trend, keeping the bias short. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
+      "market_context": "BTC is in a bearish 4H and 1D trend, and the broader market is broadly negative with 75% red assets. This backdrop",
+      "result": "PENDING"
     }
   ]
 }
