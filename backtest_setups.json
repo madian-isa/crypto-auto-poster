@@ -75691,6 +75691,23 @@
       "technical_analysis": "RSI at 61 and Stochastic K/D in the low‑70s show solid upward momentum. MACD line sits above its signal with a positive histogram, confirming bullish bias. Price trades above the EMA9, EMA21 and EMA50, while ADX above 30 indicates a strong trend. Immediate resistance sits near 0.9999, with support at 0.99931.",
       "market_context": "BTC is up 1.17% and shows bullish momentum, while the broader crypto market is broadly positive with 72.2% of assets green.",
       "result": "PENDING"
+    },
+    {
+      "id": 4453,
+      "created_at": "2026-11-04T00:40:58.051086+00:00",
+      "symbol": "BMTUSDT",
+      "direction": "LONG",
+      "title": "Buyers Defend Key Demand Zone: $BMT Ready for Extension",
+      "entry_low": 0.02638,
+      "entry_high": 0.02653,
+      "stop_loss": 0.02504,
+      "take_profit": 0.029285,
+      "support": 0.02504,
+      "resistance": 0.02942,
+      "news_line": "",
+      "technical_analysis": "RSI at 62 and a strong ADX of 48 indicate solid upward momentum and a firm bias. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure. The nearby support and resistance levels frame the current market structure.",
+      "market_context": "BTC remains in a bearish 4H and 1D trend, down 0.2% over 24h, while the broader market shows a slight red bias",
+      "result": "PENDING"
     }
   ]
 }
