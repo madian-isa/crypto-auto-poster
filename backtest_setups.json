@@ -75861,6 +75861,23 @@
       "technical_analysis": "Stochastic is at 98, indicating overbought, while MACD histogram is negative and the line sits below the signal, pointing to bearish momentum. RSI is near 64, still elevated. Price sits at the upper resistance band (1.904) and above all EMAs, suggesting a near‑term pullback. The setup favors a short move toward the 1.874 support.",
       "market_context": "BTC is up 1.8% in 24h, keeping the broader market broadly positive, but ZRO faces bearish signals at the top of its",
       "result": "PENDING"
+    },
+    {
+      "id": 4463,
+      "created_at": "2026-11-04T07:20:51.512697+00:00",
+      "symbol": "ENAUSDT",
+      "direction": "LONG",
+      "title": "$ENA Outperformance Signal: Buying Momentum Beats Broader Market",
+      "entry_low": 0.1805,
+      "entry_high": 0.1815,
+      "stop_loss": 0.1741,
+      "take_profit": 0.1948,
+      "support": 0.1805,
+      "resistance": 0.187,
+      "news_line": "",
+      "technical_analysis": "RSI at 67.5 and Stochastic K above 90 show strong momentum but nearing overbought. ADX around 21 confirms a moderate trend. Volume surged 62% in 24h, adding weight to the move. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
+      "market_context": "BTC is up 1.9% with a bullish bias, and 89.8% of altcoins are green, indicating a broadly positive market environment.",
+      "result": "PENDING"
     }
   ]
 }
