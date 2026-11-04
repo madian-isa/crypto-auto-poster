@@ -76167,6 +76167,23 @@
       "technical_analysis": "Price sits above the 9‑, 21‑ and 50‑EMA, with the 200‑EMA also under the market, confirming an uptrend. MACD is positive (line 0.103 > signal 0.082) and RSI at 58 shows room for upside. Stochastic hovers around 50, while ADX 22 signals a developing trend. Support sits near 11.37 and resistance near 11.45.",
       "market_context": "Bitcoin is in a bullish 4‑hour and daily mixed trend, up 3.9% in 24 h, and the broader market is broadly positive",
       "result": "PENDING"
+    },
+    {
+      "id": 4481,
+      "created_at": "2026-11-04T23:50:49.192203+00:00",
+      "symbol": "XRPUSDT",
+      "direction": "LONG",
+      "title": "Bullish Divergence Flashed on $XRP Daily Chart Structure",
+      "entry_low": 1.3088,
+      "entry_high": 1.3119,
+      "stop_loss": 1.263,
+      "take_profit": 1.40505,
+      "support": 1.2972,
+      "resistance": 1.3414,
+      "news_line": "",
+      "technical_analysis": "MACD histogram is positive, EMA9 sits above EMA21, EMA50 and EMA200, and RSI at 64 shows solid upward momentum. ADX above 30 confirms a strong trend. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure. The nearby support and resistance levels frame the current market structure.",
+      "market_context": "BTC is up 3.68% in 24h, with a mixed but generally bullish trend, and the broader market is broadly positive (74% green).",
+      "result": "PENDING"
     }
   ]
 }
