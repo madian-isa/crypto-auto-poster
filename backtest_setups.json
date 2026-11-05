@@ -76507,6 +76507,23 @@
       "technical_analysis": "MACD is bullish with a positive histogram, price sits above the 9‑, 21‑ and 50‑EMA, and ADX at 35 signals a strong trend. Volume has jumped over 100%, while RSI at 63 and Stochastic near 67 show continued upward momentum. The next hurdle is the 0.0028 resistance. Together, these indicators favor LONG continuation toward resistance.",
       "market_context": "BTC is in a bearish 1‑day trend and the broader market is largely negative, with only 9.3% of assets green.",
       "result": "PENDING"
+    },
+    {
+      "id": 4501,
+      "created_at": "2026-11-05T15:50:55.885083+00:00",
+      "symbol": "UNIUSDT",
+      "direction": "SHORT",
+      "title": "$UNI Open Interest Drops Rapidly: Long Squeeze Underway",
+      "entry_low": 7.15,
+      "entry_high": 7.18,
+      "stop_loss": 7.55,
+      "take_profit": 6.395,
+      "support": 6.781,
+      "resistance": 7.305,
+      "news_line": "",
+      "technical_analysis": "The price sits below all key EMAs and a bearish MACD histogram, confirming downtrend pressure. Resistance sits near 7.20, support around 7.12 on the 1‑hour chart. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
+      "market_context": "BTC is in a bearish trend on both 4H and 1D timeframes, down 5.6% over 24h, with market breadth broadly negative.",
+      "result": "PENDING"
     }
   ]
 }
