@@ -76643,6 +76643,23 @@
       "technical_analysis": "Short bias dominates: price is under the 9, 21, 50 and 200 EMA lines and the MACD histogram stays negative, confirming a bearish trend. RSI at 26 and Stochastic K at 15 show oversold conditions, while ADX at 48 signals a strong, ongoing downtrend. Bollinger lower band near 181.8 and 1‑hour resistance around 199.9 reinforce downside pressure.",
       "market_context": "Bitcoin is in a bearish 4‑hour and daily trend, down about 5%, and the overall market breadth is broadly negative, with 93.8%",
       "result": "PENDING"
+    },
+    {
+      "id": 4509,
+      "created_at": "2026-11-05T20:30:51.299431+00:00",
+      "symbol": "BTCUSDT",
+      "direction": "SHORT",
+      "title": "$BTC Breaks Ascending Support Line: Bearish Momentum Surge",
+      "entry_low": 76200.0,
+      "entry_high": 76400.0,
+      "stop_loss": 79050.0,
+      "take_profit": 70800.0,
+      "support": 75736.38,
+      "resistance": 77886.86,
+      "news_line": "",
+      "technical_analysis": "The price sits well below EMA9, EMA21, EMA50 and EMA200, confirming a bearish trend on both 1‑hour and 4‑hour charts. MACD is deep in negative territory with a widening histogram, while ADX above 40 signals a strong move. RSI at 28 and Stochastic K at 15 show oversold conditions but the signals point to continued downside toward the 75,736 support.",
+      "market_context": "BTC is down 5.2% in the last 24 hours, market breadth is 93.9% red, and overall sentiment is broadly negative.",
+      "result": "PENDING"
     }
   ]
 }
