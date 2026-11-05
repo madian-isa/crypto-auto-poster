@@ -76677,6 +76677,23 @@
       "technical_analysis": "Technical indicators point to a short bias. ADX at 34 confirms a strong downtrend, while price sits beneath the 9, 21, 50 and 200 EMA series. MACD remains below its signal line, adding bearish momentum. RSI and Stochastic are in oversold territory, but the prevailing trend dominates. Thus the setup favors selling pressure toward the nearby 0.8654 resistance.",
       "market_context": "BTC is bearish on both 4 h and daily charts, trading below its EMA20/50 levels, and the broader market shows 94.5 %",
       "result": "PENDING"
+    },
+    {
+      "id": 4511,
+      "created_at": "2026-11-05T22:01:03.198252+00:00",
+      "symbol": "XRPUSDT",
+      "direction": "SHORT",
+      "title": "$XRP Fakeout Confirmed: Bulls Trapped at Local Highs",
+      "entry_low": 1.235,
+      "entry_high": 1.245,
+      "stop_loss": 1.285,
+      "take_profit": 1.15,
+      "support": 1.2177,
+      "resistance": 1.2457,
+      "news_line": "",
+      "technical_analysis": "XRP is trading below all key EMAs and the MACD histogram remains negative, confirming a strong downtrend (ADX ≈ 38). RSI ≈ 24 and Stochastic ≈ 4 signal deep oversold conditions, but price is near the lower Bollinger band and sits just above the 1H support at 1.2177. The bias stays short. Current price at 1.2221 tests the lower range",
+      "market_context": "BTC remains in a bearish 4‑hour and daily trend, down about 5.6% with broadly negative market breadth, reinforcing the downside bias for",
+      "result": "PENDING"
     }
   ]
 }
