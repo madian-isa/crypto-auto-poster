@@ -76371,6 +76371,23 @@
       "technical_analysis": "The chart shows price sitting below EMA9, EMA21, EMA50 and EMA200, confirming a bearish trend. MACD remains negative with a shrinking histogram, reinforcing downside momentum. RSI at 35.8 and Stochastic around 18 signal oversold conditions, yet the prevailing EMA and MACD bias keeps the outlook short. Together, these indicators favor SHORT continuation toward support.",
       "market_context": "BTC is bullish on the 4‑hour chart, up 2.8% today, while the broader market shows a slight green bias with 55% of",
       "result": "PENDING"
+    },
+    {
+      "id": 4493,
+      "created_at": "2026-11-05T09:31:03.800661+00:00",
+      "symbol": "MUBUSDT",
+      "direction": "LONG",
+      "title": "$MUB Higher Low Structure Confirmed: Long Entry Level Reached",
+      "entry_low": 770.0,
+      "entry_high": 775.0,
+      "stop_loss": 743.05,
+      "take_profit": 831.4,
+      "support": 766.62,
+      "resistance": 779.79,
+      "news_line": "",
+      "technical_analysis": "RSI at 33.7 and Stochastic K at 30.5 signal oversold conditions, while the order‑book shows a 13.2% bid imbalance and price sits near the lower Bollinger band. These factors together favor a near‑term bullish bounce toward resistance. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
+      "market_context": "BTC is in a bullish 4‑hour trend and overall market shows a slight green bias (58.7% green).",
+      "result": "PENDING"
     }
   ]
 }
