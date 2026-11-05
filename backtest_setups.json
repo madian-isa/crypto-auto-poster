@@ -76235,6 +76235,23 @@
       "technical_analysis": "Price sits below EMA9, EMA21, EMA50 and EMA200, confirming a downtrend. RSI at 36.8 and Stochastic K/D in the 20‑30 zone show weakening momentum. ADX around 29 signals a solid trend. Order‑book shows bid dominance, yet price pressure stays under key resistance at 0.01748. Together, these indicators favor SHORT continuation toward support.",
       "market_context": "BTC is bullish with a 4.97% 24‑hour gain and the overall market is broadly positive, while HUMAUSDT remains under downward pressure.",
       "result": "PENDING"
+    },
+    {
+      "id": 4485,
+      "created_at": "2026-11-05T03:11:00.205186+00:00",
+      "symbol": "BEAMXUSDT",
+      "direction": "LONG",
+      "title": "Technical Signals Turn Positive as Market Momentum Builds",
+      "entry_low": 0.0045,
+      "entry_high": 0.00455,
+      "stop_loss": 0.00434,
+      "take_profit": 0.004895,
+      "support": 0.004402,
+      "resistance": 0.004657,
+      "news_line": "",
+      "technical_analysis": "Price sits above the 9‑, 21‑, 50‑ and 200‑EMA, confirming a clear uptrend. MACD line sits above its signal with a positive histogram, while ADX at 32 signals strong momentum. RSI at 64 and Stochastic near 80 add bullish bias. Immediate support lies at 0.00440, resistance near 0.00466. Overall the confluence favors further upside.",
+      "market_context": "Bitcoin is up 6% on the day, keeping the broader market broadly positive with 86% of assets in green.",
+      "result": "PENDING"
     }
   ]
 }
