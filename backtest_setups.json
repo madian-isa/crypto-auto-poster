@@ -77238,6 +77238,23 @@
       "technical_analysis": "Short bias is supported by price hugging the 1‑hour resistance at ~50.4 while the EMA50 sits well above current levels, indicating longer‑term bearish pressure. Order‑book imbalance leans toward sellers, reinforcing downside potential toward the 46.0 support. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
       "market_context": "BTC is in a bearish 4‑hour and daily trend, down 0.11% today, while overall crypto market breadth remains broadly positive with 84.8%",
       "result": "PENDING"
+    },
+    {
+      "id": 4544,
+      "created_at": "2026-11-06T23:30:58.630891+00:00",
+      "symbol": "INTWBUSDT",
+      "direction": "LONG",
+      "title": "$INTWB Prepares for Parabolic Phase: Key Technical Trigger Met",
+      "entry_low": 5.41,
+      "entry_high": 5.43,
+      "stop_loss": 5.22,
+      "take_profit": 5.82,
+      "support": 5.41,
+      "resistance": 5.46,
+      "news_line": "",
+      "technical_analysis": "MACD histogram is positive, MACD line sits above its signal, and price is above the 9‑ and 21‑EMA, indicating bullish momentum. RSI at 58 supports an uptrend, while ADX around 23 confirms a moderate trend. The pair respects a near‑term support around 5.41 and faces resistance near 5.46 on the 1H chart and aligns with the broader market positivity.",
+      "market_context": "BTC is in a short‑term bullish swing on the 4H and daily charts, while overall market breadth is broadly positive with 87.7%",
+      "result": "PENDING"
     }
   ]
 }
