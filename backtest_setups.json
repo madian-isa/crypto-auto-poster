@@ -76779,6 +76779,23 @@
       "technical_analysis": "The market shows strong down pressure: ADX at 61.8 confirms a powerful trend, MACD histogram is negative, RSI sits at 35.5 and Stochastic K/D are below 30, and price sits under EMA9, EMA21, EMA50 and EMA200. These signals collectively favor a short bias near the current resistance. Together, these indicators favor SHORT continuation toward support.",
       "market_context": "BTC is in a bearish 4H and 1D trend, with broader market breadth at 93.6% red, reinforcing the prevailing downside sentiment.",
       "result": "PENDING"
+    },
+    {
+      "id": 4517,
+      "created_at": "2026-11-06T01:20:47.209145+00:00",
+      "symbol": "KORUBUSDT",
+      "direction": "SHORT",
+      "title": "$KORUB Distribution Phase Ends: Downside Target Zone Set",
+      "entry_low": 6.55,
+      "entry_high": 6.6,
+      "stop_loss": 6.84,
+      "take_profit": 6.045,
+      "support": 6.09,
+      "resistance": 9.47,
+      "news_line": "",
+      "technical_analysis": "RSI at 21 and Stochastic K at 11 signal deep oversold conditions while the MACD sits below its signal line, confirming bearish momentum. Price is under the EMA9, EMA21 and EMA50, and ADX above 55 shows a strong trend. With order‑book imbalance at –27 % and resistance near 6.61, the setup favors a short move toward the 6.09 support.",
+      "market_context": "BTC is in a bearish 4‑hour and daily trend, down about 5 % today, and the overall market is 93 % red",
+      "result": "PENDING"
     }
   ]
 }
