@@ -77000,6 +77000,23 @@
       "technical_analysis": "MACD histogram is positive, ADX above 50 shows a strong trend, and order‑book imbalance favors bids by nearly 21 %. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure. The nearby support and resistance levels frame the current market structure.",
       "market_context": "BTC is down 5.45 % over 24 h, market breadth is broadly negative with 90.9 % red, indicating overall bearish sentiment.",
       "result": "PENDING"
+    },
+    {
+      "id": 4530,
+      "created_at": "2026-11-06T12:20:55.288269+00:00",
+      "symbol": "CRCLBUSDT",
+      "direction": "SHORT",
+      "title": "$CRCLB Prepares for Breakdown: Downside Risk Escalates",
+      "entry_low": 69.25,
+      "entry_high": 69.33,
+      "stop_loss": 71.75,
+      "take_profit": 64.37,
+      "support": 67.29,
+      "resistance": 69.33,
+      "news_line": "",
+      "technical_analysis": "The price sits just below the 1‑hour resistance at 69.33 while remaining under EMA21 (69.44), EMA50 (71.19) and EMA200 (74.36), indicating a prevailing downtrend. Stochastic K at 74 suggests overbought pressure. ADX around 28 confirms a moderate trend. Order‑book shows a slight Together, these indicators favor SHORT continuation toward support.",
+      "market_context": "BTC is in a bearish 4‑hour and daily trend, down 4.9% on the day, and the broader market is 86.6% red, indicating",
+      "result": "PENDING"
     }
   ]
 }
