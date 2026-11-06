@@ -77017,6 +77017,23 @@
       "technical_analysis": "The price sits just below the 1‑hour resistance at 69.33 while remaining under EMA21 (69.44), EMA50 (71.19) and EMA200 (74.36), indicating a prevailing downtrend. Stochastic K at 74 suggests overbought pressure. ADX around 28 confirms a moderate trend. Order‑book shows a slight Together, these indicators favor SHORT continuation toward support.",
       "market_context": "BTC is in a bearish 4‑hour and daily trend, down 4.9% on the day, and the broader market is 86.6% red, indicating",
       "result": "PENDING"
+    },
+    {
+      "id": 4531,
+      "created_at": "2026-11-06T12:40:58.085735+00:00",
+      "symbol": "UNIUSDT",
+      "direction": "LONG",
+      "title": "Critical Resistance Test: $UNI Preparing to Surge Higher",
+      "entry_low": 6.96,
+      "entry_high": 6.99,
+      "stop_loss": 6.7,
+      "take_profit": 7.525,
+      "support": 6.941,
+      "resistance": 7.031,
+      "news_line": "",
+      "technical_analysis": "MACD shows a bullish crossover (line above signal) with a positive histogram, while the order book is 28% bid‑heavy, indicating buying pressure. Stochastic %K at 74% supports upward momentum, and ADX above 30 confirms a strong trend. Price sits just above the 9‑EMA near the 1‑hour support‑resistance window, favoring a long bias.",
+      "market_context": "BTC remains in a bearish 4‑hour and daily trend, with the broader crypto market showing 81.8% red assets, reinforcing the overall negative",
+      "result": "PENDING"
     }
   ]
 }
