@@ -76864,6 +76864,23 @@
       "technical_analysis": "Indicators point to downside pressure. RSI at 28 and stochastic K near 19 signal oversold conditions but ADX at 51 confirms a strong trend. MACD histogram is negative and price sits below EMA9, EMA21 and EMA50, reinforcing bearish momentum. Immediate resistance sits around 2250 on the chart, with the support near 2226.",
       "market_context": "BTC is in a bearish 4H and 1D trend, down about 5.9% over 24h, and market breadth is broadly negative with 93.5%",
       "result": "PENDING"
+    },
+    {
+      "id": 4522,
+      "created_at": "2026-11-06T06:30:56.270093+00:00",
+      "symbol": "TQQQBUSDT",
+      "direction": "SHORT",
+      "title": "$TQQQB Resistance Test Fails: Bearish Momentum Building Fast",
+      "entry_low": 51.8,
+      "entry_high": 51.85,
+      "stop_loss": 53.66,
+      "take_profit": 48.155,
+      "support": 50.36,
+      "resistance": 52.81,
+      "news_line": "",
+      "technical_analysis": "Price sits below all EMAs (9‑200) and ADX 42 confirms a strong downtrend. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
+      "market_context": "BTC is in a bearish 4H and 1D trend, down 6% today, and the overall market is broadly negative with 93% red",
+      "result": "PENDING"
     }
   ]
 }
