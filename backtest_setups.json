@@ -76949,6 +76949,23 @@
       "technical_analysis": "Price sits below EMA9, EMA21, EMA50 and EMA200, confirming a downtrend. ADX at 33.7 signals a strong trend, while RSI near 39 shows weakening momentum. Stochastic K is falling below its D line, hinting at further downside. Overall the indicators favor a short bias currently around the 0.165 resistance level.",
       "market_context": "BTC is in a bearish 4‑hour and daily trend, down 5.4% over 24 h, with market breadth broadly negative (91.6% red). The",
       "result": "PENDING"
+    },
+    {
+      "id": 4527,
+      "created_at": "2026-11-06T10:20:56.146968+00:00",
+      "symbol": "NEARUSDT",
+      "direction": "LONG",
+      "title": "Key Support Holds Firm: $NEAR Bullish Continuation Setup Active",
+      "entry_low": 3.7,
+      "entry_high": 3.73,
+      "stop_loss": 3.58,
+      "take_profit": 3.985,
+      "support": 3.69,
+      "resistance": 3.779,
+      "news_line": "",
+      "technical_analysis": "MACD shows a bullish crossover with a positive histogram, while Stochastic K at 64 sits above its D line, indicating upward momentum. ADX above 30 confirms a strong trend. Together these signals favor a LONG stance near the 3.69‑3.779 range. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
+      "market_context": "BTC remains bearish on 4H and 1D charts, with broader market breadth turning sharply negative (91.6% red). This down‑trend backdrop adds pressure",
+      "result": "PENDING"
     }
   ]
 }
