@@ -76762,6 +76762,23 @@
       "technical_analysis": "RSI at 25.8 and Stochastic K under 10 signal oversold conditions, yet MACD sits deep in negative territory and ADX above 50 confirms a strong bearish trend. Price sits well below EMA9, EMA21 and EMA50, and order‑book imbalance shows slight sell pressure. Indicators collectively favor a short move. Together, these indicators favor SHORT continuation toward support.",
       "market_context": "BTC is in a bearish 4H and 1D trend with prices around $76k, and the broader market is broadly negative (94% red).",
       "result": "PENDING"
+    },
+    {
+      "id": 4516,
+      "created_at": "2026-11-06T01:01:11.580618+00:00",
+      "symbol": "SNDKBUSDT",
+      "direction": "SHORT",
+      "title": "$SNDKB Rejection at Key Supply Zone: Short Setup Activated",
+      "entry_low": 845.0,
+      "entry_high": 846.5,
+      "stop_loss": 879.58,
+      "take_profit": 778.09,
+      "support": 808.01,
+      "resistance": 1018.38,
+      "news_line": "",
+      "technical_analysis": "The market shows strong down pressure: ADX at 61.8 confirms a powerful trend, MACD histogram is negative, RSI sits at 35.5 and Stochastic K/D are below 30, and price sits under EMA9, EMA21, EMA50 and EMA200. These signals collectively favor a short bias near the current resistance. Together, these indicators favor SHORT continuation toward support.",
+      "market_context": "BTC is in a bearish 4H and 1D trend, with broader market breadth at 93.6% red, reinforcing the prevailing downside sentiment.",
+      "result": "PENDING"
     }
   ]
 }
