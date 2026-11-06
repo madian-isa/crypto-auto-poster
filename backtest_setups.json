@@ -76847,6 +76847,23 @@
       "technical_analysis": "RSI at 30 and Stochastic K near 17 point to oversold conditions, while MACD line sits above its signal, giving a positive histogram. ADX above 45 confirms a strong trend. Price sits just above the 1‑hour support at 0.01337 and near the lower Bollinger band, suggesting upward bias toward the 0.01369 resistance.",
       "market_context": "BTC remains in a bearish 4H and 1D trend, with a 5.8% drop and market breadth broadly negative (94.9% red).",
       "result": "PENDING"
+    },
+    {
+      "id": 4521,
+      "created_at": "2026-11-06T05:50:50.249646+00:00",
+      "symbol": "ETHUSDT",
+      "direction": "SHORT",
+      "title": "High Volume Selling Sweep Breaks $ETH Market Structure",
+      "entry_low": 2245.0,
+      "entry_high": 2248.0,
+      "stop_loss": 2329.0,
+      "take_profit": 2081.5,
+      "support": 2226.44,
+      "resistance": 2250.03,
+      "news_line": "",
+      "technical_analysis": "Indicators point to downside pressure. RSI at 28 and stochastic K near 19 signal oversold conditions but ADX at 51 confirms a strong trend. MACD histogram is negative and price sits below EMA9, EMA21 and EMA50, reinforcing bearish momentum. Immediate resistance sits around 2250 on the chart, with the support near 2226.",
+      "market_context": "BTC is in a bearish 4H and 1D trend, down about 5.9% over 24h, and market breadth is broadly negative with 93.5%",
+      "result": "PENDING"
     }
   ]
 }
