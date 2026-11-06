@@ -76932,6 +76932,23 @@
       "technical_analysis": "MACD line sits above its signal with a positive histogram, while RSI at 34.8 points to oversold conditions. Stochastic K is 60, above 50, indicating upward bias. Order‑book shows a 12.9 % bid‑side imbalance. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
       "market_context": "BTC remains in a bearish 4‑hour and daily trend, down 5.9 % in 24 h, with market breadth broadly negative (92 %",
       "result": "PENDING"
+    },
+    {
+      "id": 4526,
+      "created_at": "2026-11-06T09:10:56.483643+00:00",
+      "symbol": "ENAUSDT",
+      "direction": "SHORT",
+      "title": "$ENA Distribution Phase Ends: Downside Target Zone Set",
+      "entry_low": 0.1648,
+      "entry_high": 0.1651,
+      "stop_loss": 0.171,
+      "take_profit": 0.15285,
+      "support": 0.162,
+      "resistance": 0.1651,
+      "news_line": "",
+      "technical_analysis": "Price sits below EMA9, EMA21, EMA50 and EMA200, confirming a downtrend. ADX at 33.7 signals a strong trend, while RSI near 39 shows weakening momentum. Stochastic K is falling below its D line, hinting at further downside. Overall the indicators favor a short bias currently around the 0.165 resistance level.",
+      "market_context": "BTC is in a bearish 4‑hour and daily trend, down 5.4% over 24 h, with market breadth broadly negative (91.6% red). The",
+      "result": "PENDING"
     }
   ]
 }
