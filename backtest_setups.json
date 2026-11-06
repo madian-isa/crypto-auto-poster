@@ -77221,6 +77221,23 @@
       "technical_analysis": "Stochastic shows overbought conditions (K 73, D 87) and ADX at 25.8 signals a moderate trend. Price sits below the 56.5 support level, and the order book shows a 21% bid‑side imbalance, favoring a short bias. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
       "market_context": "BTC remains in a bearish trend on both 4H and 1D charts, aligning with broader market caution despite a generally positive breadth.",
       "result": "PENDING"
+    },
+    {
+      "id": 4543,
+      "created_at": "2026-11-06T22:20:56.843846+00:00",
+      "symbol": "AAOIBUSDT",
+      "direction": "SHORT",
+      "title": "Smart Money Distribution Visible on $AAOIB On-Chain Data",
+      "entry_low": 50.3,
+      "entry_high": 50.45,
+      "stop_loss": 52.2,
+      "take_profit": 46.725,
+      "support": 46.0,
+      "resistance": 50.49,
+      "news_line": "",
+      "technical_analysis": "Short bias is supported by price hugging the 1‑hour resistance at ~50.4 while the EMA50 sits well above current levels, indicating longer‑term bearish pressure. Order‑book imbalance leans toward sellers, reinforcing downside potential toward the 46.0 support. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
+      "market_context": "BTC is in a bearish 4‑hour and daily trend, down 0.11% today, while overall crypto market breadth remains broadly positive with 84.8%",
+      "result": "PENDING"
     }
   ]
 }
