@@ -76898,6 +76898,23 @@
       "technical_analysis": "RSI at 22 and Stochastic K at 2.7 signal deep oversold conditions, yet price sits beneath EMA9, EMA21, EMA50 and EMA200, confirming a downtrend. MACD histogram remains negative and ADX at 47 shows a strong trend. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
       "market_context": "BTC remains in a bearish 4H and 1D trend, down ~6.5% today, and the broader market shows 93% red assets, underscoring overall",
       "result": "PENDING"
+    },
+    {
+      "id": 4524,
+      "created_at": "2026-11-06T07:31:04.908955+00:00",
+      "symbol": "MUBUSDT",
+      "direction": "LONG",
+      "title": "Smart Money Flow Increases into $MUB Ahead of Catalysts",
+      "entry_low": 685.5,
+      "entry_high": 686.5,
+      "stop_loss": 657.52,
+      "take_profit": 742.96,
+      "support": 685.73,
+      "resistance": 687.58,
+      "news_line": "",
+      "technical_analysis": "MACD shows a bullish histogram (+4.9) as the line sits above its signal, while Stochastic K at 65 signals upward momentum. ADX at 50 confirms a strong trend, and the order‑book shows an 11.6% bid‑side imbalance. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
+      "market_context": "BTC is in a bearish trend and the broader market is broadly negative, with 93.6% of assets down.",
+      "result": "PENDING"
     }
   ]
 }
