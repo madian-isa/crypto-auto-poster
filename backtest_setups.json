@@ -77748,6 +77748,23 @@
       "technical_analysis": "Price sits just below the upper Bollinger band, with EMA9‑EMA21‑EMA50 stacked bullishly under the current level. MACD line edges above its signal and ADX ≈ 41 confirms a strong trend. RSI at 63 and Stochastic K ≈ 88 show upward momentum, keeping the next resistance at 0.01093 in focus, while support at 0.00932 offers a clear floor.",
       "market_context": "BTC is in a bearish 4‑hour and daily trend, with price around $75,800, and the overall crypto market shows broadly negative breadth",
       "result": "PENDING"
+    },
+    {
+      "id": 4574,
+      "created_at": "2026-11-07T17:20:53.208804+00:00",
+      "symbol": "UNIUSDT",
+      "direction": "LONG",
+      "title": "Spot Inflows Surge for $UNI as Futures Open Interest Rises",
+      "entry_low": 7.028,
+      "entry_high": 7.038,
+      "stop_loss": 6.78,
+      "take_profit": 7.539,
+      "support": 6.986,
+      "resistance": 7.095,
+      "news_line": "",
+      "technical_analysis": "MACD histogram is positive and the MACD line sits above its signal, indicating upward momentum. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure. The nearby support and resistance levels frame the current market structure.",
+      "market_context": "BTC is in a bearish 4‑hour and daily trend, down 0.1% over 24 h, and the broader market shows 80% red breadth",
+      "result": "PENDING"
     }
   ]
 }
