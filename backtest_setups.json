@@ -77799,6 +77799,23 @@
       "technical_analysis": "MACD line sits above its signal with a positive histogram, while Stochastic %K is in the upper‑mid range above %D, indicating bullish momentum. Price rests just above the 9‑EMA and 21‑EMA but below longer EMAs, and the order book shows a modest bid‑side imbalance. The pair is holding near the 0.07173 support, suggesting upside potential toward the 0.07205 resistance.",
       "market_context": "Bitcoin remains in a bearish trend on the 4‑hour and daily charts, though the 24‑hour change is slightly positive. Overall market breadth",
       "result": "PENDING"
+    },
+    {
+      "id": 4577,
+      "created_at": "2026-11-07T20:31:03.439815+00:00",
+      "symbol": "HMSTRUSDT",
+      "direction": "LONG",
+      "title": "$HMSTR Breaks Out of Falling Wedge Pattern: Targets Set Higher",
+      "entry_low": 0.000131,
+      "entry_high": 0.0001325,
+      "stop_loss": 0.00012648,
+      "take_profit": 0.00014229,
+      "support": 0.0001304,
+      "resistance": 0.00015,
+      "news_line": "",
+      "technical_analysis": "All key indicators point bullish. Price sits above the EMA9, EMA21, EMA50 and EMA200, confirming an uptrend. MACD histogram is positive and ADX at 30 shows strong momentum. Order‑book shows a 39 % bid‑side imbalance. Despite an overbought RSI and trading above the Bollinger upper band, the structure favors a long bias.",
+      "market_context": "BTC remains bearish on 4H and 1D timeframes, down about 0.1% today, while the broader crypto market is broadly negative with roughly",
+      "result": "PENDING"
     }
   ]
 }
