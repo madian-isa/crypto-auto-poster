@@ -77493,6 +77493,23 @@
       "technical_analysis": "The price is hugging the 1‑hour resistance at 79.42, supporting a short bias. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
       "market_context": "BTC shows bearish trends on both 4‑hour and daily charts, while the broader market is broadly positive with a 72.5% green breadth.",
       "result": "PENDING"
+    },
+    {
+      "id": 4559,
+      "created_at": "2026-11-07T08:20:48.835900+00:00",
+      "symbol": "SOLUSDT",
+      "direction": "SHORT",
+      "title": "$SOL Fails Resistance Retest: Bearish Extension Imminent",
+      "entry_low": 90.25,
+      "entry_high": 90.32,
+      "stop_loss": 93.5,
+      "take_profit": 83.855,
+      "support": 89.76,
+      "resistance": 90.32,
+      "news_line": "",
+      "technical_analysis": "On the 1‑hour chart SOL sits just under the 90.32 resistance, with price trading below EMA50 (91.05) and EMA200 (94.01), indicating a downtrend. EMA9 is also under EMA21, reinforcing bearish bias. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
+      "market_context": "BTC posted a modest 0.5% bullish move while overall market breadth is almost evenly split, offering a neutral backdrop for SOL's short",
+      "result": "PENDING"
     }
   ]
 }
