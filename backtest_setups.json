@@ -77408,6 +77408,23 @@
       "technical_analysis": "MACD histogram is positive, indicating bullish momentum, while stochastic K is deep in oversold territory (~20) and RSI sits near 40, suggesting a potential rebound. Order‑book shows a 30% bid imbalance. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
       "market_context": "BTC remains bearish on 4‑hour and daily charts, yet overall market breadth is broadly positive with about 66% of assets green.",
       "result": "PENDING"
+    },
+    {
+      "id": 4554,
+      "created_at": "2026-11-07T05:40:56.834122+00:00",
+      "symbol": "ETHUSDT",
+      "direction": "LONG",
+      "title": "On-Chain Metrics Confirm Strong Whale Accumulation on $ETH",
+      "entry_low": 2236.78,
+      "entry_high": 2240.0,
+      "stop_loss": 2158.5,
+      "take_profit": 2398.17,
+      "support": 2236.78,
+      "resistance": 2250.03,
+      "news_line": "",
+      "technical_analysis": "ADX at 34 confirms a strong trend. Although Stochastic is near overbought and the price hugs the upper Bollinger band, the combined signals favor a long bias toward the 1H/4H resistance zone. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
+      "market_context": "BTC is modestly bullish (+0.43%) with broadly positive market breadth, while ETH faces bearish longer‑term EMAs, keeping the backdrop mixed.",
+      "result": "PENDING"
     }
   ]
 }
