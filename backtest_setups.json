@@ -77731,6 +77731,23 @@
       "technical_analysis": "Price sits below EMA9‑200, MACD line and histogram are negative, RSI at 38 and Stochastic K under 5, indicating bearish momentum. ADX around 21 confirms a moderate downtrend. The pair is testing the 1H resistance at 0.001703 with support at 0.001691, favoring a short bias. Overall, the structure suggests further downside toward the next lower swing low.",
       "market_context": "BTC remains in a 4‑hour and daily bearish trend, with price down 0.08% and the broader market showing 81% red assets, reinforcing",
       "result": "PENDING"
+    },
+    {
+      "id": 4573,
+      "created_at": "2026-11-07T17:10:46.664502+00:00",
+      "symbol": "SIGNUSDT",
+      "direction": "LONG",
+      "title": "$SIGN Volume Expansion Signals High Conviction Upward Move",
+      "entry_low": 0.00978,
+      "entry_high": 0.00985,
+      "stop_loss": 0.00944,
+      "take_profit": 0.010565,
+      "support": 0.00932,
+      "resistance": 0.01093,
+      "news_line": "",
+      "technical_analysis": "Price sits just below the upper Bollinger band, with EMA9‑EMA21‑EMA50 stacked bullishly under the current level. MACD line edges above its signal and ADX ≈ 41 confirms a strong trend. RSI at 63 and Stochastic K ≈ 88 show upward momentum, keeping the next resistance at 0.01093 in focus, while support at 0.00932 offers a clear floor.",
+      "market_context": "BTC is in a bearish 4‑hour and daily trend, with price around $75,800, and the overall crypto market shows broadly negative breadth",
+      "result": "PENDING"
     }
   ]
 }
