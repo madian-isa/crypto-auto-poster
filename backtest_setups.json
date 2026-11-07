@@ -77527,6 +77527,23 @@
       "technical_analysis": "Price sits below the 9‑, 21‑, 50‑ and 200‑EMA, while MACD is under its signal and the histogram is negative. RSI at 46 and Stochastic K/D around 34/24 show weak downward momentum. Order‑book shows a 96 % ask‑side imbalance. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
       "market_context": "BTC shows bearish 4h and daily EMA alignment despite a modest 0.65% 24‑h rise, indicating mixed broader sentiment.",
       "result": "PENDING"
+    },
+    {
+      "id": 4561,
+      "created_at": "2026-11-07T09:20:57.334435+00:00",
+      "symbol": "SNXXBUSDT",
+      "direction": "SHORT",
+      "title": "Bearish Continuation Pattern Confirmed on $SNXXB Chart Structure",
+      "entry_low": 3.31,
+      "entry_high": 3.32,
+      "stop_loss": 3.44,
+      "take_profit": 3.065,
+      "support": 3.24,
+      "resistance": 3.34,
+      "news_line": "",
+      "technical_analysis": "RSI at 43 and a high Stochastic K of 81 suggest waning momentum. ADX at 27 shows a moderate trend. The pair is testing the 3.34 resistance, making a short bias more appropriate. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
+      "market_context": "BTC remains in a bearish 4‑hour and daily trend, with market breadth broadly negative and 67.6% of assets red, adding downside pressure",
+      "result": "PENDING"
     }
   ]
 }
