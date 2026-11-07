@@ -77850,6 +77850,23 @@
       "technical_analysis": "MACD sits below its signal line with a negative histogram, and price is under the 9‑, 21‑, 50‑ and 200‑EMA, confirming bearish momentum. RSI at 37 and a Stochastic K of 5.4 signal weakening demand. The setup points short. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
       "market_context": "BTC is down 0.16% on the 24h chart, showing bearish trends on both 4H and 1D timeframes. Market breadth is broadly negative",
       "result": "PENDING"
+    },
+    {
+      "id": 4580,
+      "created_at": "2026-11-07T22:40:49.685500+00:00",
+      "symbol": "LINKUSDT",
+      "direction": "SHORT",
+      "title": "$LINK Loses Key Demand Zone: Next Support Level Unprotected",
+      "entry_low": 10.86,
+      "entry_high": 10.88,
+      "stop_loss": 11.26,
+      "take_profit": 10.09,
+      "support": 10.781,
+      "resistance": 10.884,
+      "news_line": "",
+      "technical_analysis": "The price sits below the EMA9, EMA21, EMA50 and EMA200, while the MACD line remains under its signal and the histogram is negative. RSI at 42.9 and Stochastic K around 27 indicate weakening momentum, and ADX below 15 confirms a lack of strong trend. These factors favor a short bias near the 1‑hour resistance at 10.884.",
+      "market_context": "BTC is bearish on both 4‑hour and daily charts, trading near $75,780 with EMA20 and EMA50 above price. The broader market is",
+      "result": "PENDING"
     }
   ]
 }
