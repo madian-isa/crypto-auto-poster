@@ -1,6 +1,6 @@
 {
   "date": "2026-11-07",
-  "count": 8,
+  "count": 9,
   "posted_symbols_today": [
     "ONEUSDT",
     "SOXLBUSDT",
@@ -9,6 +9,7 @@
     "SPCXBUSDT",
     "XRPUSDT",
     "CYBERUSDT",
-    "ZECUSDT"
+    "ZECUSDT",
+    "SNDKBUSDT"
   ]
 }

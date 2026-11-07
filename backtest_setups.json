@@ -77391,6 +77391,23 @@
       "technical_analysis": "MACD is below its signal with a negative histogram, and Stochastic K is under D, both pointing bearish. EMA9 sits above price while EMA21‑50 remain below, confirming short‑term down pressure. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
       "market_context": "BTC shows bearish trends on 4h and 1d charts while overall 24h direction is bullish, indicating mixed broader sentiment.",
       "result": "PENDING"
+    },
+    {
+      "id": 4553,
+      "created_at": "2026-11-07T04:21:00.444625+00:00",
+      "symbol": "SNDKBUSDT",
+      "direction": "LONG",
+      "title": "Trend Reversal Confirmed for $SNDKB as Volume Spikes Upward",
+      "entry_low": 832.0,
+      "entry_high": 835.0,
+      "stop_loss": 802.9,
+      "take_profit": 894.7,
+      "support": 831.86,
+      "resistance": 843.7,
+      "news_line": "",
+      "technical_analysis": "MACD histogram is positive, indicating bullish momentum, while stochastic K is deep in oversold territory (~20) and RSI sits near 40, suggesting a potential rebound. Order‑book shows a 30% bid imbalance. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
+      "market_context": "BTC remains bearish on 4‑hour and daily charts, yet overall market breadth is broadly positive with about 66% of assets green.",
+      "result": "PENDING"
     }
   ]
 }
