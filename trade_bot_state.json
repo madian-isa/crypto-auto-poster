@@ -1,10 +1,11 @@
 {
   "date": "2026-11-07",
-  "count": 4,
+  "count": 5,
   "posted_symbols_today": [
     "ONEUSDT",
     "SOXLBUSDT",
     "ACTUSDT",
-    "GTCUSDT"
+    "GTCUSDT",
+    "SPCXBUSDT"
   ]
 }
