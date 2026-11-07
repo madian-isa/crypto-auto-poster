@@ -77646,6 +77646,23 @@
       "technical_analysis": "MACD shows a bullish crossover with a positive histogram, while price sits above the 9‑, 21‑ and 200‑EMA, confirming upward momentum. ADX at 47 signals a strong trend, and the order‑book shows a 9.5 % bid‑side imbalance. Despite RSI 70+, the confluence points to further upside toward the 0.008 resistance in the near term.",
       "market_context": "BTC is in a bearish trend on both 4‑hour and daily charts, while the broader market shows a largely negative breadth (72",
       "result": "PENDING"
+    },
+    {
+      "id": 4568,
+      "created_at": "2026-11-07T14:40:46.626658+00:00",
+      "symbol": "INJUSDT",
+      "direction": "SHORT",
+      "title": "$INJ Lower High Pattern Confirmed: Short Target in View",
+      "entry_low": 8.255,
+      "entry_high": 8.27,
+      "stop_loss": 8.593,
+      "take_profit": 7.6015,
+      "support": 8.191,
+      "resistance": 8.29,
+      "news_line": "",
+      "technical_analysis": "MACD sits below its signal and the histogram is negative, while the 9‑ and 21‑EMA sit above the 8.22 price, signalling bearish momentum. RSI is neutral and Stochastic is low, but the price is hugging the 8.29 resistance zone. The confluence points to short pressure. Together, these indicators favor SHORT continuation toward support.",
+      "market_context": "BTC is in a bearish 4H and 1D trend, and the broader crypto market shows a largely negative breadth, reinforcing the downside",
+      "result": "PENDING"
     }
   ]
 }
