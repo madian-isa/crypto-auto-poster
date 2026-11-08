@@ -78496,6 +78496,23 @@
       "technical_analysis": "The EMA hierarchy sits above price (EMA9‑200), MACD line remains under its signal and the histogram is negative, signaling bearish momentum. RSI at 31.7 and price just under the lower Bollinger band suggest oversold conditions, but ADX is weak. With price trapped between the 1‑hour support 10.13 and resistance 10.756, the indicators favor a short bias.",
       "market_context": "BTC remains in a broader bearish trend on both 4‑hour and daily charts, with price below its 20‑ and 50‑EMA, reinforcing negative",
       "result": "PENDING"
+    },
+    {
+      "id": 4618,
+      "created_at": "2026-11-08T23:50:50.908454+00:00",
+      "symbol": "SOXLBUSDT",
+      "direction": "SHORT",
+      "title": "Technical Signals Turn Negative as $SOXLB Selling Pressure Rises",
+      "entry_low": 43.7,
+      "entry_high": 43.8,
+      "stop_loss": 45.3,
+      "take_profit": 40.65,
+      "support": 43.49,
+      "resistance": 46.08,
+      "news_line": "",
+      "technical_analysis": "Price sits below EMA9, EMA21, EMA50 and EMA200, confirming bearish trend. MACD line remains under its signal with a negative histogram, adding downside pressure. RSI at 32 and Stochastic K at 6.5 signal oversold conditions but still favor a continuation. Bollinger lower band is breached, supporting a short bias near the 1‑hour support of 43.49.",
+      "market_context": "BTC remains in a bearish 4‑hour and daily trend, down 1.3% today, while overall market breadth is heavily negative (94% red). This",
+      "result": "PENDING"
     }
   ]
 }
