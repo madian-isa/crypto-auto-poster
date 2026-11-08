@@ -78122,6 +78122,23 @@
       "technical_analysis": "Price is testing the 1.1647 resistance, suggesting downside pressure. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
       "market_context": "BTC remains in a bearish trend on both 4‑hour and daily frames, and the broader market is broadly negative, reinforcing the short",
       "result": "PENDING"
+    },
+    {
+      "id": 4596,
+      "created_at": "2026-11-08T09:30:57.454278+00:00",
+      "symbol": "CELOUSDT",
+      "direction": "SHORT",
+      "title": "$CELO Resistance Test Fails: Bearish Momentum Building Fast",
+      "entry_low": 0.0665,
+      "entry_high": 0.0672,
+      "stop_loss": 0.0692,
+      "take_profit": 0.06215,
+      "support": 0.06512,
+      "resistance": 0.06782,
+      "news_line": "",
+      "technical_analysis": "Price sits below EMA9, EMA21, EMA50 and EMA200, confirming a strong downtrend. MACD line remains under its signal with a negative histogram, while ADX at 32 signals a firm trend. Although RSI (27) and Stochastic (≈1) are in oversold territory, the prevailing EMA and MACD bias points to short pressure.",
+      "market_context": "BTC is bearish on the 4h and daily charts, down 0.275% over 24h, and the broader market shows 85.3% red assets, indicating",
+      "result": "PENDING"
     }
   ]
 }
