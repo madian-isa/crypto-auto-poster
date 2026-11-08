@@ -77952,6 +77952,23 @@
       "technical_analysis": "RSI at 64 and a bullish MACD histogram signal a healthy upward push. EMA9, EMA21, EMA50 and EMA200 are all stacked below price, confirming strong trend alignment. ADX above 60 shows the momentum is firm. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
       "market_context": "BTC is bearish on both 4‑hour and daily charts, down about 0.4%, while the broader market is 88% red, indicating overall negative",
       "result": "PENDING"
+    },
+    {
+      "id": 4586,
+      "created_at": "2026-11-08T02:40:52.349205+00:00",
+      "symbol": "ZECUSDT",
+      "direction": "SHORT",
+      "title": "$ZEC Loses Key Demand Zone: Next Support Level Unprotected",
+      "entry_low": 1249.0,
+      "entry_high": 1251.84,
+      "stop_loss": 1300.4368,
+      "take_profit": 1150.3864,
+      "support": 1236.64,
+      "resistance": 1264.1,
+      "news_line": "",
+      "technical_analysis": "ZEC is trading beneath EMA9, EMA21, EMA50 and EMA200, indicating a downtrend. RSI at 35.4 and Stochastic K/D around 21/27 show oversold yet bearish momentum. MACD line sits below its signal with a negative histogram, confirming weakening price. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
+      "market_context": "BTC remains in a bearish 4‑hour and daily trend, and overall market breadth is broadly negative with 83.9% red assets, adding pressure",
+      "result": "PENDING"
     }
   ]
 }
