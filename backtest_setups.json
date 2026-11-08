@@ -78309,6 +78309,23 @@
       "technical_analysis": "NEAR is trading just above the 1‑hour support at 3.695 and near the 3.724 resistance. The MACD histogram is positive, the stochastic K sits at 67 above its D line, and price sits above the 9‑ and 21‑EMA, all pointing to upward momentum. RSI is neutral and ADX low, suggesting a modest bullish bias.",
       "market_context": "BTC shows a slight bullish move (+0.27%) while the overall market remains broadly negative, with 78.8% of assets in red.",
       "result": "PENDING"
+    },
+    {
+      "id": 4607,
+      "created_at": "2026-11-08T16:01:06.487414+00:00",
+      "symbol": "USD1USDT",
+      "direction": "SHORT",
+      "title": "$USD1 Distribution Phase Ends: Downside Target Zone Set",
+      "entry_low": 0.9989,
+      "entry_high": 0.99912,
+      "stop_loss": 1.03409,
+      "take_profit": 0.92885,
+      "support": 0.99873,
+      "resistance": 0.99912,
+      "news_line": "",
+      "technical_analysis": "All key indicators point down. Price sits below EMA9, EMA21, EMA50 and EMA200, while MACD histogram remains negative. Order‑book shows a 38 % ask‑side imbalance. The pair respects a 1H/4H resistance around 0.99912 and support near 0.99873, favoring short bias. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
+      "market_context": "BTC is in a bearish trend on 4H and daily charts, though the 24‑hour change is modestly positive, keeping overall market breadth",
+      "result": "PENDING"
     }
   ]
 }
