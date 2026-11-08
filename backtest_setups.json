@@ -78292,6 +78292,23 @@
       "technical_analysis": "Short bias dominates. Price sits below EMA9, EMA21, EMA50 and EMA200, confirming a downtrend. MACD line remains under its signal with a negative histogram, while ADX at 42 signals a strong trend. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
       "market_context": "BTC remains in a bearish 4‑hour and daily trend, while the broader market is broadly negative with 80.5% red assets.",
       "result": "PENDING"
+    },
+    {
+      "id": 4606,
+      "created_at": "2026-11-08T15:31:00.627202+00:00",
+      "symbol": "NEARUSDT",
+      "direction": "LONG",
+      "title": "Trend Reversal Confirmed for $NEAR as Volume Spikes Upward",
+      "entry_low": 3.695,
+      "entry_high": 3.712,
+      "stop_loss": 3.57,
+      "take_profit": 3.9705,
+      "support": 3.695,
+      "resistance": 3.724,
+      "news_line": "",
+      "technical_analysis": "NEAR is trading just above the 1‑hour support at 3.695 and near the 3.724 resistance. The MACD histogram is positive, the stochastic K sits at 67 above its D line, and price sits above the 9‑ and 21‑EMA, all pointing to upward momentum. RSI is neutral and ADX low, suggesting a modest bullish bias.",
+      "market_context": "BTC shows a slight bullish move (+0.27%) while the overall market remains broadly negative, with 78.8% of assets in red.",
+      "result": "PENDING"
     }
   ]
 }
