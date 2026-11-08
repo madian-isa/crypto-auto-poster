@@ -78241,6 +78241,23 @@
       "technical_analysis": "ADX above 35 shows a firm trend. Price sits at the Bollinger upper band and just below the 1H resistance, suggesting a short‑biased pullback toward the 0.001582 support. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
       "market_context": "BTC is modestly bullish (+0.10%) but the broader market is broadly negative, with 80% of assets in red. This backdrop supports a",
       "result": "PENDING"
+    },
+    {
+      "id": 4603,
+      "created_at": "2026-11-08T13:40:54.757030+00:00",
+      "symbol": "WLDUSDT",
+      "direction": "SHORT",
+      "title": "$WLD Prepares for Breakdown: Downside Risk Escalates",
+      "entry_low": 0.3298,
+      "entry_high": 0.3302,
+      "stop_loss": 0.3432,
+      "take_profit": 0.3036,
+      "support": 0.3249,
+      "resistance": 0.3302,
+      "news_line": "",
+      "technical_analysis": "Price sits below EMA9, EMA21, EMA50 and EMA200, confirming a bearish structure. RSI at 32.6 and ADX 26.6 signal weakening momentum, while MACD is near neutral. The pair trades near the lower Bollinger Band, supporting downside bias toward the 0.3249 support zone. Together, these indicators favor SHORT continuation toward support.",
+      "market_context": "BTC is bearish on 4‑hour and daily charts, though the 24‑hour trend is slightly bullish. Overall market breadth is negative, with 80.5%",
+      "result": "PENDING"
     }
   ]
 }
