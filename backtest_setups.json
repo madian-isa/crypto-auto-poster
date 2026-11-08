@@ -77884,6 +77884,23 @@
       "technical_analysis": "Price sits above the 9‑, 21‑, 50‑ and 200‑EMA, and RSI is slightly bullish at 53.4. ADX at 28 shows a moderate trend. With the 1H support at 0.0716 and resistance at 0.0732, momentum leans upward. Overall the setup points toward a potential upward move. Together, these indicators favor LONG continuation toward resistance.",
       "market_context": "BTC remains in a bearish 4H and 1D trend, trading around $75,900, while overall market breadth is broadly negative with 76.4% red",
       "result": "PENDING"
+    },
+    {
+      "id": 4582,
+      "created_at": "2026-11-08T00:20:51.117508+00:00",
+      "symbol": "ONEUSDT",
+      "direction": "SHORT",
+      "title": "$ONE Loses Key Demand Zone: Next Support Level Unprotected",
+      "entry_low": 0.00209,
+      "entry_high": 0.00211,
+      "stop_loss": 0.00218,
+      "take_profit": 0.00194,
+      "support": 0.001856,
+      "resistance": 0.00243,
+      "news_line": "",
+      "technical_analysis": "MACD is below its signal with a negative histogram, and the stochastic K (39) sits under its D line (47), both pointing bearish. ADX at 52 confirms a strong trend. Price sits just under the 1‑hour resistance (0.00243) and below the 9‑EMA, reinforcing downside momentum. Overall the chart suggests further pressure to the downside.",
+      "market_context": "BTC is in a bearish 4‑hour and daily trend, down 0.2%, and market breadth is broadly negative with 80% of assets red.",
+      "result": "PENDING"
     }
   ]
 }
