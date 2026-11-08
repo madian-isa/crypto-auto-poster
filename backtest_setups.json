@@ -78105,6 +78105,23 @@
       "technical_analysis": "All EMAs (9,21,50,200) sit below the price, confirming an uptrend. MACD is above its signal with a positive histogram, showing bullish momentum. ADX at 38 indicates a strong trend. Stochastic K/D are above 70, reinforcing upward pressure. RSI near 71 suggests overbought but the bullish signals dominate. Current price sits below the Bollinger upper band, room for further rise.",
       "market_context": "Bitcoin remains bearish on the 4‑hour and daily charts, with price below its 20‑ and 50‑EMA, and the broader market shows a",
       "result": "PENDING"
+    },
+    {
+      "id": 4595,
+      "created_at": "2026-11-08T08:40:57.627087+00:00",
+      "symbol": "XRPUSDT",
+      "direction": "SHORT",
+      "title": "Moving Average Death Cross Signals Downward Trend for $XRP",
+      "entry_low": 1.1645,
+      "entry_high": 1.1647,
+      "stop_loss": 1.2055,
+      "take_profit": 1.0828,
+      "support": 1.1591,
+      "resistance": 1.1647,
+      "news_line": "",
+      "technical_analysis": "Price is testing the 1.1647 resistance, suggesting downside pressure. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
+      "market_context": "BTC remains in a bearish trend on both 4‑hour and daily frames, and the broader market is broadly negative, reinforcing the short",
+      "result": "PENDING"
     }
   ]
 }
