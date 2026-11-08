@@ -78139,6 +78139,23 @@
       "technical_analysis": "Price sits below EMA9, EMA21, EMA50 and EMA200, confirming a strong downtrend. MACD line remains under its signal with a negative histogram, while ADX at 32 signals a firm trend. Although RSI (27) and Stochastic (≈1) are in oversold territory, the prevailing EMA and MACD bias points to short pressure.",
       "market_context": "BTC is bearish on the 4h and daily charts, down 0.275% over 24h, and the broader market shows 85.3% red assets, indicating",
       "result": "PENDING"
+    },
+    {
+      "id": 4597,
+      "created_at": "2026-11-08T09:50:52.007975+00:00",
+      "symbol": "BTCUSDT",
+      "direction": "SHORT",
+      "title": "Technical Signals Turn Negative as $BTC Selling Pressure Rises",
+      "entry_low": 75930.0,
+      "entry_high": 75970.0,
+      "stop_loss": 78988.0,
+      "take_profit": 69874.0,
+      "support": 75828.99,
+      "resistance": 75974.01,
+      "news_line": "",
+      "technical_analysis": "The 4‑hour and daily charts stay bearish, with price under the EMA50/200 while still hugging the EMA9/21. Stochastic is overbought, and ADX signals a weak trend, all pointing to short pressure near the 1‑hour resistance. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
+      "market_context": "BTC is down 0.16% over 24 h, the broader market is broadly negative with 77.9% red tickers, indicating overall bearish sentiment.",
+      "result": "PENDING"
     }
   ]
 }
