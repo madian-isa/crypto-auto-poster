@@ -78207,6 +78207,23 @@
       "technical_analysis": "Order‑book shows a 14.7% bid‑side imbalance, supporting upward pressure. RSI at 43.7 and Stochastic around 44 suggest room to rise. Price holds just above the 1H support (89.20) and below the 89.45 resistance, favoring a long bias. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
       "market_context": "BTC remains in a bearish 4H and daily trend, down 0.089% over 24h, with market breadth broadly negative (77.8% red).",
       "result": "PENDING"
+    },
+    {
+      "id": 4601,
+      "created_at": "2026-11-08T12:11:00.748025+00:00",
+      "symbol": "BNBUSDT",
+      "direction": "LONG",
+      "title": "Spot Inflows Surge for $BNB as Futures Open Interest Rises",
+      "entry_low": 698.8,
+      "entry_high": 699.2,
+      "stop_loss": 671.04,
+      "take_profit": 754.92,
+      "support": 696.87,
+      "resistance": 699.51,
+      "news_line": "",
+      "technical_analysis": "BNB is trading just below the 1‑hour resistance at 699.5, holding above the 9‑EMA (697.99) and 21‑EMA (696.99). The order‑book shows an 11.6% bid‑side imbalance, reinforcing the upward bias. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure. The nearby support and resistance levels frame the current market structure.",
+      "market_context": "BTC is in a bearish 4‑hour and daily trend, down 0.06% on the day, and the overall market shows 73.3% red assets",
+      "result": "PENDING"
     }
   ]
 }
