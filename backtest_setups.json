@@ -78258,6 +78258,23 @@
       "technical_analysis": "Price sits below EMA9, EMA21, EMA50 and EMA200, confirming a bearish structure. RSI at 32.6 and ADX 26.6 signal weakening momentum, while MACD is near neutral. The pair trades near the lower Bollinger Band, supporting downside bias toward the 0.3249 support zone. Together, these indicators favor SHORT continuation toward support.",
       "market_context": "BTC is bearish on 4‑hour and daily charts, though the 24‑hour trend is slightly bullish. Overall market breadth is negative, with 80.5%",
       "result": "PENDING"
+    },
+    {
+      "id": 4604,
+      "created_at": "2026-11-08T14:20:59.243380+00:00",
+      "symbol": "PEPEUSDT",
+      "direction": "LONG",
+      "title": "Buyers Defend Key Demand Zone: $PEPE Ready for Extension",
+      "entry_low": 5.01e-06,
+      "entry_high": 5.04e-06,
+      "stop_loss": 4.82e-06,
+      "take_profit": 5.44e-06,
+      "support": 5.01e-06,
+      "resistance": 5.05e-06,
+      "news_line": "",
+      "technical_analysis": "PEPEUSDT sits above its 9‑, 21‑, 50‑ and 200‑EMA, and the MACD histogram is positive, indicating upward momentum. Volume has jumped 179 % and the RSI at 68 suggests strength, though the stochastic is overbought. With 1‑hour support at 5.01 µ and resistance near 5.05 µ, the indicators lean bullish.",
+      "market_context": "BTC is marginally up 0.02 % on the 4‑h and 1‑d charts, yet the broader market remains broadly negative with 83 %",
+      "result": "PENDING"
     }
   ]
 }
