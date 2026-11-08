@@ -78326,6 +78326,23 @@
       "technical_analysis": "All key indicators point down. Price sits below EMA9, EMA21, EMA50 and EMA200, while MACD histogram remains negative. Order‑book shows a 38 % ask‑side imbalance. The pair respects a 1H/4H resistance around 0.99912 and support near 0.99873, favoring short bias. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
       "market_context": "BTC is in a bearish trend on 4H and daily charts, though the 24‑hour change is modestly positive, keeping overall market breadth",
       "result": "PENDING"
+    },
+    {
+      "id": 4608,
+      "created_at": "2026-11-08T16:30:59.633029+00:00",
+      "symbol": "SIGNUSDT",
+      "direction": "SHORT",
+      "title": "$SIGN Volume Decreases on Rally: Weak Buyers Exposed",
+      "entry_low": 0.00848,
+      "entry_high": 0.00854,
+      "stop_loss": 0.00886,
+      "take_profit": 0.00781,
+      "support": 0.0083,
+      "resistance": 0.0091,
+      "news_line": "",
+      "technical_analysis": "Price sits below the 9‑, 21‑, 50‑ and 200‑EMA, confirming a downtrend. MACD remains negative with a bearish histogram, while RSI at 39 signals weakness. ADX around 18 shows a weak trend, and stochastic is deep in oversold territory. The pair respects the 0.0083 support and faces resistance near 0.0091, favoring short pressure.",
+      "market_context": "BTC shows bearish alignment on 4‑hour and daily charts, though the 24‑hour change is slightly positive, indicating broader market pressure remains negative.",
+      "result": "PENDING"
     }
   ]
 }
