@@ -77986,6 +77986,23 @@
       "technical_analysis": "RSI at 34.9 and Stochastic around 35 point to oversold momentum, while price sits below EMA9, EMA21, EMA50 and EMA200, confirming a downtrend. ADX above 30 signals a strong trend. MACD line remains negative despite a tiny positive histogram. Together these readings favor short pressure near the 1‑hour resistance. Together, these indicators favor SHORT continuation toward support.",
       "market_context": "BTC is marginally lower (‑0.18%) on both 4‑hour and daily charts, maintaining a bearish trend. The broader market shows a negative breadth",
       "result": "PENDING"
+    },
+    {
+      "id": 4588,
+      "created_at": "2026-11-08T04:00:53.466863+00:00",
+      "symbol": "CYBERUSDT",
+      "direction": "SHORT",
+      "title": "High Volume Selling Sweep Breaks $CYBER Market Structure",
+      "entry_low": 0.297,
+      "entry_high": 0.298,
+      "stop_loss": 0.309,
+      "take_profit": 0.2745,
+      "support": 0.292,
+      "resistance": 0.298,
+      "news_line": "",
+      "technical_analysis": "The MACD is below its signal line and the histogram stays negative, while price sits under the 9‑ and 21‑EMA, confirming bearish momentum. RSI at 36 and a deep Stochastic K of 8 signal oversold conditions, but the price is hugging the lower Bollinger band near the 0.298 resistance. Together these readings favor a short bias toward the 0.292 support.",
+      "market_context": "BTC remains in a bearish 4H and 1D trend, and overall market breadth is broadly negative.",
+      "result": "PENDING"
     }
   ]
 }
