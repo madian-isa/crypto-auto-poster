@@ -1,6 +1,6 @@
 {
   "date": "2026-11-08",
-  "count": 16,
+  "count": 17,
   "posted_symbols_today": [
     "ONEUSDT",
     "MITOUSDT",
@@ -17,6 +17,7 @@
     "ERAUSDT",
     "XRPUSDT",
     "CELOUSDT",
-    "BTCUSDT"
+    "BTCUSDT",
+    "ETHUSDT"
   ]
 }
