@@ -78428,6 +78428,23 @@
       "technical_analysis": "With ADX around 28 confirming a moderate trend, the structure leans toward a short bias near the 1H resistance. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
       "market_context": "BTC is in a bearish trend on both 4H and 1D charts, and overall market breadth is broadly negative, adding downside bias",
       "result": "PENDING"
+    },
+    {
+      "id": 4614,
+      "created_at": "2026-11-08T21:30:51.562470+00:00",
+      "symbol": "NEIROUSDT",
+      "direction": "SHORT",
+      "title": "$NEIRO Prepares for Breakdown: Downside Risk Escalates",
+      "entry_low": 6.3e-05,
+      "entry_high": 6.35e-05,
+      "stop_loss": 6.58e-05,
+      "take_profit": 5.815e-05,
+      "support": 6.15e-05,
+      "resistance": 6.28e-05,
+      "news_line": "",
+      "technical_analysis": "A 30 % bid‑side order‑book imbalance adds short‑term downside pressure. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
+      "market_context": "BTC is in a short‑term bearish trend on both 4‑hour and daily charts, even though the 24‑hour change is modestly positive, reflecting",
+      "result": "PENDING"
     }
   ]
 }
