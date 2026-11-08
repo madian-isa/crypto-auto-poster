@@ -78224,6 +78224,23 @@
       "technical_analysis": "BNB is trading just below the 1‑hour resistance at 699.5, holding above the 9‑EMA (697.99) and 21‑EMA (696.99). The order‑book shows an 11.6% bid‑side imbalance, reinforcing the upward bias. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure. The nearby support and resistance levels frame the current market structure.",
       "market_context": "BTC is in a bearish 4‑hour and daily trend, down 0.06% on the day, and the overall market shows 73.3% red assets",
       "result": "PENDING"
+    },
+    {
+      "id": 4602,
+      "created_at": "2026-11-08T13:00:56.726771+00:00",
+      "symbol": "RSRUSDT",
+      "direction": "SHORT",
+      "title": "$RSR Fakeout Confirmed: Bulls Trapped at Local Highs",
+      "entry_low": 0.00166,
+      "entry_high": 0.001664,
+      "stop_loss": 0.001724,
+      "take_profit": 0.001538,
+      "support": 0.001582,
+      "resistance": 0.001672,
+      "news_line": "",
+      "technical_analysis": "ADX above 35 shows a firm trend. Price sits at the Bollinger upper band and just below the 1H resistance, suggesting a short‑biased pullback toward the 0.001582 support. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
+      "market_context": "BTC is modestly bullish (+0.10%) but the broader market is broadly negative, with 80% of assets in red. This backdrop supports a",
+      "result": "PENDING"
     }
   ]
 }
