@@ -78768,6 +78768,23 @@
       "technical_analysis": "NEAR is trading at $3.48, well beneath the 9‑, 21‑, 50‑ and 200‑EMA, confirming a downtrend. MACD histogram remains negative, and the signal line sits above the MACD line, adding bearish pressure. RSI at 32 and Stochastic K at 13 signal oversold conditions, but momentum stays weak, keeping price near the 1‑hour support of $3.446.",
       "market_context": "BTC is in a bearish trend on both 4h and daily timeframes, down 2.65% over 24h. The broader market is broadly negative",
       "result": "PENDING"
+    },
+    {
+      "id": 4634,
+      "created_at": "2026-11-09T09:01:09.323724+00:00",
+      "symbol": "INITUSDT",
+      "direction": "SHORT",
+      "title": "Major Support Breakdown Confirmed on $INIT Higher Timeframes",
+      "entry_low": 0.148,
+      "entry_high": 0.15,
+      "stop_loss": 0.1545,
+      "take_profit": 0.138,
+      "support": 0.12942,
+      "resistance": 0.15,
+      "news_line": "",
+      "technical_analysis": "The supplied indicators show a bearish structure for this market. Together, they favor SHORT continuation, with momentum pointing toward support and resistance framing the current price structure. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
+      "market_context": "BTC is in a bearish 4‑hour and daily trend, down 1.8 % over 24 h, and the broader market breadth is broadly",
+      "result": "PENDING"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "date": "2026-11-09",
-  "count": 15,
+  "count": 16,
   "posted_symbols_today": [
     "ONEUSDT",
     "GNSUSDT",
@@ -16,6 +16,7 @@
     "BMTUSDT",
     "ZECUSDT",
     "SOXLBUSDT",
-    "NEARUSDT"
+    "NEARUSDT",
+    "INITUSDT"
   ]
 }
