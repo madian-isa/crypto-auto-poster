@@ -78615,6 +78615,23 @@
       "technical_analysis": "The MACD histogram is negative and the MACD line sits below its signal, RSI is under 40 and stochastic K is near 16, indicating bearish momentum and oversold conditions. Price sits below all EMAs and under the 1‑hour resistance at 0.00691, supporting a short bias. The 4‑hour swing shows the price failing to break higher, reinforcing the downside outlook.",
       "market_context": "BTC is in a bearish trend on both 4‑hour and daily charts, down 1.1% over 24 h, with market breadth broadly negative.",
       "result": "PENDING"
+    },
+    {
+      "id": 4625,
+      "created_at": "2026-11-09T03:40:55.242381+00:00",
+      "symbol": "RSRUSDT",
+      "direction": "LONG",
+      "title": "Buyers Defend Key Demand Zone: $RSR Ready for Extension",
+      "entry_low": 0.00166,
+      "entry_high": 0.00168,
+      "stop_loss": 0.0016032,
+      "take_profit": 0.0018036,
+      "support": 0.001651,
+      "resistance": 0.001792,
+      "news_line": "",
+      "technical_analysis": "RSR is trading above its 9‑, 21‑, 50‑ and 200‑EMA, confirming an upward slope. RSI at 62 and Stochastic K above D show bullish momentum, while ADX above 50 signals a strong trend. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
+      "market_context": "BTC remains in a bearish 4H and 1D trend, with the broader market showing largely negative breadth.",
+      "result": "PENDING"
     }
   ]
 }
