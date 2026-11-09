@@ -79040,6 +79040,23 @@
       "technical_analysis": "MACD histogram is positive (+0.12) and MACD line sits above its signal, indicating bullish momentum. Price sits above EMA9, EMA21 and EMA50, confirming uptrend. Order‑book shows a 51% bid imbalance, while ADX at 27 signals a trend. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
       "market_context": "BTC is in a bearish trend on 4H and 1D, down 1.3% over 24h, while the broader market shows a positive breadth",
       "result": "PENDING"
+    },
+    {
+      "id": 4650,
+      "created_at": "2026-11-09T21:01:08.349849+00:00",
+      "symbol": "MUBUSDT",
+      "direction": "SHORT",
+      "title": "Strong Rejection at Trendline Resistance: $MUB Short Entry",
+      "entry_low": 735.0,
+      "entry_high": 744.0,
+      "stop_loss": 765.4,
+      "take_profit": 687.7,
+      "support": 725.65,
+      "resistance": 744.77,
+      "news_line": "",
+      "technical_analysis": "RSI at 67 and stochastic in the high‑80s show overbought conditions. The 1‑hour structure shows resistance near 744.8 and support at 725.7. Order‑book imbalance favors bids, but the overall prevailing signals point to a short bias. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
+      "market_context": "BTC is in a bearish trend on both 4‑hour and daily frames, with price below its 20‑EMA and 50‑EMA, adding downward pressure",
+      "result": "PENDING"
     }
   ]
 }
