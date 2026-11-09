@@ -78955,6 +78955,23 @@
       "technical_analysis": "RSI at 74 and stochastic near 98 place SNXX deep in overbought territory. Combined with moderate ADX around 20, the setup points to further downside. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
       "market_context": "BTC remains in a bearish 4‑hour and daily trend, down about 1.5% today, while overall market breadth is broadly positive (67% green).",
       "result": "PENDING"
+    },
+    {
+      "id": 4645,
+      "created_at": "2026-11-09T18:01:06.325778+00:00",
+      "symbol": "PEPEUSDT",
+      "direction": "LONG",
+      "title": "On-Chain Metrics Confirm Strong Whale Accumulation on $PEPE",
+      "entry_low": 5.23e-06,
+      "entry_high": 5.25e-06,
+      "stop_loss": 5.046e-06,
+      "take_profit": 5.63e-06,
+      "support": 5.02e-06,
+      "resistance": 5.4e-06,
+      "news_line": "",
+      "technical_analysis": "PEPEUSDT sits above its EMA9, EMA21, EMA50 and EMA200, with price at 5.25 µUSDT. RSI at 60.6 and a positive MACD histogram confirm bullish momentum, while the order‑book shows a modest bid‑side imbalance. The pair respects a 1‑hour support around 5.23 µUSDT and faces resistance near 5.27 µUSDT, supporting a long overall bias.",
+      "market_context": "BTC is in a bearish trend on both 4‑hour and daily charts, down 1.31% over 24 h, while the broader market shows",
+      "result": "PENDING"
     }
   ]
 }
