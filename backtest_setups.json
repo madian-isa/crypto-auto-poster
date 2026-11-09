@@ -78819,6 +78819,23 @@
       "technical_analysis": "RSI at 29.9 and Stochastic K near 9 point to oversold conditions, but MACD remains negative with a bearish histogram and ADX above 50 confirms a strong downtrend. Price sits below EMA9‑200 and is trapped between the 1‑hour support 0.6252 and resistance 0.6499, favoring short pressure given current momentum on the chart.",
       "market_context": "BTC remains in a bearish 4‑hour and daily trend, down 2.3% with market breadth showing 78.9% red, underscoring overall negative sentiment.",
       "result": "PENDING"
+    },
+    {
+      "id": 4637,
+      "created_at": "2026-11-09T11:01:03.260525+00:00",
+      "symbol": "BTCUSDT",
+      "direction": "SHORT",
+      "title": "$BTC Rejection at Key Supply Zone: Short Setup Activated",
+      "entry_low": 74090.0,
+      "entry_high": 74100.0,
+      "stop_loss": 76730.0,
+      "take_profit": 68825.0,
+      "support": 73750.0,
+      "resistance": 74742.84,
+      "news_line": "",
+      "technical_analysis": "Short bias dominates: price sits under EMA9, EMA21, EMA50 and EMA200, confirming downtrend. MACD histogram is negative, RSI at 37 and Stochastic K at 28 signal weakening momentum. ADX around 26 shows an established trend. Current order‑book shows a 22.8% bid imbalance, but price action remains constrained. Together, these indicators favor SHORT continuation toward support.",
+      "market_context": "BTC is down 2.37% over 24 h, with market breadth broadly negative (79.5% red, 20.5% green).",
+      "result": "PENDING"
     }
   ]
 }
