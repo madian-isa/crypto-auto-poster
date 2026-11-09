@@ -78666,6 +78666,23 @@
       "technical_analysis": "Price sits on the 1‑hour support of 1.1103 and ADX 42 signals a strong trend. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure. The nearby support and resistance levels frame the current market structure.",
       "market_context": "BTC is down 1.3% on the 4‑hour and daily charts, with bearish EMA20/EMA50 crossovers. Overall market breadth is negative (74.8% red), indicating",
       "result": "PENDING"
+    },
+    {
+      "id": 4628,
+      "created_at": "2026-11-09T05:50:44.977397+00:00",
+      "symbol": "CYBERUSDT",
+      "direction": "SHORT",
+      "title": "$CYBER Lower High Pattern Confirmed: Short Target in View",
+      "entry_low": 0.268,
+      "entry_high": 0.27,
+      "stop_loss": 0.279,
+      "take_profit": 0.249,
+      "support": 0.263,
+      "resistance": 0.281,
+      "news_line": "",
+      "technical_analysis": "The price sits just above the lower Bollinger Band and near the 1H support of 0.263, while order‑book imbalance favors sellers. Short bias is clear. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
+      "market_context": "Bitcoin is in a bearish 4‑hour and daily trend, down 1.6% today, with the broader market showing 81% red. This negative backdrop",
+      "result": "PENDING"
     }
   ]
 }
