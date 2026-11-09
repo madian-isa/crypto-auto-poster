@@ -78785,6 +78785,23 @@
       "technical_analysis": "The supplied indicators show a bearish structure for this market. Together, they favor SHORT continuation, with momentum pointing toward support and resistance framing the current price structure. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
       "market_context": "BTC is in a bearish 4‑hour and daily trend, down 1.8 % over 24 h, and the broader market breadth is broadly",
       "result": "PENDING"
+    },
+    {
+      "id": 4635,
+      "created_at": "2026-11-09T10:10:56.548968+00:00",
+      "symbol": "HYPEUSDT",
+      "direction": "SHORT",
+      "title": "High Conviction Short Opportunity as $HYPE Tests Supply Wall",
+      "entry_low": 73.9,
+      "entry_high": 74.12,
+      "stop_loss": 76.9704,
+      "take_profit": 68.0892,
+      "support": 72.49,
+      "resistance": 77.87,
+      "news_line": "",
+      "technical_analysis": "All major EMAs sit above price, confirming a downtrend. MACD is negative with a bearish histogram, while RSI at 32.7 and Stochastic K below 20 signal oversold but still bearish pressure. ADX at 38.7 shows a strong trend. Order‑book shows a 21% bid imbalance, yet price remains under key resistance, favoring short momentum.",
+      "market_context": "BTC is in a bearish 4‑hour and daily trend, down 2.2% with a broadly negative market breadth (78% red).",
+      "result": "PENDING"
     }
   ]
 }
