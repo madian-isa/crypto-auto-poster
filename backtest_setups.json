@@ -79023,6 +79023,23 @@
       "technical_analysis": "RSI at 55 shows mild bullishness and ADX at 37 confirms a strong trend. With support near 0.1575 and resistance at 0.1591, momentum leans higher, suggesting further upside toward the 1H/4H resistance zone. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
       "market_context": "BTC is bearish on 4H and 1D, down 1.33% today, while overall market breadth is broadly positive (66% green).",
       "result": "PENDING"
+    },
+    {
+      "id": 4649,
+      "created_at": "2026-11-09T20:50:48.741712+00:00",
+      "symbol": "KORUBUSDT",
+      "direction": "LONG",
+      "title": "Bullish Momentum Is Building: Can $KORUB Continue Its Breakout?",
+      "entry_low": 7.56,
+      "entry_high": 7.68,
+      "stop_loss": 7.32,
+      "take_profit": 8.22,
+      "support": 7.02,
+      "resistance": 7.9,
+      "news_line": "",
+      "technical_analysis": "MACD histogram is positive (+0.12) and MACD line sits above its signal, indicating bullish momentum. Price sits above EMA9, EMA21 and EMA50, confirming uptrend. Order‑book shows a 51% bid imbalance, while ADX at 27 signals a trend. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
+      "market_context": "BTC is in a bearish trend on 4H and 1D, down 1.3% over 24h, while the broader market shows a positive breadth",
+      "result": "PENDING"
     }
   ]
 }
