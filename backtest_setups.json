@@ -78564,6 +78564,23 @@
       "technical_analysis": "MACD is below signal with a negative histogram, RSI sits at 37, and Stochastic K/D are in the low 30s, all pointing to downside momentum. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
       "market_context": "BTC is in a bearish trend on both 4‑hour and daily charts, with the broader market showing a largely negative breadth.",
       "result": "PENDING"
+    },
+    {
+      "id": 4622,
+      "created_at": "2026-11-09T02:11:01.580467+00:00",
+      "symbol": "GTCUSDT",
+      "direction": "LONG",
+      "title": "Buyers Defend Key Demand Zone: $GTC Ready for Extension",
+      "entry_low": 0.1805,
+      "entry_high": 0.1825,
+      "stop_loss": 0.1751,
+      "take_profit": 0.1943,
+      "support": 0.18,
+      "resistance": 0.20184,
+      "news_line": "",
+      "technical_analysis": "MACD is bullish with a positive histogram, and price sits above the 9‑, 21‑ and 50‑period EMAs, confirming upward momentum. RSI at 60.5 shows strength without being overbought, while ADX 26.6 signals a firm trend. Order‑book imbalance favors bids. The pair respects a 0.18 support and eyes the 0.1846 resistance.",
+      "market_context": "BTC remains in a bearish 4H and 1D trend, down 0.66% today, and overall crypto market breadth is broadly negative.",
+      "result": "PENDING"
     }
   ]
 }
