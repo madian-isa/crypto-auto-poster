@@ -1,6 +1,6 @@
 {
   "date": "2026-11-09",
-  "count": 21,
+  "count": 22,
   "posted_symbols_today": [
     "ONEUSDT",
     "GNSUSDT",
@@ -22,6 +22,7 @@
     "ASTERUSDT",
     "BTCUSDT",
     "NVDABUSDT",
-    "TSTUSDT"
+    "TSTUSDT",
+    "ARBUSDT"
   ]
 }
