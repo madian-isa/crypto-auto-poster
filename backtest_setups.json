@@ -79091,6 +79091,23 @@
       "technical_analysis": "Price sits above the 9‑, 21‑ and 50‑EMA, while the MACD histogram stays positive and the RSI is at 58, indicating modest buying momentum. ADX above 30 confirms a strong trend, and order‑book imbalance favors bids. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
       "market_context": "BTC is modestly bullish on the daily (+1.28%) but shows bearish trends on 4‑h and daily charts, while overall market breadth is",
       "result": "PENDING"
+    },
+    {
+      "id": 4653,
+      "created_at": "2026-11-09T23:50:58.247111+00:00",
+      "symbol": "AMDBUSDT",
+      "direction": "SHORT",
+      "title": "Bearish Continuation Pattern Confirmed on $AMDB Chart Structure",
+      "entry_low": 510.5,
+      "entry_high": 511.0,
+      "stop_loss": 529.0,
+      "take_profit": 474.25,
+      "support": 509.31,
+      "resistance": 511.09,
+      "news_line": "",
+      "technical_analysis": "ADX at 41 shows a strong trend. However RSI 82 and Stochastic 92 indicate overbought conditions near the 1‑hour resistance 511.09. The indicators favor a currently short pull‑back. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
+      "market_context": "BTC is in a bearish trend on both 4‑hour and daily charts, while the overall market breadth is broadly positive with 83.7%",
+      "result": "PENDING"
     }
   ]
 }
