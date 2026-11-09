@@ -78836,6 +78836,23 @@
       "technical_analysis": "Short bias dominates: price sits under EMA9, EMA21, EMA50 and EMA200, confirming downtrend. MACD histogram is negative, RSI at 37 and Stochastic K at 28 signal weakening momentum. ADX around 26 shows an established trend. Current order‑book shows a 22.8% bid imbalance, but price action remains constrained. Together, these indicators favor SHORT continuation toward support.",
       "market_context": "BTC is down 2.37% over 24 h, with market breadth broadly negative (79.5% red, 20.5% green).",
       "result": "PENDING"
+    },
+    {
+      "id": 4638,
+      "created_at": "2026-11-09T12:21:02.163996+00:00",
+      "symbol": "NVDABUSDT",
+      "direction": "SHORT",
+      "title": "$NVDAB Breaks Ascending Support Line: Bearish Momentum Surge",
+      "entry_low": 177.8,
+      "entry_high": 179.0,
+      "stop_loss": 185.3,
+      "take_profit": 164.6,
+      "support": 175.59,
+      "resistance": 179.57,
+      "news_line": "",
+      "technical_analysis": "MACD sits negative with a bearish histogram, while the price is under EMA9, EMA21, EMA50 and EMA200, confirming a downtrend. ADX at 44 signals a strong trend. RSI and Stochastic are in oversold territory, but the order book shows a 44% bid imbalance. The structure points to short pressure toward the 175.59 support.",
+      "market_context": "BTC remains in a bearish 4‑hour and daily trend, down 1.7% with broadly negative market breadth (69% red).",
+      "result": "PENDING"
     }
   ]
 }
