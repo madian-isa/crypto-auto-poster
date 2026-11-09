@@ -78751,6 +78751,23 @@
       "technical_analysis": "The price sits below the 9‑, 21‑ and 50‑EMA and under the lower Bollinger Band, while RSI at 31 and Stochastic K under 10 signal oversold conditions. However MACD remains negative and the histogram is declining, confirming bearish momentum. The 1H structure shows broken support at 42.09, pointing to further downside toward the 41.32 level.",
       "market_context": "BTC remains in a bearish 4H and 1D trend, down about 2.7%, and the overall market breadth is heavily red (93%).",
       "result": "PENDING"
+    },
+    {
+      "id": 4633,
+      "created_at": "2026-11-09T08:10:55.365402+00:00",
+      "symbol": "NEARUSDT",
+      "direction": "SHORT",
+      "title": "$NEAR Breaks Below Critical Support: Further Drop Expected",
+      "entry_low": 3.52,
+      "entry_high": 3.55,
+      "stop_loss": 3.68,
+      "take_profit": 3.245,
+      "support": 3.446,
+      "resistance": 3.659,
+      "news_line": "",
+      "technical_analysis": "NEAR is trading at $3.48, well beneath the 9‑, 21‑, 50‑ and 200‑EMA, confirming a downtrend. MACD histogram remains negative, and the signal line sits above the MACD line, adding bearish pressure. RSI at 32 and Stochastic K at 13 signal oversold conditions, but momentum stays weak, keeping price near the 1‑hour support of $3.446.",
+      "market_context": "BTC is in a bearish trend on both 4h and daily timeframes, down 2.65% over 24h. The broader market is broadly negative",
+      "result": "PENDING"
     }
   ]
 }
