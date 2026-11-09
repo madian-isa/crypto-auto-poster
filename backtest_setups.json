@@ -79074,6 +79074,23 @@
       "technical_analysis": "The EMA stack (9‑21‑50‑200) sits below price, confirming an uptrend. MACD line sits 0.46 above its signal with a positive histogram, showing bullish momentum. ADX at 30 signals a strong trend. Order‑book shows a 14 % bid‑side imbalance, supporting further upside. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish",
       "market_context": "BTC is in a bearish trend on both 4H and 1D frames, down 1.13% today, while the broader market shows a net",
       "result": "PENDING"
+    },
+    {
+      "id": 4652,
+      "created_at": "2026-11-09T22:40:58.083792+00:00",
+      "symbol": "ONDOUSDT",
+      "direction": "LONG",
+      "title": "Golden Cross Formation Confirmed on $ONDO 4-Hour Timeframe",
+      "entry_low": 0.3726,
+      "entry_high": 0.3732,
+      "stop_loss": 0.3595,
+      "take_profit": 0.3997,
+      "support": 0.3625,
+      "resistance": 0.3901,
+      "news_line": "",
+      "technical_analysis": "Price sits above the 9‑, 21‑ and 50‑EMA, while the MACD histogram stays positive and the RSI is at 58, indicating modest buying momentum. ADX above 30 confirms a strong trend, and order‑book imbalance favors bids. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
+      "market_context": "BTC is modestly bullish on the daily (+1.28%) but shows bearish trends on 4‑h and daily charts, while overall market breadth is",
+      "result": "PENDING"
     }
   ]
 }
