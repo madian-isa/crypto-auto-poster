@@ -79295,6 +79295,23 @@
       "technical_analysis": "A 16.8% order‑book bid imbalance adds buying pressure, and the level at 881.99 acts as a solid near‑term support. Overall momentum points upward in the current setup. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure. The nearby support and resistance levels frame the current market structure.",
       "market_context": "BTC is marginally bullish (+0.63% on 24h) while the overall market shows a broadly positive breadth with 77.6% green assets, indicating favorable",
       "result": "PENDING"
+    },
+    {
+      "id": 4665,
+      "created_at": "2026-11-10T06:01:13.988230+00:00",
+      "symbol": "KORUBUSDT",
+      "direction": "SHORT",
+      "title": "$KORUB Volume Decreases on Rally: Weak Buyers Exposed",
+      "entry_low": 7.78,
+      "entry_high": 7.79,
+      "stop_loss": 8.06,
+      "take_profit": 7.235,
+      "support": 7.25,
+      "resistance": 7.94,
+      "news_line": "",
+      "technical_analysis": "Price sits near the 1H resistance with a bearish MACD histogram, a -47.7% order‑book imbalance, and RSI at 60.4. While short‑term EMAs sit below price, the MACD and order flow signal downside pressure, making a short bias the clearer setup. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
+      "market_context": "BTC remains in a bearish trend on both 4H and 1D charts, while the broader market shows a largely positive breadth.",
+      "result": "PENDING"
     }
   ]
 }
