@@ -79431,6 +79431,23 @@
       "technical_analysis": "MACD histogram is positive and the MACD line sits above its signal, while EMA9 is above EMA21, EMA50 and EMA200, confirming an uptrend. RSI at 57.9 shows modest strength, and a 10% bid‑side order‑book imbalance supports buying pressure. Together these point to bullish momentum near the 5.25 µ support and 5.38 µ resistance.",
       "market_context": "BTC is in a short‑term bearish trend on both 4H and 1D charts, yet the overall crypto market is broadly positive with",
       "result": "PENDING"
+    },
+    {
+      "id": 4673,
+      "created_at": "2026-11-10T12:01:04.407515+00:00",
+      "symbol": "CYBERUSDT",
+      "direction": "SHORT",
+      "title": "$CYBER Resistance Test Fails: Bearish Momentum Building Fast",
+      "entry_low": 0.335,
+      "entry_high": 0.338,
+      "stop_loss": 0.352,
+      "take_profit": 0.3055,
+      "support": 0.292,
+      "resistance": 0.356,
+      "news_line": "",
+      "technical_analysis": "RSI at 80.9 and Stochastic K near 99 signal extreme overbought conditions, while the order‑book shows a 19.5 % sell‑side imbalance. Price sits just below the 1‑hour resistance of 0.356, and the ADX at 18 indicates a weak trend. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
+      "market_context": "BTC is up 2.8% on the day, yet its 4‑hour and daily charts remain bearish. Overall market breadth is broadly positive with",
+      "result": "PENDING"
     }
   ]
 }
