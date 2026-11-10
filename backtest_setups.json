@@ -79346,6 +79346,23 @@
       "technical_analysis": "ADX around 20 signals a weak trend. With support near 3.62 and resistance at 3.73, momentum leans higher overall. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure. The nearby support and resistance levels frame the current market structure.",
       "market_context": "BTC shows a small 0.9% rise today, yet 4‑h and daily trends remain bearish, keeping broader crypto sentiment mixed.",
       "result": "PENDING"
+    },
+    {
+      "id": 4668,
+      "created_at": "2026-11-10T08:00:55.311333+00:00",
+      "symbol": "ACTUSDT",
+      "direction": "LONG",
+      "title": "Critical Resistance Test: $ACT Preparing to Surge Higher",
+      "entry_low": 0.01015,
+      "entry_high": 0.01025,
+      "stop_loss": 0.00984,
+      "take_profit": 0.01092,
+      "support": 0.00976,
+      "resistance": 0.01132,
+      "news_line": "",
+      "technical_analysis": "ACTU sits above its EMA9, EMA21, EMA50 and EMA200, confirming a strong upward bias. RSI at 67.6 and a positive MACD histogram show bullish momentum, while ADX 33 signals a solid trend. Stochastic hovers near 67, and a 25% bid‑side order‑book imbalance adds buying pressure. The price respects the 1 h support at 0.00976 and eyes the 0.01132 resistance.",
+      "market_context": "BTC is up 1.2% on the day, keeping the broader market broadly positive.",
+      "result": "PENDING"
     }
   ]
 }
