@@ -79312,6 +79312,23 @@
       "technical_analysis": "Price sits near the 1H resistance with a bearish MACD histogram, a -47.7% order‑book imbalance, and RSI at 60.4. While short‑term EMAs sit below price, the MACD and order flow signal downside pressure, making a short bias the clearer setup. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
       "market_context": "BTC remains in a bearish trend on both 4H and 1D charts, while the broader market shows a largely positive breadth.",
       "result": "PENDING"
+    },
+    {
+      "id": 4666,
+      "created_at": "2026-11-10T06:51:03.402593+00:00",
+      "symbol": "SIGNUSDT",
+      "direction": "SHORT",
+      "title": "High Volume Selling Sweep Breaks $SIGN Market Structure",
+      "entry_low": 0.0092,
+      "entry_high": 0.00927,
+      "stop_loss": 0.0096,
+      "take_profit": 0.008505,
+      "support": 0.00887,
+      "resistance": 0.00927,
+      "news_line": "",
+      "technical_analysis": "MACD histogram is negative and the line is under its signal, showing downside momentum. ADX at 37 signals a strong trend. Stochastic K/D sit in the low‑10s, suggesting oversold conditions near the 1‑hour support of 0.00887. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
+      "market_context": "BTC is up 0.6% and the broader market is broadly positive, with 83% of assets green.",
+      "result": "PENDING"
     }
   ]
 }
