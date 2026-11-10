@@ -79329,6 +79329,23 @@
       "technical_analysis": "MACD histogram is negative and the line is under its signal, showing downside momentum. ADX at 37 signals a strong trend. Stochastic K/D sit in the low‑10s, suggesting oversold conditions near the 1‑hour support of 0.00887. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
       "market_context": "BTC is up 0.6% and the broader market is broadly positive, with 83% of assets green.",
       "result": "PENDING"
+    },
+    {
+      "id": 4667,
+      "created_at": "2026-11-10T07:40:56.496825+00:00",
+      "symbol": "SNXXBUSDT",
+      "direction": "LONG",
+      "title": "Bullish Divergence Flashed on $SNXXB Daily Chart Structure",
+      "entry_low": 3.65,
+      "entry_high": 3.67,
+      "stop_loss": 3.53,
+      "take_profit": 3.92,
+      "support": 3.62,
+      "resistance": 3.73,
+      "news_line": "",
+      "technical_analysis": "ADX around 20 signals a weak trend. With support near 3.62 and resistance at 3.73, momentum leans higher overall. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure. The nearby support and resistance levels frame the current market structure.",
+      "market_context": "BTC shows a small 0.9% rise today, yet 4‑h and daily trends remain bearish, keeping broader crypto sentiment mixed.",
+      "result": "PENDING"
     }
   ]
 }
