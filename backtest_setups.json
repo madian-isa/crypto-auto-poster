@@ -79176,6 +79176,23 @@
       "technical_analysis": "MACD histogram is negative and the MACD line sits below its signal, while price is under EMA9, EMA21 and EMA50, indicating bearish momentum. The order‑book shows an 18% ask‑side imbalance. With resistance at 0.465 and support near 0.378, the setup favors a short move. Together, these indicators favor SHORT continuation toward support.",
       "market_context": "BTC is marginally up 0.25% on the day, yet 4‑hour and daily charts show bearish trends, reinforcing a broader risk‑off tone for",
       "result": "PENDING"
+    },
+    {
+      "id": 4658,
+      "created_at": "2026-11-10T02:31:02.380925+00:00",
+      "symbol": "HOTUSDT",
+      "direction": "LONG",
+      "title": "Bullish Momentum Accelerates as $HOT Liquidity Sweep Completes",
+      "entry_low": 0.000466,
+      "entry_high": 0.000468,
+      "stop_loss": 0.000449,
+      "take_profit": 0.000503,
+      "support": 0.000438,
+      "resistance": 0.000478,
+      "news_line": "",
+      "technical_analysis": "MACD histogram is positive and the MACD line sits above its signal, confirming bullish momentum. Price trades above the 9, 21, 50 and 200 EMA, reinforcing an uptrend. The pair sits near the 0.00047 resistance, suggesting a near‑term push higher. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
+      "market_context": "Bitcoin remains in a bearish frame on both 4H and 1D charts, while overall market breadth is mixed with a slight tilt",
+      "result": "PENDING"
     }
   ]
 }
