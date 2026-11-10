@@ -79193,6 +79193,23 @@
       "technical_analysis": "MACD histogram is positive and the MACD line sits above its signal, confirming bullish momentum. Price trades above the 9, 21, 50 and 200 EMA, reinforcing an uptrend. The pair sits near the 0.00047 resistance, suggesting a near‑term push higher. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
       "market_context": "Bitcoin remains in a bearish frame on both 4H and 1D charts, while overall market breadth is mixed with a slight tilt",
       "result": "PENDING"
+    },
+    {
+      "id": 4659,
+      "created_at": "2026-11-10T03:00:59.011785+00:00",
+      "symbol": "SOXSBUSDT",
+      "direction": "SHORT",
+      "title": "Technical Signals Turn Negative as $SOXSB Selling Pressure Rises",
+      "entry_low": 55.9,
+      "entry_high": 56.1,
+      "stop_loss": 58.0,
+      "take_profit": 52.0,
+      "support": 54.87,
+      "resistance": 56.44,
+      "news_line": "",
+      "technical_analysis": "RSI at 30.6 and Stochastic K at 15 indicate oversold conditions, yet MACD sits negative (-4.26) with a bearish histogram, and price is under EMA9, EMA21, EMA50 and EMA200. ADX 39 confirms a strong downtrend, and order‑book imbalance shows more sell pressure. The market respects the 56.44 resistance, pointing to short bias.",
+      "market_context": "BTC remains bearish on lower timeframes, down 0.56% over 24h. Market breadth is mixed, with 57.8% green and 42.2% red assets.",
+      "result": "PENDING"
     }
   ]
 }
