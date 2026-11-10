@@ -1,6 +1,6 @@
 {
   "date": "2026-11-10",
-  "count": 33,
+  "count": 34,
   "posted_symbols_today": [
     "SOXLBUSDT",
     "INITUSDT",
@@ -34,6 +34,7 @@
     "UNIUSDT",
     "ENAUSDT",
     "BTCUSDT",
-    "GRAMUSDT"
+    "GRAMUSDT",
+    "XRPUSDT"
   ]
 }
