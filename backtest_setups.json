@@ -79397,6 +79397,23 @@
       "technical_analysis": "Price sits above EMA9, EMA21, EMA50 and EMA200, confirming an upward bias. RSI at 59.7 and Stochastic K/D above 50 show healthy momentum. ADX above 25 signals a solid trend, while order‑book imbalance favors buying. The pair respects the 140.59‑142.25 swing range, supporting a long stance. Together, these indicators favor LONG continuation toward resistance.",
       "market_context": "BTC remains bearish on both 4h and daily frames, yet overall market breadth is broadly positive with 73.4% green assets, indicating selective",
       "result": "PENDING"
+    },
+    {
+      "id": 4671,
+      "created_at": "2026-11-10T10:50:58.946455+00:00",
+      "symbol": "ARBUSDT",
+      "direction": "SHORT",
+      "title": "$ARB Prepares for Breakdown: Downside Risk Escalates",
+      "entry_low": 0.1685,
+      "entry_high": 0.17,
+      "stop_loss": 0.176,
+      "take_profit": 0.15575,
+      "support": 0.1598,
+      "resistance": 0.1703,
+      "news_line": "",
+      "technical_analysis": "Price sits below EMA9, EMA21, EMA50 and EMA200, confirming a bearish structure. MACD histogram is negative, reinforcing downside momentum. RSI at 36.5 and Stochastic K at 11 indicate oversold conditions, while ADX around 20 shows a weak trend. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
+      "market_context": "BTC is marginally bullish with a 0.06% rise, and the broader market is broadly positive (69% green).",
+      "result": "PENDING"
     }
   ]
 }
