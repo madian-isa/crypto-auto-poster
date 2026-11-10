@@ -79210,6 +79210,23 @@
       "technical_analysis": "RSI at 30.6 and Stochastic K at 15 indicate oversold conditions, yet MACD sits negative (-4.26) with a bearish histogram, and price is under EMA9, EMA21, EMA50 and EMA200. ADX 39 confirms a strong downtrend, and order‑book imbalance shows more sell pressure. The market respects the 56.44 resistance, pointing to short bias.",
       "market_context": "BTC remains bearish on lower timeframes, down 0.56% over 24h. Market breadth is mixed, with 57.8% green and 42.2% red assets.",
       "result": "PENDING"
+    },
+    {
+      "id": 4660,
+      "created_at": "2026-11-10T03:50:52.336676+00:00",
+      "symbol": "ZECUSDT",
+      "direction": "SHORT",
+      "title": "Bearish Divergence Spotted on $ZEC: Downside Targets Ahead",
+      "entry_low": 1175.0,
+      "entry_high": 1179.0,
+      "stop_loss": 1219.0,
+      "take_profit": 1093.0,
+      "support": 1142.34,
+      "resistance": 1179.05,
+      "news_line": "",
+      "technical_analysis": "Price sits below EMA9, EMA21, EMA50 and EMA200, confirming a bearish framework. MACD line is under its signal with a negative histogram, while RSI at 34.7 and Stochastic near 18 signal oversold momentum but still trending down. ADX above 30 shows a strong trend. Together, these indicators favor SHORT continuation toward support.",
+      "market_context": "BTC is in a bearish stance on both 4‑hour and daily charts, while overall market breadth stays broadly positive.",
+      "result": "PENDING"
     }
   ]
 }
