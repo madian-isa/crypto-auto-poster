@@ -79465,6 +79465,23 @@
       "technical_analysis": "Short bias dominates: price sits beneath EMA9/21/50/200, confirming a clear downtrend. MACD line remains under its signal with a negative histogram, reinforcing bearish momentum. ADX around 28 signals a firm trend. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
       "market_context": "BTC remains bearish on both 4H and 1D frames, with market breadth showing 58.3% red. The broader crypto market is mixed, adding",
       "result": "PENDING"
+    },
+    {
+      "id": 4675,
+      "created_at": "2026-11-10T13:50:57.026072+00:00",
+      "symbol": "QNTUSDT",
+      "direction": "SHORT",
+      "title": "High Conviction Short Opportunity as $QNT Tests Supply Wall",
+      "entry_low": 188.0,
+      "entry_high": 188.5,
+      "stop_loss": 196.0,
+      "take_profit": 172.75,
+      "support": 179.0,
+      "resistance": 197.0,
+      "news_line": "",
+      "technical_analysis": "Short bias dominates as price sits below EMA9‑200 and MACD line remains under its signal, indicating bearish momentum. Immediate resistance lies around 188.4 on the 1H/4H chart, with support near 179. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
+      "market_context": "BTC is in a bearish trend on both 4H and 1D timeframes, with price under its EMA20/50 levels and overall market breadth",
+      "result": "PENDING"
     }
   ]
 }
