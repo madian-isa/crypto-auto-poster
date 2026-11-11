@@ -80366,6 +80366,23 @@
       "technical_analysis": "RSI at 31.5 and Stochastic K/D near 7/10 signal oversold conditions, while price sits just below the lower Bollinger Band. The order book shows a 40% bid‑side imbalance, and the nearest support sits at 0.1436. These factors collectively point to bullish momentum aiming toward the 0.1538 resistance. Overall, the setup suggests a potential upward swing from current levels.",
       "market_context": "BTC shows a slight 0.13% rise but remains in a bearish trend on 4‑hour and daily charts; overall market breadth is negative",
       "result": "PENDING"
+    },
+    {
+      "id": 4728,
+      "created_at": "2026-11-11T23:31:04.578872+00:00",
+      "symbol": "INJUSDT",
+      "direction": "SHORT",
+      "title": "Bearish Divergence Spotted on $INJ: Downside Targets Ahead",
+      "entry_low": 7.78,
+      "entry_high": 7.84,
+      "stop_loss": 8.09,
+      "take_profit": 7.25,
+      "support": 7.474,
+      "resistance": 8.094,
+      "news_line": "",
+      "technical_analysis": "MACD is below signal with a negative histogram, RSI sits at 36 and Stochastic K is deep in oversold territory at 4.4, all pointing to bearish momentum. Price is under the 9‑, 21‑ and 50‑EMA chain, reinforcing a downtrend. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
+      "market_context": "BTC shows a slight bullish edge, yet the overall market breadth is broadly negative, with most altcoins under pressure.",
+      "result": "PENDING"
     }
   ]
 }
