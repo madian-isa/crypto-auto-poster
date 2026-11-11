@@ -80349,6 +80349,23 @@
       "technical_analysis": "MACD sits below its signal line with a negative histogram, and price is under the EMA9, EMA21 and EMA50, confirming bearish momentum. ADX at 34.5 shows a strong trend, while RSI (38.5) and Stochastic (K 15) remain in oversold territory, supporting a short bias. Together, these indicators favor SHORT continuation toward support.",
       "market_context": "BTC shows a slight bullish 24‑hour move, but the broader market breadth is mixed with a tilt toward red assets. The SPCX/BUSD",
       "result": "PENDING"
+    },
+    {
+      "id": 4727,
+      "created_at": "2026-11-11T23:11:13.642351+00:00",
+      "symbol": "ENAUSDT",
+      "direction": "LONG",
+      "title": "$ENA Breakout Confirmation: Bulls Target Next Supply Zone",
+      "entry_low": 0.144,
+      "entry_high": 0.1455,
+      "stop_loss": 0.1389,
+      "take_profit": 0.15645,
+      "support": 0.1436,
+      "resistance": 0.1538,
+      "news_line": "",
+      "technical_analysis": "RSI at 31.5 and Stochastic K/D near 7/10 signal oversold conditions, while price sits just below the lower Bollinger Band. The order book shows a 40% bid‑side imbalance, and the nearest support sits at 0.1436. These factors collectively point to bullish momentum aiming toward the 0.1538 resistance. Overall, the setup suggests a potential upward swing from current levels.",
+      "market_context": "BTC shows a slight 0.13% rise but remains in a bearish trend on 4‑hour and daily charts; overall market breadth is negative",
+      "result": "PENDING"
     }
   ]
 }
