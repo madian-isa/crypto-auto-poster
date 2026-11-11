@@ -80128,6 +80128,23 @@
       "technical_analysis": "Price sits above the 9, 21 and 50 EMA, while the MACD line stays above its signal and the histogram is positive, confirming bullish momentum. RSI at 67 and a strong ADX (37) show a firm uptrend, and the order‑book shows a 21% bid‑side imbalance supporting the upside. Together, these indicators favor LONG continuation toward resistance.",
       "market_context": "BTC remains in a bearish trend on both 4H and 1D frames, with price around $73,678 and EMA20/50 below price, echoing broader",
       "result": "PENDING"
+    },
+    {
+      "id": 4714,
+      "created_at": "2026-11-11T15:10:59.947802+00:00",
+      "symbol": "OPGUSDT",
+      "direction": "SHORT",
+      "title": "$OPG Lower High Pattern Confirmed: Short Target in View",
+      "entry_low": 0.149,
+      "entry_high": 0.1493,
+      "stop_loss": 0.1549,
+      "take_profit": 0.13765,
+      "support": 0.1266,
+      "resistance": 0.1549,
+      "news_line": "",
+      "technical_analysis": "Indicators point to a short bias. RSI at 85.7 and Stochastic K at 97 signal extreme overbought conditions. The order‑book shows a –46% imbalance, indicating more sell pressure. Price sits above the Bollinger upper band and just below the 24‑hour high, suggesting a likely pull‑back toward the 0.1394 support zone.",
+      "market_context": "BTC remains in a bearish trend on both 4‑hour and daily charts, down 1.4% with broadly negative market breadth, reinforcing downside sentiment",
+      "result": "PENDING"
     }
   ]
 }
