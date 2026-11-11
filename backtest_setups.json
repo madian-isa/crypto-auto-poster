@@ -80026,6 +80026,23 @@
       "technical_analysis": "Stochastic sits near 72, while order‑book shows a –26.6 % imbalance favoring asks. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
       "market_context": "BTC is in a bearish 4‑hour and daily trend, down 0.6 % over 24 h, and the broader market shows a 64",
       "result": "PENDING"
+    },
+    {
+      "id": 4708,
+      "created_at": "2026-11-11T10:40:49.464077+00:00",
+      "symbol": "SOXSBUSDT",
+      "direction": "SHORT",
+      "title": "$SOXSB Rejection at Key Supply Zone: Short Setup Activated",
+      "entry_low": 47.5,
+      "entry_high": 47.7,
+      "stop_loss": 49.3,
+      "take_profit": 44.2,
+      "support": 47.28,
+      "resistance": 57.41,
+      "news_line": "",
+      "technical_analysis": "RSI at 30 and Stochastic K near 0.1 signal deep oversold conditions, while MACD remains negative with a bearish histogram. ADX above 39 confirms a strong trend, and price sits below EMA9, EMA21, EMA50 and EMA200, reinforcing downward momentum. The setup points to short pressure near the 1H support zone.",
+      "market_context": "BTC remains in a bearish 4H and 1D trend, echoing the overall market weakness.",
+      "result": "PENDING"
     }
   ]
 }
