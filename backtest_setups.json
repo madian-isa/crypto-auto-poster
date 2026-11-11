@@ -79890,6 +79890,23 @@
       "technical_analysis": "SOL sits below all short‑term EMAs, with EMA9 at 83.18 and EMA200 at 89.47, confirming a downtrend. RSI at 36 and stochastic under 50 signal weak momentum, while ADX 35 shows a strong trend. The pair respects the 1H support at 82.61 and faces resistance near 83.68. Together, these indicators favor SHORT continuation toward support.",
       "market_context": "BTC remains bearish on 4H and 1D charts, trading around $73,790 below its EMA20 and EMA50, while the broader market is broadly",
       "result": "PENDING"
+    },
+    {
+      "id": 4700,
+      "created_at": "2026-11-11T05:50:58.044726+00:00",
+      "symbol": "ACTUSDT",
+      "direction": "SHORT",
+      "title": "$ACT Distribution Phase Ends: Downside Target Zone Set",
+      "entry_low": 0.00955,
+      "entry_high": 0.00965,
+      "stop_loss": 0.00995,
+      "take_profit": 0.0089,
+      "support": 0.00928,
+      "resistance": 0.00953,
+      "news_line": "",
+      "technical_analysis": "MACD is negative with the histogram below zero and the signal line positive, while price sits under all short‑term EMAs (9, 21, 50) indicating bearish momentum. RSI at 41 and ADX around 21 show weak but still down‑trend pressure. The price is testing the 0.00966 resistance, supporting a short bias on the chart.",
+      "market_context": "BTC is in a bearish 4‑hour and daily trend, down 1.4% today, with market breadth broadly negative.",
+      "result": "PENDING"
     }
   ]
 }
