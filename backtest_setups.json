@@ -79992,6 +79992,23 @@
       "technical_analysis": "MACD is bullish with the line 10.8 above its 5.94 signal and a positive 4.86 histogram. RSI at 65.6 and a strong ADX of 30.5 confirm solid momentum, while the order‑book shows a 13% bid‑side imbalance. The nearest support sits near 898, offering a clear base for Together, these indicators favor LONG continuation toward resistance.",
       "market_context": "BTC is in a bearish 4‑h and daily trend, down about 0.9% with a broadly negative market breadth.",
       "result": "PENDING"
+    },
+    {
+      "id": 4706,
+      "created_at": "2026-11-11T09:51:00.701222+00:00",
+      "symbol": "GRAMUSDT",
+      "direction": "LONG",
+      "title": "$GRAM Buying Pressure Rises as Bulls Test Key Resistance",
+      "entry_low": 1.145,
+      "entry_high": 1.15,
+      "stop_loss": 1.107,
+      "take_profit": 1.2285,
+      "support": 1.127,
+      "resistance": 1.18,
+      "news_line": "",
+      "technical_analysis": "The price sits above EMA9, EMA21, EMA50 and EMA200, while the MACD line is slightly above its signal and the histogram stays positive. ADX at 48.6 shows a strong trend and RSI at 67.4 indicates bullish momentum. Stochastic K around 76 is high but price remains below the upper Bollinger band, supporting a long bias.",
+      "market_context": "BTC is bearish on 4h and 1d timeframes, down about 1% in 24h, and the overall crypto market is broadly negative.",
+      "result": "PENDING"
     }
   ]
 }
