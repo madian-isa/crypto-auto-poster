@@ -79873,6 +79873,23 @@
       "technical_analysis": "The MACD line has crossed above its signal, the stochastic is in bullish territory (K 62 > D 50), and the RSI is near 41, while ADX 31 confirms a strong trend. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
       "market_context": "BTC remains in a bearish 4H and 1D trend, down 1.04% over 24 h, keeping broader market pressure on risk assets.",
       "result": "PENDING"
+    },
+    {
+      "id": 4699,
+      "created_at": "2026-11-11T05:30:54.146724+00:00",
+      "symbol": "SOLUSDT",
+      "direction": "SHORT",
+      "title": "Bears Retake Control as $SOL Fails to Hold Moving Averages",
+      "entry_low": 83.05,
+      "entry_high": 83.68,
+      "stop_loss": 86.58,
+      "take_profit": 76.935,
+      "support": 82.61,
+      "resistance": 83.68,
+      "news_line": "",
+      "technical_analysis": "SOL sits below all short‑term EMAs, with EMA9 at 83.18 and EMA200 at 89.47, confirming a downtrend. RSI at 36 and stochastic under 50 signal weak momentum, while ADX 35 shows a strong trend. The pair respects the 1H support at 82.61 and faces resistance near 83.68. Together, these indicators favor SHORT continuation toward support.",
+      "market_context": "BTC remains bearish on 4H and 1D charts, trading around $73,790 below its EMA20 and EMA50, while the broader market is broadly",
+      "result": "PENDING"
     }
   ]
 }
