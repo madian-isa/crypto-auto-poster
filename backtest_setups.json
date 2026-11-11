@@ -80145,6 +80145,23 @@
       "technical_analysis": "Indicators point to a short bias. RSI at 85.7 and Stochastic K at 97 signal extreme overbought conditions. The order‑book shows a –46% imbalance, indicating more sell pressure. Price sits above the Bollinger upper band and just below the 24‑hour high, suggesting a likely pull‑back toward the 0.1394 support zone.",
       "market_context": "BTC remains in a bearish trend on both 4‑hour and daily charts, down 1.4% with broadly negative market breadth, reinforcing downside sentiment",
       "result": "PENDING"
+    },
+    {
+      "id": 4715,
+      "created_at": "2026-11-11T15:40:55.914356+00:00",
+      "symbol": "CRWVBUSDT",
+      "direction": "SHORT",
+      "title": "Bears Retake Control as $CRWVB Fails to Hold Moving Averages",
+      "entry_low": 57.0,
+      "entry_high": 57.2,
+      "stop_loss": 59.1,
+      "take_profit": 53.1,
+      "support": 55.72,
+      "resistance": 59.64,
+      "news_line": "",
+      "technical_analysis": "The price sits just below the 1‑hour resistance at 57.22. EMA9‑200 remain below price, but the overbought momentum and order‑book imbalance tilt the setup toward a short swing overall trend. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
+      "market_context": "BTC is in a bullish 24‑hour move while the broader market shows a broadly positive breadth, with 79% of assets green.",
+      "result": "PENDING"
     }
   ]
 }
