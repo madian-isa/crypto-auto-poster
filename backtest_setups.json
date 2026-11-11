@@ -80111,6 +80111,23 @@
       "technical_analysis": "However, price sits below the EMA200 and near the 1H resistance at 3.765, while ADX is weak, suggesting the broader bias leans bearish. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
       "market_context": "BTC is in a bearish trend on both 4H and 1D frames, with a 0.6% 24h decline and overall market breadth showing",
       "result": "PENDING"
+    },
+    {
+      "id": 4713,
+      "created_at": "2026-11-11T14:11:09.089894+00:00",
+      "symbol": "SNXXBUSDT",
+      "direction": "LONG",
+      "title": "$SNXXB Breaks Out of Falling Wedge Pattern: Targets Set Higher",
+      "entry_low": 4.0,
+      "entry_high": 4.04,
+      "stop_loss": 3.86,
+      "take_profit": 4.34,
+      "support": 4.0,
+      "resistance": 4.07,
+      "news_line": "",
+      "technical_analysis": "Price sits above the 9, 21 and 50 EMA, while the MACD line stays above its signal and the histogram is positive, confirming bullish momentum. RSI at 67 and a strong ADX (37) show a firm uptrend, and the order‑book shows a 21% bid‑side imbalance supporting the upside. Together, these indicators favor LONG continuation toward resistance.",
+      "market_context": "BTC remains in a bearish trend on both 4H and 1D frames, with price around $73,678 and EMA20/50 below price, echoing broader",
+      "result": "PENDING"
     }
   ]
 }
