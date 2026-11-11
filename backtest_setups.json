@@ -80213,6 +80213,23 @@
       "technical_analysis": "RSI at 78.9 and Stochastic K at 98 show extreme overbought conditions, while price sits just above the Bollinger upper band and near the 64.05 resistance. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
       "market_context": "BTC is up 1.78% in 24h, keeping the broader market broadly positive, though the INTC pair shows its own overbought pressure.",
       "result": "PENDING"
+    },
+    {
+      "id": 4719,
+      "created_at": "2026-11-11T17:21:02.677933+00:00",
+      "symbol": "SKHYBUSDT",
+      "direction": "LONG",
+      "title": "$SKHYB Volume Expansion Signals High Conviction Upward Move",
+      "entry_low": 145.2,
+      "entry_high": 145.4,
+      "stop_loss": 140.0,
+      "take_profit": 155.9,
+      "support": 138.03,
+      "resistance": 145.81,
+      "news_line": "",
+      "technical_analysis": "MACD line sits above its signal with a positive histogram, confirming bullish momentum. All EMA averages (9,21,50,200) lie below price, indicating an uptrend. ADX at 40 shows a strong trend. Although RSI and Stochastic are overbought, the momentum remains aggressive, supporting a long bias and potential near the 145.81 resistance.",
+      "market_context": "BTC is up 2.0% on the day while its 4‑hour and daily trends remain bearish. The broader market is broadly positive, with",
+      "result": "PENDING"
     }
   ]
 }
