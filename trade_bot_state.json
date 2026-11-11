@@ -1,6 +1,6 @@
 {
   "date": "2026-11-11",
-  "count": 36,
+  "count": 37,
   "posted_symbols_today": [
     "INITUSDT",
     "ONEUSDT",
@@ -37,6 +37,7 @@
     "BEBUSDT",
     "AVAXUSDT",
     "BTCUSDT",
-    "BNBUSDT"
+    "BNBUSDT",
+    "SPCXBUSDT"
   ]
 }
