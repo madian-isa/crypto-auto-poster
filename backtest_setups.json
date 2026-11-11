@@ -80077,6 +80077,23 @@
       "technical_analysis": "All three momentum tools point down: RSI at 72, Stochastic K at 96, and a -59.7% order‑book imbalance show sellers dominating. Price sits just below the upper Bollinger band and the 8.44 resistance, while ADX 32 confirms a strong move. EMA9 still sits above price, hinting at a corrective dip.",
       "market_context": "BTC is bearish on 4‑hour and daily charts, down 0.24% in 24 h, and the broader crypto market shows 59.1% red assets",
       "result": "PENDING"
+    },
+    {
+      "id": 4711,
+      "created_at": "2026-11-11T12:21:02.118177+00:00",
+      "symbol": "CYBERUSDT",
+      "direction": "SHORT",
+      "title": "Technical Signals Turn Negative as $CYBER Selling Pressure Rises",
+      "entry_low": 0.268,
+      "entry_high": 0.269,
+      "stop_loss": 0.279,
+      "take_profit": 0.2475,
+      "support": 0.263,
+      "resistance": 0.269,
+      "news_line": "",
+      "technical_analysis": "CYBER is trading below its 9, 21, 50 and 200 EMA, indicating bearish bias. MACD is negative and under its signal line, while the histogram stays below zero. RSI sits at 44, and Stochastic K is in the 16 zone, showing weak momentum. Order‑book imbalance favors asks, supporting a short outlook.",
+      "market_context": "BTC remains in a bearish 4‑hour and daily trend, down 0.43% and trading below its EMA20 and EMA50 on both timeframes. The",
+      "result": "PENDING"
     }
   ]
 }
