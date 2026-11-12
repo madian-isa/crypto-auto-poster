@@ -80808,6 +80808,23 @@
       "technical_analysis": "Short bias dominates ZEC. Price sits under EMA9, EMA21, EMA50 and EMA200, confirming a downtrend. MACD histogram is negative and diverging from price, while RSI at 35 and Stochastic K at 21 signal oversold momentum fading. Order‑book shows a 20% ask‑side imbalance, reinforcing bearish pressure near the 988.6 resistance level.",
       "market_context": "BTC remains in a bearish 4‑hour and daily trend, with price below both EMA20 and EMA50, while the broader market is broadly",
       "result": "PENDING"
+    },
+    {
+      "id": 4754,
+      "created_at": "2026-11-12T18:01:02.734495+00:00",
+      "symbol": "DODOUSDT",
+      "direction": "SHORT",
+      "title": "$DODO Breaks Ascending Support Line: Bearish Momentum Surge",
+      "entry_low": 0.0281,
+      "entry_high": 0.0282,
+      "stop_loss": 0.02914,
+      "take_profit": 0.02617,
+      "support": 0.02314,
+      "resistance": 0.02829,
+      "news_line": "",
+      "technical_analysis": "RSI at 91 and Stochastic K near 100 place DODO deep in overbought territory, while price sits above the Bollinger upper band and just shy of the 1‑hour resistance at 0.02829. These cues tilt the setup toward a short bias. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
+      "market_context": "BTC remains in a bearish 4‑hour and daily trend, down about 3.5% with market breadth strongly negative, reinforcing the downside bias for",
+      "result": "PENDING"
     }
   ]
 }
