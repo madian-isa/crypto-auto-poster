@@ -80417,6 +80417,23 @@
       "technical_analysis": "RSI at 32.8 and stochastic K at 5.2 signal oversold conditions, while price sits just above the 1‑hour support of 0.001444. Weakening volume and slight ask‑side imbalance may limit the rise but fit the swing structure. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
       "market_context": "BTC posted a modest 0.64% rise, yet the broader market remains broadly negative with 68.1% red assets.",
       "result": "PENDING"
+    },
+    {
+      "id": 4731,
+      "created_at": "2026-11-12T01:20:57.021407+00:00",
+      "symbol": "PEPEUSDT",
+      "direction": "SHORT",
+      "title": "$PEPE Rejection at Key Supply Zone: Short Setup Activated",
+      "entry_low": 5e-06,
+      "entry_high": 5.04e-06,
+      "stop_loss": 5.24e-06,
+      "take_profit": 4.58e-06,
+      "support": 4.5e-06,
+      "resistance": 5.04e-06,
+      "news_line": "",
+      "technical_analysis": "RSI at 21.6 and Stochastic K near 11 signal deep oversold, yet price sits below the 9‑, 21‑ and 50‑EMA, and MACD line is negative with a bearish histogram. ADX above 40 confirms a strong trend. The pair is testing the 5.04 µ USDT resistance, suggesting short pressure and may move lower toward the 4.5 µ support.",
+      "market_context": "BTC remains in a bearish 4h and daily trend despite a modest 0.26 % bullish 24 h move, and overall market breadth",
+      "result": "PENDING"
     }
   ]
 }
