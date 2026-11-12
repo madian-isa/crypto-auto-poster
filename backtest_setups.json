@@ -80485,6 +80485,23 @@
       "technical_analysis": "MACD histogram is negative and below its signal line, while the price sits under the 9‑EMA, indicating short‑term bearish pressure. RSI at 56 shows neutral momentum, and ADX above 30 confirms a strong trend. Stochastic below 50 supports downside bias. With resistance near 961.6, the setup leans short. Together, these indicators favor SHORT continuation toward support.",
       "market_context": "BTC remains in a bearish 4‑hour and daily trend while the broader market shows a largely negative breadth, adding pressure to risk",
       "result": "PENDING"
+    },
+    {
+      "id": 4735,
+      "created_at": "2026-11-12T03:01:10.338788+00:00",
+      "symbol": "INJUSDT",
+      "direction": "SHORT",
+      "title": "$INJ Breaks Below Critical Support: Further Drop Expected",
+      "entry_low": 7.52,
+      "entry_high": 7.54,
+      "stop_loss": 7.81,
+      "take_profit": 6.97,
+      "support": 7.463,
+      "resistance": 7.54,
+      "news_line": "",
+      "technical_analysis": "Technical indicators point to downside pressure. Price sits beneath the 9‑, 21‑, 50‑and 200‑EMA, while MACD remains negative and below its signal line. RSI at 32 and Stochastic under 20 signal oversold conditions, yet the bearish EMA alignment dominates. The 1‑hour support sits at 7.463, with resistance near 7.54 level.",
+      "market_context": "BTC shows a modest 0.26% bullish move, yet the broader market remains broadly negative with 72% red assets.",
+      "result": "PENDING"
     }
   ]
 }
