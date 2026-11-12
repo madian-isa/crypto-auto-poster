@@ -80842,6 +80842,23 @@
       "technical_analysis": "RSI at 25 and Stochastic K near 20 signal deep oversold conditions, yet price sits below EMA9, EMA21, EMA50 and EMA200, confirming bearish bias. MACD histogram is negative and ADX at 36.6 shows a strong trend. The order book shows a 24% ask‑side imbalance. Immediate resistance sits near 74,000, supporting a short outlook.",
       "market_context": "BTC fell 3.9% over 24 h, the market breadth is broadly negative with 87% of assets in red, indicating bearish overall sentiment.",
       "result": "PENDING"
+    },
+    {
+      "id": 4756,
+      "created_at": "2026-11-12T19:50:53.969286+00:00",
+      "symbol": "SOLUSDT",
+      "direction": "SHORT",
+      "title": "$SOL Open Interest Drops Rapidly: Long Squeeze Underway",
+      "entry_low": 81.8,
+      "entry_high": 82.2,
+      "stop_loss": 84.9,
+      "take_profit": 76.2,
+      "support": 81.34,
+      "resistance": 82.26,
+      "news_line": "",
+      "technical_analysis": "Price sits below EMA9/21/50/200, MACD histogram is negative and RSI at 36 signals weakening momentum. ADX above 35 confirms a strong downtrend, while stochastic stays under 40. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
+      "market_context": "BTC is in a bearish trend on both 4H and 1D frames, and the broader crypto market is broadly negative with 85%",
+      "result": "PENDING"
     }
   ]
 }
