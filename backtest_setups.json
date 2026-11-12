@@ -80468,6 +80468,23 @@
       "technical_analysis": "MACD is bearish with the line under the signal and a negative histogram, while ADX at 37 shows a strong trend. RSI at 55 is neutral and order‑book imbalance of –26.8% adds sell pressure, favoring a short bias. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
       "market_context": "BTC remains in a bearish alignment on 4‑hour and daily charts, though the 24‑hour change is slightly positive. Overall market breadth is",
       "result": "PENDING"
+    },
+    {
+      "id": 4734,
+      "created_at": "2026-11-12T02:50:57.209993+00:00",
+      "symbol": "SNDKBUSDT",
+      "direction": "SHORT",
+      "title": "Panic Selling Risk Increases as $SNDKB Tests Critical Floor",
+      "entry_low": 960.5,
+      "entry_high": 961.5,
+      "stop_loss": 999.44,
+      "take_profit": 884.12,
+      "support": 946.25,
+      "resistance": 1011.14,
+      "news_line": "",
+      "technical_analysis": "MACD histogram is negative and below its signal line, while the price sits under the 9‑EMA, indicating short‑term bearish pressure. RSI at 56 shows neutral momentum, and ADX above 30 confirms a strong trend. Stochastic below 50 supports downside bias. With resistance near 961.6, the setup leans short. Together, these indicators favor SHORT continuation toward support.",
+      "market_context": "BTC remains in a bearish 4‑hour and daily trend while the broader market shows a largely negative breadth, adding pressure to risk",
+      "result": "PENDING"
     }
   ]
 }
