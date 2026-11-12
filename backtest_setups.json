@@ -80757,6 +80757,23 @@
       "technical_analysis": "RSI at 23 and Stochastic K under 17 signal heavy oversold conditions, while MACD sits negative below its signal line. ADX above 40 confirms a strong downtrend. Price sits beneath the 9‑, 21‑ and 50‑EMA cluster and just under the lower Bollinger band. Combined with bearish BTC momentum, the indicators favor a short bias.",
       "market_context": "BTC is in a bearish 4h and daily trend, down ~3.5%, and the broader market is broadly negative with 91% red assets.",
       "result": "PENDING"
+    },
+    {
+      "id": 4751,
+      "created_at": "2026-11-12T16:10:46.545108+00:00",
+      "symbol": "ARBUSDT",
+      "direction": "SHORT",
+      "title": "$ARB Open Interest Drops Rapidly: Long Squeeze Underway",
+      "entry_low": 0.1465,
+      "entry_high": 0.1497,
+      "stop_loss": 0.155,
+      "take_profit": 0.1343,
+      "support": 0.1424,
+      "resistance": 0.1497,
+      "news_line": "",
+      "technical_analysis": "RSI at 29.7 signals oversold conditions, yet price sits below EMA9, EMA21 and EMA50, confirming a bearish bias. MACD remains negative with a shrinking histogram, and ADX near 50 shows a strong trend. Order‑book imbalance favors bids, but the dominant signals point to further downside toward the 0.1424 support. Together, these indicators favor SHORT continuation toward support.",
+      "market_context": "BTC is in a bearish 4‑hour and daily trend, down about 2.7%, and the broader market is broadly negative with 86% red",
+      "result": "PENDING"
     }
   ]
 }
