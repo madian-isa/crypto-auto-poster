@@ -80655,6 +80655,23 @@
       "technical_analysis": "Price sits above the 9‑ and 21‑EMA and comfortably over the 50‑EMA, confirming an upward bias. RSI at 52.5 and a bullish order‑book imbalance (48% bid pressure) support buying momentum, while ADX 33 signals a strong trend. Despite a negative MACD histogram, the EMA alignment and order‑book pressure favor a long stance near the 0.1362 support zone.",
       "market_context": "BTC is in a bearish 4H and 1D trend, down 0.35% with broadly negative market sentiment (74.3% red).",
       "result": "PENDING"
+    },
+    {
+      "id": 4745,
+      "created_at": "2026-11-12T10:40:50.439519+00:00",
+      "symbol": "AAVEUSDT",
+      "direction": "SHORT",
+      "title": "$AAVE Volume Decreases on Rally: Weak Buyers Exposed",
+      "entry_low": 117.0,
+      "entry_high": 117.36,
+      "stop_loss": 121.5,
+      "take_profit": 108.54,
+      "support": 116.52,
+      "resistance": 125.16,
+      "news_line": "",
+      "technical_analysis": "All key indicators point bearish. Price sits under EMA9, EMA21, EMA50 and EMA200, confirming a downtrend. MACD is negative and its histogram widens, while ADX at 45 signals a strong trend. Resistance sits around 117.3, with support near 116.5. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
+      "market_context": "BTC remains in a bearish 4‑hour and daily trend, and the overall market breadth is broadly negative.",
+      "result": "PENDING"
     }
   ]
 }
