@@ -81522,6 +81522,23 @@
       "technical_analysis": "Price sits below the 9‑, 21‑, 50‑ and 200‑EMA, confirming a downtrend. ADX at 20 indicates a weak trend. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
       "market_context": "BTC remains in a bearish 4‑hour and daily trend, down about 4.6% with EMA20 below price, reflecting broader market weakness.",
       "result": "PENDING"
+    },
+    {
+      "id": 4796,
+      "created_at": "2026-11-13T22:11:06.704716+00:00",
+      "symbol": "TIAUSDT",
+      "direction": "SHORT",
+      "title": "$TIA Rejection at Key Supply Zone: Short Setup Activated",
+      "entry_low": 0.3985,
+      "entry_high": 0.401,
+      "stop_loss": 0.415,
+      "take_profit": 0.36925,
+      "support": 0.3917,
+      "resistance": 0.405,
+      "news_line": "",
+      "technical_analysis": "Price sits below all EMAs (9‑200) indicating bearish bias. MACD line remains under its signal with a negative histogram, while RSI at 36.7 and Stochastic K at 14.8 show weakening momentum. ADX around 21 signals a soft trend, and order‑book imbalance favors bids near the 0.405 resistance, supporting a short outlook.",
+      "market_context": "BTC is in a bearish 4‑hour and daily trend, down 4.5% today, with market breadth broadly negative (78.6% red).",
+      "result": "PENDING"
     }
   ]
 }
