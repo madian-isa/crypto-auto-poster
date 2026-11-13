@@ -81369,6 +81369,23 @@
       "technical_analysis": "Indicators point to upward momentum. MACD line sits above its signal with a solid positive histogram, EMA9‑21‑50‑200 are all below price, and ADX above 50 confirms a strong trend. Although RSI and Stoch are in overbought territory, order‑book pressure and a clear bullish EMA stack keep bias long toward the 0.026 resistance.",
       "market_context": "BTC remains in a bearish trend on both 4H and 1D frames, while overall market breadth is mixed with slightly more red",
       "result": "PENDING"
+    },
+    {
+      "id": 4787,
+      "created_at": "2026-11-13T16:10:51.311312+00:00",
+      "symbol": "SOXSBUSDT",
+      "direction": "SHORT",
+      "title": "$SOXSB Breaks Below Critical Support: Further Drop Expected",
+      "entry_low": 53.6,
+      "entry_high": 53.8,
+      "stop_loss": 55.848,
+      "take_profit": 49.404,
+      "support": 46.66,
+      "resistance": 54.95,
+      "news_line": "",
+      "technical_analysis": "Price sits above the upper Bollinger band and near the 1H/4H resistance of 54.95, suggesting downside pressure. The short‑term EMAs are below price, yet the EMA200 remains higher, reinforcing a potential pullback. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
+      "market_context": "BTC is in a bearish trend on both 4H and 1D, with a 4.7% drop and overall market breadth broadly negative.",
+      "result": "PENDING"
     }
   ]
 }
