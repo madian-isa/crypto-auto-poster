@@ -81471,6 +81471,23 @@
       "technical_analysis": "MACD shows a strong positive histogram (0.83) with the line well above its signal, indicating bullish momentum. Stochastic remains overbought but still rising, supporting a near‑term long bias and overall trend suggests further upside if price holds above support. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
       "market_context": "Bitcoin remains in a bearish trend on both 4‑hour and daily charts, down 3.7% over 24 h, while overall crypto market shows",
       "result": "PENDING"
+    },
+    {
+      "id": 4793,
+      "created_at": "2026-11-13T20:01:01.639962+00:00",
+      "symbol": "GUNUSDT",
+      "direction": "LONG",
+      "title": "Golden Cross Formation Confirmed on $GUN 4-Hour Timeframe",
+      "entry_low": 0.001702,
+      "entry_high": 0.00175,
+      "stop_loss": 0.00164,
+      "take_profit": 0.001898,
+      "support": 0.001702,
+      "resistance": 0.002072,
+      "news_line": "",
+      "technical_analysis": "MACD histogram is positive and MACD line sits above its signal, confirming bullish momentum. RSI is overbought at 85, but the order‑book shows a 16 % bid imbalance and price remains under the 4‑hour resistance at 0.002072, supporting a long bias. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish",
+      "market_context": "BTC is in a bearish 4‑hour and daily trend, down about 3.7 % over 24 h, while overall market breadth is slightly",
+      "result": "PENDING"
     }
   ]
 }
