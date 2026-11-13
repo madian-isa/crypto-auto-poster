@@ -81267,6 +81267,23 @@
       "technical_analysis": "Price sits above the 9‑, 21‑, 50‑ and 200‑EMA, confirming a clear uptrend. With support around 65.6 and resistance near 66.0, momentum tilts bullish. Volume has slipped, suggesting caution, but order‑book imbalance is small. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
       "market_context": "BTC is in a bearish 4H and daily trend, down 4.8% on the day, while the broader market shows a mixed breadth",
       "result": "PENDING"
+    },
+    {
+      "id": 4781,
+      "created_at": "2026-11-13T12:10:55.005052+00:00",
+      "symbol": "HYPEUSDT",
+      "direction": "LONG",
+      "title": "$HYPE Breakout Confirmation: Bulls Target Next Supply Zone",
+      "entry_low": 72.5,
+      "entry_high": 73.0,
+      "stop_loss": 70.0,
+      "take_profit": 78.25,
+      "support": 72.3,
+      "resistance": 74.4,
+      "news_line": "",
+      "technical_analysis": "MACD histogram is strongly positive and the price sits above the 9‑, 21‑ and 50‑EMA, indicating bullish momentum. RSI at 63 and a large bid‑side order‑book imbalance reinforce the upside bias, while the price is holding just below the 1H resistance of 74.4. Together, these indicators favor LONG continuation toward resistance.",
+      "market_context": "BTC is in a bearish trend on both 4H and 1D charts, with the broader market showing a mixed breadth (48.8% green",
+      "result": "PENDING"
     }
   ]
 }
