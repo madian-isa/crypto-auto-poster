@@ -81284,6 +81284,23 @@
       "technical_analysis": "MACD histogram is strongly positive and the price sits above the 9‑, 21‑ and 50‑EMA, indicating bullish momentum. RSI at 63 and a large bid‑side order‑book imbalance reinforce the upside bias, while the price is holding just below the 1H resistance of 74.4. Together, these indicators favor LONG continuation toward resistance.",
       "market_context": "BTC is in a bearish trend on both 4H and 1D charts, with the broader market showing a mixed breadth (48.8% green",
       "result": "PENDING"
+    },
+    {
+      "id": 4782,
+      "created_at": "2026-11-13T13:51:02.721931+00:00",
+      "symbol": "INJUSDT",
+      "direction": "LONG",
+      "title": "Bullish Divergence Flashed on $INJ Daily Chart Structure",
+      "entry_low": 7.86,
+      "entry_high": 7.88,
+      "stop_loss": 7.5552,
+      "take_profit": 8.4996,
+      "support": 7.856,
+      "resistance": 8.295,
+      "news_line": "",
+      "technical_analysis": "INJ is trading above its EMA9, EMA21 and EMA200, showing a clear bullish hierarchy. MACD is positive with a rising histogram, while RSI at 68.6 and Stochastic near 92 confirm strong upward momentum. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
+      "market_context": "BTC is in a 4‑hour and daily bearish trend, down about 3.9% today, while overall market breadth remains broadly positive (≈75% green).",
+      "result": "PENDING"
     }
   ]
 }
