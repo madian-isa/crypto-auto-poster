@@ -1,6 +1,6 @@
 {
   "date": "2026-11-13",
-  "count": 35,
+  "count": 36,
   "posted_symbols_today": [
     "BARDUSDT",
     "DODOUSDT",
@@ -36,6 +36,7 @@
     "STOUSDT",
     "ENAUSDT",
     "TIAUSDT",
-    "XRPUSDT"
+    "XRPUSDT",
+    "BERAUSDT"
   ]
 }
