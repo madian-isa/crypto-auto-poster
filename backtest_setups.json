@@ -81097,6 +81097,23 @@
       "technical_analysis": "The supplied indicators show a bullish structure for this market. Together, they favor LONG continuation, with momentum pointing toward resistance and support framing the current price structure. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure. The nearby support and resistance levels frame the current market structure.",
       "market_context": "BTC is in a bearish 4H and 1D trend, with broader market breadth heavily red, reinforcing caution but not altering the ZEC",
       "result": "PENDING"
+    },
+    {
+      "id": 4771,
+      "created_at": "2026-11-13T06:41:01.042301+00:00",
+      "symbol": "ETHUSDT",
+      "direction": "SHORT",
+      "title": "Smart Money Distribution Visible on $ETH On-Chain Data",
+      "entry_low": 1910.0,
+      "entry_high": 1915.0,
+      "stop_loss": 1983.0,
+      "take_profit": 1771.5,
+      "support": 1895.95,
+      "resistance": 2021.11,
+      "news_line": "",
+      "technical_analysis": "Short bias dominates ETH. MACD sits deep in the negative zone with a widening histogram, and price sits under the EMA9/21/50/200 chain, confirming a downtrend. ADX at 41 signals a strong trend. Although RSI and Stochastic are oversold, momentum remains bearish, with the next resistance around 2021 and support near 1896.",
+      "market_context": "BTC is in a bearish 4‑hour and daily trend, down 6.3% on the day. The broader crypto market shows 72.7% red assets",
+      "result": "PENDING"
     }
   ]
 }
