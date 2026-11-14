@@ -81675,6 +81675,23 @@
       "technical_analysis": "RSI at 63.6 and a positive MACD histogram signal modest upward momentum. EMA9 sits above EMA21, EMA50 and EMA200, confirming bullish alignment. ADX 56 indicates a strong trend, while the order book shows a 36% bid‑side imbalance. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
       "market_context": "Bitcoin remains in a bearish 4‑hour and daily trend, with a 2.98% drop and broadly negative market breadth, while BMT shows bullish",
       "result": "PENDING"
+    },
+    {
+      "id": 4805,
+      "created_at": "2026-11-14T04:10:51.520778+00:00",
+      "symbol": "INJUSDT",
+      "direction": "LONG",
+      "title": "$INJ Breaks Out of Falling Wedge Pattern: Targets Set Higher",
+      "entry_low": 7.91,
+      "entry_high": 7.94,
+      "stop_loss": 7.64,
+      "take_profit": 8.495,
+      "support": 7.903,
+      "resistance": 8.174,
+      "news_line": "",
+      "technical_analysis": "Stochastic is deep in oversold territory (K≈14) while RSI sits at 52, indicating room for upside. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure. The nearby support and resistance levels frame the current market structure.",
+      "market_context": "BTC remains in a bearish trend on the 4‑hour and daily charts, down about 3 % and contributing to a broadly negative",
+      "result": "PENDING"
     }
   ]
 }
