@@ -1,6 +1,6 @@
 {
   "date": "2026-11-14",
-  "count": 19,
+  "count": 20,
   "posted_symbols_today": [
     "SHELLUSDT",
     "SOXLBUSDT",
@@ -20,6 +20,7 @@
     "KAVAUSDT",
     "ENAUSDT",
     "NEARUSDT",
-    "HYPEUSDT"
+    "HYPEUSDT",
+    "UNIUSDT"
   ]
 }
