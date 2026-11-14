@@ -82185,6 +82185,23 @@
       "technical_analysis": "All key indicators point down. RSI at 11.4 and Stochastic K below 10 show extreme oversold conditions, while ADX at 56.9 confirms a strong trend. MACD histogram stays negative and price sits beneath the 9‑, 21‑, 50‑ and 200‑EMA chain. Volume is up 209%, supporting bearish pressure. Orderbook imbalance favors bids, adding further downside bias.",
       "market_context": "BTC remains in a bearish 4‑hour and daily trend, down 6.2% today, with market breadth showing 96.7% red assets. Overall sentiment is",
       "result": "PENDING"
+    },
+    {
+      "id": 4835,
+      "created_at": "2026-11-14T23:41:00.840339+00:00",
+      "symbol": "ADAUSDT",
+      "direction": "LONG",
+      "title": "$ADA Holds Moving Average Support: High Probability Long Setup",
+      "entry_low": 0.1447,
+      "entry_high": 0.145,
+      "stop_loss": 0.1395,
+      "take_profit": 0.15555,
+      "support": 0.1432,
+      "resistance": 0.1647,
+      "news_line": "",
+      "technical_analysis": "ADX above 55 confirms a strong trend, while price sits below all EMA lines and the lower Bollinger Band, hinting at a potential bounce. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure. The nearby support and resistance levels frame the current market structure.",
+      "market_context": "BTC is in a bearish 4‑hour and daily trend, down about 7%, and the broader market is broadly negative with roughly 97%",
+      "result": "PENDING"
     }
   ]
 }
