@@ -82015,6 +82015,23 @@
       "technical_analysis": "RSI at 70.4 and Stochastic K near 93 signal strong overbought conditions, while price sits above the upper Bollinger Band. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
       "market_context": "BTC is in a bearish 4‑hour and daily trend, down 4.1% today, and the broader market is largely red (89% down), reinforcing",
       "result": "PENDING"
+    },
+    {
+      "id": 4825,
+      "created_at": "2026-11-14T16:20:54.640781+00:00",
+      "symbol": "SUIUSDT",
+      "direction": "LONG",
+      "title": "Bullish Momentum Is Building: Can $SUI Continue Its Breakout?",
+      "entry_low": 0.742,
+      "entry_high": 0.744,
+      "stop_loss": 0.71328,
+      "take_profit": 0.80244,
+      "support": 0.7247,
+      "resistance": 0.7856,
+      "news_line": "",
+      "technical_analysis": "RSI at 26 and Stochastic K at 14 signal deep oversold conditions. Price sits just below the lower Bollinger Band, while order‑book shows a 32% bid imbalance, indicating buying pressure. EMA series remain above price, but the confluence of oversold momentum and demand suggests a potential bounce toward the 0.7856 resistance.",
+      "market_context": "BTC is down 4.36% on the 4‑hour and daily charts, both showing bearish EMA alignment. The overall market is broadly negative, with",
+      "result": "PENDING"
     }
   ]
 }
