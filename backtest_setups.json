@@ -82151,6 +82151,23 @@
       "technical_analysis": "RSI at 12.9 and Stochastic K at 6.4 signal deep oversold conditions, while MACD sits negative with a bearish histogram. ADX above 60 confirms a strong downtrend, and price is trading well below EMA9/21/50/200. Together these indicators favor short momentum toward the nearby support. Together, these indicators favor SHORT continuation toward support.",
       "market_context": "BTC is in a bearish trend on both 4H and 1D frames, with a 5.9% 24‑hour decline and overall market breadth showing",
       "result": "PENDING"
+    },
+    {
+      "id": 4833,
+      "created_at": "2026-11-14T21:31:09.075078+00:00",
+      "symbol": "XPLUSDT",
+      "direction": "LONG",
+      "title": "Major Breakout Signals Emerge on $XPL Higher Timeframes",
+      "entry_low": 0.0412,
+      "entry_high": 0.0415,
+      "stop_loss": 0.039696,
+      "take_profit": 0.044658,
+      "support": 0.04034,
+      "resistance": 0.04861,
+      "news_line": "",
+      "technical_analysis": "RSI at 18.4 and Stochastic K at 5.2 signal deep oversold conditions, while price sits below the lower Bollinger Band, suggesting a near‑term bounce. Order‑book shows a 27% bid‑side imbalance. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
+      "market_context": "BTC is in a bearish 4‑hour and daily trend, down about 5.6%, and the overall market is broadly negative with 97% of",
+      "result": "PENDING"
     }
   ]
 }
