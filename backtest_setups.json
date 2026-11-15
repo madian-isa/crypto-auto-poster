@@ -82763,6 +82763,23 @@
       "technical_analysis": "MACD histogram is positive and the line sits above the signal, and Stochastic K at 66 signals momentum. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure. The nearby support and resistance levels frame the current market structure.",
       "market_context": "BTC shows a mild 24‑hour bullish move (+0.07 %) and the broader market breadth remains strongly positive, with 86.7 % of assets",
       "result": "PENDING"
+    },
+    {
+      "id": 4869,
+      "created_at": "2026-11-15T22:50:58.693759+00:00",
+      "symbol": "BANANAS31USDT",
+      "direction": "LONG",
+      "title": "Buyers Defend Key Demand Zone: $BANANAS31 Ready for Extension",
+      "entry_low": 0.0047,
+      "entry_high": 0.00472,
+      "stop_loss": 0.004535,
+      "take_profit": 0.00506,
+      "support": 0.004552,
+      "resistance": 0.005005,
+      "news_line": "",
+      "technical_analysis": "MACD line is positive with a small histogram, and ADX at 33 confirms a strong trend. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure. The nearby support and resistance levels frame the current market structure.",
+      "market_context": "BTC is in a broader bullish 24h move (+2.44%) while overall market breadth is strongly positive (92.7% green).",
+      "result": "PENDING"
     }
   ]
 }
