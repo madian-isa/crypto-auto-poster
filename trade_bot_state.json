@@ -1,6 +1,6 @@
 {
   "date": "2026-11-15",
-  "count": 32,
+  "count": 33,
   "posted_symbols_today": [
     "ASTERUSDT",
     "KAVAUSDT",
@@ -33,6 +33,7 @@
     "RAREUSDT",
     "AAVEUSDT",
     "QNTUSDT",
-    "ENAUSDT"
+    "ENAUSDT",
+    "LINKUSDT"
   ]
 }
