@@ -82695,6 +82695,23 @@
       "technical_analysis": "Bearish momentum dominates as price trades below the 9, 21, and 50 EMAs. ADX above 35 indicates a strong trend, currently favoring sellers. Price is pressing against immediate resistance near 0.00845, with the 200 EMA acting as a significant ceiling higher up. Together, these indicators favor SHORT continuation toward support.",
       "market_context": "BTC is bearish on 4H and 1D timeframes, trading below key EMAs. Market breadth is mixed with 55% of assets red, supporting",
       "result": "PENDING"
+    },
+    {
+      "id": 4865,
+      "created_at": "2026-11-15T20:40:59.031480+00:00",
+      "symbol": "AAVEUSDT",
+      "direction": "LONG",
+      "title": "$AAVE Outperformance Signal: Buying Momentum Beats Broader Market",
+      "entry_low": 107.9,
+      "entry_high": 108.2,
+      "stop_loss": 104.2,
+      "take_profit": 115.75,
+      "support": 107.86,
+      "resistance": 110.67,
+      "news_line": "",
+      "technical_analysis": "RSI at 60 and a positive MACD histogram signal bullish momentum. Stochastic K at 89% confirms strong upward pressure. These factors favor a long bias near the current 108 USD level. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
+      "market_context": "BTC remains in a short‑term bearish trend on both 4‑hour and daily charts, down 0.74% today, while overall market breadth stays broadly",
+      "result": "PENDING"
     }
   ]
 }
