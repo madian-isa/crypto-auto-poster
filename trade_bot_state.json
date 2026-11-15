@@ -1,6 +1,6 @@
 {
   "date": "2026-11-15",
-  "count": 12,
+  "count": 13,
   "posted_symbols_today": [
     "ASTERUSDT",
     "KAVAUSDT",
@@ -13,6 +13,7 @@
     "PUMPUSDT",
     "\u725b\u6765USDT",
     "SHELLUSDT",
-    "INITUSDT"
+    "INITUSDT",
+    "FILUSDT"
   ]
 }
