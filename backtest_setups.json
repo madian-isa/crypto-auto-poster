@@ -82457,6 +82457,23 @@
       "technical_analysis": "Stochastic is overbought at 84, RSI near 47, and ADX shows a strong trend. Order‑book imbalance favors bids. The setup points to short bias. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
       "market_context": "BTC is in a bearish 4‑hour and daily trend, down 2.66% on the day, and overall market breadth is broadly negative with",
       "result": "PENDING"
+    },
+    {
+      "id": 4851,
+      "created_at": "2026-11-15T10:50:51.456358+00:00",
+      "symbol": "ETHUSDT",
+      "direction": "LONG",
+      "title": "Buyers Defend Key Demand Zone: $ETH Ready for Extension",
+      "entry_low": 1813.0,
+      "entry_high": 1822.0,
+      "stop_loss": 1749.5,
+      "take_profit": 1953.5,
+      "support": 1811.29,
+      "resistance": 1834.41,
+      "news_line": "",
+      "technical_analysis": "MACD histogram is positive (+8.1) while the line sits above its signal, indicating upward momentum. ADX at 36.5 confirms a strong trend. Order‑book shows a 21.7% bid imbalance, adding buying pressure. Price sits near the 1H resistance at 1834, supporting a near‑term long bias. Together, these indicators favor LONG continuation toward resistance.",
+      "market_context": "BTC remains bearish on 4H and 1D timeframes, down 2.6% today, with market breadth overwhelmingly negative (93.2% red).",
+      "result": "PENDING"
     }
   ]
 }
