@@ -82389,6 +82389,23 @@
       "technical_analysis": "Stochastic K is deep in oversold territory (≈7) and RSI sits near 40, while the order book shows a 47% bid imbalance, indicating buying pressure. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure. The nearby support and resistance levels frame the current market structure.",
       "market_context": "BTC remains in a bearish 4H and 1D trend, with broader market sentiment largely negative.",
       "result": "PENDING"
+    },
+    {
+      "id": 4847,
+      "created_at": "2026-11-15T08:50:46.290815+00:00",
+      "symbol": "INITUSDT",
+      "direction": "LONG",
+      "title": "$INIT Breakout Confirmation: Bulls Target Next Supply Zone",
+      "entry_low": 0.118,
+      "entry_high": 0.119,
+      "stop_loss": 0.1135,
+      "take_profit": 0.1285,
+      "support": 0.11341,
+      "resistance": 0.14242,
+      "news_line": "",
+      "technical_analysis": "MACD histogram is positive and the MACD line sits above its signal, showing bullish momentum. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure. The nearby support and resistance levels frame the current market structure.",
+      "market_context": "BTC is in a 4‑hour and daily bearish trend, down about 3.5% on the day, and the broader market is 95% red",
+      "result": "PENDING"
     }
   ]
 }
