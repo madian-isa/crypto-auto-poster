@@ -82491,6 +82491,23 @@
       "technical_analysis": "Stochastic is deep overbought at 98, while ADX at 37 shows a strong trend. Price sits just below the 1H resistance (0.7336) and under the longer EMA50/200, indicating bearish bias. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
       "market_context": "BTC is in a bearish trend and the overall market is broadly negative, with 93% of assets red.",
       "result": "PENDING"
+    },
+    {
+      "id": 4853,
+      "created_at": "2026-11-15T12:50:59.481191+00:00",
+      "symbol": "PEPEUSDT",
+      "direction": "LONG",
+      "title": "Bullish Divergence Flashed on $PEPE Daily Chart Structure",
+      "entry_low": 3.9e-06,
+      "entry_high": 4e-06,
+      "stop_loss": 3.75e-06,
+      "take_profit": 4.35e-06,
+      "support": 3.86e-06,
+      "resistance": 4.08e-06,
+      "news_line": "",
+      "technical_analysis": "Order‑book imbalance favors buyers (14.8% more bids) and ADX at 36 confirms a strong trend. Together these point to a near‑term long bias around the 4.00 µ$ level. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure. The nearby support and resistance levels frame the current market structure.",
+      "market_context": "BTC is in a bearish 4‑hour and daily trend, down 2.59% over 24 h, and the broader market is broadly negative with",
+      "result": "PENDING"
     }
   ]
 }
