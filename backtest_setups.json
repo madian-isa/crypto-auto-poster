@@ -82644,6 +82644,23 @@
       "technical_analysis": "RSI hovers at 49 and Stochastic K (58) is under its D line (63), both pointing to downside bias. ADX at 20 shows a weak trend, while the order‑book imbalance is slightly negative. The pair respects the 894.8 support and faces resistance near 917. Together, these indicators favor SHORT continuation toward support.",
       "market_context": "BTC is in a broader bearish phase on both 4h and 1d charts, trading below its EMA20 and EMA50, which mirrors the",
       "result": "PENDING"
+    },
+    {
+      "id": 4862,
+      "created_at": "2026-11-15T17:10:47.422914+00:00",
+      "symbol": "HYPEUSDT",
+      "direction": "LONG",
+      "title": "$HYPE Outperformance Signal: Buying Momentum Beats Broader Market",
+      "entry_low": 66.58,
+      "entry_high": 66.76,
+      "stop_loss": 64.2,
+      "take_profit": 71.61,
+      "support": 66.58,
+      "resistance": 68.55,
+      "news_line": "",
+      "technical_analysis": "MACD shows a bullish crossover with a positive histogram, while the order book is 18% bid‑heavy, indicating buying pressure. ADX at 27 confirms a moderate trend, and RSI is neutral. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
+      "market_context": "Bitcoin is in a bearish 4‑hour and daily trend, down 0.6% on the day, and the broader market is broadly negative with",
+      "result": "PENDING"
     }
   ]
 }
