@@ -82202,6 +82202,23 @@
       "technical_analysis": "ADX above 55 confirms a strong trend, while price sits below all EMA lines and the lower Bollinger Band, hinting at a potential bounce. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure. The nearby support and resistance levels frame the current market structure.",
       "market_context": "BTC is in a bearish 4‑hour and daily trend, down about 7%, and the broader market is broadly negative with roughly 97%",
       "result": "PENDING"
+    },
+    {
+      "id": 4836,
+      "created_at": "2026-11-15T00:01:08.048007+00:00",
+      "symbol": "ASTERUSDT",
+      "direction": "SHORT",
+      "title": "$ASTER Prepares for Breakdown: Downside Risk Escalates",
+      "entry_low": 0.5,
+      "entry_high": 0.503,
+      "stop_loss": 0.52156,
+      "take_profit": 0.46138,
+      "support": 0.4784,
+      "resistance": 0.6407,
+      "news_line": "",
+      "technical_analysis": "RSI at 21 and Stochastic K at 13 signal deep oversold conditions, yet the MACD histogram remains negative and the price sits beneath the 9‑, 21‑, 50‑ and 200‑EMA chain, confirming a prevailing downtrend. ADX above 50 shows strong momentum. The pair respects the 0.5035 resistance, supporting a short bias toward the 0.4784 support zone.",
+      "market_context": "BTC is down 6.2% on bearish 4H and 1D trends, while market breadth shows 95.7% red, indicating a broadly negative environment.",
+      "result": "PENDING"
     }
   ]
 }
