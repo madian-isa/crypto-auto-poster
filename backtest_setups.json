@@ -82304,6 +82304,23 @@
       "technical_analysis": "Short bias dominates. Price sits below EMA9, EMA21, EMA50 and EMA200, confirming a downtrend. MACD line remains under its signal with a negative histogram, while ADX at 43 signals a strong trend. RSI at 33.9 and Stochastic below 30 indicate oversold conditions, supporting downside momentum toward the 6.658 support level.",
       "market_context": "BTC is in a bearish 4‑hour and daily trend, down about 3.9%, and the broader crypto market is broadly negative with 93.4%",
       "result": "PENDING"
+    },
+    {
+      "id": 4842,
+      "created_at": "2026-11-15T04:01:13.440524+00:00",
+      "symbol": "BERAUSDT",
+      "direction": "SHORT",
+      "title": "$BERA Volume Decreases on Rally: Weak Buyers Exposed",
+      "entry_low": 0.094,
+      "entry_high": 0.0945,
+      "stop_loss": 0.098,
+      "take_profit": 0.08675,
+      "support": 0.0899,
+      "resistance": 0.096,
+      "news_line": "",
+      "technical_analysis": "Indicators point to bearish pressure. Price sits below EMA9, EMA21, EMA50 and EMA200, confirming a downtrend. MACD line remains under its signal with a negative histogram. RSI at 39 and Stochastic around 37 signal weak momentum. ADX near 30 shows a solid trend, and order‑book imbalance favors bids, supporting a short bias.",
+      "market_context": "BTC is in a bearish 4‑hour and daily trend, down about 2.8% with broad market negativity (91.9% red). The overall crypto market",
+      "result": "PENDING"
     }
   ]
 }
