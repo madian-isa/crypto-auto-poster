@@ -82865,6 +82865,23 @@
       "technical_analysis": "MACD is bullish with line above signal and a positive histogram. Price sits above the 9‑, 21‑ and 50‑EMA, while RSI at 58.6 signals modest upside. Order‑book shows a 15.9% bid‑side imbalance. ADX at 22 indicates a weak trend, but the breakout above the 1H resistance (108.36) supports a near‑term long bias.",
       "market_context": "BTC is up 4.3% in the last 24 h, though 4H and 1D charts remain bearish. Overall market breadth is broadly positive",
       "result": "PENDING"
+    },
+    {
+      "id": 4875,
+      "created_at": "2026-11-16T02:31:00.737531+00:00",
+      "symbol": "ZILUSDT",
+      "direction": "LONG",
+      "title": "Bullish Momentum Is Building: Can $ZIL Continue Its Breakout?",
+      "entry_low": 0.001032,
+      "entry_high": 0.001035,
+      "stop_loss": 0.000996,
+      "take_profit": 0.0011085,
+      "support": 0.001032,
+      "resistance": 0.001184,
+      "news_line": "",
+      "technical_analysis": "RSI at 13 indicates strong oversold conditions while ADX 47 confirms a powerful trend. Despite price sitting under all EMAs, the order‑book shows a 29 % bid‑side imbalance and stochastic near 70, suggesting buying pressure. With support at 0.001032, momentum favors a bounce to the nearby resistance and could test the 0.001099 resistance zone.",
+      "market_context": "BTC shows bearish trends on 4‑hour and daily charts while the broader market remains broadly positive, with 75 % of assets green.",
+      "result": "PENDING"
     }
   ]
 }
