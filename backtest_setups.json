@@ -84293,6 +84293,23 @@
       "technical_analysis": "RSI at 22.9 and Stochastic K at 2.4 signal deep oversold conditions, yet price sits below EMA9‑200 and MACD histogram remains negative, confirming a prevailing downtrend. ADX 35.4 shows strong trend strength. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
       "market_context": "BTC is marginally bullish (+0.3%) while the overall market breadth is negative, with 60% of assets in red.",
       "result": "PENDING"
+    },
+    {
+      "id": 4959,
+      "created_at": "2026-11-16T22:51:02.371256+00:00",
+      "symbol": "SNXXBUSDT",
+      "direction": "LONG",
+      "title": "$SNXXB Reclaims Key Resistance Level: Flip to Support Complete",
+      "entry_low": 2.96,
+      "entry_high": 2.99,
+      "stop_loss": 2.86,
+      "take_profit": 3.205,
+      "support": 2.9,
+      "resistance": 3.21,
+      "news_line": "",
+      "technical_analysis": "Price sits just above the lower Bollinger Band (2.93) and below all EMA levels (9‑200), indicating a potential bounce. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure. The nearby support and resistance levels frame the current market structure.",
+      "market_context": "BTC is bearish on both 4H and 1D timeframes despite a modest 0.4% 24‑hour rise, and overall market breadth is broadly negative",
+      "result": "PENDING"
     }
   ]
 }
