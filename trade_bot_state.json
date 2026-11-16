@@ -1,6 +1,6 @@
 {
   "date": "2026-11-16",
-  "count": 19,
+  "count": 20,
   "posted_symbols_today": [
     "SOPHUSDT",
     "RAREUSDT",
@@ -20,6 +20,7 @@
     "BTCUSDT",
     "REQUSDT",
     "ZECUSDT",
-    "HYPEUSDT"
+    "HYPEUSDT",
+    "SOLUSDT"
   ]
 }
