@@ -82848,6 +82848,23 @@
       "technical_analysis": "MACD is bullish with a positive histogram and the signal line below the MACD line. Price sits above the 9‑, 21‑, 50‑ and 200‑EMA, confirming an uptrend. ADX at 49 indicates a strong trend, while order‑book imbalance shows 25% more bids. RSI at 66 supports continued buying pressure overall momentum remains positive.",
       "market_context": "Bitcoin is in a bearish 4‑hour and daily trend but shows a 4% 24‑hour gain, and the overall crypto market is broadly",
       "result": "PENDING"
+    },
+    {
+      "id": 4874,
+      "created_at": "2026-11-16T01:41:00.539412+00:00",
+      "symbol": "AAVEUSDT",
+      "direction": "LONG",
+      "title": "Critical Resistance Test: $AAVE Preparing to Surge Higher",
+      "entry_low": 108.4,
+      "entry_high": 108.7,
+      "stop_loss": 104.61,
+      "take_profit": 116.43,
+      "support": 107.86,
+      "resistance": 108.36,
+      "news_line": "",
+      "technical_analysis": "MACD is bullish with line above signal and a positive histogram. Price sits above the 9‑, 21‑ and 50‑EMA, while RSI at 58.6 signals modest upside. Order‑book shows a 15.9% bid‑side imbalance. ADX at 22 indicates a weak trend, but the breakout above the 1H resistance (108.36) supports a near‑term long bias.",
+      "market_context": "BTC is up 4.3% in the last 24 h, though 4H and 1D charts remain bearish. Overall market breadth is broadly positive",
+      "result": "PENDING"
     }
   ]
 }
