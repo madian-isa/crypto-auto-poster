@@ -84106,6 +84106,23 @@
       "technical_analysis": "MACD shows a positive histogram (+0.017) with the line well above its signal, while price sits above the 9‑, 21‑ and 50‑EMA, confirming bullish alignment. Order‑book imbalance (+6.9% bid) adds buying pressure. Although RSI (74) and Stochastic (K 91) signal overbought conditions, the prevailing indicators favor a near‑term upside toward the 2.429 resistance.",
       "market_context": "BTC remains in a bearish 4‑hour and daily trend, down 0.3% on the day, while the broader crypto market shows more red",
       "result": "PENDING"
+    },
+    {
+      "id": 4948,
+      "created_at": "2026-11-16T15:31:05.864948+00:00",
+      "symbol": "SNDKBUSDT",
+      "direction": "SHORT",
+      "title": "Bearish Divergence Spotted on $SNDKB: Downside Targets Ahead",
+      "entry_low": 833.0,
+      "entry_high": 851.86,
+      "stop_loss": 876.1272,
+      "take_profit": 775.0356,
+      "support": 800.0,
+      "resistance": 851.86,
+      "news_line": "",
+      "technical_analysis": "MACD is deep in negative territory and below its signal line, while price sits under the EMA9, EMA21, EMA50 and EMA200, confirming bearish momentum. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
+      "market_context": "BTC remains in a bearish 4H and 1D trend, with the broader market showing a largely negative breadth (64.3% red).",
+      "result": "PENDING"
     }
   ]
 }
