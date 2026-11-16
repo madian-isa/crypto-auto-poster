@@ -1,6 +1,6 @@
 {
   "date": "2026-11-16",
-  "count": 30,
+  "count": 31,
   "posted_symbols_today": [
     "SOPHUSDT",
     "RAREUSDT",
@@ -31,6 +31,7 @@
     "NVDABUSDT",
     "DOGEUSDT",
     "XRPUSDT",
-    "XPLUSDT"
+    "XPLUSDT",
+    "KORUBUSDT"
   ]
 }

@@ -84208,6 +84208,23 @@
       "technical_analysis": "MACD shows a positive histogram and the line sits above its signal, indicating bullish momentum. Stochastic is in the 80s, and the order book shows a 24% bid‑side imbalance, supporting further overall potential upside. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
       "market_context": "BTC remains in a bearish 4‑hour and daily trend, yet the broader market is broadly positive with 65% green assets and a",
       "result": "PENDING"
+    },
+    {
+      "id": 4954,
+      "created_at": "2026-11-16T19:41:01.389632+00:00",
+      "symbol": "KORUBUSDT",
+      "direction": "SHORT",
+      "title": "High Conviction Short Opportunity as $KORUB Tests Supply Wall",
+      "entry_low": 6.88,
+      "entry_high": 6.91,
+      "stop_loss": 7.14,
+      "take_profit": 6.405,
+      "support": 6.77,
+      "resistance": 7.14,
+      "news_line": "",
+      "technical_analysis": "MACD sits below its signal with a negative histogram, confirming bearish momentum. Price is under EMA9, EMA21, EMA50 and EMA200, reinforcing a downtrend. Order‑book shows a 26 % sell‑side imbalance. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
+      "market_context": "BTC remains in a bearish trend on both 4‑hour and daily charts, trading below its 20‑ and 50‑EMA levels. Overall market breadth",
+      "result": "PENDING"
     }
   ]
 }
