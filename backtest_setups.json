@@ -82899,6 +82899,23 @@
       "technical_analysis": "MACD is negative and below its signal, and price sits under the 9‑, 21‑, 50‑ and 200‑EMA, indicating bearish momentum. Order‑book imbalance shows more bids than asks, adding further pressure to the downside. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
       "market_context": "BTC is up 1.0% in 24h, keeping a bullish tone, while overall market breadth is broadly positive.",
       "result": "PENDING"
+    },
+    {
+      "id": 4877,
+      "created_at": "2026-11-16T03:50:54.348033+00:00",
+      "symbol": "ASTERUSDT",
+      "direction": "LONG",
+      "title": "High R-Multiple Long Trade Setup Forming on $ASTER",
+      "entry_low": 0.533,
+      "entry_high": 0.538,
+      "stop_loss": 0.5143,
+      "take_profit": 0.5779,
+      "support": 0.5313,
+      "resistance": 0.5443,
+      "news_line": "",
+      "technical_analysis": "MACD line sits above its signal with a positive histogram, while stochastic K/D are in the low‑30s, suggesting upside momentum. Price trades above the 9‑ and 21‑EMA but below longer EMAs, and ADX at 44 signals a strong trend. These factors collectively favor a bullish stance near the 0.531‑0.544 range.",
+      "market_context": "BTC is up 8.4% in 24 h and remains bullish, while overall market breadth is mixed (48.4% green, 51.6% red).",
+      "result": "PENDING"
     }
   ]
 }
