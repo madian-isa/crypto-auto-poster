@@ -82933,6 +82933,23 @@
       "technical_analysis": "Price sits above the EMA9, EMA21 and EMA50, confirming an uptrend. MACD histogram is positive and the MACD line sits above its signal, adding bullish momentum. RSI at 53 shows room for upside, while ADX below 20 indicates a still‑forming trend. The nearest resistance is 0.02891. Together, these indicators favor LONG continuation toward resistance.",
       "market_context": "BTC is bullish on the 24‑hour chart but shows bearish bias on 4‑hour and daily timeframes, providing mixed broader market sentiment.",
       "result": "PENDING"
+    },
+    {
+      "id": 4879,
+      "created_at": "2026-11-16T04:50:44.794587+00:00",
+      "symbol": "FFUSDT",
+      "direction": "LONG",
+      "title": "$FF Buying Pressure Rises as Bulls Test Key Resistance",
+      "entry_low": 0.1006,
+      "entry_high": 0.1012,
+      "stop_loss": 0.0971,
+      "take_profit": 0.1085,
+      "support": 0.0957,
+      "resistance": 0.10309,
+      "news_line": "",
+      "technical_analysis": "Price sits above EMA9, EMA21, EMA50 and EMA200, confirming a bullish trend. MACD line is above its signal with a positive histogram, while RSI at 60.9 shows solid momentum. ADX above 50 signals a strong trend, and stochastic is near the upper zone but not yet overbought, supporting a long bias.",
+      "market_context": "BTC remains in a bearish trend on both 4‑hour and daily charts, and the broader market shows a mixed breadth with slightly",
+      "result": "PENDING"
     }
   ]
 }
