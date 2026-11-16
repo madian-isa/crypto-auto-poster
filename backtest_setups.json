@@ -83936,6 +83936,23 @@
       "technical_analysis": "Price sits below EMA9/21/50/200, MACD histogram negative and line under signal, RSI near 45, ADX low, indicating weakening bullishness. Orderbook shows slight bid imbalance. The pair is near the 0.0582 resistance with support at 0.05765. Momentum appears to be shifting downward, suggesting sellers could push price toward the identified support zone.",
       "market_context": "BTC is in a bearish 4‑h and daily trend, down 1.34% over 24 h, with market breadth broadly negative (63% red).",
       "result": "PENDING"
+    },
+    {
+      "id": 4938,
+      "created_at": "2026-11-16T09:50:57.154345+00:00",
+      "symbol": "INJUSDT",
+      "direction": "SHORT",
+      "title": "$INJ Lower High Pattern Confirmed: Short Target in View",
+      "entry_low": 6.73,
+      "entry_high": 6.75,
+      "stop_loss": 6.99,
+      "take_profit": 6.24,
+      "support": 6.56,
+      "resistance": 6.839,
+      "news_line": "",
+      "technical_analysis": "The price sits below EMA9, EMA21, EMA50 and EMA200 while MACD remains under its signal, signaling bearish momentum. RSI at 34 and Stochastic K at 16 show oversold conditions, but the order‑book shows a 27 % bid imbalance. The next resistance sits around 6.84, with support near 6.56. Overall, the bias leans short.",
+      "market_context": "BTC remains in a bearish 4‑hour and daily trend, down 1.6 % over 24 h, with market breadth broadly negative.",
+      "result": "PENDING"
     }
   ]
 }
