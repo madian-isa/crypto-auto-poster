@@ -84616,6 +84616,23 @@
       "technical_analysis": "Indicators point to downside pressure. MACD line sits below its signal, producing a negative histogram, while the stochastic %K is near 79, signaling overbought conditions. Price has nudged above the upper Bollinger band and the order book shows a 6% sell‑side imbalance. RSI at 64 supports a short bias near the 60.28 resistance.",
       "market_context": "Bitcoin remains bearish on both 4H and 1D timeframes, trading around $64,200 with a modest 0.5% decline, adding to overall market pressure.",
       "result": "PENDING"
+    },
+    {
+      "id": 4978,
+      "created_at": "2026-11-17T10:40:57.124200+00:00",
+      "symbol": "SNDKBUSDT",
+      "direction": "LONG",
+      "title": "$SNDKB Holds Moving Average Support: High Probability Long Setup",
+      "entry_low": 796.0,
+      "entry_high": 800.0,
+      "stop_loss": 768.0,
+      "take_profit": 858.0,
+      "support": 781.03,
+      "resistance": 817.71,
+      "news_line": "",
+      "technical_analysis": "RSI at 31 and Stochastic K at 28 signal oversold conditions, while price sits at the lower Bollinger band (801.8) hinting at a potential bounce. Order‑book shows a 9.6% bid imbalance. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
+      "market_context": "BTC remains in a bearish trend on both 4H and 1D charts, while overall market breadth is mixed with a slight green",
+      "result": "PENDING"
     }
   ]
 }
