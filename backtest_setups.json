@@ -84939,6 +84939,23 @@
       "technical_analysis": "The price sits above the EMA9, EMA21, EMA50 and EMA200, while MACD is positive and the histogram expands, confirming bullish momentum. RSI at 59.9 and a strong ADX of 58.7 show a firm uptrend. Order‑book pressure favors buyers and price is near the upper Bollinger band, supporting a long bias.",
       "market_context": "BTC is in a bearish trend on both 4‑hour and daily frames, down about 1.65% over 24 h. Market breadth is mixed",
       "result": "PENDING"
+    },
+    {
+      "id": 4997,
+      "created_at": "2026-11-17T22:21:00.478978+00:00",
+      "symbol": "SPCXBUSDT",
+      "direction": "LONG",
+      "title": "Critical Resistance Test: $SPCXB Preparing to Surge Higher",
+      "entry_low": 138.91,
+      "entry_high": 139.5,
+      "stop_loss": 134.0,
+      "take_profit": 149.615,
+      "support": 138.91,
+      "resistance": 143.02,
+      "news_line": "",
+      "technical_analysis": "MACD is bullish with a positive histogram, and the price sits above the 9‑, 21‑, 50‑ and 200‑EMA, confirming upward bias. RSI at 66 and a strong order‑book buy imbalance add momentum, while stochastic is overbought but not yet reversing. The structure favors a long move toward resistance. Together, these indicators favor LONG continuation toward resistance.",
+      "market_context": "BTC is in a bearish trend on both 4H and 1D frames, while the broader market shows mixed breadth (55.3% green, 44.7%",
+      "result": "PENDING"
     }
   ]
 }
