@@ -84803,6 +84803,23 @@
       "technical_analysis": "Bearish momentum is evident as price trades below the key EMAs and MACD remains negative. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
       "market_context": "BTC's bearish 4H and 1D trends coupled with a predominantly red market breadth indicate broader risk-off sentiment. Orderbook imbalance slightly favors bids",
       "result": "PENDING"
+    },
+    {
+      "id": 4989,
+      "created_at": "2026-11-17T17:11:06.232942+00:00",
+      "symbol": "MUBUSDT",
+      "direction": "SHORT",
+      "title": "$MUB Derivative Data Shows Heavy Long Liquidations Incoming",
+      "entry_low": 696.0,
+      "entry_high": 698.5,
+      "stop_loss": 724.0,
+      "take_profit": 643.75,
+      "support": 667.84,
+      "resistance": 728.26,
+      "news_line": "",
+      "technical_analysis": "RSI at 33 and Stochastic around 32 show oversold conditions but momentum remains bearish. MACD line sits below its signal with a negative histogram, confirming down pressure. Price sits under all EMAs (9‑200) and below the Bollinger lower band. ADX above 30 signals a strong trend. Together, these indicators favor SHORT continuation toward support.",
+      "market_context": "BTC is in a bearish 4H and 1D trend, down 1.3% with a broadly negative market (61.9% red).",
+      "result": "PENDING"
     }
   ]
 }
