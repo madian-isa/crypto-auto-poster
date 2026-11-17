@@ -84480,6 +84480,23 @@
       "technical_analysis": "MACD histogram is positive, EMA9, EMA21 and EMA50 sit below the price, and price is above EMA200, indicating bullish alignment. RSI at 67 and Stochastic K at 82 show strong momentum, while the Bollinger upper band is being tested and volume has surged 117%. Together these factors favor further upside toward the 1.525 resistance.",
       "market_context": "Bitcoin is up 0.1% over 24 h and the broader market is mixed, with 58% of assets green and 42% red, providing",
       "result": "PENDING"
+    },
+    {
+      "id": 4970,
+      "created_at": "2026-11-17T05:40:57.189762+00:00",
+      "symbol": "SOPHUSDT",
+      "direction": "SHORT",
+      "title": "$SOPH Breaks Ascending Support Line: Bearish Momentum Surge",
+      "entry_low": 0.00103,
+      "entry_high": 0.00105,
+      "stop_loss": 0.00108,
+      "take_profit": 0.00096,
+      "support": 0.00094,
+      "resistance": 0.00106,
+      "news_line": "",
+      "technical_analysis": "The EMA9 sits just below price while EMA21, EMA50 and EMA200 sit well above, confirming a downtrend. RSI at 43 suggests room below 50, and ADX around 22 indicates a weak trend. Together the bias leans short near the 1‑hour resistance at 0.00106. Together, these indicators favor SHORT continuation toward support.",
+      "market_context": "BTC shows a slight 0.4% rise today, yet 4‑hour and daily EMAs keep it in a bearish alignment, matching the overall market’s",
+      "result": "PENDING"
     }
   ]
 }
