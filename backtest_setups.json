@@ -84786,6 +84786,23 @@
       "technical_analysis": "MACD is bullish with a positive histogram, and price sits above the 9‑, 21‑ and 50‑EMA, confirming upward momentum. ADX above 30 shows a strong trend, while the order‑book shows a 28% bid imbalance. RSI is in the 60s, supporting a continued long bias near the 113.58 resistance. Together, these indicators favor LONG continuation toward resistance.",
       "market_context": "BTC is bearish on 4‑hour and daily timeframes, yet the broader crypto market is broadly positive, with 74% of assets advancing and",
       "result": "PENDING"
+    },
+    {
+      "id": 4988,
+      "created_at": "2026-11-17T16:51:00.139209+00:00",
+      "symbol": "ETHUSDT",
+      "direction": "SHORT",
+      "title": "Moving Average Death Cross Signals Downward Trend for $ETH",
+      "entry_low": 1780.0,
+      "entry_high": 1790.0,
+      "stop_loss": 1860.0,
+      "take_profit": 1635.0,
+      "support": 1751.39,
+      "resistance": 1814.5,
+      "news_line": "",
+      "technical_analysis": "Bearish momentum is evident as price trades below the key EMAs and MACD remains negative. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
+      "market_context": "BTC's bearish 4H and 1D trends coupled with a predominantly red market breadth indicate broader risk-off sentiment. Orderbook imbalance slightly favors bids",
+      "result": "PENDING"
     }
   ]
 }
