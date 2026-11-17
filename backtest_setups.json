@@ -84497,6 +84497,23 @@
       "technical_analysis": "The EMA9 sits just below price while EMA21, EMA50 and EMA200 sit well above, confirming a downtrend. RSI at 43 suggests room below 50, and ADX around 22 indicates a weak trend. Together the bias leans short near the 1‑hour resistance at 0.00106. Together, these indicators favor SHORT continuation toward support.",
       "market_context": "BTC shows a slight 0.4% rise today, yet 4‑hour and daily EMAs keep it in a bearish alignment, matching the overall market’s",
       "result": "PENDING"
+    },
+    {
+      "id": 4971,
+      "created_at": "2026-11-17T05:50:55.437764+00:00",
+      "symbol": "ZECUSDT",
+      "direction": "SHORT",
+      "title": "$ZEC Loses Key Demand Zone: Next Support Level Unprotected",
+      "entry_low": 926.5,
+      "entry_high": 928.0,
+      "stop_loss": 894.0,
+      "take_profit": 860.75,
+      "support": 896.84,
+      "resistance": 928.56,
+      "news_line": "",
+      "technical_analysis": "Momentum leans toward a short move. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
+      "market_context": "Bitcoin is in a bearish 4H and 1D trend, though overall market breadth is broadly positive.",
+      "result": "PENDING"
     }
   ]
 }
