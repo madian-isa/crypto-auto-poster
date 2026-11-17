@@ -84650,6 +84650,23 @@
       "technical_analysis": "MMT is trading just above its EMA9 and comfortably over EMA21, EMA50 and EMA200, indicating bullish alignment. RSI at 61 shows solid momentum, while ADX above 50 confirms a strong trend. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
       "market_context": "BTC is bearish on 4h and daily timeframes, but the broader market is broadly positive, with 72.5% of assets green and BTC",
       "result": "PENDING"
+    },
+    {
+      "id": 4980,
+      "created_at": "2026-11-17T12:01:08.978325+00:00",
+      "symbol": "SOLUSDT",
+      "direction": "LONG",
+      "title": "Bullish Momentum Is Building: Can $SOL Continue Its Breakout?",
+      "entry_low": 72.6,
+      "entry_high": 73.0,
+      "stop_loss": 70.0,
+      "take_profit": 78.4,
+      "support": 72.1,
+      "resistance": 73.54,
+      "news_line": "",
+      "technical_analysis": "MACD histogram is positive and MACD line sits above its signal, while price trades above the 9‑, 21‑and 50‑EMA, indicating bullish momentum. RSI at 61 supports the upside, though Stochastic at 98 shows overbought pressure. The pair sits near the 73.54 resistance with 72.1 level support on the 1‑hour chart.",
+      "market_context": "BTC is in a bearish trend on both 4‑hour and daily frames, while the broader crypto market shows a largely positive breadth",
+      "result": "PENDING"
     }
   ]
 }
