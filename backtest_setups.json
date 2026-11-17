@@ -84684,6 +84684,23 @@
       "technical_analysis": "RSI sits at 61, MACD histogram is positive, and price trades above EMA9, EMA21 and EMA50. Stochastic is overbought but still rising, while ADX is weak. Bollinger upper band is just breached, and solid support lies at 0.059. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
       "market_context": "Bitcoin is up 1.24% and the overall market breadth is broadly positive, providing a supportive backdrop for risk assets.",
       "result": "PENDING"
+    },
+    {
+      "id": 4982,
+      "created_at": "2026-11-17T13:31:04.437602+00:00",
+      "symbol": "UNIUSDT",
+      "direction": "LONG",
+      "title": "$UNI Prepares for Parabolic Phase: Key Technical Trigger Met",
+      "entry_low": 5.33,
+      "entry_high": 5.38,
+      "stop_loss": 5.14,
+      "take_profit": 5.785,
+      "support": 5.23,
+      "resistance": 5.454,
+      "news_line": "",
+      "technical_analysis": "ADX at 22 shows a moderate trend, while volume is up 48%. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure. The nearby support and resistance levels frame the current market structure.",
+      "market_context": "BTC is in a bearish stance on both 4‑hour and daily charts, yet the broader crypto market is broadly positive with 78%",
+      "result": "PENDING"
     }
   ]
 }
