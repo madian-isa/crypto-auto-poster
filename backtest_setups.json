@@ -84361,6 +84361,23 @@
       "technical_analysis": "The RSI at 28.9 and stochastic K at 26.9 signal oversold conditions, but the MACD remains negative and the price sits below the EMA9‑200 cluster, confirming a prevailing downtrend. ADX at 36.8 shows strong trend momentum. With 1‑hour support at 48.47 and resistance near 52.7, the indicators favor short pressure toward lower levels.",
       "market_context": "BTC is in a bearish 4‑hour and daily trend, down 0.4% over 24 h, and the broader market shows 61.4% red assets",
       "result": "PENDING"
+    },
+    {
+      "id": 4963,
+      "created_at": "2026-11-17T01:10:46.660118+00:00",
+      "symbol": "ASTERUSDT",
+      "direction": "SHORT",
+      "title": "$ASTER Open Interest Drops Rapidly: Long Squeeze Underway",
+      "entry_low": 0.574,
+      "entry_high": 0.576,
+      "stop_loss": 0.596,
+      "take_profit": 0.533,
+      "support": 0.565,
+      "resistance": 0.7124,
+      "news_line": "",
+      "technical_analysis": "Stochastic is deep overbought (93.8) while ADX at 54 shows a strong trend. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
+      "market_context": "Bitcoin is in a bearish trend on both 4‑hour and daily charts, and the broader market shows more red than green assets",
+      "result": "PENDING"
     }
   ]
 }
