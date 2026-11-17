@@ -84531,6 +84531,23 @@
       "technical_analysis": "MACD histogram is positive and the MACD line sits above its signal, indicating bullish momentum. Stochastic K (45) is above D (31) in the upward zone. Order‑book shows a 41% bid imbalance. Price holds above the 9‑EMA while below the 21‑EMA, with RSI near 44. Together, these indicators favor LONG continuation toward resistance.",
       "market_context": "BTC shows bearish trends on 4H and daily charts, though 24h price is up 0.256% and market breadth is broadly positive (62.7%",
       "result": "PENDING"
+    },
+    {
+      "id": 4973,
+      "created_at": "2026-11-17T07:40:55.604304+00:00",
+      "symbol": "KORUBUSDT",
+      "direction": "SHORT",
+      "title": "$KORUB Fails Resistance Retest: Bearish Extension Imminent",
+      "entry_low": 6.5,
+      "entry_high": 6.55,
+      "stop_loss": 6.786,
+      "take_profit": 6.003,
+      "support": 6.4,
+      "resistance": 6.85,
+      "news_line": "",
+      "technical_analysis": "RSI at 32 and Stochastic K near 10 signal oversold conditions, but MACD remains below its signal with a negative histogram, confirming bearish momentum. Price sits below EMA9, EMA21, EMA50 and EMA200, aligning with a downtrend. ADX above 30 shows a strong trend. The pair respects the 1‑hour resistance around 6.85 and finds support near 6.4, favoring short pressure.",
+      "market_context": "BTC is in a bearish 4‑hour and daily trend, down about 0.5% today, while the broader crypto market shows mixed breadth with",
+      "result": "PENDING"
     }
   ]
 }
