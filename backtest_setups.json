@@ -85109,6 +85109,23 @@
       "technical_analysis": "Price sits under EMA9, EMA21 and EMA50, confirming a downtrend. MACD histogram is negative and the line remains below its signal, while Stochastic K (44) is under D (57), indicating bearish momentum. ADX at 27 shows a strong trend. The pair is trading just above the 1H resistance of 0.5576, favoring short pressure.",
       "market_context": "BTC is in a bearish 4H and 1D trend, down 0.7% over 24h, with market breadth split (46.3% green, 53.7% red).",
       "result": "PENDING"
+    },
+    {
+      "id": 5007,
+      "created_at": "2026-11-18T04:41:01.200269+00:00",
+      "symbol": "RAREUSDT",
+      "direction": "SHORT",
+      "title": "$RARE Lower High Pattern Confirmed: Short Target in View",
+      "entry_low": 0.01278,
+      "entry_high": 0.01285,
+      "stop_loss": 0.01331,
+      "take_profit": 0.011825,
+      "support": 0.01233,
+      "resistance": 0.01287,
+      "news_line": "",
+      "technical_analysis": "MACD line is below its signal with a negative histogram, confirming down‑momentum. Price sits under the 9‑, 21‑ and 50‑EMA; RSI at 42 and ADX 16 indicate weak strength. Stochastic is oversold, and the 1‑hour swing resistance at 0.01287 points to a short bias. Together, these indicators favor SHORT continuation toward support.",
+      "market_context": "BTC is in a bearish 4‑hour and daily trend, down about 0.8%, while the overall market shows a broadly negative breadth with",
+      "result": "PENDING"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "date": "2026-11-18",
-  "count": 7,
+  "count": 8,
   "posted_symbols_today": [
     "BREVUSDT",
     "MMTUSDT",
@@ -8,6 +8,7 @@
     "NEARUSDT",
     "ZECUSDT",
     "SOLUSDT",
-    "ASTERUSDT"
+    "ASTERUSDT",
+    "RAREUSDT"
   ]
 }
