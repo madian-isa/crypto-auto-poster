@@ -85262,6 +85262,23 @@
       "technical_analysis": "RSI at 81.7 and Stochastic K at 94 signal extreme overbought conditions. Price sits above the upper Bollinger band and near the 1‑hour resistance of 0.433, with a –10.8 % order‑book imbalance indicating sell pressure. Indicators collectively point to short‑side pressure. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish",
       "market_context": "BTC is up 0.1 % in 24 h, but the broader market remains broadly positive with 70.8 % green assets.",
       "result": "PENDING"
+    },
+    {
+      "id": 5016,
+      "created_at": "2026-11-18T11:21:06.687734+00:00",
+      "symbol": "SPCXBUSDT",
+      "direction": "LONG",
+      "title": "Spot Inflows Surge for $SPCXB as Futures Open Interest Rises",
+      "entry_low": 141.8,
+      "entry_high": 142.2,
+      "stop_loss": 136.32,
+      "take_profit": 153.36,
+      "support": 141.61,
+      "resistance": 143.28,
+      "news_line": "",
+      "technical_analysis": "EMAs are aligned bullish (9 > 21 > 50 > 200) and price sits above them. RSI at 60 shows healthy momentum, ADX above 25 confirms a strong trend, and order‑book imbalance favors bids. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
+      "market_context": "BTC is in a short‑term bearish phase, down 0.22% on 24h, while the broader market shows mixed breadth with a slight green",
+      "result": "PENDING"
     }
   ]
 }
