@@ -85313,6 +85313,23 @@
       "technical_analysis": "MACD histogram is positive, MACD line sits above its signal, and Stochastic %K (65.6) is above %D (57.7), indicating upward momentum. RSI at 60 shows room above neutral. Price trades above EMA9, EMA21 and EMA50, while staying below the long‑term EMA200, placing it near the 1H resistance at 0.001058. The setup favors a long bias.",
       "market_context": "BTC remains in a bearish 4H and 1D trend, down 0.82% over 24 h, reflecting broader downside pressure.",
       "result": "PENDING"
+    },
+    {
+      "id": 5019,
+      "created_at": "2026-11-18T12:40:56.131327+00:00",
+      "symbol": "HEIUSDT",
+      "direction": "LONG",
+      "title": "Strong Accumulation Detected: $HEI Prepares for Next Wave Up",
+      "entry_low": 0.0845,
+      "entry_high": 0.0865,
+      "stop_loss": 0.0825,
+      "take_profit": 0.0915,
+      "support": 0.0804,
+      "resistance": 0.0995,
+      "news_line": "",
+      "technical_analysis": "The EMA9, EMA21, EMA50 and EMA200 are all below the current price, confirming a strong uptrend. MACD shows a positive histogram of 0.0007, while ADX at 33 signals solid trend strength. Although RSI is overbought at 82.7, price remains above the upper Bollinger band, supporting bullish momentum toward the 0.0995 resistance.",
+      "market_context": "BTC is in a bearish 4‑hour and daily trend, down 1.3% over 24 h, and the broader market is broadly negative with",
+      "result": "PENDING"
     }
   ]
 }
