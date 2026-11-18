@@ -85500,6 +85500,23 @@
       "technical_analysis": "RSI at 31.8 and Stochastic K at 14 signal oversold conditions, but MACD is negative with a -2.13 histogram and price sits below EMA9, EMA21, EMA50 and EMA200, confirming a strong downtrend. ADX at 37.5 adds weight to the bearish momentum, favoring a short bias. Together, these indicators favor SHORT continuation toward support.",
       "market_context": "BTC remains bearish on both 4‑hour and daily frames, while overall market breadth is broadly positive. This backdrop supports the prevailing downside",
       "result": "PENDING"
+    },
+    {
+      "id": 5030,
+      "created_at": "2026-11-18T20:01:10.037342+00:00",
+      "symbol": "HYPEUSDT",
+      "direction": "SHORT",
+      "title": "High Conviction Short Opportunity as $HYPE Tests Supply Wall",
+      "entry_low": 67.4,
+      "entry_high": 67.85,
+      "stop_loss": 70.3,
+      "take_profit": 62.275,
+      "support": 65.1,
+      "resistance": 67.85,
+      "news_line": "",
+      "technical_analysis": "The chart shows bearish bias: price sits under EMA9, EMA21, EMA50 and EMA200, while MACD line remains below its signal with a negative histogram. RSI at 41.8 and Stochastic K around 43 signal weakening momentum. ADX at 14 indicates a soft trend. Together they favor a short move toward the 65.1 support zone.",
+      "market_context": "BTC is in a 4‑hour bearish trend, down 1.6% today, and overall market breadth is mixed with 55% red assets.",
+      "result": "PENDING"
     }
   ]
 }
