@@ -1,6 +1,6 @@
 {
   "date": "2026-11-18",
-  "count": 20,
+  "count": 21,
   "posted_symbols_today": [
     "BREVUSDT",
     "MMTUSDT",
@@ -21,6 +21,7 @@
     "SPCXBUSDT",
     "ENAUSDT",
     "ZILUSDT",
-    "HEIUSDT"
+    "HEIUSDT",
+    "BTCUSDT"
   ]
 }
