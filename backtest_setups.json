@@ -85126,6 +85126,23 @@
       "technical_analysis": "MACD line is below its signal with a negative histogram, confirming down‑momentum. Price sits under the 9‑, 21‑ and 50‑EMA; RSI at 42 and ADX 16 indicate weak strength. Stochastic is oversold, and the 1‑hour swing resistance at 0.01287 points to a short bias. Together, these indicators favor SHORT continuation toward support.",
       "market_context": "BTC is in a bearish 4‑hour and daily trend, down about 0.8%, while the overall market shows a broadly negative breadth with",
       "result": "PENDING"
+    },
+    {
+      "id": 5008,
+      "created_at": "2026-11-18T05:21:01.114873+00:00",
+      "symbol": "ETHUSDT",
+      "direction": "SHORT",
+      "title": "$ETH Loses Key Demand Zone: Next Support Level Unprotected",
+      "entry_low": 1812.5,
+      "entry_high": 1814.0,
+      "stop_loss": 1877.5,
+      "take_profit": 1684.75,
+      "support": 1810.73,
+      "resistance": 1814.5,
+      "news_line": "",
+      "technical_analysis": "ETH trades below the 9, 21, 50 and 200 EMA, indicating bearish bias. RSI at 47.4 is under the midpoint, and ADX at 16.8 shows a weak trend. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
+      "market_context": "BTC remains bearish on 4H and 1D charts, down 0.39% over 24 h, while the broader market shows more red (56.7%) than",
+      "result": "PENDING"
     }
   ]
 }
