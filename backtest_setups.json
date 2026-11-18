@@ -85517,6 +85517,23 @@
       "technical_analysis": "The chart shows bearish bias: price sits under EMA9, EMA21, EMA50 and EMA200, while MACD line remains below its signal with a negative histogram. RSI at 41.8 and Stochastic K around 43 signal weakening momentum. ADX at 14 indicates a soft trend. Together they favor a short move toward the 65.1 support zone.",
       "market_context": "BTC is in a 4‑hour bearish trend, down 1.6% today, and overall market breadth is mixed with 55% red assets.",
       "result": "PENDING"
+    },
+    {
+      "id": 5031,
+      "created_at": "2026-11-18T20:21:05.720229+00:00",
+      "symbol": "USD1USDT",
+      "direction": "LONG",
+      "title": "$USD1 Prepares for Parabolic Phase: Key Technical Trigger Met",
+      "entry_low": 0.99986,
+      "entry_high": 0.99994,
+      "stop_loss": 0.9649,
+      "take_profit": 1.0699,
+      "support": 0.99986,
+      "resistance": 1.00006,
+      "news_line": "",
+      "technical_analysis": "RSI at 53.7 and a clean EMA hierarchy (9 > 21 > 50 > 200) point to bullish bias, while ADX ≈ 30 confirms a strong trend. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure. The nearby support and resistance levels frame the current market structure.",
+      "market_context": "BTC remains in a bearish 4‑hour and daily trend, down 1.99% over 24 h, while overall market breadth is mixed (40.6% green",
+      "result": "PENDING"
     }
   ]
 }
