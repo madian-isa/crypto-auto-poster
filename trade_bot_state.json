@@ -1,6 +1,6 @@
 {
   "date": "2026-11-18",
-  "count": 32,
+  "count": 33,
   "posted_symbols_today": [
     "BREVUSDT",
     "MMTUSDT",
@@ -33,6 +33,7 @@
     "TLMUSDT",
     "PAXGUSDT",
     "HYPEUSDT",
-    "USD1USDT"
+    "USD1USDT",
+    "CRCLBUSDT"
   ]
 }
