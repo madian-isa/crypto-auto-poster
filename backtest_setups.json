@@ -85245,6 +85245,23 @@
       "technical_analysis": "The orderbook is heavily ask‑biased (‑74.8% imbalance). With price trapped near the 1H resistance 162.77, momentum tilts toward a short move. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
       "market_context": "BTC remains in a bearish trend on 4H and daily frames, while the broader market is broadly positive with 71% green assets.",
       "result": "PENDING"
+    },
+    {
+      "id": 5015,
+      "created_at": "2026-11-18T10:31:01.920021+00:00",
+      "symbol": "ENSOUSDT",
+      "direction": "SHORT",
+      "title": "$ENSO Distribution Phase Ends: Downside Target Zone Set",
+      "entry_low": 0.428,
+      "entry_high": 0.432,
+      "stop_loss": 0.4472,
+      "take_profit": 0.3956,
+      "support": 0.389,
+      "resistance": 0.433,
+      "news_line": "",
+      "technical_analysis": "RSI at 81.7 and Stochastic K at 94 signal extreme overbought conditions. Price sits above the upper Bollinger band and near the 1‑hour resistance of 0.433, with a –10.8 % order‑book imbalance indicating sell pressure. Indicators collectively point to short‑side pressure. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish",
+      "market_context": "BTC is up 0.1 % in 24 h, but the broader market remains broadly positive with 70.8 % green assets.",
+      "result": "PENDING"
     }
   ]
 }
