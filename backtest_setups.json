@@ -85160,6 +85160,23 @@
       "technical_analysis": "RSI at 87.6 and Stochastic K near 96 place ZKP deep in overbought territory. Price sits above the Bollinger upper band and near the 4‑hour resistance of 0.0407. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
       "market_context": "BTC remains in a bearish 4‑hour and daily trend, while the overall market breadth is broadly positive with 62.5% green assets.",
       "result": "PENDING"
+    },
+    {
+      "id": 5010,
+      "created_at": "2026-11-18T07:40:57.162518+00:00",
+      "symbol": "KAVAUSDT",
+      "direction": "LONG",
+      "title": "Key Support Holds Firm: $KAVA Bullish Continuation Setup Active",
+      "entry_low": 0.03,
+      "entry_high": 0.03012,
+      "stop_loss": 0.0289,
+      "take_profit": 0.03238,
+      "support": 0.02883,
+      "resistance": 0.03124,
+      "news_line": "",
+      "technical_analysis": "MACD line is positive with a healthy histogram, RSI near 60 and Stochastic K at 70 support upward pressure. ADX 28 confirms a strong trend, and order‑book imbalance favors bids overall. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
+      "market_context": "BTC is in a bearish 4‑hour and daily trend, down 8.1% today, while the broader crypto market shows a mixed breadth with",
+      "result": "PENDING"
     }
   ]
 }
