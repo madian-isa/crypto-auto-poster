@@ -85143,6 +85143,23 @@
       "technical_analysis": "ETH trades below the 9, 21, 50 and 200 EMA, indicating bearish bias. RSI at 47.4 is under the midpoint, and ADX at 16.8 shows a weak trend. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
       "market_context": "BTC remains bearish on 4H and 1D charts, down 0.39% over 24 h, while the broader market shows more red (56.7%) than",
       "result": "PENDING"
+    },
+    {
+      "id": 5009,
+      "created_at": "2026-11-18T06:51:00.824715+00:00",
+      "symbol": "ZKPUSDT",
+      "direction": "SHORT",
+      "title": "Smart Money Distribution Visible on $ZKP On-Chain Data",
+      "entry_low": 0.0372,
+      "entry_high": 0.0374,
+      "stop_loss": 0.038792,
+      "take_profit": 0.034316,
+      "support": 0.0318,
+      "resistance": 0.0407,
+      "news_line": "",
+      "technical_analysis": "RSI at 87.6 and Stochastic K near 96 place ZKP deep in overbought territory. Price sits above the Bollinger upper band and near the 4‑hour resistance of 0.0407. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
+      "market_context": "BTC remains in a bearish 4‑hour and daily trend, while the overall market breadth is broadly positive with 62.5% green assets.",
+      "result": "PENDING"
     }
   ]
 }
