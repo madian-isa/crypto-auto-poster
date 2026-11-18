@@ -85228,6 +85228,23 @@
       "technical_analysis": "RSI at 55 and Stochastic around 65 support upward momentum. Order‑book imbalance favors bids (+8 %). Together these suggest a long bias near the 1H support‑resistance zone. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure. The nearby support and resistance levels frame the current market structure.",
       "market_context": "BTC is marginally bullish (+0.72% 24h) while the broader market shows a predominantly positive breadth (68% green).",
       "result": "PENDING"
+    },
+    {
+      "id": 5014,
+      "created_at": "2026-11-18T10:21:04.155083+00:00",
+      "symbol": "NVDABUSDT",
+      "direction": "SHORT",
+      "title": "$NVDAB Breaks Ascending Support Line: Bearish Momentum Surge",
+      "entry_low": 162.5,
+      "entry_high": 162.77,
+      "stop_loss": 169.1404,
+      "take_profit": 149.6242,
+      "support": 161.1,
+      "resistance": 162.77,
+      "news_line": "",
+      "technical_analysis": "The orderbook is heavily ask‑biased (‑74.8% imbalance). With price trapped near the 1H resistance 162.77, momentum tilts toward a short move. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
+      "market_context": "BTC remains in a bearish trend on 4H and daily frames, while the broader market is broadly positive with 71% green assets.",
+      "result": "PENDING"
     }
   ]
 }
