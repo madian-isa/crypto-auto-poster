@@ -85925,6 +85925,23 @@
       "technical_analysis": "BMT is trading above its 9‑, 21‑ and 50‑EMA and also above the 200‑EMA, while RSI sits at 69.5 and MACD histogram is positive. ADX around 26 shows a firm trend and the order‑book is 19 % bid‑heavy. With support near 0.0201 and resistance around 0.0236, momentum points upward today.",
       "market_context": "BTC is in a bearish 4h and 1d trend, down 0.74% over 24h, while the overall market shows mixed breadth (46% green",
       "result": "PENDING"
+    },
+    {
+      "id": 5055,
+      "created_at": "2026-11-19T12:10:48.673963+00:00",
+      "symbol": "SKYUSDT",
+      "direction": "SHORT",
+      "title": "$SKY Lower High Pattern Confirmed: Short Target in View",
+      "entry_low": 0.0455,
+      "entry_high": 0.0459,
+      "stop_loss": 0.0475,
+      "take_profit": 0.0421,
+      "support": 0.04372,
+      "resistance": 0.05195,
+      "news_line": "",
+      "technical_analysis": "RSI at 16.8 and Stochastic K at 4.9 signal deep oversold conditions, while MACD remains below its signal line and the histogram is negative, confirming bearish momentum. Price sits beneath EMA9‑200, reinforcing the downtrend. ADX at 49 shows the trend is strong. Together, these indicators favor SHORT continuation toward support.",
+      "market_context": "BTC is in a bearish 4‑hour and daily trend, down 0.7% in the last 24 hours, while overall market breadth is mixed",
+      "result": "PENDING"
     }
   ]
 }
