@@ -86027,6 +86027,23 @@
       "technical_analysis": "RSI at 94 and Stochastic K at 98 push YBU deep into overbought territory, while price sits above the Bollinger upper band, suggesting a near‑term pullback. All 1‑hour EMAs (9‑21‑50‑200) lie below the current price, confirming a recent rally that may be exhausting. With ADX at 36, the bias leans short toward the 0.0462‑0.074 range.",
       "market_context": "BTC is in a bearish 4‑hour and daily trend, down 0.5% over 24 h, while overall market shows 58 % red assets",
       "result": "PENDING"
+    },
+    {
+      "id": 5061,
+      "created_at": "2026-11-19T16:41:05.773318+00:00",
+      "symbol": "SNXXBUSDT",
+      "direction": "LONG",
+      "title": "Golden Cross Formation Confirmed on $SNXXB 4-Hour Timeframe",
+      "entry_low": 2.93,
+      "entry_high": 2.94,
+      "stop_loss": 2.83,
+      "take_profit": 3.145,
+      "support": 2.93,
+      "resistance": 3.03,
+      "news_line": "",
+      "technical_analysis": "MACD shows a positive histogram (+0.020) with the line above its signal, indicating bullish momentum. Order‑book imbalance favors buyers (+18% bid pressure). RSI sits at 51, near the midpoint, while price sits just above the 21‑EMA and below the 9‑EMA, suggesting a potential bounce from the 2.93 support zone. Overall bias leans long.",
+      "market_context": "BTC rose 1.6% in 24 h, but remains in a bearish trend on higher timeframes. Overall market breadth is broadly positive with",
+      "result": "PENDING"
     }
   ]
 }
