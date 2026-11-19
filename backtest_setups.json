@@ -85772,6 +85772,23 @@
       "technical_analysis": "RSI at 40.5 and Stochastic K/D around 38/25 stay under the 50‑level, confirming bearish momentum. MACD remains negative, and ADX around 28 shows a firm trend. The pair respects the 1H support at 152.14 and faces resistance near 152.95. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
       "market_context": "BTC remains bearish on both 4H and daily charts, trading near $63.5k, down 1.3% over 24 h. Overall market breadth is mixed",
       "result": "PENDING"
+    },
+    {
+      "id": 5046,
+      "created_at": "2026-11-19T05:21:03.471034+00:00",
+      "symbol": "BTCUSDT",
+      "direction": "SHORT",
+      "title": "Bearish Divergence Spotted on $BTC: Downside Targets Ahead",
+      "entry_low": 63480.0,
+      "entry_high": 63535.0,
+      "stop_loss": 65960.0,
+      "take_profit": 58602.5,
+      "support": 63336.0,
+      "resistance": 64952.92,
+      "news_line": "",
+      "technical_analysis": "MACD histogram sits at +77 while the MACD line remains below zero, showing weakening downside pressure. Stochastic K at 83 signals overbought conditions. Price sits under EMA50 (63,876) and EMA200 (67,142), confirming bearish bias. Order‑book imbalance of –48 % adds sell pressure. The pair respects 1‑hour support at 63,336 and faces resistance near 64,952.",
+      "market_context": "BTC down 1.99% in 24h, bearish overall; market red 58.8%, green 41.2%.",
+      "result": "PENDING"
     }
   ]
 }
