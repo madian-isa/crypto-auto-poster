@@ -1,6 +1,6 @@
 {
   "date": "2026-11-19",
-  "count": 11,
+  "count": 12,
   "posted_symbols_today": [
     "MMTUSDT",
     "BREVUSDT",
@@ -12,6 +12,7 @@
     "ZECUSDT",
     "NVDABUSDT",
     "BTCUSDT",
-    "ZKPUSDT"
+    "ZKPUSDT",
+    "CFGUSDT"
   ]
 }
