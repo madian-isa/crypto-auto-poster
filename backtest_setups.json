@@ -86146,6 +86146,23 @@
       "technical_analysis": "RSI at 25 and Stochastic K at 6 signal deep oversold conditions, while price sits below the lower Bollinger Band and order‑book shows a strong bid imbalance. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure. The nearby support and resistance levels frame the current market structure.",
       "market_context": "BTC remains in a bearish trend on both 4H and 1D frames, and the broader crypto market is broadly negative, reinforcing caution",
       "result": "PENDING"
+    },
+    {
+      "id": 5068,
+      "created_at": "2026-11-19T23:01:00.008390+00:00",
+      "symbol": "HYPEUSDT",
+      "direction": "SHORT",
+      "title": "$HYPE Fails Resistance Retest: Bearish Extension Imminent",
+      "entry_low": 67.35,
+      "entry_high": 67.39,
+      "stop_loss": 69.73,
+      "take_profit": 62.65,
+      "support": 66.76,
+      "resistance": 67.39,
+      "news_line": "",
+      "technical_analysis": "Price is trading below EMA9, EMA21, EMA50 and EMA200, confirming a clear downtrend. MACD is negative with a bearish histogram, reinforcing downside momentum. RSI at 45 and Stochastic around 27 show modest weakness. The 1H/4H swing places resistance at 67.39 and support at 66.76, supporting a short bias. Together, these indicators favor SHORT continuation toward support.",
+      "market_context": "BTC is bearish on both 4H and 1D frames, down 0.14% over 24h. Market breadth is broadly negative, with 60.7% of assets",
+      "result": "PENDING"
     }
   ]
 }
