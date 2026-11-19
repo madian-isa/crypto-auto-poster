@@ -85823,6 +85823,23 @@
       "technical_analysis": "The RSI at 31.74 and Stochastic K at 12.78 signal oversold conditions, while MACD remains negative with a bearish histogram. Price sits below all EMAs, and the order‑book shows a sell‑side imbalance. Combined with the 1H resistance at 0.0716, the indicators favor a short bias toward the nearby support level.",
       "market_context": "BTC is in a bearish 4H and 1D trend, down 1.7% today, adding to the broadly negative market backdrop.",
       "result": "PENDING"
+    },
+    {
+      "id": 5049,
+      "created_at": "2026-11-19T07:51:01.102205+00:00",
+      "symbol": "INITUSDT",
+      "direction": "SHORT",
+      "title": "$INIT Distribution Phase Ends: Downside Target Zone Set",
+      "entry_low": 0.1003,
+      "entry_high": 0.10035,
+      "stop_loss": 0.104,
+      "take_profit": 0.092975,
+      "support": 0.1019,
+      "resistance": 0.11764,
+      "news_line": "",
+      "technical_analysis": "However, price sits below the 1‑hour swing support (0.1019) and under the EMA50, while the broader market is bearish, favoring a short bias. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
+      "market_context": "BTC is in a bearish 4‑hour and daily trend, down 1.7% on the day, and the overall market breadth is broadly negative.",
+      "result": "PENDING"
     }
   ]
 }
