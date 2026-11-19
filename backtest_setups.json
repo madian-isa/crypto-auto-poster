@@ -85959,6 +85959,23 @@
       "technical_analysis": "MACD histogram is positive and the MACD line sits above its signal, while price trades above EMA9, EMA21, EMA50 and EMA200, confirming bullish momentum. ADX at 47 shows a strong trend. Order‑book shows a 20 % bid imbalance and volume surged over 200 %. Together, these indicators favor LONG continuation toward resistance.",
       "market_context": "BTC remains in a bearish 4H and 1D trend, down 0.467 % over 24 h, while overall market breadth is mixed (≈50",
       "result": "PENDING"
+    },
+    {
+      "id": 5057,
+      "created_at": "2026-11-19T13:41:00.810277+00:00",
+      "symbol": "ZILUSDT",
+      "direction": "SHORT",
+      "title": "$ZIL Resistance Test Fails: Bearish Momentum Building Fast",
+      "entry_low": 0.000966,
+      "entry_high": 0.00097,
+      "stop_loss": 0.001004,
+      "take_profit": 0.000896,
+      "support": 0.000947,
+      "resistance": 0.000973,
+      "news_line": "",
+      "technical_analysis": "Indicators point to downside pressure. MACD line is under its signal with a negative histogram, while RSI at 41 shows modest weakness. Stochastic K at 18.7 signals oversold conditions, but the pair is near the 0.000973 resistance, favoring a short bias. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish",
+      "market_context": "Bitcoin remains in a 4‑hour and daily bearish swing, trading around $63,750, while overall market breadth is split (48% green, 52% red).",
+      "result": "PENDING"
     }
   ]
 }
