@@ -85840,6 +85840,23 @@
       "technical_analysis": "However, price sits below the 1‑hour swing support (0.1019) and under the EMA50, while the broader market is bearish, favoring a short bias. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
       "market_context": "BTC is in a bearish 4‑hour and daily trend, down 1.7% on the day, and the overall market breadth is broadly negative.",
       "result": "PENDING"
+    },
+    {
+      "id": 5050,
+      "created_at": "2026-11-19T08:20:55.263536+00:00",
+      "symbol": "NEARUSDT",
+      "direction": "LONG",
+      "title": "Bullish Divergence Flashed on $NEAR Daily Chart Structure",
+      "entry_low": 3.35,
+      "entry_high": 3.38,
+      "stop_loss": 3.23,
+      "take_profit": 3.635,
+      "support": 3.343,
+      "resistance": 3.43,
+      "news_line": "",
+      "technical_analysis": "NEAR trades above its 9, 21, 50 and 200 EMA, and the MACD line remains above the signal with a positive histogram, indicating bullish momentum. RSI at 63 reinforces the upside bias. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
+      "market_context": "BTC remains in a bearish 4‑hour and daily trend, with broader market breadth showing 61% red assets and a 1.3% drop, adding",
+      "result": "PENDING"
     }
   ]
 }
