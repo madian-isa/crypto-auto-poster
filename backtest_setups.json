@@ -86605,6 +86605,23 @@
       "technical_analysis": "RARE is trading at 0.01311, comfortably above the 9‑, 21‑ and 50‑EMA cluster and the 200‑EMA, indicating bullish bias. RSI at 61 reinforces strength, while ADX near 44 confirms a solid trend. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
       "market_context": "BTC remains in a bearish 4H and 1D trend, down 4.4% today, while 92% of the market is red, reflecting broadly negative",
       "result": "PENDING"
+    },
+    {
+      "id": 5095,
+      "created_at": "2026-11-20T16:31:05.808421+00:00",
+      "symbol": "NVDABUSDT",
+      "direction": "SHORT",
+      "title": "Bears Retake Control as $NVDAB Fails to Hold Moving Averages",
+      "entry_low": 143.8,
+      "entry_high": 144.33,
+      "stop_loss": 149.8276,
+      "take_profit": 132.5398,
+      "support": 135.75,
+      "resistance": 144.33,
+      "news_line": "",
+      "technical_analysis": "Price sits at 137.49, well under the 9‑, 21‑, 50‑ and 200‑EMA, confirming a downtrend. MACD is negative and diverging from its signal line, while ADX at 34 signals strong trend strength. Despite RSI 24 and Stochastic 19 indicating oversold conditions, the prevailing bearish structure favors a short setup toward the 144.33 resistance.",
+      "market_context": "BTC remains bearish on 4H and 1D, down 6% with both EMA20 and EMA50 above price, reflecting broader market weakness.",
+      "result": "PENDING"
     }
   ]
 }
