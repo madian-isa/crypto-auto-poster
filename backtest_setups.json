@@ -86231,6 +86231,23 @@
       "technical_analysis": "MACD is bullish with a positive histogram, and the EMA series (9, 21, 50, 200) are all stacked below price, confirming upward momentum. ADX around 28 signals a solid trend, while order‑book imbalance shows slightly more buying pressure. These factors point to a near‑term upside toward the 1‑hour resistance. Together, these indicators favor LONG continuation toward resistance.",
       "market_context": "Bitcoin is in a bearish 4‑hour and daily trend, and the broader market is broadly negative, with 85% of assets red. This",
       "result": "PENDING"
+    },
+    {
+      "id": 5073,
+      "created_at": "2026-11-20T02:20:58.899831+00:00",
+      "symbol": "YBUSDT",
+      "direction": "SHORT",
+      "title": "$YB Lower High Pattern Confirmed: Short Target in View",
+      "entry_low": 0.0528,
+      "entry_high": 0.0532,
+      "stop_loss": 0.0557,
+      "take_profit": 0.0476,
+      "support": 0.0503,
+      "resistance": 0.074,
+      "news_line": "",
+      "technical_analysis": "MACD is bearish with the line under the signal and a negative histogram. Price sits below EMA9 and EMA21, confirming short‑term weakness, while ADX above 40 signals a strong trend. Stochastic K near 20 suggests oversold conditions, reinforcing downside momentum toward the 0.0503 support. Together, these indicators favor SHORT continuation toward support.",
+      "market_context": "BTC is in a bearish trend on both 4H and 1D charts, down about 1.8% in 24 h, and overall market breadth",
+      "result": "PENDING"
     }
   ]
 }
