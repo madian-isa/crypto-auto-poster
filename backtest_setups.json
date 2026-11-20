@@ -86214,6 +86214,23 @@
       "technical_analysis": "The price sits below the EMA9, EMA21, EMA50 and EMA200, confirming a downtrend. ADX around 27 indicates a solid trend, supporting a short bias. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
       "market_context": "BTC is in a bearish 4H and 1D trend, with broader market breadth showing 81.7% red assets. This negative backdrop aligns with",
       "result": "PENDING"
+    },
+    {
+      "id": 5072,
+      "created_at": "2026-11-20T01:50:52.640521+00:00",
+      "symbol": "SOXSBUSDT",
+      "direction": "LONG",
+      "title": "$SOXSB Liquidation Squeeze: Bears Trapped Near Critical Resistance",
+      "entry_low": 65.0,
+      "entry_high": 65.5,
+      "stop_loss": 62.5,
+      "take_profit": 70.75,
+      "support": 54.96,
+      "resistance": 67.14,
+      "news_line": "",
+      "technical_analysis": "MACD is bullish with a positive histogram, and the EMA series (9, 21, 50, 200) are all stacked below price, confirming upward momentum. ADX around 28 signals a solid trend, while order‑book imbalance shows slightly more buying pressure. These factors point to a near‑term upside toward the 1‑hour resistance. Together, these indicators favor LONG continuation toward resistance.",
+      "market_context": "Bitcoin is in a bearish 4‑hour and daily trend, and the broader market is broadly negative, with 85% of assets red. This",
+      "result": "PENDING"
     }
   ]
 }
