@@ -86639,6 +86639,23 @@
       "technical_analysis": "Price sits well below the EMA9‑200 cluster and MACD is deep in negative territory, confirming bearish momentum. ADX above 30 signals a strong trend. RSI at 25.7 and Stochastic K near 5 show oversold conditions but do not outweigh the prevailing downtrend, favoring a short bias near current levels. Together, these indicators favor SHORT continuation toward support.",
       "market_context": "BTC is in a bearish 4H and 1D trend, down 6% on the day, and the broader market is 94% red, reinforcing",
       "result": "PENDING"
+    },
+    {
+      "id": 5097,
+      "created_at": "2026-11-20T17:01:13.710104+00:00",
+      "symbol": "UNIUSDT",
+      "direction": "LONG",
+      "title": "Golden Cross Formation Confirmed on $UNI 4-Hour Timeframe",
+      "entry_low": 4.439,
+      "entry_high": 4.447,
+      "stop_loss": 4.28,
+      "take_profit": 4.769,
+      "support": 4.402,
+      "resistance": 4.889,
+      "news_line": "",
+      "technical_analysis": "RSI at 19.41 and Stochastic K at 8 signal deep oversold conditions. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure. The nearby support and resistance levels frame the current market structure.",
+      "market_context": "BTC remains in a bearish 4‑hour and daily trend, down 5.4 % over 24 h, with market breadth broadly negative (93.5 %",
+      "result": "PENDING"
     }
   ]
 }
