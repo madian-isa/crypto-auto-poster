@@ -86418,6 +86418,23 @@
       "technical_analysis": "The price sits below all EMAs (9‑200) and under the 1H/4H resistance at 0.04568, confirming bearish bias. RSI at 37.5 and Stochastic K below D signal weakening momentum, while ADX 33.5 shows a strong trend. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
       "market_context": "BTC remains in a bearish 4H and 1D trend, down about 3% on the day, and the overall market breadth is broadly",
       "result": "PENDING"
+    },
+    {
+      "id": 5084,
+      "created_at": "2026-11-20T09:40:57.822681+00:00",
+      "symbol": "CYBERUSDT",
+      "direction": "SHORT",
+      "title": "Technical Signals Turn Negative as $CYBER Selling Pressure Rises",
+      "entry_low": 0.306,
+      "entry_high": 0.308,
+      "stop_loss": 0.319,
+      "take_profit": 0.283,
+      "support": 0.214,
+      "resistance": 0.312,
+      "news_line": "",
+      "technical_analysis": "RSI at 91 and Stochastic near 90 signal extreme overbought conditions, while the order book shows a 24% ask‑side imbalance. The short bias aligns with the strong bearish trend on BTC. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
+      "market_context": "BTC is bearish on 4H and 1D timeframes, down 3.5% today, and the broader market shows 91.7% red assets, indicating overall downside",
+      "result": "PENDING"
     }
   ]
 }
