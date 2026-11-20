@@ -86622,6 +86622,23 @@
       "technical_analysis": "Price sits at 137.49, well under the 9‑, 21‑, 50‑ and 200‑EMA, confirming a downtrend. MACD is negative and diverging from its signal line, while ADX at 34 signals strong trend strength. Despite RSI 24 and Stochastic 19 indicating oversold conditions, the prevailing bearish structure favors a short setup toward the 144.33 resistance.",
       "market_context": "BTC remains bearish on 4H and 1D, down 6% with both EMA20 and EMA50 above price, reflecting broader market weakness.",
       "result": "PENDING"
+    },
+    {
+      "id": 5096,
+      "created_at": "2026-11-20T16:40:52.003120+00:00",
+      "symbol": "ETHUSDT",
+      "direction": "SHORT",
+      "title": "Bearish Divergence Spotted on $ETH: Downside Targets Ahead",
+      "entry_low": 1650.0,
+      "entry_high": 1655.57,
+      "stop_loss": 1715.0,
+      "take_profit": 1528.355,
+      "support": 1624.37,
+      "resistance": 1759.63,
+      "news_line": "",
+      "technical_analysis": "Price sits well below the EMA9‑200 cluster and MACD is deep in negative territory, confirming bearish momentum. ADX above 30 signals a strong trend. RSI at 25.7 and Stochastic K near 5 show oversold conditions but do not outweigh the prevailing downtrend, favoring a short bias near current levels. Together, these indicators favor SHORT continuation toward support.",
+      "market_context": "BTC is in a bearish 4H and 1D trend, down 6% on the day, and the broader market is 94% red, reinforcing",
+      "result": "PENDING"
     }
   ]
 }
