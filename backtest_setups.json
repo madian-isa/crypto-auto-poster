@@ -86554,6 +86554,23 @@
       "technical_analysis": "Momentum indicators point bearish: price sits below EMA9, EMA21, EMA50 and EMA200, and MACD histogram remains negative. RSI at 30 and Stochastic K under 20 signal oversold conditions, but the prevailing downtrend today’s and ADX around 29 suggest the downside still holds currently. Immediate resistance sits near 66.15, support at 62.22.",
       "market_context": "BTC remains in a bearish 4‑hour and daily trend, down about 3.2% over 24 h. Overall market breadth is broadly negative with",
       "result": "PENDING"
+    },
+    {
+      "id": 5092,
+      "created_at": "2026-11-20T14:11:05.089900+00:00",
+      "symbol": "PEPEUSDT",
+      "direction": "SHORT",
+      "title": "Technical Signals Turn Negative as $PEPE Selling Pressure Rises",
+      "entry_low": 3.58e-06,
+      "entry_high": 3.6e-06,
+      "stop_loss": 3.726e-06,
+      "take_profit": 3.32e-06,
+      "support": 3.51e-06,
+      "resistance": 3.62e-06,
+      "news_line": "",
+      "technical_analysis": "PEPE is trading below all key EMAs (EMA9‑200), confirming a downtrend. RSI at 37.8 and a low Stochastic (25) signal bearish momentum, while ADX ≈ 30 shows the trend is solid. Price sits near the lower Bollinger band and the order‑book shows a modest bid bias, supporting a short bias.",
+      "market_context": "BTC remains in a bearish 4H and 1D trend around $61.9k, and the broader market is broadly negative with 92.7% red assets.",
+      "result": "PENDING"
     }
   ]
 }
