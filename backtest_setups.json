@@ -86486,6 +86486,23 @@
       "technical_analysis": "EMA9 sits above price while EMA21 lies below, giving a bullish tilt. RSI at 53 is modestly positive, and ADX 36.6 confirms a strong trend. Order‑book shows a 26% bid imbalance, adding buying pressure. Price rests near the 1‑hour support of 0.00898 with resistance around 0.0093. Together, these indicators favor LONG continuation toward resistance.",
       "market_context": "Bitcoin is in a bearish trend and the overall market breadth is broadly negative.",
       "result": "PENDING"
+    },
+    {
+      "id": 5088,
+      "created_at": "2026-11-20T11:10:59.872537+00:00",
+      "symbol": "MUBUSDT",
+      "direction": "SHORT",
+      "title": "$MUB Fakeout Confirmed: Bulls Trapped at Local Highs",
+      "entry_low": 678.0,
+      "entry_high": 680.5,
+      "stop_loss": 706.42,
+      "take_profit": 624.91,
+      "support": 661.06,
+      "resistance": 680.5,
+      "news_line": "",
+      "technical_analysis": "Price sits below EMA9, EMA21, EMA50 and EMA200, confirming a strong downtrend. MACD is negative with a bearish histogram, and ADX above 30 signals a firm trend. RSI and Stochastic are oversold, but the dominant EMA and MACD signals favor short pressure toward the 661 support. Together, these indicators favor SHORT continuation toward support.",
+      "market_context": "BTC is in a bearish 4H and 1D trend, and the broader market is broadly negative with 91.7% red breadth.",
+      "result": "PENDING"
     }
   ]
 }
