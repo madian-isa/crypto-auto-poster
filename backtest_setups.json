@@ -86265,6 +86265,23 @@
       "technical_analysis": "Price sits well below EMA9‑200, confirming a downtrend. MACD line remains under its signal with a negative histogram, while ADX at 49 shows strong momentum. RSI 13.8 and Stochastic K under 10 signal deep oversold conditions, yet the prevailing bearish bias dominates. Immediate resistance sits near 0.0365 on the 1H chart.",
       "market_context": "BTC remains in a broader bearish trend on 4H and 1D, with price around $61.4k and market breadth 91.3% red, reinforcing the",
       "result": "PENDING"
+    },
+    {
+      "id": 5075,
+      "created_at": "2026-11-20T03:01:43.171930+00:00",
+      "symbol": "NEARUSDT",
+      "direction": "SHORT",
+      "title": "Overbought Indicators Signal Impending Correction for $NEAR",
+      "entry_low": 3.08,
+      "entry_high": 3.09,
+      "stop_loss": 3.2,
+      "take_profit": 2.855,
+      "support": 3.02,
+      "resistance": 3.226,
+      "news_line": "",
+      "technical_analysis": "RSI at 26 and Stochastic K/D around 14/11 signal deep oversold conditions, while MACD sits below its signal with a negative histogram, confirming bearish momentum. Price sits under EMA9, EMA21, EMA50 and EMA200, reinforcing a downtrend. ADX above 30 shows the trend is strong. The next resistance lies near 3.10, with support around 3.02.",
+      "market_context": "Bitcoin remains in a bearish 4‑hour and daily trend, with price below both EMA20 and EMA50 on each timeframe. Overall market breadth",
+      "result": "PENDING"
     }
   ]
 }
