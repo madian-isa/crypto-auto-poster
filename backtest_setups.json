@@ -86469,6 +86469,23 @@
       "technical_analysis": "RSI at 23.86 and Stochastic K under 2 signal deep oversold, yet price sits well below EMA9, EMA21, EMA50 and EMA200, confirming a strong downtrend. MACD remains negative with a slight bearish histogram, and ADX 47 shows the trend is robust. The pair respects the 1‑hour support at 91.41 and faces resistance near 94.77.",
       "market_context": "BTC is in a bearish 4‑hour and daily trend, down 3.44% in 24 h, and the broader market is 91.9% red, reinforcing",
       "result": "PENDING"
+    },
+    {
+      "id": 5087,
+      "created_at": "2026-11-20T10:21:02.784782+00:00",
+      "symbol": "HUMAUSDT",
+      "direction": "LONG",
+      "title": "$HUMA Liquidation Squeeze: Bears Trapped Near Critical Resistance",
+      "entry_low": 0.00898,
+      "entry_high": 0.00911,
+      "stop_loss": 0.0086832,
+      "take_profit": 0.0097686,
+      "support": 0.00898,
+      "resistance": 0.0093,
+      "news_line": "",
+      "technical_analysis": "EMA9 sits above price while EMA21 lies below, giving a bullish tilt. RSI at 53 is modestly positive, and ADX 36.6 confirms a strong trend. Order‑book shows a 26% bid imbalance, adding buying pressure. Price rests near the 1‑hour support of 0.00898 with resistance around 0.0093. Together, these indicators favor LONG continuation toward resistance.",
+      "market_context": "Bitcoin is in a bearish trend and the overall market breadth is broadly negative.",
+      "result": "PENDING"
     }
   ]
 }
