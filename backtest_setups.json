@@ -86690,6 +86690,23 @@
       "technical_analysis": "RSI at 19.4 and Stochastic K near 1 signal deep oversold conditions, yet MACD stays negative with a -3.17 histogram, confirming bearish momentum. All EMAs (9‑200) sit above price, and ADX above 50 shows a strong downtrend. The price is testing the 530.85 support zone. Together, these indicators favor SHORT continuation toward support.",
       "market_context": "Bitcoin remains in a bearish 4‑hour and daily trend, down about 7.5% over 24 h, and the broader market is 93.9% red",
       "result": "PENDING"
+    },
+    {
+      "id": 5100,
+      "created_at": "2026-11-20T19:51:10.784715+00:00",
+      "symbol": "MEGAUSDT",
+      "direction": "SHORT",
+      "title": "$MEGA Loses Key Demand Zone: Next Support Level Unprotected",
+      "entry_low": 0.051,
+      "entry_high": 0.0515,
+      "stop_loss": 0.0531,
+      "take_profit": 0.04755,
+      "support": 0.0477,
+      "resistance": 0.05162,
+      "news_line": "",
+      "technical_analysis": "Short bias dominates MEGA. Price sits beneath EMA9, EMA21 and EMA50, confirming downtrend. MACD line remains under its signal with a negative histogram, while RSI at 36 signals weak momentum. ADX near 40 shows a firm trend. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
+      "market_context": "BTC remains in a bearish 4‑hour and daily trend, down about 6.3% and trading below its 20‑ and 50‑EMA levels. Overall crypto",
+      "result": "PENDING"
     }
   ]
 }
