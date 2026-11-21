@@ -86928,6 +86928,23 @@
       "technical_analysis": "RSI at 27.8 and Stochastic K under 3 signal a deep oversold condition, yet price sits below EMA9, EMA21, EMA50 and EMA200, confirming a prevailing downtrend. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
       "market_context": "BTC is in a bearish 4‑hour and daily trend, with a 7.7% 24‑hour drop and market breadth showing 94.3% red assets, underscoring",
       "result": "PENDING"
+    },
+    {
+      "id": 5114,
+      "created_at": "2026-11-21T04:01:12.670932+00:00",
+      "symbol": "HYPEUSDT",
+      "direction": "SHORT",
+      "title": "$HYPE Volume Decreases on Rally: Weak Buyers Exposed",
+      "entry_low": 61.5,
+      "entry_high": 61.7,
+      "stop_loss": 63.8,
+      "take_profit": 57.2,
+      "support": 56.59,
+      "resistance": 61.77,
+      "news_line": "",
+      "technical_analysis": "The EMA stack (9‑21‑50‑200) sits well above price, MACD is negative and diverging from its signal, and ADX at 53.7 confirms a strong trend. RSI and Stochastic are deep oversold, but the prevailing bearish structure dominates, pointing to downside pressure toward the 56.6 support. Together, these indicators favor SHORT continuation toward support.",
+      "market_context": "Bitcoin is in a bearish 4‑hour and daily trend, down about 8.5% today, while the broader market is 94.8% red, indicating overall",
+      "result": "PENDING"
     }
   ]
 }
