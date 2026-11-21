@@ -86877,6 +86877,23 @@
       "technical_analysis": "Price sits below all short‑term EMAs (9, 21, 50) and the MACD histogram is negative, confirming bearish momentum. RSI is near oversold at 30.8, while ADX above 35 signals a strong trend. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
       "market_context": "BTC remains in a bearish trend on both 4‑hour and daily frames, and the broader market is 92% red, underscoring overall negative",
       "result": "PENDING"
+    },
+    {
+      "id": 5111,
+      "created_at": "2026-11-21T02:50:50.022780+00:00",
+      "symbol": "KORUBUSDT",
+      "direction": "SHORT",
+      "title": "Bears Retake Control as $KORUB Fails to Hold Moving Averages",
+      "entry_low": 5.02,
+      "entry_high": 5.04,
+      "stop_loss": 5.21,
+      "take_profit": 4.67,
+      "support": 4.6,
+      "resistance": 5.1,
+      "news_line": "",
+      "technical_analysis": "RSI at 30 and Stochastic around 29 signal oversold conditions, but price sits below EMA9, EMA21, EMA50 and EMA200, confirming a downtrend. With 1‑hour resistance at 5.1 and order‑book bias to the bid, the indicators favor a short stance overall. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
+      "market_context": "BTC is down 4.9% on the 24‑hour chart, market breadth shows 92% red, indicating a broadly negative environment.",
+      "result": "PENDING"
     }
   ]
 }
