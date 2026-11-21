@@ -87081,6 +87081,23 @@
       "technical_analysis": "Price is perched near the 1H/4H resistance of 0.03894, suggesting a near‑term pullback toward the 0.03492 support. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
       "market_context": "BTC is in a bearish trend with a 6.5% 24h decline and the broader market is 93% red, reinforcing downside bias for",
       "result": "PENDING"
+    },
+    {
+      "id": 5123,
+      "created_at": "2026-11-21T09:31:06.276176+00:00",
+      "symbol": "BNBUSDT",
+      "direction": "SHORT",
+      "title": "$BNB Volume Decreases on Rally: Weak Buyers Exposed",
+      "entry_low": 523.0,
+      "entry_high": 527.0,
+      "stop_loss": 543.4,
+      "take_profit": 488.2,
+      "support": 503.75,
+      "resistance": 530.0,
+      "news_line": "",
+      "technical_analysis": "The short‑term picture is bearish. Price sits below EMA9/21/50, while MACD remains negative and its histogram is shrinking. RSI at 33 signals oversold momentum, yet ADX ≈ 59 confirms a strong trend. With the order book tilted 28 % toward bids, the next resistance sits near 530 USDT. Thus the market favors a short move toward the 503.75 support level.",
+      "market_context": "BTC is in a bearish 4‑hour and daily trend, down 5.9 % and the broader market is 92 % red, indicating overall",
+      "result": "PENDING"
     }
   ]
 }
