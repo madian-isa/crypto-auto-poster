@@ -87064,6 +87064,23 @@
       "technical_analysis": "The MACD histogram sits deep in negative territory while price sits under the 9‑, 21‑, 50‑ and 200‑EMA, confirming bearish momentum. ADX at 34 signals a strong trend, and order‑book imbalance shows 33% more sell pressure. Stochastic is near the oversold zone but the prevailing bias remains short overall clearly in short.",
       "market_context": "BTC is in a bearish downtrend, down 6.3% on 24h, and the overall market is broadly negative with 92.9% red assets.",
       "result": "PENDING"
+    },
+    {
+      "id": 5122,
+      "created_at": "2026-11-21T09:01:09.223394+00:00",
+      "symbol": "DODOUSDT",
+      "direction": "SHORT",
+      "title": "$DODO Breaks Ascending Support Line: Bearish Momentum Surge",
+      "entry_low": 0.0388,
+      "entry_high": 0.03894,
+      "stop_loss": 0.0404,
+      "take_profit": 0.03581,
+      "support": 0.03492,
+      "resistance": 0.03894,
+      "news_line": "",
+      "technical_analysis": "Price is perched near the 1H/4H resistance of 0.03894, suggesting a near‑term pullback toward the 0.03492 support. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
+      "market_context": "BTC is in a bearish trend with a 6.5% 24h decline and the broader market is 93% red, reinforcing downside bias for",
+      "result": "PENDING"
     }
   ]
 }
