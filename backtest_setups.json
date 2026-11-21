@@ -87268,6 +87268,23 @@
       "technical_analysis": "RSI at 61 and ADX 27 confirm moderate strength. Stochastic is overbought but the order‑book imbalance (+15 %) supports buying pressure and could act as a ceiling. The next resistance sits near 187.3. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
       "market_context": "BTC is slightly bullish on the 24h horizon, while overall market breadth is mixed with a modest green majority.",
       "result": "PENDING"
+    },
+    {
+      "id": 5134,
+      "created_at": "2026-11-21T17:01:10.772976+00:00",
+      "symbol": "BARDUSDT",
+      "direction": "LONG",
+      "title": "Smart Money Flow Increases into $BARD Ahead of Catalysts",
+      "entry_low": 0.0993,
+      "entry_high": 0.0998,
+      "stop_loss": 0.0955,
+      "take_profit": 0.10765,
+      "support": 0.0923,
+      "resistance": 0.1043,
+      "news_line": "",
+      "technical_analysis": "RSI at 65.5 and a bullish MACD histogram (+0.0006) show strong clear upward momentum. Current price sits above the 9‑, 21‑and 50‑EMA, confirming the trend, while ADX = 51 indicates a very firm move. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
+      "market_context": "BTC shows bearish trends on 4h and daily charts, yet the broader market is broadly positive with a 60.8% green breadth, supporting",
+      "result": "PENDING"
     }
   ]
 }
