@@ -87183,6 +87183,23 @@
       "technical_analysis": "RSI at 32.6 points to oversold conditions while price sits just below the lower Bollinger Band, suggesting a potential bounce. The order book shows a modest bid‑side imbalance and the Stochastic K is above 50, adding upward bias. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
       "market_context": "BTC remains in a bearish downtrend on both 4‑hour and daily charts, with price around $59,200 and market breadth showing 87.5% red",
       "result": "PENDING"
+    },
+    {
+      "id": 5129,
+      "created_at": "2026-11-21T14:11:00.662883+00:00",
+      "symbol": "PARTIUSDT",
+      "direction": "LONG",
+      "title": "$PARTI Volume Expansion Signals High Conviction Upward Move",
+      "entry_low": 0.0369,
+      "entry_high": 0.0374,
+      "stop_loss": 0.035664,
+      "take_profit": 0.040122,
+      "support": 0.0368,
+      "resistance": 0.0393,
+      "news_line": "",
+      "technical_analysis": "MACD is bullish with a positive histogram, and price sits above the EMA9, EMA21, EMA50 and EMA200, confirming an uptrend. ADX at 38.8 signals a strong trend. RSI at 67.8 and Stochastic above 80 indicate near‑overbought conditions but momentum remains intact. The pair currently respects the 0.0368‑0.0393 1‑hour swing range.",
+      "market_context": "BTC is in a bearish 4‑hour and daily trend, down 2.6% over 24 h, with market breadth broadly negative.",
+      "result": "PENDING"
     }
   ]
 }
