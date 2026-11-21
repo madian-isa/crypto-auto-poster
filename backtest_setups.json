@@ -87132,6 +87132,23 @@
       "technical_analysis": "Current price sits just below the 1‑hour resistance zone around 82.7, while the MACD histogram is negative and the order book shows a 17 % ask‑side imbalance. Volume has collapsed 83 % and ADX at 39 confirms a strong trend overall. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish",
       "market_context": "BTC is bearish on both 4H and 1D timeframes, down 6.5% in the last 24 hours, and the broader market is broadly",
       "result": "PENDING"
+    },
+    {
+      "id": 5126,
+      "created_at": "2026-11-21T11:30:56.105006+00:00",
+      "symbol": "BTCUSDT",
+      "direction": "SHORT",
+      "title": "$BTC Fails Resistance Retest: Bearish Extension Imminent",
+      "entry_low": 57930.0,
+      "entry_high": 57980.0,
+      "stop_loss": 60010.0,
+      "take_profit": 53845.0,
+      "support": 57778.35,
+      "resistance": 58672.05,
+      "news_line": "",
+      "technical_analysis": "Short bias dominates as price sits below EMA21 (58,614), EMA50 (60,205) and EMA200 (64,426) while the 4‑hour and daily charts remain bearish. ADX at 46 confirms a strong trend, and the order‑book shows a slight ask pressure. RSI at 41 and stochastic around 65 suggest modest downside momentum near the 57,778 support zone.",
+      "market_context": "BTC is down 6.22% over 24h, the market breadth is heavily red (93.3% losers) and overall sentiment is broadly negative.",
+      "result": "PENDING"
     }
   ]
 }
