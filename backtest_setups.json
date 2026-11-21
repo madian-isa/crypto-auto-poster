@@ -87234,6 +87234,23 @@
       "technical_analysis": "The price sits above EMA9‑200 and the SMA50, while the MACD histogram turned positive despite both lines staying below zero. RSI is modestly bullish at 54.7 and Stochastic is in the high‑80s, indicating overbought but still upward pressure. Order‑book shows a 22% bid imbalance. Together these signals favor a near‑term long bias toward the 0.00937 resistance.",
       "market_context": "Bitcoin is in a bearish trend, down 2.38% on the day, with market breadth showing 84.6% of assets red, indicating broadly negative",
       "result": "PENDING"
+    },
+    {
+      "id": 5132,
+      "created_at": "2026-11-21T15:41:03.625147+00:00",
+      "symbol": "UNIUSDT",
+      "direction": "LONG",
+      "title": "$UNI Breakout Confirmation: Bulls Target Next Supply Zone",
+      "entry_low": 4.73,
+      "entry_high": 4.745,
+      "stop_loss": 4.56,
+      "take_profit": 5.0925,
+      "support": 4.729,
+      "resistance": 4.745,
+      "news_line": "",
+      "technical_analysis": "RSI at 61.5 and a positive MACD histogram (+0.058) confirm upward momentum. ADX 33 shows a strong trend, and the order‑book shows a 26 % bid imbalance. Resistance lies near 4.745. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
+      "market_context": "BTC is in a bearish trend on both 4H and 1D timeframes, trading around $59,887, while overall market breadth is mixed.",
+      "result": "PENDING"
     }
   ]
 }
