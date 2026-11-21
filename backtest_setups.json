@@ -86894,6 +86894,23 @@
       "technical_analysis": "RSI at 30 and Stochastic around 29 signal oversold conditions, but price sits below EMA9, EMA21, EMA50 and EMA200, confirming a downtrend. With 1‑hour resistance at 5.1 and order‑book bias to the bid, the indicators favor a short stance overall. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
       "market_context": "BTC is down 4.9% on the 24‑hour chart, market breadth shows 92% red, indicating a broadly negative environment.",
       "result": "PENDING"
+    },
+    {
+      "id": 5112,
+      "created_at": "2026-11-21T03:10:57.483836+00:00",
+      "symbol": "SNXXBUSDT",
+      "direction": "SHORT",
+      "title": "High Volume Selling Sweep Breaks $SNXXB Market Structure",
+      "entry_low": 1.84,
+      "entry_high": 1.86,
+      "stop_loss": 1.925,
+      "take_profit": 1.7,
+      "support": 1.74,
+      "resistance": 1.86,
+      "news_line": "",
+      "technical_analysis": "RSI at 25.8 and Stochastic K below 15 signal oversold conditions, yet price sits under EMA9, EMA21, EMA50 and EMA200, confirming a prevailing downtrend. ADX above 45 shows strong trend strength, and the order‑book imbalance favors sellers. These factors collectively point to short‑side pressure around the 1.86 resistance. Together, these indicators favor SHORT continuation toward support.",
+      "market_context": "BTC is in a bearish 4H and 1D trend, with the broader market showing a 91.9% red breadth and a 5.8% drop",
+      "result": "PENDING"
     }
   ]
 }
