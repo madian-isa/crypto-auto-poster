@@ -87217,6 +87217,23 @@
       "technical_analysis": "MACD is positive with a strong histogram, and the EMA series (9‑21‑50‑200) are all stacked below price, confirming bullish bias. Order‑book imbalance shows more bid value, adding buying pressure. RSI is high at 76.5, indicating overbought but momentum remains intact. Price sits near the upper Bollinger band, supporting a continued upward thrust.",
       "market_context": "BTC is in a bearish 4‑hour and daily trend, down 1.76% with broadly negative market breadth (78.5% red).",
       "result": "PENDING"
+    },
+    {
+      "id": 5131,
+      "created_at": "2026-11-21T15:01:03.670423+00:00",
+      "symbol": "HUMAUSDT",
+      "direction": "LONG",
+      "title": "Trend Reversal Confirmed for $HUMA as Volume Spikes Upward",
+      "entry_low": 0.00898,
+      "entry_high": 0.00907,
+      "stop_loss": 0.00865,
+      "take_profit": 0.009775,
+      "support": 0.00898,
+      "resistance": 0.00937,
+      "news_line": "",
+      "technical_analysis": "The price sits above EMA9‑200 and the SMA50, while the MACD histogram turned positive despite both lines staying below zero. RSI is modestly bullish at 54.7 and Stochastic is in the high‑80s, indicating overbought but still upward pressure. Order‑book shows a 22% bid imbalance. Together these signals favor a near‑term long bias toward the 0.00937 resistance.",
+      "market_context": "Bitcoin is in a bearish trend, down 2.38% on the day, with market breadth showing 84.6% of assets red, indicating broadly negative",
+      "result": "PENDING"
     }
   ]
 }
