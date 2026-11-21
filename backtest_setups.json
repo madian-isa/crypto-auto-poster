@@ -87115,6 +87115,23 @@
       "technical_analysis": "Price sits above the 9‑, 21‑, 50‑ and 200‑EMA, confirming bullish bias. MACD line is above its signal with a positive histogram, while RSI at 60.9 and Stochastic K/D at 64/42 show upward momentum. ADX above 60 signals a strong trend, and the price remains below the upper Bollinger band, supporting a long outlook.",
       "market_context": "BTC is in a bearish 4H and daily trend, and the broader market is broadly negative, which adds caution but does not",
       "result": "PENDING"
+    },
+    {
+      "id": 5125,
+      "created_at": "2026-11-21T10:50:55.976181+00:00",
+      "symbol": "SOXSBUSDT",
+      "direction": "SHORT",
+      "title": "Bearish Divergence Spotted on $SOXSB: Downside Targets Ahead",
+      "entry_low": 81.95,
+      "entry_high": 82.15,
+      "stop_loss": 84.95,
+      "take_profit": 76.25,
+      "support": 78.54,
+      "resistance": 82.7,
+      "news_line": "",
+      "technical_analysis": "Current price sits just below the 1‑hour resistance zone around 82.7, while the MACD histogram is negative and the order book shows a 17 % ask‑side imbalance. Volume has collapsed 83 % and ADX at 39 confirms a strong trend overall. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish",
+      "market_context": "BTC is bearish on both 4H and 1D timeframes, down 6.5% in the last 24 hours, and the broader market is broadly",
+      "result": "PENDING"
     }
   ]
 }
