@@ -87251,6 +87251,23 @@
       "technical_analysis": "RSI at 61.5 and a positive MACD histogram (+0.058) confirm upward momentum. ADX 33 shows a strong trend, and the order‑book shows a 26 % bid imbalance. Resistance lies near 4.745. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
       "market_context": "BTC is in a bearish trend on both 4H and 1D timeframes, trading around $59,887, while overall market breadth is mixed.",
       "result": "PENDING"
+    },
+    {
+      "id": 5133,
+      "created_at": "2026-11-21T16:51:00.856754+00:00",
+      "symbol": "TAOUSDT",
+      "direction": "LONG",
+      "title": "Buyers Defend Key Demand Zone: $TAO Ready for Extension",
+      "entry_low": 186.8,
+      "entry_high": 187.2,
+      "stop_loss": 179.52,
+      "take_profit": 201.96,
+      "support": 185.8,
+      "resistance": 187.3,
+      "news_line": "",
+      "technical_analysis": "RSI at 61 and ADX 27 confirm moderate strength. Stochastic is overbought but the order‑book imbalance (+15 %) supports buying pressure and could act as a ceiling. The next resistance sits near 187.3. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
+      "market_context": "BTC is slightly bullish on the 24h horizon, while overall market breadth is mixed with a modest green majority.",
+      "result": "PENDING"
     }
   ]
 }
