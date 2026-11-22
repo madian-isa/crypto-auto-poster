@@ -87965,6 +87965,23 @@
       "technical_analysis": "MACD histogram is positive and widening, confirming bullish momentum. Price sits above the 9‑, 21‑ and 50‑EMA, indicating an uptrend, while ADX at 37 shows a strong trend. RSI at 67 signals firm buying pressure, and the order‑book shows a 27% bid‑side imbalance. Together, these indicators favor LONG continuation toward resistance.",
       "market_context": "BTC is in a bullish stance and the overall market is broadly positive, with 62% of assets green.",
       "result": "PENDING"
+    },
+    {
+      "id": 5175,
+      "created_at": "2026-11-22T20:40:53.397827+00:00",
+      "symbol": "WLDUSDT",
+      "direction": "LONG",
+      "title": "$WLD Reclaims Key Resistance Level: Flip to Support Complete",
+      "entry_low": 0.2371,
+      "entry_high": 0.238,
+      "stop_loss": 0.2285,
+      "take_profit": 0.25565,
+      "support": 0.2313,
+      "resistance": 0.2447,
+      "news_line": "",
+      "technical_analysis": "MACD shows a positive histogram (+0.00081) with the line above its signal, confirming upward momentum. The price sits above the 9‑, 21‑ and 50‑EMA, reinforcing a bullish trend. Order‑book pressure shows a 9.6% bid imbalance. RSI at 68 suggests strong but not exhausted momentum, while ADX 23 indicates a trend.",
+      "market_context": "BTC is 24‑hour bullish (+0.3%) while the 4‑hour chart shows mixed signals and the daily trend remains bearish, providing a broadly positive",
+      "result": "PENDING"
     }
   ]
 }
