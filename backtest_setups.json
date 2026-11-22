@@ -87778,6 +87778,23 @@
       "technical_analysis": "MACD shows a positive line (1.38e‑5) with a bullish histogram (1.88e‑5) while the signal stays negative, indicating upward momentum. RSI at 66.8 and Stochastic K at 89 point to strong but not over‑extended buying pressure. Order‑book imbalance favors bids (+23 %). Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish",
       "market_context": "BTC up 3.5% in 24 h, market breadth broadly positive with 84.8% green assets, supporting risk‑on sentiment.",
       "result": "PENDING"
+    },
+    {
+      "id": 5164,
+      "created_at": "2026-11-22T13:50:59.400143+00:00",
+      "symbol": "SOLUSDT",
+      "direction": "LONG",
+      "title": "Critical Resistance Test: $SOL Preparing to Surge Higher",
+      "entry_low": 70.2,
+      "entry_high": 70.3,
+      "stop_loss": 67.44,
+      "take_profit": 75.87,
+      "support": 68.74,
+      "resistance": 70.52,
+      "news_line": "",
+      "technical_analysis": "MACD is bullish with the line (0.155) above its signal (0.087) and a positive histogram. RSI at 53.4 is modestly above neutral. Order‑book shows an 8.9 % bid‑side imbalance. Price respects the 1H support at 68.74 and tests resistance near 70.52, favoring a long stance. Together, these indicators favor LONG continuation toward resistance.",
+      "market_context": "BTC is in a bearish daily trend, down 0.075 % and trading below its 20‑ and 50‑EMA, adding slight downside pressure to",
+      "result": "PENDING"
     }
   ]
 }
