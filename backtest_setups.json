@@ -87455,6 +87455,23 @@
       "technical_analysis": "The supplied indicators show a bullish structure for this market. Together, they favor LONG continuation, with momentum pointing toward resistance and support framing the current price structure. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure. The nearby support and resistance levels frame the current market structure.",
       "market_context": "BTC up 2.07% in 24 h, market breadth shows 57.9% green, indicating overall bullish sentiment despite mixed tone.",
       "result": "PENDING"
+    },
+    {
+      "id": 5145,
+      "created_at": "2026-11-22T00:50:51.280283+00:00",
+      "symbol": "DODOUSDT",
+      "direction": "LONG",
+      "title": "Strong Accumulation Detected: $DODO Prepares for Next Wave Up",
+      "entry_low": 0.0388,
+      "entry_high": 0.0394,
+      "stop_loss": 0.0373,
+      "take_profit": 0.0427,
+      "support": 0.03823,
+      "resistance": 0.03994,
+      "news_line": "",
+      "technical_analysis": "Price sits just below the 1‑hour resistance at 0.03994, comfortably above the EMA9 (0.03891), EMA21 (0.03787) and EMA50 (0.03586), confirming an upward bias. RSI at 61 signals continued buying strength, while ADX ≈ 52 shows a strong trend. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
+      "market_context": "BTC rose 1.9% in 24 h, keeping a bullish tone while the overall market breadth is mixed (58% green).",
+      "result": "PENDING"
     }
   ]
 }
