@@ -87710,6 +87710,23 @@
       "technical_analysis": "This combination of overbought stochastic, BB breach and proximity to the 0.664 resistance points to short‑term downside pressure. A pullback toward the 0.645 support is likely. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
       "market_context": "BTC is up 4.86% over 24 h, keeping the broader market broadly positive with 90.6% of assets in green.",
       "result": "PENDING"
+    },
+    {
+      "id": 5160,
+      "created_at": "2026-11-22T11:11:05.690579+00:00",
+      "symbol": "NIGHTUSDT",
+      "direction": "LONG",
+      "title": "On-Chain Metrics Confirm Strong Whale Accumulation on $NIGHT",
+      "entry_low": 0.0458,
+      "entry_high": 0.04591,
+      "stop_loss": 0.04415,
+      "take_profit": 0.049265,
+      "support": 0.04415,
+      "resistance": 0.04636,
+      "news_line": "",
+      "technical_analysis": "NIGHTUSDT sits above its EMA series, with price beating the 9‑, 21‑, 50‑ and 200‑EMA, confirming an uptrend. RSI at 67 and Stochastic K ≈ 83 show strong bullish momentum, while MACD histogram remains positive. ADX near 28 indicates a solid trend, and the price respects the 0.04415 – 0.04636 swing zone overall structure.",
+      "market_context": "BTC is up 5% in the last 24 h, though its 4‑hour trend is mixed and daily trend bearish. The broader market",
+      "result": "PENDING"
     }
   ]
 }
