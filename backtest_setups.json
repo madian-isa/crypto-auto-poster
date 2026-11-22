@@ -87523,6 +87523,23 @@
       "technical_analysis": "MACD shows a positive histogram and line above signal, indicating bullish momentum. The order book is bid‑heavy with a 10% imbalance, supporting upside. Immediate resistance is at 2.894, support at 2.832 on the chart. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
       "market_context": "BTC is in a bearish trend on 4h and daily charts, yet shows a 1.85% 24h gain, reflecting mixed market breadth.",
       "result": "PENDING"
+    },
+    {
+      "id": 5149,
+      "created_at": "2026-11-22T03:50:50.611275+00:00",
+      "symbol": "UNIUSDT",
+      "direction": "LONG",
+      "title": "High R-Multiple Long Trade Setup Forming on $UNI",
+      "entry_low": 4.679,
+      "entry_high": 4.704,
+      "stop_loss": 4.527,
+      "take_profit": 5.0205,
+      "support": 4.313,
+      "resistance": 4.752,
+      "news_line": "",
+      "technical_analysis": "MACD is bullish with the line (0.045) above the signal (0.035) and a positive histogram, while ADX at 27 confirms a firm trend. RSI sits at 53, just above the neutral zone, and price holds above EMA21 and EMA50. Order‑book shows a 35 % bid imbalance, supporting upside toward the 4.714 resistance.",
+      "market_context": "BTC is in a 24‑hour bullish swing, while overall market breadth is broadly positive (86 % green).",
+      "result": "PENDING"
     }
   ]
 }
