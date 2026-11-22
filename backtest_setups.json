@@ -87506,6 +87506,23 @@
       "technical_analysis": "MACD shows a strong positive histogram (+2.45) and the line sits well above its signal, indicating bullish momentum. Price sits just below the 9‑EMA (782.4) but above the 21‑EMA (777.2), supporting an upward bias. RSI is neutral at 51 and ADX is low, suggesting no strong trend yet. The nearest resistance is ~796.5, with support around 745.9.",
       "market_context": "BTC is up 1.5% on the day, while overall market breadth is mixed (46.7% green, 53.3% red).",
       "result": "PENDING"
+    },
+    {
+      "id": 5148,
+      "created_at": "2026-11-22T03:11:00.321065+00:00",
+      "symbol": "NEARUSDT",
+      "direction": "LONG",
+      "title": "Strong Accumulation Detected: $NEAR Prepares for Next Wave Up",
+      "entry_low": 2.876,
+      "entry_high": 2.88,
+      "stop_loss": 2.76288,
+      "take_profit": 3.10824,
+      "support": 2.832,
+      "resistance": 2.894,
+      "news_line": "",
+      "technical_analysis": "MACD shows a positive histogram and line above signal, indicating bullish momentum. The order book is bid‑heavy with a 10% imbalance, supporting upside. Immediate resistance is at 2.894, support at 2.832 on the chart. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
+      "market_context": "BTC is in a bearish trend on 4h and daily charts, yet shows a 1.85% 24h gain, reflecting mixed market breadth.",
+      "result": "PENDING"
     }
   ]
 }
