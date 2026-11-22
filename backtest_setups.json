@@ -87608,6 +87608,23 @@
       "technical_analysis": "RSI at 62.7 and ADX at 46 signal a strong bullish trend, while Stochastic K (54.8) stays above D (29.2). Order‑book shows a 6.9% bid imbalance, reinforcing upward pressure. Current price 1.222 is just below the 1.223 resistance, leaving room for further Together, these indicators favor LONG continuation toward resistance.",
       "market_context": "BTC is up 5.9% in 24 h, though its 4 h and daily charts remain bearish, while the overall market shows a",
       "result": "PENDING"
+    },
+    {
+      "id": 5154,
+      "created_at": "2026-11-22T06:40:54.422342+00:00",
+      "symbol": "AIGENSYNUSDT",
+      "direction": "LONG",
+      "title": "$AIGENSYN Reclaims Key Resistance Level: Flip to Support Complete",
+      "entry_low": 0.0155,
+      "entry_high": 0.0162,
+      "stop_loss": 0.015216,
+      "take_profit": 0.017118,
+      "support": 0.01376,
+      "resistance": 0.0179,
+      "news_line": "",
+      "technical_analysis": "MACD is bullish with a positive histogram, and price sits above the 9‑, 21‑ and 50‑EMA, confirming upward momentum. ADX at 47 signals a strong trend, while the order book shows a 21% bid‑side imbalance. Although RSI is overbought and price is above the upper Bollinger band, the dominant signals favor a LONG stance toward the 0.0179 resistance.",
+      "market_context": "BTC is up 4.5% on the day, but its 4‑hour and daily charts remain bearish, while the broader market is 87.6% green",
+      "result": "PENDING"
     }
   ]
 }
