@@ -88033,6 +88033,23 @@
       "technical_analysis": "The MACD histogram is positive and the line sits above its signal, while price trades above the 9‑ and 21‑EMA, indicating bullish momentum. RSI at 56 and a moderate ADX of 25 confirm an emerging uptrend. Order‑book shows a 26 % bid imbalance. Immediate resistance sits near 6.23, with support around 6.20.",
       "market_context": "BTC is up 0.9 % over 24 h, showing bullish bias, though its 4 h trend is mixed and 1 d trend",
       "result": "PENDING"
+    },
+    {
+      "id": 5179,
+      "created_at": "2026-11-22T23:01:07.308507+00:00",
+      "symbol": "DOGEUSDT",
+      "direction": "LONG",
+      "title": "$DOGE Outperformance Signal: Buying Momentum Beats Broader Market",
+      "entry_low": 0.05495,
+      "entry_high": 0.05515,
+      "stop_loss": 0.053,
+      "take_profit": 0.05915,
+      "support": 0.05492,
+      "resistance": 0.05547,
+      "news_line": "",
+      "technical_analysis": "The EMA alignment and order‑book pressure favor a long bias, with support at 0.05492 and resistance near 0.05547. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure. The nearby support and resistance levels frame the current market structure.",
+      "market_context": "BTC is up 1.8% on the day, with a mixed 4‑hour trend but a bearish daily outlook, while overall market breadth is",
+      "result": "PENDING"
     }
   ]
 }
