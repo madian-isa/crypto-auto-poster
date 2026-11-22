@@ -87472,6 +87472,23 @@
       "technical_analysis": "Price sits just below the 1‑hour resistance at 0.03994, comfortably above the EMA9 (0.03891), EMA21 (0.03787) and EMA50 (0.03586), confirming an upward bias. RSI at 61 signals continued buying strength, while ADX ≈ 52 shows a strong trend. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
       "market_context": "BTC rose 1.9% in 24 h, keeping a bullish tone while the overall market breadth is mixed (58% green).",
       "result": "PENDING"
+    },
+    {
+      "id": 5146,
+      "created_at": "2026-11-22T01:10:55.275460+00:00",
+      "symbol": "ENSOUSDT",
+      "direction": "LONG",
+      "title": "Golden Cross Formation Confirmed on $ENSO 4-Hour Timeframe",
+      "entry_low": 0.48,
+      "entry_high": 0.502,
+      "stop_loss": 0.462,
+      "take_profit": 0.549,
+      "support": 0.459,
+      "resistance": 0.541,
+      "news_line": "",
+      "technical_analysis": "ENS is trading above its EMA hierarchy (EMA9‑200) and the RSI at 64 shows solid strength. MACD is bullish with a positive histogram, while Stochastic sits in the 76‑65 zone confirming upward momentum. ADX above 38 signals a strong trend. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
+      "market_context": "BTC is in a bearish 4‑hour trend but overall market breadth is broadly positive with a 60% green ticker, offering a neutral",
+      "result": "PENDING"
     }
   ]
 }
