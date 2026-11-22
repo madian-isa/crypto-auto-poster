@@ -87897,6 +87897,23 @@
       "technical_analysis": "Price sits just below the 1‑hour resistance 0.1367 and under the EMA200, while order‑book shows a sell‑side imbalance. The combined picture points to downside pressure. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
       "market_context": "BTC is up 1.4% in 24 h, keeping a bullish tone, while the overall market shows a broadly positive breadth (66 %",
       "result": "PENDING"
+    },
+    {
+      "id": 5171,
+      "created_at": "2026-11-22T18:31:07.397222+00:00",
+      "symbol": "ACEUSDT",
+      "direction": "SHORT",
+      "title": "$ACE Fakeout Confirmed: Bulls Trapped at Local Highs",
+      "entry_low": 0.08,
+      "entry_high": 0.082,
+      "stop_loss": 0.084,
+      "take_profit": 0.075,
+      "support": 0.074,
+      "resistance": 0.0829,
+      "news_line": "",
+      "technical_analysis": "Price sits below the EMA9/21/50/200 cluster and the MACD histogram remains negative, indicating bearish momentum. RSI at 21 and a stochastic K of 25 suggest oversold conditions, but the prevailing downtrend dominates. The pair respects the 0.0829 resistance and 0.074 support zones, favoring a short bias on short‑term timeframe trading.",
+      "market_context": "BTC shows a modest 0.8% bullish gain, though broader market breadth is mixed. The crypto market remains slightly more green than red.",
+      "result": "PENDING"
     }
   ]
 }
