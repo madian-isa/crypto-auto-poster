@@ -1,6 +1,6 @@
 {
   "date": "2026-11-22",
-  "count": 21,
+  "count": 22,
   "posted_symbols_today": [
     "MMTUSDT",
     "DODOUSDT",
@@ -22,6 +22,7 @@
     "MSTRBUSDT",
     "ENAUSDT",
     "PUMPUSDT",
-    "SOLUSDT"
+    "SOLUSDT",
+    "XRPUSDT"
   ]
 }
