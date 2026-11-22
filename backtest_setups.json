@@ -87489,6 +87489,23 @@
       "technical_analysis": "ENS is trading above its EMA hierarchy (EMA9‑200) and the RSI at 64 shows solid strength. MACD is bullish with a positive histogram, while Stochastic sits in the 76‑65 zone confirming upward momentum. ADX above 38 signals a strong trend. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
       "market_context": "BTC is in a bearish 4‑hour trend but overall market breadth is broadly positive with a 60% green ticker, offering a neutral",
       "result": "PENDING"
+    },
+    {
+      "id": 5147,
+      "created_at": "2026-11-22T02:30:57.279919+00:00",
+      "symbol": "ZECUSDT",
+      "direction": "LONG",
+      "title": "$ZEC Breaks Out of Falling Wedge Pattern: Targets Set Higher",
+      "entry_low": 779.0,
+      "entry_high": 781.0,
+      "stop_loss": 752.5,
+      "take_profit": 835.0,
+      "support": 745.88,
+      "resistance": 796.51,
+      "news_line": "",
+      "technical_analysis": "MACD shows a strong positive histogram (+2.45) and the line sits well above its signal, indicating bullish momentum. Price sits just below the 9‑EMA (782.4) but above the 21‑EMA (777.2), supporting an upward bias. RSI is neutral at 51 and ADX is low, suggesting no strong trend yet. The nearest resistance is ~796.5, with support around 745.9.",
+      "market_context": "BTC is up 1.5% on the day, while overall market breadth is mixed (46.7% green, 53.3% red).",
+      "result": "PENDING"
     }
   ]
 }
