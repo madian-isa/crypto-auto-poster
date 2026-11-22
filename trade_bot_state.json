@@ -1,12 +1,13 @@
 {
   "date": "2026-11-22",
-  "count": 6,
+  "count": 7,
   "posted_symbols_today": [
     "MMTUSDT",
     "DODOUSDT",
     "ENSOUSDT",
     "ZECUSDT",
     "NEARUSDT",
-    "UNIUSDT"
+    "UNIUSDT",
+    "ETHUSDT"
   ]
 }
