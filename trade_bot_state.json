@@ -1,6 +1,6 @@
 {
   "date": "2026-11-22",
-  "count": 8,
+  "count": 9,
   "posted_symbols_today": [
     "MMTUSDT",
     "DODOUSDT",
@@ -9,6 +9,7 @@
     "NEARUSDT",
     "UNIUSDT",
     "ETHUSDT",
-    "BTCUSDT"
+    "BTCUSDT",
+    "HYPEUSDT"
   ]
 }
