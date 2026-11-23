@@ -88458,6 +88458,23 @@
       "technical_analysis": "MACD sits above its signal with a positive histogram, while EMA9, EMA21 and EMA50 are all below price, confirming an uptrend. ADX above 25 (26.5) shows the trend is strong. Although RSI (75) and Stochastic (80/87) signal overbought conditions, the bullish momentum and price above EMA200 favor a long bias toward the 6.62 resistance.",
       "market_context": "BTC rose 2.9% in 24h, keeping the broader market broadly positive.",
       "result": "PENDING"
+    },
+    {
+      "id": 5204,
+      "created_at": "2026-11-23T17:41:02.152593+00:00",
+      "symbol": "SNXXBUSDT",
+      "direction": "SHORT",
+      "title": "Moving Average Death Cross Signals Downward Trend for $SNXXB",
+      "entry_low": 2.3,
+      "entry_high": 2.34,
+      "stop_loss": 2.43,
+      "take_profit": 2.1,
+      "support": 1.91,
+      "resistance": 2.67,
+      "news_line": "",
+      "technical_analysis": "RSI 73 is overbought and order‑book imbalance –19.9 % adds bearish pressure, favoring a short toward the 2.27 $ support. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
+      "market_context": "BTC is up 1.27 % today, showing bullish momentum, while the overall market is broadly positive (88 % green).",
+      "result": "PENDING"
     }
   ]
 }
