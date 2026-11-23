@@ -88271,6 +88271,23 @@
       "technical_analysis": "MACD shows a bullish crossover with a positive histogram, while RSI at 35 signals oversold conditions ready for upside. ADX above 50 confirms a strong trend, and the order‑book shows a 5 % bid‑side imbalance. Price sits above the 9‑EMA and near the 1 h support zone, supporting a long bias overall.",
       "market_context": "BTC is up 3.2 % in the last 24 h, keeping the broader market broadly positive with 83 % of assets in",
       "result": "PENDING"
+    },
+    {
+      "id": 5193,
+      "created_at": "2026-11-23T08:31:09.479732+00:00",
+      "symbol": "NVDABUSDT",
+      "direction": "LONG",
+      "title": "Spot Inflows Surge for $NVDAB as Futures Open Interest Rises",
+      "entry_low": 134.3,
+      "entry_high": 134.5,
+      "stop_loss": 129.6,
+      "take_profit": 144.0,
+      "support": 132.57,
+      "resistance": 136.0,
+      "news_line": "",
+      "technical_analysis": "MACD shows a positive histogram and the line sits above the signal, indicating upward momentum. Order‑book imbalance favors bids (8.3 %), and price sits near the 1‑hour resistance at 136.0, supporting a long outlook. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
+      "market_context": "BTC is up 2.7 % on the day, keeping the broader market broadly positive.",
+      "result": "PENDING"
     }
   ]
 }
