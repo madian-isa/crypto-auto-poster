@@ -88492,6 +88492,23 @@
       "technical_analysis": "Price sits above EMA9, EMA21, EMA50 and EMA200, confirming an uptrend. MACD line is well above its signal with a strong positive histogram, while ADX above 30 signals a firm trend. Volume surged nearly 85%, adding conviction. Despite an overbought RSI, the momentum indicators favor a continued rise toward resistance.",
       "market_context": "The broader market is broadly positive, with 88.8% of assets green and BTC showing a modest 1.35% bullish gain, supporting the upward",
       "result": "PENDING"
+    },
+    {
+      "id": 5206,
+      "created_at": "2026-11-23T19:11:08.913115+00:00",
+      "symbol": "SKHYBUSDT",
+      "direction": "LONG",
+      "title": "High R-Multiple Long Trade Setup Forming on $SKHYB",
+      "entry_low": 123.7,
+      "entry_high": 124.0,
+      "stop_loss": 118.896,
+      "take_profit": 133.758,
+      "support": 110.7,
+      "resistance": 128.07,
+      "news_line": "",
+      "technical_analysis": "Price trades above the 9‑, 21‑, 50‑ and 200‑EMA, and MACD shows a bullish line with a positive histogram. ADX at 38 confirms a strong trend. Momentum favors a move toward the 125‑128 resistance zone. Current support sits near 123.75, offering a firm base. Together, these indicators favor LONG continuation toward resistance.",
+      "market_context": "BTC is up 1.3% on the day and the broader market is broadly positive, with 84.9% of assets showing green momentum.",
+      "result": "PENDING"
     }
   ]
 }
