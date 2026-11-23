@@ -88543,6 +88543,23 @@
       "technical_analysis": "Momentum remains bullish as price sits above the 9, 21, 50 and 200 EMA, confirming an uptrend. MACD shows a positive histogram and the line is above its signal, while ADX at 31 indicates a strong trend. RSI and Stochastic are in overbought territory but support the current upward bias.",
       "market_context": "BTC is trading near $61,340 with a bullish 24‑hour move, and the broader market shows 81% green assets, indicating overall positive sentiment.",
       "result": "PENDING"
+    },
+    {
+      "id": 5209,
+      "created_at": "2026-11-23T20:21:03.407429+00:00",
+      "symbol": "INTCBUSDT",
+      "direction": "SHORT",
+      "title": "Panic Selling Risk Increases as $INTCB Tests Critical Floor",
+      "entry_low": 58.35,
+      "entry_high": 58.45,
+      "stop_loss": 60.5,
+      "take_profit": 54.2,
+      "support": 53.76,
+      "resistance": 59.51,
+      "news_line": "",
+      "technical_analysis": "ADX above 30 shows a strong trend, while order‑book imbalance favors asks, tilting momentum toward a short bias. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
+      "market_context": "BTC is up 1.0% and bullish, and 80.8% of the market is green, indicating broadly positive sentiment.",
+      "result": "PENDING"
     }
   ]
 }
