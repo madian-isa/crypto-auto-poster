@@ -88424,6 +88424,23 @@
       "technical_analysis": "Price sits above the Bollinger upper band and near the 24‑hour high, while the order‑book shows a sell‑side imbalance. These signs point to a near‑term pullback, favoring a short bias. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
       "market_context": "BTC is bullish with a 5% 24‑hour gain and the broader market is broadly positive, yet NBISB exhibits classic overbought cues suggesting",
       "result": "PENDING"
+    },
+    {
+      "id": 5202,
+      "created_at": "2026-11-23T15:01:14.513003+00:00",
+      "symbol": "SOXSBUSDT",
+      "direction": "SHORT",
+      "title": "Smart Money Distribution Visible on $SOXSB On-Chain Data",
+      "entry_low": 51.0,
+      "entry_high": 51.2,
+      "stop_loss": 53.0,
+      "take_profit": 47.3,
+      "support": 43.68,
+      "resistance": 71.52,
+      "news_line": "",
+      "technical_analysis": "All major indicators point bearish. RSI at 16 and Stochastic K/D around 21/19 signal deep oversold conditions while price sits well under EMA9‑200, confirming a downtrend. MACD is negative with a widening histogram, and ADX 37 shows a strong trend. Order‑book imbalance of –76 % adds sell pressure, favoring a short bias.",
+      "market_context": "BTC is up 3.3% on the day, yet the overall market remains broadly positive with 92% assets green. Despite the bullish BTC",
+      "result": "PENDING"
     }
   ]
 }
