@@ -88441,6 +88441,23 @@
       "technical_analysis": "All major indicators point bearish. RSI at 16 and Stochastic K/D around 21/19 signal deep oversold conditions while price sits well under EMA9‑200, confirming a downtrend. MACD is negative with a widening histogram, and ADX 37 shows a strong trend. Order‑book imbalance of –76 % adds sell pressure, favoring a short bias.",
       "market_context": "BTC is up 3.3% on the day, yet the overall market remains broadly positive with 92% assets green. Despite the bullish BTC",
       "result": "PENDING"
+    },
+    {
+      "id": 5203,
+      "created_at": "2026-11-23T16:20:53.181560+00:00",
+      "symbol": "KORUBUSDT",
+      "direction": "LONG",
+      "title": "Critical Resistance Test: $KORUB Preparing to Surge Higher",
+      "entry_low": 6.23,
+      "entry_high": 6.3,
+      "stop_loss": 6.02,
+      "take_profit": 6.755,
+      "support": 5.27,
+      "resistance": 6.62,
+      "news_line": "",
+      "technical_analysis": "MACD sits above its signal with a positive histogram, while EMA9, EMA21 and EMA50 are all below price, confirming an uptrend. ADX above 25 (26.5) shows the trend is strong. Although RSI (75) and Stochastic (80/87) signal overbought conditions, the bullish momentum and price above EMA200 favor a long bias toward the 6.62 resistance.",
+      "market_context": "BTC rose 2.9% in 24h, keeping the broader market broadly positive.",
+      "result": "PENDING"
     }
   ]
 }
