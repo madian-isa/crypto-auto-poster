@@ -88628,6 +88628,23 @@
       "technical_analysis": "Stochastic is deep in oversold territory (K ≈ 16) while RSI sits near neutral 50, suggesting room for upside. Order‑book imbalance shows modest buying interest near the 0.672 support zone, aligning with a tentative long bias. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
       "market_context": "BTC is up 0.56% in 24 h, market breadth is broadly positive with 71 % green tickers, supporting risk‑on sentiment.",
       "result": "PENDING"
+    },
+    {
+      "id": 5214,
+      "created_at": "2026-11-23T23:01:07.625427+00:00",
+      "symbol": "HYPEUSDT",
+      "direction": "SHORT",
+      "title": "Bears Retake Control as $HYPE Fails to Hold Moving Averages",
+      "entry_low": 64.0,
+      "entry_high": 64.3,
+      "stop_loss": 66.5,
+      "take_profit": 59.45,
+      "support": 63.51,
+      "resistance": 69.8,
+      "news_line": "",
+      "technical_analysis": "MACD sits below its signal line while the 9‑EMA and 21‑EMA sit above price, indicating downward pressure. ADX around 27 confirms a moderate trend. Stochastic is deep in oversold territory but the broader bias remains bearish. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
+      "market_context": "BTC is modestly bullish (+0.26%) and the overall market is broadly positive with 67% of assets green.",
+      "result": "PENDING"
     }
   ]
 }
