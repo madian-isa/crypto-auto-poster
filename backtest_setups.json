@@ -88084,6 +88084,23 @@
       "technical_analysis": "Price sits above EMA9, EMA21, EMA50 and EMA200, confirming an uptrend. MACD line remains above its signal with a positive histogram, while ADX at 44 signals a strong trend. RSI at 65 and Stochastic K/D in the high‑70s show continued bullish momentum. Immediate resistance lies near 0.04943, support around 0.04905.",
       "market_context": "BTC is up 1.5% on the day, keeping the broader market broadly positive with 62% green assets. The mixed 4‑hour BTC trend",
       "result": "PENDING"
+    },
+    {
+      "id": 5182,
+      "created_at": "2026-11-23T00:41:03.542254+00:00",
+      "symbol": "PUMPUSDT",
+      "direction": "LONG",
+      "title": "Trend Reversal Confirmed for $PUMP as Volume Spikes Upward",
+      "entry_low": 0.002536,
+      "entry_high": 0.002568,
+      "stop_loss": 0.00246,
+      "take_profit": 0.002736,
+      "support": 0.002536,
+      "resistance": 0.002595,
+      "news_line": "",
+      "technical_analysis": "RSI at 71.3 and Stochastic K near 98 signal strong overbought conditions, yet MACD histogram stays positive and EMA9 sits above EMA21 and EMA50, confirming bullish momentum. ADX at 39 shows a solid trend, and order‑book imbalance of +18% favors buyers. Price respects the 0.002536‑0.002595 zone. Together, these indicators favor LONG continuation toward resistance.",
+      "market_context": "BTC is up 1.38% and the broader market is broadly positive, with 61% of assets green, supporting the upward bias for altcoins.",
+      "result": "PENDING"
     }
   ]
 }
