@@ -88203,6 +88203,23 @@
       "technical_analysis": "ADX around 25 shows a weak trend. Overall bias leans long. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure. The nearby support and resistance levels frame the current market structure.",
       "market_context": "BTC is up 3.4% on the day and the broader market is broadly positive, with 86.6% of assets green, adding a supportive",
       "result": "PENDING"
+    },
+    {
+      "id": 5189,
+      "created_at": "2026-11-23T06:20:51.742333+00:00",
+      "symbol": "BTCUSDT",
+      "direction": "LONG",
+      "title": "$BTC Buying Pressure Rises as Bulls Test Key Resistance",
+      "entry_low": 61100.0,
+      "entry_high": 61400.0,
+      "stop_loss": 59000.0,
+      "take_profit": 65750.0,
+      "support": 60537.43,
+      "resistance": 61669.99,
+      "news_line": "",
+      "technical_analysis": "MACD histogram is positive (+11) and the MACD line sits above its signal, confirming upward momentum. RSI at 63 and Stochastic K at 82 indicate bullish strength. Price sits above the 9‑, 21‑and 50‑EMA, while ADX of 30 shows a strong trend. Together these signals favor a long bias near the 61,100‑61,400 zone.",
+      "market_context": "BTC is up 4.33% in the last 24 hours and the overall market breadth is broadly positive, with 88.8% of assets advancing.",
+      "result": "PENDING"
     }
   ]
 }
