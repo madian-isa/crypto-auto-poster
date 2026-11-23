@@ -88237,6 +88237,23 @@
       "technical_analysis": "MACD sits below its signal with a negative histogram, while ADX at 35.6 confirms a strong trend. Price rests just above the 1‑hour support (0.03883) and below the EMA‑200, suggesting short‑side bias. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
       "market_context": "BTC up 3.8% in 24 h, market breadth remains strongly positive (89% green).",
       "result": "PENDING"
+    },
+    {
+      "id": 5191,
+      "created_at": "2026-11-23T07:21:01.241381+00:00",
+      "symbol": "SOLUSDT",
+      "direction": "LONG",
+      "title": "Spot Inflows Surge for $SOL as Futures Open Interest Rises",
+      "entry_low": 71.8,
+      "entry_high": 72.16,
+      "stop_loss": 69.1008,
+      "take_profit": 77.7384,
+      "support": 70.12,
+      "resistance": 72.38,
+      "news_line": "",
+      "technical_analysis": "MACD line sits above its signal with a positive histogram, while the 9‑, 21‑ and 50‑EMA all sit below the current price, confirming bullish momentum. RSI at 68 and Stochastic near 90 signal overbought conditions, yet the broader market is positive and BTC is rallying. Together, these indicators favor LONG continuation toward resistance.",
+      "market_context": "BTC is up 3.9% in 24h, showing bullish momentum, while overall market breadth is 90.9% green, indicating a broadly positive environment.",
+      "result": "PENDING"
     }
   ]
 }
