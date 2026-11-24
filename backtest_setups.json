@@ -88883,6 +88883,23 @@
       "technical_analysis": "The price sits below EMA9, EMA21, EMA50 and EMA200, while MACD remains negative and its histogram is declining, signaling bearish momentum. RSI at 41 and a low Stochastic (~26) show the market is near oversold but still trending down. Immediate resistance sits at 1.151, with support around 1.089. Overall the confluence points to short bias.",
       "market_context": "BTC remains in a bearish 4‑hour and daily trend, down 2 % on the day, while the broader market shows a net",
       "result": "PENDING"
+    },
+    {
+      "id": 5229,
+      "created_at": "2026-11-24T09:51:01.937433+00:00",
+      "symbol": "BABYUSDT",
+      "direction": "LONG",
+      "title": "Critical Resistance Test: $BABY Preparing to Surge Higher",
+      "entry_low": 0.00892,
+      "entry_high": 0.00896,
+      "stop_loss": 0.0086,
+      "take_profit": 0.00962,
+      "support": 0.00822,
+      "resistance": 0.00927,
+      "news_line": "",
+      "technical_analysis": "Price sits above EMA9, EMA21, EMA50 and EMA200, confirming an uptrend. MACD line remains above its signal with a positive histogram, while ADX at 53 signals a strong trend. RSI at 68.7 and Stochastic K near 71 indicate lingering bullish momentum. The pair respects the 0.00822‑0.00927 swing zone today overall.",
+      "market_context": "BTC is down 2.3% with bearish 4h and 1d trends; overall market breadth is mixed, showing a slight green bias.",
+      "result": "PENDING"
     }
   ]
 }
