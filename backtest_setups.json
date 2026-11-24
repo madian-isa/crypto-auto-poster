@@ -89104,6 +89104,23 @@
       "technical_analysis": "Order‑book shows a 19% bid imbalance, indicating buying pressure. These factors point to upward momentum toward the 1H resistance around 63.3. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure. The nearby support and resistance levels frame the current market structure.",
       "market_context": "BTC is in a bearish 4H and 1D trend, down 2.44% with broadly negative market breadth, reinforcing caution despite the bullish HYPEUSDT",
       "result": "PENDING"
+    },
+    {
+      "id": 5242,
+      "created_at": "2026-11-24T19:21:06.939771+00:00",
+      "symbol": "QNTUSDT",
+      "direction": "SHORT",
+      "title": "$QNT Resistance Test Fails: Bearish Momentum Building Fast",
+      "entry_low": 145.85,
+      "entry_high": 145.95,
+      "stop_loss": 151.06,
+      "take_profit": 135.58,
+      "support": 143.88,
+      "resistance": 148.37,
+      "news_line": "",
+      "technical_analysis": "MACD sits deep in negative territory and price is below the 9‑, 21‑, 50‑ and 200‑EMA, confirming bearish momentum. RSI at 35 and stochastic K under 13 show oversold conditions, yet the downtrend dominates. ADX around 26 indicates a moderate trend. The pair is testing the 148.37 resistance with downside bias.",
+      "market_context": "Bitcoin is bearish on both 4‑hour and daily charts, down about 2.7%, and the overall crypto market is broadly negative with 82%",
+      "result": "PENDING"
     }
   ]
 }
