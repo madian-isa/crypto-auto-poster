@@ -88968,6 +88968,23 @@
       "technical_analysis": "MACD is negative and below its signal, RSI at 37.6 and Stochastic K at 19 show oversold momentum, while price sits under EMA9‑200, confirming bearish bias. Volume is falling and ADX at 21 indicates a weak trend. The pair is trading near the 1H support 6.075, eyeing the 6.285 resistance.",
       "market_context": "BTC remains bearish on both 4‑hour and daily frames, down about 1.7% today, with market breadth showing more red than green.",
       "result": "PENDING"
+    },
+    {
+      "id": 5234,
+      "created_at": "2026-11-24T12:31:08.933885+00:00",
+      "symbol": "SOLUSDT",
+      "direction": "SHORT",
+      "title": "High Conviction Short Opportunity as $SOL Tests Supply Wall",
+      "entry_low": 70.7,
+      "entry_high": 70.85,
+      "stop_loss": 73.3,
+      "take_profit": 65.725,
+      "support": 70.11,
+      "resistance": 70.75,
+      "news_line": "",
+      "technical_analysis": "MACD is deep in negative territory (-0.38) with the signal line still above, and the histogram stays below zero, confirming down momentum. Current price sits beneath all EMA levels (9‑200), reinforcing a bearish bias near the 70.75 resistance. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
+      "market_context": "BTC remains in a bearish 4‑hour and daily trend, down about 1.7% on the day, while overall market breadth shows more red",
+      "result": "PENDING"
     }
   ]
 }
