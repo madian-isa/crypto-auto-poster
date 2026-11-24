@@ -1,6 +1,6 @@
 {
   "date": "2026-11-24",
-  "count": 16,
+  "count": 17,
   "posted_symbols_today": [
     "NVDABUSDT",
     "SOXLBUSDT",
@@ -17,6 +17,7 @@
     "ZECUSDT",
     "ZROUSDT",
     "BABYUSDT",
-    "BTCUSDT"
+    "BTCUSDT",
+    "ANTBUSDT"
   ]
 }
