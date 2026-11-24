@@ -88662,6 +88662,23 @@
       "technical_analysis": "MACD is bullish with the line (8.60) above its signal (7.69) and a positive histogram. EMA hierarchy shows price above EMA9, EMA21, EMA50 and EMA200, confirming an uptrend. ADX at 54.7 signals a strong trend, while RSI and Stoch are overbought but not yet reversing. Momentum favors a long bias near the 163.28‑167.0 range.",
       "market_context": "BTC trades around $61,241, showing a mixed 4‑hour trend but a bearish daily alignment, while the overall market remains broadly positive with",
       "result": "PENDING"
+    },
+    {
+      "id": 5216,
+      "created_at": "2026-11-24T01:11:01.846344+00:00",
+      "symbol": "SOXLBUSDT",
+      "direction": "LONG",
+      "title": "Strong Accumulation Detected: $SOXLB Prepares for Next Wave Up",
+      "entry_low": 42.1,
+      "entry_high": 43.0,
+      "stop_loss": 41.0,
+      "take_profit": 45.65,
+      "support": 42.04,
+      "resistance": 45.38,
+      "news_line": "",
+      "technical_analysis": "MACD line sits above its signal with a positive histogram, while EMA9, EMA21 and EMA50 are all below price, confirming an upward bias. ADX at 47 signals a strong trend. Despite RSI and Stoch in overbought zones, the bullish EMA stack keeps momentum pointing higher toward the 45.38 resistance level today.",
+      "market_context": "BTC is up 1.16% in 24h and the overall market shows broadly positive breadth.",
+      "result": "PENDING"
     }
   ]
 }
