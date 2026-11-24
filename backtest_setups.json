@@ -88798,6 +88798,23 @@
       "technical_analysis": "MACD is bullish with a positive histogram and the line above the signal, while price sits above the EMA9, EMA21, EMA50 and EMA200, confirming upward momentum. RSI at 64 and a strong bid‑side order‑book imbalance add confidence. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
       "market_context": "BTC remains in a bearish trend on both 4‑hour and daily charts, while overall market breadth is broadly positive with 76% of",
       "result": "PENDING"
+    },
+    {
+      "id": 5224,
+      "created_at": "2026-11-24T06:11:03.825709+00:00",
+      "symbol": "PROMUSDT",
+      "direction": "SHORT",
+      "title": "$PROM Resistance Test Fails: Bearish Momentum Building Fast",
+      "entry_low": 5.05,
+      "entry_high": 5.057,
+      "stop_loss": 5.25564,
+      "take_profit": 4.64922,
+      "support": 4.95,
+      "resistance": 5.057,
+      "news_line": "",
+      "technical_analysis": "MACD is below its signal with a negative histogram, EMA series sit above price, and RSI near mid‑range while stochastic is deep in oversold territory. Combined with a weak ADX and price trading below key EMAs, momentum points down toward the 4.95 support on the 1H chart. Resistance sits near 5.057.",
+      "market_context": "BTC remains in a 4‑hour bearish trend, down 1.9% today, while the broader market shows a largely positive breadth (73.9% green).",
+      "result": "PENDING"
     }
   ]
 }

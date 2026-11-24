@@ -1,6 +1,6 @@
 {
   "date": "2026-11-24",
-  "count": 9,
+  "count": 10,
   "posted_symbols_today": [
     "NVDABUSDT",
     "SOXLBUSDT",
@@ -10,6 +10,7 @@
     "LISTAUSDT",
     "MUBUSDT",
     "SAHARAUSDT",
-    "MMTUSDT"
+    "MMTUSDT",
+    "PROMUSDT"
   ]
 }
