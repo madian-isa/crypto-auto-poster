@@ -88747,6 +88747,23 @@
       "technical_analysis": "MACD histogram is positive and the line sits above its signal, while price trades above the 9‑, 21‑ and 50‑EMA, confirming bullish momentum. RSI at 64 and ADX above 60 show a strong upward trend. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
       "market_context": "BTC is in a bearish trend on both 4‑hour and daily charts, down about 1.9% over 24 h, while overall market breadth",
       "result": "PENDING"
+    },
+    {
+      "id": 5221,
+      "created_at": "2026-11-24T04:01:10.597569+00:00",
+      "symbol": "MUBUSDT",
+      "direction": "SHORT",
+      "title": "$MUB Loses Key Demand Zone: Next Support Level Unprotected",
+      "entry_low": 704.5,
+      "entry_high": 704.8,
+      "stop_loss": 732.836,
+      "take_profit": 648.278,
+      "support": 699.85,
+      "resistance": 720.88,
+      "news_line": "",
+      "technical_analysis": "ADX at 45 shows a strong trend, but MACD has turned bearish (histogram negative) and volume fell 53%, suggesting short‑term weakness. Momentum leans toward a short move. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
+      "market_context": "BTC is in a bearish 4‑hour and daily trend, with a 1.44% drop, while overall market breadth stays broadly positive (66% green).",
+      "result": "PENDING"
     }
   ]
 }
