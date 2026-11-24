@@ -89121,6 +89121,23 @@
       "technical_analysis": "MACD sits deep in negative territory and price is below the 9‑, 21‑, 50‑ and 200‑EMA, confirming bearish momentum. RSI at 35 and stochastic K under 13 show oversold conditions, yet the downtrend dominates. ADX around 26 indicates a moderate trend. The pair is testing the 148.37 resistance with downside bias.",
       "market_context": "Bitcoin is bearish on both 4‑hour and daily charts, down about 2.7%, and the overall crypto market is broadly negative with 82%",
       "result": "PENDING"
+    },
+    {
+      "id": 5243,
+      "created_at": "2026-11-24T20:01:12.235210+00:00",
+      "symbol": "SUIUSDT",
+      "direction": "SHORT",
+      "title": "$SUI Breaks Ascending Support Line: Bearish Momentum Surge",
+      "entry_low": 0.651,
+      "entry_high": 0.654,
+      "stop_loss": 0.676,
+      "take_profit": 0.6055,
+      "support": 0.6408,
+      "resistance": 0.6537,
+      "news_line": "",
+      "technical_analysis": "Price sits below EMA9, EMA21, EMA50 and EMA200, confirming a downtrend. MACD histogram is negative and the line is under its signal, adding bearish momentum. RSI at 38 and Stochastic K at 14 indicate the market is near oversold levels, supporting a short bias. Together, these indicators favor SHORT continuation toward support.",
+      "market_context": "BTC is in a bearish 4H and 1D trend, with a 2.8% drop and a broadly negative market breadth, reinforcing the downside",
+      "result": "PENDING"
     }
   ]
 }
