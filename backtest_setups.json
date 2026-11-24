@@ -88679,6 +88679,23 @@
       "technical_analysis": "MACD line sits above its signal with a positive histogram, while EMA9, EMA21 and EMA50 are all below price, confirming an upward bias. ADX at 47 signals a strong trend. Despite RSI and Stoch in overbought zones, the bullish EMA stack keeps momentum pointing higher toward the 45.38 resistance level today.",
       "market_context": "BTC is up 1.16% in 24h and the overall market shows broadly positive breadth.",
       "result": "PENDING"
+    },
+    {
+      "id": 5217,
+      "created_at": "2026-11-24T01:20:49.307387+00:00",
+      "symbol": "SOXSBUSDT",
+      "direction": "SHORT",
+      "title": "$SOXSB Fakeout Confirmed: Bulls Trapped at Local Highs",
+      "entry_low": 49.3,
+      "entry_high": 49.5,
+      "stop_loss": 51.2,
+      "take_profit": 45.8,
+      "support": 43.68,
+      "resistance": 50.61,
+      "news_line": "",
+      "technical_analysis": "All key indicators point to bearish momentum. Price sits below EMA9/21/50/200, MACD line is under its signal, and ADX at 50 confirms a strong downtrend. Resistance sits near 50.6, support around 43.7. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
+      "market_context": "BTC shows mixed 4‑hour movement but a bearish daily trend, while the broader market remains broadly positive with 85% green assets.",
+      "result": "PENDING"
     }
   ]
 }
