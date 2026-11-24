@@ -88951,6 +88951,23 @@
       "technical_analysis": "The RSI at 87 and Stochastic K at 92 signal extreme overbought conditions, while price sits near the 1‑hour resistance of 0.99. Indicators collectively point to downside pressure in the short term. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
       "market_context": "BTC remains in a bearish 4‑hour and daily trend, down 2.7% today, while the overall market breadth is broadly negative (64.7% red).",
       "result": "PENDING"
+    },
+    {
+      "id": 5233,
+      "created_at": "2026-11-24T12:21:00.214215+00:00",
+      "symbol": "INJUSDT",
+      "direction": "SHORT",
+      "title": "High Volume Selling Sweep Breaks $INJ Market Structure",
+      "entry_low": 6.1,
+      "entry_high": 6.14,
+      "stop_loss": 6.36,
+      "take_profit": 5.64,
+      "support": 6.075,
+      "resistance": 6.285,
+      "news_line": "",
+      "technical_analysis": "MACD is negative and below its signal, RSI at 37.6 and Stochastic K at 19 show oversold momentum, while price sits under EMA9‑200, confirming bearish bias. Volume is falling and ADX at 21 indicates a weak trend. The pair is trading near the 1H support 6.075, eyeing the 6.285 resistance.",
+      "market_context": "BTC remains bearish on both 4‑hour and daily frames, down about 1.7% today, with market breadth showing more red than green.",
+      "result": "PENDING"
     }
   ]
 }
