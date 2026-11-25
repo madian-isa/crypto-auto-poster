@@ -89648,6 +89648,23 @@
       "technical_analysis": "Indicators point to upward momentum. Price sits above the 9‑, 21‑, 50‑ and 200‑EMA, confirming a bullish trend. MACD line is above its signal with a positive histogram, while ADX at 34 shows a strong trend. RSI at 61 supports continued buying pressure, and price holds above the 0.1139 support yet below the 0.1197 resistance, leaving upside room.",
       "market_context": "BTC shows mixed 4‑hour momentum but a bearish daily trend, trading around $60,000. Overall market breadth is slightly green (53.8% up).",
       "result": "PENDING"
+    },
+    {
+      "id": 5274,
+      "created_at": "2026-11-25T18:50:54.961868+00:00",
+      "symbol": "ETHUSDT",
+      "direction": "LONG",
+      "title": "On-Chain Metrics Confirm Strong Whale Accumulation on $ETH",
+      "entry_low": 1673.0,
+      "entry_high": 1678.0,
+      "stop_loss": 1614.0,
+      "take_profit": 1798.5,
+      "support": 1672.7,
+      "resistance": 1688.55,
+      "news_line": "",
+      "technical_analysis": "ETH trades just above the 9‑, 21‑ and 50‑EMA, with the MACD line sitting above its signal and a positive histogram, while ADX at 32 confirms a strong trend. RSI sits at 56 and Stochastic is overbought but not yet reversing. The price respects the 1H support at 1672.7 and faces resistance near 1688.5, favoring a bullish bias.",
+      "market_context": "BTC remains in a bearish 4H and 1D trend, down 0.6% on the day, while overall market breadth is mixed (48.5% green",
+      "result": "PENDING"
     }
   ]
 }
