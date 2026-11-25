@@ -89359,6 +89359,23 @@
       "technical_analysis": "RSI at 31 and Stochastic K/D around 12/9 signal oversold conditions, yet price sits below EMA9, EMA21 and EMA50, confirming bearish momentum. MACD histogram stays negative and ADX at 38 shows a strong trend. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
       "market_context": "BTC remains in a bearish 4H and 1D trend, down ~2.4%, while overall market breadth is broadly negative with 84% red assets.",
       "result": "PENDING"
+    },
+    {
+      "id": 5257,
+      "created_at": "2026-11-25T06:21:05.245186+00:00",
+      "symbol": "MUBUSDT",
+      "direction": "SHORT",
+      "title": "Bearish Continuation Pattern Confirmed on $MUB Chart Structure",
+      "entry_low": 608.0,
+      "entry_high": 610.0,
+      "stop_loss": 631.35,
+      "take_profit": 564.3,
+      "support": 603.97,
+      "resistance": 637.26,
+      "news_line": "",
+      "technical_analysis": "Short bias is clear: price sits well under EMA9‑200, MACD line sits below its signal with a negative histogram, RSI and Stochastic are deep in oversold territory, and ADX above 30 confirms a strong downtrend. Immediate resistance sits near 637, while support clusters around 604. The 1‑hour order book shows a modest bid‑side imbalance, but price action respects the bearish",
+      "market_context": "BTC remains in a 4‑hour and daily bearish trend, down 2.2% on the day, with 87% of the market in red and",
+      "result": "PENDING"
     }
   ]
 }
