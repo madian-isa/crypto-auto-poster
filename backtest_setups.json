@@ -89444,6 +89444,23 @@
       "technical_analysis": "RSI at 27.7 and Stochastic K/D around 13/19 signal oversold conditions, but price sits below EMA9‑200 and MACD histogram remains negative, confirming a prevailing downtrend. ADX at 35 shows strong momentum. With the 1H resistance near 59.5 and support at 58.6, the indicators overall collectively favor a short bias trading.",
       "market_context": "BTC is in a bearish 4H and 1D trend, down 2.3% today, and the broader market is 86.8% red, indicating overall negative",
       "result": "PENDING"
+    },
+    {
+      "id": 5262,
+      "created_at": "2026-11-25T09:31:11.197655+00:00",
+      "symbol": "ATUSDT",
+      "direction": "LONG",
+      "title": "Buyers Defend Key Demand Zone: $AT Ready for Extension",
+      "entry_low": 0.0513,
+      "entry_high": 0.0516,
+      "stop_loss": 0.0495,
+      "take_profit": 0.05535,
+      "support": 0.0505,
+      "resistance": 0.0539,
+      "news_line": "",
+      "technical_analysis": "The supplied indicators show a bullish structure for this market. Together, they favor LONG continuation, with momentum pointing toward resistance and support framing the current price structure. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure. The nearby support and resistance levels frame the current market structure.",
+      "market_context": "Bitcoin is in a bearish 4‑hour and daily trend, down 1.7% over 24 h, and the broader market is broadly negative with",
+      "result": "PENDING"
     }
   ]
 }
