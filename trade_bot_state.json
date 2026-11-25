@@ -1,6 +1,6 @@
 {
   "date": "2026-11-25",
-  "count": 27,
+  "count": 28,
   "posted_symbols_today": [
     "SOXLBUSDT",
     "SOXSBUSDT",
@@ -28,6 +28,7 @@
     "PROMUSDT",
     "LISTAUSDT",
     "ETHUSDT",
-    "XRPUSDT"
+    "XRPUSDT",
+    "XPLUSDT"
   ]
 }
