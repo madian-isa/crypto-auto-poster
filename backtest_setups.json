@@ -89478,6 +89478,23 @@
       "technical_analysis": "Price sits below EMA9/21/50/200 and MACD line is under its signal, signaling bearish momentum. RSI at 33 and Stochastic K at 13 show oversold conditions, but the dominant trend cues point lower. Immediate resistance sits near 150, with support around 146. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish",
       "market_context": "BTC is in a bearish 4H and 1D trend, down 1.65% over 24h, and the broader market is broadly negative with 85.8%",
       "result": "PENDING"
+    },
+    {
+      "id": 5264,
+      "created_at": "2026-11-25T10:41:02.341498+00:00",
+      "symbol": "SOLUSDT",
+      "direction": "SHORT",
+      "title": "$SOL Fails Resistance Retest: Bearish Extension Imminent",
+      "entry_low": 68.85,
+      "entry_high": 68.95,
+      "stop_loss": 71.36,
+      "take_profit": 63.98,
+      "support": 67.33,
+      "resistance": 69.03,
+      "news_line": "",
+      "technical_analysis": "The price sits below the 9‑, 21‑, 50‑ and 200‑EMA chain, confirming a downtrend. ADX around 29 shows the move has moderate strength, favoring short pressure. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
+      "market_context": "BTC is in a bearish trend on both 4H and 1D frames, and the broader market is largely negative, reinforcing the downside",
+      "result": "PENDING"
     }
   ]
 }
