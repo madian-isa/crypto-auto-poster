@@ -89580,6 +89580,23 @@
       "technical_analysis": "All moving averages sit above price, confirming a bearish structure. RSI at 25.6 and Stochastic K under 3 signal deep oversold conditions, while MACD remains below its signal line, reinforcing downside momentum. The price sits just above the 24‑hour low and below the lower Bollinger band, pointing to short bias near the 717 ≈ resistance zone.",
       "market_context": "BTC remains in a bearish 4‑hour and daily trend, down 3.3% with market breadth showing 88.8% red, underscoring overall negative sentiment.",
       "result": "PENDING"
+    },
+    {
+      "id": 5270,
+      "created_at": "2026-11-25T14:31:08.921917+00:00",
+      "symbol": "SKHYBUSDT",
+      "direction": "SHORT",
+      "title": "Major Support Breakdown Confirmed on $SKHYB Higher Timeframes",
+      "entry_low": 105.9,
+      "entry_high": 106.08,
+      "stop_loss": 109.8,
+      "take_profit": 98.37,
+      "support": 103.68,
+      "resistance": 106.08,
+      "news_line": "",
+      "technical_analysis": "Price sits below EMA9, EMA21, EMA50 and EMA200, confirming a strong downtrend. MACD line is under its signal with a negative histogram, while ADX at 49.6 signals a powerful trend. RSI (21) and Stochastic (K≈1) are deep oversold, but the bearish momentum dominates. Together, these indicators favor SHORT continuation toward support.",
+      "market_context": "BTC is in a bearish stance on both 4‑hour and daily charts, and the broader market shows 89.7% red assets, reinforcing downside",
+      "result": "PENDING"
     }
   ]
 }
