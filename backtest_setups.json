@@ -89308,6 +89308,23 @@
       "technical_analysis": "RSI at 26.3 and Stochastic K at 4.5 signal strong oversold conditions, pointing to a potential bounce from the 1.5 support. The order‑book bias to the bid side adds modest upside pressure. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
       "market_context": "BTC is in a bearish trend on both 4‑hour and daily charts, and the broader crypto market is broadly negative with 82%",
       "result": "PENDING"
+    },
+    {
+      "id": 5254,
+      "created_at": "2026-11-25T04:21:05.099376+00:00",
+      "symbol": "BIGTIMEUSDT",
+      "direction": "LONG",
+      "title": "Technical Signals Turn Positive as Market Momentum Builds",
+      "entry_low": 0.00444,
+      "entry_high": 0.0045,
+      "stop_loss": 0.0043,
+      "take_profit": 0.00481,
+      "support": 0.00406,
+      "resistance": 0.00748,
+      "news_line": "",
+      "technical_analysis": "All major indicators point bullish. Price sits above the 9‑, 21‑ and 50‑EMA, and the MACD line (0.000112) sits above its signal, generating a positive histogram. ADX at 63 signals a strong trend, while order‑book imbalance shows buying pressure. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
+      "market_context": "BTC is in a bearish 4‑hour and daily trend, down 1.78% over 24 h, while overall market breadth is broadly negative (85.2%",
+      "result": "PENDING"
     }
   ]
 }
