@@ -89410,6 +89410,23 @@
       "technical_analysis": "All key indicators point down. Price sits under EMA9‑200, MACD histogram stays negative, ADX at 29 confirms a strong trend, and Stochastic K/D are deep in oversold territory while RSI near 37. Order‑book shows a 14% ask‑side imbalance. Resistance sits at 5.38, support at 4.82. Overall, the setup favors a short bias.",
       "market_context": "BTC is bearish on both 4‑hour and daily charts, down 2.68% today, and the broader market is broadly negative with 88% of",
       "result": "PENDING"
+    },
+    {
+      "id": 5260,
+      "created_at": "2026-11-25T08:10:55.677305+00:00",
+      "symbol": "MANTRAUSDT",
+      "direction": "SHORT",
+      "title": "Moving Average Death Cross Signals Downward Trend for $MANTRA",
+      "entry_low": 0.0021,
+      "entry_high": 0.00215,
+      "stop_loss": 0.0022,
+      "take_profit": 0.001975,
+      "support": 0.00181,
+      "resistance": 0.00237,
+      "news_line": "",
+      "technical_analysis": "ADX at 38 indicates a strong trend. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
+      "market_context": "BTC is in a bearish trend on both 4H and 1D timeframes, down 2.2% today, and market breadth is broadly negative with",
+      "result": "PENDING"
     }
   ]
 }
