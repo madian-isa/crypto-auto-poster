@@ -90005,6 +90005,23 @@
       "technical_analysis": "RSI at 62.5 and MACD histogram positive show bullish momentum, while ADX above 25 confirms a strong trend. Price sits above the 9‑, 21‑ and 50‑EMA, though still under the 200‑EMA. Bollinger bands are mid‑range and the 1H/4H swing points at 70.54 support and 71.4 resistance, favoring a long bias overall.",
       "market_context": "BTC is up 3.44% with a bullish direction and market breadth shows 89.9% green, indicating broadly positive sentiment.",
       "result": "PENDING"
+    },
+    {
+      "id": 5295,
+      "created_at": "2026-11-26T10:20:58.152916+00:00",
+      "symbol": "LINKUSDT",
+      "direction": "LONG",
+      "title": "$LINK Reclaims Key Resistance Level: Flip to Support Complete",
+      "entry_low": 9.14,
+      "entry_high": 9.16,
+      "stop_loss": 8.82,
+      "take_profit": 9.81,
+      "support": 9.142,
+      "resistance": 9.265,
+      "news_line": "",
+      "technical_analysis": "Price sits above the 9‑EMA, 21‑EMA and 50‑EMA, confirming a bullish EMA hierarchy. MACD line sits 0.014 above its signal, and ADX at 31 signals a strong trend. Order‑book shows a 16% bid imbalance. RSI at 66 and Stochastic near‑overbought still support upward momentum toward the 9.265 resistance level, suggesting further upside.",
+      "market_context": "BTC is up 3.2% on the day, keeping a bullish tone while the overall market shows 90% green assets, indicating a broadly",
+      "result": "PENDING"
     }
   ]
 }
