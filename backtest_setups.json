@@ -89801,6 +89801,23 @@
       "technical_analysis": "All EMAs (9‑21‑50‑200) sit below the price, confirming an uptrend. MACD histogram is positive and ADX at 64 shows a strong trend. Order‑book shows 8.8 % bid bias. Although RSI 73 signals overbought, momentum remains bullish toward the 0.00333 resistance. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
       "market_context": "BTC up 1.7 % on the day, with a mixed 4‑hour trend and overall market breadth strongly positive.",
       "result": "PENDING"
+    },
+    {
+      "id": 5283,
+      "created_at": "2026-11-26T01:50:59.401520+00:00",
+      "symbol": "BIGTIMEUSDT",
+      "direction": "LONG",
+      "title": "Bullish Momentum Is Building: Can $BIGTIME Continue Its Breakout?",
+      "entry_low": 0.00652,
+      "entry_high": 0.00658,
+      "stop_loss": 0.0063,
+      "take_profit": 0.00705,
+      "support": 0.00652,
+      "resistance": 0.00682,
+      "news_line": "",
+      "technical_analysis": "RSI at 56 and a 15% bid‑side orderbook tilt add modest bullish bias. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure. The nearby support and resistance levels frame the current market structure.",
+      "market_context": "BTC is up 2.59% and the broader market is broadly positive, with 88.9% of assets green.",
+      "result": "PENDING"
     }
   ]
 }
