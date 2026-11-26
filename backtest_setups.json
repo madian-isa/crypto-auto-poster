@@ -90107,6 +90107,23 @@
       "technical_analysis": "Volume is up 33 % supporting buying pressure, and ADX around 24 confirms a moderate trend. The pair respects the 0.0875 support and eyes the 0.1057 resistance. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure. The nearby support and resistance levels frame the current market structure.",
       "market_context": "BTC is up 4.1 % in 24 h, keeping the broader market broadly positive with 92.7 % green assets.",
       "result": "PENDING"
+    },
+    {
+      "id": 5301,
+      "created_at": "2026-11-26T14:41:03.126339+00:00",
+      "symbol": "SPCXBUSDT",
+      "direction": "LONG",
+      "title": "Critical Resistance Test: $SPCXB Preparing to Surge Higher",
+      "entry_low": 129.5,
+      "entry_high": 129.7,
+      "stop_loss": 125.0,
+      "take_profit": 138.8,
+      "support": 127.92,
+      "resistance": 129.72,
+      "news_line": "",
+      "technical_analysis": "RSI at 62.6 and a positive MACD histogram indicate upward momentum. Stochastic is in the high 80s, and order‑book shows a 32% bid‑side imbalance. The nearest resistance is 129.72, with support at 127.92. Overall the structure suggests a potential continuation to the upside. Together, these indicators favor LONG continuation toward resistance.",
+      "market_context": "BTC is up 5.4% in 24 h, keeping a bullish tone while the broader market shows 94.5% green assets, indicating overall positive",
+      "result": "PENDING"
     }
   ]
 }
