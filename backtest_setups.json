@@ -90362,6 +90362,23 @@
       "technical_analysis": "OPG is trading just below its upper Bollinger band at $0.1799. RSI at 71 and Stochastic near 95 signal overbought, yet MACD histogram is positive and the price sits above the EMA9, EMA21, EMA50 and EMA200, confirming bullish momentum. ADX around 25 shows a moderate trend. The next resistance sits near $0.1844.",
       "market_context": "BTC is up 0.76% and market breadth is broadly positive, with 74.5% of assets green.",
       "result": "PENDING"
+    },
+    {
+      "id": 5316,
+      "created_at": "2026-11-26T23:11:05.311013+00:00",
+      "symbol": "BNBUSDT",
+      "direction": "SHORT",
+      "title": "$BNB Distribution Phase Ends: Downside Target Zone Set",
+      "entry_low": 554.1,
+      "entry_high": 554.3,
+      "stop_loss": 574.0,
+      "take_profit": 514.6,
+      "support": 550.11,
+      "resistance": 554.53,
+      "news_line": "",
+      "technical_analysis": "Indicators tilt bearish. MACD histogram is negative and the line sits below its signal, while the stochastic K (73) is below the D (85), hinting at a downshift. Price sits just under the 1‑hour resistance at 554.53 and below the 200‑EMA (562). Together they favor a short bias overall momentum.",
+      "market_context": "BTC is up 0.48% on the day, keeping a bullish edge, while overall market breadth is broadly positive with 68.8% of assets",
+      "result": "PENDING"
     }
   ]
 }
