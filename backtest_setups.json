@@ -90277,6 +90277,23 @@
       "technical_analysis": "ETH trades just below the 1‑hour resistance at 1706, with price sitting on the upper Bollinger band. EMA9/21/50 sit beneath price, but MACD is negative, the histogram contracts and Stochastic is deep in overbought territory. Order‑book shows a 25% ask‑side imbalance, all pointing toward short‑term downside pressure. Together, these indicators favor SHORT continuation toward support.",
       "market_context": "BTC is up 1.3% on the day, but its 4‑hour trend is mixed and the 1‑day trend is bearish, indicating broader market",
       "result": "PENDING"
+    },
+    {
+      "id": 5311,
+      "created_at": "2026-11-26T20:51:02.939238+00:00",
+      "symbol": "HMSTRUSDT",
+      "direction": "SHORT",
+      "title": "High Volume Selling Sweep Breaks $HMSTR Market Structure",
+      "entry_low": 0.0001245,
+      "entry_high": 0.0001248,
+      "stop_loss": 0.00013,
+      "take_profit": 0.00011395,
+      "support": 0.0001222,
+      "resistance": 0.0001248,
+      "news_line": "",
+      "technical_analysis": "Short bias is clear: price sits below EMA9, EMA21, EMA50 and EMA200, MACD line is under its signal with a negative histogram, RSI at 34 and Stochastic K/D in the low‑20s signal weakening momentum, while ADX above 35 confirms a strong trend. The orderbook shows a bid‑side imbalance. Together, these indicators favor SHORT continuation toward support.",
+      "market_context": "BTC is modestly bullish (+0.95% 24h) and the overall market breadth is broadly positive, with about 80% of assets showing gains.",
+      "result": "PENDING"
     }
   ]
 }
