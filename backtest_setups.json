@@ -90294,6 +90294,23 @@
       "technical_analysis": "Short bias is clear: price sits below EMA9, EMA21, EMA50 and EMA200, MACD line is under its signal with a negative histogram, RSI at 34 and Stochastic K/D in the low‑20s signal weakening momentum, while ADX above 35 confirms a strong trend. The orderbook shows a bid‑side imbalance. Together, these indicators favor SHORT continuation toward support.",
       "market_context": "BTC is modestly bullish (+0.95% 24h) and the overall market breadth is broadly positive, with about 80% of assets showing gains.",
       "result": "PENDING"
+    },
+    {
+      "id": 5312,
+      "created_at": "2026-11-26T21:41:04.802921+00:00",
+      "symbol": "RIFUSDT",
+      "direction": "SHORT",
+      "title": "Moving Average Death Cross Signals Downward Trend for $RIF",
+      "entry_low": 0.0402,
+      "entry_high": 0.0405,
+      "stop_loss": 0.042771,
+      "take_profit": 0.035508,
+      "support": 0.0392,
+      "resistance": 0.0448,
+      "news_line": "",
+      "technical_analysis": "RSI at 21.75 and Stochastic K below 7 signal deep oversold conditions, while ADX at 35 confirms a strong trend. Price sits beneath EMA9‑200, and MACD histogram remains negative, all pointing to bearish momentum. The pair respects the 0.0392 support and 0.0448 resistance band, favoring short pressure. Volume surged 67% confirming activity.",
+      "market_context": "BTC is up 1.0% on the day, keeping a bullish tone while the broader market shows 78.7% green assets, suggesting overall optimism",
+      "result": "PENDING"
     }
   ]
 }
