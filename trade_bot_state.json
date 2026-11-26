@@ -1,6 +1,6 @@
 {
   "date": "2026-11-26",
-  "count": 32,
+  "count": 33,
   "posted_symbols_today": [
     "MMTUSDT",
     "MANTRAUSDT",
@@ -33,6 +33,7 @@
     "BTCUSDT",
     "ETHUSDT",
     "HMSTRUSDT",
-    "RIFUSDT"
+    "RIFUSDT",
+    "INJUSDT"
   ]
 }

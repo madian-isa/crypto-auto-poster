@@ -90311,6 +90311,23 @@
       "technical_analysis": "RSI at 21.75 and Stochastic K below 7 signal deep oversold conditions, while ADX at 35 confirms a strong trend. Price sits beneath EMA9‑200, and MACD histogram remains negative, all pointing to bearish momentum. The pair respects the 0.0392 support and 0.0448 resistance band, favoring short pressure. Volume surged 67% confirming activity.",
       "market_context": "BTC is up 1.0% on the day, keeping a bullish tone while the broader market shows 78.7% green assets, suggesting overall optimism",
       "result": "PENDING"
+    },
+    {
+      "id": 5313,
+      "created_at": "2026-11-26T21:50:58.883181+00:00",
+      "symbol": "INJUSDT",
+      "direction": "SHORT",
+      "title": "Moving Average Death Cross Signals Downward Trend for $INJ",
+      "entry_low": 6.295,
+      "entry_high": 6.305,
+      "stop_loss": 6.525,
+      "take_profit": 5.85,
+      "support": 6.09,
+      "resistance": 6.289,
+      "news_line": "",
+      "technical_analysis": "Stochastic (88/81) and RSI (64) show overbought pressure while price sits at the upper Bollinger band and just below the 1‑hour resistance 6.289. The order book shows a slight ask imbalance, favoring a short bias. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
+      "market_context": "BTC is up 1.07% and the broader market is broadly positive, but INJ faces bearish micro‑structure despite the overall bullish backdrop.",
+      "result": "PENDING"
     }
   ]
 }
