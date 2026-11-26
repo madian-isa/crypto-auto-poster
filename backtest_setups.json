@@ -89784,6 +89784,23 @@
       "technical_analysis": "The price sits above EMA9, EMA21, EMA50 and EMA200, confirming a clear uptrend. MACD line sits 0.0046 above its signal, giving a positive histogram. ADX at 45.8 signals a strong trend. Together these three factors point to bullish momentum toward the nearby resistance at 0.3246. Together, these indicators favor LONG continuation toward resistance.",
       "market_context": "BTC shows mixed 4‑hour movement but a bearish daily trend, while the broader market is broadly positive with 80.5 % green assets",
       "result": "PENDING"
+    },
+    {
+      "id": 5282,
+      "created_at": "2026-11-26T00:11:01.352510+00:00",
+      "symbol": "MANTRAUSDT",
+      "direction": "LONG",
+      "title": "Smart Money Flow Increases into $MANTRA Ahead of Catalysts",
+      "entry_low": 0.00316,
+      "entry_high": 0.00321,
+      "stop_loss": 0.00305,
+      "take_profit": 0.003455,
+      "support": 0.00199,
+      "resistance": 0.00347,
+      "news_line": "",
+      "technical_analysis": "All EMAs (9‑21‑50‑200) sit below the price, confirming an uptrend. MACD histogram is positive and ADX at 64 shows a strong trend. Order‑book shows 8.8 % bid bias. Although RSI 73 signals overbought, momentum remains bullish toward the 0.00333 resistance. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
+      "market_context": "BTC up 1.7 % on the day, with a mixed 4‑hour trend and overall market breadth strongly positive.",
+      "result": "PENDING"
     }
   ]
 }
