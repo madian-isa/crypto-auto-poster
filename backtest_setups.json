@@ -90736,6 +90736,23 @@
       "technical_analysis": "Price sits above the 9‑, 21‑ and 50‑EMA, with the 200‑EMA also below, confirming an uptrend. MACD line is positive and above its signal, while ADX at 40 shows strong momentum. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
       "market_context": "Bitcoin is up 1.4% in the last 24 hours, keeping the broader market broadly positive, which supports risk‑on sentiment for altcoins like",
       "result": "PENDING"
+    },
+    {
+      "id": 5338,
+      "created_at": "2026-11-27T12:20:58.867154+00:00",
+      "symbol": "ZECUSDT",
+      "direction": "LONG",
+      "title": "$ZEC Reclaims Key Resistance Level: Flip to Support Complete",
+      "entry_low": 751.5,
+      "entry_high": 753.5,
+      "stop_loss": 726.0,
+      "take_profit": 805.5,
+      "support": 751.15,
+      "resistance": 761.5,
+      "news_line": "",
+      "technical_analysis": "RSI at 58 and a high Stochastic confirm bullish momentum. Price respects the 751‑753 support zone and eyes the 761‑762 resistance. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure. The nearby support and resistance levels frame the current market structure.",
+      "market_context": "BTC is up 1.6% over 24 h and market breadth is broadly positive (87% green), providing a risk‑on backdrop for altcoins.",
+      "result": "PENDING"
     }
   ]
 }
