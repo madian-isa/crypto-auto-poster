@@ -1,6 +1,6 @@
 {
   "date": "2026-11-27",
-  "count": 27,
+  "count": 28,
   "posted_symbols_today": [
     "MMTUSDT",
     "INITUSDT",
@@ -28,6 +28,7 @@
     "SNXXBUSDT",
     "SNDKBUSDT",
     "HEIUSDT",
-    "ETHUSDT"
+    "ETHUSDT",
+    "BTCUSDT"
   ]
 }
