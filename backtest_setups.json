@@ -90906,6 +90906,23 @@
       "technical_analysis": "The price sits below the EMA9, EMA21, EMA50 and EMA200, showing clear bearish alignment. MACD histogram is negative and the MACD line sits under the signal, confirming down momentum. RSI at 45 and ADX around 24 indicate a weak, still‑bearish market, while order‑book imbalance favors sellers. Resistance sits near 3.051, support at 3.034.",
       "market_context": "BTC is in a bearish trend on both 4H and 1D timeframes, and overall market breadth is mixed with a slight tilt",
       "result": "PENDING"
+    },
+    {
+      "id": 5348,
+      "created_at": "2026-11-27T19:41:01.042402+00:00",
+      "symbol": "THEUSDT",
+      "direction": "SHORT",
+      "title": "$THE Loses Key Demand Zone: Next Support Level Unprotected",
+      "entry_low": 0.0264,
+      "entry_high": 0.0265,
+      "stop_loss": 0.02745,
+      "take_profit": 0.02445,
+      "support": 0.0262,
+      "resistance": 0.0456,
+      "news_line": "",
+      "technical_analysis": "MACD sits below its signal line with a negative histogram, indicating bearish momentum. The price is near the 1‑hour support at 0.0262, favoring a short bias. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
+      "market_context": "Bitcoin remains in a bearish trend on both 4‑hour and daily charts, while overall market breadth is broadly positive with 64 %",
+      "result": "PENDING"
     }
   ]
 }
