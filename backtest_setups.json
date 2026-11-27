@@ -90685,6 +90685,23 @@
       "technical_analysis": "MACD histogram is solidly positive and the MACD line sits above its signal, confirming bullish momentum. Price trades well above the EMA9, EMA21, EMA50 and EMA200, indicating a clear uptrend. ADX above 50 shows a strong trend, while volume has surged over 900%. The pair respects a 1H/4H support at 0.0513 and aims toward the 0.0699 resistance.",
       "market_context": "BTC up 1.2% in 24h, market breadth shows 85% green, indicating overall positive sentiment.",
       "result": "PENDING"
+    },
+    {
+      "id": 5335,
+      "created_at": "2026-11-27T10:51:02.646685+00:00",
+      "symbol": "PORTALUSDT",
+      "direction": "LONG",
+      "title": "Key Support Holds Firm: $PORTAL Bullish Continuation Setup Active",
+      "entry_low": 0.0175,
+      "entry_high": 0.0178,
+      "stop_loss": 0.01685,
+      "take_profit": 0.01925,
+      "support": 0.01241,
+      "resistance": 0.02137,
+      "news_line": "",
+      "technical_analysis": "Price sits well above EMA9, EMA21, EMA50 and EMA200, confirming a strong uptrend. MACD histogram remains positive, reinforcing bullish momentum. ADX at 26 shows the trend is robust. Although RSI and Stochastic are in overbought territory, the prevailing EMA and MACD signals favor a continued rise toward the 0.02137 resistance.",
+      "market_context": "BTC is up 1.9% in 24h, keeping a bullish tone while overall market breadth stays broadly positive.",
+      "result": "PENDING"
     }
   ]
 }
