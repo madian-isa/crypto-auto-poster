@@ -90447,6 +90447,23 @@
       "technical_analysis": "Price sits above EMA9, EMA21 and EMA200, with ADX at 34 indicating a strong trend. RSI at 52 shows neutral but not oversold, while Stochastic K at 81 signals bullish momentum. Order‑book shows 17.9% bid imbalance. Together they point to upward bias near the 0.00253‑0.00261 zone. Together, these indicators favor LONG continuation toward resistance.",
       "market_context": "BTC is up 0.4% in 24 h, showing bullish momentum while overall market breadth is mixed (53% green, 47% red).",
       "result": "PENDING"
+    },
+    {
+      "id": 5321,
+      "created_at": "2026-11-27T01:20:58.696601+00:00",
+      "symbol": "SEIUSDT",
+      "direction": "LONG",
+      "title": "Smart Money Flow Increases into $SEI Ahead of Catalysts",
+      "entry_low": 0.0383,
+      "entry_high": 0.0384,
+      "stop_loss": 0.037,
+      "take_profit": 0.04105,
+      "support": 0.03828,
+      "resistance": 0.04132,
+      "news_line": "",
+      "technical_analysis": "RSI at 62 and ADX above 50 signal strong bullish momentum. Price sits above the 21‑, 50‑ and 200‑EMA, confirming an upward bias, while the order book shows a 43 % bid‑side imbalance. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure.",
+      "market_context": "BTC is in a bearish 24‑hour trend while the 4‑hour chart shows mixed signals, providing broader downside pressure.",
+      "result": "PENDING"
     }
   ]
 }
