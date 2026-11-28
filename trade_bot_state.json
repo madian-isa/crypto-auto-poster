@@ -1,6 +1,6 @@
 {
   "date": "2026-11-28",
-  "count": 27,
+  "count": 28,
   "posted_symbols_today": [
     "PORTALUSDT",
     "HAEDALUSDT",
@@ -28,6 +28,7 @@
     "HYPEUSDT",
     "SNXXBUSDT",
     "SOXLBUSDT",
-    "SENTUSDT"
+    "SENTUSDT",
+    "HEIUSDT"
   ]
 }
