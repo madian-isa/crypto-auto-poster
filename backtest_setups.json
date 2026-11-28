@@ -91382,6 +91382,23 @@
       "technical_analysis": "NEAR is trading below all key EMAs, with the 9‑EMA at 3.00 and price at 2.97, indicating bearish bias. Stochastic is deep in oversold territory. The 1‑hour swing places resistance at 3.049 and support at 2.962, reinforcing a short outlook. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
       "market_context": "BTC is in a bearish trend on both 4‑hour and daily charts, and the broader crypto market is broadly negative with 86%",
       "result": "PENDING"
+    },
+    {
+      "id": 5376,
+      "created_at": "2026-11-28T13:50:58.825929+00:00",
+      "symbol": "SOLUSDT",
+      "direction": "SHORT",
+      "title": "Panic Selling Risk Increases as $SOL Tests Critical Floor",
+      "entry_low": 71.2,
+      "entry_high": 71.34,
+      "stop_loss": 73.8,
+      "take_profit": 66.21,
+      "support": 70.12,
+      "resistance": 71.34,
+      "news_line": "",
+      "technical_analysis": "SOL is trading below all key EMAs (9‑200) and the MACD histogram remains negative, confirming down‑trend momentum. ADX near 30 shows a firm trend. With price near the 1H resistance zone around 71.3, downside bias is evident presently. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
+      "market_context": "BTC remains in a 4‑day bearish downtrend, down 4.1% on the day, and the overall market breadth is heavily red (88.3%); sentiment",
+      "result": "PENDING"
     }
   ]
 }
