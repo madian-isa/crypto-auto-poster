@@ -91025,6 +91025,23 @@
       "technical_analysis": "The order‑book shows a slight sell imbalance, favoring a short move. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
       "market_context": "BTC is in a bearish 4‑hour and daily trend, while the broader market remains broadly positive.",
       "result": "PENDING"
+    },
+    {
+      "id": 5355,
+      "created_at": "2026-11-28T00:41:02.827380+00:00",
+      "symbol": "HAEDALUSDT",
+      "direction": "LONG",
+      "title": "Key Support Holds Firm: $HAEDAL Bullish Continuation Setup Active",
+      "entry_low": 0.0233,
+      "entry_high": 0.0235,
+      "stop_loss": 0.0224,
+      "take_profit": 0.0254,
+      "support": 0.02195,
+      "resistance": 0.02505,
+      "news_line": "",
+      "technical_analysis": "EMA21, EMA50 and EMA200 sit below price while EMA9 is almost equal, indicating an uptrend. ADX 53 confirms a strong trend. Order‑book shows 9% bid imbalance. Together, these indicators favor LONG continuation toward resistance. Positive momentum and trend readings give this setup a clear bullish structure. The nearby support and resistance levels frame the current market structure.",
+      "market_context": "BTC is down about 1.15% with bearish 4H and 1D trends, while the broader market remains broadly positive, showing 69.9% green assets.",
+      "result": "PENDING"
     }
   ]
 }
