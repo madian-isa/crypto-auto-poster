@@ -1,6 +1,6 @@
 {
   "date": "2026-11-28",
-  "count": 15,
+  "count": 16,
   "posted_symbols_today": [
     "PORTALUSDT",
     "HAEDALUSDT",
@@ -16,6 +16,7 @@
     "TLMUSDT",
     "ACEUSDT",
     "RIFUSDT",
-    "KAVAUSDT"
+    "KAVAUSDT",
+    "BTCUSDT"
   ]
 }

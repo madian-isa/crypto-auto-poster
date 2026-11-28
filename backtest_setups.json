@@ -91263,6 +91263,23 @@
       "technical_analysis": "MACD histogram is positive and the MACD line sits above its signal, indicating bullish momentum. Price holds above EMA21, EMA50 and EMA200, while RSI at 59 shows room before overbought. ADX at 44 confirms a strong trend. The pair sits near the 0.02748 support and 0.02768 resistance, overall favoring upside.",
       "market_context": "BTC is in a bearish trend on both 4h and 1d frames, down 3.65% over 24h, and the broader market is broadly",
       "result": "PENDING"
+    },
+    {
+      "id": 5369,
+      "created_at": "2026-11-28T10:10:55.521899+00:00",
+      "symbol": "BTCUSDT",
+      "direction": "SHORT",
+      "title": "Bearish Divergence Spotted on $BTC: Downside Targets Ahead",
+      "entry_low": 59580.0,
+      "entry_high": 59620.0,
+      "stop_loss": 61707.0,
+      "take_profit": 55386.0,
+      "support": 59188.34,
+      "resistance": 60266.01,
+      "news_line": "",
+      "technical_analysis": "BTCUSDT sits below all key EMAs (9, 21, 50, 200) and under the 20‑period EMA on higher timeframes, confirming bearish bias. MACD is deep negative with a falling histogram, RSI at 37 and Stochastic under 50 signal weak momentum, while ADX 34 shows a strong downtrend. Resistance near 60.3k level.",
+      "market_context": "BTC is down 3.7% over 24 hours, the broader market is broadly negative with 86.7% red breadth, and order‑book imbalance shows more",
+      "result": "PENDING"
     }
   ]
 }
