@@ -91110,6 +91110,23 @@
       "technical_analysis": "MACD is bullish with the line (0.00206) above its signal (0.00159) and a positive histogram. Price sits above the 9‑, 21‑, 50‑and 200‑EMA, confirming an uptrend. ADX at 64 shows strong momentum, while volume rose 11.6%. RSI at 68.7 hints near‑overbought but still supports the upward bias. Overall, the setup favors a continued rise.",
       "market_context": "Bitcoin remains in a bearish 4‑hour and daily trend, down 2.8% over 24 h, contributing to a broadly negative market where 72",
       "result": "PENDING"
+    },
+    {
+      "id": 5360,
+      "created_at": "2026-11-28T03:41:05.939720+00:00",
+      "symbol": "MMTUSDT",
+      "direction": "SHORT",
+      "title": "Panic Selling Risk Increases as $MMT Tests Critical Floor",
+      "entry_low": 0.164,
+      "entry_high": 0.165,
+      "stop_loss": 0.171,
+      "take_profit": 0.1515,
+      "support": 0.1574,
+      "resistance": 0.1704,
+      "news_line": "",
+      "technical_analysis": "MMT is trading beneath all key EMAs (9, 21, 50, 200), indicating a clear downtrend. RSI at 36 and Stochastic around 30 signal weakening momentum. ADX of 31 confirms a strong trend. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
+      "market_context": "BTC is in a bearish 4‑hour and daily trend, down 2.6% over 24 h. The broader market shows 69.6% red assets and",
+      "result": "PENDING"
     }
   ]
 }
