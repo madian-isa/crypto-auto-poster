@@ -91416,6 +91416,23 @@
       "technical_analysis": "The price sits below all key EMAs (9‑200), confirming a downtrend. MACD is negative with a bearish histogram, while RSI at 38 and Stochastic K under 10 signal weakening momentum. ADX around 26 shows a moderate trend. With resistance near 63.55 and support at 62.19, indicators favor a short bias.",
       "market_context": "BTC remains bearish on both 4‑hour and daily charts, down about 3.8%, and the broader market is broadly negative with 87% of",
       "result": "PENDING"
+    },
+    {
+      "id": 5378,
+      "created_at": "2026-11-28T14:31:08.956896+00:00",
+      "symbol": "SNXXBUSDT",
+      "direction": "SHORT",
+      "title": "$SNXXB Volume Decreases on Rally: Weak Buyers Exposed",
+      "entry_low": 1.92,
+      "entry_high": 1.93,
+      "stop_loss": 2.0,
+      "take_profit": 1.775,
+      "support": 1.9,
+      "resistance": 1.93,
+      "news_line": "",
+      "technical_analysis": "Short bias dominates: price sits below the 9‑EMA (1.9108) while the MACD line remains under its signal, producing a negative histogram. Order‑book shows a 24.6 % sell‑side imbalance. Bollinger lower band (1.886) is near current price, and Stochastic K at 16 % signals oversold conditions, supporting downside momentum overall trend in play.",
+      "market_context": "BTC remains in a bearish 4‑hour and daily trend, with prices around $59,300 below both EMA20 and EMA50. The broader crypto market",
+      "result": "PENDING"
     }
   ]
 }
