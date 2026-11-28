@@ -91348,6 +91348,23 @@
       "technical_analysis": "The supplied indicators show a bearish structure for this market. Together, they favor SHORT continuation, with momentum pointing toward support and resistance framing the current price structure. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
       "market_context": "BTC is in a bearish 4‑hour and daily trend, down 3.7% today, and the broader market is broadly negative with 83.4% red",
       "result": "PENDING"
+    },
+    {
+      "id": 5374,
+      "created_at": "2026-11-28T12:31:03.212729+00:00",
+      "symbol": "SKYUSDT",
+      "direction": "SHORT",
+      "title": "$SKY Lower High Pattern Confirmed: Short Target in View",
+      "entry_low": 0.05055,
+      "entry_high": 0.0506,
+      "stop_loss": 0.05238,
+      "take_profit": 0.046965,
+      "support": 0.05022,
+      "resistance": 0.0506,
+      "news_line": "",
+      "technical_analysis": "MACD sits below its signal with a negative histogram, indicating bearish momentum. Volume has dropped nearly 60% and the order‑book shows a 12% ask‑side imbalance, adding downside pressure. Price is perched at the 0.0506 short‑term resistance while ADX above 30 confirms a strong trend. These factors favor a short bias.",
+      "market_context": "BTC is in a bearish trend on both 4h and 1d frames, down 3.6% today, and the broader market is largely negative",
+      "result": "PENDING"
     }
   ]
 }
