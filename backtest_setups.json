@@ -91450,6 +91450,23 @@
       "technical_analysis": "MACD histogram is negative and the MACD line sits below its signal, pointing to bearish momentum. RSI is neutral and ADX low, confirming a weak trend, so short pressure is favored. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
       "market_context": "BTC is in a bearish 4H and 1D trend, and the broader market shows a largely negative breadth (68.3% red). This backdrop",
       "result": "PENDING"
+    },
+    {
+      "id": 5380,
+      "created_at": "2026-11-28T15:31:08.353094+00:00",
+      "symbol": "SENTUSDT",
+      "direction": "LONG",
+      "title": "Major Breakout Signals Emerge on $SENT Higher Timeframes",
+      "entry_low": 0.02434,
+      "entry_high": 0.02444,
+      "stop_loss": 0.0235,
+      "take_profit": 0.02617,
+      "support": 0.0232,
+      "resistance": 0.02493,
+      "news_line": "",
+      "technical_analysis": "The EMA series (9,21,50,200) are all below price, showing an uptrend. RSI at 60 confirms bullish momentum, while ADX at 37 indicates a strong trend. Order‑book shows a 21% bid‑side imbalance. MACD is near neutral, and price sits just below the upper Bollinger band. Overall indicators favor a long bias.",
+      "market_context": "BTC is in a bearish 4‑hour and daily trend, down about 1% on the day, and the overall market breadth is broadly",
+      "result": "PENDING"
     }
   ]
 }
