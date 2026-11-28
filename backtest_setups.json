@@ -91280,6 +91280,23 @@
       "technical_analysis": "BTCUSDT sits below all key EMAs (9, 21, 50, 200) and under the 20‑period EMA on higher timeframes, confirming bearish bias. MACD is deep negative with a falling histogram, RSI at 37 and Stochastic under 50 signal weak momentum, while ADX 34 shows a strong downtrend. Resistance near 60.3k level.",
       "market_context": "BTC is down 3.7% over 24 hours, the broader market is broadly negative with 86.7% red breadth, and order‑book imbalance shows more",
       "result": "PENDING"
+    },
+    {
+      "id": 5370,
+      "created_at": "2026-11-28T10:31:03.793097+00:00",
+      "symbol": "XRPUSDT",
+      "direction": "SHORT",
+      "title": "Bearish Continuation Pattern Confirmed on $XRP Chart Structure",
+      "entry_low": 0.941,
+      "entry_high": 0.9415,
+      "stop_loss": 0.9755,
+      "take_profit": 0.87275,
+      "support": 0.9417,
+      "resistance": 0.9543,
+      "news_line": "",
+      "technical_analysis": "All major indicators point bearish. Price sits below the 9‑, 21‑ and 50‑EMA, MACD histogram is negative, and Stochastic K is at 12.5, indicating oversold momentum turning down. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure. The nearby resistance and support levels frame the current market structure.",
+      "market_context": "Bitcoin remains in a bearish trend on both 4H and daily charts, down 3.9% over 24 h, while market breadth is broadly",
+      "result": "PENDING"
     }
   ]
 }
