@@ -91212,6 +91212,23 @@
       "technical_analysis": "Price sits above the EMA9/21/50/200 chain, confirming a clear uptrend. MACD line stays above its signal with a positive histogram, while ADX at 44.6 signals a strong trend. Stochastic K crosses above D and order‑book shows a 32% bid‑side imbalance, all pointing to bullish momentum toward the 0.001277 resistance level.",
       "market_context": "BTC is in a bearish 4‑hour and daily trend, down 3.6% on the day, and the broader market shows a largely negative",
       "result": "PENDING"
+    },
+    {
+      "id": 5366,
+      "created_at": "2026-11-28T07:51:03.711860+00:00",
+      "symbol": "ACEUSDT",
+      "direction": "SHORT",
+      "title": "$ACE Derivative Data Shows Heavy Long Liquidations Incoming",
+      "entry_low": 0.0765,
+      "entry_high": 0.077,
+      "stop_loss": 0.07982,
+      "take_profit": 0.07061,
+      "support": 0.0748,
+      "resistance": 0.077,
+      "news_line": "",
+      "technical_analysis": "Price sits below the 9‑ and 21‑EMA while above the 50‑EMA, indicating a downtrend. Stochastic is deep oversold (~9) but ADX at 43 confirms a strong trend. The setup favors short pressure toward the 0.0748 support. Together, these indicators favor SHORT continuation toward support. Negative momentum and trend readings give this setup a clear bearish structure.",
+      "market_context": "Bitcoin is trading lower on both 4‑hour and daily charts, down about 3% in 24 h, while the broader market shows 81%",
+      "result": "PENDING"
     }
   ]
 }
