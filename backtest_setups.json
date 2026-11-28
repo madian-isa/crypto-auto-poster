@@ -91178,6 +91178,23 @@
       "technical_analysis": "RSI at 38 and MACD histogram at –0.96 signal bearish momentum, while price sits below the 9‑, 21‑, 50‑ and 200‑period EMAs, confirming a downtrend. ADX above 30 shows the trend is strong. Order‑book imbalance favors bids, but the prevailing indicators point to a short bias near the 1H resistance zone.",
       "market_context": "BTC is down 3.2% on a bearish 4H and 1D trend, and the broader market breadth is 80.7% red, reinforcing a negative",
       "result": "PENDING"
+    },
+    {
+      "id": 5364,
+      "created_at": "2026-11-28T06:20:48.926182+00:00",
+      "symbol": "TRUMPUSDT",
+      "direction": "SHORT",
+      "title": "$TRUMP Distribution Phase Ends: Downside Target Zone Set",
+      "entry_low": 0.78,
+      "entry_high": 0.79,
+      "stop_loss": 0.818,
+      "take_profit": 0.719,
+      "support": 0.751,
+      "resistance": 0.876,
+      "news_line": "",
+      "technical_analysis": "RSI at 19.9 and Stochastic K at 5 signal deep oversold conditions, yet price sits well beneath EMA9, EMA21, EMA50 and EMA200, confirming a prevailing downtrend. MACD histogram remains negative, and the price is below the lower Bollinger Band, reinforcing bearish momentum. The next key resistance sits near 0.876, with support around 0.751.",
+      "market_context": "BTC remains in a bearish 4‑hour and daily trend, down about 3.4%, and overall market breadth is largely negative (85.9% red).",
+      "result": "PENDING"
     }
   ]
 }
